@@ -1,0 +1,5 @@
+page:
+  siteTitle: Make CLI Great Again 🚀
+
+template:
+  iconUrl: ${ema:homeUrl}/Software/cli/favicon.svg

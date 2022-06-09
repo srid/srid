@@ -1,20 +1,32 @@
-# For documentation and available settings, see
-# https://github.com/srid/emanote/blob/master/default/index.yaml
-
 page:
-  siteTitle: Emanote Template
+  siteTitle: Sridhar Ratnakumar
+  siteName: Srid
+  headHtml: |
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
 template:
-  theme: red
+  name: /templates/layouts/note
+  layout:
+    base:
+      bodyClass: overflow-y-scroll bg-gray-400
+    note:
+      containerClass: container mx-auto max-w-screen-lg
 
-  # Uncomment this to get neuron-style pages
-  # name: /templates/layouts/note
-  # layout:
-  #   note:
-  #     containerClass: container mx-auto max-w-screen-lg
-
+  theme: pink
+  iconUrl: static/favicon.jpeg
   sidebar:
-    collapsed: false
-
-  # If you are hosting on GitLab Pages, you may want to remove this.
+    collapsed: true
   urlStrategy: pretty
+
+pandoc:
+  rewriteClass:
+    prose: max-w-prose mx-auto
+    # Centered photo
+    photoframe-center: sm:w-3/4 md:w-1/2 mx-auto flex items-center justify-center 
+    # Photo floating to right
+    photoframe: w-full sm:w-64 float-right sm:ml-2 mb-2 sm:mb-0 border-2 p-1 bg-gray-50
+    # Content immediately following a right-floated photo
+    photoframe-below: clear-right
+    page-note: text-sm text-gray-600 flex items-center justify-center my-4 italic
+    editor-note: text-gray-500 text-sm

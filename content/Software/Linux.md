@@ -1,0 +1,7 @@
+---
+slug: linux
+---
+
+```query
+path:./*
+```

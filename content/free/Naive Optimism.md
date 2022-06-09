@@ -1,0 +1,23 @@
+---
+slug: naive-optimism
+---
+ 
+From [Richard’s Selected Correspondence On Naiveté](http://actualfreedom.com.au/richard/selectedcorrespondence/sc-naivete.htm)
+
+RICHARD: [..] the first settlers to take up residence in Terra Actualis are all a product of that [[Naivete|naïvely]] optimistic sixties generation, as contrasted to the cynically pessimistic generations who disenchantedly succeeded them, and it remains to be seen whether the latter can successfully retrieve their long-lost naïveté or not
+
+---
+
+From [Richard’s Selected Correspondence On Perfection](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-perfection.htm):
+
+[Richard]: ‘In 1980, ‘I’, the persona that I was, looked at the natural world and just knew that this enormous construct called the world – and the universe itself – was not ‘set up’ for us humans to be forever forlorn in with only scant moments of reprieve. ‘I’ realised there and then that it was not and could not ever be some ‘sick cosmic joke’ that humans all had to endure and ‘make the best of’. ‘I’ felt foolish that ‘I’ had believed for thirty two years that the ‘wisdom’ of the world ‘I’ had inherited – the real world that ‘I’ was born into – was set in stone. This foolish feeling allowed ‘me’ to get in touch with ‘my’ dormant [[Naivete|naiveté]], which is the closest thing one has that resembles actual innocence, and activate it with a **naive enthusiasm** to undo all the [[Social Identity|conditioning and brainwashing]] that ‘I’ had been subject to. Then when ‘I’ looked into myself and at all the people around and saw the sorrow of humankind ‘I’ could not stop. ‘I’ knew that ‘I’ had just devoted myself to the task of setting ‘myself’ and ‘humanity’ free ... ‘I’ willingly [[Diligence and perseverance|dedicated]] my life to this most worthy cause. It is so exquisite to devote oneself to something whole-heartedly ... the ‘boots and all’ approach ‘I’ called it then!’
+
+---
+
+From [Richard’s Selected Correspondence On How To Become Free of the Human Condition](http://actualfreedom.com.au/richard/selectedcorrespondence/sc-method6.htm):
+
+RICHARD: It is very important to have confidence in your own ability to discriminate between current human knowledge and what you personally know from your own [[PCE|peak experiences]]. This will give you that **optimism** that is the ability to plough on regardless of whatever stands in your way until you evoke your destiny. It is not a matter of having faith or believing that it is possible; it is not a matter of [[Trust|trusting]] or hoping that it will happen to you; it is all to do with the solid knowing, born out of the peak experience, that it is here for you and anyone ... if only you will act upon your knowing. This ‘action’ amounts to – at times – ‘talking yourself into it’, for the other alternative is to let doubt and [[Belief|disbelief]] and [[Trust|distrust]] and despair eat away at your resolve. Only you can manifest your own freedom.
+
+However, once embarked upon the ‘wide and wondrous path’, you are not on your own: the perfection of the infinitude of this physical universe is with you all the way ... but if you waver, you are indeed on your own. It is a matter of having the [[Courage of your convictions|courage of your convictions]] and letting nothing stand in your way; determination and [[Diligence and perseverance|perseverance]] are the essential prerequisites to ensure success ... coupled with application and [[Diligence and perseverance|diligence]]. Having the ‘[[Courage of your convictions|courage of your convictions]]’ has nothing to do with [[Belief|believing]], [[Trust|trusting]], hoping or having faith that it be possible. I, for one, never believed, [[Trust|trusted]], [[Hope|hoped]] or had faith that it was possible, for such an action of believing, [[Trust|trusting]], hoping and having faith perpetuates the believer, the [[Trust|truster]], the [[Hope|hoper]] and the faithful. On the contrary, I could no longer believe that it was not possible – which is a different action entirely to believing, [[Trust|trusting]], hoping and having faith that it is possible – thus dispensing with the believer, the [[Trust|truster]], the [[Hope|hoper]] and the faithful. Do you see this?
+
+For example: Doubt is believing it not to be possible ... doubt is actually an action of believing, which supports the believer. Faith is believing that it is possible ... which also supports the believer ... and thus, either way, the believer pushes freedom away into an ever elusive future.

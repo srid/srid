@@ -21,7 +21,6 @@
           sites."default" = {
             path = ./content;
             pathString = "./content";
-            # port = 8080;
           };
         };
         devShells.default = pkgs.mkShell {

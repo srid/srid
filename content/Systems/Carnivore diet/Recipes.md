@@ -1,0 +1,7 @@
+---
+slug: recipes
+---
+
+```query
+path:./*
+```

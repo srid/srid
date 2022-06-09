@@ -4,13 +4,10 @@
 	"recommendations": [
 		"yzhang.markdown-all-in-one",
 		"svsool.markdown-memo",
+		"mdickin.markdown-shortcuts",
 		"bierner.markdown-checkbox",
 		"houkanshan.vscode-markdown-footnote",
-		"bierner.emojisense",
-		"mdickin.markdown-shortcuts",
-		"mushan.vscode-paste-image",
-		"sean10.markless-sean10",
-		"gruntfuggly.todo-tree",
-		"bbenoist.nix"
+		"webhint.vscode-webhint",
+		"gruntfuggly.todo-tree"
 	]
 }
