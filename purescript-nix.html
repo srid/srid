@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- TODO: Main navigation links (Home, index, tags, ...) --><!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    PureScript mini-tutorial using Nix – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='My ([[Haskell]],[]) app ([[Neuron]],[]) recently received a contribution that added support for the very useful client-side search feature. JavaScript was used to implement it; however after having gotten used to merrily creating ([[Reflex-FRP]],[])-based web apps (frontend and backend both in Haskell), writing raw JavaScript had very little appeal to me, which left me with the following options:' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='PureScript mini-tutorial using Nix' />
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <link href='https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js'></script>
+
+  
+  <link href='tailwind.css?instanceId=7f592d90-e607-4db6-b4af-a316a51dfc1f' rel='stylesheet' type='text/css' />
+
+  <!-- Heist error element -->
+  <style type='text/css'>
+    strong.error {
+      color: lightcoral;
+      font-size: 90%;
+      font-family: monospace;
+    }
+  </style>
+  <!-- What goes in this file will appear on near the end of <head>--><link rel='preload' href='_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf' as='font' type='font/ttf' crossorigin />
+
+<style>
+  @font-face {
+    font-family: 'MavenPro';
+    /* FIXME: This ought to be: ${ema:emanoteStaticLayerUrl}/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf */
+    src: url(_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf) format("truetype");
+    font-display: swap;
+  }
+
+  body {
+    font-family: 'MavenPro', sans-serif;
+    /* font-variation-settings: 'wght'300; */
+  }
+
+  a.mavenLinkBold {
+    font-variation-settings: 'wght'500;
+  }
+
+  strong {
+    font-variation-settings: 'wght'500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  header,
+  .header-font {
+    font-family: 'MavenPro', sans-serif;
+  }
+</style>
+
+  
+    <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+  
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg'>
+      <div class='mt-2 md:mt-4'>
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='haskell'>
+      Haskell
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='software'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href=''>
+      Sridhar Ratnakumar
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+            <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='purescript'>
+      PureScript
+    </a>
+  </div>
+
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+        <div class='md:shadow-2xl md:mb-8'>
+          <div class='flex-1 w-full overflow-x-auto bg-white'>
+            <main class='px-4 py-4'>
+              <h1 class='flex items-end justify-center mb-4 p-3 bg-pink-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    PureScript mini-tutorial using Nix
+  </a>
+</h1>
+              <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+    <p class='mb-3'>
+      My <a href='haskell' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkTag'>Haskell</a> app <a href='neuron' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Neuron</a> recently received a <a href='https://github.com/srid/neuron/pull/90' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>contribution</a> that added support for the very useful client-side search feature. JavaScript was used to implement it; however after having gotten used to merrily creating <a href='reflex-frp' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Reflex-FRP</a>-based web apps (frontend and backend both in Haskell), writing raw JavaScript had very little appeal to me, which left me with the following options:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          GHCJS: Reflex
+        </li>
+      
+        <li>
+          GHCJS: Miso
+        </li>
+      
+        <li>
+          PureScript
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      One appeal of PureScript is that it is comparitively lightweight to install, develop and use (which is how I’d describe neuron itself).
+    </p>
+  <h2 id='creating-a-hello-world-project' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Creating a Hello World project</h2>
+    <p class='mb-3'>
+      If you already use <a href='nix' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix</a> (or <a href='nixos' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a>), getting a quick feel for PureScript is just a matter of running:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='bash language-bash'>nix-shell -p purescript -p spago</code></pre></div>
+    <p class='mb-3'>
+      <a href='https://github.com/purescript/spago' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Spago</a> is the PureScript package manager. It uses <a href='dhall' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Dhall</a> for configuration, which is exactly what Neuron uses as well. Once you are in the nix-shell we shall create a new PureScript project:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='bash language-bash'>mkdir /tmp/app1 && cd /tmp/app1
+spago init</code></pre></div>
+    <p class='mb-3'>
+      The project will have minimal files:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='bash language-bash'>$ tree
+.
+├── packages.dhall
+├── spago.dhall
+├── src
+│   └── Main.purs
+└── test
+    └── Main.purs
+
+2 directories, 4 files</code></pre></div>
+    <p class='mb-3'>
+      and very basic PureScript code:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='haskell language-haskell'>-- src/Main.purs
+module Main where
+
+import Prelude
+
+import Effect (Effect)
+import Effect.Console (log)
+
+main :: Effect Unit
+main = do
+  log "🍝"</code></pre></div>
+    <p class='mb-3'>
+      To build the final JavaScript “executable”, run <code class='py-0.5 px-0.5 bg-gray-100'>spago bundle-app</code>; it will generate a <code class='py-0.5 px-0.5 bg-gray-100'>index.js</code> for use from HTML.
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='bash language-bash'>$ spago bundle-app
+[info] Installation complete.
+[info] Build succeeded.
+[info] Bundle succeeded and output file to index.js
+
+$ wc -l -c index.js
+ 29 792 index.js</code></pre></div>
+    <p class='mb-3'>
+      That’s basically it. Very easy to install and use!
+    </p>
+  <h2 id='ghcid-of-purescript' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>ghcid of PureScript</h2>
+    <p class='mb-3'>
+      Not using any fancy IDE, I find <a href='ghcid' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>ghcid</a> to be critical to my Haskell development workflow; its fast compile-reload cycle facilitates a very delightful development experience. I wanted to have this with PureScript. Fortunately, such a tool exists — <a href='https://github.com/kritzcreek/pscid' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>pscid</a>. pscid is available in Nix, so you may simply restart that nix-shell as:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='bash language-bash'>nix-shell -p purescript -p spago -p pscid</code></pre></div>
+    <p class='mb-3'>
+      Then visit the project directory, and run:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='bash language-bash'>pscid</code></pre></div>
+    <p class='mb-3'>
+      Now modify <code class='py-0.5 px-0.5 bg-gray-100'>src/Main.hs</code> and watch it recompile on the fly. When you are done with your changes, you would run <code class='py-0.5 px-0.5 bg-gray-100'>spago bundle-app</code> at the end to build the final JavaScript.
+    </p>
+  <h2 id='so-how-do-i-use-getelementbyid' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>“So how do I use <code class='py-0.5 px-0.5 bg-gray-100'>getElementById</code>?”</h2>
+    <p class='mb-3'>
+      Haskellers are familiar with Hoogle. In PureScript ecosystem, that is called <a href='https://pursuit.purescript.org/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Pursuit</a>. I wanted to know, as part of <a href='https://github.com/srid/neuron/pull/106' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>adding PureScript to neuron</a>, how to use the famous <code class='py-0.5 px-0.5 bg-gray-100'>getElementById</code> function in PureScript; and pursuit <a href='https://pursuit.purescript.org/search?q=getElementById' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>came to help</a>.
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='haskell language-haskell'>getElementById :: String -&gt; NonElementParentNode -&gt; Effect (Maybe Element)</code></pre></div>
+    <p class='mb-3'>
+      Hmm, what is “<code class='py-0.5 px-0.5 bg-gray-100'>NonElementParentNode</code>”? This function is from the <code class='py-0.5 px-0.5 bg-gray-100'>purescript-web-dom</code> library, which uses the <a href='https://dom.spec.whatwg.org/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>DOM spec</a> which does indeed <a href='https://dom.spec.whatwg.org/#interface-nonelementparentnode' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>document</a> this second argument, although it is implicitly provided by <code class='py-0.5 px-0.5 bg-gray-100'>this</code> in JavaScript. In PureScript you would pass it explicitly. HTML Document is one of the values it can take:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='haskell language-haskell'>main = do
+  doc &lt;- map toNonElementParentNode $ document =&lt;&lt; window
+  myElem &lt;- getElementById "someId" doc</code></pre></div>
+    <p class='mb-3'>
+      <strong>EDIT:</strong> The lack of documentation around things like this is something I noticed immediately in the PureScript ecosystem; a lobste.rs user <a href='https://lobste.rs/s/wa99yt/coming_purescript_from_haskell_reflex#c_faof1j' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>explains it here</a>.
+    </p>
+  <h2 id='logging-to-console' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Logging to console</h2>
+    <p class='mb-3'>
+      The project template already uses the <code class='py-0.5 px-0.5 bg-gray-100'>log</code> function to log strings to browser console. But how do we log an arbitrary PureScript object, like the DOM element? Using <a href='https://pursuit.purescript.org/packages/purescript-debug/4.0.0/docs/Debug.Trace#v:traceM' class='text-pink-600 hover:underline' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100'>traceM</code></a>:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='haskell language-haskell'>import Debug.Trace (traceM)
+main = do
+  doc &lt;- map toNonElementParentNode $ document =&lt;&lt; window
+  myElem &lt;- getElementById "someId" doc
+  traceM myElem</code></pre></div>
+    <p class='mb-3'>
+      And that’s all it takes to get the initial feel for what it is like to develop PureScript as a Haskeller who comes from the world of Nix and GHCJS.
+    </p>
+  <h2 id='external-links' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>External links</h2>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Getting Started with PureScript</a> (official guide)
+        </li>
+      
+    </ul>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-pink-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/content/Software/PureScript/PureScript mini-tutorial using Nix.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+
+</article>
+              <div class='flex flex-col lg:flex-row lg:space-x-2'>
+                
+                
+              </div>
+              
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-pink-500' href='-/tags/blog'>
+        <!-- DoNotFormat -->
+        #blog
+        <!-- DoNotFormat -->
+      </a>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-pink-500' href='-/tags/nojs'>
+        <!-- DoNotFormat -->
+        #nojs
+        <!-- DoNotFormat -->
+      </a>
+    
+  </section>
+
+              <!-- What goes in this file will at the very end of the main div -->
+            </main>
+          </div>
+        </div>
+        <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.6.11.1'>
+      <img class='w-6 h-6 hover:text-pink-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+      </div>
+    </div>
+  
+</body>
+
+</html>

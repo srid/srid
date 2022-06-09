@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- TODO: Main navigation links (Home, index, tags, ...) --><!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Neuron 0.6 released – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='([[Neuron]],[]) is a note-taking tool based on Zettelkasten, that aims to be future-proof. Version 0.6 just got released; its major highlight is that neuron is now based on the Pandoc AST. This allows us to support any format supported by Pandoc. Experimental org-mode support is already in, to begin with.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content='https://ipfs.io/ipfs/Qmap6GViyXmgVsvLWJzGEXeeHhuS4VLi8rDe8JFseU3nWR?filename=2020%20neuron%20uplinktree.png' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Neuron 0.6 released' />
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <link href='https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js'></script>
+
+  
+  <link href='tailwind.css?instanceId=7f592d90-e607-4db6-b4af-a316a51dfc1f' rel='stylesheet' type='text/css' />
+
+  <!-- Heist error element -->
+  <style type='text/css'>
+    strong.error {
+      color: lightcoral;
+      font-size: 90%;
+      font-family: monospace;
+    }
+  </style>
+  <!-- What goes in this file will appear on near the end of <head>--><link rel='preload' href='_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf' as='font' type='font/ttf' crossorigin />
+
+<style>
+  @font-face {
+    font-family: 'MavenPro';
+    /* FIXME: This ought to be: ${ema:emanoteStaticLayerUrl}/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf */
+    src: url(_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf) format("truetype");
+    font-display: swap;
+  }
+
+  body {
+    font-family: 'MavenPro', sans-serif;
+    /* font-variation-settings: 'wght'300; */
+  }
+
+  a.mavenLinkBold {
+    font-variation-settings: 'wght'500;
+  }
+
+  strong {
+    font-variation-settings: 'wght'500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  header,
+  .header-font {
+    font-family: 'MavenPro', sans-serif;
+  }
+</style>
+
+  
+    <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+  
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg'>
+      <div class='mt-2 md:mt-4'>
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='neuron'>
+      Neuron
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='haskell'>
+      Haskell
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='software'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href=''>
+      Sridhar Ratnakumar
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='zettelkasten'>
+      <span class='emoji' data-emoji='notebook' style='font-family: emoji'>📓</span> Zettelkasten
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='systems'>
+      <span class='emoji' data-emoji='ringed_planet' style='font-family: emoji'>🪐</span> Systems
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='projects'>
+      Projects
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+        <div class='md:shadow-2xl md:mb-8'>
+          <div class='flex-1 w-full overflow-x-auto bg-white'>
+            <main class='px-4 py-4'>
+              <h1 class='flex items-end justify-center mb-4 p-3 bg-pink-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Neuron 0.6 released
+  </a>
+</h1>
+              <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+    <p class='mb-3'>
+      <a href='neuron' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkTag'>Neuron</a> is a note-taking tool based on <a href='https://neuron.zettel.page/2011401.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Zettelkasten</a>, that aims to be <a href='https://neuron.zettel.page/6f0f0bcc.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>future-proof</a>. Version <a href='https://github.com/srid/neuron/releases/tag/0.6.0.0' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>0.6</a> just got released; its major highlight is that neuron is now based on the <strong>Pandoc</strong> AST. This allows us to support any format supported by <a href='https://pandoc.org/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Pandoc</a>. Experimental <strong>org-mode</strong> support is <a href='https://github.com/srid/neuron/issues/313' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>already in</a>, to begin with.
+    </p>
+  <h2 id='better-markdown' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Better Markdown</h2>
+    <p class='mb-3'>
+      Previous versions of neuron used the <a href='https://hackage.haskell.org/package/mmark' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>mmark</a> parser which advertises itself as being “strict”. This prevented certain links from working as they caused the parser to fail. In version 0.6, I switched over to use <a href='https://github.com/jgm/commonmark-hs' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>commonmark-hs</a>, which is the Haskell implementation of the <a href='https://commonmark.org/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'><strong>CommonMark</strong> specification</a>, written by the same author of Pandoc. Another reason for switching is that commonmark-hs and its extensions can be compiled to JavaScript via GHCJS
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-pink-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
+    <!-- DoNotFormat -->
+  , which is useful when reusing the Haskell code with the web app (see below).
+    </p>
+  
+    <p class='mb-3'>
+      The commonmark-hs parser includes <a href='https://github.com/jgm/commonmark-hs/tree/master/commonmark-extensions' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>a bunch of nifty <strong>extensions</strong></a> that are all made available in neuron.
+    </p>
+  
+    <p class='mb-3'>
+      In addition, you can style your Markdown notes using supported Semantic UI classes (<a href='https://github.com/srid/neuron/issues/176' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>see here</a>), as well as use raw HTML if necessary.
+    </p>
+  <h2 id='uplink-tree' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Uplink Tree</h2>
+    <p class='mb-3'>
+      I find arbitrary graph views of Zettelkasten software to be rarely useful. Neuron on the other hand displays what is known as a “<a href='https://neuron.zettel.page/uplink-tree.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>uplink tree</a>" in each note view, which represents the <em>subset</em> (inasmuch as “uplink” is a type of “backlink”) of the backlink graph for that note. In Zettelkasten-speak, we talk of a note “branching” to another. The uplink tree displays all notes “branching” to the note being viewed.
+    </p>
+  
+    <p class='mb-3'>
+      Uplink Trees are similar to navigation panel or category tree, except that the heterarchy is built organically over time based on how the notes are linked (see <a href='https://neuron.zettel.page/folgezettel-heterarchy.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Folgezettel Heterarchy</a>). In the screenshot below, you are viewing the uplink tree of the note titled “Type safe static assets”. Notice how this note has multiple parents (that “branch of” to that note). See <a href='https://neuron.zettel.page/linking.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Linking</a> in the neuron manual.
+    </p>
+  
+    <p class='mb-3'>
+      <img src='https://ipfs.io/ipfs/Qmap6GViyXmgVsvLWJzGEXeeHhuS4VLi8rDe8JFseU3nWR?filename=2020%20neuron%20uplinktree.png' alt />
+    </p>
+  <h2 id='vim' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Vim</h2>
+    <p class='mb-3'>
+      In addition to <a href='https://neuron.zettel.page/4a6b25f1.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Emacs</a>, there is now a Vim extension for neuron. See <a href='https://github.com/ihsanturk/neuron.vim' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>neuron.vim</a> by ihsan. Just like the Emacs extension, it supports “virtual titles” in neovim, where the title of a linked note is displayed next to the link ID, as you can see from the screenshot below.
+    </p>
+  
+    <p class='mb-3'>
+      <img src='https://ipfs.io/ipfs/QmRA6WeuRrK7BMDdkxYc5X1VraBTUBBGpNbu8j1Kz1sv2y?filename=2020%20neuron-vim.png' alt />
+    </p>
+  <h2 id='improved-cli-query' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Improved CLI query</h2>
+    <p class='mb-3'>
+      The <code class='py-0.5 px-0.5 bg-gray-100'>neuron query</code> command can be used to query your Zettelkasten and get JSON output. <code class='py-0.5 px-0.5 bg-gray-100'>neuron query --id &lt;ID&gt;</code> gets you the metadata of a zettel note, whereas <code class='py-0.5 px-0.5 bg-gray-100'>neuron query --graph</code> gets the entire graph. For an example of what you can do with the later, check out <a href='https://github.com/b0o/neuron-extras' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>neuron-autoindex</a> by Maddison Hellstrom.
+    </p>
+  <h2 id='error-reporting' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Error reporting</h2>
+    <p class='mb-3'>
+      Neuron 0.6 includes resilient error handling. If there is an error in your notes, the command line tool will report them both in the console and the web interface, without breaking its workflow. This enables you to leave the daemon (<code class='py-0.5 px-0.5 bg-gray-100'>neuron rib -ws ..</code>) running on your server, as all errors are now reported on the generated site.
+    </p>
+  <h2 id='docker-images' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Docker images</h2>
+    <p class='mb-3'>
+      While Nix is still the recommended way to install, we now also have auto-created Docker images for neuron. With one <code class='py-0.5 px-0.5 bg-gray-100'>docker run ...</code> command, you can run the latest development version of <code class='py-0.5 px-0.5 bg-gray-100'>neuron</code> in a matter of seconds. The whole image is only about 100MB in size. See <a href='https://neuron.zettel.page/c6176636.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Docker workflow</a> for details.
+    </p>
+  <h2 id='automatic-publishing' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Automatic Publishing</h2>
+    <p class='mb-3'>
+      You can now set up your neuron notes to publish <em>automatically</em> on the web for free. See <a href='https://github.com/srid/neuron-template#readme' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>neuron-template</a> to get started. The gist of the idea is that we use GitHub Actions and Pages to update your published site as you change your notes in the Git repository. I publish every neuron site in this way. A <a href='https://neuron.zettel.page/778816d3.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>GitLab workflow</a> also exists.
+    </p>
+  
+    <p class='mb-3'>
+      You can also of course alternatively choose to self-host your neuron site, say as a systemd service. See the <a href='https://neuron.zettel.page/6479cd5e.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>documentation on this</a>.
+    </p>
+  <h2 id='web--mobile-app' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Web & mobile app</h2>
+    <p class='mb-3'>
+      <a href='http://www.cerveau.app/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Cerveau</a> (in private beta) is the web application on top of neuron that integrates with GitHub. The idea is that you can have your cake and eat it too. A command-line based workflow to edit your notes in Git repo does not mean you can’t do the same in a web application or a mobile app. Cerveau aims to address this gap, with the motto being: future-proof notes with little to no compromise on delightful user experience.
+    </p>
+  <div class='ui message segment'>
+    <p class='mb-3'>
+      Special thanks goes to the project sponsors, including: <a href='https://github.com/adamnbowen' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Adam Bowen</a>, <a href='https://github.com/alex-a-soto' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Alex Soto</a>, <a href='https://github.com/Whil-' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Gustav</a>, <a href='https://github.com/michelk' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Michel Kuhlmann</a> and <a href='https://github.com/digilypse' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Ryan</a>.
+    </p>
+  
+    <p class='mb-3'>
+      If you enjoy using neuron, please consider <a href='https://github.com/sponsors/srid?o=sd&sc=t' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>sponsoring the project</a> on GitHub. 💖
+    </p>
+  </div>
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            See <a href='obelisk-tutorial' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Obelisk tutorial, Markdown preview with Reflex</a> for a description of the development workflow involving writing Haskell on the frontend.
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-pink-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/content/Projects/Neuron/Neuron 0.6 released.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+
+</article>
+              <div class='flex flex-col lg:flex-row lg:space-x-2'>
+                
+                
+              </div>
+              
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-pink-500' href='-/tags/blog/neuron'>
+        <!-- DoNotFormat -->
+        #blog/neuron
+        <!-- DoNotFormat -->
+      </a>
+    
+  </section>
+
+              <!-- What goes in this file will at the very end of the main div -->
+            </main>
+          </div>
+        </div>
+        <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.6.11.1'>
+      <img class='w-6 h-6 hover:text-pink-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+      </div>
+    </div>
+  
+</body>
+
+</html>

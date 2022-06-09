@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!-- TODO: Main navigation links (Home, index, tags, ...) --><!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Thinkpad X1 Carbon Gen 7 review – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='On September 10th 2020, I received my ([[X1C7]],[]) (Gen 7, with 10th gen processor) shipped from Lenovo, and this is a brief review of having used it as my primary computer in the last 3+ months.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Thinkpad X1 Carbon Gen 7 review' />
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <link href='https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js'></script>
+
+  
+  <link href='tailwind.css?instanceId=7f592d90-e607-4db6-b4af-a316a51dfc1f' rel='stylesheet' type='text/css' />
+
+  <!-- Heist error element -->
+  <style type='text/css'>
+    strong.error {
+      color: lightcoral;
+      font-size: 90%;
+      font-family: monospace;
+    }
+  </style>
+  <!-- What goes in this file will appear on near the end of <head>--><link rel='preload' href='_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf' as='font' type='font/ttf' crossorigin />
+
+<style>
+  @font-face {
+    font-family: 'MavenPro';
+    /* FIXME: This ought to be: ${ema:emanoteStaticLayerUrl}/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf */
+    src: url(_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf) format("truetype");
+    font-display: swap;
+  }
+
+  body {
+    font-family: 'MavenPro', sans-serif;
+    /* font-variation-settings: 'wght'300; */
+  }
+
+  a.mavenLinkBold {
+    font-variation-settings: 'wght'500;
+  }
+
+  strong {
+    font-variation-settings: 'wght'500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  header,
+  .header-font {
+    font-family: 'MavenPro', sans-serif;
+  }
+</style>
+
+  
+    <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+  
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg'>
+      <div class='mt-2 md:mt-4'>
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='x1c7'>
+      X1C7
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='hw'>
+      <span class='emoji' data-emoji='computer' style='font-family: emoji'>💻</span> Hardware
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href=''>
+      Sridhar Ratnakumar
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+        <div class='md:shadow-2xl md:mb-8'>
+          <div class='flex-1 w-full overflow-x-auto bg-white'>
+            <main class='px-4 py-4'>
+              <h1 class='flex items-end justify-center mb-4 p-3 bg-pink-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Thinkpad X1 Carbon Gen 7 review
+  </a>
+</h1>
+              <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+    <p class='mb-3'>
+      On September 10th 2020, I received my <a href='x1c7' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkTag'>X1C7</a> (Gen 7, with 10th gen processor) shipped from Lenovo, and this is a brief review of having used it as my primary computer in the last 3+ months.
+    </p>
+  <h2 id='setting-up-linux' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Setting up Linux</h2>
+    <p class='mb-3'>
+      I usually run <a href='nixos' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a> on my computers, which is what I did on the Carbon. Read the specifics in <a href='x1c7-install' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Installing NixOS on X1 Carbon Gen 7</a>.
+    </p>
+  <h2 id='what-works' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>What works</h2>
+    <p class='mb-3'>
+      Linux kernel 5.9 or later has the best hardware support. Everything including Thunderbolt and fingerprint reader works on Linux. I was surprised in particular to see that 5k resolution worked in <a href='lg-ultrafine-5k' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>LG Ultrafine 5k</a>, which is a retina-quality Thunderbolt monitor designed specifically for Macbooks. Compared to previous Thinkpads (such as <a href='p71' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>P71</a>), the trackpad is as good as that of a Macbook.
+    </p>
+  <h2 id='wifi-can-be-unstable' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>WiFI can be unstable</h2>
+    <p class='mb-3'>
+      The only annoying issue with the Carbon is that the WiFi card included in my laptop experiences <a href='x1c7-wifi' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkBranch'>periodic disconnections</a> on Linux. Others have reported the same. In the end, the problem vanished when I switched to <a href='clear-linux' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Clear Linux</a>.
+    </p>
+  <section title='Embedded content' class='bg-white transform rounded-lg shadow hover:shadow-lg hover:scale-105 flex-1 mx-4 my-8 cursor-pointer overflow-hidden overflow-ellipsis max-h-96' onclick="window.location='x1c7-wifi'">
+  <header class='flex items-center text-2xl text-gray-700 italic rounded-t-lg bg-pink-100 py-2.5 px-3 mb-3'>
+    <a href='x1c7-wifi'>
+      X1C7 WiFi issue
+    </a>
+  </header>
+  <div class='p-3'>
+    
+    <p class='mb-3'>
+      WiFi can disconnect from time to time (in <a href='linux' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Linux</a>). This is the most annoying problem with the <a href='x1c7' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkTag'>X1C7</a>. It vanishes for some days, before returning.
+    </p>
+  
+    <p class='mb-3'>
+      <a href='https://old.reddit.com/r/thinkpad/comments/iu1de6/x1_carbon_w_5k_monitor_running_linux/g5ijbw9/?utm_source=reddit&utm_medium=web2x&context=3' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>See reddit discussion</a>; Looks to be <a href='https://bugzilla.kernel.org/show_bug.cgi?id=203709' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>this bug</a>, though in 2021 I’m seeing more of the <a href='https://bugzilla.kernel.org/show_bug.cgi?id=203593' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>0x707</a> bug.
+    </p>
+  
+    <p class='mb-3'>
+      As a workaround, I decided to use an external wifi card (<a href='rtl8821cu' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkBranch'>AC600M USB WiFi Adapter</a>) - but that also had its own connectivity problems from time to time.
+    </p>
+  
+    <p class='mb-3'>
+      <strong>Update (Sep 8,2021)</strong>: This issue appears only on <a href='nixos' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a> (as well as Ubuntu, and possibly several other distros), but not on <a href='clear-linux' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Clear Linux</a>.
+    </p>
+  
+  </div>
+</section><h2 id='performance' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Performance</h2>
+    <p class='mb-3'>
+      <a href='x1c7-perf' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkBranch'>Performance</a> is good enough for general use and light programming, but not ideal for any heavy lifting.
+    </p>
+  <section title='Embedded content' class='bg-white transform rounded-lg shadow hover:shadow-lg hover:scale-105 flex-1 mx-4 my-8 cursor-pointer overflow-hidden overflow-ellipsis max-h-96' onclick="window.location='x1c7-perf'">
+  <header class='flex items-center text-2xl text-gray-700 italic rounded-t-lg bg-pink-100 py-2.5 px-3 mb-3'>
+    <a href='x1c7-perf'>
+      X1C7 - Moderate Performance
+    </a>
+  </header>
+  <div class='p-3'>
+    
+    <p class='mb-3'>
+      <a href='x1c7' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkTag'>X1C7</a>’s performance is reasonably good for both home-office and coffee-shop use.
+    </p>
+  
+    <p class='mb-3'>
+      The carbon does suffer a bit with heavy workloads, such as some long compilation (eg: GHCJS) tasks, IDE heavylifting (haskell-language-server) or when using complex (bloated) web apps. Some of those, such as Nix compilation, can be offloaded to my <a href='p71' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>P71</a> workstation at home (via manual ssh, <a href='vscode' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>VSCode</a> <a href='https://code.visualstudio.com/docs/remote/ssh' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>remote ssh</a> or <a href='https://nixos.wiki/wiki/Distributed_build' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>distributed</a> build).
+    </p>
+  
+    <p class='mb-3'>
+      Per the pareto principle, the carbon is still a delight to use, although one must be aware of this compromise in performance, and not to mention memory limit (16G max RAM).
+    </p>
+  
+    <p class='mb-3'>
+      Performance and portability tradeoff wise, the <a href='x1e' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>X1E</a> is positioned in between <a href='x1c7' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>X1C7</a> and <a href='p71' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>P71</a>.
+    </p>
+  
+  </div>
+</section><h2 id='battery-life' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Battery Life</h2>
+    <p class='mb-3'>
+      I did not explicitly measure battery life on this laptop with a 4k screen. It looks to be around 6 hours which is more than enough for my use cases. I used the default <a href='https://github.com/srid/nix-config/blob/48c1c44a7ed52c25c25a19a1771b71a16e174da5/nixos-configuration/x1c7.nix#L11-L13' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>nixos-hardware</a> configuration; and reddit has <a href='https://old.reddit.com/r/thinkpad/comments/gc5nn2/x1_extreme_gen_2_4k_uhd_linux_battery_life/fp9ebs5/?utm_source=reddit&utm_medium=web2x&context=3' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>some tips</a>. A fellow programmer reported <a href='https://old.reddit.com/r/thinkpad/comments/hwonb5/x1_carbon_gen_8_4k_battery_life/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>5 hours</a>.
+    </p>
+  <h2 id='next-computer' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Next computer</h2>
+    <p class='mb-3'>
+      My next computer, if I choose to buy one in ~3 years, would likely be similar to the X1C7 but with a bit more performance (assuming battery life does not suffer); i.e., if I were to make this decision again, I’d consider Thinkpad <a href='x1e' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>X1E</a> or P1
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-pink-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
+    <!-- DoNotFormat -->
+   - but with integrated graphics (nvidia has poor support on Linux). That said, I still use the Carbon as my primary computer, and use <a href='vscode' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>VSCode</a> remote to shift much of the develoment heavylifting to the <a href='p71' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>P71</a> workstation at home.
+    </p>
+  <h2 id='verdict-after-a-year' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Verdict after a year</h2>
+    <p class='mb-3'>
+      <span class='italic text-sm flex items-center justify-center'>(added on Sep 23, 2021)</span>
+    </p>
+  
+    <p class='mb-3'>
+      I keep going back to my <a href='p71' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>P71</a> as the default machine when working docked (home office), and the Carbon has been relegated to situations where I work from the couch or from elsewhere (but doing bulk of stuff remotely on a powerful machine).
+    </p>
+  
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            And if Thunderbolt wasn’t a requirement, I’d easily go for a Thinkpad with AMD processor, such as the T14 or P14.
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-pink-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/content/Hardware/X1C7/Thinkpad X1 Carbon Gen 7 review.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+
+</article>
+              <div class='flex flex-col lg:flex-row lg:space-x-2'>
+                
+                
+              </div>
+              
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-pink-500' href='-/tags/blog/x1c7'>
+        <!-- DoNotFormat -->
+        #blog/x1c7
+        <!-- DoNotFormat -->
+      </a>
+    
+  </section>
+
+              <!-- What goes in this file will at the very end of the main div -->
+            </main>
+          </div>
+        </div>
+        <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.6.11.1'>
+      <img class='w-6 h-6 hover:text-pink-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+      </div>
+    </div>
+  
+</body>
+
+</html>

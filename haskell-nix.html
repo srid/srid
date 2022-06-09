@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!-- TODO: Main navigation links (Home, index, tags, ...) --><!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Nix recipes for Haskellers – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='The goal of this article is to get you comfortable managing simple ([[Haskell]],[]) programs and projects using the ([[Nix]],[]) package manager without getting too much into the details.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Nix recipes for Haskellers' />
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <link href='https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js'></script>
+
+  
+  <link href='tailwind.css?instanceId=7f592d90-e607-4db6-b4af-a316a51dfc1f' rel='stylesheet' type='text/css' />
+
+  <!-- Heist error element -->
+  <style type='text/css'>
+    strong.error {
+      color: lightcoral;
+      font-size: 90%;
+      font-family: monospace;
+    }
+  </style>
+  <!-- What goes in this file will appear on near the end of <head>--><link rel='preload' href='_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf' as='font' type='font/ttf' crossorigin />
+
+<style>
+  @font-face {
+    font-family: 'MavenPro';
+    /* FIXME: This ought to be: ${ema:emanoteStaticLayerUrl}/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf */
+    src: url(_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf) format("truetype");
+    font-display: swap;
+  }
+
+  body {
+    font-family: 'MavenPro', sans-serif;
+    /* font-variation-settings: 'wght'300; */
+  }
+
+  a.mavenLinkBold {
+    font-variation-settings: 'wght'500;
+  }
+
+  strong {
+    font-variation-settings: 'wght'500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  header,
+  .header-font {
+    font-family: 'MavenPro', sans-serif;
+  }
+</style>
+
+  
+    <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+  
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg'>
+      <div class='mt-2 md:mt-4'>
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='haskell'>
+      Haskell
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='software'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href=''>
+      Sridhar Ratnakumar
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+            <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='nix'>
+      Nix
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='nixos'>
+      NixOS
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='linux'>
+      Linux
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+        <div class='md:shadow-2xl md:mb-8'>
+          <div class='flex-1 w-full overflow-x-auto bg-white'>
+            <main class='px-4 py-4'>
+              <h1 class='flex items-end justify-center mb-4 p-3 bg-pink-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Nix recipes for Haskellers
+  </a>
+</h1>
+              <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+    <p class='mb-3'>
+      The goal of this article is to get you comfortable managing simple <a href='haskell' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkTag'>Haskell</a> programs and projects using the <a href='nix' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix</a> package manager without getting too much into the details.
+    </p>
+  <h2 id='prerequisites' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Prerequisites</h2>
+    <p class='mb-3'>
+      You are running either <a href='linux' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Linux</a> or macOS
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-pink-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
+    <!-- DoNotFormat -->
+  , and have installed the <strong>Nix</strong> package manager using <a href='https://nixos.org/download.html#nix-quick-install' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>these instructions</a> 
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-pink-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn2';">2</a></sup>
+    <!-- DoNotFormat -->
+  . You do <em>not</em> need to install anything else, including needing to install Haskell, as Nix will manage that for you.
+    </p>
+  <h2 id='simple-programs' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Simple programs</h2>
+    <p class='mb-3'>
+      Let us begin with the simplest Haskell program, try to compile and run it with the help of Nix.
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='haskell language-haskell'>-- HelloWorld.hs
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello World"</code></pre></div>
+    <p class='mb-3'>
+      Haskell code is compiled by GHC, which is provided by the Nix package called “ghc”. How do we install it? According to the <a href='https://nixos.org/nix/manual/#chap-package-management' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Nix manual</a> this can be done by running the command <code class='py-0.5 px-0.5 bg-gray-100'>nix-env -i ghc</code>. For Haskell developers, there is a better approach. Instead of installing packages in a global environment, you may install them to an <em>isolated</em> area and launch a shell with those packages in its environment. This is done using the <code class='py-0.5 px-0.5 bg-gray-100'>nix-shell -p ghc</code> command.
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='language-none'># This drops us in a bash shell with ghc package installed and 
+# $PATH updated.
+$ nix-shell -p ghc
+...
+# Now let's run our module.
+[nix-shell:~] runhaskell HelloWorld.hs
+Hello World</code></pre></div>
+    <p class='mb-3'>
+      As you can see, nix-shell dropped us in a shell environment with the “ghc” package installed and activated. This puts <code class='py-0.5 px-0.5 bg-gray-100'>runhaskell</code> (part of the “ghc” package) in your PATH, running which will compile and run your first Haskell program. When you exit the nix-shell (<code class='py-0.5 px-0.5 bg-gray-100'>Ctrl+D</code>), <code class='py-0.5 px-0.5 bg-gray-100'>runhaskell</code> will no longer be in scope, however the “ghc” package will have been cached so that subsequent invocations of <code class='py-0.5 px-0.5 bg-gray-100'>nix-shell -p ghc</code> would not have to download and install it once again.
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-pink-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn3';">3</a></sup>
+    <!-- DoNotFormat -->
+  
+    </p>
+  <h3 id='using-library-dependencies' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Using library dependencies</h3>
+    <p class='mb-3'>
+      What if our program relied on an third-party Haskell library? The following program uses the <a href='http://hackage.haskell.org/package/brick' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>brick</a> UI library.
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='haskell language-haskell'>-- HelloWorld.hs
+module Main where
+
+import Brick
+
+ui :: Widget ()
+ui = str "Hello, world!"
+
+main :: IO ()
+main = simpleMain ui</code></pre></div>
+    <p class='mb-3'>
+      We can no longer use the “ghc” package here. Fortunately, Nix is also a programming language, and as such as we can evaluate arbitrary Nix expressions to create a customized environment. Official Nix packages come from the <a href='https://github.com/NixOS/nixpkgs' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>nixpkgs</a> channel, which provides a function called <code class='py-0.5 px-0.5 bg-gray-100'>ghcWithPackages</code>. Evaluating this function, passing it a list of Haskell libraries (already in nixpkgs), will create an environment with both GHC and the specific Haskell libraries installed.
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='language-none'>$ nix-shell \
+    -p "haskellPackages.ghcWithPackages (p: [p.brick])" \
+    --run "runhaskell HelloWorld.hs"</code></pre></div>
+    <p class='mb-3'>
+      The <code class='py-0.5 px-0.5 bg-gray-100'>--run</code> argument will invoke the given command instead of dropping us in an interactive shell. This single command does <em>so much</em>—install the Haskell compiler with the requested libraries, compile our program and run it!
+    </p>
+  <h3 id='haskell-scripts' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Haskell scripts</h3>
+    <p class='mb-3'>
+      You can use the above nix-shell command in the shebang to create self-contained Haskell scripts. Let us see an example, but using <a href='ghcid' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>ghcid</a>, instead of runhaskell:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='haskell language-haskell'>-- myscript.hs
+#! /usr/bin/env -S"ANSWER=42" nix-shell
+#! nix-shell -p ghcid
+#! nix-shell -p "haskellPackages.ghcWithPackages (p: [p.shower])"
+#! nix-shell -i "ghcid -c 'ghci -Wall' -T main"
+
+import Shower (printer)
+import System.Environment (getEnv)
+
+main :: IO ()
+main = do
+  let question = "The answer to life the universe and everything"
+  answer &lt;- getEnv "ANSWER"
+  printer (question, "is", answer)</code></pre></div>
+    <p class='mb-3'>
+      Run <code class='py-0.5 px-0.5 bg-gray-100'>chmod u+x myscript.hs</code> to make it an executable, and then run it as <code class='py-0.5 px-0.5 bg-gray-100'>./myscript.hs</code>. Not only is it a self-sufficient script (depending on nothing but nix in the environment), but thanks to ghcid it also re-compiles and re-launches itself whenever it changes! See more examples <a href='https://github.com/srid/aoc2019' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>here</a>.
+    </p>
+  <h2 id='cabal-project' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Cabal project</h2>
+    <p class='mb-3'>
+      Haskell projects normally use <a href='https://www.haskell.org/cabal/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>cabal</a>, and you might already be familiar with <a href='https://haskellstack.org/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Stack</a> which uses Cabal underneath. Nix is an alternative to Stack with many advantanges, chief of them being the creation of reproducible development environments using declarative configuration that handles even non-Haskell packages.
+    </p>
+  
+    <p class='mb-3'>
+      Adding Nix support to most Cabal projects is a matter of creating a file called <code class='py-0.5 px-0.5 bg-gray-100'>default.nix</code> in the project root (just make sure you have a <code class='py-0.5 px-0.5 bg-gray-100'>.cabal</code> file named appropriately). This file is by default used by commands like <code class='py-0.5 px-0.5 bg-gray-100'>nix-build</code> and <code class='py-0.5 px-0.5 bg-gray-100'>nix-shell</code>, which we will use when developing the project.
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='nix language-nix'># default.nix
+let 
+  pkgs = import &lt;nixpkgs&gt; { };
+in 
+  pkgs.haskellPackages.developPackage {
+    root = ./.;
+    modifier = drv:
+      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
+        [ cabal-install
+          ghcid
+        ]);
+  }</code></pre></div>
+    <p class='mb-3'>
+      Now if you run <code class='py-0.5 px-0.5 bg-gray-100'>nix-shell</code> it will drop you in a shell with all Haskell dependencies (from .cabal file) installed. This will be your development shell; from here you can run your usual <code class='py-0.5 px-0.5 bg-gray-100'>cabal</code> commands, and everything will function as expected.
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='language-none'>$ nix-shell
+...
+[nix-shell:~] cabal new-build
+..</code></pre></div>
+    <p class='mb-3'>
+      If you only want to <em>build</em> the project, creating a final executable, use <code class='py-0.5 px-0.5 bg-gray-100'>nix-build</code>.
+    </p>
+  <h3 id='development-dependencies' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Development dependencies</h3>
+    <p class='mb-3'>
+      Notice the <code class='py-0.5 px-0.5 bg-gray-100'>modifier</code> attribute in the previous example. It specifies a list of build dependencies, using the <code class='py-0.5 px-0.5 bg-gray-100'>addBuildTools</code> function, that becomes available when we run either <code class='py-0.5 px-0.5 bg-gray-100'>nix-shell</code> or <code class='py-0.5 px-0.5 bg-gray-100'>nix-build</code>. Here, you will specify all the packages you need for development.
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-pink-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn4';">4</a></sup>
+    <!-- DoNotFormat -->
+   We speficied two—<code class='py-0.5 px-0.5 bg-gray-100'>cabal</code> and <code class='py-0.5 px-0.5 bg-gray-100'>ghcid</code>. If you removed <code class='py-0.5 px-0.5 bg-gray-100'>cabal</code> from this list, then cabal will not be in scope of your nix-shell. We added <a href='https://github.com/ndmitchell/ghcid' class='text-pink-600 hover:underline' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100'>ghcid</code></a>, which can be used to run a daemon that will recompile your project if any of the source files change; go ahead and give it a try using <code class='py-0.5 px-0.5 bg-gray-100'>nix-shell --run ghcid</code>.
+    </p>
+  <h3 id='overriding-dependencies' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Overriding dependencies</h3>
+    <p class='mb-3'>
+      The above will work as long as the libraries your project depends on exist on nixpkgs (which itself is derived from Stackage). That will not always be the case and you may want to <em>override</em> certain dependencies.
+    </p>
+  
+    <p class='mb-3'>
+      In Nix overriding library packages is rather straightforward. The aforementioned <code class='py-0.5 px-0.5 bg-gray-100'>developPackage</code> function exposes this capability via the <code class='py-0.5 px-0.5 bg-gray-100'>source-overrides</code> attribute. Suppose your cabal project depends on the <a href='https://github.com/monadfix/named' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>named</a> package at a particular git revision (<code class='py-0.5 px-0.5 bg-gray-100'>e684a00</code>), then you would modify your <code class='py-0.5 px-0.5 bg-gray-100'>default.nix</code> to look like:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='nix language-nix'>let
+  pkgs = import &lt;nixpkgs&gt; { };
+  compilerVersion = "ghc865"; 
+  compiler = pkgs.haskell.packages."${compilerVersion}";
+in
+  compiler.developPackage {
+    root = ./.;
+    source-overrides = {
+      named = builtins.fetchTarball 
+        "https://github.com/monadfix/named/archive/e684a00.tar.gz";
+    };
+    modifier = drv:
+      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
+        [ cabal-install
+          ghcid
+        ]);
+  }</code></pre></div>
+    <p class='mb-3'>
+      Now, if you re-run <code class='py-0.5 px-0.5 bg-gray-100'>nix-shell</code> or <code class='py-0.5 px-0.5 bg-gray-100'>nix-build</code> Nix will rebuild your package, and any packages depending on <code class='py-0.5 px-0.5 bg-gray-100'>named</code>, using the new source.
+    </p>
+  
+    <p class='mb-3'>
+      Note that this example also demonstrates how to select a compiler version.
+    </p>
+  
+    <p class='mb-3'>
+      See <a href='https://tek.brick.do/how-to-override-dependency-versions-when-building-a-haskell-project-with-nix-K3VXJd8mEKO7' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Artyom’s tech notes</a> for more on overriding Haskell dependencies in Nix.
+    </p>
+  <h3 id='multi-package-cabal-project' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Multi-package cabal project</h3>
+    <p class='mb-3'>
+      <code class='py-0.5 px-0.5 bg-gray-100'>developPackage</code> cannot be used if you use the cabal project feature, containing multiple packages. You will have to go a few steps lower in the abstraction ladder, and use the underlying Nix functions (<code class='py-0.5 px-0.5 bg-gray-100'>callCabal2nix</code>, <code class='py-0.5 px-0.5 bg-gray-100'>shellFor</code>, <code class='py-0.5 px-0.5 bg-gray-100'>extend</code>, <code class='py-0.5 px-0.5 bg-gray-100'>inNixShell</code>) in the <code class='py-0.5 px-0.5 bg-gray-100'>default.nix</code> of a multiple-package cabal project. See <a href='https://github.com/kowainik/summoner/blob/60de4f2f087e5bd2beaad9253e7eded731cfbaaf/default.nix' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>summoner’s default.nix</a> for a full example.
+    </p>
+  <h2 id='caching' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Caching</h2>
+    <p class='mb-3'>
+      Nix has builtin support for caching. Packages from the nixpkgs channel are already cached in the official cache. If you want to provide caching for your own packages, you may use <a href='https://nixos.wiki/wiki/Binary_Cache' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>nix-serve</a> (from NixOS) or <a href='https://cachix.org/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Cachix</a> (third-party service).
+    </p>
+  <h2 id='continuous-integration' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Continuous Integration</h2>
+    <p class='mb-3'>
+      Setting up CI for a Haskell project that already uses Nix is rather simple. If you use Github and Cachix, the easiest way is to use <a href='https://github.com/cachix/cachix-action' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>the cachix Github Action</a>. 
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-pink-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn5';">5</a></sup>
+    <!-- DoNotFormat -->
+  
+    </p>
+  <h2 id='external-links' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>External links</h2>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://haskell4nix.readthedocs.io/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Official Nix manual on using Haskell</a>
+        </li>
+      
+        <li>
+          <a href='https://nix.dev/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Unofficial developer guide to Nix</a>
+        </li>
+      
+        <li>
+          <a href='https://nixos.org/nixos/nix-pills/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Nix Pills</a>: a tutorial series on using Nix
+        </li>
+      
+        <li>
+          <a href='https://github.com/input-output-hk/haskell.nix' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>haskell.nix</a>: some people recommend haskell.nix
+        </li>
+      
+        <li>
+          <a href='https://github.com/srid/haskell-template' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>haskell-template</a>: A prebuilt Haskell project template using Nix flakes, among other defaults
+        </li>
+      
+    </ul>
+  
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            If you use Windows, you should set up <a href='https://docs.microsoft.com/en-us/windows/wsl/install' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>WSL2</a> Ubuntu and install Nix on it (or setup <a href='nixos' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a> using <a href='https://github.com/Trundle/NixOS-WSL' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>NixOS-WSL</a> instead of Ubuntu).
+          </div>
+        </div>
+      
+        <div id='fn2'>
+          <header class='italic'>
+            2.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Alternatively, if you are feeling adventurous enough, you may install <a href='nixos' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a>, a Linux distribution based on Nix.
+          </div>
+        </div>
+      
+        <div id='fn3'>
+          <header class='italic'>
+            3.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Nix is a <em>general</em> package manager. You may use it to manage not only haskell packages, but also any other program. For example, to temporarily use the <code class='py-0.5 px-0.5 bg-gray-100'>tree</code> package, so as to dispay the directory tree of the current directory, you would run: <code class='py-0.5 px-0.5 bg-gray-100'>nix-shell -p tree --run tree</code>.
+          </div>
+        </div>
+      
+        <div id='fn4'>
+          <header class='italic'>
+            4.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Use <code class='py-0.5 px-0.5 bg-gray-100'>pkgs.lib.haskell.inNixShell</code> to conditionally include dependencies on nix-shell but not nix-build.
+          </div>
+        </div>
+      
+        <div id='fn5'>
+          <header class='italic'>
+            5.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            If you are however using a <em>self-hosted</em> runner in Github Actions with public repos, read this <a href='https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-self-hosted-runners#self-hosted-runner-security-with-public-repositories' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>security warning</a>.
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-pink-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/content/Software/Nix/Nix recipes for Haskellers.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+
+</article>
+              <div class='flex flex-col lg:flex-row lg:space-x-2'>
+                
+                
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-pink-600 mavenLinkBold hover:bg-pink-50' href='nix-haskell-static-binaries'>
+            Building Static Haskell binaries using Nix
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-pink-200 hover:border-pink-500'>
+      <div>Nixify your project: write a <code>default.nix</code> (See <a href='haskell-nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Nix recipes for Haskellers</a>)</div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+              </div>
+              
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-pink-500' href='-/tags/blog'>
+        <!-- DoNotFormat -->
+        #blog
+        <!-- DoNotFormat -->
+      </a>
+    
+  </section>
+
+              <!-- What goes in this file will at the very end of the main div -->
+            </main>
+          </div>
+        </div>
+        <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.6.11.1'>
+      <img class='w-6 h-6 hover:text-pink-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+      </div>
+    </div>
+  
+</body>
+
+</html>

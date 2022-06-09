@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<!-- TODO: Main navigation links (Home, index, tags, ...) --><!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Cerveau, a future-proof web app for notes – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='I’d like to announce the public beta of CerveauCerveau is prounced with the eau sounding like the o in Go. See audio playback., a web app for managing plain-text notes from a GitHub repository. Cerveau integrates directly with ([[Neuron]],[]) which supports Zettelkasten-style note-taking in Markdown. This very site you are reading is managed by Neuron and edited in Cerveau, and its Git repo is essentially a directory of Markdown files.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content='https://ipfs.io/ipfs/QmesjhwYQ7jMkZjbwybshJHDvvZTW5Cj36msmeCaTvsUsk?filename=2020%20cerveau-logo.svg' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Cerveau, a future-proof web app for notes' />
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <link href='https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js'></script>
+
+  
+  <link href='tailwind.css?instanceId=7f592d90-e607-4db6-b4af-a316a51dfc1f' rel='stylesheet' type='text/css' />
+
+  <!-- Heist error element -->
+  <style type='text/css'>
+    strong.error {
+      color: lightcoral;
+      font-size: 90%;
+      font-family: monospace;
+    }
+  </style>
+  <!-- What goes in this file will appear on near the end of <head>--><link rel='preload' href='_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf' as='font' type='font/ttf' crossorigin />
+
+<style>
+  @font-face {
+    font-family: 'MavenPro';
+    /* FIXME: This ought to be: ${ema:emanoteStaticLayerUrl}/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf */
+    src: url(_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf) format("truetype");
+    font-display: swap;
+  }
+
+  body {
+    font-family: 'MavenPro', sans-serif;
+    /* font-variation-settings: 'wght'300; */
+  }
+
+  a.mavenLinkBold {
+    font-variation-settings: 'wght'500;
+  }
+
+  strong {
+    font-variation-settings: 'wght'500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  header,
+  .header-font {
+    font-family: 'MavenPro', sans-serif;
+  }
+</style>
+
+  
+    <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+  
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg'>
+      <div class='mt-2 md:mt-4'>
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='neuron'>
+      Neuron
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='haskell'>
+      Haskell
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='software'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href=''>
+      Sridhar Ratnakumar
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='zettelkasten'>
+      <span class='emoji' data-emoji='notebook' style='font-family: emoji'>📓</span> Zettelkasten
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='systems'>
+      <span class='emoji' data-emoji='ringed_planet' style='font-family: emoji'>🪐</span> Systems
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='projects'>
+      Projects
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+            <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='obelisk'>
+      Obelisk
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='reflex-frp'>
+      Reflex-FRP
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='nojs'>
+      No JavaScript
+    </a>
+  </div>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+        <div class='md:shadow-2xl md:mb-8'>
+          <div class='flex-1 w-full overflow-x-auto bg-white'>
+            <main class='px-4 py-4'>
+              <h1 class='flex items-end justify-center mb-4 p-3 bg-pink-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Cerveau, a future-proof web app for notes
+  </a>
+</h1>
+              <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+    <p class='mb-3'>
+      I’d like to announce the public beta of <a href='https://www.cerveau.app' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Cerveau</a>
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-pink-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
+    <!-- DoNotFormat -->
+  , a web app for managing plain-text notes from a GitHub repository. Cerveau integrates directly with <a href='neuron' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkTag'>Neuron</a> which supports <a href='https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Zettelkasten</a>-style note-taking in Markdown. This very site you are reading is managed by Neuron and edited in Cerveau, and its Git repo is essentially <a href='https://github.com/srid/srid.ca' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>a directory of Markdown files</a>.
+    </p>
+  <div class='w-32 ui centered tiny image'>
+    <p class='mb-3'>
+      <a href='https://www.cerveau.app' class='text-pink-600 hover:underline' target='_blank' rel='noopener'><img src='https://ipfs.io/ipfs/QmesjhwYQ7jMkZjbwybshJHDvvZTW5Cj36msmeCaTvsUsk?filename=2020%20cerveau-logo.svg' alt /></a>
+    </p>
+  </div><h2 id='motivation' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Motivation</h2>
+    <p class='mb-3'>
+      I created the open-source <a href='neuron' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Neuron</a> to <a href='https://en.wiktionary.org/wiki/scratch_one%27s_own_itch' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>scratch my own itch</a>, wherein I wanted to maintain my notes for a lifetime, without being dependent on proprietory formats or systems. I still wasn’t totally satisfied however, because I did not want to give up on the <em>convenience</em> of managing notes from a web app on my mobile phone. I didn’t want to be tied to a desktop text editor. So, the idea behind Cerveau was born - which began to resolve that dissatifaction without compromising on <a href='https://neuron.zettel.page/6f0f0bcc.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>future-proofness</a>.
+    </p>
+  <h2 id='how-does-it-work' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>How does it work?</h2>
+    <p class='mb-3'>
+      All notes are written in Markdown, and stored in a Git repository. Cerveau directly modifies the contents of the repository using <a href='https://docs.github.com/en/developers/apps' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>GitHub Apps API</a>, while caching the latest revision of the repository on a PostgreSQL database. This allows me to edit my notes from a web browser (as well as from a mobile phone), while keeping the canonical version always on Git all the while allowing edits from elsewhere such as <a href='https://github.com/felko/neuron-mode#neuron-mode' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Emacs</a> (i.e., two-way sync).
+    </p>
+  <h2 id='technology-used' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Technology used</h2>
+    <p class='mb-3'>
+      Both the backend and frontend components of Cerveau are written in <a href='haskell' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Haskell</a>. Haskell is my programming language of choice, because it gets a lot of things right (see <a href='https://wiki.haskell.org/Why_Haskell_matters' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Why Haskell matters</a>). Software I write in Haskell tends to be reliable; and I can refactor with confidence without being unduly afraid of introducing bugs. This is especially important when dealing with otherwise brittle JavaScript code in frontend code.
+    </p>
+  <h3 id='javascript-is-the-new-assembly-language' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>JavaScript is the new assembly language</h3>
+    <p class='mb-3'>
+      Cerveau’s frontend too is written in Haskell. Wait, how is that possible? The GHCJS compiler compiles Haskell code to low-level JavaScript for running in the browser. Cerveau uses the <a href='reflex-frp' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Reflex-FRP</a> library, via the excellent <a href='obelisk' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkTag'>Obelisk</a> framework, which takes care of all the plumbing required to produce such full-stack Haskell apps, so that I as a developer can focus on the <a href='https://old.reddit.com/r/haskell/comments/31rat9/reflex_practical_functional_reactive_programming/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>FRP</a> application logic. FRP, and similar models of UI programming, is simpler to write and extend than callback based code. Anybody who writes Elm
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-pink-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn2';">2</a></sup>
+    <!-- DoNotFormat -->
+   can attest to that; however unlike Elm or PureScript, GHCJS code can be <em>shared</em> with the backend. This is what enables Cerveau to directly reuse much of the <a href='neuron' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Neuron</a> source code, thus enabling neuron’s core features to work directly on the browser–for example, live HTML preview while editing the note.
+    </p>
+  <div xmlhtmlRaw><video autoplay muted loop width="100%">
+  <source src="https://ipfs.io/ipfs/QmbBG3KKDFFE1VdyJ5FQc7Zkd85zcxXrwA73M9NeAeWkYX?filename=2020%20cerveau-live-preview.webm" type="video/webm">
+</video>
+</div>
+    <p class='mb-3'>
+      The editor widget is based on CodeMirror, via <a href='https://github.com/Atidot/reflex-codemirror' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>reflex-codemirror</a>.
+    </p>
+  <h3 id='real-time-communication-via-websockets' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Real-time communication via WebSockets</h3>
+    <p class='mb-3'>
+      WebSockets, via <a href='https://github.com/obsidiansystems/rhyolite' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>rhyolite</a>, is used for real-time communication between the backend and the frontend; if you have two windows open, then updating a note from one window will have the other window automatically update its view without an explicit refresh (this works even if you are viewing a different note that has the modified note in its backlinks).
+    </p>
+  <h3 id='nix' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Nix</h3>
+    <p class='mb-3'>
+      <a href='nix' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix</a> is used for both developent and deployment; the production version in particular is deployed to a <a href='https://m.do.co/c/d19bbb4d33e8' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>DigitalOcean</a> droplet running <a href='nixos' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a>. Nix makes reproducible development environments easy and possible. A testament to this is how easy it is to contribute to neuron (see <a href='https://github.com/srid/neuron/blob/master/CONTRIBUTING.md' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>CONTRIBUTING.md</a>) - as with one command, <code class='py-0.5 px-0.5 bg-gray-100'>nix-shell</code>, you get the full development enviornment including Haskell IDE support starting from a pristine system with nothing but Nix installed.
+    </p>
+  <h3 id='full-stack-haskell-from-prototype-to-production' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Full-Stack Haskell, from Prototype to Production</h3>
+    <p class='mb-3'>
+      Much of these technology choices were informed by my working with the folks from <a href='https://obsidian.systems' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Obsidian Systems</a>, whose philosophy is captured in <a href='https://www.youtube.com/watch?v=riJuXDIUMA0' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>this talk</a>.
+    </p>
+  <div class='ui basic segment centered grid'><div xmlhtmlRaw><iframe width="560" height="315" src="https://www.youtube.com/embed/riJuXDIUMA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div><h2 id='towards-perfecting-future-proof-note-taking' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Towards perfecting <a href='https://neuron.zettel.page/6f0f0bcc.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>future-proof</a> note-taking</h2>
+    <p class='mb-3'>
+      Making <a href='https://neuron.zettel.page/6f0f0bcc.html' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>future-proof</a> note-taking awesome is my current goal. <a href='https://github.com/srid/neuron/issues/213' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>LSP support</a>, which facilitates improved note-taking experience in modern editors like VSCode, for Neuron is just one of the several things we can do to move towards that goal.
+    </p>
+  
+    <p class='mb-3'>
+      Where does Cerveau fit in all of this? Cerveau is a “luxury on top”, and a gift to those who help <a href='https://github.com/sponsors/srid' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>sponsor the open-source Neuron</a> project to realize the aforementioned goal.
+    </p>
+  
+    <p class='mb-3'>
+      <a href='https://www.cerveau.app' class='text-pink-600 hover:underline' target='_blank' rel='noopener'><a href='http://www.cerveau.app' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>www.cerveau.app</a></a> offers a Free account (limited notes) for anybody to try, as well as a Pro account (unlimited notes) for <a href='https://github.com/sponsors/srid' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>GitHub sponsors</a> on the “Cerveau Pro Plan” tier or above.
+    </p>
+  <h2 id='will-cerveau-be-open-sourced' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Will Cerveau be open-sourced?</h2>
+    <p class='mb-3'>
+      I decided to entertain the idea of eventually open-sourcing Cerveau after <a href='https://twitter.com/availablegreen/status/1291162883125137408' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>a certain level of sponsors</a>.
+    </p>
+  <h2 id='whats-next' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>What’s next?</h2>
+    <p class='mb-3'>
+      Two major features I’d like to see done myself next are:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Auto-completion of links</strong>: typing <code class='py-0.5 px-0.5 bg-gray-100'>[[</code> in the CodeMirror text editor should bring up an autocomplete popup of note titles. <span class='ui green text'>Update</span>: pretty much done
+        </li>
+      
+        <li>
+          <strong>Auto-save</strong>: auto-save notes while editing, to provide a Google Docs like feel.
+        </li>
+      
+    </ul>
+  <div class='ui message segment'>
+    <p class='mb-3'>
+      Special thanks goes to the recent <a href='https://github.com/sponsors/srid' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>sponsors</a>, including <a href='https://github.com/hmaurer' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Henri Maurer</a>, <a href='https://github.com/piannone' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Peter Iannone</a>, <a href='https://github.com/zimbatm' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>zimbatm</a>, <a href='https://github.com/saifelokour' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Saif Elokour</a>, <a href='https://github.com/AlexanderThaller' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Alexander Thaller</a>, <a href='https://github.com/netstx' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Rafael</a>, <a href='https://github.com/codygman' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Cody Goodman</a>, <a href='https://github.com/neongreen' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Artyom Kazak</a> and <a href='https://github.com/abhas' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Abhas Abhinav</a>; as well as to Sanjiv Sahayam, Jared Weakly, Alex Chapman and Domen Kožar for feedback on the draft version of this post.
+    </p>
+  
+    <p class='mb-3'>
+      💖
+    </p>
+  </div>
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            “Cerveau” is prounced with the “eau” sounding like the “o” in “Go”. See <a href='https://en.wiktionary.org/wiki/cerveau#Pronunciation' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>audio playback</a>.
+          </div>
+        </div>
+      
+        <div id='fn2'>
+          <header class='italic'>
+            2.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Incidentally, the paper <a href='https://futureofcoding.org/papers/comprehensible-frp/comprehensible-frp.pdf' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>Explicitly Comprehensible Functional Reactive Programming</a> compares The Elm Architecture and Reflex Ecosystem’s frameworks.
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-pink-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/content/Projects/Neuron/Cerveau, a future-proof web app for notes.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+
+</article>
+              <div class='flex flex-col lg:flex-row lg:space-x-2'>
+                
+                
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-pink-600 mavenLinkBold hover:bg-pink-50' href='neuron-v1'>
+            Neuron 1.0 released
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-pink-200 hover:border-pink-500'>
+      <div><p><a href='https://www.cerveau.app' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>Cerveau</a>, the web app for neuron, is now officially out of public beta. Since the public beta (announced at <a href='cerveau-announce' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Cerveau, a future-proof web app for notes</a>), the following improvements were made:</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+              </div>
+              
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-pink-500' href='-/tags/blog/neuron'>
+        <!-- DoNotFormat -->
+        #blog/neuron
+        <!-- DoNotFormat -->
+      </a>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-pink-500' href='-/tags/nojs'>
+        <!-- DoNotFormat -->
+        #nojs
+        <!-- DoNotFormat -->
+      </a>
+    
+  </section>
+
+              <!-- What goes in this file will at the very end of the main div -->
+            </main>
+          </div>
+        </div>
+        <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.6.11.1'>
+      <img class='w-6 h-6 hover:text-pink-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-pink-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-pink-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+      </div>
+    </div>
+  
+</body>
+
+</html>
