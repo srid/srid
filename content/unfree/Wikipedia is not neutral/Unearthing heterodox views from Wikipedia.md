@@ -9,10 +9,23 @@ Wikipedia is [[Wikipedia is not neutral|not trust worthy]] in controversial topi
 3.  Look for large reverts in bold red (which are not obvious vandalism)
 4.  See what got removed
 
+You can also review the "Talk" page to help narrow this search (see the second example below).
+
 ## Examples
 
-For example, the topic of *sexual objectification* is not exactly uncontroversial. And heterodox views are periodically censored out of its Wikipedia article by power users (senior and [[woke-invasion|woke]] editors). The [removal of views by Christina Hoff Sommers and Naomi Wolf](https://en.wikipedia.org/w/index.php?title=Sexual_objectification&diff=1020578292&oldid=1020577791) on the subject is a good example. If you were just reading the latest version of the Wikipedia article, you would only get the censored version - but if you perused the page history and unearthed these deleted passages, you get to see a more comprehensive (i.e., umm ... encyclopedic) view on it.
+### Feminism
+
+The topic of *sexual objectification* is not exactly uncontroversial. Heterodox views are periodically censored out of its Wikipedia article by power users (senior and [[woke-invasion|woke]] editors). The [removal of views by Christina Hoff Sommers and Naomi Wolf](https://en.wikipedia.org/w/index.php?title=Sexual_objectification&diff=1020578292&oldid=1020577791) on the subject is a good example. If you were just reading the latest version of the Wikipedia article, you would only get the censored version - but if you perused the page history and unearthed these deleted passages, you get to see a more comprehensive (i.e., umm ... encyclopedic) view on it.
 
 [Here's another example](https://en.wikipedia.org/w/index.php?title=Sexual_objectification&diff=1020575648&oldid=1019253515) (one that I find more interesting) from the same article acting as an illustration of what I call 'soft censorship'. Here, the editor censored out a bunch of entries from the 'See also' section, presumably because it goes contrary to the doctrine of objectification.
+
+### Diet and animal foods
+
+Meat is [controversial](https://twitter.com/fleroy1974) given that vegan "ethics" and propaganda have got many otherwise intelligent people by the balls.
+ It is no surprise then that the Wikipedia [article](https://en.wikipedia.org/w/index.php?title=Monotrophic_diet&action=history) on [[Carnivore diet]] suffers from [[censorship|censorship]]. Here's where reviewing the Talk page is particularly illuminating. 
+
+As an example, see the Talk page section titled [Oxford Academic Study on Carnivore Diet](https://en.wikipedia.org/w/index.php?title=Talk:Monotrophic_diet&oldid=1091579803), where it becomes clear that pro-carnivore references are pruned out. As the discussion happend on 14th of February, 2022 - you will want to scroll down the [history](https://en.wikipedia.org/w/index.php?title=Monotrophic_diet&action=history) of the article around that date to find the revision with that reference originally added, which revision happens to be the latest one by user "ReadingRiot" (before "Psychologist Guy" censored it). The censored part from [that revision](https://en.wikipedia.org/w/index.php?title=Monotrophic_diet&oldid=1071881999#Carnivore_diet) reads -- so as to counteract the actual [[misinformation|misinformation]] prior in that passage regarding the diet being "potentially dangerous to health" -- "while others have found evidence supporting the idea that there may be some health benefits for certain individuals" which in turn uses this Oxford Academic study, titled [Behavioral Characteristics and Self-Reported Health Status among 2029 Adults Consuming a “Carnivore Diet”](https://academic.oup.com/cdn/article/5/12/nzab133/6415894?login=false) as reference.
+
+### Schadenfreude 
 
 Finally, even neural seeming articles are "cleaned up" by politically motivated editors. [An ealier version](https://en.wikipedia.org/w/index.php?title=Schadenfreude&oldid=1025877365) of the *Schadenfreude* article had a statement in the lead saying *"adults also experience schadenfreude, although generally they conceal it"* which got removed (an act of 'soft censorship') to the point that the article [now reads](https://en.wikipedia.org/w/index.php?title=Schadenfreude&oldid=1087233110) --- to present a more [[woke|woke]]-approved version of the emotion --- *"Schadenfreude [..] may be an important social emotion establishing "inequity aversion"."*.
