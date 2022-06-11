@@ -8,15 +8,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Mailbrew – Sridhar Ratnakumar
+    Org Mode – Sridhar Ratnakumar
   </title>
   
     
-      <meta property='og:description' content='Mailbrew is a web app for reading internet news in a digest form. It supports a variety of news sources: RSS, reddit, Hacker News, even newsletters. You can choose to receive digests by email on a daily, weekly or monthly basis.' />
+      <meta property='og:description' content='https://orgmode.org/' />
       <meta property='og:site_name' content='Sridhar Ratnakumar' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Mailbrew' />
+      <meta property='og:title' content='Org Mode' />
     
     
       <base href='/' />
@@ -98,8 +98,8 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
-    <a href='tdm/tools'>
-      Tools
+    <a href='emacs'>
+      Emacs
     </a>
   </div>
 
@@ -109,8 +109,8 @@
         <li>
 
   <div class='text-gray-900 forest-link'>
-    <a href='systems'>
-      <span class='emoji' data-emoji='ringed_planet' style='font-family: emoji'>🪐</span> Systems
+    <a href='software'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
     </a>
   </div>
 
@@ -146,26 +146,26 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-pink-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Mailbrew
+    Org Mode
   </a>
 </h1>
               <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <a href='https://mailbrew.com/?aff=sridca' class='text-pink-600 hover:underline' target='_blank' rel='noopener'><strong>Mailbrew</strong></a> is a web app for reading internet news in a digest form. It supports a variety of news sources: RSS, reddit, Hacker News, even newsletters. You can choose to receive digests by email on a daily, weekly or monthly basis.
+      <a href='https://orgmode.org/' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>https://orgmode.org/</a>
     </p>
   
     <p class='mb-3'>
-      See <a href='https://world.hey.com/dhh/not-just-what-you-read-but-how-64648303' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>DHH’s review</a>.
+      Although Markdown is good enough for <a href='zettelkasten' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'><span class='emoji' data-emoji='notebook'>📓</span> Zettelkasten</a>, wikis and such (cf. <a href='emanote' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Emanote</a>), for writing <em>outline</em> content Org Mode in <a href='emacs' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Emacs</a> shines the best.
     </p>
-  <div class='w-64 flex justify-center items-center mx-auto'>
+  
     <p class='mb-3'>
-      <img class='inline mb-3' src='Systems/Tools/mailbrew.png' alt='[[mailbrew.png]]' style='width: inherit;' />
+      For parsing org files in <a href='haskell' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Haskell</a>, checkout <a href='https://github.com/lucasvreis/org-parser' class='text-pink-600 hover:underline' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100'>org-parser</code></a> by lucasvreis … as well as the <a href='ema' class='text-pink-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Ema</a> app <a href='https://github.com/lucasvreis/abacateiro' class='text-pink-600 hover:underline' target='_blank' rel='noopener'>abacateiro</a> by the same author.
     </p>
-  </div>
+  
   <div class='flex items-center justify-center mt-2'>
-  <a class='text-gray-300 hover:text-pink-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/content/Systems/Tools/Mailbrew.md'>
+  <a class='text-gray-300 hover:text-pink-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/content/Software/Emacs/Org Mode.md'>
     <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
       <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
     </svg>
@@ -181,14 +181,29 @@
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-pink-600 mavenLinkBold hover:bg-pink-50' href='tdm/tools'>
-            Tools
+          <a class='text-pink-600 mavenLinkBold hover:bg-pink-50' href='neuron-v04'>
+            Neuron 0.4 released
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-pink-200 hover:border-pink-500'>
-      <div><a href='tdm/mailbrew' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Mailbrew</a> (news digest - daily, weekly or monthly)</div>
+      <div><p>The development version (not 0.4) supports Pandoc for Markdown. What this means is that it <em>is</em> possible to support other markup formats like reST, <a href='org' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Org Mode</a>, Asciidoc, etc. All they must have in common is a syntax (like the markdown autolinks) that will produce the appropriate Pandoc AST node for neuron to process.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-pink-600 mavenLinkBold hover:bg-pink-50' href='ema-announce'>
+            Announcing Ema - Static Sites in Haskell
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-pink-200 hover:border-pink-500'>
+      <div><p>It is worth emphasizing that I designed Ema to facilitate a <em>new model</em> of application development – one where the data is managed and edited <em>outside</em> of the application itself (such as in text editors, or even a database), but the <em>view</em> of the data is provided by the application. <a href='neuron' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Neuron</a> is a great example of that (and it might well be eventually rewritten on top of Ema; EDIT: <a href='emanote' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>indeed it is</a>). Another example is writing a diary / journal view on top of <a href='org' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Org Mode</a> daily notes, which is what I’m exploring in the <a href='https://github.com/srid/orgself' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>orgself</a> project that also uses Ema. A <a href='https://github.com/srid/ema/issues/10' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>third example</a> is to take a OPML file and present a daily-digest view of new content from the RSS feeds; the application would provide only a “view” into your data, which is a XML file that you may edit however you see fit. I like this model of apps, because the data and the data format remains under my control, all the while yet I’m not limited when it comes to <em>presentation</em> of that data, and I think the web is a great platform for the later.</p></div>
     </div>
   
 </div>
