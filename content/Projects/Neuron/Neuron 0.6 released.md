@@ -26,7 +26,7 @@ Uplink Trees are similar to navigation panel or category tree, except that the h
 
 ## Vim
 
-In addition to [Emacs](https://neuron.zettel.page/4a6b25f1.html), there is now a Vim extension for neuron. See [neuron.vim](https://github.com/ihsanturk/neuron.vim) by ihsan. Just like the Emacs extension, it supports "virtual titles" in neovim, where the title of a linked note is displayed next to the link ID, as you can see from the screenshot below.
+In addition to [Emacs](https://neuron.zettel.page/editor#emacs), there is now a Vim extension for neuron. See [neuron.vim](https://github.com/ihsanturk/neuron.vim) by ihsan. Just like the Emacs extension, it supports "virtual titles" in neovim, where the title of a linked note is displayed next to the link ID, as you can see from the screenshot below.
 
 ![](https://ipfs.io/ipfs/QmRA6WeuRrK7BMDdkxYc5X1VraBTUBBGpNbu8j1Kz1sv2y?filename=2020%20neuron-vim.png)
 

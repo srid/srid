@@ -70,6 +70,6 @@ $
 
 ## Roadmap, and formats other than Markdown
 
-The development version (not 0.4) supports Pandoc for Markdown. What this means is that it *is* possible to support other markup formats like reST, org-mode, Asciidoc, etc. All they must have in common is a syntax (like the markdown autolinks) that will produce the appropriate Pandoc AST node for neuron to process. 
+The development version (not 0.4) supports Pandoc for Markdown. What this means is that it *is* possible to support other markup formats like reST, [[Org Mode]], Asciidoc, etc. All they must have in common is a syntax (like the markdown autolinks) that will produce the appropriate Pandoc AST node for neuron to process. 
 
 [Comments at lobste.rs](https://lobste.rs/s/kydg6q/neuron_0_4_zettelkasten_note_management)

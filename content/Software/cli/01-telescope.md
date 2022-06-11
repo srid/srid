@@ -8,7 +8,7 @@ slug: cli/neovim/telescope
 
 ![](https://user-images.githubusercontent.com/3998/162593346-e460468e-d867-46cb-8a78-2ca518629d09.png)
 
-The [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) plugin gives us Doom Emacs-like fuzzy finder for standard editor operations, like opening files or switching buffers.
+The [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) plugin gives us Doom [[Emacs]]-like fuzzy finder for standard editor operations, like opening files or switching buffers.
 
 Continuing from the Nix of [[00-intro|previous post]], you only need to make two changes to the Nix to add this plugin:
 
