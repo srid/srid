@@ -18,7 +18,9 @@ In early 2013 I was prescribed enough antibiotics[^prescription] by a medical do
 
 I suffered with this condition for over 4 years, and saw plethora of dermatologists \(who knew naught but to prescribe ever more antibiotics[^moreanti]\; one even had me do low-dose Accutane). Then, just within two weeks of going on the carnivore diet \(beef, salt and pepper\) my symptoms dramatically reduced (down to about 95%). Over the next years I was to reintroduce several plant foods; and everytime I do, my symptoms would come back in vengeance.
 
-**Takeaway**: Doctors and [nutritionists](https://twitter.com/ifbacongrewont1/status/1322151733326450689) are not to be [[Trust|trusted]] blindly, especially when it comes to the topic of antibiotics and diet. Although harbouring no ill-will, they can't help but overweeningly[^ow][^bm] trot out what they had been taught (with [bias][pmasondoc]) in medical schools ... and [quackery][q1] and [misinformation][fl] is [not][q3] very [uncommon][q2].
+**Takeaway**: Doctors and [nutritionists](https://twitter.com/ifbacongrewont1/status/1322151733326450689) are not to be [[Trust|trusted]] blindly, especially when it comes to the topic of antibiotics and diet. Although harbouring no ill-will, they can't help but overweeningly[^ow][^bm] trot out what they had been taught (with [bias][pmasondoc]) in medical schools ... and [quackery][q1] and [misinformation][fl] is [not][q3] very [uncommon][q2]. As [one HN commenter](https://news.ycombinator.com/item?id=31711913) puts it:
+
+> Listen to the doctor, but also do your own research. I can guaran-damn-tee that you will obtain vastly superior results. It's not that all doctors are scoundrels looking to kill you & take your wallet. It's that they are afflicted by the same tunnel-vision, group-think, & subconscious self-interest as any other group of professionals.
 
 [q1]: https://theconversation.com/only-one-in-ten-medical-treatments-are-backed-by-high-quality-evidence-145224
 [q2]: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124
@@ -39,7 +41,7 @@ I suffered with this condition for over 4 years, and saw plethora of dermatologi
 
 Contrary to popular belief and health "knowledge," the carnivore diet (especially with offal) provides all the necessary nutrients and is safe. Meat is the only ["nutritionally complete" food](http://www.diagnosisdiet.com/food/meats/), and [some indigenous groups](https://justmeat.co/peoples/) have traditionally eaten an all-meat diet.
 
-One ought to pay lip service to general medical wisdom and any dominant nutrition ideology as they are laced with an anti-meat bias[^bias] using [pseudoscientific nutrition epidemiological studies](https://www.diagnosisdiet.com/epidemilogical-studies/) where, depending on the researcher's nutritional bias, one can establish [_any_ food item to be problematic](https://academic.oup.com/ajcn/article/97/1/127/4576988).
+One ought to pay lip service to general medical wisdom and any dominant nutrition ideology as they are laced with an anti-meat bias[^bias] (as well as [[climate-alarmism]]) using [pseudoscientific nutrition epidemiological studies](https://www.diagnosisdiet.com/epidemilogical-studies/) where, depending on the researcher's nutritional bias, one can establish [_any_ food item to be problematic](https://academic.oup.com/ajcn/article/97/1/127/4576988).
 
 [^bias]:
     **Some resources on the pro-plant / anti-meat bias**:
@@ -71,9 +73,11 @@ One ought to pay lip service to general medical wisdom and any dominant nutritio
 
         > Dietary policies, mass media, and activists increasingly portray plants as mostly beneficial and animal source foods (ASFs) as mostly harmful. Yet, both sides of this poorly informative plant/animal binary represent heterogeneous food groups, which can be either benign or harmful from an ethical, environmental, or health perspective. It is not helpful to base policies on such simplistic categorization, which derives from reductionist approaches to nutrition, distortions by journalists, societal anxieties, and various forms of bias.
 
-## Not for everyone
+## Stress vs diet
 
-The French woman [Jeanne Calment](https://en.wikipedia.org/wiki/Jeanne_Calment#Health_and_lifestyle) lived beyond 100 having enjoyed cigarrettes, port wine and plenty of chocolate. Unless you have a compromised gut flora as I do - as long as health and [well-being](https://en.wikipedia.org/wiki/Health_psychology) is the norm, you should enjoy and appreciate the pleasures of a varied diet.
+When it comes to health, I believe that stress is the biggest factor of all.
+
+The French woman [Jeanne Calment](https://en.wikipedia.org/wiki/Jeanne_Calment#Health_and_lifestyle) lived beyond 100 having enjoyed cigarrettes, port wine and plenty of chocolate. Unless you have a compromised gut flora as I do ... as long as health and [well-being](https://en.wikipedia.org/wiki/Health_psychology) are the norm, you should enjoy and appreciate the pleasures of a varied diet.
 
 ## Resources
 
