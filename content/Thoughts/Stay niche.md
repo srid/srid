@@ -21,6 +21,7 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
 
 - [Big Tech censorship likely brought forward decentralized tech](https://reclaimthenet.org/big-tech-censorship-likely-brought-forward-decentralized-tech/)
 - [Social networks: It's worse than you think](https://meta.ath0.com/2020/12/social-notwork/) - *"as the number of messages in the network rises, the quality of those which propagate falls"* (interpreting [this research](https://www.scientificamerican.com/article/information-overload-helps-fake-news-spread-and-social-media-knows-it/))
+- What happened to [Monica Cellio](https://www.cellio.org/stack) is worth reading to understand some of the fallings at Stack Exchange as the network grew beyond its niche.
 
 [vitalik]: https://decrypt.co/53890/parler-vitalik-buterin-ethereum
 
