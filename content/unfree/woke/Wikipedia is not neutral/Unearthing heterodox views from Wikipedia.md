@@ -21,8 +21,10 @@ The topic of *sexual objectification* is not exactly uncontroversial. Heterodox 
 
 ### Diet and animal foods
 
-Meat is [controversial](https://twitter.com/fleroy1974) given that vegan "ethics" and propaganda have got many otherwise intelligent people by the balls, even to the point of [peddling pseudoscience](https://www.diagnosisdiet.com/full-article/epidemiological-studies) for decades.
- It is no surprise then that the Wikipedia [article](https://en.wikipedia.org/w/index.php?title=Monotrophic_diet&action=history) on [[Carnivore diet]] suffers from [[censorship|censorship]]. Here's where reviewing the Talk page is particularly illuminating. 
+Meat is [controversial](https://twitter.com/fleroy1974) given that vegan "ethics" and propaganda[^wp] have got many otherwise intelligent people by the balls, even to the point of [peddling pseudoscience](https://www.diagnosisdiet.com/full-article/epidemiological-studies) for decades. It is no surprise then that the Wikipedia [article](https://en.wikipedia.org/w/index.php?title=Monotrophic_diet&action=history) on [[Carnivore diet]] suffers from [[censorship|censorship]]. Here's where reviewing the Talk page is particularly illuminating. 
+
+
+[^wp]: See [Wikipedia Has Been Tainted With Unscientific Vegan Propaganda](https://web.archive.org/web/20160305192216/http://authoritynutrition.com/wikipedia-tainted-with-vegan-propaganda/) by Kris Gunnars. This article got nuked, evidently, after Healthline acquired Authority Nutrition; one wonders why.
 
 As an example, see the Talk page section titled [Oxford Academic Study on Carnivore Diet](https://en.wikipedia.org/w/index.php?title=Talk:Monotrophic_diet&oldid=1091579803), where it becomes clear that pro-carnivore references are pruned out. As the discussion happend on 14th of February, 2022 - you will want to scroll down the [history](https://en.wikipedia.org/w/index.php?title=Monotrophic_diet&action=history) of the article around that date to find the revision with that reference originally added, which revision happens to be the latest one by user "ReadingRiot" (before "Psychologist Guy" censored it). The censored part from [that revision](https://en.wikipedia.org/w/index.php?title=Monotrophic_diet&oldid=1071881999#Carnivore_diet) reads -- so as to counteract the actual [[misinformation|misinformation]] prior in that passage regarding the diet being "potentially dangerous to health" -- "while others have found evidence supporting the idea that there may be some health benefits for certain individuals" which in turn uses this Oxford Academic study, titled [Behavioral Characteristics and Self-Reported Health Status among 2029 Adults Consuming a “Carnivore Diet”](https://academic.oup.com/cdn/article/5/12/nzab133/6415894?login=false) as reference.
 
@@ -34,5 +36,8 @@ Finally, even neural seeming articles are "cleaned up" by politically motivated 
 
 ## Notorious Wikipedia users behind censorship
 
-- [Zefr](https://nitter.net/alexandrosM/status/1536079541155729408)
+As you peruse the revision history and Talk pages, keep an eye out for these users:
+
+- [User:Zefr](https://nitter.net/alexandrosM/status/1536079541155729408): on medical science articles
     > Wikipedia user Zefr defends Remdesivir, makes sure nothing good about HCQ gets in, removed Robert Malone from the [[COVID-19|RNA vaccine]] page. Zefr defends the Operation Warp Speed & COVAX pages and apparently has a history of shutting down nutricuticals & supplements.
+- [User:Simonm223](https://thepostmillennial.com/quillette-is-at-the-centre-of-a-wikipedia-edit-war/): on political articles
