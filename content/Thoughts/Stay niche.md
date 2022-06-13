@@ -5,7 +5,7 @@ date: 2021-05-31
 
 [*Originally posted at [Satellite](https://satellite.earth/pub/@srid:stay-niche)*]{.text-sm}
 
-The quality of a social network goes down as it grows in size to represent the larger public. This happens merely as a result of the network now representing the "median" of the human condition. The median is of average quality. It represents the orthodox, boring and conventional.
+The quality of a social network goes down as it grows in size to represent the larger public. This happens merely as a result of the network now representing the "median" of the human condition. The median is of average quality. It represents the [[unfree|orthodox]], boring and conventional.
 
 In contrast, progress happens in [outliers](https://www.youtube.com/watch?v=dGDbpg1nG8Y). Humanity could not have been progressing towards betterment without the at-that-point-in-time fringe-heterodox thinking normally associated with creativity.
 
@@ -19,7 +19,6 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
 
 ## See also
 
-- [Moderation - r/TheMotte wiki](https://themotte.zettel.page/mod)[^mod]
 - [Big Tech censorship likely brought forward decentralized tech](https://reclaimthenet.org/big-tech-censorship-likely-brought-forward-decentralized-tech/)
 - [Social networks: It's worse than you think](https://meta.ath0.com/2020/12/social-notwork/) - *"as the number of messages in the network rises, the quality of those which propagate falls"* (interpreting [this research](https://www.scientificamerican.com/article/information-overload-helps-fake-news-spread-and-social-media-knows-it/))
 
