@@ -31,3 +31,8 @@ Of course, this article saw even more censorship in the months before. Compare [
 ### Schadenfreude 
 
 Finally, even neural seeming articles are "cleaned up" by politically motivated editors. [An ealier version](https://en.wikipedia.org/w/index.php?title=Schadenfreude&oldid=1025877365) of the *Schadenfreude* article had a statement in the lead saying *"adults also experience schadenfreude, although generally they conceal it"* which got removed (an act of 'soft censorship') to the point that the article [now reads](https://en.wikipedia.org/w/index.php?title=Schadenfreude&oldid=1087233110) --- to present a more [[woke|woke]]-approved version of the emotion --- *"Schadenfreude [..] may be an important social emotion establishing "inequity aversion"."*.
+
+## Notorious Wikipedia users behind censorship
+
+- [Zefr](https://nitter.net/alexandrosM/status/1536079541155729408)
+    > Wikipedia user Zefr defends Remdesivir, makes sure nothing good about HCQ gets in, removed Robert Malone from the [[COVID-19|RNA vaccine]] page. Zefr defends the Operation Warp Speed & COVAX pages and apparently has a history of shutting down nutricuticals & supplements.
