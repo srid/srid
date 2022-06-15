@@ -58,9 +58,11 @@ The French woman [Jeanne Calment](https://en.wikipedia.org/wiki/Jeanne_Calment#H
   * [Eat meat. Not too little. Mostly fat.](https://www.mostly-fat.com/eat-meat-not-too-little-mostly-fat/)
   * [What to Eat on a Carnivore Diet -- Paul Saladino](https://carnivoremd.com/what-to-eat-on-a-carnivore-diet-your-carnivore-diet-meal-plan/)
 * Science
-  * [Georgia Ede](https://www.diagnosisdiet.com/full-article/meat)
-  * [The Carnivore Code](https://carnivoremd.com/book/) (book)
-  * Examine: [Five new reviews looked at the evidence on red and processed meat consumption. The results caused quite a stir, as they seemed to contradict the recommendations of many dietary guidelines. We break down the evidence and what it means for you.](https://examine.com/nutrition/red-meat-is-good-for-you-now/)
+  * Easy to digest articles: [Georgia Ede](https://www.diagnosisdiet.com/full-article/meat)
+  * Detailed:
+    * [Behavioral Characteristics and Self-Reported Health Status among 2029 Adults Consuming a “Carnivore Diet”](https://academic.oup.com/cdn/article/5/12/nzab133/6415894?login=false)
+    * [Can a carnivore diet provide all essential nutrients?](https://journals.lww.com/co-endocrinology/Abstract/2020/10000/Can_a_carnivore_diet_provide_all_essential.11.aspx)
+    * Examine: [Five new reviews looked at the evidence on red and processed meat consumption. The results caused quite a stir, as they seemed to contradict the recommendations of many dietary guidelines. We break down the evidence and what it means for you.](https://examine.com/nutrition/red-meat-is-good-for-you-now/)
 * [Paleolithic Ketogenic Diet](https://www.researchgate.net/publication/323151200_Therapeutic_protocol_of_Paleomedicina_Hungary) (PKD): a variation of the carnivore diet---high fat, organ meat, without dairy or spices---designed to heal [intestinal permeability](https://www.youtube.com/watch?v=nDPM8o9jcFA) and [certain medical conditions](https://justmeat.co/wiki/pkd/#case-studies).
 * Medical
   * [Antibiotic abuse](https://en.wikipedia.org/wiki/Antibiotic_misuse)
