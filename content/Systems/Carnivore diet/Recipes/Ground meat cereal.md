@@ -6,7 +6,9 @@ tags: [blog]
 
 # Ground meat "cereal"
 
-A "[[Carnivore diet|carnivore]] cereal" made from duck fat, ground meat and salt.
+A "[[Carnivore diet|carnivore]] cereal" made from duck fat[^butter], ground meat and salt is my typical meal.
+
+[^butter]: Butter is better-tasting if you can tolerate it. 
 
 :::{.photoframe-center}
 ![[ground-meat-cereal.jpg]]
