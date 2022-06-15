@@ -10,6 +10,7 @@ Instances of tech companies successfully extricating themselves out of [[woke-in
 
 - **Coinbase**: [Coinbase is a mission focused company](https://blog.coinbase.com/coinbase-is-a-mission-focused-company-af882df8804)
 - **Basecamp**: [Summary by u/Amadanb](https://old.reddit.com/r/TheMotte/comments/n3pe45/culture_war_roundup_for_the_week_of_may_03_2021/gwwj9vm/?context=3&sort=best)
+- Kraken (Jesse Powell): https://twitter.com/jespow/status/1536978826344792064 
 
 ## Unwoke immigrants
 
