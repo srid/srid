@@ -40,4 +40,5 @@ As you peruse the revision history and Talk pages, keep an eye out for these use
 
 - [User:Zefr](https://nitter.net/alexandrosM/status/1536079541155729408): on medical science articles
     > Wikipedia user Zefr defends Remdesivir, makes sure nothing good about HCQ gets in, removed Robert Malone from the [[COVID-19|RNA vaccine]] page. Zefr defends the Operation Warp Speed & COVAX pages and apparently has a history of shutting down nutricuticals & supplements.
+- [User:Alexbrn](https://twitter.com/BrettWooldridge/status/1412768382936502277) on medical science (and [[COVID-19]] related) articles
 - [User:Simonm223](https://thepostmillennial.com/quillette-is-at-the-centre-of-a-wikipedia-edit-war/): on political articles
