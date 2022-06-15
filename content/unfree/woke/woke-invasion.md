@@ -7,7 +7,7 @@ slug: woke-invasion
 
 [![[DIE-antzombie.jpeg]]](https://twitter.com/ConceptualJames/status/1496602448018001931)
 
-Proponents of [[woke]] have been proselytizing (see also [[woke-inveigling]]) many unsuspecting organizations adopting a number of covert tactics.  See [this Twitter thread](https://old.reddit.com/r/TheMotte/comments/orsvle/culture_war_roundup_for_the_week_of_july_26_2021/h6woer9/?sort=top) for an example of how it works in education.
+Proponents of [[woke]] have been proselytizing (see also [[woke-inveigling]]) many unsuspecting organizations (many of whom, except [[unwoke]], yield to their demands) adopting a number of covert tactics.  See [this Twitter thread](https://old.reddit.com/r/TheMotte/comments/orsvle/culture_war_roundup_for_the_week_of_july_26_2021/h6woer9/?sort=top) for an example of how it works in education.
 
 Kara explains the particular situation in tech:
 
@@ -15,7 +15,7 @@ Kara explains the particular situation in tech:
 
 Or for a conspiratorial summary,
 
-> This is overtly political and has nothing to do with being "nice" or "empathetic". The corporations have inadvertently made an arrangement with critical theory leftists to transform society into a capitalist monopoly on top, and socialism on the bottom. That's the deal.
+> This is overtly political and has nothing to do with being "nice" or "empathetic". The corporations have inadvertently made an arrangement with [[crt|critical theory]] leftists to transform society into a capitalist monopoly on top, and socialism on the bottom. That's the deal.
 >
 > It's been dubbed "Woke Capitalism" ([https://www.youtube.com/watch?v=Vog7Wn1WGRM](https://www.youtube.com/watch?v=Vog7Wn1WGRM)), where the managerial class has reached a compromise in which they get to keep and - through being appointed as stewards of the political movement - _gain_ power, while activists of the movement get the transformation they demand.
 >
