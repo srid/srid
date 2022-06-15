@@ -21,7 +21,7 @@ The topic of *sexual objectification* is not exactly uncontroversial. Heterodox 
 
 ### Diet and animal foods
 
-Meat is [controversial](https://twitter.com/fleroy1974) given that vegan "ethics" and propaganda[^wp] have got many otherwise intelligent people by the balls, even to the point of [peddling pseudoscience](https://www.diagnosisdiet.com/full-article/epidemiological-studies) for decades. It is no surprise then that the Wikipedia [article](https://en.wikipedia.org/w/index.php?title=Monotrophic_diet&action=history) on [[Carnivore diet]] suffers from [[censorship|censorship]]. Here's where reviewing the Talk page is particularly illuminating. 
+Meat is [controversial](https://twitter.com/fleroy1974) given that [[Vegan Propaganda]][^wp] have got many otherwise intelligent people by the balls, even to the point of [peddling pseudoscience](https://www.diagnosisdiet.com/full-article/epidemiological-studies) for decades. It is no surprise then that the Wikipedia [article](https://en.wikipedia.org/w/index.php?title=Monotrophic_diet&action=history) on [[Carnivore diet]] suffers from [[censorship|censorship]]. Here's where reviewing the Talk page is particularly illuminating. 
 
 
 [^wp]: See [Wikipedia Has Been Tainted With Unscientific Vegan Propaganda](https://web.archive.org/web/20160305192216/http://authoritynutrition.com/wikipedia-tainted-with-vegan-propaganda/) by Kris Gunnars. This article got nuked, evidently, after Healthline acquired Authority Nutrition; one wonders why.
@@ -34,9 +34,9 @@ Of course, this article saw even more censorship in the months before. Compare [
 
 Finally, even neural seeming articles are "cleaned up" by politically motivated editors. [An ealier version](https://en.wikipedia.org/w/index.php?title=Schadenfreude&oldid=1025877365) of the *Schadenfreude* article had a statement in the lead saying *"adults also experience schadenfreude, although generally they conceal it"* which got removed (an act of 'soft censorship') to the point that the article [now reads](https://en.wikipedia.org/w/index.php?title=Schadenfreude&oldid=1087233110) --- to present a more [[woke|woke]]-approved version of the emotion --- *"Schadenfreude [..] may be an important social emotion establishing "inequity aversion"."*.
 
-## Notorious Wikipedia users behind censorship
+## Notorious Wikipedia editors behind censorship
 
-As you peruse the revision history and Talk pages, keep an eye out for these users:
+As you peruse the revision history and Talk pages, keep an eye out for these editors:
 
 - [User:Zefr](https://nitter.net/alexandrosM/status/1536079541155729408): on medical science articles
     > Wikipedia user Zefr defends Remdesivir, makes sure nothing good about HCQ gets in, removed Robert Malone from the [[COVID-19|RNA vaccine]] page. Zefr defends the Operation Warp Speed & COVAX pages and apparently has a history of shutting down nutricuticals & supplements.
