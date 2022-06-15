@@ -10,7 +10,7 @@ A disgruntled vocal minority belong to the church of anti-[[Blockchain|crypto]],
 
 ## Potential factors
 
-- [[climate-alarmism]]
+- [[climate-alarmism]]#
 - **Envy**
 
   > Having been involved from the beginning, I can tell you that detractors (especially vocal ones) are far more invested than proponents. Imagine declaring bitcoin dead in 2014, and then again the next year, and then the next... and while this is going on you can't help but calculate how much potential profit your mistake has cost you. You are also going to be struggling with envy, and your offended sense of justice. What would such an experience do to a person? Well, it makes them very upset - and desperate for something that would shield their ego. The whole environmental impact cover is a perfect example: the papers people point to are always poorly executed, using outdated data and poorly justified guestimation... always without acknowledging the most important part - "relative to what?" But that isn't really the point, the point is to provide a moral justification for the costly shortsighted position. --[sennight](https://news.ycombinator.com/item?id=31011937)
