@@ -39,7 +39,7 @@ Deepen your Haskell knowledge
 
 [locus of control]: https://www.wikiwand.com/en/Locus_of_control
 
-[^wk]: I do not recommend the Haskell Matrix space, as its moderator group is [[woke-invasion|invaded]] by a [[woke|woke]] activist with a history of bad moderation practices. The same can also be said of the *Haskell Foundation* (HF) Slack, and some of its members (HF has also recently started being discriminatory -- based on race, gender -- towards membership applications, and as such I wouldn't recommend anyone donate to such non-merit-based organizations).
+[^wk]: I do not recommend the Haskell Matrix space, as (last I checked) its moderator group got [[woke-invasion|invaded]] by a [[woke|woke]] activist with a history of bad moderation practices.
 
 ## Take the red pill with Nix
 
