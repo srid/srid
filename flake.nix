@@ -3,7 +3,7 @@
   nixConfig.extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
 
   inputs = {
-    emanote.url = "github:srid/emanote/orgmode";
+    emanote.url = "github:srid/emanote/master";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-parts.inputs.nixpkgs.follows = "nixpkgs";

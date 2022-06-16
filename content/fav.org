@@ -1,22 +1,22 @@
 #+title: My favourites
 
 * My favourites
-**NOTE**: This page is a work-in-progress while I also test [[https://github.com/srid/emanote/pull/304][org support]] in [[file:Projects/Emanote.md][Emanote]].
+**NOTE**: This page is a work-in-progress.
 ** Movies
-| Name                         | Genre | Remarks |
-|------------------------------+-------+---------|
-| Baahubali & Baahubali 2      |       |         |
-| Guess Who's Coming To Dinner |       |         |
-| Rear Window                  |       |         |
+| Name                         | Year | Genre             | Remarks |
+|------------------------------+------+-------------------+---------|
+| Rear Window                  | 1954 | Mystery thriller  |         |
+| Guess Who's Coming To Dinner | 1967 | Comedy-drama      |         |
+| Baahubali & Baahubali 2      | 2015 | Epic action drama |         |
 ** TV Shows
-| Name                  | Genre       | Remarks |
-|-----------------------+-------------+---------|
-| 3rd Rock From The Sun | Dark Humour |         |
-| [[https://en.wikipedia.org/wiki/Breathe_(TV_series)][Breathe]]               |             |         |
-| [[https://en.wikipedia.org/wiki/Fleabag][Fleabag]]               |             |         |
-| Star Trek NG          |             |         |
+| Name                  | Year | Genre                | Remarks |
+|-----------------------+------+----------------------+---------|
+| [[https://en.wikipedia.org/wiki/Star_Trek:_The_Next_Generation][Star Trek NG]]          | 1987 | Sci-fi               |         |
+| [[https://en.wikipedia.org/wiki/3rd_Rock_from_the_Sun][3rd Rock From The Sun]] | 1996 | Dark Humour          |         |
+| [[https://en.wikipedia.org/wiki/Fleabag][Fleabag]]               | 2013 | Comedy-drama         |         |
+| [[https://en.wikipedia.org/wiki/Breathe_(TV_series)][Breathe]]               | 2018 | Crime drama thriller |         |
 ** Books
-| Title            | Topic | Remarks |
-|------------------+-------+---------|
-| [[https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs][SICP]]             |       |         |
-| The Selfish Gene |       |         |
+| Title            | Year | Topic                | Remarks |
+|------------------+------+----------------------+---------|
+| [[https://en.wikipedia.org/wiki/The_Selfish_Gene][The Selfish Gene]] | 1976 | Evolutionary biology |         |
+| [[https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs][SICP]]             | 1984 | Computer Science     |         |
