@@ -34,3 +34,7 @@ A nutritionist reflects back on how she fell prey to propaganda, much like other
 
 > Dietary policies, mass media, and activists increasingly portray plants as mostly beneficial and animal source foods (ASFs) as mostly harmful. Yet, both sides of this poorly informative plant/animal binary represent heterogeneous food groups, which can be either benign or harmful from an ethical, environmental, or health perspective. It is not helpful to base policies on such simplistic categorization, which derives from reductionist approaches to nutrition, distortions by journalists, societal anxieties, and various forms of bias.
 
+
+## External links
+
+* [The Great Plant-Based Con by Jayne Buxton review — the case for eating meat](https://www.thetimes.co.uk/article/the-great-plant-based-con-by-jayne-buxton-review-the-case-for-eating-meat-xqj3fdx3x?utm_source=Twitter&utm_campaign=vegan&utm_medium=branded_social) (Twitter [thread](https://twitter.com/TheTimesBooks/status/1535901764922355713))
