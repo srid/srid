@@ -12,7 +12,7 @@ I eat only animal-based foods.[^coffee]
 
 ## Why?
 
-In early 2013 I was prescribed enough antibiotics[^prescription] by a medical doctor so as to [mess up](https://en.wikipedia.org/wiki/Dysbiosis) my gut (and possibly skin) microbiome. This lead to what was then a mild folliculitis to become severe chronic folliculitis with chronic seborrhoeic dermatitis following suit.
+In early 2013, a medical doctor prescribed me enough antibiotics[^prescription] so as to [mess up](https://en.wikipedia.org/wiki/Dysbiosis) my gut (and possibly skin) microbiome. This lead to what was then a mild folliculitis to become severe chronic folliculitis with chronic seborrhoeic dermatitis following suit.
 
 [^prescription]: Minocycline, 100g a day for 30 days--had to stop due to severe side effects. Then another prescription of the same but 50g a day, followed by same side effects. After stopping the second round of antibiotics, within about a week the skin reactions -- 30+ pus-filled inflammatory boils in face, neck and eventually scalp -- started.
 
