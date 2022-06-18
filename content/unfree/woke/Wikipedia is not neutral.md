@@ -21,4 +21,4 @@ Wikipedia's *revision history* however is useful in one way -- in [[Unearthing h
 - [Inside Wikipedia's leftist bias: socialism pages whitewashed, communist atrocities buried](https://www.foxnews.com/politics/wikipedia-bias-socialism-pages-whitewashed), Feb 18, 2021 ([via](https://mobile.twitter.com/MsMelChen/status/1364642598179139584))
 * [The face of crypto censorship on Wikipedia?](https://decrypt.co/23563/the-face-of-crypto-censorship-on-wikipedia) (See [Charles' tweet](https://twitter.com/IOHK_Charles/status/1242843188466982917))
 
-[^cens]: [Deleted by an editor](https://en.wikipedia.org/w/index.php?title=Ideological_bias_on_Wikipedia&diff=974363512&oldid=974363029), presumably as an act of #[[censorship]] so as to [[Wiliness of the wild|artfully]] prevent a casual critical reader from being cognizant of their bias.
+[^cens]: [Deleted by an editor](https://en.wikipedia.org/w/index.php?title=Ideological_bias_on_Wikipedia&diff=974363512&oldid=974363029), presumably as an act of #[[censorship]] so as to [[Wiliness of the wild|artfully]] prevent a casual critical reader from being cognizant of this bias.

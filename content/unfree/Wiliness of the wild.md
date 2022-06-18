@@ -2,7 +2,7 @@
 slug: wily
 ---
 
-The expression 'wiliness of the wild' (a direct opposite of [[Naivete]]) refers to the cunningness inherent to human species in particular as well as the animal species[^foxy] in general. The word 'wily' has the following as its synonyms:
+The expression 'wiliness of the wild' (a direct opposite of [[Naivete]]) refers to the cunningness inherent to human species (arising from the genetically-inherited instinctual passions) in particular, as well as the animal species[^foxy] in general. The word 'wily' has the following as its synonyms:
 
 [^foxy]: As indicated by the word '[foxy](https://www.lexico.com/definition/foxy)' for instance.
 
