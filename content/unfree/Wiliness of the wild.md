@@ -14,7 +14,7 @@ The expression 'wiliness of the wild' (a direct opposite of [[Naivete]]) refers 
 
 ## Wiliness as explicitly taught
 
-In modern Occidental cultures, the following authors have led their [[Gullibility|gullible]] audience into consciously enhancing their genetically inherited wiliness-of-the-wild:
+In modern Occidental cultures, the following authors have led their audience into consciously enhancing their genetically inherited wiliness-of-the-wild so as to take advantage of the [[Gullibility|gullible]] others:
 
 - [The 48 Laws of Power by **Robert Greene**](https://www.nateliason.com/notes/48-laws-power-robert-greene)
 - [How to Win Friends and Influence People by **Dale Carnegie**](https://fs.blog/how-to-win-friends-and-influence-people/)
