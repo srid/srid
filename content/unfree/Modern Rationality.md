@@ -4,7 +4,7 @@ slug: rat
 
 A modern philosophical movement that had its origins in the likes of Mr. Eliezer Yudkowsky (of the 'LessWrong' fame), known for its members' rather excursive[^ex] style of writings resulting from hyperfocus on cognition and blindness to [[free|affect]].
 
-Being artful (cf. [[Naivete|naiveté]]) often takes the form of [[Armchair philosophising|armchair]] sophistry[^sop] ("gish gallop" for instance) in rationalists. Like anyone with an [[Genetic Identity|identity]], [[Native intelligence|native intelligence]] does not always operate and function cleanly and clearly on the movement's members, despite well-meaning efforts and intentions.
+Being [[Wiliness of the wild|artful]] often takes the form of [[Armchair philosophising|armchair]] sophistry[^sop] ("gish gallop" for instance) in rationalists. Like anyone with an [[Genetic Identity|identity]], [[Native intelligence|native intelligence]] does not always operate and function cleanly and clearly on the movement's members, despite well-meaning efforts and intentions.
 
 :::{.photoframe-center}
 [![[midwit-sources.png]]](https://knowyourmeme.com/photos/2031360-iq-bell-curve-midwit)

@@ -6,7 +6,7 @@ slug: naiveté
 
 http://actualfreedom.com.au/richard/catalogue/naivete.htm
 
-> To be naïve is to be virginal, unaffected, unselfconsciously artless ... in short: ingenuous. Naiveté is a much-maligned word, having the common assumption that it implies gullibility. Nevertheless, to be naïve means to be simple and unsophisticated. -- http://actualfreedom.com.au/library/topics/naivete.htm
+> To be naïve is to be virginal, unaffected, unselfconsciously artless ... in short: ingenuous. Naiveté is a much-maligned word, having the common assumption that it implies [[Gullibility|gullibility]]. Nevertheless, to be naïve means to be simple and unsophisticated. -- http://actualfreedom.com.au/library/topics/naivete.htm
 
 > It is an effortless, almost foolish, sensation ... but exquisite. [..]
 
