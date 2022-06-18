@@ -19,4 +19,4 @@ In modern Occidental cultures, the following authors have led their [[Gullibilit
 - [The 48 Laws of Power by **Robert Greene**](https://www.nateliason.com/notes/48-laws-power-robert-greene)
 - [How to Win Friends and Influence People by **Dale Carnegie**](https://fs.blog/how-to-win-friends-and-influence-people/)
 
-Note: Although Mr. Greene here is more likely to receive moral opprobrium than Mr. Carnegie, both of their teachings ought to be viewed in a morally neutral way to allow the discovery of their underlying wiliness.
+Note: Although Mr. Greene here is more likely to receive moral opprobrium than Mr. Carnegie, both of their teachings ought to be viewed in a morally neutral way (see the 'no-one's fault' above) so as to allow the discovery of the wiliness inherent to the teachings.
