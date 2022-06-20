@@ -1,12 +1,13 @@
 ---
-slug: tdm/tools
+slug: tools
 ---
 
-Technology suited for digital minimalism,
+# Tools I use
 
 - **Brave** web browser, for its built-in ad blocker
   - [**Unhook**](https://unhook.app/) extension, to eliminate YouTube distractions
-  - [Minimal Twitter](https://github.com/thomaswang/minimal-twitter) extension, to eliminate Twitter distractions
 - [[Mailbrew]] (news digest - daily, weekly or monthly)
+  - See also [[Blocking social media in NixOS]]
 - Visual Studio Code
-- [[Nix]] & [[NixOS]]
+  - And [[Emacs]] for [[Org Mode]]
+- [[Nix]] & [[NixOS]] (and [[macOS]])
