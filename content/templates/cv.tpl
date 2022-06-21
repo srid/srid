@@ -61,9 +61,11 @@
               projects
               with Nix involved as necessary. At <em>Obsidian Systems</em>, and for other clients, I
               worked on Reflex / GHCJS projects writing full-stack apps in Haskell. </p>
-            <p class="font-serif mb-2">‣ During <apply template="cv/year">2020</apply>-<apply template="cv/year">2021
-              </apply>
-              ,
+            <p class="font-serif mb-2">
+              ‣ During
+              <!-- DoNotFormat -->
+              <apply template="cv/year">2020</apply>-<apply template="cv/year">2021</apply>,
+              <!-- DoNotFormat -->
               I briefly explored
               a couple of experimental indie projects including <a class="${linkClass}"
                 href="cerveau-announce">Cerveau</a>, a Reflex full-stack app for note-taking. <a class="${linkClass}"
@@ -82,7 +84,8 @@
             <p class="font-serif">
               My previous roles (all full-time) include <em>Microsoft</em> (<apply template="cv/year">2008</apply>-
               <apply template="cv/year">2009</apply>), <em>ActiveState</em> (<apply template="cv/year">2009</apply>-
-              <apply template="cv/year">2014</apply>) and <em>Heroku</em>. At ActiveState, I worked on a package manager
+              <apply template="cv/year">2014</apply>) and <em>Heroku</em> (<apply template="cv/year">2014</apply>-
+              <apply template="cv/year">2015</apply>). At ActiveState, I worked on a package manager
               for
               the
               company's Python distribution (ActivePython) and later took on working on its platform-as-a-service (Paas)
