@@ -1,7 +1,7 @@
 ---
 page:
   description: |
-    Personal website of Sridhar Ratnakumar; Haskell, Functional Programming, Blockchain, Quebec, Canada.
+    Personal website of Sridhar Ratnakumar. Haskell, Functional Programming, Blockchain, Quebec, Canada.
 template:
   name: /templates/home
   layout:
@@ -11,5 +11,5 @@ template:
 
 # Sridhar Ratnakumar
 
-This file is not rendered, but the metadata is used.
+!! This file is not rendered, but the metadata is used. !!
 

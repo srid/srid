@@ -8,7 +8,11 @@
       <!-- Topmost card -->
       <div style="max-width: 40em;" class="${cardClass} px-4 py-6 flex flex-col items-center justify-center space-y-4">
         <div class="w-32 flex-shrink-0">
-          <img src="static/favicon.jpeg" class="rounded-full object-cover">
+          <ema:metadata>
+            <with var="template">
+              <img src="${value:iconUrl}" class="rounded-full object-cover">
+            </with>
+          </ema:metadata>
         </div>
         <div class="flex flex-col items-start space-y-1 h-full">
           <header class="text-2xl">Hey, I'm Srid. 👋 </header>
