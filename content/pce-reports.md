@@ -1,6 +1,8 @@
 # PCE reports
 
-This page is dedicated to publishing my self-reports of [[PCE]]s and [[EE]]s.
+This page is dedicated to publishing my self-reports of [[PCE]]s and [[EE]]s. 
+
+Both the reports below were not self-induced; they happened spontaneously. But it is possible to develop the skill of triggering PCEs at will.
 
 ## Dec 5, 2021
 
