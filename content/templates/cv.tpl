@@ -1,6 +1,6 @@
 <apply template="base">
   <bind tag="body-main">
-    <div class="container max-w-screen-md mx-auto mt-8 flex flex-col items-center justify-center">
+    <div class="container max-w-screen-md mx-auto my-8 flex flex-col items-center justify-center">
       <bind tag="linkClass">underline</bind>
 
       <div class="bg-white rounded-lg shadow-md w-full flex flex-col space-y-4 text-gray-600">
