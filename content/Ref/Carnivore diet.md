@@ -68,6 +68,8 @@ The French woman [Jeanne Calment](https://en.wikipedia.org/wiki/Jeanne_Calment#H
   * [Antibiotic abuse](https://en.wikipedia.org/wiki/Antibiotic_misuse)
   * [Vaccine abuse](https://www.quantamagazine.org/how-vaccines-can-drive-pathogens-to-evolve-20180510/) ([also relevant](https://jamanetwork.com/journals/jamadermatology/fullarticle/2782441?widget=personalizedcontent&previousarticle=0))
 * [[Recipes]] on this site
+* Social Media / Culture / Politics (of meat)
+  * [Frédéric Leroy](https://twitter.com/fleroy1974)
 
 ## Relevant News
 
