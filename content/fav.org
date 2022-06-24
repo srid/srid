@@ -1,7 +1,6 @@
 #+title: My favourites
 
-* My favourites
-**NOTE**: This page is a work-in-progress.
+*NOTE*: This page is a work-in-progress.
 ** Movies
 | Name                         | Year | Genre             | Remarks |
 |------------------------------+------+-------------------+---------|
