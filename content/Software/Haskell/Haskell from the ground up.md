@@ -16,6 +16,7 @@ Approach (1) is great for "getting started", but proceeding to (2) and maybe eve
 
 ## Dig into the theory behind
 
+- https://www.haskellforall.com/2022/05/introductory-resources-to-type-theory.html
 - [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
 - Theory behind it all (Lambda calculus, System F, logic, etc. -- see "course" below)
 	- [Programming Language Foundations in Agda](https://plfa.github.io/)
