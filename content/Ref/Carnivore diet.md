@@ -39,7 +39,7 @@ I suffered with this condition for over 4 years, and saw plethora of dermatologi
 
 ## "Isn't it unsafe?"
 
-Contrary to popular belief and health "knowledge," the carnivore diet (especially with offal) provides all the necessary nutrients and is safe. Meat is the only ["nutritionally complete" food](http://www.diagnosisdiet.com/food/meats/), and [some indigenous groups](https://justmeat.co/peoples/) have traditionally eaten an all-meat diet.
+Contrary to popular belief and health "knowledge" -- promoted by [[Dietary Guidelines Misinformation]] based in part on [[Vegan Propaganda]] - the carnivore diet (especially with offal) provides all the necessary nutrients and is safe. Meat is the only ["nutritionally complete" food](http://www.diagnosisdiet.com/food/meats/), and [some indigenous groups](https://justmeat.co/peoples/) have traditionally eaten an all-meat diet.
 
 One ought to pay lip service to general medical wisdom and any dominant nutrition ideology as they are laced with an [[Vegan Propaganda|anti-meat bias]]# (as well as [[climate-alarmism]]#) using [pseudoscientific nutrition epidemiological studies](https://www.diagnosisdiet.com/epidemilogical-studies/) where, depending on the researcher's nutritional bias, one can establish [_any_ food item to be problematic](https://academic.oup.com/ajcn/article/97/1/127/4576988).
 
@@ -63,6 +63,7 @@ The French woman [Jeanne Calment](https://en.wikipedia.org/wiki/Jeanne_Calment#H
     * [Behavioral Characteristics and Self-Reported Health Status among 2029 Adults Consuming a “Carnivore Diet”](https://academic.oup.com/cdn/article/5/12/nzab133/6415894?login=false)
     * [Can a carnivore diet provide all essential nutrients?](https://journals.lww.com/co-endocrinology/Abstract/2020/10000/Can_a_carnivore_diet_provide_all_essential.11.aspx)
     * Examine: [Five new reviews looked at the evidence on red and processed meat consumption. The results caused quite a stir, as they seemed to contradict the recommendations of many dietary guidelines. We break down the evidence and what it means for you.](https://examine.com/nutrition/red-meat-is-good-for-you-now/)
+    - [Priority Micronutrient Density in Foods](https://www.frontiersin.org/articles/10.3389/fnut.2022.806566/full) - *"Foods with very high aggregate micronutrient density for WRA include organs (liver, spleen, kidney, and heart from beef, goat, lamb, chicken, and pork), small dried fish, DGLVs, bivalves (clams, mussels, and oysters), crustaceans, goat, beef, eggs, milk, canned fish with bones, lamb/mutton, and cheese. Foods with a high aggregate micronutrient density include goat milk and pork. Foods with a moderate aggregate micronutrient density include yogurt, fresh fish (including different species of marine and freshwater fish), pulses, and teff. All other foods included in the analysis scored as having low aggregate micronutrient density for WRA."*
 * [Paleolithic Ketogenic Diet](https://www.researchgate.net/publication/323151200_Therapeutic_protocol_of_Paleomedicina_Hungary) (PKD): a variation of the carnivore diet---high fat, organ meat, without dairy or spices---designed to heal [intestinal permeability](https://www.youtube.com/watch?v=nDPM8o9jcFA) and [certain medical conditions](https://justmeat.co/wiki/pkd/#case-studies).
 * Medical
   * [Antibiotic abuse](https://en.wikipedia.org/wiki/Antibiotic_misuse)
