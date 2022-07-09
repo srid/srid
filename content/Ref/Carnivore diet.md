@@ -53,7 +53,9 @@ One ought to pay lip service to general medical wisdom and any dominant nutritio
   * [Eat meat. Not too little. Mostly fat.](https://www.mostly-fat.com/eat-meat-not-too-little-mostly-fat/)
   * [What to Eat on a Carnivore Diet -- Paul Saladino](https://carnivoremd.com/what-to-eat-on-a-carnivore-diet-your-carnivore-diet-meal-plan/)
 * Science
-  * Easy to digest articles: [Georgia Ede](https://www.diagnosisdiet.com/full-article/meat)
+  * Overviews
+    * [Georgia Ede](https://www.diagnosisdiet.com/full-article/meat)
+    * [Diet Doctor](https://www.dietdoctor.com/low-carb/carnivore)
   * Detailed:
     * [Behavioral Characteristics and Self-Reported Health Status among 2029 Adults Consuming a “Carnivore Diet”](https://academic.oup.com/cdn/article/5/12/nzab133/6415894?login=false)
     * [Can a carnivore diet provide all essential nutrients?](https://journals.lww.com/co-endocrinology/Abstract/2020/10000/Can_a_carnivore_diet_provide_all_essential.11.aspx)
