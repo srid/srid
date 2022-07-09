@@ -47,7 +47,8 @@ One ought to pay lip service to general medical wisdom and any dominant nutritio
 
 * Healing reports
   * [Charlene  Andersen](http://web.archive.org/web/20191101053010/http://meatheals.com/2018/02/04/charlene-andersen/)
-  * [meatheals.com](http://meatheals.com/)
+  * [Mikhaila Peterson](https://selfhack.com/blog/mikhaila-peterson-why-the-carnivore-diet-helps-autoimmunity/)
+  * [Success Stories](https://carnivore.diet/category/success-stories/)
 * Getting started
   * [Eat meat. Not too little. Mostly fat.](https://www.mostly-fat.com/eat-meat-not-too-little-mostly-fat/)
   * [What to Eat on a Carnivore Diet -- Paul Saladino](https://carnivoremd.com/what-to-eat-on-a-carnivore-diet-your-carnivore-diet-meal-plan/)
