@@ -43,12 +43,6 @@ Contrary to popular belief and health "knowledge" -- promoted by [[Dietary Guide
 
 One ought to pay lip service to general medical wisdom and any dominant nutrition ideology as they are laced with an [[Vegan Propaganda|anti-meat bias]]# (as well as [[climate-alarmism]]#) using [pseudoscientific nutrition epidemiological studies](https://www.diagnosisdiet.com/epidemilogical-studies/) where, depending on the researcher's nutritional bias, one can establish [_any_ food item to be problematic](https://academic.oup.com/ajcn/article/97/1/127/4576988).
 
-## Stress vs diet
-
-When it comes to health, I believe that stress is the biggest factor of all.
-
-The French woman [Jeanne Calment](https://en.wikipedia.org/wiki/Jeanne_Calment#Health_and_lifestyle) lived beyond 100 having enjoyed cigarrettes, port wine and plenty of chocolate. Unless you have a compromised gut flora as I do ... as long as health and [well-being](https://en.wikipedia.org/wiki/Health_psychology) are the norm, you should enjoy and appreciate the pleasures of a varied diet.
-
 ## Resources
 
 * Healing reports
