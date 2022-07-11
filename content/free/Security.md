@@ -22,7 +22,7 @@ From [Selected Correspondence Vineeto Belonging](http://actualfreedom.com.au/act
 
 VINEETO: [..] belonging is about _feeling_ part of a group for emotional support, for **security** of one’s [[Belief|beliefs]] and for company in loneliness and misery. I have experienced and examined my beliefs, emotions, instinctual passions, urges, needs and fears around this issue in me and they no longer have any impact on me.
 
-I don’t belong to any group and I have dared to ==acknowledge the fact that I am on my own== – in fact, I as this flesh-and-blood body ==have been on my own all my life== despite my feelings of belonging or not belonging. For the path to an actual freedom I rely on my own [[PCE|pure consciousness experiences]] to know what I want to achieve and I found that the [[Actualism Method|method of actualism]] works to make me happy and [[Harmlessness|harmless]]. There is neither [[Belief|belief]] nor devotion nor [[Gratitude|gratitude]] nor **security** nor following an **authority** figure – none of these emotional needs and bondages exist anymore.
+I don’t belong to any group and I have dared to ==acknowledge the fact that I am on my own== – in fact, I as this flesh-and-blood body ==have been on my own all my life== despite my feelings of belonging or not belonging. For the path to an actual freedom I rely on my own [[PCE|pure consciousness experiences]] to know what I want to achieve and I found that the [[Actualism Method|method of actualism]] works to make me happy and [[Harmlessness|harmless]]. There is neither [[Belief|belief]] nor devotion nor [[Gratitude|gratitude]] nor **security** nor following an **[[Authority|authority]]** figure – none of these emotional needs and bondages exist anymore.
 
 ---
 
