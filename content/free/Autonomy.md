@@ -14,9 +14,7 @@ The [[Actualism Method|way of becoming actually free]] is both simple and practi
 
 From [Richard’s Selected Writings on People](http://actualfreedom.com.au/richard/selectedwriting/sw-people.htm):
 
-**RICHARD**: Unlike within the ancient _‘human’_ purview on life, compromise, allegiance, [[Authority|authority]], hierarchy, tolerance, acceptance and other methods of coping, play no part here.
-
-What does play a part here is consensus, independence, **autonomy**, equity, reciprocal understanding based on clear articulation and a general ease of living together in mutual peace and harmony
+**RICHARD**: Unlike within the ancient _‘human’_ purview on life, compromise, allegiance, [[Authority|authority]], hierarchy, tolerance, acceptance and other methods of coping, play no part here. What does play a part here is consensus, independence, **autonomy**, equity, reciprocal understanding based on clear articulation and a general ease of living together in mutual peace and harmony
 
 ## Vs assertiveness
 
