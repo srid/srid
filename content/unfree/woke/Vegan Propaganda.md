@@ -4,6 +4,15 @@ slug: vegan
 
 Some resources on the pro-plant / anti-meat bias in nutrition:
 
+
+#### Dr. David M Klurfeld’s [report](https://peakhuman.libsyn.com/dr-david-klurfeld-on-meat-not-causing-cancer-bogus-vegetarian-scientists-and-balanced-nutrition) of his experience with a WHO working group:
+
+- \[Dr. David M Klurfeld\] was on the World Health Organization working group to decide if meat causes cancer in 2015 with a bunch of vegetarians and vegans and says it was the most frustrating professional experience of his life
+- There were 22 scientists - half of which were epidemiologists
+- They claimed they used 800 studies but they actually only used 18
+- There was a group of people that were strongly against the vote
+- He thinks a number of the people made up their minds before they even arrived
+
 #### [Backlash Over Meat Dietary Recommendations Raises Questions About Corporate Ties to Nutrition Scientists](https://jamanetwork.com/journals/jama/article-abstract/2759201)
 
 > But what has for the most part been overlooked is that Katz and THI and many of its council members have numerous industry ties themselves. The difference is that their ties are primarily with companies and organizations that stand to profit if people eat less red meat and a more plant-based diet. Unlike the beef industry, these entities are surrounded by **an aura of health and wellness**, although that **isn’t necessarily evidence-based**.
@@ -17,14 +26,6 @@ A nutritionist reflects back on how she fell prey to propaganda, much like other
 #### [The Global Influence of the Seventh-Day Adventist Church on Diet](https://www.mdpi.com/2077-1444/9/9/251)
 
 > The emphasis on health ministry within the [Seventh-day Adventist](https://carnivoreaurelius.com/veganism-religious-roots/) (SDA) movement led to the development of sanitariums in mid-nineteenth century America. These facilities, the most notable being in Battle Creek, Michigan, initiated the development of vegetarian foods, such as breakfast cereals and analogue meats. **The SDA Church still operates a handful of food production facilities around the world.** The first Battle Creek Sanitarium dietitian was co-founder of the American Dietetics Association which ultimately advocated a vegetarian diet. **The SDA Church established hundreds of hospitals, colleges, and secondary schools and tens of thousands of churches around the world, all promoting a vegetarian diet.** As part of the ‘health message,’ diet continues to be an important aspect of the church’s evangelistic efforts. In addition to promoting a vegetarian diet and abstinence from alcohol, **the SDA church has also invested resources in demonstrating the health benefits of these practices through research. Much of that research has been conducted at Loma Linda University** in southern California, where there have been three prospective cohort studies conducted over 50 years. The present study, Adventist Health Study-2, enrolled 96,194 Adventists throughout North America in 2003–2004 with funding from the National Institutes of Health. Adventist Health Studies have demonstrated that a vegetarian diet is associated with longer life and better health.
-
-#### Dr. David M Klurfeld’s [report](https://peakhuman.libsyn.com/dr-david-klurfeld-on-meat-not-causing-cancer-bogus-vegetarian-scientists-and-balanced-nutrition) of his experience with a WHO working group:
-
-- \[Dr. David M Klurfeld\] was on the World Health Organization working group to decide if meat causes cancer in 2015 with a bunch of vegetarians and vegans and says it was the most frustrating professional experience of his life
-- There were 22 scientists - half of which were epidemiologists
-- They claimed they used 800 studies but they actually only used 18
-- There was a group of people that were strongly against the vote
-- He thinks a number of the people made up their minds before they even arrived
 
 #### [The Place of Meat in Dietary Policy: An Exploration of the Animal/Plant Divide](https://www.iastatedigitalpress.com/mmb/article/9456/galley/10547/view/) ([Twitter](https://twitter.com/fleroy1974/status/1288525767933079554)): 
 
