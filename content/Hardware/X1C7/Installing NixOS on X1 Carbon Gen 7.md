@@ -15,5 +15,5 @@ As usual, refer to [the Arch wiki](https://wiki.archlinux.org/index.php/Lenovo_T
 
 See my [configuration.nix][x1c7.nix] for full NixOS config.
 
-[x1c7.nix]: https://github.com/srid/nix-config/blob/master/configuration.nix/x1c7.nix
+[x1c7.nix]: https://github.com/srid/nixos-config/blob/master/systems/laptops/x1c7.nix
 
