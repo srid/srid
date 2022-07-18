@@ -2,7 +2,7 @@
 slug: DG
 ---
 
-The "Dietary Guidelines for Americans" (which many other countries inculclate uncritically) is a stellar example of actual [[misinformation]] sanctioned at government level. See [The Science Behind the Dietary Guidelines: Is It Sound?](https://www.nutritioncoalition.us/science-not-settled) for details.
+The "Dietary Guidelines for Americans" (which many other countries inculclate uncritically) is a stellar example of actual #[[misinformation]] sanctioned at government level. See [The Science Behind the Dietary Guidelines: Is It Sound?](https://www.nutritioncoalition.us/science-not-settled) for details.
 
 
 - USA
