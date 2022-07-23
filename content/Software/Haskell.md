@@ -39,7 +39,7 @@ Deepen your Haskell knowledge
 
 [locus of control]: https://www.wikiwand.com/en/Locus_of_control
 
-[^wk]: I do not recommend the Haskell Matrix space, as (last I checked) its moderator group got [[woke-invasion|invaded]] by a [[woke|woke]] activist with a history of bad moderation practices.
+[^wk]: In particular, you want to avoid the ones [[woke-invasion|invaded]] by [[woke|woke]] activist moderators.
 
 ## Take the red pill with Nix
 
