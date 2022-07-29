@@ -10,7 +10,7 @@ Music: [Voodoo Warriors of Love - Sweat](https://www.youtube.com/watch?v=9yUnLlP
 
 **Ear** drums are revelling and reverberating with a concomitant (unintended) act of ‘arriving [[Being here now|here]]’[^bdo] - notably (idiosyncratic to me) in the **visual** field (that familiar ever-present sense of “me” being present in between the eyes has now dissolved, enough to be arriving ‘here’[^bdo] where this living room is silently located).
 
-[^bdo]: \[Jul, 2022\]: In retrospect, the act of "arriving here"[^bdo] does seem to be on the track to, very close to, [[Being the doing of what is happening]].
+[^bdo]: \[Jul, 2022\]: In retrospect, the act of "arriving here" does seem to be on the track to, very close to, [[Being the doing of what is happening]].
 
 All of “my” (tacit, ‘normal’) problems took a backseat, and I am … just here. The near-constant (considered-to-be-normal) agitation of ‘me’ has given way to uncovering the ever-present (but hitherto hidden-to-consciousness) [[Stillness of time|stillness]] of this yellow-lit room.
 
