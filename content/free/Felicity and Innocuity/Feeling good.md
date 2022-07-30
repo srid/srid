@@ -4,7 +4,7 @@ slug: feeling-good
 
 RICHARD: ‘feeling good’ is an unambiguous term – it is a general sense of well-being – and if anyone wants to argue about what feeling good means ... then do not even bother trying to do this at all http://actualfreedom.com.au/actualism/vineeto/selected-writings/investigatefeelings.htm
 
-RICHARD: [..] ‘feeling good’ each moment again over extended periods is thus not an emotion per se but, rather, an affective mood – as in, ‘I’m in a good mood today’ (and, conversely, ‘I’m in a bad mood today’) – just as ‘feeling happy’ moment-to-moment, for the remainder of one’s life, is also an affective mood (e.g., ‘I’m in a happy mood today’) as it would be simply impossible to sustain an emotional happiness day-after-day week-after-week, let alone being passionately happy, due to such being both emotionally draining and, usually, a conditional happiness anyway. http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-method.htm
+RICHARD: [..] ‘feeling good’ each moment again over extended periods is thus not an emotion per se but, rather, an affective ==mood== – as in, ‘I’m in a good mood today’ (and, conversely, ‘I’m in a bad mood today’) – just as ‘feeling happy’ moment-to-moment, for the remainder of one’s life, is also an affective mood (e.g., ‘I’m in a happy mood today’) as it would be simply impossible to sustain an emotional happiness day-after-day week-after-week, let alone being passionately happy, due to such being both emotionally draining and, usually, a conditional happiness anyway. http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-method.htm
 
 ---
 
