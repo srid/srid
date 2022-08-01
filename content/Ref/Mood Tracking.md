@@ -14,7 +14,7 @@ In particular, the system will ask the question:
 
 > If an higher power were to grant you the wish that your present mood will be made permanent for the rest of your life, would you take it?
 
-There are two possible answers to it: *Yes* and *No*. If you answered "yes", you are [[Feeling good|feeling good]], otherwise it is evidence that the current mood needs to be bettered. Whether you are feeling meh/neutral[^stoic] *or* depressed, the answer would be "No".
+There are two possible answers to it: *Yes* and *No*. If you answered "yes", you are [[Feeling good|feeling good]], otherwise it is obvious that the current mood needs to be bettered. Whether you are feeling meh/neutral[^stoic] *or* depressed, the answer would be "No".
 
 [^stoic]: Unless, of course, one is so inculcated with stoic values as to accept a neutral mood for the rest of one's life.
 
