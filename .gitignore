@@ -1,4 +1,5 @@
 .direnv
 /result
+.vscode/tasks.json
 
 .zk/notebook.db
