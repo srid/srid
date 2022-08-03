@@ -8,7 +8,9 @@ slug: covid19
 
 From [Understanding pandemic-emergent personality & behavioral psychopathology](https://jdhaltigan.substack.com/p/understanding-pandemic-emergent-personality),
 
-> Diathesis-stress processes [*a latent vulnerability to experience anxiety, fear, and a more general lowered threshold for emotional lability*] are almost certainly a likely driver of pandemic behavioral response among a subset of the population, which in turn disproportionately influences media coverage and policy decisions.
+> Diathesis-stress processes [*a latent vulnerability to experience anxiety, fear, and a more general lowered threshold for emotional lability*] are almost certainly a likely driver of pandemic behavioral response among a subset of the population,[^niche] which in turn disproportionately influences media coverage and policy decisions.
+
+[^niche]: 'tis not surprising that this originated on "*a subset of the population*"; see [[Stay niche]].
 
 ## Humour
 
