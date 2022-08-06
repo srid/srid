@@ -149,9 +149,14 @@ Now, your notes are served at path `/notes` with the rest of the site served fro
 
 You can view the full code for this pattern [here](https://github.com/srid/emanima/pull/2). See the "Multi" and "MultiRoute" [examples](https://github.com/EmaApps/ema/tree/master/src/Ema/Example) in Ema source tree.
 
+
+## `Dynamic` instead of `LVar`
+
+This release also introduces the `Dynamic` type to represent type-varying model values. `Dynamic`'s compose better than LVar's. The [unionmount](https://github.com/srid/unionmount) library, which [[Emanote]] uses, has also been updated to be `Dynamic`-friendly.
+
 ## Real-world example
 
-See https://github.com/fpindia/fpindia-site for a real-world example that uses Ema 0.8. There are more [here](https://ema.srid.ca/examples).
+See https://github.com/fpindia/fpindia-site for a real-world example that uses Ema 0.8 (the jobs data is [managed using `Dynamic`](https://github.com/fpindia/fpindia-site/pull/24)). There are more [here](https://ema.srid.ca/examples).
 
 ## Credits
 
