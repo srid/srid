@@ -17,12 +17,12 @@ Today I'd like announce version 0.8 of [[Ema]]. This version is nearly a total r
 
 ## Generic routes
 
-Until Ema 0.6, you have had to manually write route encoders and decoders. This is not only a tedious task, but also an error-prone process. Ema 0.8 introduces the `IsRoute` typeclass that can be generically derived in a recursive manner. A simple `TemplateHaskell` based API is also provided. What this means is that you can define your routes simply as follows:
+Until Ema 0.6, you have had to manually write route encoders and decoders. This is not only a tedious task, but also an error-prone process. Ema 0.8 introduces the `IsRoute` typeclass that can be generically derived in an inductive manner. A simple `TemplateHaskell` based API is also provided. What this means is that you can define your routes simply as follows:
 
 ```haskell
 data Route 
-  = Route_Index
-  | Route_About
+  = Route_Index -- /index.html
+  | Route_About -- /about.html
   deriving stock (Show, Eq, Generic)
 
 deriveGeneric ''Route 
@@ -33,7 +33,7 @@ TH function `deriveIsRoute` will create the `IsRoute` instance for `Route`, whic
 
 ### `DerivingVia`
 
-TemplateHaskell is not strictly required, as you can alternatively use `DerivingVia` (via `GenericRoute`), though it is a bit more verbose:
+TemplateHaskell is not strictly required, as you can alternatively use `DerivingVia` (via `GenericRoute`), though it is slightly more verbose:
 
 ```haskell
 import Generic.SOP qualified as SOP
@@ -72,19 +72,20 @@ Here, `BlogRoute` is a sub-route of `Route`. Furthermore, `Slug` is a sub-route 
 
 `GenericRoute` is designed in a way as to delegate the generic logic into two different type classes: `HasSubRoutes` and `HasSubModels`. This enables customizability of generic behaviour.
 
-The first of these, `HasSubRoutes` enables deriving the encoding and decoding behaviour of individual route constructors "via" their isomorphic (in generic representation) types. Let's consider the typical way to derive `IsRoute` for `BlogRoute` above:
+The first of these, `HasSubRoutes`, enables deriving the encoding and decoding behaviour of individual route constructors "via" their isomorphic (in generic representation) types. Let's consider the typical way to derive `IsRoute` for `BlogRoute` above:
 
 ```haskell
+-- Let us assume that this is the top-level route in our site.
 data BlogRoute
   = BlogRoute_Index
   | BlogRoute_Post Slug
   deriving stock (Show, Eq, Generic)
 
-deriveGeneric ''Route 
-deriveIsRoute ''Route [t|[]|]
+deriveGeneric ''BlogRoute 
+deriveIsRoute ''BlogRoute [t|[]|]
 ```
 
-Generic deriving here generates encoder and decoder such that `BlogPost_Post "foo"` maps to `/post/foo.html`. That is, the "folder prefix" is determined from the constructor name's suffix (`_Post`). This behaviour can be customized using the `WithSubRoutes` option to `GenericRoute`:
+Generic deriving here generates encoder and decoder such that `BlogPost_Post "foo"` maps to `/post/foo.html`. That is, the "folder prefix" is determined from the constructor name's suffix (`_Post`). This behaviour can be customized using the `WithSubRoutes` option to `GenericRoute` thus controlling the semantics of `HasSubModels`:
 
 ```haskell
 data BlogRoute
@@ -102,11 +103,11 @@ deriveIsRoute ''Route [t|
   |]
 ```
 
-Now, `BlogPost_Post "foo"` maps to `/blog/foo.html`; note the distinction between `/blog` and `/post` prefix. You can also drop the prefix entirely by using `WithSubRoutes [FileRoute "index.html", Slug]`. Ema provides `FileRoute` and `FolderRoute`, but nothing should you stop from writing your own representation types; the only requirement is that they have an isomorphic generic representation.
+Now, `BlogPost_Post "foo"` maps to `/blog/foo.html`; note the distinction between `/blog` and `/post` prefix. You can also drop the prefix entirely by using `WithSubRoutes [FileRoute "index.html", Slug]`. Ema provides `FileRoute` and `FolderRoute`, but nothing should you stop from writing your own representation types; the only requirement is that they have an isomorphic generic representation and the target type as an `IsRoute` instance.
 
 ### Validity checks
 
-If your route prism is unlawful, Ema will check this at runtime. This is useful when you want to derive `IsRoute` manually. On the other hand, it is impossible to create unlawful prisms when using only generic deriving (without a custom `WithSubRoutes` encoding).
+If your route prism is unlawful (they fail to satisfy the `Prism'` laws), Ema will check this at runtime. This is useful when you want to derive `IsRoute` manually. On the other hand, it is impossible to create unlawful prisms when using only generic deriving (assuming no custom `WithSubRoutes` encoding).
 
 ## Composability
 
@@ -137,7 +138,7 @@ data TopRoute
 deriveGeneric ''TopRoute 
 deriveIsRoute ''TopRoute [t|
   '[ WithSubRoutes 
-     [ Route
+     [ Route -- Override this to drop the /myapp prefix.
      , FolderRoute "notes" Emanote.SiteRoute
      ]
    ]
@@ -152,7 +153,7 @@ You can view the full code for this pattern [here](https://github.com/srid/emani
 
 I greatly appreciate feedback and contributions from the following people in enabling this release:
 
-- [Lucas Vreis](https://github.com/lucasvreis), for actually [using](https://github.com/lucasvreis/abacateiro) development version of Ema as it is being developed and thereby impacting much of the design behind generic deriving of routes.
+- [Lucas Vreis](https://github.com/lucasvreis), for actually [using](https://github.com/lucasvreis/abacateiro) the development branch (`multisite`) of Ema as it is being developed and thereby influencing much of the design behind generic deriving of routes.
 - [Riuga Bachi](https://github.com/RiugaBachi), for [contributing](https://github.com/EmaApps/ema/pulls?q=author%3ARiugaBachi+) TemplateHaskell support, better compiler error messages, etc.
 - [Iceland_jack](https://stackoverflow.com/users/165806/iceland-jack), [dfeuer](https://stackoverflow.com/users/1477667/dfeuer), [K. A. Buhr](https://stackoverflow.com/users/7203016/k-a-buhr) and others for answering my Haskell questions on Stackoverflow.
 
