@@ -149,6 +149,10 @@ Now, your notes are served at path `/notes` with the rest of the site served fro
 
 You can view the full code for this pattern [here](https://github.com/srid/emanima/pull/2). See the "Multi" and "MultiRoute" [examples](https://github.com/EmaApps/ema/tree/master/src/Ema/Example) in Ema source tree.
 
+## Real-world example
+
+See https://github.com/fpindia/fpindia-site for a real-world example that uses Ema 0.8. There are more [here](https://ema.srid.ca/examples).
+
 ## Credits
 
 I greatly appreciate feedback and contributions from the following people in enabling this release:
