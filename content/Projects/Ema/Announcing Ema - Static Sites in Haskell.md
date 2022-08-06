@@ -4,7 +4,7 @@ tags: [blog/ema]
 date: 2021-04-28
 ---
 
-:::{.ui .centered .message}
+:::{.page-note}
 **tldr**: Announcing [Ema](https://ema.srid.ca/), a new static site generator in Haskell with hot reload destined to develop an unique kind of apps. This post mostly goes over the background of choosing to create it.
 :::
 
