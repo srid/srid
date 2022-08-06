@@ -15,9 +15,11 @@ Today I'd like announce version 0.8 of [[Ema]]. This version is nearly a total r
 1. **Generic routes**: automatically derive route encoders and decoders using generics 
 1. **Composability**: combine multiple Ema sites to produce a new top-level site.
 
+This post will give a rough overview of the new features, but checkout [the official tutorial](https://ema.srid.ca/tutorial) if you are new to Ema. 
+
 ## Generic routes
 
-Until Ema 0.6, you have had to manually write route encoders and decoders. This is not only a tedious task, but also an error-prone process. Ema 0.8 introduces the `IsRoute` typeclass that can be generically derived in an inductive manner. A simple `TemplateHaskell` based API is also provided. What this means is that you can define your routes simply as follows:
+Until Ema 0.6, you have had to manually write route encoders and decoders. This is not only a tedious task, but also an error-prone process. Ema 0.8 introduces the `IsRoute` typeclass that can be generically derived in an inductive manner. A simple `TemplateHaskell` based API is also provided. What this means is that you can define your routes simply as follows and get encoders and decoders for free:
 
 ```haskell
 data Route 
@@ -26,10 +28,10 @@ data Route
   deriving stock (Show, Eq, Generic)
 
 deriveGeneric ''Route 
-deriveIsRoute ''Route [t|[]|]
+deriveIsRoute ''Route [t|'[]|]
 ```
 
-TH function `deriveIsRoute` will create the `IsRoute` instance for `Route`, which in turn provides a `routePrism` method that returns, effectively, an [`optics-core` `Prism'` type](https://hackage.haskell.org/package/optics-core-0.4.1/docs/Optics-Prism.html#t:Prism-39-)--specifically, `Prism' FilePath Route`. This prism can be used to both encode and decode routes to and from the associated file paths.
+The TH function `deriveIsRoute` will create the `IsRoute` instance for `Route`, which in turn provides a `routePrism` method that returns, effectively, an [`optics-core` `Prism'` type](https://hackage.haskell.org/package/optics-core-0.4.1/docs/Optics-Prism.html#t:Prism-39-)--specifically, `Prism' FilePath Route`. This prism can be used to both encode and decode routes to and from the associated file paths.
 
 ### `DerivingVia`
 
@@ -46,7 +48,7 @@ data Route
   deriving (HasSubRoutes, HasSubModels, IsRoute) via (GenericRoute Route '[])
 ```
 
-TemplateHaskell however has better error messages due to use of standalone deriving.
+The TH approach, however, has better error messages due to use of standalone deriving.
 
 ### Sub-routes
 
@@ -103,9 +105,9 @@ deriveIsRoute ''Route [t|
   |]
 ```
 
-Now, `BlogPost_Post "foo"` maps to `/blog/foo.html`; note the distinction between `/blog` and `/post` prefix. You can also drop the prefix entirely by using `WithSubRoutes [FileRoute "index.html", Slug]`. Ema provides `FileRoute` and `FolderRoute`, but nothing should you stop from writing your own representation types; the only requirement is that they have an isomorphic generic representation and the target type as an `IsRoute` instance.
+Now, `BlogPost_Post "foo"` maps to `/blog/foo.html`; note the distinction between `/blog` and `/post` prefix. You can also drop the prefix entirely by using `WithSubRoutes [FileRoute "index.html", Slug]`. Ema provides `FileRoute` and `FolderRoute` (which have an `IsRoute` instance), but nothing should you stop from writing your own representation types; the only requirement is that they have an isomorphic generic representation and the target type has an `IsRoute` instance.
 
-### Validity checks
+### Route isomorphism checks
 
 If your route prism is unlawful (they fail to satisfy the `Prism'` laws), Ema will check this at runtime. This is useful when you want to derive `IsRoute` manually. On the other hand, it is impossible to create unlawful prisms when using only generic deriving (assuming no custom `WithSubRoutes` encoding).
 
@@ -166,4 +168,4 @@ I greatly appreciate feedback and contributions from the following people in ena
 - [Riuga Bachi](https://github.com/RiugaBachi), for [contributing](https://github.com/EmaApps/ema/pulls?q=author%3ARiugaBachi+) TemplateHaskell support, better compiler error messages, etc.
 - [Iceland_jack](https://stackoverflow.com/users/165806/iceland-jack), [dfeuer](https://stackoverflow.com/users/1477667/dfeuer), [K. A. Buhr](https://stackoverflow.com/users/7203016/k-a-buhr) and others for answering my Haskell questions on Stackoverflow.
 
-For further information, see the official documentation: https://ema.srid.ca
+For further information, see the official documentation: https://ema.srid.ca.
