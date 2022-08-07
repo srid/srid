@@ -72,7 +72,6 @@ The `--run` argument will invoke the given command instead of dropping us in an 
 You can use the above nix-shell command in the shebang to create self-contained Haskell scripts. Let us see an example, but using [[ghcid]], instead of runhaskell:
 
 ```haskell
--- myscript.hs
 #! /usr/bin/env -S"ANSWER=42" nix-shell
 #! nix-shell -p ghcid
 #! nix-shell -p "haskellPackages.ghcWithPackages (p: [p.shower])"
@@ -88,7 +87,7 @@ main = do
   printer (question, "is", answer)
 ```
 
-Run `chmod u+x myscript.hs` to make it an executable, and then run it as `./myscript.hs`. Not only is it a self-sufficient script (depending on nothing but nix in the environment), but thanks to ghcid it also re-compiles and re-launches itself whenever it changes! See more examples [here](https://github.com/srid/aoc2019).
+Save this file as `myscript.hs` and run `chmod u+x myscript.hs` to make it an executable, and then run it as `./myscript.hs`. Not only is it a self-sufficient script (depending on nothing but nix in the environment), but thanks to ghcid it also re-compiles and re-launches itself whenever it changes! See more examples [here](https://github.com/srid/aoc2019).
 
 ## Cabal project
 
