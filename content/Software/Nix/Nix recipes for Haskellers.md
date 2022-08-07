@@ -4,7 +4,7 @@ tags: [blog]
 date: 2019-12-03
 ---
 
-The goal of this article is to get you comfortable managing simple #[[Haskell]] programs and projects using the [[Nix]] package manager without getting too much into the details.
+The goal of this article is to get you comfortable managing simple #[[Haskell]] programs and projects using the [[Nix]] package manager without getting too much into the details. See [haskell-template](https://github.com/srid/haskell-template) if you want a ready-made Nix-based project template for Haskell.
 
 ## Prerequisites
 
