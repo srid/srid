@@ -47,7 +47,7 @@ From [What is the Answer to ‘How Am I Experiencing this Moment of Being Alive?
 
 > **RESPONDENT:** _... but I see what is missing is I must generate felicity as my resident mood and not just be in touch with it sometimes._
 > 
-> **RICHARD:** Yes ... and then, further along the way, be felicitous/ innocuous (‘I’ am ‘my’ feelings and ‘my’ feelings are ‘me’).
+> **RICHARD:** Yes ... and then, further along the way, be felicitous/ innocuous ([['I' am 'my' feelings and 'my' feelings are 'me'|‘I’ am ‘my’ feelings and ‘my’ feelings are ‘me’]]).
 
 > **RESPONDENT:** _... but thank you for pointing out why because, obviously, how can I be happy when my attitude is ‘I didn’t ask to be born.’? HA!_
 > 
