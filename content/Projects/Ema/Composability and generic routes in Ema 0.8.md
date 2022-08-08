@@ -10,7 +10,7 @@ date: 2022-08-07
 
 Today I'd like announce version 0.8 of [[Ema]]. This version is nearly a total rewrite,[^pr] aimed at improving Ema towards two ends:
 
-[^pr]: [The PR](https://github.com/EmaApps/ema-template/pull/22) spawned commits over nearly 7 months of intermitten work with feedback and contributions from others.
+[^pr]: [The PR](https://github.com/EmaApps/ema-template/pull/22) spawned commits over nearly 7 months of intermittent work with feedback and contributions from others.
 
 1. **Generic routes**: automatically derive route encoders and decoders using generics 
 1. **Composability**: combine multiple Ema sites to produce a new top-level site.
