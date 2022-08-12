@@ -16,7 +16,7 @@ jobs:
             substituters = https://cache.garnix.io https://cache.nixos.org/
       - name: Build the website (Nix) 🔧
         run: |
-          LANG=C.UTF-8 LC_ALL=C.UTF-8 nix build -j 4
+          nix build -j 4
       - name: Deploy to gh-pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
