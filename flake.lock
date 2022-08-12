@@ -26,16 +26,16 @@
         "tailwind-haskell": "tailwind-haskell"
       },
       "locked": {
-        "lastModified": 1660339271,
-        "narHash": "sha256-npUmB7oK2d+Ef22G4s/npvXMf/vo3uWtt3ACtcmt+0Q=",
+        "lastModified": 1660340006,
+        "narHash": "sha256-NyJIyAjevnS8vsu0l8m/Vkmj9m77qzKAe2/TyI4oAuA=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "7329f502ed28d771bd80d8c687e5eddc69fab6fe",
+        "rev": "7e4257f79458901bbe8360dd848454dee2cccb2c",
         "type": "github"
       },
       "original": {
         "owner": "srid",
-        "ref": "master",
+        "ref": "nix-build-encoding",
         "repo": "emanote",
         "type": "github"
       }
