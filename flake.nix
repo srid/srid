@@ -14,12 +14,9 @@
       systems = nixpkgs.lib.systems.flakeExposed;
       imports = [ inputs.emanote.flakeModule ];
       perSystem = { self', pkgs, system, ... }: {
-        emanote = {
-          package = inputs.emanote.packages.${system}.default;
-          sites."default" = {
-            path = ./content;
-            pathString = "./content";
-          };
+        emanote.sites."default" = {
+          path = ./content;
+          pathString = "./content";
         };
         devShells.default = pkgs.mkShell {
           buildInputs = [ pkgs.nixpkgs-fmt ];
