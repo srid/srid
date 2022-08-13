@@ -17,6 +17,7 @@
         emanote.sites."default" = {
           path = ./content;
           pathString = "./content";
+          prettyUrls = true;
         };
         devShells.default = pkgs.mkShell {
           buildInputs = [ pkgs.nixpkgs-fmt ];
