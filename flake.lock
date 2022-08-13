@@ -60,26 +60,6 @@
         "type": "github"
       }
     },
-    "flake-parts_2": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1657102481,
-        "narHash": "sha256-62Fuw8JgPub38OdgNefkIKOodM9nC3M0AG6lS+7smf4=",
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "rev": "608ed3502263d6f4f886d75c48fc2b444a4ab8d8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "type": "github"
-      }
-    },
     "flake-utils": {
       "locked": {
         "lastModified": 1652776076,
@@ -127,7 +107,10 @@
     "root": {
       "inputs": {
         "emanote": "emanote",
-        "flake-parts": "flake-parts_2",
+        "flake-parts": [
+          "emanote",
+          "flake-parts"
+        ],
         "nixpkgs": [
           "emanote",
           "nixpkgs"

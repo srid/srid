@@ -5,8 +5,7 @@
   inputs = {
     emanote.url = "github:srid/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
-    flake-parts.url = "github:hercules-ci/flake-parts";
-    flake-parts.inputs.nixpkgs.follows = "nixpkgs";
+    flake-parts.follows = "emanote/flake-parts";
   };
 
   outputs = inputs@{ self, flake-parts, nixpkgs, ... }:
