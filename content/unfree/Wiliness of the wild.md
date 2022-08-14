@@ -20,3 +20,7 @@ In modern Occidental cultures, the following authors have led their audience int
 - [How to Win Friends and Influence People by **Dale Carnegie**](https://fs.blog/how-to-win-friends-and-influence-people/)
 
 Note: Although Mr. Greene here is more likely to receive moral opprobrium than Mr. Carnegie, both of their teachings ought to be viewed in a morally neutral way (see the 'no-one's fault' above) so as to allow the discovery of the wiliness inherent to the teachings.
+
+### Other examples
+
+- [*Words That Work: It's Not What You Say, It's What People Hear* by GOP propagandist Frank Luntz](https://old.reddit.com/r/TheMotte/comments/wi8rc4/smallscale_question_sunday_for_august_07_2022/ijiapob/?sort=confidence)
