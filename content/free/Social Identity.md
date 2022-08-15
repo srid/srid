@@ -14,7 +14,7 @@ slug: identity/social
 > 4\. A religious/spiritual identity as a ‘Hindu’, a ‘Muslim’, a ‘Christian’, a ‘Buddhist’ ad infinitum.  
 > 5\. A ideological identity as a ‘Capitalist’, a ‘Communist’, a ‘Monarchist’, a ‘Fascist’ and etcetera.  
 > 6\. A political identity as a ‘Democrat’, a ‘Tory’, a ‘Republican’, a ‘Liberal’ and all the rest.  
-> 7\. A family identity as ‘son’/‘daughter’, ‘brother’/‘sister’, ‘father’/‘mother’ and the whole raft of relatives.  
+> 7\. A [[Filial duty|family identity]] as ‘son’/‘daughter’, ‘brother’/‘sister’, ‘father’/‘mother’ and the whole raft of relatives.  
 > 8\. A gender identity as ‘boy’/‘girl’, ‘man’/‘woman’.
 
 </font>
