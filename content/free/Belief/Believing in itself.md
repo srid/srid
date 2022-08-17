@@ -16,10 +16,10 @@ I would just ask how someone – anyone – could successfully achieve what amou
 
 I would look at the sentence: ‘The ability to believe – **believing in itself** – has vanished out of me’. I would ask myself just what this means. I would wonder whether this is possible ... whether this faculty that is common to all humans can indeed vanish. I would look into myself to observe and examine my own believing faculty ... I would watch it in action. I would do this because this person could be saying something that might – just might – break through the stranglehold that the ‘I’ has on me.
 
-For is it not a fact that [[Genetic Identity|‘I’]] am nothing but a belief? Do ‘I’ not arise out of the act of believing in itself? The action of believing is to emotionally imagine something to be real that is not actual. When one observes oneself in action, ‘I’ seem to be real – very real at times – but am ‘I’ actual? Am ‘I’ actual, as in tangible, corporeal, material, substantial, palpable? No?
+For is it not a fact that [[Identity|‘I’]] am nothing but a belief? Do ‘I’ not arise out of the act of believing in itself? The action of believing is to emotionally imagine something to be real that is not actual. When one observes oneself in action, ‘I’ seem to be real – very real at times – but am ‘I’ actual? Am ‘I’ actual, as in tangible, corporeal, material, substantial, palpable? No?
 
 Then does it not behove one to look at the very activity of believing?
 
 ---
 
-RICHARD: Unfortunately it is not such a simple matter as merely exposing and dropping beliefs and misconceptions. I would suggest asking who is doing the exposing and dropping. I would enquire into just who is holding the beliefs and misconceptions concerning an on-going self. [[Genetic Identity|‘I’]] cannot drop the belief that ‘I’ exist because ‘I’, the would-be ‘dropper’, am what is to be dropped. Like-wise, ‘I’ the would-be ‘exposer’, am what is to be exposed. Only [[Apperception|apperceptive awareness]] will do the trick.
+RICHARD: Unfortunately it is not such a simple matter as merely exposing and dropping beliefs and misconceptions. I would suggest asking who is doing the exposing and dropping. I would enquire into just who is holding the beliefs and misconceptions concerning an on-going self. [[Identity|‘I’]] cannot drop the belief that ‘I’ exist because ‘I’, the would-be ‘dropper’, am what is to be dropped. Like-wise, ‘I’ the would-be ‘exposer’, am what is to be exposed. Only [[Apperception|apperceptive awareness]] will do the trick.

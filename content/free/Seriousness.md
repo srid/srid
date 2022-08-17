@@ -46,7 +46,7 @@ Now, as far as I am concerned the above quote could not be more clear – I even
 
 http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-happy2.htm
 
-**RICHARD:** As ==the process of **becoming serious** occurs during puberty== – when the biological imperative kicks in big-time – it thus runs very deep and is fundamental to the make-up of [[Genetic Identity|‘my’]] adulthood.
+**RICHARD:** As ==the process of **becoming serious** occurs during puberty== – when the biological imperative kicks in big-time – it thus runs very deep and is fundamental to the make-up of [[Identity|‘my’]] adulthood.
 
 [^ed]: Ctrl+F `embedded, via` in [this page](http://www.actualfreedom.com.au/richard/listdcorrespondence/listd06.htm) for the source of this addition.
 

@@ -8,4 +8,4 @@ slug: HAIETMOBA
 
 [...] ‘The words ‘how am I experiencing this moment of being alive’ simply refer the make-up of the [[Aware-Cum-Attentive|awareness-cum-attentiveness]] being applied ... as distinct from, say, the buddhistic ‘mindfulness’ (which is another ball-game entirely).
 
-In other words the focus is upon how [[Genetic Identity|identity]] in toto is standing in the way of the already always existing peace-on-earth being apparent just [[Being here now|here]] right now.
+In other words the focus is upon how [[Identity|identity]] in toto is standing in the way of the already always existing peace-on-earth being apparent just [[Being here now|here]] right now.

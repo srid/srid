@@ -1,10 +1,15 @@
 ---
-slug: identity/genetic
+slug: identity
 ---
 
-[Ref](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ30a.htm),
+
+http://www.actualfreedom.com.au/richard/default.htm
+
+RICHARD: [..] the single root cause of all the mayhem and misery that epitomises the human condition is the persistent feeling of being an identity inhabiting the body: an affective ‘entity’ as in a deep, abiding and profound feeling of being an occupant, a tenant, a squatter or a phantom hiding behind a façade, a mask, a persona; as a subjective emotional psychological ‘self’ and/or a passionate psychic ‘being’ (‘I’ as ego and ‘me’ as soul) inhabiting the psyche; a deep feeling of being a ‘spirit’; a consciousness of the immanence of ‘presence’ (which exists immortally); an awareness of being an autological ‘being’ ... the realisation of ‘Being’ itself. In other words: everything you think, feel and instinctually know yourself to be ... is to be an alien in an alien world.
 
 ---
+
+http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ30a.htm
 
 **RESPONDENT:** _My view of this is that the mind directs the body and something behind the mind directs the mind._
 
@@ -18,11 +23,7 @@ Being born of the biologically inherited instinctual passions genetically encode
 
 Because, genetically speaking we are indeed ‘all one’ inasmuch as all carbon based life-forms – not just sentient life-forms – have a common hereditary ‘survival instincts’ origin.
 
-## Being is *not* 'I' or 'me'
-
-**RICHARD**: [..] all sentient beings have, at the very least, a rudimentary sense of ‘self’ and ‘other’ ... and ==I am not suggesting for a moment that any reptile or mammal has an ‘I’ or a ‘me’. I mean it in the sense that an animal displays behaviour that indicates that there is **an awareness of its physical form as being separate from the form of the world** about ... which a tree, for example, does not display.== This has been tested with monkeys, for instance, where a mirror is placed in the cage and the monkey first looks behind the mirror to find the – apparently there – ‘other’ monkey. After a while, an understanding that is observable dawns upon the luckless creature ... and it starts pulling faces at itself and otherwise enjoying the clearly demonstrable fun that comes as a result of the monkey knowing that it is its own reflection it is looking at. In other words: a sense of self.
-
-## Being has one feel that 'me' (and think that 'I') exists
+---
 
 **RICHARD**: With the hormonal power of the feelings engendered, one feels that a ‘me’ exists ... generally felt to be somewhere in the region of the heart. This is the ‘me’ that I consistently call the soul ... for convenience. This feeling – and feelings are so powerful that they can override intelligence – makes one think that an ‘I’ exists ... generally located in the head. This ‘I’, which for convenience I consistently call the ego, [..]
 
@@ -32,7 +33,7 @@ Because, genetically speaking we are indeed ‘all one’ inasmuch as all carbon
 
 Let alone an ‘I’ as an ego in the head.
 
-## Being is redundant
+---
 
 **RICHARD**: ‘my’ survival being paramount could not be further from the truth, for ‘I’ need play no part any more in perpetuating physical existence (which is the primal purpose of the instinctual animal ‘self’). ‘I’ am no longer necessary at all. In fact, ‘I’ am nowadays a hindrance. With all of ‘my’ [[Belief|beliefs]], values, creeds, ethics and other doctrinaire disabilities, ‘I’ am a menace to the body. ‘I’ am ready to die (to allow the body to be killed) for a cause and ‘I’ will willingly sacrifice physical existence for a ‘Noble Ideal’ ... and reap ‘my’ post-mortem reward: immortality.
 

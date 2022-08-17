@@ -12,7 +12,7 @@ http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ20a.htm
 
 **RESPONDENT:** _As a proponent in actual freedom, can you hazard any guess why the final event has not happened for Peter/Vineeto in spite of their understanding/ [[Sincerity|sincerity]]?_
 
-**RICHARD:** For the same reason why it is not happened for anybody else ... in the end ==all [[Genetic Identity|‘I’]] can do is **procrastinate**==.
+**RICHARD:** For the same reason why it is not happened for anybody else ... in the end ==all [[Identity|‘I’]] can do is **procrastinate**==.
 
 ---
 
