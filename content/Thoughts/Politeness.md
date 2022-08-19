@@ -4,7 +4,7 @@ slug: polite
 
 Politeness[^cult] is often seen as counteracting what is known as "impoliteness" in people. Implicit in this duality is an automatic projection of [[Harmlessness|malice]] (ie., "*feelings of discomfort, disharmony and even revenge*" referred to below) onto the "impolite" (regardless of actual malice being felt by the latter), while masking of the same if it exists in the "polite" (see the 'ripples' phenomenon in [[SNAG]] for an example).
 
-This duality is an illusion that many people suffer from. People who are not particularly acting polite (according to whatever cultural norms) are not necessarily "impolite" (aka. "rude"), for they can also be [underpolite](https://www.sciencedirect.com/science/article/pii/S2210831910000032). Unlike impoliteness (with its implicit projected "rudeness"), underpoliteness involves no malice.
+This duality is an illusion that many people suffer from. People who are not particularly acting polite (according to whatever cultural norms) are not necessarily "impolite" (aka. "rude"), for they can also be [underpolite](https://www.sciencedirect.com/science/article/pii/S2210831910000032). Unlike impoliteness (with its implicit projected "rudeness"), underpoliteness involves no malice on the underpolite.
 
 > I propose to establish another variety[^var] of impoliteness, namely “underpoliteness”. This is impoliteness exercised without malice or spite which occasionally appears to be incidental and a result of socializing habits. Nevertheless, similar to other types of rudeness it creates feelings of discomfort, disharmony and even revenge. 
 > 
