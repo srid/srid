@@ -170,7 +170,7 @@ You can view the full code for this pattern [here](https://github.com/srid/emani
 
 ## `Dynamic` instead of `LVar`
 
-This release also introduces the `Dynamic` type to represent type-varying model values. `Dynamic`'s compose better than LVar's. The [unionmount](https://github.com/srid/unionmount) library, which [[Emanote]] uses, has also been updated to be `Dynamic`-friendly.
+This release also introduces the [`Dynamic`](https://ema.srid.ca/guide/model/dynamic) type to represent type-varying model values. `Dynamic`'s compose better than LVar's. The [unionmount](https://github.com/srid/unionmount) library, which [[Emanote]] uses, has also been updated to be `Dynamic`-friendly.
 
 ## Real-world example
 
