@@ -80,10 +80,10 @@ Here, `BlogRoute` is a sub-route of `Route`. Furthermore, `Slug` is a sub-route 
 
 ```haskell
 ghci> let rp = routePrism @BlogRoute ()
-ghci> preview rp "posts/foo.html"
+ghci> preview rp "post/foo.html"
 Just (BlogRoute_Post (Slug "foo"))
 ghci> review rp $ BlogRoute_Post (Slug "foo")
-"posts/foo.html"
+"post/foo.html"
 ```
 
 ### Sub-route representation
