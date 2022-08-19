@@ -180,7 +180,7 @@ See https://github.com/fpindia/fpindia-site (powering https://functionalprogramm
 
 I greatly appreciate feedback and contributions from the following people in enabling this release:
 
-- [Lucas Vreis](https://github.com/lucasvreis), for actually [using](https://github.com/lucasvreis/abacateiro) the development branch (`multisite`) of Ema as it is being developed and thereby influencing much of the design behind generic deriving of routes.
+- [Lucas Viana](https://github.com/lucasvreis), for actually [using](https://github.com/lucasvreis/abacateiro) the development branch (`multisite`) of Ema as it is being developed and thereby influencing much of the design behind generic deriving of routes.
 - [Riuga Bachi](https://github.com/RiugaBachi), for [contributing](https://github.com/EmaApps/ema/pulls?q=author%3ARiugaBachi+) TemplateHaskell support, better compiler error messages, etc.
 - [Iceland_jack](https://stackoverflow.com/users/165806/iceland-jack), [dfeuer](https://stackoverflow.com/users/1477667/dfeuer), [K. A. Buhr](https://stackoverflow.com/users/7203016/k-a-buhr) and others for answering my Haskell questions on Stackoverflow.
 - [Isaac Shapira](https://twitter.com/fresheyeball) for inspiring me to consider some of the ideas (isomorphism checks, generic deriving, etc.) in this release.
