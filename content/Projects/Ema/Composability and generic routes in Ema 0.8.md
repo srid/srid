@@ -8,7 +8,7 @@ date: 2022-08-07
 **tldr**: Announcing a rewrite of [[Ema]] (a static site generator in [[Haskell]] with hot reload destined to develop an unique kind of apps) with support for generic route encoders and composability.
 :::
 
-Today I'd like announce version 0.8 of [[Ema]]. This version is nearly a total rewrite,[^pr] aimed at improving Ema towards two ends:
+I'd like announce version 0.8 of [[Ema]]. This version is nearly a total rewrite,[^pr] aimed at improving Ema towards two ends:
 
 [^pr]: [The PR](https://github.com/EmaApps/ema-template/pull/22) spawned commits over nearly 7 months of intermittent work with feedback and contributions from others.
 
