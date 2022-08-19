@@ -174,7 +174,7 @@ This release also introduces the `Dynamic` type to represent type-varying model 
 
 ## Real-world example
 
-See https://github.com/fpindia/fpindia-site for a real-world example that uses Ema 0.8 (the jobs data is [managed using `Dynamic`](https://github.com/fpindia/fpindia-site/pull/24)). There are more [here](https://ema.srid.ca/examples).
+See https://github.com/fpindia/fpindia-site (powering https://functionalprogramming.in/) for a real-world example that uses Ema 0.8 (the jobs data is [managed using `Dynamic`](https://github.com/fpindia/fpindia-site/pull/24)). There are more [here](https://ema.srid.ca/examples).
 
 ## Credits
 
@@ -185,4 +185,4 @@ I greatly appreciate feedback and contributions from the following people in ena
 - [Iceland_jack](https://stackoverflow.com/users/165806/iceland-jack), [dfeuer](https://stackoverflow.com/users/1477667/dfeuer), [K. A. Buhr](https://stackoverflow.com/users/7203016/k-a-buhr) and others for answering my Haskell questions on Stackoverflow.
 - [Isaac Shapira](https://twitter.com/fresheyeball) for inspiring me to consider some of the ideas (isomorphism checks, generic deriving, etc.) in this release.
 
-For further information, see the official documentation: https://ema.srid.ca.
+For further information, see the official documentation: https://ema.srid.ca. If you want to get started right away, see https://github.com/EmaApps/ema-template.
