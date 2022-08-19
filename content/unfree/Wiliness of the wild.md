@@ -8,7 +8,7 @@ The expression 'wiliness of the wild' (a direct opposite of [[Naivete]]) refers 
 
 -  crafty, cunning, artful, sly, scheming, calculating, guileful, disingenuous, devious, Machiavellian; deceitful, deceptive, Janus-faced, dishonest, cheating, double-dealing
 
-> RICHARD: Wherever there be no underestimating the extent to which a lost, lonely, frightened and **very, very cunning** [[Genetic Identity|feeling-being]] will go in order to remain affectively-psychically in existence – millions upon millions of years of blind nature’s successful perpetuation of the species via its rough-and-ready instinctual survival passions blindly dictates no other course of action can ever instinctually come about – is where there be far less likelihood of ascribing to nescience that which quite properly has its roots in the ==visceral **wiliness of the wild**== which has so successfully proliferated the species thus far.
+> RICHARD: Wherever there be no underestimating the extent to which a lost, lonely, frightened and **very, very cunning** [[Identity|feeling-being]] will go in order to remain affectively-psychically in existence – millions upon millions of years of blind nature’s successful perpetuation of the species via its rough-and-ready instinctual survival passions blindly dictates no other course of action can ever instinctually come about – is where there be far less likelihood of ascribing to nescience that which quite properly has its roots in the ==visceral **wiliness of the wild**== which has so successfully proliferated the species thus far.
 >
 > It is no-one’s fault if they be **more cunning** – **more instinctively wily** – than the norm as it is genetic inheritance which determines the degree to which instinctual drives, urges, impulses, appetites, and all the rest, are operating. --[Richard’s Selected Correspondence On Naiveté](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-naivete.htm)
 
@@ -20,3 +20,7 @@ In modern Occidental cultures, the following authors have led their audience int
 - [How to Win Friends and Influence People by **Dale Carnegie**](https://fs.blog/how-to-win-friends-and-influence-people/)
 
 Note: Although Mr. Greene here is more likely to receive moral opprobrium than Mr. Carnegie, both of their teachings ought to be viewed in a morally neutral way (see the 'no-one's fault' above) so as to allow the discovery of the wiliness inherent to the teachings.
+
+### Other examples
+
+- [*Words That Work: It's Not What You Say, It's What People Hear* by GOP propagandist Frank Luntz](https://old.reddit.com/r/TheMotte/comments/wi8rc4/smallscale_question_sunday_for_august_07_2022/ijiapob/?sort=confidence)

@@ -4,11 +4,15 @@ slug: harmless
 
 http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-harmless.htm
 
+RICHARD: What the word ‘==harmless==’ refers to, on both The Actual Freedom Trust web site and mailing list, is being **sans malice** – just as being happy refers to being without sorrow – thus provided there be no malice generating/ driving/ motivating one’s thoughts, words, or actions, being no longer capable of fulfilling a previously made pledge can in no way be going against being harmless.
+
+None of this is to deny that another’s feelings may, and can be, self-induced to feel hurt as a result ... the simple fact of the matter is that if they choose to harbour such feelings that is their business.
+
 ## What it is not
 
 http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm
 
-VINEETO: The reason I said that there is a remarkable difference between *feeling* harmless and actually being harmless is because it is easy to assess one’s happiness by checking if I am feeling happy whereas many people may feel themselves to be harmless when they are not experiencing feelings of aggression or anger against somebody. Yet they are nevertheless causing harm via their thoughtless [[Genetic Identity|‘self’]]-oriented instinctual feelings and actions, something that all human beings are prone to do unless they become fully aware of their instinctual passions *before* these translate into [[Affective Vibes|vibes]] and/or actions.
+VINEETO: The reason I said that there is a remarkable difference between *feeling* harmless and actually being harmless is because it is easy to assess one’s happiness by checking if I am feeling happy whereas many people may feel themselves to be harmless when they are not experiencing feelings of aggression or anger against somebody. Yet they are nevertheless causing harm via their thoughtless [[Identity|‘self’]]-oriented instinctual feelings and actions, something that all human beings are prone to do unless they become fully aware of their instinctual passions *before* these translate into [[Affective Vibes|vibes]] and/or actions.
 
 It was about a year into my process of actualism when I became aware of how much my outlook on the world and on people had changed in that my cloak of myopic ‘self’-centredness began to lift and I no longer saw the world only ‘my’ way and my judgments and actions no longer revolved around ‘my’ interests, ‘my’ beliefs, ‘my’ ideas, ‘my’ ideals, ‘my’ fears, ‘my’ desires and ‘my’ aversions. Consequently ==I have learnt to judge harmlessness by the amount of parity and consideration I apply to others whom I come in contact with, both at work and at play, and not by merely feeling myself to be harmless==.
 

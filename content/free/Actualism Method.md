@@ -2,7 +2,13 @@
 slug: method
 ---
 
-> RICHARD: [..] Look, the whole point of minimising both the malicious/ sorrowful feelings (the ‘bad’ feelings) and their antidotal loving/ compassionate feelings (the [[Good feeling|‘good’ feelings]]) whilst maximising the [[Felicity and Innocuity|felicitous/ innocuous feelings]] (the ‘congenial’ feelings) is to make for a potent combination when this untrammelled conviviality operates in conjunction with a [[Naivete|naïve]] [[Sensuousness|sensuosity]] – whereby one is both likeable and liking – such that the benevolence and benignity of pure intent may increasingly become dynamically enabled for one purpose and one purpose alone ... to wit: for the already always existing peace-on-earth to become apparent, in this lifetime, as this flesh-and-blood body. http://actualfreedom.com.au/richard/selectedcorrespondence/sc-intimacy.htm
+First, a couple of passages providing overall context; followed by point by point description of the method; ending with some clarifying commentary.
+
+> RICHARD: Obviously, the physical cause necessitates a physical solution (the extinction of [[Identity|the instinctual ‘being’]] itself) and this altruistic ‘self’-sacrifice will not eventuate unless the temporary absence or abeyance of the physically inherited cause (a genetically inherited instinctual animal ‘self’) which created the problem of the human condition is intimately experienced, [[Rememoration|remembered]] and activated. This peak experience of one’s potentiality is known as a [[PCE|pure consciousness experience]] (PCE) and is essential to the process of freeing oneself from one’s fate and attaining to one’s destiny. The first and most important step is to remember a PCE (everybody that I have spoken to at length over the last nineteen years – everybody – has had at least one) and thus start thinking for oneself (although most people cannot initially remember a PCE and may need a lot of prompting to retrieve it from their memory). Then each next step becomes obvious of its own accord in one’s daily life as one goes about one’s normal business in the market place. The **pure intent** born out of the PCE actively works on eliminating the animal ‘self’ bestowed by blind nature each moment again. http://www.actualfreedom.com.au/richard/default.htm
+
+---
+
+> RICHARD: [..] Look, the whole point of minimising both the malicious/ sorrowful feelings (the ‘bad’ feelings) and their antidotal loving/ compassionate feelings (the [[Good feeling|‘good’ feelings]]) whilst maximising the [[Felicity and Innocuity|felicitous/ innocuous feelings]] (the ‘congenial’ feelings) is to make for a potent combination when this untrammelled conviviality operates in conjunction with a [[Naivete|naïve]] [[Sensuousness|sensuosity]] – whereby one is both likeable and liking – such that the benevolence and benignity of **pure intent** may increasingly become dynamically enabled for one purpose and one purpose alone ... to wit: for the already always existing peace-on-earth to become apparent, in this lifetime, as this flesh-and-blood body. http://actualfreedom.com.au/richard/selectedcorrespondence/sc-intimacy.htm
 > 
 ---
 
@@ -47,7 +53,7 @@ From [What is the Answer to ‘How Am I Experiencing this Moment of Being Alive?
 
 > **RESPONDENT:** _... but I see what is missing is I must generate felicity as my resident mood and not just be in touch with it sometimes._
 > 
-> **RICHARD:** Yes ... and then, further along the way, be felicitous/ innocuous (‘I’ am ‘my’ feelings and ‘my’ feelings are ‘me’).
+> **RICHARD:** Yes ... and then, further along the way, be felicitous/ innocuous ([['I' am 'my' feelings and 'my' feelings are 'me'|‘I’ am ‘my’ feelings and ‘my’ feelings are ‘me’]]).
 
 > **RESPONDENT:** _... but thank you for pointing out why because, obviously, how can I be happy when my attitude is ‘I didn’t ask to be born.’? HA!_
 > 

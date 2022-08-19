@@ -4,7 +4,7 @@ slug: intelligence
 
 http://actualfreedom.com.au/richard/selectedcorrespondence/sc-commonsense.htm
 
-RICHARD: One’s **native intelligence** cannot operate and function cleanly and clearly whilst [[Genetic Identity|‘I’]] am in there trying to run the show. The nearest thing to what I call native intelligence is known as commonsense in the ‘real world’. **Intuition**, be it of the NDA variety, or any other variety is affectively-based ... thus you would be relying on the notoriously unreliable feelings to be the arbiter of what is appropriate or inappropriate action.
+RICHARD: One’s **native intelligence** cannot operate and function cleanly and clearly whilst [[Identity|‘I’]] am in there trying to run the show. The nearest thing to what I call native intelligence is known as commonsense in the ‘real world’. **Intuition**, be it of the NDA variety, or any other variety is affectively-based ... thus you would be relying on the notoriously unreliable feelings to be the arbiter of what is appropriate or inappropriate action.
 
 ...
 

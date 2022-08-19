@@ -4,7 +4,7 @@ slug: vibes
 
 http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-psyche.htm
 
-[Richard]: ‘All sentient [[Genetic Identity|beings]], to a greater or lesser extent, are connected via a psychic web ... a network of energies or currents that range from ‘good’ to ‘bad’. Feeling threatened or intimidated can result from the obvious cues – the offering of physical violence and/or verbal violence – or from the less obvious ... **‘vibe’** violence (to use a ‘60’s term) and/or psychic violence. Similarly, feeling accepted can occur via the same signals or intimations. Power trips – coercion or manipulation of any kind – whether for ‘good’ or ‘bad’ purposes, are all psychic at root ... the psychic currents are the most effective power plays for they are the most insidious (charisma, for example).
+[Richard]: ‘All sentient [[Identity|beings]], to a greater or lesser extent, are connected via a psychic web ... a network of energies or currents that range from ‘good’ to ‘bad’. Feeling threatened or intimidated can result from the obvious cues – the offering of physical violence and/or verbal violence – or from the less obvious ... **‘vibe’** violence (to use a ‘60’s term) and/or psychic violence. Similarly, feeling accepted can occur via the same signals or intimations. Power trips – coercion or manipulation of any kind – whether for ‘good’ or ‘bad’ purposes, are all psychic at root ... the psychic currents are the most effective power plays for they are the most insidious (charisma, for example).
 
 ---
 
@@ -29,7 +29,7 @@ A feeling-being, by virtue of being an affective/ psychic ‘being’, involunta
 
 **RICHARD:** By way of explanation I will first draw your attention to this quote (also posted four days before this e-mail of yours):
 
-> - [Richard]: '... there is an interconnectedness between all the emotional and passional [[Genetic Identity|entities]] -- all emotional and passional entities are connected via a psychic web -- a network of invisible **vibes** and currents. This interconnectedness in action is a powerful force -- colloquially called 'energy' or 'energies' -- wherein one entity can either seek power over another entity or seek communion with another entity by affective and/or psychic influence'.[![](http://www.actualfreedom.com.au/richard/images/footnote-link.jpg)](http://www.actualfreedom.com.au/richard/listafcorrespondence/listaf27b.htm#vibes)
+> - [Richard]: '... there is an interconnectedness between all the emotional and passional [[Identity|entities]] -- all emotional and passional entities are connected via a psychic web -- a network of invisible **vibes** and currents. This interconnectedness in action is a powerful force -- colloquially called 'energy' or 'energies' -- wherein one entity can either seek power over another entity or seek communion with another entity by affective and/or psychic influence'.[![](http://www.actualfreedom.com.au/richard/images/footnote-link.jpg)](http://www.actualfreedom.com.au/richard/listafcorrespondence/listaf27b.htm#vibes)
 
 Put briefly: a feeling being (an emotional/ passional entity within a body) imbues thought with affectivity and those affectively-tinged/ affectively-charged thoughts are involuntarily broadcast, as psychic currents/ energies, into the real world (the world of the psyche) ... thus another feeling being does not pick-up thoughts as such but, rather, intuitively feels what those psychic currents/ energies convey.
 

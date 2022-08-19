@@ -1,5 +1,5 @@
 ---
-slug: paradox-of-tolerance
+slug: popper
 ---
 
 # Woke arrogation of Paradox of tolerance

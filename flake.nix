@@ -3,28 +3,23 @@
   nixConfig.extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
 
   inputs = {
-    emanote.url = "github:srid/emanote/master";
+    emanote.url = "github:jilleJr/emanote/feature/stork-search";
     nixpkgs.follows = "emanote/nixpkgs";
-    flake-parts.url = "github:hercules-ci/flake-parts";
-    flake-parts.inputs.nixpkgs.follows = "nixpkgs";
+    flake-parts.follows = "emanote/flake-parts";
   };
 
   outputs = inputs@{ self, flake-parts, nixpkgs, ... }:
     flake-parts.lib.mkFlake { inherit self; } {
       systems = nixpkgs.lib.systems.flakeExposed;
-      imports = [
-        inputs.emanote.flakeModule
-      ];
+      imports = [ inputs.emanote.flakeModule ];
       perSystem = { self', pkgs, system, ... }: {
-        emanote = {
-          package = inputs.emanote.packages.${system}.default;
-          sites."default" = {
-            path = ./content;
-            pathString = "./content";
-          };
+        emanote.sites."default" = {
+          path = ./content;
+          pathString = "./content";
+          prettyUrls = true;
         };
         devShells.default = pkgs.mkShell {
-          buildInputs = [ pkgs.nixpkgs-fmt pkgs.zk ];
+          buildInputs = [ pkgs.nixpkgs-fmt ];
         };
       };
     };

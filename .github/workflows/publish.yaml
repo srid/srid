@@ -1,6 +1,5 @@
 name: "Publish GH Pages"
 on:
-  # Run only when pushing to master branch
   push:
     branches:
       - master
@@ -15,16 +14,12 @@ jobs:
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
             trusted-public-keys = cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
             substituters = https://cache.garnix.io https://cache.nixos.org/
-      - name: Install emanote
+      - name: Build the website (Nix) 🔧
         run: |
-          nix profile install github:EmaApps/emanote
-      - name: Build emanote site 🔧
-        run: |
-          mkdir -p output 
-          emanote --layers ./content gen ./output
+          nix build -j 4
       - name: Deploy to gh-pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output/
+          publish_dir: ./result/
           cname: srid.ca
