@@ -183,6 +183,7 @@ I greatly appreciate feedback and contributions from the following people in ena
 - [Lucas Viana](https://github.com/lucasvreis), for actually [using](https://github.com/lucasvreis/abacateiro) the development branch (`multisite`) of Ema as it is being developed and thereby influencing much of the design behind generic deriving of routes.
 - [Riuga Bachi](https://github.com/RiugaBachi), for [contributing](https://github.com/EmaApps/ema/pulls?q=author%3ARiugaBachi+) TemplateHaskell support, better compiler error messages, etc.
 - [Iceland_jack](https://stackoverflow.com/users/165806/iceland-jack), [dfeuer](https://stackoverflow.com/users/1477667/dfeuer), [K. A. Buhr](https://stackoverflow.com/users/7203016/k-a-buhr) and others for answering my Haskell questions on Stackoverflow.
+- [TheMatten](https://github.com/TheMatten) who explained to me a `lens`-based design for achieving composability (the final design, based on `Prism'` instead, is not fundamentally different).
 - [Isaac Shapira](https://twitter.com/fresheyeball) for inspiring me to consider some of the ideas (isomorphism checks, generic deriving, etc.) in this release.
 
 For further information, see the official documentation: https://ema.srid.ca. If you want to get started right away, see https://github.com/EmaApps/ema-template.
