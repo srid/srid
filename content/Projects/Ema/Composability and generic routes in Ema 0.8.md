@@ -1,7 +1,7 @@
 ---
 slug: ema-0.8
 tags: [blog/ema]
-date: 2022-08-07
+date: 2022-08-19
 ---
 
 :::{.page-note}
