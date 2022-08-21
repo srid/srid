@@ -28,6 +28,8 @@ Or for a conspiratorial summary,
 ## Articles
 
 - [How did American “wokeness” jump from elite schools to everyday life?](https://old.reddit.com/r/TheMotte/comments/pecd0o/culture_war_roundup_for_the_week_of_august_30_2021/hbklxdw/?sort=top)
+- [History of woke invasion from the perspective of someone in the FOSS camp](https://gleasonator.com/@PhenomX6@fedi.pawlicker.com/posts/AMUMdYJWpMpLyeFAy8)
+
 ## Examples
 
 - [Jackson Dame, once a conservative Christian, cancelled Brantly Millegan to secure the bag](https://indianbronson.substack.com/p/jackson-dame-once-a-conservative)
