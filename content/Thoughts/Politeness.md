@@ -18,6 +18,10 @@ From https://lukeplant.me.uk/blog/posts/why-im-leaving-elm/
 > 
 > By that I do not mean impolite or rude. It is almost always very civil. But still ultimately aggressive and controlling.
 
+...
+
+> The team [at NoRedInk] shows a bewildering mix of [[woke|cargo-cult inclusiveness]] coupled with inability to consider that anyone could be different from them in any way that matters.
+
 
 [^cult]: It tends to be more of a trait in Occidental than Oriental cultures. It originated (and arguably still is) as [a marker of the upper class](https://en.wikipedia.org/w/index.php?title=Politeness&oldid=1073436216#History). See also [Victorian morality](https://en.wikipedia.org/wiki/Victorian_morality).
 
