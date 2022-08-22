@@ -25,7 +25,7 @@ git add .
 git commit -m "first commit"
 ```
 
-This gives us a project layout with three Haskell packages: `backend`, `common` and `frontend`. As the names indicate, `frontend` contains the Haskell code that ultimate gets compiled to JavaScript. The `common` package however contains code that is shared between the backend and the frontend. This is extremely useful for type sharing, which is impossible with something like Elm or PureScript (without explicit conversion).
+This gives us a project layout with three Haskell packages: `backend`, `common` and `frontend`. As the names indicate, `frontend` contains the Haskell code that ultimate gets compiled to JavaScript. The `common` package however contains code that is shared between the backend and the frontend. This is extremely useful for type sharing, which is impossible with something like [[Elm]] or PureScript (without explicit conversion).
 
 ```sh
 backend

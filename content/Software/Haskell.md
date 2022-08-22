@@ -6,7 +6,7 @@ slug: haskell
 
 [^gotcha]: Do be wary of [[Haskell Gotchas]].
 
-My first foray into Haskell was to write fullstack web applications using [[Reflex-FRP]], after having used Elm prior to that. Nowadays I consider it my go-to language for general application development.
+My first foray into Haskell was to write fullstack web applications using [[Reflex-FRP]], after having used [[Elm]] prior to that. Nowadays I consider it my go-to language for general application development.
 
 [On GitHub](https://github.com/srid) you can find a list of Haskell projects I work on, the notable of which are [[Neuron]], [[Ema]] and [[Emanote]].
 
