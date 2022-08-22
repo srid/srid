@@ -94,7 +94,7 @@ And Sensuousness And Apperceptiveness](http://www.actualfreedom.com.au/richard/a
 
 ---
 
-> SRID: the opposite of feeling vulnerable is that one becomes interested in people and events happening right now. during the day we first met [[Grace's scale|grace]], i remember using the expression of ‘**doing of what is happening**’ to richard upon noticing that there was ‘less of me’ as i was, for most part, simply being the felicitous interaction happening on the house boat. closer to the end of the trip i also confirmed that this is the direction to take in order to get to out-from-control/ different-way-of-being.
+> SRID: the opposite of feeling vulnerable is that one becomes interested in people and events happening right now. during the day we first met [[Grace's scale|grace]], i remember using the expression of ‘**doing of what is happening**’ to richard upon noticing that there was ‘less of me’ as i was, for most part, simply being the felicitous interaction happening on the house boat. closer to the end of the trip i also confirmed that this is the direction to take in order to get to [[Out from control|out-from-control/ different-way-of-being]].
 >
 > -- [Srid : Report on Mailing List D about
 his Meeting with Richard, Vineeto and Peter](http://actualfreedom.com.au/actualism/others/srid'sreport.htm#WzTtDiV)
