@@ -60,7 +60,7 @@ With the intent of being as happy and harmless as humanly possible the nature of
 
 I don’t need to be ‘nurturing’ towards others, as you describe it, because I no longer need to rely on such fickle feelings to cover up or bandage over the underlying resentment I used to feel towards others – on the contrary I am in an excellent mood every day and I actually care for the wellbeing of those for whom I work and for those I work with and almost always enjoy their company while we work together. I don’t need to [[Love|love]] them because I am not hostile or resentful towards them nor do I need to be loved by them because I am not down on myself, I enjoy what I do and I care that they get the best for the amount of time they bought. They are above all – not after all – my fellow human beings.
 
-To put it succinctly – the ==**basic feeling of resentment** is replaced by joie the vivre== and ==fellowship regard feelings of ‘nurturing’ or caring are replaced by [[Harmlessness|actual caring]]== for one’s fellow human beings.
+To put it succinctly – the ==**basic feeling of resentment** is replaced by joie the vivre== and ==fellowship regard feelings of ‘nurturing’ or caring are replaced by [[Caring|actual caring]]== for one’s fellow human beings.
 
 The other benefit of actualism in regards to work 🏢 was that I began to be able to sensibly assess my needs rather than be driven by senseless desires in order to be able to sell less time for livelihood and toys and have more free time to do with as I choose.
 

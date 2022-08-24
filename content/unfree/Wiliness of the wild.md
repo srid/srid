@@ -24,3 +24,8 @@ Note: Although Mr. Greene here is more likely to receive moral opprobrium than M
 ### Other examples
 
 - [*Words That Work: It's Not What You Say, It's What People Hear* by GOP propagandist Frank Luntz](https://old.reddit.com/r/TheMotte/comments/wi8rc4/smallscale_question_sunday_for_august_07_2022/ijiapob/?sort=confidence)
+## Sub pages
+
+```query
+path:./*
+```
