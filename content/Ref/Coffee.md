@@ -13,7 +13,7 @@ Invest in these:
 - Scale (0.1g precision)
 - Brew kettle with precision thermometer (I use Fellow Stagg)
 - Coffee canister (I use Airscape)
-- A good manual burr grinder (I use Comandante)
+- A good burr grinder (I use Niche Zero, or Comandante when travelling)
 - Grinder brush
 - Aeropress
 
@@ -22,7 +22,7 @@ Invest in these:
 When coffee tastes bad, change one or more of these factors. It may take several attempts to get it right.
 
 - Grind size 
-  - Get a good burr grinder![^h][^cc]
+  - Get a good burr grinder![^h]
 - Water temperature 
   - higher for light roasts; lower for dark roasts
   - even a +/- 5f adjustment can make a difference
@@ -35,18 +35,6 @@ Generally speaking, you mainly want to vary grind size and/or water temperature.
 [^myf]: I enjoy flavours towards chocolate/sugar side of the spectrum, which tends to come from medium to dark roasted coffee from certain regions (like Brazil Santos).
 
 [^h]: If getting a manual hand grinder, note the the way of grinding [may matter](https://old.reddit.com/r/Coffee/comments/lkazl5/hand_grinder_use_ive_been_doing_it_all_wrong/).
-
-[^cc]: Comandante grind chart:
-
-	From https://coffeechronicler.com/grind-size-chart/
-
-	| Coffee Maker | Clicks |
-	| ------------ | ------ |
-	| French Press | 30-34  |
-	| Pour Over    | 20-32  |
-	| AeroPress    | 14-24  |
-	| Moka Pot     | 12-15  |
-	| Espresso     | 9-12   |
 
 ## Brew methods
 
