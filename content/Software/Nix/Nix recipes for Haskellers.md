@@ -173,8 +173,8 @@ Setting up CI for a Haskell project that already uses Nix is rather simple. If y
 
 * [Official Nix manual on using Haskell](https://haskell4nix.readthedocs.io/)
 * [Unofficial developer guide to Nix](https://nix.dev/)
-* [Nix Pills](https://nixos.org/nixos/nix-pills/): a tutorial series on using Nix
 * [haskell-template](https://github.com/srid/haskell-template): A prebuilt Haskell project template using Nix flakes, among other defaults
+* [Incrementally package a Haskell program using Nix](https://www.haskellforall.com/2022/08/incrementally-package-haskell-program.html)
 
 [^nixos]: Alternatively, if you are feeling adventurous enough, you may install [[NixOS]], a Linux distribution based on Nix.
 
