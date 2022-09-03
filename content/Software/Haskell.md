@@ -39,7 +39,7 @@ Deepen your Haskell knowledge
 
 [locus of control]: https://www.wikiwand.com/en/Locus_of_control
 
-[^wk]: In particular, you want to avoid the ones [[woke-invasion|invaded]] by [[woke|woke]] activist moderators.
+[^wk]: In particular, you want to avoid the non-[[Stay niche|niche]] ones [[woke-invasion|invaded]] by [[woke|woke]] activist moderators.
 
 ## Take the red pill with Nix
 
