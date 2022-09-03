@@ -4,7 +4,7 @@ tags: [blog]
 date: 2019-12-03
 ---
 
-The goal of this article is to get you comfortable managing simple #[[Haskell]] programs and projects using the [[Nix]] package manager without getting too much into the details. See [haskell-template](https://github.com/srid/haskell-template) if you want a ready-made Nix-based project template for Haskell.
+The goal of this article is to get you comfortable managing simple #[[Haskell]] programs and projects using the [[Nix]] package manager without getting too much into the details. See [[haskell-template]] if you want a ready-made Nix-based project template for Haskell.
 
 ## Prerequisites
 
@@ -173,7 +173,7 @@ Setting up CI for a Haskell project that already uses Nix is rather simple. If y
 
 * [Official Nix manual on using Haskell](https://haskell4nix.readthedocs.io/)
 * [Unofficial developer guide to Nix](https://nix.dev/)
-* [haskell-template](https://github.com/srid/haskell-template): A prebuilt Haskell project template using Nix flakes, among other defaults
+* [[haskell-template]]: A prebuilt Haskell project template using Nix flakes, among other defaults
 * [Incrementally package a Haskell program using Nix](https://www.haskellforall.com/2022/08/incrementally-package-haskell-program.html)
 
 [^nixos]: Alternatively, if you are feeling adventurous enough, you may install [[NixOS]], a Linux distribution based on Nix.

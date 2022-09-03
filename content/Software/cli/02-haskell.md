@@ -38,7 +38,7 @@ It turns out that [`home-manager`](https://github.com/nix-community/home-manager
 
 https://github.com/srid/nixos-config/commit/9a6410331063ae97ae405837559cf4c5b3990ada
 
-It does work when trying out in the nix-shell of [haskell-template](https://github.com/srid/haskell-template).
+It does work when trying out in the nix-shell of [[haskell-template]].
 
 ## Declarative plugin config in Nix
 

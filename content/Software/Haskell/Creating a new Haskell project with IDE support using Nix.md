@@ -4,7 +4,7 @@ date: 2020-11-16
 tags: [blog]
 ---
 
-**Update (May 31, 2021)**: If you use Flakes, try [haskell-template](https://github.com/srid/haskell-template)
+**Update (May 31, 2021)**: If you use Flakes, try [[haskell-template]].
 
 ---
 
@@ -79,4 +79,4 @@ Other things you might want to do:
 
 ## Alternatives
 
-- Using Flakes? See [this blog post](https://serokell.io/blog/practical-nix-flakes) from Serokell, and try out the [haskell-template](https://github.com/srid/haskell-template) Git template.
+- Using Flakes? See [this blog post](https://serokell.io/blog/practical-nix-flakes) from Serokell, and try out the [[haskell-template]] Git template.

@@ -16,6 +16,7 @@
         emanote.sites."default" = {
           path = ./content;
           pathString = "./content";
+          port = 9801;
           prettyUrls = true;
         };
         devShells.default = pkgs.mkShell {
