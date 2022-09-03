@@ -9,3 +9,6 @@ slug: haskell-template
 **NOTE**: This place is a WIP. 
 
 - [[philosophy]]
+- [ ] Nix workflows
+- [ ] Tools used
+  - [[treefmt]]#
