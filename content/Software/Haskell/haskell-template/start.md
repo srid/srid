@@ -13,7 +13,7 @@ If this is your first time using [[Nix]] or [[haskell-template]] you will need t
 - [Install Nix](https://nixos.org/download.html) (version must be 2.8 or greater) 
     - If you are using Windows, you may install Nix [under WSL2](https://nixos.wiki/wiki/Nix_Installation_Guide#Windows_Subsystem_for_Linux_.28WSL.29) 
 - [Enable Flakes](https://nixos.wiki/wiki/Flakes#Enable_flakes)
-- In the [[haskell-template]] directory, `nix develop -i -c haskell-language-server` in it to sanity check your environment/
+- In the [[haskell-template]] directory, run `nix develop -i -c haskell-language-server` to sanity check your environment.
   - This will download the required dependencies and cache them to the local Nix store. If it succeeds, it means everything's good.
 
 ### VSCode
