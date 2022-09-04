@@ -12,6 +12,7 @@ slug: haskell-template
   - Package management
     - [ ] How to add a package (cabal and nix)
     - [ ] How to override a package (nix)
+  - [ ] Switching to `direnv`
   - CI
     - [[haskell-template/garnix]]
 
