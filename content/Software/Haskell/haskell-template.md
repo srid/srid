@@ -9,9 +9,15 @@ slug: haskell-template
 - [[haskell-template/start]]
 - HOWTO
   - [[haskell-template/add-tests]]
+  - Haskell stuff
+    - [ ] bin/hoogle
+    - [ ] bin/repl
   - Package management
     - [ ] How to add a package (cabal and nix)
     - [ ] How to override a package (nix)
+  - More Nix stuff
+    - `nix run`
+    - [ ]  Run `nix --option sandbox false build .#check -L` to run the flake checks.
   - [ ] Switching to `direnv`
   - CI
     - [[haskell-template/garnix]]
