@@ -71,7 +71,7 @@ To enable IDE support,
 
 Other things you might want to do:
 
-- Use `relude` as Prelude
+- Use [[Relude]] as Prelude
 - Enable some `default-extensions`
 - Enable [sensible warnings][warn] in `ghc-options`
 
