@@ -8,7 +8,8 @@ slug: haskell-template
 
 **NOTE**: This place is a WIP. 
 
-- [[philosophy]]
+- [[haskell-template/start]]
+- [[haskell-template/philosophy]]
 - [ ] Nix workflows
 - [ ] Tools used
   - [[treefmt]]#
