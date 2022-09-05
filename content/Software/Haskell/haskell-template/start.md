@@ -60,3 +60,7 @@ git mv haskell-template.cabal ${NAME}.cabal
 nix run nixpkgs#sd -- haskell-template ${NAME} * */*
 git add . && git commit -m rename
 ```
+
+## Next steps
+
+See [[haskell-template]] for further documentation.

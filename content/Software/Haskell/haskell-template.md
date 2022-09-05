@@ -11,16 +11,17 @@ slug: haskell-template
   - Common Haskell workflows
     - To run **hoogle** with project dependencies, run `bin/hoogle`
     - To run the project **ghci** (aka. 'cabal repl'), run `bin/repl`.
+    - To run the project executable with auto-recompkle via **ghcid**, run `bin/run`
     - [[haskell-template/add-tests]]
-  - Package management
-    - [ ] How to add a package (cabal and nix)
-    - [ ] How to override a package (nix)
+    - Dependency management
+      - [ ] How to add a package (cabal and nix)
+      - [ ] How to override a package (nix)
   - Common Nix workflows
     - `nix build`: Build the nix package.
     - `nix run .`: Run the program via Nix.
       - `nix run github:srid/haskell-template`: Run the program via Nix remotely.
     - `nix --option sandbox false build .#check -L`: Run flake checks
-  - [ ] Switching to `direnv`
+  - [ ] [Switching to `direnv`](https://github.com/srid/haskell-template/issues/3)
   - CI
     - [[haskell-template/garnix]]
 
