@@ -8,16 +8,17 @@ slug: haskell-template
 
 - [[haskell-template/start]]
 - HOWTO
+  - `nix develop`: The nix shell is your friend; inside it, you will have the full Haskell development environment.
   - Common Haskell workflows
     - To run **hoogle** with project dependencies, run `bin/hoogle`
     - To run the project **ghci** (aka. 'cabal repl'), run `bin/repl`.
     - To run the project executable with auto-recompkle via **ghcid**, run `bin/run`
     - [[haskell-template/add-tests]]
     - Dependency management
-      - [ ] How to add a package (cabal and nix)
+      - [ ] How to add a Haskell package dependency
 
-        Add the package to the .cabal file, and re-run `nix develop` (and restart [[VSCode]]).
-      - [ ] How to override a package (nix)
+        Add the package to the .cabal file, and re-run `nix develop` (and restart [[VSCode]]). If the package is unavailable, you will have to override it (see next point).
+      - [ ] How to override a Haskell package in [[Nix]]
 
         Use [this tutorial](https://tek.brick.do/how-to-override-dependency-versions-when-building-a-haskell-project-with-nix-K3VXJd8mEKO7) when setting the the `overrides` option of [[haskell-flake]]
   - Common Nix workflows
