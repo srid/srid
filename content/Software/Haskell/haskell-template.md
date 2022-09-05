@@ -15,7 +15,11 @@ slug: haskell-template
     - [[haskell-template/add-tests]]
     - Dependency management
       - [ ] How to add a package (cabal and nix)
+
+        Add the package to the .cabal file, and re-run `nix develop` (and restart [[VSCode]]).
       - [ ] How to override a package (nix)
+
+        Use [this tutorial](https://tek.brick.do/how-to-override-dependency-versions-when-building-a-haskell-project-with-nix-K3VXJd8mEKO7) when setting the the `overrides` option of [[haskell-flake]]
   - Common Nix workflows
     - `nix build`: Build the nix package.
     - `nix run .`: Run the program via Nix.
