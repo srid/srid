@@ -20,6 +20,7 @@ slug: haskell-template
     - `nix build`: Build the nix package.
     - `nix run .`: Run the program via Nix.
       - `nix run github:srid/haskell-template`: Run the program via Nix remotely.
+    - `nix profile install github:srid/haskell-template`: Install the program via Nix.
     - `nix --option sandbox false build .#check -L`: Run flake checks
   - [ ] [Switching to `direnv`](https://github.com/srid/haskell-template/issues/3)
   - CI
