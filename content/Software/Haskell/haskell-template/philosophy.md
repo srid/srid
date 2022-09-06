@@ -20,7 +20,7 @@ I originally created [[haskell-template]] to serve as the base template for my H
 
 ## If it is not used in every repo, do not add it to the template
 
-Things like tests are not in the template repo, because I persoinally do not use it in *every* project created off this repo. Instead, a workflow like "How to add tests" should be documented (eg.: [[add-tests]]). The same goes for project documentation (which normally would use [[Emanote]]).
+Things like tests are not in the template repo, because I personally do not use it in *every* project created off this repo. Instead, a workflow like "How to add tests" should be documented (eg.: [[add-tests]]). The same goes for project documentation (which normally would use [[Emanote]]).
 
 ## Keep [[Nix]] as simple as possible
 
