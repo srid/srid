@@ -6,7 +6,7 @@ slug: haskell-template/philosophy
 
 ## Use opinionated base tools
 
-I originally created [[haskell-template]] to serve as the base template for my Haskell [[Projects]]. As such, I wanted it to support by default include the following:
+I originally created [[haskell-template]] to serve as the base template for my Haskell [[Projects]]. As such, I wanted it to include by default the following:
 
 - [[Relude]] (because `Prelude` is dangerous)
 - [[haskell-language-server]] (because IDE integration from the get-go is invaluable)
