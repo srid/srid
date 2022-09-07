@@ -11,3 +11,7 @@ Censorship in [[Stay niche|social media]], academic, professional organizations 
 ```query
 path:./*
 ```
+
+## Links
+
+- "*For more than a month, I've removed myself from the news cycle and The Discourse [..]. But distance brings clarity. This censorship mania consuming Western liberals is deeply dangerous -- and growing.*" --[Glenn Greenwald](https://twitter.com/ggreenwald/status/1567290905039708160?cxt=HHwWgIC96caxkcArAAAA)
