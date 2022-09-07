@@ -55,6 +55,10 @@ Adherents of [[woke]] tend to exhibit certain psychological characteristics in c
     > “Best way to defend yourself against the woke is to out-woke everyone, including the woke,” one writer said. Suddenly, every conversation with every agent or head of content started with: Is anyone BIPOC attached to this?
 - Social class
     > "Mastering intricacies of gender and race relations discourse and behavior has become a marker for belonging to the cosmopolitan class, in a similar way that tastes for classical music & art were markers of bourgeois culture in the 19th and 20th centuries" https://twitter.com/robkhenderson/status/1316142750740492288
+- Worst impulses of humanity, enabled by social media
+    > "All I am saying is that based on the screenshots many have collected, and the things I’ve seen following her on Twitter for a long while now, I see in her what I see in myself. Someone that gets *something* out of sharing the hateful things people say about her, and interacting with them as much as possible. You can call it adrenaline or attention or whatever. Keffals isn’t what’s important here." https://defaultfriend.substack.com/p/i-am-a-lolcow 
+    > 
+    > "Keffals is just an online personality driven by the worst impulses that define the internet." https://defaultfriend.substack.com/p/suicide-by-kiwi-farms
 
 ## Meta / Related
 
