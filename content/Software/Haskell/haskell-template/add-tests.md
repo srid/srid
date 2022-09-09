@@ -24,11 +24,11 @@ slug: haskell-template/tests
 1. Add the tests stanza to the cabal file:
     ```yaml
     test-suite tests
-    import:         shared
-    main-is:        Spec.hs
-    type:           exitcode-stdio-1.0
-    hs-source-dirs: tests
-    build-depends:  hspec
+        import:         shared
+        main-is:        Spec.hs
+        type:           exitcode-stdio-1.0
+        hs-source-dirs: tests
+        build-depends:  hspec
     ```
 1. Update `hie.yaml` accordingly; for example, by adding,
     ```yaml
