@@ -51,10 +51,12 @@ Note: you can also press <kbd>Ctrl+Shift+B</kbd> to run `bin/run`.
 Finally, if you are going to be using this template for a real project, you should rename it.
 
 ```sh
-# First, click the green "Use this template" button on GitHub to create your copy.
-git clone <your-clone-url>
-cd your-project
 NAME=myproject
+# First, click the green "Use this template" button on GitHub to create your copy
+# You may name the respitory to be same as $NAME
+git clone <your-clone-url> $NAME
+cd $NAME
+
 
 git mv haskell-template.cabal ${NAME}.cabal
 nix run nixpkgs#sd -- haskell-template ${NAME} * */*
