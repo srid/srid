@@ -59,6 +59,8 @@ Adherents of [[woke]] tend to exhibit certain psychological characteristics in c
     > "All I am saying is that based on the screenshots many have collected, and the things I’ve seen following her on Twitter for a long while now, I see in her what I see in myself. Someone that gets *something* out of sharing the hateful things people say about her, and interacting with them as much as possible. You can call it adrenaline or attention or whatever. Keffals isn’t what’s important here." https://defaultfriend.substack.com/p/i-am-a-lolcow 
     > 
     > "Keffals is just an online personality driven by the worst impulses that define the internet." https://defaultfriend.substack.com/p/suicide-by-kiwi-farms
+    
+    Also: https://corinnacohn.substack.com/p/the-world-should-not-need-kiwi-farms
 
 ## Meta / Related
 
