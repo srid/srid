@@ -10,6 +10,16 @@ Being [[Wiliness of the wild|artful]] often takes the form of [[Armchair philoso
 [![[midwit-sources.png]]](https://knowyourmeme.com/photos/2031360-iq-bell-curve-midwit)
 :::
 
+## Associated fields
+
+### Effective Altruism (EA)
+
+EA proponents care more about, say, [[Vegan Propaganda|animal rights]] than the [[free|mental health]] of their fellow humans. See Kathleen Stock's article [Effective altruism is the new woke](https://unherd.com/2022/09/effective-altruism-is-the-new-woke/):
+
+> Effectively, both longtermism and [[woke|woke progressivism]] take a highly restricted number of emotional impulses many of us ordinarily have, and then vividly conjure up heart-rending scenarios of supposed harm in order to prime our malleable intuitions in the desired direction. Each insists that we then extend these impulses quasi-rigorously, past any possible relevance to our own personal lives. [..]
+> 
+> What is perhaps particularly scary about the longtermists, as opposed to the other lot, is not that they are driven by emotion, but that they don’t know they are. [..] Grand-scale fantasies of saving the world are easy. Personal relationships are hard.
+
 ## People skeptical of rationalists
 
 - [Alexandros Marinos](https://twitter.com/search?q=rationalists%20from%3AalexandrosM&src=typed_query) -- who is also known to have gotten into [argument with](https://nitter.net/alexandrosM/status/1533327207795335168) Mr. Scott Alexander (yet another '[[Authority|authority]]' in this movement, commanding its denizens [what to think](https://doyourownresearch.substack.com/p/scott-alexandriad-iii-driving-up?s=r)). 
