@@ -15,6 +15,8 @@ While contemplating [[Never not this moment]] ...
       - The concomitant stillness is very palpable; revealed via the cessation of hitherto-existant "movement"
       - <small>It is the "moving" (in time) [[Identity]] that obscures it all otherwise.</small>
 - Ergo, [[Stillness of time|stillness]], as I experienced in a PCE, **is a clew**.
-- The clew (or the end of it that is close to the PCE) is accessed by seeing (via [[Pure Contemplation|contemplation]] and [[Curiosity-Fascination-Obsession|curiosity]]) if [[This Moment|this moment]] _is the same_ (over time), with only events on it changing (over time).
+- The clew (or the end of it that is close to the PCE) is accessed by seeing (via [[Pure Contemplation|contemplation]] and [[Curiosity-Fascination-Obsession|curiosity]]) if [[This Moment|this moment]] _is the same_[^same] (over time), with only events on it changing (over time).
     - Otherwise, that which appears to be changing "behind" is the [[Identity]]
     - Realizing (successfully 'seeing') it not to be changing ▶️ identity going into abeyance
+
+[^same]: [Richard](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm): *Put succinctly: the moment ([[This Moment|this moment]]) in which event ‘A’ happens is the exact same moment ([[This Moment|this moment]]) in which event ‘B’ happens ... it is only the events which change/move/flow and not the moment itself (eternity).*
