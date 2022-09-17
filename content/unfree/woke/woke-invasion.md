@@ -7,7 +7,7 @@ slug: woke-invasion
 
 [![[DIE-antzombie.jpeg]]](https://twitter.com/ConceptualJames/status/1496602448018001931)
 
-Proponents of [[woke]] have been proselytizing (see also [[woke-inveigling]]) many unsuspecting organizations (many of whom, except [[unwoke]], yield to their demands) adopting a number of covert tactics.  See [this Twitter thread](https://old.reddit.com/r/TheMotte/comments/orsvle/culture_war_roundup_for_the_week_of_july_26_2021/h6woer9/?sort=top) for an example of how it works in education.
+Proponents of [[woke]] have been proselytizing (see also [[woke-inveigling]]) many unsuspecting organizations (many of whom, with [[unwoke|exceptions]], yield to their demands) adopting a number of covert tactics.  See [this Twitter thread](https://old.reddit.com/r/TheMotte/comments/orsvle/culture_war_roundup_for_the_week_of_july_26_2021/h6woer9/?sort=top) for an example of how it works in education.
 
 Kara explains the particular situation in tech:
 
