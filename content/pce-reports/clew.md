@@ -7,6 +7,10 @@ These are just some rough notes on my attempts to deliberately induce a [[PCE|PC
 
 > Incidentally, just before/ just as the [[PCE|PCE]] starts to wear off, if one unravels (metaphorically) ==a ‘golden thread’ or ‘clew’==, as one is slipping back into the real-world, *an intimate connection is thus established betwixt the pristine-purity of an actual innocence and the near-purity of the [[Sincerity|sincerity]] of [[Naivete|naiveté]]*.
 
+## Sep 16, 2022
+
+- The [[Never not this moment]] contemplation to have apperception happen is intimately tied to [[How am I experiencing this moment of being alive]]. http://actualfreedom.com.au/richard/selectedcorrespondence/sc-method3.htm
+
 ## Sep 14, 2022
 
 While contemplating [[Never not this moment]] ...
