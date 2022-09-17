@@ -17,7 +17,7 @@ It is not merely about '[[crt|white privilege]]' but as well the concept applies
 > 
 > \[..\] While I was in college, I was introduced to this idea that having a particular opinion on a social issue can be a means to confer status or signal something about yourself. This piece by Rob Henderson fits into that mental model.
 
-While in reality, it tends to be mix of status-signalling and [[Caring|actual concern]] over issues, [[woke|woke stances]] tend to be the mix where the former is predominant (hence "virtue signalling").
+While, in reality, it tends to be mix of status-signalling and [[Caring|actual concern]] over issues, [[woke|woke stances]] generally are of the mix wherein the former is predominant (hence the term "*virtue signalling*").
 
 ## See also
 
