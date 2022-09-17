@@ -12,7 +12,7 @@ The first step to resist or undo [[woke-invasion]] in your organization is to th
 
 ### Organizations
 
-A sample of tech companies successfully extricating themselves out of [[woke-invasion]]. What level of diplomacy you choose in your tactic is up to you; Brian Armstrong (Coinbase) and DHH (Basecamp) were demonstrably more diplomatic than Jesse Powell (Kraken).
+A sample of tech companies successfully extricating themselves out of [[woke-invasion]] is presented below. What level of diplomacy you choose in your tactic is up to you; Brian Armstrong (Coinbase) and DHH (Basecamp) were demonstrably more diplomatic than Jesse Powell (Kraken).
 
 - **Coinbase**: [Coinbase is a mission focused company](https://blog.coinbase.com/coinbase-is-a-mission-focused-company-af882df8804)
 - **Basecamp**: [Summary by u/Amadanb](https://old.reddit.com/r/TheMotte/comments/n3pe45/culture_war_roundup_for_the_week_of_may_03_2021/gwwj9vm/?context=3&sort=best)
