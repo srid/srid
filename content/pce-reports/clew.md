@@ -31,11 +31,11 @@ While contemplating [[Never not this moment]] ...
 
     > **RICHARD:** G’day No. 44,
     > 
-    > Your initial email – reproduced here as #161xx further above – almost prompted me to write a comment, when you posted it, as it clearly pinpoints the difference between a caused/ conditional enjoyment (_‘I had a lot of fun tonight with friends’/ ‘all we did was sit, talk, and joke around’_) and an uncaused/ unconditional enjoyment (_‘the fascination that it is this moment sets in’/ ‘I am once more enjoying life’_).
+    > Your initial email – reproduced here as \#161xx further above – almost prompted me to write a comment, when you posted it, as it clearly pinpoints the difference between a caused/ conditional enjoyment (_‘I had a lot of fun tonight with friends’/ ‘all we did was sit, talk, and joke around’_) and an uncaused/ unconditional enjoyment (_‘the fascination that it is this moment sets in’/ ‘I am once more enjoying life’_).
     > 
     > (A caused, or conditional, enjoyment and appreciation has a beginning and an end – it is dependent upon situations and > circumstances – whereas an uncaused, or unconditional, enjoyment and appreciation is perpetual, aeonian (beginingless and endless) and occurs solely by virtue of being vitally alive – being dynamically here at this particular place in infinite space at this very moment in eternal time as a sensuous, reflective flesh-and-blood body only – and thus dependent upon no one, no thing, and no event).
     > 
-    > Your follow-up email – reproduced here as #161xx above – unambiguously indicates you are indeed \[quote\] _‘applying the method correctly’_ \[endquote\] and it quite remarkably reminded me of certain everyday experiences which occasioned the identity inhabiting this flesh-and-blood body all those years ago to both devise and (successfully) implement what has become known as the actualism method.
+    > Your follow-up email – reproduced here as \#161xx above – unambiguously indicates you are indeed \[quote\] _‘applying the method correctly’_ \[endquote\] and it quite remarkably reminded me of certain everyday experiences which occasioned the identity inhabiting this flesh-and-blood body all those years ago to both devise and (successfully) implement what has become known as the actualism method.
     > 
     > **What the question ‘How am I experiencing this moment of being alive?’ – which ‘he’ formulated back in early 1981 – meant to ‘him’ was ‘Why is that experience not happening at this very moment?’ or ‘What is preventing that way of being here occurring right now?’ or ‘How come that wondrous world is not currently apparent?’ (and so on and so forth)**.
     > 
