@@ -4,7 +4,7 @@ slug: unwoke
 
 # Undoing Woke Invasion
 
-The first step to resist or undo [[woke-invasion]] in your organization (or your psyche) is to thoroughly understand their creed [[crt]], so as to uncover the fact that woke disciples do not [[Luxury beliefs|actually care]] about any problem in the world beyond assuaging their self-centered feelings.[^mhg] The next step, obviously, is then to effectuate an elimination of the wannabe woke invaders from your organization by instituting a culture based on common sense values stripped of identity politics.
+The first step to resist or undo [[woke-invasion]] in your organization (or your psyche) is to thoroughly understand their creed [[crt]], so as to uncover the fact that woke disciples care [[Luxury beliefs|less]] about the problems in the world than assuaging their self-centered feelings.[^mhg] The next step, obviously, is then to effectuate an elimination of the wannabe woke invaders from your organization by instituting a culture based on common sense values stripped of identity politics.
 
 [^mhg]: It is vital to realize that the woke really have no moral high ground. They are as corrupt, to their core ([[woke-psychology|psychologically speaking]]), as the groups they criticize.
 
