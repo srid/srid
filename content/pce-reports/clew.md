@@ -9,7 +9,7 @@ These are just some rough notes on my attempts to deliberately induce a [[PCE|PC
 
 ## Sep 14, 2022
 
-While contemplating [[Never not this moment]] ...
+While contemplating [[Never not this moment]][^same] ...
 - Can immediately taste the "arriving here" of [[pce-reports]] (aka. [[Stillness of time|stillness]])
     - Music is raw; visual ambiance is getting to be brilliant ... all the while happening more in the *now-still* "arena"
       - The concomitant stillness is very palpable; revealed via the cessation of hitherto-existant "movement"
