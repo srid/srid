@@ -8,13 +8,14 @@ slug: haskell-template/philosophy
 
 I originally created [[haskell-template]] to serve as the base template for my Haskell [[Projects]]. As such, I wanted it to include by default the following:
 
-- [[Relude]] (because `Prelude` is dangerous)
+- [[Relude]] (because `Prelude` is [dangerous](https://github.com/NorfairKing/haskell-dangerous-functions))
 - [[haskell-language-server]] (because IDE integration from the get-go is invaluable)
+- [[ghcid]] (for instant auto-recompilation and re-running of the program)
 - [[hlint]]
 - [[treefmt]] (to keep the project tree autoformatted)
   - `fourmolu`[^ormolu] for Haskell
-  - `nixpkgs-fmt` for Nix
   - `cabal-fmt` for Cabal
+  - `nixpkgs-fmt` for Nix
 
 [^ormolu]: I used to use `ormolu` but switched to `fourmolu` because ormolu is annoying in some cases (like it [throwing away multiline haddock comments](https://github.com/tweag/ormolu/issues/641))
 

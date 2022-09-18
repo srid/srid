@@ -29,9 +29,12 @@ While you may use any text editor with language-server support, we will use [[VS
 
 ## Running in VSCode
 
+Once you have reloaded VSCode:
+
 ### Test that [[haskell-language-server]] works
 
-- Open `src/Main.hs`, and notice [[haskell-language-server]] launching in the footer (you should see "*Processing (1/2)*"), and wait for it finish.
+- Open `src/Main.hs`. 
+  - Notice [[haskell-language-server]] launching in the footer (you should see "*Processing (1/2)*"), and wait for it finish.
 - Hover your mouse over something, say `putTextLn`, and see the hover tooltip giving you the type signature.
     - This means the IDE support works!
 
@@ -53,7 +56,7 @@ Finally, if you are going to be using this template for a real project, you shou
 ```sh
 NAME=myproject
 # First, click the green "Use this template" button on GitHub to create your copy
-# You may name the respitory to be same as $NAME
+# You may name the new repository to be the same as $NAME
 git clone <your-clone-url> $NAME
 cd $NAME
 

@@ -4,15 +4,26 @@ slug: haskell-template
 
 # `haskell-template`
 
-`haskell-template` (<https://github.com/srid/haskell-template>) is a template Git repository for ready-made, fully reproducible and friendly #[[Haskell]] development using #[[Nix]] with full IDE support in [[VSCode]] (and other editors). See [[philosophy]] for what's (and why it is) included.
+`haskell-template` (<https://github.com/srid/haskell-template>) is a template Git repository for ready-made, fully reproducible and friendly #[[Haskell]] development using #[[Nix]]. It comes with full IDE support in [[VSCode]] (and other editors with LSP support). See [[philosophy]] for what's (and why it is) included.
+
+## Rationale
+
+The goal of `haskell-template` is to enable anyone to get started with [[Haskell]] development without much fanfare (thanks to [[Nix]]). I also use `haskell-template` to bootstrap all of my new Haskell projects. See [[haskell-template/start]] to get started.
+
+## Documentation
 
 - [[haskell-template/start]]
 - HOWTO
-  - `nix develop`: The nix shell is your friend; inside it, you will have the full Haskell development environment.
+  - `nix develop`: The nix shell is your friend; inside it, you will have the full Haskell development environment (cabal, ghc, ghci, [[haskell-language-server]], cabal-fmt, hlint, etc.).
   - Common Haskell workflows
-    - To run **hoogle** with project dependencies, run `bin/hoogle`
-    - To run the project **ghci** (aka. 'cabal repl'), run `bin/repl`.
-    - To run the project executable with auto-recompkle via **ghcid**, run `bin/run`
+    - Useful Scripts
+
+      | Script       | Description                                             |
+      | ------------ | ------------------------------------------------------- |
+      | `bin/run`    | Run the main executable via [[ghcid]] (auto-recompiles) |
+      | `bin/repl`   | Run `cabal repl`                                        |
+      | `bin/hoogle` | Run `hoogle` (Documentation for dependencies)           |
+
     - [[haskell-template/add-tests]]
     - Dependency management
       - [ ] How to add a Haskell package dependency
@@ -26,10 +37,12 @@ slug: haskell-template
     - `nix run .`: Run the program via Nix.
       - `nix run github:srid/haskell-template`: Run the program via Nix remotely.
     - `nix profile install github:srid/haskell-template`: Install the program via Nix.
-    - `nix --option sandbox false build .#check -L`: Run flake checks
+    - `nix --option sandbox false build .#check -L`: Run flake checks[^ifd]
   - [ ] [Switching to `direnv`](https://github.com/srid/haskell-template/issues/3)
   - CI
     - [[haskell-template/garnix]]
+
+[^ifd]: We cannot use `nix flake check` [due to IFD](https://nixos.wiki/wiki/Haskell#IFD_and_Haskell). And sandbox is being disabled because of [an issue](https://github.com/srid/haskell-flake/issues/21) with [[haskell-language-server]].
 
 ## Discussion
 
