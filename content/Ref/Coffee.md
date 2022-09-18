@@ -14,7 +14,6 @@ Invest in these:
 - Brew kettle with precision thermometer (I use Fellow Stagg)
 - Coffee canister (I use Airscape)
 - A good burr grinder (I use Niche Zero, or Comandante when travelling)
-- Grinder brush
 - Aeropress
 
 ## Dialing
@@ -73,11 +72,11 @@ Legend: `<water-temp>f; <comandante-grind>c`. All measurements are assuming the 
 Ongoing review of beans from iDrinkCoffee, my preferred supplier of beans due to consistent freshness.
 
 
-| Coffee                                 | Taste              | Notes              | Grind notes                                |
-| -------------------------------------- | ------------------ | ------------------ | ------------------------------------------ |
-| Monsoon Malabar                        | Smokey             | 👍      | 180f; 17c (35c+185f in Kalita) |
-| Brazil Santos                          | Chocolate          | 👍                  | 190f; 15c (32c in Kalita) |
-| Sweet Blue, Daterra Farms              | Chocolate          | 👍                  | 190f (or 185f); 14c |
+| Coffee                    | Taste     | Notes | Grind notes                    |
+| ------------------------- | --------- | ----- | ------------------------------ |
+| Monsoon Malabar           | Smokey    | 👍     | 180f; 17c (35c+185f in Kalita) |
+| Brazil Santos             | Chocolate | 👍     | 190f; 15c (32c in Kalita)      |
+| Sweet Blue, Daterra Farms | Chocolate | 👍     | 190f (or 185f); 14c            |
 
 ### Cafe Smith
 
