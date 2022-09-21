@@ -23,6 +23,27 @@ While contemplating [[Never not this moment]][^same] ...
 
 - The [[Never not this moment]] contemplation to have apperception happen is intimately tied to asking [[How am I experiencing this moment of being alive]].[^method]
 
+## Sep 19, 2022
+
+- Tapping into pure intent via becoming [[Naivete]] has a similar feel: 
+    > Apperception is very much like what one sees with **one’s peripheral vision as opposed to the intent focus** of normal or central vision. This moment of **soft, ungathered** sensuosity – apperception – contains a vast understanding, an utter cognisance, that is lost as soon as one adjusts one’s mind to accommodate the feeling-tone and subverts the crystal-clear objectivity into an ontological ‘being’ ... a connotative ‘thing-in-itself’. -- http://actualfreedom.com.au/sundry/frequentquestions/FAQ38a.htm
+
+## Sep 20, 2022
+
+- The moment that *softness/gentleness* (which itself resulted from my investigation of a trigger and the concomitant chipping-away of a part of "me") segued into *humility* a flashing red light popped up as if to give me a warning sign. I took a step back and looked at the feeling, and saw it to be the other side of *pride* (pride was involved in that trigger). At that point it became tricky to distinguish humility from a [[Naivete|naive]] disposition (gentleness, softness). But, having now seen the spiritual lure of humility (as Richard says, humility is just a trick "I" use to survive[^humility]), I can better distinguish it now.
+- From "Sep 14, 2022" above:
+    > The clew (or the end of it that is close to the PCE) is accessed by seeing (via [[Pure Contemplation|contemplation]] and [[Curiosity-Fascination-Obsession|curiosity]]) if [[This Moment|this moment]] _is the same_[^same] (over time), with only events on it changing (over time).
+
+    I'm going to now say that: the clew (or the end of it that is close to "me") is accessed by reinvigorating this gentleness/softness.
+
+    As if pure intent, then, is a connection from this gentleness/softness to the stillness of this moment.
+
+[^humility]: From http://actualfreedom.com.au/sundry/frequentquestions/FAQ41a.htm
+
+    > ‘I’ think and feel that ‘I’ am so important that ‘I’ must live forever. It is a pernicious belief with its roots buried deep in self-importance and self-aggrandisement. It is where **conceit meets arrogance and become meekness and humility** ... and seeks its post-mortem reward.
+    > 
+    > ‘I’ will do anything to survive. [http://actualfreedom.com.au/sundry/frequentquestions/FAQ41a.htm](http://actualfreedom.com.au/sundry/frequentquestions/FAQ41a.htm)
+
 
 [^same]: [Richard](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm): *Put succinctly: the moment ([[This Moment|this moment]]) in which event ‘A’ happens is the exact same moment ([[This Moment|this moment]]) in which event ‘B’ happens ... it is only the events which change/move/flow and not the moment itself (eternity).*
 
