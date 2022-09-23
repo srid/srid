@@ -53,3 +53,4 @@ renderHeistTemplate name etmpl =
 ## External links
 
 - See [`Heist.Extra.TemplateState`](https://github.com/srid/emanote/blob/8b85459c000cd9100ebdd708ec47dfd411c72450/src/Heist/Extra/TemplateState.hs) in [[Emanote]]
+- https://github.com/srid/heist-extra (useful in particular for [[Ema]] apps)
