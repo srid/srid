@@ -22,15 +22,16 @@
         "ema": "ema",
         "flake-parts": "flake-parts",
         "haskell-flake": "haskell-flake",
+        "heist-extra": "heist-extra",
         "nixpkgs": "nixpkgs",
         "tailwind-haskell": "tailwind-haskell"
       },
       "locked": {
-        "lastModified": 1663457373,
-        "narHash": "sha256-bUbodi7k4olGBuf6WFOEcQwwt766NWnZtKifUN47u24=",
+        "lastModified": 1663963529,
+        "narHash": "sha256-hbwD2M61V4HeHMFts0kWDRnEKOw5o/f26jMLChOxWsU=",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "61fd13fb7466bab05eb417824f744a7251334df8",
+        "rev": "9e15df4fd2811564824ad2f0779a6a77cf6f7840",
         "type": "github"
       },
       "original": {
@@ -88,6 +89,22 @@
       "original": {
         "owner": "srid",
         "repo": "haskell-flake",
+        "type": "github"
+      }
+    },
+    "heist-extra": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663962912,
+        "narHash": "sha256-AxzbGM1/l4Sm6zI5aunMA3cbdlDNHBecROKTaAEawxU=",
+        "owner": "srid",
+        "repo": "heist-extra",
+        "rev": "29c719ded6606da19c21b182cf465b9620cda0b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "srid",
+        "repo": "heist-extra",
         "type": "github"
       }
     },
