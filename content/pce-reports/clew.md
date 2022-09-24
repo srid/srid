@@ -2,7 +2,7 @@
 # Clew
 
 :::{.page-note}
-These are just some rough notes on my attempts to deliberately induce a [[PCE|PCE]].
+These are ongoing notes on my attempts to deliberately induce a [[PCE|PCE]] as well as tap into pure intent and have it inform everyday life.
 :::
 
 > Incidentally, just before/ just as the [[PCE|PCE]] starts to wear off, if one unravels (metaphorically) ==a ‘golden thread’ or ‘clew’==, as one is slipping back into the real-world, *an intimate connection is thus established betwixt the pristine-purity of an actual innocence and the near-purity of the [[Sincerity|sincerity]] of [[Naivete|naiveté]]*.
@@ -37,6 +37,16 @@ While contemplating [[Never not this moment]][^same] ...
     I'm going to now say that: the clew (or the end of it that is close to "me") is accessed by reinvigorating this gentleness/softness.
 
     As if pure intent, then, is a connection from this gentleness/softness to the stillness of this moment.
+
+## Sep 24, 2022
+
+
+- I believe I made the connection between pure intent and what happens during **investigation of the [[Social Identity]]**. It comes down to seeing the third alternative derived from the purity of the [[Stillness of time|stillness]], and using that to (concomitantly) see through the opposites (the non-naive parts of 'me'):
+    > In actualism the **third alternative** always applies. ‘Good’ and ‘Bad’, ‘Right’ and ‘Wrong’, ‘Virtue’ and ‘Sin’, ‘[[Hope]]’ and ‘Despair’, ‘[[Gratitude]]’ and ‘[[Basic Resentment|Resentment]]’, and so on, all **disappear in the perfection of purity**. Purity is the hall-mark of the [[Stillness of time|stillness]] that is the essential character of the infinitude of the universe ... which is the life-giving foundation of all that is apparent. **Unless the factuality of the existence of the third alternative is firmly grasped, one is forever fated to shuttle back and forth between the opposites**. [http://actualfreedom.com.au/richard/selectedcorrespondence/sc-feelings.htm](http://actualfreedom.com.au/richard/selectedcorrespondence/sc-feelings.htm)
+    - Srid to Rick:
+        > Yes. I like how you framed not only 'myself' but also 'society' as center-stage. In a way, they are both the same thing (as Richard says "I" am Humanity and Humanity is "me") ... hence, it is impossible to "deprogram" oneself without accessing something outside of that center-stage.
+        > 
+        > So 'outside of myself' means not only 'outside of myself' but also 'outside of society',
 
 [^humility]: From http://actualfreedom.com.au/sundry/frequentquestions/FAQ41a.htm
 
