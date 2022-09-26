@@ -24,14 +24,8 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
       | `bin/repl`   | Run `cabal repl`                                        |
       | `bin/hoogle` | Run `hoogle` (Documentation for dependencies)           |
 
+    - [[dependency]] (or how to override them in Nix)
     - [[haskell-template/add-tests]]
-    - Dependency management
-      - [ ] How to add a Haskell package dependency
-
-        Add the package to the .cabal file, and re-run `nix develop` (and restart [[VSCode]]). If the package is unavailable, you will have to override it (see next point).
-      - [ ] How to override a Haskell package in [[Nix]]
-
-        Use [this tutorial](https://tek.brick.do/how-to-override-dependency-versions-when-building-a-haskell-project-with-nix-K3VXJd8mEKO7) when setting the the `overrides` option of [[haskell-flake]]
   - Common Nix workflows
     - `nix build`: Build the nix package.
     - `nix run .`: Run the program via Nix.
