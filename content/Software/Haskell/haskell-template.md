@@ -21,8 +21,8 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
       | Script       | Description                                             |
       | ------------ | ------------------------------------------------------- |
       | `bin/run`    | Run the main executable via [[ghcid]] (auto-recompiles) |
-      | `bin/repl`   | Run `cabal repl`                                        |
-      | `bin/hoogle` | Run `hoogle` (Documentation for dependencies)           |
+      | `bin/repl`   | Run `cabal repl` (gives you a `ghci` repl)              |
+      | `bin/hoogle` | Run `hoogle` (Documentation server for packages in use) |
 
     - [[dependency]] (or how to override them in Nix)
     - [[haskell-template/add-tests]]

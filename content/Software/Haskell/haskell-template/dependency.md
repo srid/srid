@@ -27,7 +27,7 @@ In Nix, it is possible to use an exact package built from an arbitrary source (G
       };
     }
     ```
-1. Build it using `callCabal2nix` and assign it to the `ema` name in the Haskell package set by adding it to the `overrides` argument of [[haskell-flake]]:
+1. Build it using `callCabal2nix` and assign it to the `ema` name in the Haskell package set by adding it to the `overrides` argument of your `flake.nix` that is using [[haskell-flake]]:
     ```nix
     {
       perSystem = { self', config, pkgs, ... }: {
