@@ -25,7 +25,7 @@ If there is once case study I have to pick as my favourite, it would have to be 
 - **Grace**: a report of how she resisted [[woke-invasion]] in her non-profit organization in around year 2010, through clearly understanding [[crt]].
   - [Twitter thread](https://threadreaderapp.com/thread/1386739669866455043.html)
   - [Video interview with Keri Smith](https://odysee.com/@unsafe:f/deprogrammed-grace-surviving-a-woke:2?)
-- **Pedro Domingos**: [Beating Back Cancel Culture: A Case Study from the Field of Artificial Intelligence](https://quillette.com/2021/01/27/beating-back-cancel-culture-a-case-study-from-the-field-of-artificial-intelligence/)
+- **Pedro Domingos**: [Beating Back Cancel Culture: A Case Study from the Field of Artificial Intelligence](https://archive.ph/0yUs8)
 
 ## Expose them
 
