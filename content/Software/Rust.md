@@ -2,6 +2,8 @@
 slug: rust
 ---
 
+https://www.rust-lang.org/
+
 ## Rust community
 
 ### Criticism
