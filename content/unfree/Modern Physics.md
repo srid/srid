@@ -28,5 +28,8 @@ So the universe being infinite / eternal/ absolute becomes impossible to accept 
 In summary, we have a self-centric perspective (and a God-centric perspective as well on top) that is constantly tainting our understanding of the universe.
 
   
+## Related Links
+
+- [No one in physics dares say so, but the race to invent new particles is pointless](https://www.theguardian.com/commentisfree/2022/sep/26/physics-particles-physicists) (via [HN](https://news.ycombinator.com/item?id=33004799))
 
 [^act]: Aside from [[free|actualists]], of course.
