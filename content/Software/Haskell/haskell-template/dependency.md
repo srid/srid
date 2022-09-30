@@ -4,7 +4,7 @@ slug: haskell-template/dependency
 
 # Adding library dependencies
 
-There are several libraries from [Hackage](https://hackage.haskell.org/) that you can use in your Haskell project. The general steps to do this are:
+There are several libraries from [Hackage](https://hackage.haskell.org/) that you can use in your Haskell project created off [[haskell-template]]. The general steps to do this are:
 
 1. Identify the package name from Hackage. Let's say you want to use [`ema`](https://hackage.haskell.org/package/ema)
 2. Add the package, `ema`, to the `.cabal` file under [the `build-depends` section](https://cabal.readthedocs.io/en/3.4/cabal-package.html#pkg-field-build-depends).
@@ -41,6 +41,10 @@ In Nix, it is possible to use an exact package built from an arbitrary source (G
     ```
     We use `dontCheck` here to disable running tests. You can also use `source-overrides` instead of `overrides`.
 1. Re-run the nix shell (`nix develop`) and restart [[VSCode]].
+
+## `pkgs.haskell.lib` functions
+
+- [ ] Write about this.
 
 ## See also
 
