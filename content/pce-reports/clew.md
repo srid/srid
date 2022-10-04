@@ -48,6 +48,16 @@ While contemplating [[Never not this moment]][^same] ...
 
     Essentially, by default, 'I' am tapping into 'society' (as if it is an agent), even though 'society' is, ultimately, 'me' (i.e.: it is 'my' creation). What needs to happen, for 'me' to self-immolate, is to tap into pure intent instead (unlike 'society', however, pure intent is outside of 'myself' and is not 'my' creation). Consequently, this would obviously bring about a difference in 'my' values and, thereby, impact personality/disposition. Now, all of this happens in the background of [[Felicity and Innocuity|enjoying and appreciating]] this moment of being alive. It naturally becomes easier to enjoy life when one's balls are not as strongly chained to 'society'.
 
+## Sep 29 (method)
+
+
+1. Realize, experientially (i.e., in my own consciousness), that [['I' am 'my' feelings and 'my' feelings are 'me']]
+2. Realize, experientially (i.e., in my own consciousness), that it is "my" choice as to how "I" feel (how "I" am).
+3. "I" am feeling happy, by sheer common-sense, as a result. "I" am feeling as such, as a *background* state, regardless of what is happening (the 'foreground'). "I" am almost being [[Naivete|naive]]; consequently interactions become spontaneous and intimate.
+4. Notice (see [[How am I experiencing this moment of being alive|HAIETMOBA]] & [[Affective Awareness]]) as "I" retreat back to "my" default or sub-optimal way of being ... what triggers it off (see [[Diminishment]]). Acknowledge the appeal in staying as that; root out (see [[On-the-job real-time experiencing]]) the fundamental beliefs (one may come across the "You can't change human nature" mother-belief). Now effortlessly restore (see also: [[Rememoration]]) that autonomous background state, the felicitous "me", once again by common-sense (aka. [[Seeing the silliness]]).
+5. Keep this autonomous background state, the felicitous "me", for as long as possible. Make [[PCE]]s more likely. It is after all something "I" can do *right now* without procrastinating (as is the case with triggering PCEs or self-immolating)
+
+> I'm absolutely convinced that this is the gist of the [[Actualism Method]]. Interestingly, whenever I had read the AFT descriptions of the method, I would always interpret it as if it is something a split "I" would have to do so as to control/manage the other split "me". Whereas, what happened today was I took a step back and engaged a meta-awareness ... and this only became possible after steps 1 & 2 in that list above were actualized.
 
 
 [^humility]: From http://actualfreedom.com.au/sundry/frequentquestions/FAQ41a.htm
