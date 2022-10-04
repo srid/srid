@@ -14,4 +14,4 @@ https://www.rust-lang.org/
 
 In 2020, the forum post titled [Rust says tech will* always be political](https://users.rust-lang.org/t/rust-says-tech-will-always-be-political/43627) - discussed the Rust core team publicly promulgating their [[Luxury beliefs]] around American culture wars as if to speak on behalf of the members of the wider community.
 
-A year later another, in August 2021, [post](https://users.rust-lang.org/t/worries-about-tech-always-being-political-statement-by-rust-team/63272?u=srid) was made by another member which immediately got locked by a moderator.
+A year later another, in August 2021, another [post](https://users.rust-lang.org/t/worries-about-tech-always-being-political-statement-by-rust-team/63272?u=srid) was made by another member which immediately got locked by a moderator.
