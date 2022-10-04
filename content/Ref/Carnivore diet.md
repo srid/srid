@@ -45,7 +45,7 @@ One ought to pay lip service to general medical wisdom and any dominant nutritio
 
 ## Resources
 
-* Healing reports
+* Healing reports[^elim]
   * [Charlene  Andersen](http://web.archive.org/web/20191101053010/http://meatheals.com/2018/02/04/charlene-andersen/)
   * [Mikhaila Peterson](https://selfhack.com/blog/mikhaila-peterson-why-the-carnivore-diet-helps-autoimmunity/)
   * [Success Stories](https://carnivore.diet/category/success-stories/)
@@ -68,6 +68,8 @@ One ought to pay lip service to general medical wisdom and any dominant nutritio
 * [[Recipes]] on this site
 * Social Media / Culture / Politics (of meat)
   * [Frédéric Leroy](https://twitter.com/fleroy1974)
+
+[^elim]: It is worth keeping in mind that the carnivore diet can be considered to be an extreme form of [elimination diet](https://en.wikipedia.org/wiki/Elimination_diet) (albeit a more nutritious one), and that your condition might resolve better with other diets, even [a vegan diet](https://www.dailymail.co.uk/femail/article-5646085/Twins-Nina-Randa-Nelson-suffering-severe-acne-reveal-tweaking-diet-cleared-skin.html). Experiment and find out for yourself.
 
 ## Relevant News
 
