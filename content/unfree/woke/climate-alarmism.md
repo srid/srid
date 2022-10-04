@@ -10,6 +10,7 @@ catastrophistic thinking[^doom] humanity has been harbouring for generations, wh
 > Green catastrophism has its roots in thousands of years of religious doom-mongering.
 
 -- [The Planet's Future Shouldn't Be Left to the Catastrophists](https://www.humanprogress.org/the-planets-future-is-too-important-to-leave-to-the-catastrophists/)
+
 For a succint summary of it all:
 
 > The evidence is all based on models, controlled by the very people who have incentive for those models to support their claims (scientists receiving grants, corporate kickbacks, etc and NGOs/politicians doing the same).
