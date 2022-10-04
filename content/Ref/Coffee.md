@@ -63,34 +63,15 @@ TODO: This recipe is usually not successful (probably because I tend to use espr
 - 35g pour, wait 35 secs.
 - Pour rest, total 135g. Wait till water comes through.
 
-## Bean reviews
+## Beans
 
-Legend: `<water-temp>f; <comandante-grind>c`. All measurements are assuming the "Inverted Aeropress recipe" above.
-
-### [iDrinkCoffee](https://idrinkcoffee.com/) beans
-
-Ongoing review of beans from iDrinkCoffee, my preferred supplier of beans due to consistent freshness.
-
-
-| Coffee                    | Taste     | Notes | Grind notes                    |
-| ------------------------- | --------- | ----- | ------------------------------ |
-| Monsoon Malabar           | Smokey    | 👍     | 180f; 17c (35c+185f in Kalita) |
-| Brazil Santos             | Chocolate | 👍     | 190f; 15c (32c in Kalita)      |
-| Sweet Blue, Daterra Farms | Chocolate | 👍     | 190f (or 185f); 14c            |
-
-### Cafe Smith
-
-A local cafe chain I have been trying.
-
-- [1653 Espresso Blend](https://en.smithcafe.com/collections/cafes-selection-la-maison-smith/products/1653-melange-espresso)
-  - 185f; 14c
-  - Sumptuous! Great aftertaste.
+I tend to buy  my coffee beans online from [iDrinkCoffee](https://idrinkcoffee.com/).
 
 ## Learnings / experimentation
 
 - [x] More coffee doesn't impact sleep when fasting during the day (ie. OMAD close to bed time)
 - [x] Eating (creamy) butter in between cups helps 'reset' taste receptor.
-    - [x] Though eating a meal is ideal.
+    - [x] But eating a meal is ideal.
 - [ ] Roast coffee myself
 
 
