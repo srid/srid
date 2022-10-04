@@ -50,6 +50,7 @@ While contemplating [[Never not this moment]][^same] ...
 
 ## Sep 29 (method)
 
+[The empasis here is more on the identity aspect than the feeling aspect]
 
 1. Realize, experientially (i.e., in my own consciousness), that [['I' am 'my' feelings and 'my' feelings are 'me']]
 2. Realize, experientially (i.e., in my own consciousness), that it is "my" choice as to how "I" feel (how "I" am).
