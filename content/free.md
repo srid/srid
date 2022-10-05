@@ -10,7 +10,7 @@ order: 999
 ⚠️
 :::
 :::{#ws}
-This section of the website is being made public mainly for the [[Naivete|naive]]-minded who have not been totally [had by the balls](https://dictionary.cambridge.org/dictionary/english/have-by-the-balls) of spiritualism, [[Modern Rationality|rationalism]], [[woke|politics]], [[Wiliness of the wild|sophistication]] or anything of that ilk.[^ex]
+This section of the website is being made public mainly for the [[Naivete|naive]]-minded; circle jerking normies who follow the likes[^ex] of spiritualism, [[Modern Rationality|rationalism]], [[woke|politics]], [[Wiliness of the wild|sophistication]] are advised instead to visit [[unfree]].
 
 [^ex]: A simple test to see if you unwittingly belong to such a group is to [[Sincerity|sincerely]] assess your feelings while reading any of actualism text. You may use [this index](http://actualfreedom.com.au/sundry/commonobjections/croindex.htm) to compare those feeling-reactions against the documented spectrum of (entirely normal) entrenched cognitive dissonance in action.
 :::
