@@ -11,4 +11,4 @@ Although we are increasingly becoming secular (via allowing individualism to inc
 path:./*
 ```
 
-For the obverse, where these instinctual legacies play no part, see [[free]].
+For the obverse, where this instinctual-cum-tribalistic circlejerk plays no part, see [[free]].
