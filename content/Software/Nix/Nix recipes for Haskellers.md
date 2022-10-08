@@ -159,7 +159,7 @@ See [Artyom's tech notes](https://tek.brick.do/how-to-override-dependency-versio
 
 ### Multi-package cabal project
 
-`developPackage` cannot be used if you use the cabal project feature, containing multiple packages. You will have to go a few steps lower in the abstraction ladder, and use the underlying Nix functions (`callCabal2nix`, `shellFor`, `extend`, `inNixShell`) in the `default.nix` of a multiple-package cabal project. See [summoner's default.nix](https://github.com/kowainik/summoner/blob/60de4f2f087e5bd2beaad9253e7eded731cfbaaf/default.nix) for a full example.
+`developPackage` cannot be used if your project has multiple Haskell packages. You will have to go a few steps lower in the abstraction ladder, and use the underlying Nix functions (`callCabal2nix`, `shellFor`, `extend`) in the `default.nix` (or `flake.nix`) of a multiple-package cabal project. See https://github.com/srid/haskell-multi-nix for a full example.
 
 ## Caching
 
