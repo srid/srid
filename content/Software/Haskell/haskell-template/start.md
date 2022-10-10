@@ -6,7 +6,7 @@ slug: haskell-template/start
 
 ## First-time setup
 
-If this is your first time using [[Nix]] or [[haskell-template]] you will need to setup a few things on your system.
+If this is your first time using [[Nix]] or [[haskell-template]] (or a project based on it) you will initially need to setup a few things on your system.
 
 ### Nix
 
@@ -29,7 +29,7 @@ While you may use any text editor with language-server support, we will use [[VS
 
 ## Running in VSCode
 
-Once you have reloaded VSCode:
+Once the project has been reloaded in VSCode, you are ready to start developing it. But first, it is useful to sanity check a few things:
 
 ### Test that [[haskell-language-server]] works
 
