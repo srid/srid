@@ -14,7 +14,7 @@ Feelings and moods of course do not reliably change via conscious *control*. The
 
 ## Step 0: Be willing and interested
 
-Most people are not interested in feeling good 24x7. They'd rather experience the [[Good feeling|good feelings]] like [[Love|love]] or wallow in the bad ones. This method will not work without sufficient interest in ... being different to the other 7 billion people on the planet. Put simply, you are interested in [[Felicity and Innocuity|being felicitous]] and being so [[This Moment|right now]]; nothing else matters, no matter how much of it is unwittingly borrowed from the hoary wisdom of those that came before.
+Most people are not interested in feeling good 24x7. They'd rather experience the [[Good feeling|good feelings]] like [[Love|love]] or wallow in the bad ones. This method will not work without sufficient interest in ... being different to the other 7 billion people on the planet. Put simply, you are interested in [[Felicity and Innocuity|being felicitous]] and being so [[This Moment|right now]]; nothing else matters, because one is not [[Gullibility|gullible]] enough to readily regurgitate the hoary and borrowed wisdom of those-that-came-before.
 
 ## Step 1: Undissociate yourself
 
