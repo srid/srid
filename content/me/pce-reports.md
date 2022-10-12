@@ -1,3 +1,7 @@
+---
+slug: pce-reports
+---
+
 # PCE reports
 
 This page is dedicated to publishing my self-reports of [[PCE]]s and [[EE]]s. 

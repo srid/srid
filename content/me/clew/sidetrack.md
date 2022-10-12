@@ -1,3 +1,7 @@
+---
+slug: clew/sidetrack
+---
+
 # Sidetracks
 
 Things that are not *central* to my goal in [[clew]], or are not *simple* enough to warrant further attention ... but still nevertheless worth tracking as a reminder of what sidetracks and unnecessary tangential explorations are possible.
