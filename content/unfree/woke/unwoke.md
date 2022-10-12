@@ -37,3 +37,7 @@ You may then publicly expose the woke charlatans, as these do:
 - [艾未未  Ai Weiwei, likening the conformity of political correctness in the United States to the Cultural Revolution’s ideological cleansing](https://twitter.com/MargaretHoover/status/1460401404477124611) 
 - David Heinemeier Hansson (DHH): [Are we past peak "woke"?](https://world.hey.com/dhh/are-we-past-peak-woke-c313b7d1)
 - Yours truly: [[woke|Srid's notes on Wokeism]]
+
+## How are woke-infiltrated companies doing?
+
+- [What “diversity and inclusion” means at Microsoft](https://news.ycombinator.com/item?id=33165844)
