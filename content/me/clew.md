@@ -36,6 +36,10 @@ N/A
 >
 > "Before applying the actualism method – the ongoing enjoyment and appreciation of this moment of being alive – it is essential for success to grasp the fact that this very moment which is happening now is your only moment of being alive." and "As one knows from the pure consciousness experiences (PCE’s), which are moments of perfection everybody has at some stage in their life, that it is possible to experience this moment in time and this place in space as perfection personified" are why (in addition to being aware of affective ongoing; as I gather with the help of a journal activity) it is possible that a "simple noticing of feelings is enough"
 
+## Oct 12, 2022 ([[Actualism Method|method]])
+
+It became possible to make the choice to get back to feeling good, and I am understanding how exactly: [[choice]].
+
 [^same]: [Richard](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm): *Put succinctly: the moment ([[This Moment|this moment]]) in which event ‘A’ happens is the exact same moment ([[This Moment|this moment]]) in which event ‘B’ happens ... it is only the events which change/move/flow and not the moment itself (eternity).*
 
 
