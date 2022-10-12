@@ -35,3 +35,7 @@ Or for a conspiratorial summary,
 - [Jackson Dame, once a conservative Christian, cancelled Brantly Millegan to secure the bag](https://indianbronson.substack.com/p/jackson-dame-once-a-conservative)
 
     > Dame only appeared on the ENS scene a year ago. He’s not technical. He didn’t make anywhere near the contribution that Brantly did. But via ruthless social engineering, he now has greater de facto influence over ENS than the sincere and straightforward Brantly Millegan.
+
+## How are woke-infiltrated companies doing?
+
+- [What “diversity and inclusion” means at Microsoft](https://news.ycombinator.com/item?id=33165844)
