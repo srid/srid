@@ -4,7 +4,7 @@ slug: choice
 
 # The choice to be happy
 
-[**WORK IN PROGRESS**]{.page-note .text-xl}
+[ [Presented below is my informal description of the [[Actualism Method]], emphasizing the "choice" aspect of it.]{.editor-note} ]{.page-note}
 
 Every normal human being has the unrealized ability to **choose** to [[Feeling good|feel good]]. This ability remains unutilized only because of our normal dissociative awareness and disinterest. 
 
@@ -30,6 +30,6 @@ For eg., if you are feeling sad, arrive at a point where you are comfortable wit
 
 Once you have identified, fully accepted and realized that "you" are "sadness" itself (they are indistinguishable), for instance, the feeling can dissolve away eventually and one is back to feeling good.
 
-However, if the feeling still remains (especially the case for recurring themes) - then the **psychic scuba-diving** business starts. Go "down", as it were, in your psyche to unearth (i.e.: become aware of) the psychic contents that _underly_ the sadness itself. Find out what is sustaining it. But remember, do it without resisting or pushing away the feeling -- the sadness itself is put into a bind, while you do this psychic search-and-destroy mission. You may come across beliefs, expectations, complexes, entrenched habits so on and so forth. Become aware of them all. All of this is what "you" are made of. You are finding out how "you" tick. You may well find all of this to be a curious and a fascinating process, which [[Curiosity-Fascination-Obsession|fascination]] is essential for success to occur. 
+However, if the feeling still remains (especially the case for recurring themes) - then the [[On-the-job real-time experiencing|psychic scuba-diving]] business starts. Go "down", as it were, in your psyche to unearth (i.e.: become aware of) the psychic contents that _underly_ the sadness itself. Find out what is sustaining it. But remember, do it without resisting or pushing away the feeling -- the sadness itself is put into a bind, while you do this psychic search-and-destroy mission. You may come across beliefs, expectations, complexes, entrenched habits so on and so forth. Become aware of them all. All of this is what "you" are made of. You are finding out how "you" tick. You may well find all of this to be a curious and a fascinating process, which [[Curiosity-Fascination-Obsession|fascination]] is essential for success to occur. 
 
 At one point, your [[Native intelligence|intelligence]] will automatically notice how all of this is [[Seeing the silliness|silly]]. Right then, that feeling of sadness (along with the unearthed parts and pieces of "you") will begin to dissipate away, and it does so without any voluntary control. A (tacit/ intelligent) "**choice**" (or "decision") is being made, and before you know it you are back to [[Feeling good|feeling good]].
