@@ -36,6 +36,7 @@ Or for a conspiratorial summary,
 
     > Dame only appeared on the ENS scene a year ago. He’s not technical. He didn’t make anywhere near the contribution that Brantly did. But via ruthless social engineering, he now has greater de facto influence over ENS than the sincere and straightforward Brantly Millegan.
 
-## How are woke-infiltrated companies doing?
+## How are woke-infiltrated groups doing?
 
 - [What “diversity and inclusion” means at Microsoft](https://news.ycombinator.com/item?id=33165844)
+- [Colleges that ditched admission tests find it harder to fairly choose students](https://news.ycombinator.com/item?id=33298336)
