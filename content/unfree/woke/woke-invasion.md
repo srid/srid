@@ -30,12 +30,6 @@ Or for a conspiratorial summary,
 - [How did American “wokeness” jump from elite schools to everyday life?](https://old.reddit.com/r/TheMotte/comments/pecd0o/culture_war_roundup_for_the_week_of_august_30_2021/hbklxdw/?sort=top)
 - [History of woke invasion from the perspective of someone in the FOSS camp](https://gleasonator.com/@PhenomX6@fedi.pawlicker.com/posts/AMUMdYJWpMpLyeFAy8) ([Japanese translation](https://web.gnusocial.jp/post/2022/08/21/))
 
-## Examples
-
-- [Jackson Dame, once a conservative Christian, cancelled Brantly Millegan to secure the bag](https://indianbronson.substack.com/p/jackson-dame-once-a-conservative)
-
-    > Dame only appeared on the ENS scene a year ago. He’s not technical. He didn’t make anywhere near the contribution that Brantly did. But via ruthless social engineering, he now has greater de facto influence over ENS than the sincere and straightforward Brantly Millegan.
-
 ## How are woke-infiltrated groups doing?
 
 - [What “diversity and inclusion” means at Microsoft](https://news.ycombinator.com/item?id=33165844)
