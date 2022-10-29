@@ -18,5 +18,4 @@ builds:
   exclude:
     # https://github.com/srid/haskell-flake/issues/21
     - "checks.*.default-hls"
-    - "packages.*.check"
 ```
