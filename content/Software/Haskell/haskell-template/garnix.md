@@ -9,12 +9,8 @@ slug: haskell-template/garnix
 ```yaml
 builds:
   include:
-    - "packages.x86_64-linux.*"
-    - "packages.aarch64-darwin.*"
-    - "checks.x86_64-linux.*"
-    - "checks.aarch64-darwin.*"
-    - "devShells.x86_64-linux.default"
-    - "devShells.aarch64-darwin.default"
+    - "*.aarch64-darwin.*"
+    - "*.x86_64-linux.*"
   exclude:
     # https://github.com/srid/haskell-flake/issues/21
     - "checks.*.default-hls"
