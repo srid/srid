@@ -4,7 +4,9 @@ slug: haskell-template/garnix
 
 # Adding Garnix CI
 
-[[haskell-template]] already uses Github Actions for CI, but if you wish to use [Garnix](https://garnix.io/) -- a Nix based hosted CI service that integrates well with GitHub -- instead, you may provide a `garnix.yaml` like the below:
+[[haskell-template]] already uses Github Actions for CI, but you may also use [Garnix](https://garnix.io/). Garnix is a Nix based hosted CI service that integrates well with GitHub. Compared to Github Actions, Garnix CI jobs run faster and finally you get a free Nix cache as a result (no need to manually push to cachix). 
+
+You may use the following `garnix.yaml` to enable both Linux and macOS builds:
 
 ```yaml
 builds:
