@@ -63,6 +63,7 @@ cd $NAME
 
 git mv haskell-template.cabal ${NAME}.cabal
 nix run nixpkgs\#sd -- haskell-template ${NAME} * */*
+echo "# ${NAME}\n\n" > README.md
 git add . && git commit -m rename
 ```
 
