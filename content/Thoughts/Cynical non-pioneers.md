@@ -2,7 +2,9 @@
 slug: plato-cave
 ---
 
-I wish there existed a suitable antonym for the word "pioneer" (a person who is among the first to explore or settle a new country or area). The closest that exists, as far as I can tell, is [Plato's Cave](https://en.wikipedia.org/wiki/Allegory_of_the_cave) metaphor.
+I wish there existed a suitable antonym for the word "pioneer"[^def]. The closest that exists, as far as I can tell, is the [Plato's Cave](https://en.wikipedia.org/wiki/Allegory_of_the_cave) metaphor.
+
+[^def]: *a person who is among the first to research and develop a new area of knowledge or activity*
 
 ## Cynicism of non-pioneers ...
 
