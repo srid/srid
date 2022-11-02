@@ -19,7 +19,7 @@ Here are some examples of [[Naive Optimism|cynicism]] exhibited by non-enthusias
 
 ### ... [[free|Actualism]]
 
-TODO (see [here](http://actualfreedom.com.au/sundry/commonobjections/croindex.htm))
+See [here](http://actualfreedom.com.au/sundry/commonobjections/croindex.htm).
 
 ## See also
 
