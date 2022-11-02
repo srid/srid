@@ -6,6 +6,8 @@ I wish there existed a suitable antonym for the word "pioneer" (a person who is 
 
 ## Cynicism of non-pioneers ...
 
+One of the things that prevents people from adopting a new idea is cynicism or doubt. How does it manifest in various domains?
+
 ### ... in tech
 
 Here are some examples of [[Naive Optimism|cynicism]] exhibited by non-enthusiastic "outsiders" (non-[[Stay niche|niche]] population) in tech:
