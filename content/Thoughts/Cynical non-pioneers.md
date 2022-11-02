@@ -24,3 +24,4 @@ TODO (see [here](http://actualfreedom.com.au/sundry/commonobjections/croindex.ht
 ## See also
 
 - [Geeks, MOPs, and sociopaths in subculture evolution](https://meaningness.com/geeks-mops-sociopaths)
+- "*[[Courage of your convictions|the mediocrity of those who say you can not do it]]*"
