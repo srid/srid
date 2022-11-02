@@ -31,7 +31,7 @@ See [here](http://actualfreedom.com.au/sundry/commonobjections/croindex.htm).
     
     > What's interesting to notice about this thread is how many messages are just oozing with **smug superiority and disdain** for anyone who doesn't share their knowledge. 
 
-    The cynicism characterization comes from the fact that the criticaster who wrote the top-level thread engages in the [projection](https://en.wikipedia.org/wiki/Psychological_projection) of one's own feelings of offense (else, the author can surely and readily reference those specific words that connoted "*smug superiority and disdain*") rather than discussing the merits of the topic at hand.
+    The cynicism characterization comes from the fact that the person (kstenerud) who wrote the top-level thread engages in the [projection](https://en.wikipedia.org/wiki/Psychological_projection) of one's own feelings of offense (else, the author can surely and readily reference those specific words that connoted "*smug superiority and disdain*") rather than discussing the merits of the topic at hand.
 
     "Gatekeeping" is another fancy word used elsewhere to express this felt offense, making it pass for a factoid.
 
