@@ -20,7 +20,7 @@ Get Inspired
 : [Why Haskell matters](https://wiki.haskell.org/Why_Haskell_matters).
 
 Attitude
-: Lose the limiting beliefs, if any.[^lb] Approach Haskell, with maximum [locus of control], as if it is a new programming language that had been created this year (ie. sans any vague preconceptions [introjected] from naysayers).
+: Lose the limiting beliefs, if any.[^lb] Approach Haskell, with maximum [locus of control], as if it is a new programming language that had been created this year (ie. sans any vague preconceptions [introjected] from [[Cynical non-pioneers|naysayers]]).
 
 Books
 : Some prefer *concise* learning materials; if this is you, check out the two books by Graham Hutton and Richard Bird. For a thorough and practical book, Vitaly Bragilevsky's Haskell in Depth or Will Kurt's Get Programming with Haskell might be of interest. Books are only a starting point (see the next two sections).
