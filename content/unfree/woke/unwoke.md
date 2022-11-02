@@ -36,5 +36,6 @@ You may then publicly expose the woke charlatans, as these do:
 - [North Korean defector slams ‘woke’ US schools](https://nypost.com/2021/06/14/north-korean-defector-slams-woke-us-schools/)
 - [艾未未  Ai Weiwei, likening the conformity of political correctness in the United States to the Cultural Revolution’s ideological cleansing](https://twitter.com/MargaretHoover/status/1460401404477124611) 
 - David Heinemeier Hansson (DHH): [Are we past peak "woke"?](https://world.hey.com/dhh/are-we-past-peak-woke-c313b7d1)
+- > So what would our tech bro saviors have found out if they had actually bothered to talk to anyone black? Well, at least [this black person](https://mooseyanon.medium.com/github-f-ck-your-name-change-de599033bbbe) would have told them that calling the branch master is not offensive. Furthermore, black people as a collective are not triggered by words like master wherever they appear in the wild. Context people, context. **[[censorship|Banning]] a word because you think it’s offensive is basically telling us what we should and should not be offended by.** There are bigger problems around inclusivity that deserve our time, let us put this drive for change into those.
 - Yours truly: [[woke|Srid's notes on Wokeism]]
 
