@@ -20,7 +20,7 @@ If this is your first time using [[Nix]] or [[haskell-template]] (or a project b
 
 While you may use any text editor with language-server support, we will use [[VSCode]] because it is generally the easiest way to get started.
 
-- Launch [[VSCode]], and open the `git clone`'ed haskell-template directory [as single-folder workspace](https://code.visualstudio.com/docs/editor/workspaces#_singlefolder-workspaces)
+- Launch [[VSCode]], and open the `git clone`'ed project directory [as single-folder workspace](https://code.visualstudio.com/docs/editor/workspaces#_singlefolder-workspaces)
   - NOTE: If you are on Windows, you must use the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) to open the folder in WSL.
 - When prompted by VSCode, install the [workspace recommended](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions) extensions.
     - If it doesn't prompt, press <kbd>Ctrl+Shift+X</kbd> and search for `@recommended` to install them all manually.
