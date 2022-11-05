@@ -8,7 +8,7 @@ I wish there existed a suitable antonym for the word "pioneer"[^def]. The closes
 
 ## Cynicism of non-pioneers ...
 
-One of the things that prevents people from adopting a new idea is cynicism or doubt. How does it manifest in various domains?
+A non-pioneer is merely someone that is not a pioneer (in whatever field/ idea). A *cynical* non-pioneer is one that obdurately resists that new thing using spurious reasons that is motivated by a cynical outlook. One of the things that prevents people from adopting a new idea in general is cynicism or doubt. How does it manifest in various domains?
 
 ### ... in tech
 
