@@ -1,5 +1,5 @@
 ---
-slug: plato-cave
+slug: nonpioneers
 ---
 
 I wish there existed a suitable antonym for the word "pioneer"[^def]. The closest that exists, as far as I can tell, is the [Plato's Cave](https://en.wikipedia.org/wiki/Allegory_of_the_cave) metaphor. Baring a suitable word that gets suggested to me, I will use "Cynical non-pioneers" to refer to such peoples.
@@ -39,4 +39,4 @@ See [here](http://actualfreedom.com.au/sundry/commonobjections/croindex.htm).
 
     None of this is unique to functional programming per see. When something new is presented to humanity, the initial tendency generally is to resist it at all costs. See https://en.wikipedia.org/wiki/Allegory_of_the_cave
 
-[^haskell-reinf]: In the [[Haskell]] community in particular, widely known personalities tend to reinforce this perception thus causing indirect harm to potential new users of the language. For example, see Edward Kmett (author of the 'lens' library) [utilizing](https://lobste.rs/s/fuwmou/why_functional_programming_should_be#c_z9hzfj) [ad hominem/ name-calling](http://www.paulgraham.com/disagree.html) ([[Wiliness of the wild|craftily]] couched in rhetoric, however) to promulgate this myth, revealing an aspect of personality that is no different to what Luke Plant describes of the [[Elm]] community as "always very civil [but] ultimately aggressive" (see [[Politeness]]).
+[^haskell-reinf]: In the [[Haskell]] community in particular, some widely known persons are known to reinforce this perception thus causing indirect harm to potential new users of the language. For example, see Edward Kmett (author of the 'lens' library) [utilizing](https://lobste.rs/s/fuwmou/why_functional_programming_should_be#c_z9hzfj) [ad hominem/ name-calling](http://www.paulgraham.com/disagree.html) ([[Wiliness of the wild|craftily]] couched in rhetoric, however) to promulgate this myth, revealing an aspect of personality that is no different to what Luke Plant describes of the [[Elm]] community as "always very civil [but] ultimately aggressive" (see [[Politeness]]).
