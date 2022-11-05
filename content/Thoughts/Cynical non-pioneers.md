@@ -15,7 +15,7 @@ A non-pioneer is merely someone that is not a pioneer (in whatever field/ idea).
 Here are some examples of [[Naive Optimism|cynicism]] exhibited by non-enthusiastic "outsiders" (non-[[Stay niche|niche]] population) in tech:
 
 - [Getting downvoted](https://old.reddit.com/r/haskell/comments/y6a07e/simple_ghc_stack_for_a_novice/iso56t8/) when recommending [[Nix]] in [[Haskell]] community.
-- Ad hominem accusations of [being "religious" or "bullying" or "smug"](https://news.ycombinator.com/item?id=33433783)[^fp-criticaster][^haskell-reinf] when recommending functional programing (e.g. [[Haskell]]) to others.
+- Ad hominem accusations of [being "religious" or "bullying" or "smug"](https://news.ycombinator.com/item?id=33433783)[^fp-criticaster][^haskell-reinf] when someone recommends or encourages the use of functional programing (e.g. [[Haskell]]) to them.
 
 ### ... [[free|Actualism]]
 
