@@ -42,6 +42,11 @@ It became possible to make the choice to get back to feeling good, and I am unde
 
 [^same]: [Richard](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm): *Put succinctly: the moment ([[This Moment|this moment]]) in which event ‘A’ happens is the exact same moment ([[This Moment|this moment]]) in which event ‘B’ happens ... it is only the events which change/move/flow and not the moment itself (eternity).*
 
+## Nov 7, 2022
+
+[in ctx of Vineeto's appreciation advice]
+
+> Appreciating _simply_ being alive. Never mind appreciating the cherries on top (material comforts, etc). Is that possible? Fascinating.
 
 [^method]: From http://actualfreedom.com.au/richard/selectedcorrespondence/sc-method3.htm
 
