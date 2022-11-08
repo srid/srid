@@ -2,13 +2,13 @@
 slug: nonpioneers
 ---
 
-I wish there existed a suitable antonym for the word "pioneer"[^def]. The closest that exists, as far as I can tell, is the [Plato's Cave](https://en.wikipedia.org/wiki/Allegory_of_the_cave) metaphor. Baring a suitable word that gets suggested to me, I will use "Cynical non-pioneers" to refer to such peoples.
+It appears there does not exist suitable antonym for the word "pioneer"[^def]. The closest that exists, as far as I can tell, is the [Plato's Cave](https://en.wikipedia.org/wiki/Allegory_of_the_cave) metaphor. Baring a suitable word that gets suggested to me, I will use "Cynical non-pioneers" to refer to such peoples.
 
 [^def]: *a person who is among the first to research and develop a new area of knowledge or activity*
 
 ## Cynicism of non-pioneers ...
 
-A non-pioneer is merely someone that is not a pioneer (in whatever field/ idea). A *cynical* non-pioneer is one that obdurately resists that new thing using spurious reasons that is motivated by a cynical outlook. One of the things that prevents people from adopting a new idea in general is cynicism or doubt. How does it manifest in various domains?
+A non-pioneer is merely someone that is not a pioneer (in whatever field/ idea). A *cynical* non-pioneer is one that *obdurately resists* that new thing using spurious reasons, thus exhibiting a cynical outlook. One of the things that prevents people from adopting a new idea in general is cynicism or doubt. How does it manifest in various domains?
 
 ### ... in tech
 
@@ -39,4 +39,4 @@ See [here](http://actualfreedom.com.au/sundry/commonobjections/croindex.htm).
 
     None of this is unique to functional programming per see. When something new is presented to humanity, the initial tendency generally is to resist it at all costs. See https://en.wikipedia.org/wiki/Allegory_of_the_cave
 
-[^haskell-reinf]: In the [[Haskell]] community in particular, some widely known persons are known to reinforce this perception thus causing indirect harm to potential new users of the language. For example, see Edward Kmett (author of the 'lens' library) [utilizing](https://lobste.rs/s/fuwmou/why_functional_programming_should_be#c_z9hzfj) [ad hominem/ name-calling](http://www.paulgraham.com/disagree.html) ([[Wiliness of the wild|craftily]] couched in rhetoric, however) to promulgate this myth, revealing an aspect of personality that is no different to what Luke Plant describes of the [[Elm]] community as "always very civil [but] ultimately aggressive" (see [[Politeness]]).
+[^haskell-reinf]: In the [[Haskell]] community in particular, some widely known persons are known to reinforce this perception thus causing unintended and indirect harm to potential new users of the language; one can assess this by judging how defensive/ offensive they get. For example, see Edward Kmett (author of the 'lens' library) [utilizing](https://archive.ph/gKKZD#c_z9hzfj) [[Wiliness of the wild|craftily]]-couched-in-rhetoric [ad hominem/ name-calling](http://www.paulgraham.com/disagree.html) to promulgate this myth, revealing an aspect of the human psyche that is no different to what Luke Plant describes of the [[Elm]] community as "always very civil [but] ultimately aggressive" (see [[Politeness]]). Edward's comment has since been removed by the moderator for "*being cruel*".
