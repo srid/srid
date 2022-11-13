@@ -20,6 +20,10 @@ RICHARD: At times this audacity[^a] – that it will be me who does it – appro
 
 http://actualfreedom.com.au/richard/listacorrespondence/lista08.htm
 
+## See also
+
+- [[diy]]
+
 [^m]: **megalomania**:
 
     meg·a·lo·ma·ni·a | ˌmɛɡ(ə)loʊˈmeɪniə |
