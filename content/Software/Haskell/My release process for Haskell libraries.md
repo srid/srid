@@ -13,7 +13,7 @@ Just a note to myself as to the steps I normally follow when releasing a #[[Hask
 3. Run `nix-shell --run 'cabal haddock'` and sanity check the haddocks
 4. Commit all changes, and push a release PR.
 5. Generated sdist using `cabal sdist` (if using flakes, run `nix run nixpkgs#cabal-install -- sdist`)
-6. [Upload a package candidate](https://hackage.haskell.org/packages/candidates/upload)
+6. [Upload a package candidate](https://hackage.haskell.org/packages/candidates/upload) (first, [sign in](https://hackage.haskell.org/users/account-management))
 7. Sanity check the upload, and then "publish" it publicly.
 8. Run `cabal haddock --haddock-for-hackage` to generated haddocks for hackage.
 9. Run `cabal upload -d --publish $PATH_TO_TARBALL` to update haddocks on the release.
