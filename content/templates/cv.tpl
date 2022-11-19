@@ -60,7 +60,7 @@
               primarily on Haskell
               projects
               with Nix involved as necessary. At <em>Obsidian Systems</em>, and for other clients, I
-              worked on Reflex / GHCJS projects writing full-stack apps in Haskell. </p>
+              worked on Reflex / GHCJS projects writing full-stack apps in Haskell. At <em>Monadfix</em> I helped develop a PureScript to Haskell transpiler ([nau](https://blog.monadfix.com/nau-introduction)). </p>
             <p class="font-serif mb-2">
               ‣ During
               <!-- DoNotFormat -->
