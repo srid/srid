@@ -10,13 +10,13 @@ Just a note to myself as to the steps I normally follow when releasing a #[[Hask
 
 1. Create a `release-x.y` branch
 2. Finalize ChangeLog.md
-3. Run `nix-shell --run 'cabal haddock'` and sanity check the haddocks
+3. Run `nix develop -c cabal haddock` and sanity check the haddocks
 4. Commit all changes, and push a release PR.
 5. Generated sdist using `cabal sdist` (if using flakes, run `nix run nixpkgs#cabal-install -- sdist`)
-6. [Upload a package candidate](https://hackage.haskell.org/packages/candidates/upload) (first, [sign in](https://hackage.haskell.org/users/account-management))
-7. Sanity check the upload, and then "publish" it publicly.
-8. Run `cabal haddock --haddock-for-hackage` to generated haddocks for hackage.
-9. Run `cabal upload -d --publish $PATH_TO_TARBALL` to update haddocks on the release.
+6. Run `cabal upload [--publish] <path/to/sdist>` to upload the sdist. Ignore `--publish` if you want to preview it first.
+7. Publish Haddocks manually (optional, if Hackage doesn't do it automatically)
+    1. Run `cabal haddock --haddock-for-hackage` to generated haddocks for hackage.
+    1. Run `cabal upload -d --publish $PATH_TO_TARBALL` to update haddocks on the release.
 10. Squash merge the PR.
 11. [Draft a new release](https://github.com/srid/rib/releases) on Github. Copy paste the change log. This will automatically create and push the new git tag.
 
