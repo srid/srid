@@ -42,11 +42,29 @@ It became possible to make the choice to get back to feeling good, and I am unde
 
 [^same]: [Richard](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm): *Put succinctly: the moment ([[This Moment|this moment]]) in which event ‘A’ happens is the exact same moment ([[This Moment|this moment]]) in which event ‘B’ happens ... it is only the events which change/move/flow and not the moment itself (eternity).*
 
-## Nov 7, 2022
+## Nov 7, 2022 (Appreciation)
 
 [in ctx of Vineeto's appreciation advice]
 
 > Appreciating _simply_ being alive. Never mind appreciating the cherries on top (material comforts, etc). Is that possible? Fascinating.
+
+## Nov 20, 2022 (discernment of [[Affective Vibes]])
+
+http://www.actualfreedom.com.au/richard/listdcorrespondence/listd14a.htm#09Nov09
+
+> RICHARD: I will take this opportunity to stress just **how vital this matter of affective vibes is, in regards to successful actualism practice**, as it is central to the ‘feeling harmless’ aspect of such practice \[..\] inasmuch the whole point is the minimisation – and the ultimate cessation via extirpation of ‘being’ itself – of any malicious feelings and, thus, their resultant transmission as affective vibes throughout the human psyche.
+
+...
+
+> It has **got me beat** how anyone can spend years and years reading and writing, to forums such as this, about actualism practice (and its aims or goals) yet all the while be ignorant of or ignoring **the central feature of such practice** ... to wit: the transmission and the reception of the many and various affective feelings which make-up a feeling-being.
+
+...
+
+> RESPONDENT: When not face to face, I own my own feelings rather than project them onto others ...
+> 
+> RICHARD: If (note ‘if’) the identity inhabiting this flesh-and-blood body circa 1980-81 was projecting ‘his’ feelings, through the closed door of ‘his’ ex-farmhouse, then ‘he’ would have felt a feeling of joie de vivre, just prior to opening the front door of ‘his’ home, despite the at-that-moment-unknown presence of a fuming wife on the other side (pacing up and down, in the front room, ready and willing to give ‘him’ an unwarranted serve for imagined slights she generated as her earlier good mood spiralled into negativity in ‘his’ absence).
+> 
+> It was **by virtue of being observant thataway**, above, that ‘he’ was then able, over the ensuing years, to become aware not only of many more instances of similar ilk but of the far-deeper, longer-ranging and more-powerful ‘psychic currents’/ ‘psychic energies’ (which we have not even mentioned in this exchange) that lie underneath/beyond the affective vibes.
 
 [^method]: From http://actualfreedom.com.au/richard/selectedcorrespondence/sc-method3.htm
 
