@@ -14,9 +14,6 @@
             </with>
           </ema:metadata>
         </div>
-        <div class="flex flex-col items-start space-y-1 h-full">
-          <header class="text-2xl">Hey, I'm Srid. 👋 </header>
-        </div>
       </div>
 
       <!-- Footer -->
