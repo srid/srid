@@ -66,7 +66,7 @@ Adherents of [[woke]] tend to exhibit certain psychological characteristics in c
 
 ## Meta / Related
 
-- [Social Media Success Is Driven by Hate](https://www.reddit.com/r/TheMotte/comments/o4ooc7/culture_war_roundup_for_the_week_of_june_21_2021/h323bnt/)
+- [Social Media Success Is Driven by Hate](https://archive.ph/MbsBa)
 - [A disproportionate amount of bad online behaviour stems from psychological issues](https://unherd.com/2021/06/are-twitter-trolls-mentally-ill/) (via [HN](https://news.ycombinator.com/item?id=27607203))
 - On hyprocisy: 
   - [Cory Clark: Are Liberals Really More Egalitarian?](https://www.psychologytoday.com/gb/blog/the-antisocial-psychologist/202102/are-liberals-really-more-egalitarian)
