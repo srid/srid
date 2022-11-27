@@ -12,11 +12,5 @@ slug: woke
 path:./*
 ```
 
-## Resources 
-
-- [John McWhorter: 'Woke Racism'](https://reason.com/video/2021/11/19/john-mcwhorter-woke-racism-has-betrayed-black-america/)
-- Outlook
-	- DHH: "If we've passed peak "woke", and I sure hope we have, may it be followed soon thereafter with peak politics too." -- [Are we past peak "woke"?](https://world.hey.com/dhh/are-we-past-peak-woke-c313b7d1)
-
 [internalize]: https://archive.md/rUiwZ#selection-187.47-205.10
 

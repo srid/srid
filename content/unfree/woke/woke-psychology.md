@@ -68,7 +68,11 @@ Adherents of [[woke]] tend to exhibit certain psychological characteristics in c
 
 - [Social Media Success Is Driven by Hate](https://www.reddit.com/r/TheMotte/comments/o4ooc7/culture_war_roundup_for_the_week_of_june_21_2021/h323bnt/)
 - [A disproportionate amount of bad online behaviour stems from psychological issues](https://unherd.com/2021/06/are-twitter-trolls-mentally-ill/) (via [HN](https://news.ycombinator.com/item?id=27607203))
-- On hyprocisy: [Cory Clark: Are Liberals Really More Egalitarian?](https://www.psychologytoday.com/gb/blog/the-antisocial-psychologist/202102/are-liberals-really-more-egalitarian)
+- On hyprocisy: 
+  - [Cory Clark: Are Liberals Really More Egalitarian?](https://www.psychologytoday.com/gb/blog/the-antisocial-psychologist/202102/are-liberals-really-more-egalitarian)
+  - [John McWhorter: 'Woke Racism'](https://reason.com/video/2021/11/19/john-mcwhorter-woke-racism-has-betrayed-black-america/)
+  - [Slavoj Žižek](https://www.cabinetmagazine.org/issues/2/zizek.php):
+    > [..] the multiculturalist tolerance of the Other’s Otherness is also more twisted than it may appear—it is sustained by a secret desire for the Other to *remain* “other,” not to become too much like us.
 - Cognitive dissonance [being predictor](https://news.ycombinator.com/item?id=29355836) of [[woke|woke]] safetyism: "students’ self-reported prevalence of cognitive distortions positively predicted their endorsement of safetyism-inspired beliefs, the belief that words can harm, and support for the broad use of trigger warnings"
 - Victim complex as passive aggressiveness: *"A victim act is a form of passive aggression...The victim compels others by holding them hostage to the prospect of his own further mental dissolution, or by threatening to make their lives so miserable that they do what he wants"* --[The War of Art](https://twitter.com/robkhenderson/status/1474076603504218115)
 - [[Peasant Mentality]]: something that is fundamental to everyone (not just the woke)
