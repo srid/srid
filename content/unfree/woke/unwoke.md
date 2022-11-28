@@ -19,6 +19,17 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
 	- DHH: "If we've passed peak "woke", and I sure hope we have, may it be followed soon thereafter with peak politics too." -- [Are we past peak "woke"?](https://world.hey.com/dhh/are-we-past-peak-woke-c313b7d1)
 - **Kraken**: https://twitter.com/jespow/status/1536978826344792064 
 
+#### Organizations to watch out for
+
+- **Twitter**:
+  - [Twitter Employees Protest Elon Musk's Plan to Fire 75% of Workforce](https://archive.ph/yRP4z) (via [TheMotte](https://www.themotte.org/post/146/culture-war-roundup-for-the-week/22701?context=8#context))
+  - [Twitter’s mass layoffs have begun](https://news.ycombinator.com/item?id=33463908)
+    - Cream of the crop left behind: https://twitter.com/elonmusk/status/1593899029531803649
+  - "Elon Musk: *Twitter has had a massive drop in revenue, due to activist groups pressuring advertisers, even though nothing has changed with content moderation and we did everything we could to appease the activists.*" https://twitter.com/elonmusk/status/1588538640401018880
+  - [Twitter offers amnesty to suspended accounts](https://twitter.com/elonmusk/status/1595869526469533701)
+- **Shopify**
+  - CEO says calls to ban @libsoftiktok a [bad faith narrative](https://twitter.com/tobi/status/1596440473849274369), and Elon [supports](https://twitter.com/elonmusk/status/1597185759316152320) Toby.
+
 ### Individuals
 
 If there is once case study I have to pick as my favourite, it would have to be Grace.

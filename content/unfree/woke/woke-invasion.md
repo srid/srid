@@ -34,9 +34,5 @@ Or for a conspiratorial summary,
 
 - [What “diversity and inclusion” means at **Microsoft**](https://news.ycombinator.com/item?id=33165844)
 - [**Colleges** that ditched admission tests find it harder to fairly choose students](https://news.ycombinator.com/item?id=33298336)
-- **Twitter**:
-  - [Twitter Employees Protest Elon Musk's Plan to Fire 75% of Workforce](https://archive.ph/yRP4z) (via [TheMotte](https://www.themotte.org/post/146/culture-war-roundup-for-the-week/22701?context=8#context))
-  - [Twitter’s mass layoffs have begun](https://news.ycombinator.com/item?id=33463908)
-  - "Elon Musk: *Twitter has had a massive drop in revenue, due to activist groups pressuring advertisers, even though nothing has changed with content moderation and we did everything we could to appease the activists.*" https://twitter.com/elonmusk/status/1588538640401018880
 - Lesser known groups
   - [SourceHut bans crypto and blockchain projects](https://news.ycombinator.com/item?id=33403780) (cf. [[anti-crypto]])
