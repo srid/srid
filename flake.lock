@@ -43,11 +43,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1669573462,
-        "narHash": "sha256-YBw7V0hSrw9dMXFxpf84BfHZE038INpaUuJ/jpbHUio=",
+        "lastModified": 1669586795,
+        "narHash": "sha256-WUuADWLqlSTHKCMPSG2SbFA3JlM7y+VkjOPdijQ0FAs=",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "57812c4fecd3f63292aa2144ded79f8ff55e6a97",
+        "rev": "24ca8d95ac2aec8a02a128382081ac076451d018",
         "type": "github"
       },
       "original": {
