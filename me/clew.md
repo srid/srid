@@ -66,6 +66,10 @@ http://www.actualfreedom.com.au/richard/listdcorrespondence/listd14a.htm#09Nov09
 > 
 > It was **by virtue of being observant thataway**, above, that ‘he’ was then able, over the ensuing years, to become aware not only of many more instances of similar ilk but of the far-deeper, longer-ranging and more-powerful ‘psychic currents’/ ‘psychic energies’ (which we have not even mentioned in this exchange) that lie underneath/beyond the affective vibes.
 
+## Dec 3, 2022 ([[Sincerity]])
+
+Separating out facts from fiction (eg: [[Belief]]) is key. To be [[Sincerity|sincere]] is to stay close to what is factual; to _be_ that.
+
 [^method]: From http://actualfreedom.com.au/richard/selectedcorrespondence/sc-method3.htm
 
     > **RICHARD:** G’day No. 44,
