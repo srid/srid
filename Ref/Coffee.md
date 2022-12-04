@@ -16,7 +16,7 @@ Invest in these:
 - A good burr grinder (I use Niche Zero, or Comandante when travelling)
 - Aeropress
 
-## Dialing
+## Dialling
 
 When coffee tastes bad, change one or more of these factors. It may take several attempts to get it right.
 
@@ -42,17 +42,14 @@ How I typically make coffee:
 ### Inverted Aeropress recipe
 
 - Invert the Aeropress
-- Add 10g[^a7] of coffee (grind about 10.1g, to account for grinder retention)
-- Water temp at 175f-194f (depending on beans)
-- Start timer; pour about 40g; and stir until ~25 seconds
-- Pour rest, total 100g.
-- Brew until 1m 25s
-- Press for ~30seconds (don't push; use gravity from arms)
-- Add ~35g of hot water to brewed coffee.
+- Add 15g of coffee
+- Water temp at 165f-190f (depending on beans)
+- Start timer; pour about 50g; and stir until ~30 seconds
+- Pour rest, total 150g.
+- Brew until about 2 minutes
+- Gently but consistently press for ~30seconds
 
-If you use fresh coffee with your preferred flavour profile, and select the right grind size and water temperature for those beans - expect this method to consistently produce a great cup of ~125g of rich coffee (from 10g beans) that is equivalent in strength to what the [Québécois](https://en.wikipedia.org/wiki/Qu%C3%A9b%C3%A9cois_people) call [café allongé](https://en.wikipedia.org/wiki/Lungo).
-
-[^a7]: 10g appears to be the minimum required to make a good cup. 7g did not work out well for me.
+If you use fresh coffee with your preferred flavour profile, and select the right grind size and water temperature for those beans - expect this method to consistently produce a great cup of rich coffee that is equivalent in strength to what the [Québécois](https://en.wikipedia.org/wiki/Qu%C3%A9b%C3%A9cois_people) call [café allongé](https://en.wikipedia.org/wiki/Lungo).
 
 ### Kalita Wave 155 recipe
 
