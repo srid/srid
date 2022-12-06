@@ -17,6 +17,7 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
 - **Coinbase**: [Coinbase is a mission focused company](https://blog.coinbase.com/coinbase-is-a-mission-focused-company-af882df8804)
 - **Basecamp**: [Summary by u/Amadanb](https://old.reddit.com/r/TheMotte/comments/n3pe45/culture_war_roundup_for_the_week_of_may_03_2021/gwwj9vm/?context=3&sort=best)
 	- DHH: "If we've passed peak "woke", and I sure hope we have, may it be followed soon thereafter with peak politics too." -- [Are we past peak "woke"?](https://world.hey.com/dhh/are-we-past-peak-woke-c313b7d1)
+	- DHH, in Nov 2022: "The DEI hegemony has gone from virtually unchallenged to come under severe stress." -- [The waning days of DEI's dominance](https://world.hey.com/dhh/the-waning-days-of-dei-s-dominance-9a5b656c)
 - **Kraken**: https://twitter.com/jespow/status/1536978826344792064 
 
 #### Organizations to watch out for
