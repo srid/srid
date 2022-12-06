@@ -42,7 +42,9 @@ If there is once case study I have to pick as my favourite, it would have to be 
 
 ## Expose them
 
-You may then publicly expose the woke charlatans, as these do:
+You may then publicly expose[^no] the woke charlatans, as these do:
+
+[^no]: Quoting John McWhorter from [We must say no to these people](https://world.hey.com/dhh/we-must-say-no-to-these-people-e0fb301c), "*It is natural to fear going up against the parishioners who so fervently disagree, with their ten-dollar words and artful sarcasm and air of surety. But I promise you: There is room in this society for speaking the truth and living to tell about it.*".
 
 - [A Slovak who studied in the USA: Today's America reminds me of the times of our totalitarianism](https://translate.google.com/translate?sl=auto&tl=en&u=https://www.postoj.sk/77885/novy-clanok) ([Original](https://www.postoj.sk/77885/novy-clanok))
 - [Survivor Of Mao’s China Stuns School Board With Chilling Warning About Critical Race Theory](https://www.dailywire.com/news/watch-survivor-of-maos-china-stuns-school-board-with-chilling-warning-about-critical-race-theory)
