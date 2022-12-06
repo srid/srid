@@ -32,3 +32,4 @@ Some examples:
 
 - [from nixpkgs](https://web.archive.org/web/20210125202157/https://github.com/NixOS/nixpkgs/blob/46405e7952c4b41ca0ba9c670fe9a84e8a5b3554/pkgs/development/tools/pandoc/default.nix#L13-L28)
 - [neuron’s PR](https://web.archive.org/web/20210125202157/https://github.com/srid/neuron/pull/240/files)
+- [Emanote's PR](https://github.com/EmaApps/emanote/pull/392)
