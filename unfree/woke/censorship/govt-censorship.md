@@ -13,3 +13,4 @@ Allen Farrington [writing on Quillette](https://quillette.com/2021/01/20/big-tec
 ## See also
 
 * [The U.S. Government’s Vast New Privatized Censorship Regime](https://archive.ph/KSkDY) (via [HN](https://news.ycombinator.com/item?id=32938305))
+* [The Twitter Files](https://news.ycombinator.com/item?id=33838556) (Dec, 2022)
