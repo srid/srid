@@ -15,5 +15,5 @@ builds:
     - "*.x86_64-linux.*"
   exclude:
     # https://github.com/srid/haskell-flake/issues/21
-    - "checks.*.default-hls"
+    - "checks.*.main-hls"
 ```

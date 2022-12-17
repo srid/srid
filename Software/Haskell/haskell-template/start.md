@@ -41,13 +41,13 @@ Once the project has been reloaded in VSCode, you are ready to start developing 
 ### Test that [[ghcid]] works
 
 - Launch the terminal inside VSCode
-- Run `bin/run`.
+- Run `nix develop` shell and run `, run`.
     - This will launch [[ghcid]] to run the `main` entrypoint in `src/Main.hs`. 
 - Modify `src/Main.hs` and save it.
 
-This should have `bin/run` instantly re-compile and re-run the program.
+This should have `, run` instantly re-compile and re-run the program.
 
-Note: you can also press <kbd>Ctrl+Shift+B</kbd> to run `bin/run`.
+Note: you can also press <kbd>Ctrl+Shift+B</kbd> to run `, run`.
 
 ## Rename the project
 

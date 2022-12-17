@@ -16,6 +16,7 @@ I originally created [[haskell-template]] to serve as the base template for my H
   - `fourmolu`[^ormolu] for Haskell
   - `cabal-fmt` for Cabal
   - `nixpkgs-fmt` for Nix
+- [mission-control](https://github.com/Platonic-Systems/mission-control) for devshell scripts and discovery
 
 [^ormolu]: I used to use `ormolu` but switched to `fourmolu` because ormolu is annoying in some cases (like it [throwing away multiline haddock comments](https://github.com/tweag/ormolu/issues/641))
 
@@ -27,6 +28,6 @@ Things like tests are not in the template repo, because I personally do not use 
 
 I wish to keep all the Nix code (`flake.nix`) as small and simple as possible. This is why much of the Nix is delegated to [[haskell-flake]]. Consequently, it also becomes easier for the user to do some Nix-based Haskell workflows (I'm yet to document these).
 
-- [ ] Explain the usefulness `flake-parts` (and thus `haskell-flake`)
+- [ ] Explain the usefulness `flake-parts` (and thus `haskell-flake` and `mission-control`)
   - To keep Nix code simple by modularizing orthogonal features. Especially in monorepos. 
   - Nix itself may get a modue system for flakes. Unti then, `flake-parts` is relevant.
