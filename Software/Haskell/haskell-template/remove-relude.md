@@ -4,7 +4,7 @@ slug: haskell-template/relude
 
 # Removing `relude`
 
-[[haskell-template]] uses [[Relude]] as the alternative "prelude" due to convenience and safety. I recommend that you use relude. However, if you want to remove it, you can do so as follows:
+[[haskell-template]] uses #[[Relude]] as the alternative "prelude" due to convenience and safety. I recommend that you use relude. However, if you want to remove it, you can do so as follows:
 
 - In the `.cabal` file:
   - Remove `relude` from the `build-depends` section.
