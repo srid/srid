@@ -11,16 +11,6 @@ catastrophistic thinking[^doom] humanity has been harbouring for generations, wh
 
 -- [The Planet's Future Shouldn't Be Left to the Catastrophists](https://www.humanprogress.org/the-planets-future-is-too-important-to-leave-to-the-catastrophists/)
 
-For a succint summary of it all:
-
-> The evidence is all based on models, controlled by the very people who have incentive for those models to support their claims (scientists receiving grants, corporate kickbacks, etc and NGOs/politicians doing the same).
->
-> For decades, the very people who support these models have been telling people we're just a few short years away from the demise[^doom] of the species...only for nothing to happen (and for the very things they claim to be getting worse, actually getting better). Again, and again, and again. First it was global warming, then it was "climate change" (hint: the climate always changes—the real subtext here is Malthusian discontent for humanity, not a desire to protect nature).
-> 
-> Those very same people, too, go out of their way to dismiss technology like nuclear energy and carbon capture which can solve the problem they claim to wish to solve (reducing and/or eliminating emissions). Why? Because if they solve the problem, they can't milk subsidies from the government and will actually have to find real work to do. Not just parading around (in f\*cking private jets pouring out emissions) and self-flagellating at conferences and "summits."
-> 
-> The whole thing is a gigantic self-defeating farce, that, when looked at through the lens of objectivity makes about as much sense as Scientology (the comparison to a religion, here, being purposeful). The parallels to the [[COVID-19|COVID groupthink]] are apt, correct, and the exact same candy bar in a different wrapper. https://news.ycombinator.com/item?id=32940152
-
 ## Hypocrisy
 
 From http://www.actualfreedom.com.au/richard/listdcorrespondence/listd45.htm
@@ -49,6 +39,28 @@ From http://www.actualfreedom.com.au/richard/listdcorrespondence/listd45.htm
 >
 >Regards,
 >Richard.
+
+## HackerNews Hall of Fame
+
+When pockets of commonsense emerge through regurgigated nonsense on the orange site ...
+
+User [systemvoltage wrote](https://news.ycombinator.com/item?id=32940152):
+
+> The evidence is all based on models, controlled by the very people who have incentive for those models to support their claims (scientists receiving grants, corporate kickbacks, etc and NGOs/politicians doing the same).
+>
+> For decades, the very people who support these models have been telling people we're just a few short years away from the demise[^doom] of the species...only for nothing to happen (and for the very things they claim to be getting worse, actually getting better). Again, and again, and again. First it was global warming, then it was "climate change" (hint: the climate always changes—the real subtext here is Malthusian discontent for humanity, not a desire to protect nature).
+> 
+> Those very same people, too, go out of their way to dismiss technology like nuclear energy and carbon capture which can solve the problem they claim to wish to solve (reducing and/or eliminating emissions). Why? Because if they solve the problem, they can't milk subsidies from the government and will actually have to find real work to do. Not just parading around (in f\*cking private jets pouring out emissions) and self-flagellating at conferences and "summits."
+> 
+> The whole thing is a gigantic self-defeating farce, that, when looked at through the lens of objectivity makes about as much sense as Scientology (the comparison to a religion, here, being purposeful). The parallels to the [[COVID-19|COVID groupthink]] are apt, correct, and the exact same candy bar in a different wrapper.
+
+User [motohagiography wrote](https://news.ycombinator.com/item?id=34161236):
+
+> Is there a version of this that is readable that isn't a propaganda spectacle? Look at the narrative form and who it is trying to persuade. I thought climate change wasn't so much about meteorology as it was a general descriptor for a manufactured political climate, where one is either for the solutions or not, and therefore one can attribite literally anything to it. It is just a critical theory for dissolving reason and aligning people behind demagogues. Unemployment? Climate change. Social unrest? Climate change. Fertility rates? Climate change. Heart attacks? Climate change. It's intellectual chaff that only serves to center its ideologues. So long as you keep the reactionaries arguing about the weather they aren't going to offer meaningful resistance to the solutions being imposed on their countries and the co-ordinated demolition of national sovereignty to post-national governing bodies. It's a standard distraction theft.
+> 
+> I'm a bigger environmental advocate than any of these climate people, because I advocate boundaries on cities, anti-sprawl, changing building codes to incorporate passive energy methods and legalizing off grid and passive energy homes, national tarrifs on goods made in slave labour conditions, building refineries in the countries where resources are extracted, reducing unmanaged migrations from south to north to car dependent economies where people need heat 8mos of the year, dissolving the supply management of domestic agricultural goods and replacing them with high tarrifs on agricultural imports, among other things, because the job of a government is to sustain the national interests of the people it serves.
+> 
+> There are concrete economic and technology solutions to environmental harm. There are no solutions to "climate change" because it is about as intellectually rigorous as a yogic mantra. The only thing missing from that presentation was perhaps a Sarah MacLachlan soundtrack about how sad it was. Outside the bubble, this stuff is still very controversial. Propaganda is very persuasive, a lot of it is really inspiring and funny, and it's as soaring as a pop song, but just recognize when you are being played.
 
 ## See also
 
