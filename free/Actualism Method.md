@@ -2,6 +2,10 @@
 slug: method
 ---
 
+**IMPORTANT DISCLAIMER**: This method is [unlikely to work](http://actualfreedom.com.au/sundry/disclaimer.htm) for someone that is currently suffering from neurosis.
+
+---
+
 First, a couple of passages providing overall context; followed by point by point description of the method; ending with some clarifying commentary.
 
 > RICHARD: Obviously, the physical cause necessitates a physical solution (the extinction of [[Identity|the instinctual ‘being’]] itself) and this altruistic ‘self’-sacrifice will not eventuate unless the temporary absence or abeyance of the physically inherited cause (a genetically inherited instinctual animal ‘self’) which created the problem of the human condition is intimately experienced, [[Rememoration|remembered]] and activated. This peak experience of one’s potentiality is known as a [[PCE|pure consciousness experience]] (PCE) and is essential to the process of freeing oneself from one’s fate and attaining to one’s destiny. The first and most important step is to remember a PCE (everybody that I have spoken to at length over the last nineteen years – everybody – has had at least one) and thus start thinking for oneself (although most people cannot initially remember a PCE and may need a lot of prompting to retrieve it from their memory). Then each next step becomes obvious of its own accord in one’s daily life as one goes about one’s normal business in the market place. The **pure intent** born out of the PCE actively works on eliminating the animal ‘self’ bestowed by blind nature each moment again. http://www.actualfreedom.com.au/richard/default.htm
