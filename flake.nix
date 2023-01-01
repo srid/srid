@@ -1,4 +1,7 @@
 {
+  nixConfig.extra-substituters = "https://cache.srid.ca";
+  nixConfig.extra-trusted-public-keys = "cache.srid.ca:8sQkbPrOIoXktIwI0OucQBXod2e9fDjjoEZWn8OXbdo=";
+
   inputs = {
     emanote.url = "github:EmaApps/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
