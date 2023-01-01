@@ -1,7 +1,4 @@
 {
-  nixConfig.extra-substituters = "https://cache.garnix.io";
-  nixConfig.extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
-
   inputs = {
     emanote.url = "github:EmaApps/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
