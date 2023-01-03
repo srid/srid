@@ -2,7 +2,7 @@
 slug: method
 ---
 
-**IMPORTANT DISCLAIMER**: This method is [unlikely to work](http://actualfreedom.com.au/sundry/disclaimer.htm) for someone that is currently suffering from neurosis.
+**IMPORTANT DISCLAIMER**: This method is [unlikely to work](http://actualfreedom.com.au/sundry/disclaimer.htm) for someone that is currently suffering from [[Neurosis]].
 
 ---
 
