@@ -37,7 +37,7 @@ Things that are not *central* to my goal in [[clew]], or are not *simple* enough
 
 1. Realize, experientially (i.e., in my own consciousness), that [['I' am 'my' feelings and 'my' feelings are 'me']]
 2. Realize, experientially (i.e., in my own consciousness), that it is "my" choice as to how "I" feel (how "I" am).
-3. "I" am feeling happy, by sheer common-sense, as a result. "I" am feeling as such, as a *background* state, regardless of what is happening (the 'foreground'). "I" am almost being [[Naivete|naive]]; consequently interactions become spontaneous and intimate.
+3. "I" am feeling happy, by sheer common-sense, as a result. "I" am feeling as such, as a *background* state, regardless of what is happening (the 'foreground'). "I" am almost being [[Naivete|naive]]; consequently interactions become [[Spontaneity|spontaneous]] and intimate.
 4. Notice (see [[How am I experiencing this moment of being alive|HAIETMOBA]] & [[Affective Awareness]]) as "I" retreat back to "my" default or sub-optimal way of being ... what triggers it off (see [[Diminishment]]). Acknowledge the appeal in staying as that; root out (see [[On-the-job real-time experiencing]]) the fundamental beliefs (one may come across the "You can't change human nature" mother-belief). Now effortlessly restore (see also: [[Rememoration]]) that autonomous background state, the felicitous "me", once again by common-sense (aka. [[Seeing the silliness]]).
 5. Keep this autonomous background state, the felicitous "me", for as long as possible. Make [[PCE]]s more likely. It is after all something "I" can do *right now* without procrastinating (as is the case with triggering PCEs or self-immolating)
 

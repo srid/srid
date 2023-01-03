@@ -2,7 +2,7 @@
 slug: wily
 ---
 
-The expression 'wiliness of the wild' (a direct opposite of [[Naivete]]) refers to the cunningness inherent to human species (arising from the genetically-inherited instinctual passions) in particular, as well as the animal species[^foxy] in general. The word 'wily' has the following as its synonyms:
+The expression 'wiliness of the wild' (a direct opposite of [[Naivete]] and thus [[Spontaneity]]) refers to the cunningness naturally inherent to human species (arising from the genetically-inherited instinctual passions) in particular, as well as the animal species[^foxy] in general. The word 'wily' has the following as its synonyms:
 
 [^foxy]: As indicated by the word '[foxy](https://www.lexico.com/definition/foxy)' for instance.
 
@@ -14,7 +14,7 @@ The expression 'wiliness of the wild' (a direct opposite of [[Naivete]]) refers 
 
 ## Wiliness as explicitly taught
 
-In modern Occidental cultures, the following authors have led their audience into consciously enhancing their genetically inherited wiliness-of-the-wild so as to take advantage of the [[Gullibility|gullible]] others:
+In modern cultures, the following authors have led their audience into consciously enhancing their genetically inherited wiliness-of-the-wild so as to either take advantage of the [[Gullibility|gullible]] others and/or improve their lot in life:
 
 - [The 48 Laws of Power by **Robert Greene**](https://www.nateliason.com/notes/48-laws-power-robert-greene)
 - [How to Win Friends and Influence People by **Dale Carnegie**](https://fs.blog/how-to-win-friends-and-influence-people/)
@@ -24,6 +24,11 @@ Note: Although Mr. Greene here is more likely to receive moral opprobrium than M
 ### Other examples
 
 - [*Words That Work: It's Not What You Say, It's What People Hear* by GOP propagandist Frank Luntz](https://old.reddit.com/r/TheMotte/comments/wi8rc4/smallscale_question_sunday_for_august_07_2022/ijiapob/?sort=confidence)
+
+## Third alternative to wiliness
+
+- [[Spontaneity]] (which is only possible with either the [[Identity]] in abeyance or having been extirpated)
+
 ## Sub pages
 
 ```query
