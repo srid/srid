@@ -35,11 +35,15 @@ slug: haskell-template/tests
       - path: "tests"
         component: "test:tests"
     ```
-1. Add `bin/test` and `chmod a+x` it:
-    ```sh
-    #!/usr/bin/env bash
-    set -xe
-
-    exec nix develop -i -c ghcid -c "cabal repl test:tests" -T :main
+1. Add the test command to the mission-control scripts section of the flake file
+    ```nix
+      mission-control.scripts = {
+        test = {
+          description = "Run all tests";
+          exec = ''
+             ghcid -c "cabal repl test:tests" -T :main
+          '';
+          };
+      };
     ```
-1. Commit your changes to Git, and test it out by running `bin/test`.
+1. Commit your changes to Git, and test it out by running `, test` from the dev shell.
