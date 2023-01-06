@@ -46,4 +46,4 @@ slug: haskell-template/tests
           };
       };
     ```
-1. Commit your changes to Git, and test it out by running `, test` from the dev shell.
+1. Commit your changes to Git, and test it out by running `, test` from the (reloaded) dev shell.
