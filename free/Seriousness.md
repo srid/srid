@@ -34,7 +34,7 @@ http://actualfreedom.com.au/richard/listdcorrespondence/listd07.htm
 
 You know, I have been telling this to people for years but to no avail ... for a recent instance:
 
-> • \[Richard\]: ‘ ( ... ) ==around the time of puberty onwards, adolescents **become increasingly serious** and childhood fun gives way to [[Social Identity|societally]]-inculcated [[Instinctual Treadmill|obligations and responsibility]]==.
+> • \[Richard\]: ‘ ( ... ) ==around the time of puberty onwards, adolescents **become increasingly serious** and childhood fun gives way to [[Social Identity|societally]]-inculcated [[Responsibility|obligations and responsibility]]==.
 > 
 > As these are embedded, via [[Affective Vibes|affective vibes and psychic currents]],[^ed] into the instinctually affective programme all sentient beings are genetically endowed with (I have seen many a frisky lamb 🐑 turn into a sedate sheep 🐑, and frolicsome calves 🐄 into sombre cattle 🐄, as maturity takes its toll) they turn into having the appearance of being innate ... when they are not.
 > 
