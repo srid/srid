@@ -18,3 +18,11 @@ http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-sex.h
 VINEETO: I am asking because when I investigated my ==expectations and desires== that I knew by past experience would inevitably lead to ==disappointment and sorrow==, I was then able to chuck both my expectation and disappointment, both my desire and sorrow out the window. And once I stopped doing what caused me to feel sorrowful, then the fear of this sorrow re-occurring also disappeared. Given that my aim was to become free of malice and sorrow, it became obvious to me that I also had to become free from the dreams, [[Hope|hopes]], desires and greed that were the cause of my sorrow.
 
 http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-desire.htm
+
+---
+
+RESPONDENT: _How did you handle the instinctual desire of sex/lust? Isn’t it very lucrative? How can you let go of that?_
+
+PETER: Well, in hindsight it was very easy to ‘let go of’. The only thing that is needed is ==to experience the **dark side** of the sexual predatory instinct – as in allow oneself to uninhibitedly feel the **full range** of feelings and deep-seated emotions associated with the sexual predatory instinct== – and that experience itself was enough for me to want to let go of it as though it were a hot brick I was holding in the palm of my hand, as it were.
+
+http://www.actualfreedom.com.au/actualism/peter/selected-correspondence/corr-sex.htm
