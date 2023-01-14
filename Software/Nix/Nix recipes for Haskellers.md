@@ -172,6 +172,7 @@ Setting up CI for a Haskell project that already uses Nix is rather simple. If y
 ## External links
 
 * [Official Nix manual on using Haskell](https://haskell4nix.readthedocs.io/)
+    * PR to improve that: https://github.com/NixOS/nixpkgs/pull/126674
 * [Unofficial developer guide to Nix](https://nix.dev/)
 * [[haskell-template]]: A prebuilt Haskell project template using Nix flakes, among other defaults
 * [Incrementally package a Haskell program using Nix](https://www.haskellforall.com/2022/08/incrementally-package-haskell-program.html)
