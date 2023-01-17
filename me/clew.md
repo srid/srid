@@ -70,6 +70,15 @@ http://www.actualfreedom.com.au/richard/listdcorrespondence/listd14a.htm#09Nov09
 
 Separating out facts from fiction (eg: [[Belief]]) is key. To be [[Sincerity|sincere]] is to stay close to what is factual; to _be_ that.
 
+## Jan 15, 2023 (Priority; humanity -> pure intent)
+
+> I really have been [[Procrastination|procrastinating]] all these years, with one leg in humanity. Given that there are no other alternatives in humanity here (short of addiction/distraction), actualism is the only appealing option now. No. 1 priority, as it is said on the website. I'm arranging my life matters to that end \[..]\. Put my affairs in order, so I can spend maximum energy in [[Actualism Method|the method]] (enjoying and appreciating come what may) and thereon to the final process, while relegating the various petty concerns to be not worth paying attention to.
+
+> [..] priorities are becoming much clearer to me now. No longer do I need to look for "[[Loner|connections]]" of some sort [..]; I can actually be happy with my own lifestyle/ hobbies/ preferences [..]. That, plus satisfying work [..] that pays for a good lifestyle is enough. All that's left to do at this point is to become free; ==go gung-ho on actualism ... boots and all approach==.
+
+(cf. [Death contemplation](https://twitter.com/sridca/status/1614671038813540353))
+
+
 [^method]: From http://actualfreedom.com.au/richard/selectedcorrespondence/sc-method3.htm
 
     > **RICHARD:** G’day No. 44,
