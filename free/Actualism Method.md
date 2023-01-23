@@ -4,6 +4,10 @@ slug: method
 
 **IMPORTANT DISCLAIMER**: This method is [unlikely to work](http://actualfreedom.com.au/sundry/disclaimer.htm) for someone that is currently suffering from [[Neurosis]].
 
+:::{.page-note .bg-pink-50 .border-2 .border-pink-700 .pt-4 .shadow-lg .px-4 .text-xl }
+It is really very, very simple (which is possibly why it has never been discovered before this): you [[Feeling good|felt good]] previously; you are not feeling good now; something happened to you to end that felicitous/ innocuous feeling; you find out what happened; you [[Seeing the silliness|see how silly]] that is (no matter what it was); you are once more feeling good. ---[Richard](http://actualfreedom.com.au/richard/listdcorrespondence/listd11.htm)
+:::
+
 ---
 
 First, a couple of passages providing overall context; followed by point by point description of the method; ending with some clarifying commentary.
