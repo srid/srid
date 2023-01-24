@@ -44,15 +44,16 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1674226352,
-        "narHash": "sha256-8UmDkZ4PsAezrAlrJ9fAuN6Z7Fs6Mfc+G5Sn1Zb9JgA=",
+        "lastModified": 1674575643,
+        "narHash": "sha256-IRTt+oRdWH7J/tmXywkOLEjdTFPxKpRuK7StcubS9sE=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "a041483e055cb577db4bfca43bb4d528bd3626d3",
+        "rev": "7b56b51c988edab3f846018c27ae39b733f7949a",
         "type": "github"
       },
       "original": {
         "owner": "srid",
+        "ref": "stork-leak",
         "repo": "emanote",
         "type": "github"
       }
