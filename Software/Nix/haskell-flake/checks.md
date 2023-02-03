@@ -1,5 +1,5 @@
 ---
-slug: haskell-template/checks
+slug: haskell-flake/checks
 ---
 
 # Flake checks for Haskell
@@ -11,7 +11,7 @@ slug: haskell-template/checks
 
 ## `nix flake check` and IFD
 
-You cannot use `nix flake check` (unless your `systems` list is singular) [due to IFD](https://nixos.wiki/wiki/Haskell#IFD_and_Haskell). You can work around this by using the [check-flake](https://github.com/srid/check-flake) `flake-parts` module; make the following changes to your `flake.nix`:
+You cannot use `nix flake check` (unless your `systems` list is singular) [due to IFD](https://nixos.wiki/wiki/Haskell#IFD_and_Haskell). You can work around this by using the [check-flake](https://github.com/srid/check-flake) [[flake-parts]] module; make the following changes to your `flake.nix`:
 
 1. Add `check-flake.url = "github:srid/check-flake";` to "inputs"
 2. Add `inputs.check-flake.flakeModule` to "imports"

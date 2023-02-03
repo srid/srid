@@ -1,16 +1,16 @@
 ---
-slug: haskell-template/dependency
+slug: haskell-flake/dependency
 ---
 
 # Adding library dependencies
 
-There are several libraries from [Hackage](https://hackage.haskell.org/) that you can use in your Haskell project created off [[haskell-template]]. The general steps to do this are:
+There are several libraries from [Hackage](https://hackage.haskell.org/) that you can use in your Haskell project nixified using [[haskell-flake]]. The general steps to do this are:
 
 1. Identify the package name from Hackage. Let's say you want to use [`ema`](https://hackage.haskell.org/package/ema)
 2. Add the package, `ema`, to the `.cabal` file under [the `build-depends` section](https://cabal.readthedocs.io/en/3.4/cabal-package.html#pkg-field-build-depends).
 3. Exit and restart the nix shell (`nix develop`) and restart [[VSCode]]. 
 
-Step (3) above will try to fetch the package from the Haskell package set in [nixpkgs](https://github.com/NixOS/nixpkgs) (the one that is pinned in `flake.lock`), and this package set (which is ultimately derived from Stackage sets) sometimes may not have the package you are looking for. A common reason is that it is marked as "broken" or it simply doesn't exist. In such cases, you will have to override the package in the `overrides` argument of [[haskell-flake]] (see the next section).
+Step (3) above will try to fetch the package from the Haskell package set in [nixpkgs](https://github.com/NixOS/nixpkgs) (the one that is pinned in `flake.lock`), and this package set (which is ultimately derived from Stackage sets) sometimes may not have the package you are looking for. A common reason is that it is marked as "broken" or it simply doesn't exist. In such cases, you will have to override the package in the `overrides` argument (see the next section).
 
 ## Overriding a Haskell package in [[Nix]]
 

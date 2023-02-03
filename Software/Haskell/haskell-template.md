@@ -18,10 +18,10 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
   - Common Haskell workflows
     - Useful Scripts (defined via [mission-control](https://github.com/Platonic-Systems/mission-control))
 
-      | Script       | Description                                             |
-      | ------------ | ------------------------------------------------------- |
-      | `, run`    | Run the main executable via [[ghcid]] (auto-recompiles) |
-      | `, repl`   | Run `cabal repl` (gives you a `ghci` repl)              |
+      | Script   | Description                                             |
+      | -------- | ------------------------------------------------------- |
+      | `, run`  | Run the main executable via [[ghcid]] (auto-recompiles) |
+      | `, repl` | Run `cabal repl` (gives you a `ghci` repl)              |
       | `, docs` | Run `hoogle` (Documentation server for packages in use) |
 
     - [[dependency]] (or how to override them in Nix)
@@ -31,7 +31,7 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
     - `nix run .`: Run the program via Nix.
       - `nix run github:srid/haskell-template`: Run the program via Nix remotely.
     - `nix profile install github:srid/haskell-template`: Install the program via Nix.
-    - [[haskell-template/checks]]
+    - [[haskell-flake/checks]]
   - Removing features from the template
     - [[remove-relude]]
   - [ ] [Switching to `direnv`](https://github.com/srid/haskell-template/issues/3)
