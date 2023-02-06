@@ -31,7 +31,7 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
     - `nix run .`: Run the program via Nix.
       - `nix run github:srid/haskell-template`: Run the program via Nix remotely.
     - `nix profile install github:srid/haskell-template`: Install the program via Nix.
-    - [[haskell-flake/checks]]
+    - [[haskell-template/checks]]
   - Removing features from the template
     - [[remove-relude]]
   - [ ] [Switching to `direnv`](https://github.com/srid/haskell-template/issues/3)

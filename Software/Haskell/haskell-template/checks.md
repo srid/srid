@@ -1,5 +1,5 @@
 ---
-slug: haskell-flake/checks
+slug: haskell-template/checks
 ---
 
 # Flake checks for Haskell
