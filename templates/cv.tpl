@@ -16,7 +16,7 @@
                 City</a>, Canada
             </div>
             <div class="font-bold mt-4">
-              Senior Software Engineer (Haskell, Nix)
+              Technical Lead (Haskell, Nix)
             </div>
           </div>
           <div class="w-24">
@@ -60,8 +60,10 @@
               primarily on Haskell
               projects
               with Nix involved as necessary. At <em>Obsidian Systems</em>, and for other clients, I
-              worked on Reflex / GHCJS projects writing full-stack apps in Haskell. At <em>Monadfix</em> I helped develop 
-              a PureScript to Haskell transpiler (<a class="${linkClass}" href="https://blog.monadfix.com/nau-introduction">nau</a>). </p>
+              worked on Reflex / GHCJS projects writing full-stack apps in Haskell. At <em>Monadfix</em> I helped
+              develop
+              a PureScript to Haskell transpiler (<a class="${linkClass}"
+                href="https://blog.monadfix.com/nau-introduction">nau</a>). </p>
             <p class="font-serif mb-2">
               ‣ During
               <!-- DoNotFormat -->
@@ -71,13 +73,19 @@
               a couple of experimental indie projects including <a class="${linkClass}"
                 href="cerveau-announce">Cerveau</a>, a Reflex full-stack app for note-taking. <a class="${linkClass}"
                 href="https://ema.srid.ca">Ema</a> was the unintended result of the other one.</p>
-            <p class="font-serif">‣ From late <apply template="cv/year">2021</apply>, I joined <em>Platonic
+            <p class="font-serif mb-2">‣ From late <apply template="cv/year">2021</apply>, I joined <em>Platonic
                 Systems</em>
               and began working on
               Cardano blockchain projects,
               including the
               <a class="${linkClass}" href="https://github.com/Plutonomicon/plutarch/graphs/contributors">Plutarch</a>
               programming language.
+            </p>
+            <p class="font-serif">‣ From early <apply template="cv/year">2023</apply>, I joined <em>Juspay
+                Technologies</em>
+              to lead the company's <a class="${linkClass}" href="nix">Nix</a> efforts, specifically improving developer
+              experience and infrastructure
+              experience.
             </p>
           </section>
           <section>
