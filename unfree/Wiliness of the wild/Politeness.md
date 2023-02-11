@@ -24,6 +24,12 @@ From https://lukeplant.me.uk/blog/posts/why-im-leaving-elm/
 
 > The team [at NoRedInk] shows a bewildering mix of [[woke|cargo-cult inclusiveness]] coupled with inability to consider that anyone could be different from them in any way that matters.
 
+From https://news.ycombinator.com/item?id=34746161
+
+>> the core team has that "happy cult" vibe where they think that if they're (passive-aggressively) polite enough, they don't have to worry about anyone's opinion outside their insular little group.
+>
+> "Happy cult" vibe is exactly how describe that faux-niceness they throw around. 
+
 
 [^cult]: It tends to be more of a trait in Occidental than Oriental cultures. It originated (and arguably still is) as [a marker of the upper class](https://en.wikipedia.org/w/index.php?title=Politeness&oldid=1073436216#History). See also [Victorian morality](https://en.wikipedia.org/wiki/Victorian_morality).
 
