@@ -33,7 +33,7 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
 
 ### Individuals
 
-If there is once case study I have to pick as my favourite, it would have to be Grace.
+If there is one case study that I must pick as my favourite, it would be that of Grace.
 
 - **Grace**: a report of how she resisted [[woke-invasion]] in her non-profit organization in around year 2010, through clearly understanding [[crt]].
   - [Twitter thread](https://threadreaderapp.com/thread/1386739669866455043.html)
