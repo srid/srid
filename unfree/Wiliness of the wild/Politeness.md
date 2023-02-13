@@ -26,7 +26,7 @@ From https://lukeplant.me.uk/blog/posts/why-im-leaving-elm/
 
 From https://news.ycombinator.com/item?id=34746161
 
->> the core team has that "happy cult" vibe where they think that if they're (passive-aggressively) polite enough, they don't have to worry about anyone's opinion outside their insular little group.
+>> the core team has that "happy cult" [[Affective Vibes|vibe]] where they think that if they're (passive-aggressively) polite enough, they don't have to worry about anyone's opinion outside their insular little group.
 >
 > "Happy cult" vibe is exactly how describe that faux-niceness they throw around. 
 
