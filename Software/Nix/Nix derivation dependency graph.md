@@ -13,13 +13,13 @@ The following commands came in handy when investigating the problem, which was f
 
 - Get the dependency tree:
     
-    ```sh-session
+    ```sh
     nix-store -q --tree result
     ```
     
 - Ask “why” as to a particular dependency:
     
-    ```sh-session
+    ```sh
     nix why-depends -a ./result \
      /nix/store/bicv5nnibqg0qsqyjvb3nw01447yms0j-shake-0.18.5-data
     ```
