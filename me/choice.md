@@ -4,7 +4,7 @@ slug: choice
 
 # The choice to be happy
 
-[ [Presented below is my informal description of the [[Actualism Method]], emphasizing the "choice" aspect of it.]{.editor-note} ]{.page-note}
+[ [Presented below is my informal description of the [[Actualism Method]], emphasizing the "choice" aspect of it. As of Feb 2023, the author developed a much more find-grained understanding of the method; contact them for details.]{.editor-note} ]{.page-note}
 
 Every normal human being has the unrealized ability to **choose** to [[Feeling good|feel good]]. This ability remains unutilized only because of our normal dissociative awareness and disinterest. 
 
