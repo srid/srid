@@ -24,7 +24,7 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
       | `, repl` | Run `cabal repl` (gives you a `ghci` repl)              |
       | `, docs` | Run `hoogle` (Documentation server for packages in use) |
 
-    - [[dependency]] (or how to override them in Nix)
+    - [Adding dependencies](https://haskell.flake.page/dependency) (or how to override them in Nix)
     - [[haskell-template/add-tests]]
   - Common Nix workflows
     - `nix build`: Build the nix package.
