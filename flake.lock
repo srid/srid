@@ -15,9 +15,55 @@
         "type": "github"
       }
     },
+    "ema": {
+      "inputs": {
+        "check-flake": [
+          "emanote",
+          "check-flake"
+        ],
+        "flake-parts": [
+          "emanote",
+          "flake-parts"
+        ],
+        "flake-root": [
+          "emanote",
+          "flake-root"
+        ],
+        "haskell-flake": [
+          "emanote",
+          "haskell-flake"
+        ],
+        "nixpkgs": [
+          "emanote",
+          "nixpkgs"
+        ],
+        "nixpkgs-140774-workaround": [
+          "emanote",
+          "nixpkgs-140774-workaround"
+        ],
+        "treefmt-nix": [
+          "emanote",
+          "treefmt-nix"
+        ]
+      },
+      "locked": {
+        "lastModified": 1676819423,
+        "narHash": "sha256-bnq16t0hjI0lJ+6/diuM0PU0EXuq4pvB2NVnFIFxNug=",
+        "owner": "srid",
+        "repo": "ema",
+        "rev": "182759761f40b9ed8f29fac19270598eea8bb2fd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "srid",
+        "repo": "ema",
+        "type": "github"
+      }
+    },
     "emanote": {
       "inputs": {
         "check-flake": "check-flake",
+        "ema": "ema",
         "flake-parts": "flake-parts",
         "flake-root": "flake-root",
         "haskell-flake": "haskell-flake",
@@ -26,11 +72,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1676313245,
-        "narHash": "sha256-CTWnlt+yr3+77o/fG2QaYQh7IL/Y19TVwmuwYxUeoqQ=",
+        "lastModified": 1677026664,
+        "narHash": "sha256-YGJWTIY7fvikdLsH15okACmI2iyObZlwjypHFMc761I=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "ec9b985323ef3b2ae05db39f1b8808a43d081036",
+        "rev": "fc0690584b82dff1861fa23dbec0283699ce26cc",
         "type": "github"
       },
       "original": {
