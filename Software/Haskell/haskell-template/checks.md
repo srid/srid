@@ -22,4 +22,8 @@ Now you can run the following command[^sandbox] to run all flake checks locally 
 nix --option sandbox false build .#check -L
 ```
 
+## See also
+
+- https://github.com/NixOS/nix/pull/7759
+
 [^sandbox]: sandbox is being disabled because of [an issue](https://github.com/srid/haskell-flake/issues/21) with [[haskell-language-server]].
