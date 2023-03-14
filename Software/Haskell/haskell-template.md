@@ -34,7 +34,7 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
     - [[haskell-template/checks]]
   - Removing features from the template
     - [[remove-relude]]
-  - [ ] [Switching to `direnv`](https://github.com/srid/haskell-template/issues/3)
+  - [Switching to `direnv`](https://haskell.flake.page/direnv)
   - CI
     - [[haskell-template/garnix]]
 
