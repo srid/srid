@@ -26,6 +26,7 @@ While you may use any text editor with language-server support, we will use [[VS
     - If it doesn't prompt, press <kbd>Ctrl+Shift+X</kbd> and search for `@recommended` to install them all manually.
 - Press <kbd>Ctrl+Shift+P</kbd> to run the command "Nix-Env: Select Environment" and then select `shell.nix`. 
      - The extension will ask you to reload VSCode at the end. Do it.
+     - Note: We recommend that you switch to using direnv; see [here](https://haskell.flake.page/direnv) for details.
 
 ## Running in VSCode
 
