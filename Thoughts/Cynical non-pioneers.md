@@ -27,6 +27,7 @@ See [here](http://actualfreedom.com.au/sundry/commonobjections/croindex.htm).
 - "*[[Courage of your convictions|the mediocrity of those who say you can not do it]]*"
 - [Trump/Elon Derangement Syndrome](https://archive.is/c4uEQ)
   > Chalk it down to MDS - Musk Derangement Syndrome. There is something in Elon Musk which triggers people to start acting irrationally just like there is something in e.g. Donald Trump which does the same. It is probably related to the way they - Musk and Trump and others like them - act like they are not bound by the laws which keep others from attempting the types of ventures these often undertake as well as their lack of humility about them. Some are awed by their boldness and become fanboys, others are disgusted by their lack of humility and failure to abide by the standards and fall victim to some form of 'derangement syndrome'. When Musk started gaining successes with SpaceX and Tesla there were many articles posted by the 'fanboy' section of the crowd while those who started to suffer from DS were just waiting for him or his companies to trip somewhere, somehow so they could torch the man. His purchase of [[Twitter]] as well as the underwhelming performance (compared to the claimed capabilities) of Tesla's 'fully self driving' system have given them ample fuel just waiting for someone to put a match to.
+- [Stockholm syndrome](https://www.bbc.com/news/magazine-22447726)
 
 [^fp-criticaster]: 
     From the comment by user "kstenerud":
