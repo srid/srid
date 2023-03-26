@@ -2,7 +2,9 @@
 slug: nix
 ---
 
-Nix package manager. See also [[NixOS]].
+See my [rapid introduction to Nix](https://haskell.flake.page/nix-rapid).
+
+See also [[NixOS]].
 
 ```query
 path:./*
