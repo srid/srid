@@ -4,6 +4,8 @@ tags: [blog, nojs]
 date: 2020-04-16
 ---
 
+**EDIT (Mar, 2023)**: Checkout https://github.com/purifix/purifix if you want to Nixify your PureScript projects.
+
 My #[[Haskell]] app [[Neuron]] recently received a [contribution](https://github.com/srid/neuron/pull/90) that added support for the very useful client-side search feature. JavaScript was used to implement it; however after having gotten used to merrily creating [[Reflex-FRP]]-based web apps (frontend and backend both in Haskell), writing raw JavaScript had very little appeal to me, which left me with the following options:
 
 * GHCJS: Reflex
