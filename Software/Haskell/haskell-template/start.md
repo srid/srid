@@ -10,7 +10,7 @@ If this is your first time using [[Nix]] or [[haskell-template]] (or a project b
 
 ### Nix
 
-- [Install Nix](https://nixos.org/download.html) (version must be 2.8 or greater) 
+- [Install Nix](https://haskell.flake.page/nix) (version must be 2.8 or greater) 
     - If you are using Windows, you may install Nix [under WSL2](https://nixos.wiki/wiki/Nix_Installation_Guide#Windows_Subsystem_for_Linux_.28WSL.29) 
 - [Enable Flakes](https://nixos.wiki/wiki/Flakes#Enable_flakes)
 - In the project directory, run `nix develop -i -c haskell-language-server` to sanity check your environment.
