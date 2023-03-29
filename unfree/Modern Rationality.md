@@ -14,7 +14,7 @@ Being [[Wiliness of the wild|artful]] often takes the form of [[Armchair philoso
 
 ### Effective Altruism (EA)
 
-EA proponents care more about, say, [[Vegan Propaganda|animal rights]] than the [[free|mental health]] of their fellow humans. See Kathleen Stock's article [Effective altruism is the new woke](https://unherd.com/2022/09/effective-altruism-is-the-new-woke/):
+EA proponents generally care more about, say, [[Vegan Propaganda|animal rights]] than the [[free|mental health]] of their fellow humans. See Kathleen Stock's article [Effective altruism is the new woke](https://unherd.com/2022/09/effective-altruism-is-the-new-woke/):
 
 > Effectively, both longtermism and [[woke|woke progressivism]] take a highly restricted number of emotional impulses many of us ordinarily have, and then vividly conjure up heart-rending scenarios of supposed harm in order to prime our malleable intuitions in the desired direction. Each insists that we then extend these impulses quasi-rigorously, past any possible relevance to our own personal lives. [..]
 > 
