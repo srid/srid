@@ -11,4 +11,7 @@ Although we are increasingly becoming secular (via allowing individualism to inc
 path:./*
 ```
 
-For the obverse, where this instinctual-cum-tribalistic circle-jerk plays no part, see [[free]].
+## See also
+
+- For the obverse, where this instinctual-cum-tribalistic circle-jerk plays no part, see [[free]].
+- [Facts (Actuality) vis-à-vis Groupthink (Orthodoxy)](http://actualfreedom.com.au/sundry/factsandgroupthink/factsindex.htm)
