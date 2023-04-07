@@ -7,6 +7,11 @@ slug: unwoke
 The first step to resist or undo [[woke-invasion]] in your organization (or your psyche) is to thoroughly understand their creed [[crt]], so as to uncover the fact that generally speaking woke disciples care [[Luxury beliefs|less]] about the problems in the world than assuaging their self-centered ideological feelings.[^mhg] The next step, obviously, is then to effectuate an elimination of the wannabe woke invaders from your organization by instituting a culture based on common sense values stripped of identity politics.
 
 [^mhg]: It is vital to realize that the woke really have no moral high ground. They are as corrupt ([[woke-psychology|psychologically speaking]]) as the groups they criticize.
+    > A lot of people still think all these [woke] folks are 'nice but misguided'.
+    > 
+    > No. Some are. Especially the younger ones.
+    > 
+    > But a lot of malicious, wicked people hide under the 'social justice' umbrella and take glee in hurting others. Emotionally and physically. Then they play victim. https://twitter.com/elonmusk/status/1644199998496677889
 
 ## Case studies
 
