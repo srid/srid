@@ -11,7 +11,7 @@ slug: luxury-belief
 
 ---
 
-It is not merely about '[[crt|white privilege]]' but as well the concept applies more generally to such a *class* of beliefs. From [Arjun](https://www.arjunananthkrishnan.com/post/luxury-beliefs),
+It is not merely about '[[crt|white privilege]]' but as well the concept applies more generally to such a *class* of beliefs. From [Arjun](https://web.archive.org/web/20210922014844/https://www.arjunananthkrishnan.com/post/luxury-beliefs),
 
 > having a stance on certain social issues can absolutely be a status-seeking measure.
 > 
