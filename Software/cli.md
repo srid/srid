@@ -6,6 +6,8 @@ slug: cli
 
 An ongoing project to get back to a CLI-centric workflow.
 
+**Update (Apr, 2023):** I now increasingly use kitty+zellij+nushell+neovim; and this page requires an update.
+
 ## Topics
 
 * Neovim: https://github.com/srid/nixos-config/blob/master/home/neovim.nix
