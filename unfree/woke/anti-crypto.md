@@ -27,4 +27,4 @@ A disgruntled vocal minority belong to the church of anti-[[Blockchain|crypto]],
 
 ## Popular heretics
 
-- [David Heinemeier Hansson](https://world.hey.com/dhh/i-was-wrong-we-need-crypto-587ccb03), a Danish programmer living in [less woke](https://twitter.com/dhh/status/1456142961008418817) Denmark. Created the Ruby programming language.
+- [David Heinemeier Hansson](https://world.hey.com/dhh/i-was-wrong-we-need-crypto-587ccb03), a Danish programmer living in [less woke](https://twitter.com/dhh/status/1456142961008418817) Denmark. Created the Ruby framework, Ruby on Rails.
