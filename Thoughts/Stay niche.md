@@ -17,6 +17,10 @@ The core problem here is the _monolithic_ nature of these social networks, not t
 
 It is time we humans (i.e., each of us individuals) let go of the idea of "humanity" (i.e., as a "group"); decentralized social networks today have a fantastic opportunity to play their technological role in it.
 
+## Networks to look forward to
+
+- [Bluesky](https://blueskyweb.xyz/blog)
+
 ## See also
 
 - Similar ideas
