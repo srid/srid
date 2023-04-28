@@ -62,6 +62,7 @@ git clone <your-clone-url> $NAME
 cd $NAME
 
 
+# Copy-paste these 4 lines at the same time
 git mv haskell-template.cabal ${NAME}.cabal
 nix run nixpkgs\#sd -- haskell-template ${NAME} * */*
 echo "# ${NAME}\n\n" > README.md
