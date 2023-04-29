@@ -25,15 +25,17 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
 	- DHH, in Nov 2022: "The DEI hegemony has gone from virtually unchallenged to come under severe stress." -- [The waning days of DEI's dominance](https://world.hey.com/dhh/the-waning-days-of-dei-s-dominance-9a5b656c)
 	- DHH, in Apr, 2023: "It's far easier to stand up to the [woke] golems today than it was a couple of years ago. At least in the realm of business. (Things still look pretty rough in academia!)" -- [Standing up to golems](https://world.hey.com/dhh/standing-up-to-golems-c98dd4a8)
 - **Kraken**: https://twitter.com/jespow/status/1536978826344792064 
+- **Twitter**: https://twitter.com/greg_price11/status/1648128321505427456
+    > Tucker: "So 80% [of Twitter staff] left [when you took over]. How do you run it with only 20% of the staff?
+    >
+    > Elon: "It turns out you don't need that many people to run Twitter."
+    > 
+    > Tucker: "But that's a lot."
+    > 
+    > Elon: "If you're not trying to run some [[woke|glorified activist]] organization"
 
 #### Organizations to watch out for
 
-- **Twitter**:
-  - [Twitter Employees Protest Elon Musk's Plan to Fire 75% of Workforce](https://archive.ph/yRP4z) (via [TheMotte](https://www.themotte.org/post/146/culture-war-roundup-for-the-week/22701?context=8#context))
-  - [Twitter’s mass layoffs have begun](https://news.ycombinator.com/item?id=33463908)
-    - Cream of the crop left behind: https://twitter.com/elonmusk/status/1593899029531803649
-  - "Elon Musk: *Twitter has had a massive drop in revenue, due to activist groups pressuring advertisers, even though nothing has changed with content moderation and we did everything we could to appease the activists.*" https://twitter.com/elonmusk/status/1588538640401018880
-  - [Twitter offers amnesty to suspended accounts](https://twitter.com/elonmusk/status/1595869526469533701)
 - **Shopify**
   - CEO says calls to ban @libsoftiktok a [bad faith narrative](https://twitter.com/tobi/status/1596440473849274369), and Elon [supports](https://twitter.com/elonmusk/status/1597185759316152320) Toby.
 
