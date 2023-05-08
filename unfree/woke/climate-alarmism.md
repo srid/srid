@@ -11,7 +11,7 @@ catastrophistic thinking[^doom] humanity has been harbouring for generations, wh
 
 -- [The Planet's Future Shouldn't Be Left to the Catastrophists](https://www.humanprogress.org/the-planets-future-is-too-important-to-leave-to-the-catastrophists/)
 
-## Hypocrisy
+## [[woke-hypocrisy|Hypocrisy]]
 
 From http://www.actualfreedom.com.au/richard/listdcorrespondence/listd45.htm
 

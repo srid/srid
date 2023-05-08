@@ -22,3 +22,4 @@ While, in reality, it tends to be mix of status-signalling and [[Caring|actual c
 ## See also
 
 - #[[woke-psychology]]
+- #[[woke-hypocrisy]]
