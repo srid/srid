@@ -12,6 +12,9 @@ jobs:
         with:
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      - uses: cachix/cachix-action@v11
+        with:
+          name: srid
       - name: Build the website (Nix) 🔧
         run: |
           nix build -j 4
