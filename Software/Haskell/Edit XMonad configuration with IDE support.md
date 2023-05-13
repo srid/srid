@@ -39,8 +39,8 @@ Your Cabal project lives at `./xmonad-config` ... and, if you followed the instr
 
 ## Example
 
-- [My config: nixos/xmonad-srid](https://github.com/srid/nixos-config/tree/master/nixos/desktopish/xmonad/xmonad-srid)
-- [Taffybar, done similarly](https://github.com/srid/nixos-config/tree/master/nixos/desktopish/taffybar/taffybar-srid)
+- [My config: nixos/xmonad-srid](https://github.com/srid/nixos-config/tree/master/nixos/gui/desktopish/xmonad)
+- [Taffybar, done similarly](https://github.com/srid/nixos-config/tree/master/nixos/gui/desktopish/taffybar)
 
 ## Discussion
 
