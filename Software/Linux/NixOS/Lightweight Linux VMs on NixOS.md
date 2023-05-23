@@ -64,7 +64,7 @@ Note that we use `tmux` so that programs requiring tty will work correctly.
 
 ### Installing Nix 
 
-Assuming you have enabled the `security.nesting` flag on the container, you should now be able to install Nix by following [the official instructions](https://nixos.org/nix/).
+Assuming you have enabled the `security.nesting` flag on the container, you should now be able to [install Nix](https://github.com/DeterminateSystems/nix-installer).
 
 I use Nix to develop and install my programs, so the above is all I need to do in order to begin testing them on a pristine Linux machine without much fanfare.
 
