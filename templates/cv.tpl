@@ -30,7 +30,7 @@
 
         <div id="__SUMMARY__" class="px-4 py-4  flex flex-col space-y-4 text-xl text-gray-900 font-bold">
           <p class="leading-snug">
-            I became passionate of programming computers in 2001 and explored various technologies before
+            I discovered my passion for computer programming in 2001 and explored various technologies before
             discovering Haskell (around 2017) which remains my current tool of choice for
             writing software along with <b>Nix</b>. Nowadays I'm
             also excited about purely functional programming as well as type systems.
@@ -40,10 +40,8 @@
         <div id="__MAIN__" class="px-4 py-6 flex flex-col space-y-4 pt-4 text-gray-600">
           <section>
             <apply template="cv/company">Open Source</apply>
-            <p class="font-serif mb-2">Writing open source code has been a golden thread throughout my career. Lately
-              I'm
-              proud of these
-              software written primarily in Haskell:</p>
+            <p class="font-serif mb-2">Writing open source code has been a golden thread throughout my career.
+              Lately I'm proud of the following software written primarily in Haskell:</p>
             <ul class="list-disc pl-4 mb-2 space-y-1">
               <li><a class="${linkClass}" href="https://ema.srid.ca">Ema</a></li>
               <li><a class="${linkClass}" href="https://neuron.zettel.page">Neuron</a></li>
