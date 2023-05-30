@@ -6,7 +6,7 @@ slug: anti-crypto
 
 A disgruntled vocal minority belong to the church of anti-[[Blockchain|crypto]], and they have taken upon themselves to proselytize (see [[woke-invasion]]) the unsuspecting masses - which [[Righteousness|righteous]] indignation is best illustrated by their following decree:
 
-> "I have instead come to believe that [crypto is] so harmful that I cannot ethically continue to ignore them, and must instead do my best to educate and advocate against their wider adoption. I am picking my battles, and this is one of them." --[Ms. Molly White](https://archive.ph/WRUba) (a self-[[Social Identity|identified]] "[queer feminist](https://archive.ph/KTYAt)" and [anti-crypto grifter](https://archive.is/0uCjy))
+> "I have instead come to believe that [crypto is] so harmful that I cannot ethically continue to ignore them, and must instead do my best to educate and advocate against their wider adoption. I am picking my battles, and this is one of them." --[Ms. Molly White](https://archive.ph/WRUba) (a self-[[Social Identity|identified]] "[queer feminist](https://archive.ph/KTYAt)" and [anti-crypto grifter](https://archive.is/0uCjy) who is also described as ["leading" a crowd in an attack](https://news.ycombinator.com/item?id=36128484)).
 
 ## Potential factors
 
