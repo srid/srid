@@ -4,6 +4,10 @@ slug: coffee
 
 # Coffee ☕️
 
+:::{.page-note}
+**UPDATE** (June, 2023): I now drink [cold brew coffee](https://twitter.com/sridca/status/1664671489856004096) which is better in many ways.
+:::
+
 A good tasting coffee makes all the difference.
 
 ## Essential equipment
