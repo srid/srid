@@ -37,3 +37,4 @@ Or for a conspiratorial summary,
 - [**Colleges** that ditched admission tests find it harder to fairly choose students](https://news.ycombinator.com/item?id=33298336)
 - Lesser known groups
   - [SourceHut bans crypto and blockchain projects](https://news.ycombinator.com/item?id=33403780) (cf. [[anti-crypto]])
+  - [Asahi Linux - HN grievance](https://news.ycombinator.com/item?id=36230649)
