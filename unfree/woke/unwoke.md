@@ -39,6 +39,11 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
 - **Shopify**
   - CEO says calls to ban @libsoftiktok a [bad faith narrative](https://twitter.com/tobi/status/1596440473849274369), and Elon [supports](https://twitter.com/elonmusk/status/1597185759316152320) Toby.
 
+#### Ideologies to watch out for
+
+- **Gender ideology**
+  - [The cult of gender ideology is finally disintegrating](https://archive.is/20230609223701/https://www.telegraph.co.uk/columnists/2023/05/30/the-cult-of-gender-ideology-finally-crumbling/#selection-2957.4-2957.57)
+
 ### Individuals
 
 If there is one case study that I must pick as my favourite, it would be that of Grace.
