@@ -43,6 +43,8 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
 
 - **Gender ideology**
   - [The cult of gender ideology is finally disintegrating](https://archive.is/20230609223701/https://www.telegraph.co.uk/columnists/2023/05/30/the-cult-of-gender-ideology-finally-crumbling/#selection-2957.4-2957.57)
+- **Affirmative Action**
+  - [US Supreme Court overturns race-based college admissions](https://www.bbc.com/news/world-us-canada-65886212): *"[Zhao's] group argued that affirmative action had negatively affected Asian American students' odds of enrolment at elite schools. "This decision will preserve meritocracy, which is the bedrock of the American dream" Mr Zhao said outside the court."*
 
 ### Individuals
 
