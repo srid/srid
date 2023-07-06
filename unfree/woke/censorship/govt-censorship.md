@@ -14,3 +14,7 @@ Allen Farrington [writing on Quillette](https://quillette.com/2021/01/20/big-tec
 
 * [The U.S. Government’s Vast New Privatized Censorship Regime](https://archive.ph/KSkDY) (via [HN](https://news.ycombinator.com/item?id=32938305))
 * [The Twitter Files](https://www.racket.news/p/capsule-summaries-of-all-twitter)
+
+## The (ongoing) end of the regime
+
+- July, 2023: [Judge rules White House pressured social networks to “suppress free speech”](https://news.ycombinator.com/item?id=36614678)
