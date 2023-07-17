@@ -32,10 +32,11 @@ Or for a conspiratorial summary,
 - [History of woke invasion from the perspective of someone in the FOSS camp](https://gleasonator.com/@PhenomX6@fedi.pawlicker.com/posts/AMUMdYJWpMpLyeFAy8) ([Japanese translation](https://web.gnusocial.jp/post/2022/08/21/))
 - [No One Is Happy About Diversity Efforts at Work](https://news.ycombinator.com/item?id=36571407)
 
-## How are woke-infiltrated groups doing?
+## Woke-infiltrated groups and organizations
 
 - [What “diversity and inclusion” means at **Microsoft**](https://news.ycombinator.com/item?id=33165844)
 - [**Colleges** that ditched admission tests find it harder to fairly choose students](https://news.ycombinator.com/item?id=33298336)
+- [**ChatGPT** Goes Woke](https://www.nationalreview.com/corner/chatgpt-goes-woke/)
 - Lesser known groups
   - [SourceHut bans crypto and blockchain projects](https://news.ycombinator.com/item?id=33403780) (cf. [[anti-crypto]])
   - [Asahi Linux - HN grievance](https://news.ycombinator.com/item?id=36230649)
