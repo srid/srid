@@ -33,6 +33,7 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
     > Tucker: "But that's a lot."
     > 
     > Elon: "If you're not trying to run some [[woke|glorified activist]] organization"
+    - **xAI**: [Elon Musk Launches X.AI To Fight ChatGPT Woke AI](https://www.forbes.com/sites/martineparis/2023/04/16/elon-musk-launches-xai-to-fight-chatgpt-woke-ai-with-twitter-data/?sh=ae7c73151f82)
 
 #### Organizations to watch out for
 
