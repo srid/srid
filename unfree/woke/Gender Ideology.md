@@ -8,5 +8,5 @@ slug: gender
 ## External links
 
 - [An Examen of “The Invention of ‘Heterosexuality’”](http://actualfreedom.com.au/an/contents.htm#contents)
-- #[[crt]]
+- #[[woke-psychology]]
 - #[[Social Identity]]
