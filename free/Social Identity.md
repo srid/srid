@@ -4,20 +4,20 @@ slug: identity/social
 
 [Topic: Social Identity](http://www.actualfreedom.com.au/library/topics/socialidentity.htm),
 
-**Richard:** <font color="#AA0000">This social identity, which is otherwise known as a conscience (a moral/ethical and principled entity, with inculcated societal knowledge of ‘right’ and ‘wrong’), is overlaid upon the [[Identity|instinctual identity]] itself ... and its associated personae consist of (for example):</font>
+**Richard:** This social identity, which is otherwise known as a conscience (a moral/ethical and principled entity, with inculcated societal knowledge of ‘right’ and ‘wrong’), is overlaid upon the [[Identity|instinctual identity]] itself ... and its associated personae consist of (for example):
 
-<font color="#AA0000">
+[The Formation and Persistence of Social Identity](http://actualfreedom.com.au/an/various/persistentsocialidentity.htm)
 
-> 1\. A vocational identity as ‘employee’/‘employer’, ‘worker’/‘pensioner’, ‘junior/‘senior’ and so on.  
-> 2\. A national identity as ‘English’, ‘American’, ‘Australian’ and etcetera.  
-> 3\. A racial identity as ‘white’, ‘black’, ‘brown’ or whatever.  
-> 4\. A religious/spiritual identity as a ‘Hindu’, a ‘Muslim’, a ‘Christian’, a ‘Buddhist’ ad infinitum.  
-> 5\. A ideological identity as a ‘Capitalist’, a ‘Communist’, a ‘Monarchist’, a ‘Fascist’ and etcetera.  
-> 6\. A political identity as a ‘Democrat’, a ‘Tory’, a ‘Republican’, a ‘Liberal’ and all the rest.  
-> 7\. A [[Filial duty|family identity]] as ‘son’/‘daughter’, ‘brother’/‘sister’, ‘father’/‘mother’ and the whole raft of relatives.  
-> 8\. A gender identity as ‘boy’/‘girl’, ‘man’/‘woman’.
-
-</font>
+01. The term ‘social identity’ is also inclusive of a vocational identity (identifying as an ‘employee’/ ‘employer’, ‘worker’/ ‘pensioner’, ‘junior’/ ‘senior’, ‘peasant’/ ‘squire’ a.k.a. ‘villein’/ ‘lord’, and so on).
+02. The term ‘social identity’ is also inclusive of a national identity (identifying as ‘English’, ‘American’, ‘Australian’, ‘Nigerian’, ‘Korean’, and so forth).
+03. The term ‘social identity’ is also inclusive of a racial identity (identifying as ‘white’, ‘black’, ‘brown’, etcetera, or whatever ethnicity nomenclature is the latest fashion).
+04. The term ‘social identity’ is also inclusive of a religio-spiritual identity (identifying as a ‘Hindu’, a ‘Muslim’, a ‘Christian’, a ‘Buddhist’ ad infinitum).
+05. The term ‘social identity’ is also inclusive of an ideological identity (identifying as a ‘Capitalist’, a ‘Communist’, a ‘Monarchist’, a ‘Fascist’ and the like).
+06. The term ‘social identity’ is also inclusive of a political identity (identifying as a ‘Democrat’, a ‘Tory’, a ‘Republican’, a ‘Liberal’ and all the rest).
+07. The term ‘social identity’ is also inclusive of a class or caste identity (identifying as an ‘aristocrat’/ ‘commoner’ (as in, ‘the gentry’/ ‘the peasantry’), ‘patrician’/ ‘plebeian’ (Latin), ‘noblesse’/ ‘roturier’ (French), ‘ariyan’/ ‘puthujjana’ (Pāli), ad nauseam throughout the ages.
+08. The term ‘social identity’ is also inclusive of a [[Filial duty|familial identity]] (identifying as ‘son’/ ‘daughter’, ‘brother’/ ‘sister’, ‘father’/ ‘mother’, ‘uncle’/ ‘aunt’, and the whole raft of relatives).
+09. The term ‘social identity’ is also inclusive of a sex identity (identifying as ‘boy’/ ‘girl’, ‘man’/ ‘woman’).
+10. The term ‘social identity’ is also inclusive, nowadays, of a [[Gender Ideology|gender identity]] a.k.a. sexual orientation identity (identifying as ‘asexual’/ ‘bisexual’/ ‘homosexual’/ ‘transvestite’ a.k.a. ‘cross-dresser’/ ‘transsexual’ a.k.a. ‘transgender’/ ‘gender-queer’ a.k.a. ‘queer’ / and, colloquially, an ‘alphabet-soup’ of initials.
 
 ---
 
