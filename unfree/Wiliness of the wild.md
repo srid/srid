@@ -19,7 +19,7 @@ In modern cultures, the following authors have led their audience into conscious
 - [The 48 Laws of Power by **Robert Greene**](https://www.nateliason.com/notes/48-laws-power-robert-greene)
 - [How to Win Friends and Influence People by **Dale Carnegie**](https://fs.blog/how-to-win-friends-and-influence-people/)
 
-Note: Although Mr. Greene here is more likely to receive moral opprobrium than Mr. Carnegie (and the latter *does* give sensible and practical advice to people for improving their social lives; [see example](https://www.amazon.com/gp/review/R24GSZSS96I4YZ)), both of their teachings ought to be viewed in a morally neutral way (see the 'no-one's fault' above) so as to allow the discovery of the *human* wiliness inherent to the teachings.
+Note: Although Mr. Greene here is more likely to receive moral opprobrium than Mr. Carnegie (and the latter *does* give sensible and practical advice to people for improving their social lives; [see example](https://www.amazon.com/gp/review/R24GSZSS96I4YZ)), both of their teachings are to be viewed in a morally neutral way (see the 'no-one's fault' above) so as to allow the discovery of the *human* wiliness -- and its discernment in relation to the superior alternative [[Naivete]] -- inherent to those teachings.
 
 ### Other examples
 
