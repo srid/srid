@@ -25,10 +25,6 @@ Note: Although Mr. Greene here is more likely to receive moral opprobrium than M
 
 - [*Words That Work: It's Not What You Say, It's What People Hear* by GOP propagandist Frank Luntz](https://old.reddit.com/r/TheMotte/comments/wi8rc4/smallscale_question_sunday_for_august_07_2022/ijiapob/?sort=confidence)
 
-## Third alternative to wiliness
-
-- [[Spontaneity]] (which is only possible with either the [[Identity]] in abeyance or having been extirpated)
-
 ## Sub pages
 
 ```query
