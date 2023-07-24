@@ -26,10 +26,12 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
 - Similar ideas
     - [Geeks, MOPs, and sociopaths in subculture evolution](https://meaningness.com/geeks-mops-sociopaths)
     - [The internet wants to be fragmented](https://noahpinion.substack.com/p/the-internet-wants-to-be-fragmented)
+    - [DHH](https://twitter.com/37signals/status/1683473446573834240): *"You shouldn't listen so much to so many people. You're going to fill your head, and you're going to fill it then with doubt."*
 - [Big Tech censorship likely brought forward decentralized tech](https://reclaimthenet.org/big-tech-censorship-likely-brought-forward-decentralized-tech/)
 - [Social networks: It's worse than you think](https://meta.ath0.com/2020/12/social-notwork/) - *"as the number of messages in the network rises, the quality of those which propagate falls"* (interpreting [this research](https://www.scientificamerican.com/article/information-overload-helps-fake-news-spread-and-social-media-knows-it/))
 - What happened to [Monica Cellio](https://www.cellio.org/stack) is worth reading (here's [a timeline](https://meta.stackexchange.com/a/334417/135122)) to understand some of the fallings at Stack Exchange as the network grew beyond its original niche.
 - [Why Is the Web So Monotonous? Google.](https://reasonablypolymorphic.com/blog/monotonous-web/index.html) - degradation of the web from the perspective of boosting of "authorative" source (as a way of soft-[[censorship|censoring]] others).
+
 
 [vitalik]: https://decrypt.co/53890/parler-vitalik-buterin-ethereum
 
