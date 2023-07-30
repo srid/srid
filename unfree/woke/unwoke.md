@@ -25,7 +25,7 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
 	- DHH, in Nov 2022: "The DEI hegemony has gone from virtually unchallenged to come under severe stress." -- [The waning days of DEI's dominance](https://world.hey.com/dhh/the-waning-days-of-dei-s-dominance-9a5b656c)
 	- DHH, in Apr, 2023: "It's far easier to stand up to the [woke] golems today than it was a couple of years ago. At least in the realm of business. (Things still look pretty rough in academia!)" -- [Standing up to golems](https://world.hey.com/dhh/standing-up-to-golems-c98dd4a8)
 - **Kraken**: https://twitter.com/jespow/status/1536978826344792064 
-- **Twitter**: https://twitter.com/greg_price11/status/1648128321505427456
+- [[Twitter]]: https://twitter.com/greg_price11/status/1648128321505427456
     > Tucker: "So 80% [of Twitter staff] left [when you took over]. How do you run it with [only 20%](https://twitter.com/elonmusk/status/1593899029531803649) of the staff?
     >
     > Elon: "It turns out you don't need that many people to run Twitter."
