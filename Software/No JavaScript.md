@@ -9,7 +9,7 @@ slug: nojs
 | --------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | [[Haskell]]     | GHCJS; [[Reflex-FRP]]#; [[Obelisk]]                     | Developed by a small consultancy (Obsidian Systems) with uncertain future; also see Tweag's [Asterius](https://github.com/tweag/asterius) |
 | F# / .NET       | [Blazor](https://srid.github.io/learning-fsharp/Blazor) | Can expect Microsoft's investment to provide it a solid future.                                                                           |
-| [[Rust]][^nofp] | [Yew](https://yew.rs/)[^trunk]                          | Has an [actively evolving](https://www.arewewebyet.org/topics/frameworks/#frontend) wasm story; needs further exploration                 |
+| [[Rust]][^nofp] | [Yew](https://yew.rs/)[^trunk], [Leptos](https://twitter.com/sridca/status/1686496441760460800)                          | Has an [actively evolving](https://www.arewewebyet.org/topics/frameworks/#frontend) wasm story; needs further exploration                 |
 
 [^trunk]: via https://github.com/yewstack/yew-trunk-minimal-template for JS-less dev tools.
 
