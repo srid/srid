@@ -25,5 +25,6 @@ Wikipedia's *revision history* however is useful in one way -- in [[Unearthing h
   * [The next time Wikipedia asks for a donation, ignore it](https://news.ycombinator.com/item?id=33174533)
   * [Wikipedians question Wikimedia fundraising ethics after “somewhat-viral” tweet](https://news.ycombinator.com/item?id=33403233)
 * [Elon Musk](https://twitter.com/elonmusk/status/1600200000763756544): "*Wikipedia has a non-trivial left-wing bias.*"
+* [Glenn Greenwald](https://twitter.com/ggreenwald/status/1686386344166334464): "*Wikipedia has been degraded into a blunt arm of propaganda for the liberal establishment*"
 
 [^cens]: [Deleted by an editor](https://en.wikipedia.org/w/index.php?title=Ideological_bias_on_Wikipedia&diff=974363512&oldid=974363029), presumably as an act of #[[censorship]] so as to [[Wiliness of the wild|artfully]] prevent a casual critical reader from being cognizant of this bias.
