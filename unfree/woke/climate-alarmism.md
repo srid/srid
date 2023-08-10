@@ -62,9 +62,10 @@ User [motohagiography wrote](https://news.ycombinator.com/item?id=34161236):
 > 
 > There are concrete economic and technology solutions to environmental harm. There are no solutions to "climate change" because it is about as intellectually rigorous as a yogic mantra. The only thing missing from that presentation was perhaps a Sarah MacLachlan soundtrack about how sad it was. Outside the bubble, this stuff is still very controversial. Propaganda is very persuasive, a lot of it is really inspiring and funny, and it's as soaring as a pop song, but just recognize when you are being played.
 
-## See also
+## External links
 
 - [50 years of predictions that the climate apocalypse is nigh](https://nypost.com/2021/11/12/50-years-of-predictions-that-the-climate-apocalypse-is-nigh/)
+- [Judith Curry](https://twitter.com/curryja/status/1689419032368394241): *The global warming crisis is ‘manufactured’ to generate fear allowing for greater government control of every aspect of our lives.*
 
 [^doom]: Which in turn is a special case of the more general phenomenon called 'doomsday syndrome', [viz](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-happy2.htm).
 
