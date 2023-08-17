@@ -16,3 +16,5 @@ slug: woke-hypocrisy
 ## See also
 
 - [[Luxury beliefs]]
+
+![image](https://github.com/srid/srid/assets/3998/f222388b-faae-4594-b075-33f824824f3f)
