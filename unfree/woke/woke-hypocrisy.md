@@ -11,7 +11,8 @@ slug: woke-hypocrisy
 - According to [this study](https://onlinelibrary.wiley.com/doi/10.1111/ssqu.13268) white progressives in the US and UK avoid living in racially diverse neighborhoods and are likely to move away from them as much as white conservatives. ([via](https://twitter.com/monitoringbias/status/1655343781049139201))
     > [..] in both America and Britain, anti-immigration whites are only marginally more likely to move to whiter neighborhoods than pro-immigration whites. This is important because it suggests that attitudes toward diversity, which predict [[Luxury beliefs|mobility *intentions*]], do not explain whites’ ethnocentric mobility \*behavior\*. 
     - The author, Eric Kaufmann, has written [an article titled "Diversity for Thee—But Not for Me"](https://www.city-journal.org/article/white-progressives-more-likely-to-flee-diverse-neighborhoods) about this study, [summarizing](https://twitter.com/epkaufm/status/1654443913174818816) it as
-        > White Americans with the most anti-Trump accounts move to ZIP codes with the same share of minorities as the most pro-Trump accounts. White progressives are voting differently with their ballots & their feet. 
+        > White Americans with the most anti-Trump accounts move to ZIP codes with the same share of minorities as the most pro-Trump accounts. White progressives are voting differently with their ballots & their feet.
+- Erec Smith (a former diversity trainer): [“if you’re making all that money off of racism, the last thing you want is for racism to go away.”](https://twitter.com/JesseBWatters/status/1696360739450106090)
 
 ## See also
 
