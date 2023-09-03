@@ -65,6 +65,7 @@ User [motohagiography wrote](https://news.ycombinator.com/item?id=34161236):
 ## External links
 
 - [50 years of predictions that the climate apocalypse is nigh](https://nypost.com/2021/11/12/50-years-of-predictions-that-the-climate-apocalypse-is-nigh/)
+- [The Extinction Clock](https://extinctionclock.org/)
 - [Failed Prediction Timeline](https://wattsupwiththat.com/failed-prediction-timeline/)
 - [Judith Curry](https://twitter.com/curryja/status/1689419032368394241): *The global warming crisis is ‘manufactured’ to generate fear allowing for greater government control of every aspect of our lives.*
 
