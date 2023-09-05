@@ -68,6 +68,7 @@ User [motohagiography wrote](https://news.ycombinator.com/item?id=34161236):
 - [The Extinction Clock](https://extinctionclock.org/)
 - [Failed Prediction Timeline](https://wattsupwiththat.com/failed-prediction-timeline/)
 - [Judith Curry](https://twitter.com/curryja/status/1689419032368394241): *The global warming crisis is ‘manufactured’ to generate fear allowing for greater government control of every aspect of our lives.*
+- [I Left Out the Full Truth to Get My Climate Change Paper Published](https://www.thefp.com/p/i-overhyped-climate-change-to-get-published)
 
 [^doom]: Which in turn is a special case of the more general phenomenon called 'doomsday syndrome', [viz](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-happy2.htm).
 
