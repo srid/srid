@@ -31,6 +31,8 @@ Or for a conspiratorial summary,
   - https://twitter.com/MarioNawfal/status/1652145733791784961
 - [History of woke invasion from the perspective of someone in the FOSS camp](https://gleasonator.com/@PhenomX6@fedi.pawlicker.com/posts/AMUMdYJWpMpLyeFAy8) ([Japanese translation](https://web.gnusocial.jp/post/2022/08/21/))
 - [No One Is Happy About Diversity Efforts at Work](https://news.ycombinator.com/item?id=36571407)
+- Books
+  - [The Origins of Woke](https://twitter.com/elonmusk/status/1704994439318372548)
 
 ## Woke-infiltrated groups and organizations
 
