@@ -2,6 +2,12 @@
 slug: gender
 ---
 
+For context,
+
+[The Economist: A backlash against gender ideology is starting in universities](https://archive.ph/JPkAT)
+
+"If only they knew how to read ...",
+
 [The Formation and Persistence of Social Identity](http://actualfreedom.com.au/an/various/persistentsocialidentity.htm):
 
 > This sexualised gender-identity became socio-politicised when ‘gender feminism’ and ‘[[woke|identity politics]]’ in particular gained traction due to clamorous ‘anti-discrimination’ vocalists and vociferous ‘equalitarian’ activists stridently cashing in on their minoritarian victimology socio-politico influence and its resultant lobbying pressure [..]
