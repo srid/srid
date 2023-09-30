@@ -4,7 +4,8 @@ slug: gender
 
 For context,
 
-[The Economist: A backlash against gender ideology is starting in universities](https://archive.ph/JPkAT)
+- 2021: [The Economist: A backlash against gender ideology is starting in universities](https://archive.ph/JPkAT)
+- 2023: [The cult of gender ideology is finally disintegrating](https://archive.is/20230609223701/https://www.telegraph.co.uk/columnists/2023/05/30/the-cult-of-gender-ideology-finally-crumbling/#selection-2957.4-2957.57)
 
 "If only they knew how to read ...",
 
