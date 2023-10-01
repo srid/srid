@@ -23,3 +23,4 @@ While, in reality, it tends to be mix of status-signalling and [[Caring|actual c
 
 - #[[woke-psychology]]
 - #[[woke-hypocrisy]]
+- [Colorblindness was once an ideal advanced by the educated classes. The ideal spread to the middle and lower classes. Then the ideal became déclassé. The affluent re-ignited a racialized view of the world to distinguish themselves from the little people.](https://twitter.com/robkhenderson/status/1706676989984145713)
