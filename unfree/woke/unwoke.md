@@ -6,7 +6,7 @@ slug: unwoke
 
 
 :::{.page-note .bg-blue-50 .border-2 .border-blue-700 .pt-4 .px-4 .shadow-md}
-For the [[Caring|actually caring]] (ie. not [[Luxury beliefs|pseudo-caring]]) readers who are looking to break free of the woke ideology and do good in the world, the author recommends looking into [[Harmlessness|becoming harmless]].
+For the [[Caring|actually caring]] (ie. not [[Luxury beliefs|pseudo-caring]]) readers who are looking to do good in the world without the artifice of woke ideology, the author recommends looking into [[Harmlessness|becoming harmless]].
 :::
 
 The first step to resist or undo [[woke-invasion]] in your organization (or your psyche) is to thoroughly understand their creed [[crt]], so as to uncover the fact that generally speaking woke disciples care [[Luxury beliefs|less]] about the problems in the world than assuaging their self-centered ideological feelings.[^mhg] The next step, obviously, is then to effectuate an elimination of the wannabe woke invaders from your organization by instituting a culture based on common sense values stripped of identity politics.
