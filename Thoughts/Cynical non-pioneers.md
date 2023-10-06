@@ -2,7 +2,7 @@
 slug: nonpioneers
 ---
 
-It appears there does not exist suitable antonym for the word "pioneer"[^def]. The closest that exists, as far as I can tell, is the [Plato's Cave](https://en.wikipedia.org/wiki/Allegory_of_the_cave) metaphor. Baring a suitable word that gets suggested to me, I will use "Cynical non-pioneers" to refer to such peoples.
+It appears there does not exist a suitable antonym for the word "pioneer"[^def]. The closest that exists, as far as I can tell, is the [Plato's Cave](https://en.wikipedia.org/wiki/Allegory_of_the_cave) metaphor. Baring a suitable word that gets suggested to me, I will use "Cynical non-pioneers" to refer to such peoples.
 
 [^def]: *a person who is among the first to research and develop a new area of knowledge or activity*
 
