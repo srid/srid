@@ -12,7 +12,7 @@ The moment of the [[Death|death]] of ‘me’ was so real that it was experience
 
 http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-death.htm
 
-RICHARD: It is the very fact of physical [[Death|death]] – everybody alive today on this planet will eventually be dead – which ensures happiness and harmlessness ... if everything alive today were to all-of-a-sudden endure forever then everything would matter in the long-term (everything would be of enduring importance (in this ultimate sense) and, therefore, life would be a serious business.
+RICHARD: It is the very fact of physical [[Death|death]] – everybody alive today on this planet will eventually be dead – which ensures happiness and harmlessness ... if everything alive today were to all-of-a-sudden endure forever then everything would matter in the long-term (everything would be of enduring importance (in this ultimate sense) and, therefore, life would be a [[Seriousness|serious]] business.
 
 ...
 
@@ -24,7 +24,7 @@ If it were not for physical [[Death|death]] one could not be happy ... let alone
 
 RICHARD: The absolutely undeniable fact of physical [[Death|death]] means that, in an ultimate sense, nothing really matters: as nothing lasts forever (matter arranges and rearranges itself endlessly totally wiping out whatever came before) there is nothing worth dying for. Hence playfulness ... I could not be solemn if my life depended upon it.
 
-Sincere ... yes; serious ... no way.
+Sincere ... yes; [[Seriousness|serious]] ... no way.
 
 ...
 
