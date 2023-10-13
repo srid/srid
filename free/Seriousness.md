@@ -6,7 +6,7 @@ http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-happy2.htm
 
 **RESPONDENT:** _I understand what you are saying. But I still fail to grasp why (and how you can say) that ‘physical death’ is essential for being happy and harmless (as you haven’t died but still are happy and harmless)._
 
-**RICHARD:** It is the very fact of physical death – everybody alive today on this planet will eventually be dead – which ensures [[Felicity and Innocuity|happiness and harmlessness]] ... if everything alive today were to all-of-a-sudden endure forever then everything would matter in the long-term (everything would be of enduring importance (in this ultimate sense) and, therefore, life would be **a serious business**.
+**RICHARD:** It is the very fact of physical [[Death|death]] – everybody alive today on this planet will eventually be dead – which ensures [[Felicity and Innocuity|happiness and harmlessness]] ... if everything alive today were to all-of-a-sudden endure forever then everything [[It doesn't really matter|would matter]] in the long-term (everything would be of enduring importance (in this ultimate sense) and, therefore, life would be **a serious business**.
 
 \*
 
@@ -26,7 +26,7 @@ Which means that ==[[It doesn't really matter|nothing really matters]] in the lo
 
 http://actualfreedom.com.au/richard/listdcorrespondence/listd07.htm
 
-**RICHARD:** ... this [[Naivete|naive]] boy from the farm writing all these millions of words, this big kid with adult sensibilities tapping with two fingers at this keyboard, is perpetually aged circa 14 years (à la the ‘Peter Pan’ chronicles for example) until physical death.
+**RICHARD:** ... this [[Naivete|naive]] boy from the farm writing all these millions of words, this big kid with adult sensibilities tapping with two fingers at this keyboard, is perpetually aged circa 14 years (à la the ‘Peter Pan’ chronicles for example) until physical [[Death|death]].
 
 **RESPONDENT:** _It’s as if you are reading my mind ... I was going to type something very similar, you beat me to it!_
 

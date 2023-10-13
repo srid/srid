@@ -33,7 +33,7 @@ I suffered with this condition for over 4 years, and saw plethora of dermatologi
     > And yet, in the most extreme case, I would have died if I listened to my doctor; in the next most extreme case, I would have gone blind. [..]
 	
 	[^bm]: From [Jenin Younes](https://twitter.com/Leftylockdowns1/status/1482177697090580481)
-	    > I had a foray with the medical health establishment in my 20s that attuned me to the fact that those within it often don't care about quality of life, but only about preventing death
+	    > I had a foray with the medical health establishment in my 20s that attuned me to the fact that those within it often don't care about quality of life, but only about preventing [[Death|death]]
 
 [^moreanti]: Cefalexin, doxycycline and one another antibiotic that I don't remember the name of. They work temporarily, anywhere from 2 weeks to 3 months, and then the symptoms return even more severely than before!
 
