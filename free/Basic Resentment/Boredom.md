@@ -5,7 +5,7 @@ slug: boredom
 
 http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings4.htm
 
-VINEETO: The phrase I would use now, in hindsight, for those ‘no-feelings’ of lack-lustre and listlessness is [[Basic Resentment|resentment of being here]]. Within the human condition there is a [[Basic Resentment|basic resentment]] of not wanting to be here, wanting to be somewhere else, waiting for something else to happen than what is happening now, as a basic attitude to life==, which is then reinforced by the various religious and spiritual conditioning that life on earth is essentially suffering and that the real life will only happen for the spirit after you die.
+VINEETO: The phrase I would use now, in hindsight, for those ‘no-feelings’ of lack-lustre and listlessness is [[Basic Resentment|resentment of being here]]. Within the human condition there is a [[Basic Resentment|basic resentment]] of not wanting to be here, wanting to be somewhere else, waiting for something else to happen than what is happening now, as a basic attitude to life==, which is then reinforced by the various religious and [[Spirituality|spiritual]] conditioning that life on earth is essentially suffering and that the real life will only happen for the spirit after you die.
 
 This [[Basic Resentment|resentment to being here]], as this body, in the [[living in the world as it is with people as they are|world-as-it-is with people-as-they-are]], was what was responsible for my ==dull feelings, no-feelings, my listlessness, my boredom, my waiting for something else to happen==, in short, it had ==permeated almost all experience of life== in that it had cast ==a dulling shade== over everything I experienced.
 

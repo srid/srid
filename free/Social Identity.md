@@ -11,7 +11,7 @@ slug: identity/social
 01. The term ‘social identity’ is also inclusive of a vocational identity (identifying as an ‘employee’/ ‘employer’, ‘worker’/ ‘pensioner’, ‘junior’/ ‘senior’, ‘peasant’/ ‘squire’ a.k.a. ‘villein’/ ‘lord’, and so on).
 02. The term ‘social identity’ is also inclusive of a national identity (identifying as ‘English’, ‘American’, ‘Australian’, ‘Nigerian’, ‘Korean’, and so forth).
 03. The term ‘social identity’ is also inclusive of a racial identity (identifying as ‘white’, ‘black’, ‘brown’, etcetera, or whatever ethnicity nomenclature is the latest fashion).
-04. The term ‘social identity’ is also inclusive of a religio-spiritual identity (identifying as a ‘Hindu’, a ‘Muslim’, a ‘Christian’, a ‘Buddhist’ ad infinitum).
+04. The term ‘social identity’ is also inclusive of a religio-[[Spirituality|spiritual]] identity (identifying as a ‘Hindu’, a ‘Muslim’, a ‘Christian’, a ‘Buddhist’ ad infinitum).
 05. The term ‘social identity’ is also inclusive of an ideological identity (identifying as a ‘Capitalist’, a ‘Communist’, a ‘Monarchist’, a ‘Fascist’ and the like).
 06. The term ‘social identity’ is also inclusive of a political identity (identifying as a ‘Democrat’, a ‘Tory’, a ‘Republican’, a ‘Liberal’ and all the rest).
 07. The term ‘social identity’ is also inclusive of a class or caste identity (identifying as an ‘aristocrat’/ ‘commoner’ (as in, ‘the gentry’/ ‘the peasantry’), ‘patrician’/ ‘plebeian’ (Latin), ‘noblesse’/ ‘roturier’ (French), ‘ariyan’/ ‘puthujjana’ (Pāli), ad nauseam throughout the ages.
