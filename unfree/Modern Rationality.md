@@ -10,7 +10,7 @@ Being [[Wiliness of the wild|artful]] often takes the form of [[Armchair philoso
 [![[midwit-sources.png]]](https://knowyourmeme.com/photos/2031360-iq-bell-curve-midwit)
 :::
 
-## Associated fields
+## Associated fields & beliefs
 
 ### Effective Altruism (EA)
 
@@ -19,6 +19,10 @@ EA proponents generally care more about, say, [[Vegan Propaganda|animal rights]]
 > Effectively, both longtermism and [[woke|woke progressivism]] take a highly restricted number of emotional impulses many of us ordinarily have, and then vividly conjure up heart-rending scenarios of supposed harm in order to prime our malleable intuitions in the desired direction. Each insists that we then extend these impulses quasi-rigorously, past any possible relevance to our own personal lives. [..]
 > 
 > What is perhaps particularly scary about the longtermists, as opposed to the other lot, is not that they are driven by emotion, but that they don’t know they are. [..] Grand-scale fantasies of saving the world are easy. Personal relationships are hard.
+
+### The "You Can't Change Human Nature" hoary belief
+
+[Rob Henderson](https://twitter.com/sridca/status/1720474628005482524), et al.
 
 ## People skeptical of rationalists
 
