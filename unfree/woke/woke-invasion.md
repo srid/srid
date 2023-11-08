@@ -5,7 +5,7 @@ slug: woke-invasion
 
 # Woke Invasion
 
-[![[DIE-antzombie.jpeg]]](https://twitter.com/ConceptualJames/status/1496602448018001931)
+[![[grok-woke-invasion.jpeg]]](https://twitter.com/stillgray/status/1721961880128778283)
 
 Proponents of [[woke]] have been proselytizing (see also [[woke-inveigling]]) many unsuspecting organizations (many of whom, with [[unwoke|exceptions]], yield to their demands) adopting a number of covert tactics.  See [this Twitter thread](https://old.reddit.com/r/TheMotte/comments/orsvle/culture_war_roundup_for_the_week_of_july_26_2021/h6woer9/?sort=top) for an example of how it works in education.
 
@@ -24,6 +24,8 @@ Or for a conspiratorial summary,
 > Discussions about this have been like groundhog day since 2015, no one seems to be able to get past the surface level of what is probably the greatest transformation of any society since the 1930's, and it's astonishing. It's a gradual escalation of demands from woke activists, backed by the behemoth corporations and banks, then adopted by governments.
 > 
 > For anyone who wants to help others, or to resolve injustices in our society, having true empathy for the plight of those oppressed and wanting to solve social problems: you know this is bullshit. Even for the activists this isn't about actually helping anyone, it's about pushing us into accepting a shuffling of hierarchies, of which they didn't bother to iron out the injustices. https://news.ycombinator.com/item?id=31090216
+
+[![[DIE-antzombie.jpeg]]](https://twitter.com/ConceptualJames/status/1496602448018001931)
 
 ## Articles
 
