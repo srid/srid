@@ -6,7 +6,7 @@ slug: phys
  
  ## Creationist cosmology
 
-- [The Big Bang didn't happen](https://iai.tv/articles/the-big-bang-didnt-happen-auid-2215)
+- [The Big Bang didn't happen](https://archive.is/EejJf)
   - A [[Wikipedia is not neutral|Wikipedia]] drama involving this author can be found [here](https://en.wikipedia.org/wiki/Wikipedia:Requests_for_arbitration/Pseudoscience).
 - In the words of [Sabine Hossenfelder](https://news.ycombinator.com/item?id=32618719), all cosmological theories supposing a "beginning" of the universe are essentially "*a creation myth written in the language of mathematics*".
 - Very rarely does someone interested in this field[^act] accept the infinite/ eternal/ absolute nature of the universe. Closest I am able to find: https://www.ospublishers.com/pdf/JPA-2-108.pdf 
