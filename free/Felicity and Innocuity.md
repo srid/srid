@@ -8,7 +8,7 @@ http://actualfreedom.com.au/sundry/frequentquestions/FAQ63.htm
 
 **RICK:** *Could you list some examples of what you'd classify as 'good' and 'bad' feelings and what you'd classify as felicitous/innocuous feelings so I could keep an eye out for them.*
 
-**RICHARD:** As a broad generalisation: the 'good' feelings are those that are of a [[Love|loving]] (ardent feelings of profound affection and endearment) and a compassionate (empathetic feelings of deep sympathy and commiseration) nature; the 'bad feelings are those that are of a [[malie|malicious]] (spiteful feelings of intense hatred and resentment) and a sorrowful (melancholy feelings of yawning sadness and grief) nature; the ==felicitous feelings are those that are of a happy and carefree== (blithesome feelings of great [[Delight|delight]] and enjoyment) nature; ==the innocuous feelings are those that are of a [[Harmlessness|harmless]] and congenial== (gracious feelings of ingenuous tranquillity and affability) nature.
+**RICHARD:** As a broad generalisation: the 'good' feelings are those that are of a [[Love|loving]] (ardent feelings of profound affection and endearment) and a compassionate (empathetic feelings of deep sympathy and commiseration) nature; the 'bad feelings are those that are of a [[malice|malicious]] (spiteful feelings of intense hatred and resentment) and a sorrowful (melancholy feelings of yawning sadness and grief) nature; the ==felicitous feelings are those that are of a happy and carefree== (blithesome feelings of great [[Delight|delight]] and enjoyment) nature; ==the innocuous feelings are those that are of a [[Harmlessness|harmless]] and congenial== (gracious feelings of ingenuous tranquillity and affability) nature.
 
 The following may be of particular interest:
 
