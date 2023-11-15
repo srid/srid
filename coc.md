@@ -6,7 +6,7 @@ slug: coc
 
 ## Code of Conduct
 
-We have picked the following conduct guideline based on [The Ruby Community Conduct Guideline](https://www.ruby-lang.org/en/conduct/):
+(This document is based on [The Ruby Community Conduct Guideline](https://www.ruby-lang.org/en/conduct/))
 
 This document provides community guidelines for a safe, respectful, productive, and collaborative place for any person who is willing to contribute to the associated project. It applies to all “collaborative space”, which is defined as community communications channels (such as mailing lists, submitted patches, commit comments, etc.).
 
