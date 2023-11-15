@@ -17,7 +17,7 @@ This document provides community guidelines for a safe, respectful, productive, 
 
 ## Apolitical Stance
 
-Politics not directly relevant to the project or community should not be discussed or mentioned in project spaces. We are here to enjoy working together on creating software (regardless of our background or identity) not to push personal politics onto others.[^1]
+Politics not directly relevant to the project or community should not be discussed or mentioned in project spaces. We are here to enjoy working together on creating software (with [[equity-parity|equity and parity]], regardless of our background or identity) not to push personal politics onto others.[^1]
 
 
 ## Affective Stance
