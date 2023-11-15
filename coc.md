@@ -22,7 +22,7 @@ Politics not directly relevant to the project or community should not be discuss
 
 ## Affective Stance
 
-Ultimately, a "code" of conduct is only a guideline. Participants are encouraged to [[Harmlessness|become harmless]] (ie., sans malice) in all of their interactions, for it will make such ethics and guidelines utterly redundant.
+Ultimately, a "code" of conduct is only a guideline. Participants are encouraged to [[Harmlessness|become harmless]] (i.e., being sans malice) in all of their interactions, for it will make such ethics and guidelines utterly redundant.
 
 ## Versions
 
