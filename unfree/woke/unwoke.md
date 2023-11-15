@@ -16,7 +16,7 @@ The first step to resist or undo [[woke-invasion]] in your organization (or your
     > 
     > No. Some are. Especially the younger ones.
     > 
-    > But a lot of malicious, wicked people hide under the 'social justice' umbrella and take glee in hurting others. Emotionally and physically. Then they play victim. https://twitter.com/elonmusk/status/1644199998496677889
+    > But a lot of [[malice|malicious]], wicked people hide under the 'social justice' umbrella and take glee in hurting others. Emotionally and physically. Then they play victim. https://twitter.com/elonmusk/status/1644199998496677889
 
 ## Case studies
 

@@ -45,6 +45,6 @@ http://www.actualfreedom.com.au/richard/listdcorrespondence/listd14a.htm#09Nov09
 - First, an intelligent appraisal (such as 'all throughout history' above); 
 - second, becoming cognisant of your own **affective vibes** and, thus, psychic currents (some peoples are naturally more sensitive than others); 
 - third, then discerning when an affective vibe/ psychic current is another person's and not yours (although be aware of projecting); 
-- fourth, being as happy and as [[Harmlessness|harmless]] (free of malice and sorrow) as is humanly possible can be contagious so to speak); 
+- fourth, being as happy and as [[Harmlessness|harmless]] (free of [[malice]] and sorrow) as is humanly possible can be contagious so to speak); 
 - fifth, the [[Courage of your convictions|courage of the conviction]] born of the [[PCE|PCE]] is always immensely beneficial; 
 - lastly, remembering that to care to dare is to dare to care.

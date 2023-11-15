@@ -15,7 +15,7 @@ The way to deal with [[Basic Resentment|resentment]] in the actualism method is 
 
 http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings3.htm
 
-RESPONDENT: For me, while it is easy (comparatively) to label and handle obvious feelings like anger, malice, compassion, [[Hope|hope]], I find it more difficult to label not-so-apparent feelings. These feelings create a neither-happy-nor-sad kind of state. I remember you talked of dullness in one of your mails. But I find that this dullness or boredom is not the same every time it happens and it happens very frequently.
+RESPONDENT: For me, while it is easy (comparatively) to label and handle obvious feelings like anger, [[malice]], compassion, [[Hope|hope]], I find it more difficult to label not-so-apparent feelings. These feelings create a neither-happy-nor-sad kind of state. I remember you talked of dullness in one of your mails. But I find that this dullness or boredom is not the same every time it happens and it happens very frequently.
 
 VINEETO: Yes, I can remember times of a ‘neither-happy-nor-sad kind of state’ and I recall talking to Alan about ==dullness and stuckness==  (and the two following letters). Although my dullness had varying qualities at different times, I could mostly sheet it home to a feeling of not wanting to be here, i.e. [[Basic Resentment|resentment for having to be here]].
 

@@ -27,7 +27,7 @@ Personally, I have found the need to belong to some group, any group, one of the
 
 http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings3.htm
 
-**RESPONDENT:** _For me, while it is easy (comparatively) to label and handle obvious feelings like anger, malice, compassion, hope, I find it more difficult to label not-so-apparent feelings. These feelings create a neither-happy-nor-sad kind of state. I remember you talked of dullness in one of your mails. But I find that this dullness or boredom is not the same every time it happens and it happens very frequently._
+**RESPONDENT:** _For me, while it is easy (comparatively) to label and handle obvious feelings like anger, [[malice]], compassion, hope, I find it more difficult to label not-so-apparent feelings. These feelings create a neither-happy-nor-sad kind of state. I remember you talked of dullness in one of your mails. But I find that this dullness or boredom is not the same every time it happens and it happens very frequently._
 
 **VINEETO:** Yes, I can remember times of a _‘neither-happy-nor-sad kind of state’_ and I recall talking to Alan about dullness and stuckness [Ref](http://actualfreedom.com.au/actualism/vineeto/list-af/alan-a.htm#26.11.1998) _(and the two following letters)._ Although my dullness had varying qualities at different times, I could mostly sheet it home to a feeling of not wanting to be here, i.e. [[Basic Resentment|resentment]] for having to be here.
 

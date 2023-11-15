@@ -15,7 +15,7 @@ http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-sex.h
 ---
 
 
-VINEETO: I am asking because when I investigated my ==expectations and desires== that I knew by past experience would inevitably lead to ==disappointment and sorrow==, I was then able to chuck both my expectation and disappointment, both my desire and sorrow out the window. And once I stopped doing what caused me to feel sorrowful, then the fear of this sorrow re-occurring also disappeared. Given that my aim was to become free of malice and sorrow, it became obvious to me that I also had to become free from the dreams, [[Hope|hopes]], desires and greed that were the cause of my sorrow.
+VINEETO: I am asking because when I investigated my ==expectations and desires== that I knew by past experience would inevitably lead to ==disappointment and sorrow==, I was then able to chuck both my expectation and disappointment, both my desire and sorrow out the window. And once I stopped doing what caused me to feel sorrowful, then the fear of this sorrow re-occurring also disappeared. Given that my aim was to become free of [[malice]] and sorrow, it became obvious to me that I also had to become free from the dreams, [[Hope|hopes]], desires and greed that were the cause of my sorrow.
 
 http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-desire.htm
 
