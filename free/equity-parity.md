@@ -6,7 +6,7 @@ slug: equity-parity
 
 RESPONDENT: You say ‘equity and parity is the key to success’.
 
-RICHARD: Yes, the ‘theory of mind’ signifies both equity and parity to be involuntarily automatic in any social situation. [Dictionary Definition]: equity: even-handed dealing; fairness, impartiality; unbiased. [Dictionary Definition]: parity: on a par; equivalence; similarity; correspondence. The question is: what is preventing this spontaneous recognition of being fellow human beings from flowing-on into all areas in common?
+RICHARD: Yes, the ‘theory of mind’ signifies both equity and parity to be involuntarily automatic in any social situation. [Dictionary Definition]: equity: even-handed dealing; fairness, impartiality; unbiased. [Dictionary Definition]: parity: on a par; equivalence; similarity; correspondence. The question is: what is preventing this [[Spontaneity|spontaneous]] recognition of being fellow human beings from flowing-on into all areas in common?
 
 [..]
 
@@ -18,7 +18,7 @@ RICHARD: Concurrent with the recognition of the other creature being a fellow hu
 
 RESPONDENT: Naturally, there is a dark side of democratic institutions that is well known: the history of oppression and slavery, actual slavery, political and economic slavery, that democratic ideals, cleverly managed, conceal. And there is the actuality that we are quick to the trigger, to pick up a machine gun or a grenade launcher when the music stops and infringe on the ‘rights’ of others in territorial conquests or economic competition.
 
-RICHARD: And here you have put your finger on the nub of the issue: the spontaneity of equity and parity that comes with the recognition of being fellow human beings is hijacked, subverted, sabotaged. And by what?
+RICHARD: And here you have put your finger on the nub of the issue: the [[Spontaneity|spontaneity]] of equity and parity that comes with the recognition of being fellow human beings is hijacked, subverted, sabotaged. And by what?
 
 [..]
 
