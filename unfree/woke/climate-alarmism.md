@@ -4,7 +4,7 @@ slug: climate-alarmism
 
 # Climate Alarmism
 
-"Climate change" alarmism (aka. climate apocalyptic fantasy) is the current iteration of the [long line](https://nypost.com/2021/11/12/50-years-of-predictions-that-the-climate-apocalypse-is-nigh/) of religiously
+"Climate change" alarmism (aka. climate apocalyptic fantasy) is the current iteration of the [long line](https://nypost.com/2021/11/12/50-years-of-predictions-that-the-climate-apocalypse-is-nigh/) of religiously[^rel]
 catastrophistic thinking[^doom] humanity has been harbouring for generations, which alarmism has its origins in [[Identity|identity]] itself inasmuch as fear itself is sourced in it.
 
 > Green catastrophism has its roots in thousands of years of religious doom-mongering.
@@ -69,6 +69,10 @@ User [motohagiography wrote](https://news.ycombinator.com/item?id=34161236):
 - [Failed Prediction Timeline](https://wattsupwiththat.com/failed-prediction-timeline/)
 - [Judith Curry](https://twitter.com/curryja/status/1689419032368394241): *The global warming crisis is ‘manufactured’ to generate fear allowing for greater government control of every aspect of our lives.*
 - [I Left Out the Full Truth to Get My Climate Change Paper Published](https://www.thefp.com/p/i-overhyped-climate-change-to-get-published)
+
+[^rel]: From [Judith Curry: A bad recipe for science](https://judithcurry.com/2023/11/17/a-bad-recipe-for-science/)
+
+    > Climate change has become a secular religion, rife with dogma, heretics and moral-tribal communities. The secular religion of climate change raises concerns that are far more fundamental than the risks of bad policy.  At risk is the fundamental virtues of the Scientific Revolution and the freedom to question authority.
 
 [^doom]: Which in turn is a special case of the more general phenomenon called 'doomsday syndrome', [viz](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-happy2.htm).
 
