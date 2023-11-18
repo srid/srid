@@ -13,3 +13,7 @@ Living here, there is only now ... and it is always now. I care for the next mom
 RESPONDENT: So, your experience is always fresh and no boredom or fear is possible.
 
 RICHARD: No boredom or fear whatsoever. [[This Moment|This moment]] has never happened before and never will happen again ... thus life is always ever-fresh, novel, original, unique, peerless, matchless and impeccable.
+
+## See also
+
+- [[Never not this moment]]
