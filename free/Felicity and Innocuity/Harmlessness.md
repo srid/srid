@@ -6,7 +6,15 @@ RICHARD: What the word ‘==harmless==’ refers to [..] is being **sans [[malic
 
 None of this is to deny that another’s feelings may, and can be, self-induced to feel hurt as a result ... the simple fact of the matter is that if they choose to harbour such feelings that is their business.
 
+[..] to be harmless as per actualism lingo (being free of malice) is beneficial both to oneself – plus it feels unpleasant (hedonically) to feel malicious (affectively) anyway – as well to others due to being unable to induce suffering either in oneself or another, via affective [[Affective Vibes|vibes]] and psychic currents, and vice versa.
+
 http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-harmless.htm
+
+RESPONDENT: Are you saying that its possible to be stern and forceful without being angry?
+
+RICHARD: Indeed so ... to actually be harmless (be free of [[malice]]) means one does not have to pretend to be harmless (be a pacifist).
+
+http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-aggression.htm
 
 VINEETO: The way I approached the task of becoming harmless was that I first sought to stop any of my harmless actions or verbal expressions of harm towards other people. When I got to the stage when I could rely on my [[Aware-Cum-Attentive|attentiveness]] such that I could detect my aggressive mood before I verbally expressed[^p] it to those around me, I then raised the bar to detecting any aggressive moods or vibes as [[Diminishment|soon as they arose]]. It became readily apparent that a bottled up aggression or resentment towards others only served to make me unhappy and did not count as being really harmless because any such feelings are [[Affective Vibes|detectible]] by others and have an influence on others.
 
