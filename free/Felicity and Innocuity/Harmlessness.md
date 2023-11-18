@@ -31,7 +31,7 @@ It then comes as no surprise that being actually harmless is out of the question
 
 ---
 
-VINEETO: [..] I have spent many years exploring therapy groups and [[Spirituality|spiritual feeling states]] and it was quite a challenge to slowly wake up to the fact that feeling is not identical to actuality – in fact, feeling has nothing to do with actuality. In the past I might have felt harmless but was nevertheless quite harmful in that my ‘self’-centredness inevitably caused ripples in other peoples lives. I found that while I might have felt that I valued peace, I still instinctively acted in attack and defence mode. While I might have felt that I was willing to sacrifice my ego for a higher cause, I was actually cultivating humbleness as a means of soul-istic ‘self’-aggrandizement, and so forth.
+VINEETO: [..] I have spent many years exploring therapy groups and [[Spirituality|spiritual feeling states]] and it was quite a challenge to slowly wake up to the fact that feeling is not identical to actuality – in fact, feeling has nothing to do with actuality. In the past I might have felt harmless[^p] but was nevertheless quite harmful in that my ‘self’-centredness inevitably caused ripples in other peoples lives. I found that while I might have felt that I valued peace, I still instinctively acted in attack and defence mode. While I might have felt that I was willing to sacrifice my ego for a higher cause, I was actually cultivating humbleness as a means of soul-istic ‘self’-aggrandizement, and so forth.
 
 Through the rigorous and persistent process of actualism, I slowly learnt to extend [[Aware-Cum-Attentive|my attention]] beyond what I thought and felt, i.e. my ideals and passions, so as to become [[Affective Awareness|aware]] of the tangible effects that my thoughts, feelings and actions had on the people around me. I discovered more and more that feeling myself to be harmless and actually being harmless were two completely different things. This process of distinguishing between feeling and actuality is the key to actually becoming happy and harmless compared to merely feeling happy and harmless.
 
@@ -56,3 +56,5 @@ In short – I learnt to keep my mouth shut about abandoning beliefs, about beco
 ```query
 path:./*
 ```
+
+[^p]: Editor's note. See related: [[Politeness]]
