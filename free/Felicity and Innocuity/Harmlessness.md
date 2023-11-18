@@ -8,6 +8,11 @@ None of this is to deny that another’s feelings may, and can be, self-induced 
 
 http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-harmless.htm
 
+VINEETO: The way I approached the task of becoming harmless was that I first sought to stop any of my harmless actions or verbal expressions of harm towards other people. When I got to the stage when I could rely on my [[Aware-Cum-Attentive|attentiveness]] such that I could detect my aggressive mood before I verbally expressed[^p] it to those around me, I then raised the bar to detecting any aggressive moods or vibes as [[Diminishment|soon as they arose]]. It became readily apparent that a bottled up aggression or resentment towards others only served to make me unhappy and did not count as being really harmless because any such feelings are [[Affective Vibes|detectible]] by others and have an influence on others.
+
+This meant that I increased my [[Aware-Cum-Attentive|attentiveness]] such that I became able to recognize sullen or resentful thoughts, quiet complaints, silent accusations, automatic suspicions, unfounded misgivings, subtle revenges, sneaky deceptions, surly withdrawals, petty one-upmanships, deft sabotages, malicious gossip and the like. Of course, applying this fine toothcomb of attentiveness to my thoughts, feelings, moods and [[Affective Vibes|vibes]] brought to light many hidden patterns of [[Belief|belief]] and sources of [[malice]] in my relating to people, all of which had to be investigated.
+
+http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm
 
 ## What it is not
 
