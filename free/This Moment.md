@@ -14,6 +14,14 @@ To be the consciousness of the infinitude ... it is no little thing that one doe
 
 RICHARD: Time itself – this eternal moment – does not flow (move) ... there is a vast [[Stillness of time|stillness]] here in this actual world.
 
+---
+
+RICHARD: I would say to myself: ‘This is my only moment of being alive ... I am actually here doing this reading of these words now’. The past – although it was actual whilst it was happening – is not happening now ... and never will again. A past [[PCE|peak experience]] can never be repeated ... it is useful inasmuch as it bestows the requisite confidence that it is possible to experience the purity of the perfection of life here and now ... but that is it, finish. One slips into this moment in time and this place in space by being aware that all this that is happening is happening for the very first time and that I have never been here before doing this. In fact: I have never been here before. In everyday terminology this moment in time is the ‘cutting-edge of reality’. Who knows what will happen next as ‘the future’ does not exist until this moment happens.
+
+If this realisation is not thrilling I would like to know what is!
+
+http://www.actualfreedom.com.au/richard/listafcorrespondence/listafvineeto.htm
+
 ## Sub
 
 ```query
