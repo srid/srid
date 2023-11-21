@@ -5,7 +5,7 @@ slug: coffee
 # Coffee ☕️
 
 :::{.page-note}
-**UPDATE** (Nov, 2023): I now drink espresso, as [long black](https://en.wikipedia.org/wiki/Long_black).
+**UPDATE** (Nov, 2023): I now drink espresso, as [long black](https://en.wikipedia.org/wiki/Long_black). https://x.com/sridca/status/1727085521946443918
 :::
 
 A good tasting coffee makes all the difference.
