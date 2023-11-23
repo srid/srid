@@ -64,7 +64,7 @@ One ought to pay lip service to general medical wisdom and any dominant nutritio
 * [Paleolithic Ketogenic Diet](https://www.researchgate.net/publication/323151200_Therapeutic_protocol_of_Paleomedicina_Hungary) (PKD): a variation of the carnivore diet---high fat, organ meat, without dairy or spices---designed to heal [intestinal permeability](https://www.youtube.com/watch?v=nDPM8o9jcFA) and [certain medical conditions](https://justmeat.co/wiki/pkd/#case-studies).
 * Medical
   * [Antibiotic abuse](https://en.wikipedia.org/wiki/Antibiotic_misuse)
-  * [Vaccine abuse](https://www.quantamagazine.org/how-vaccines-can-drive-pathogens-to-evolve-20180510/) ([also relevant](https://jamanetwork.com/journals/jamadermatology/fullarticle/2782441?widget=personalizedcontent&previousarticle=0))
+  * [Vaccine abuse](https://archive.is/TZrWH) ([also relevant](https://jamanetwork.com/journals/jamadermatology/fullarticle/2782441?widget=personalizedcontent&previousarticle=0))
 * [[Recipes]] on this site
 * Social Media / Culture / Politics (of meat)
   * [Frédéric Leroy](https://twitter.com/fleroy1974)
