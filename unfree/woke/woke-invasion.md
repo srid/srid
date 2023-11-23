@@ -5,7 +5,7 @@ slug: woke-invasion
 
 # Woke Invasion
 
-[![[grok-woke-invasion.jpeg]]](https://twitter.com/stillgray/status/1721961880128778283)
+[![[DIE-antzombie.jpeg]]](https://twitter.com/ConceptualJames/status/1496602448018001931)
 
 Proponents of [[woke]] have been proselytizing (see also [[woke-inveigling]]) many unsuspecting organizations (many of whom, with [[unwoke|exceptions]], yield to their demands) adopting a number of covert tactics.  See [this Twitter thread](https://old.reddit.com/r/TheMotte/comments/orsvle/culture_war_roundup_for_the_week_of_july_26_2021/h6woer9/?sort=top) for an example of how it works in education.
 
@@ -25,8 +25,6 @@ Or for a conspiratorial summary,
 > 
 > For anyone who wants to help others, or to resolve injustices in our society, having true empathy for the plight of those oppressed and wanting to solve social problems: you know this is bullshit. Even for the activists this isn't about actually helping anyone, it's about pushing us into accepting a shuffling of hierarchies, of which they didn't bother to iron out the injustices. https://news.ycombinator.com/item?id=31090216
 
-[![[DIE-antzombie.jpeg]]](https://twitter.com/ConceptualJames/status/1496602448018001931)
-
 ## Articles
 
 - [How did American “wokeness” jump from elite schools to everyday life?](https://old.reddit.com/r/TheMotte/comments/pecd0o/culture_war_roundup_for_the_week_of_august_30_2021/hbklxdw/?sort=top)
@@ -44,3 +42,5 @@ Or for a conspiratorial summary,
 - Lesser known groups
   - [SourceHut bans crypto and blockchain projects](https://news.ycombinator.com/item?id=33403780) (cf. [[anti-crypto]])
   - [Asahi Linux - HN grievance](https://news.ycombinator.com/item?id=36230649)
+
+[![[grok-woke-invasion.jpeg]]](https://twitter.com/stillgray/status/1721961880128778283)
