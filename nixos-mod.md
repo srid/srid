@@ -130,7 +130,7 @@ We can whole-heartedly embrace the tech without also having to embrace the toxic
 
 [^g]: Here, the accuser is referring to the page: [[Gender Ideology]].
 
-[^st]: Yours truly, of course, having brought up in the [actually inclusive](http://esr.ibiblio.org/?p=6642) “Shut up and show them the code” hacker-culture does not give two hoots as to whether someone identifies as a tree, a frog, or coffee cup or whatever, and is quite happy to pay lip service to the social norms (such as using preferred pronouns, for instance).
+[^st]: Yours truly, of course, having brought up in the [actually inclusive](http://esr.ibiblio.org/?p=6642) “Shut up and show them the code” hacker-culture does not give two hoots as to whether someone identifies as a tree, a frog, a coffee cup or whatever, and is quite happy to pay lip service to the social norms (such as using preferred pronouns, for instance).
 
 [^mp]: Meredith Patterson, for those that do not know her, is the author of the popular the [When Nerds Collide](https://medium.com/@maradydd/when-nerds-collide-31895b01e68c) article
 
