@@ -49,7 +49,7 @@ For those interested in the facts of the matter, here’s what happened. The ori
 
 - Srid replies, agrees to (3) but questions the sensibility of (1) & (2) while suggesting that they institute an explicit public policy of such nature in Discourse, in order for him to remove the link/steak (lest it’d be politically-motivated selective expelling).
 
-  - Moderator Z responds by accusing Srid that he intended to “_rub \[the steak & the link] on their faces_” (“_their_” = people who complained), and equated the steak and the link to “_swearing in churches_” and “_\[being] naked in the streets_”, despite Srid never even bringing them up in Discourse or GitHub.
+  - Moderator Z responds by accusing Srid that he intended to “_rub \[the steak & the link] on their faces_” (“_their_” = people who complained), and equated the presence of the steak and the link to “_swearing in churches_” and “_\[being] naked in the streets_”, despite Srid never even bringing them up in Discourse or GitHub.
 
     - The astute reader should note by now that if anything, it was both Teo Camarasu “TeofilC” and Christina Sørensen “cafkafk” that needlessly brought the [[unwoke|unwoke]] link up thus derailing the discussion (not to mention the later's painting of Srid as an extremist along with personal attacks)
 
