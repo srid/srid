@@ -18,7 +18,7 @@ slug: altruism
 
 **RICHARD**: As it is instinctive ==it arises as the need arises== ... just as its concomitant courage does.
 
-## Affectiving caring as the genesis of its key (benevolence)
+## Affectiving caring as the genesis of its key ([[Benevolence|benevolence]])
 
 **RICHARD:** Start with where one is at now (where one is not yet at will emerge of its own accord as one proceeds): as you say _‘I don’t care about doing it for everybody’_ – implying that ‘I’ only care about doing it for ‘me’ – then that is where ‘I’ am at now.
 
@@ -28,7 +28,7 @@ slug: altruism
 
 **RESPONDENT:** _Sorry for all the repetition. I was just trying to get at what’s missing. It is obvious now that what is missing is altruism. You said above that altruism is a group instinct and this instinct is just not activated. I can only see altruism in terms of love and compassion and that is not it._
 
-**RICHARD:** Indeed not – in this context love and compassion lead to ‘self’-surrender not ‘self’-sacrifice – whereas ==benevolence is the key to altruistic ‘self’-immolation== for the benefit of this body and that body and every body.
+**RICHARD:** Indeed not – in this context love and compassion lead to ‘self’-surrender not ‘self’-sacrifice – whereas ==[[Benevolence|benevolence]] is the key to altruistic ‘self’-immolation== for the benefit of this body and that body and every body.
 
 And ==the feeling of caring already mentioned (further above) is the genesis of being benevolent==.
 

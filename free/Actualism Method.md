@@ -27,7 +27,7 @@ First, a couple of passages providing overall context; followed by point by poin
 
 ---
 
-> RICHARD: [..] Look, the whole point of minimising both the [[malice|malicious]]/ sorrowful feelings (the ‘bad’ feelings) and their antidotal loving/ compassionate feelings (the [[Good feeling|‘good’ feelings]]) whilst maximising the [[Felicity and Innocuity|felicitous/ innocuous feelings]] (the ‘congenial’ feelings) is to make for a potent combination when this untrammelled conviviality operates in conjunction with a [[Naivete|naïve]] [[Sensuousness|sensuosity]] – whereby one is both likeable and liking – such that the benevolence and benignity of **pure intent** may increasingly become dynamically enabled for one purpose and one purpose alone ... to wit: for the already always existing peace-on-earth to become apparent, in this lifetime, as this flesh-and-blood body. http://actualfreedom.com.au/richard/selectedcorrespondence/sc-intimacy.htm
+> RICHARD: [..] Look, the whole point of minimising both the [[malice|malicious]]/ sorrowful feelings (the ‘bad’ feelings) and their antidotal loving/ compassionate feelings (the [[Good feeling|‘good’ feelings]]) whilst maximising the [[Felicity and Innocuity|felicitous/ innocuous feelings]] (the ‘congenial’ feelings) is to make for a potent combination when this untrammelled conviviality operates in conjunction with a [[Naivete|naïve]] [[Sensuousness|sensuosity]] – whereby one is both likeable and liking – such that the [[Benevolence|benevolence]] and benignity of **pure intent** may increasingly become dynamically enabled for one purpose and one purpose alone ... to wit: for the already always existing peace-on-earth to become apparent, in this lifetime, as this flesh-and-blood body. http://actualfreedom.com.au/richard/selectedcorrespondence/sc-intimacy.htm
 > 
 ---
 
@@ -60,8 +60,8 @@ From [What is the Answer to ‘How Am I Experiencing this Moment of Being Alive?
 4. [[Seeing the silliness]] at having [[Felicity and Innocuity|felicity/ innocuity]] be [[Diminishment|usurped]], by either the negative or positive feelings, for whatever reason that might be automatically restores felicity/ innocuity.  
 5. Repeated occurrences of the same cause for [[Felicity and Innocuity|felicity/ innocuity]] [[Diminishment|loss]] alerts pre-recognition of impending [[Diminishment|dissipation]] which enables pre-emption and ensures a more persistent [[Felicity and Innocuity|felicity/ innocuity]] through habituation.  
 6. Habitual [[Felicity and Innocuity|felicity/ innocuity]], and its concomitant enjoyment and appreciation, facilitates [[Naivete|naïve]] [[Sensuousness|sensuosity]] ... a consistent state of wide-eyed wonder, amazement, marvel, and [[Delight|delight]].  
-7. [[Naivete|Naiveté]], in conjunction with felicitous/ innocuous sensuosity, being the nearest a ‘self’ can come to innocence, allows the overarching benignity and benevolence inherent to the infinitude this infinite and eternal and perpetual universe actually is to operate more and more freely.  
-8. This intrinsic benignity and benevolence, which has nothing to do with affective happiness and [[Harmlessness|harmlessness]], will do the rest.  
+7. [[Naivete|Naiveté]], in conjunction with felicitous/ innocuous sensuosity, being the nearest a ‘self’ can come to innocence, allows the overarching benignity and [[Benevolence|benevolence]] inherent to the infinitude this infinite and eternal and perpetual universe actually is to operate more and more freely.  
+8. This intrinsic benignity and [[Benevolence|benevolence]], which has nothing to do with affective happiness and [[Harmlessness|harmlessness]], will do the rest.  
 9. Sit back and enjoy the ride of a lifetime!
 
 ---
