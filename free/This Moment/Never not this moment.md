@@ -2,13 +2,13 @@
 slug: never-not-this-moment
 ---
 
-[Ref](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm),
-
 RICHARD: ❓ **Have you never noticed that it is never not this moment?**
 
 RESPONDENT: Okay, I notice that ... and it’s fascinating.
 
 RICHARD: If I might suggest (before you go on with your ‘but’ immediately below)? Stay with that [[Curiosity-Fascination-Obsession|fascination]] and allow the marvelling, that it is never not [[This Moment|this moment]], to unfold in all its wonderment.
+
+http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm
 
 ---
 
