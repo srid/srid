@@ -8,7 +8,7 @@ http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-socialidentity
 
 RICHARD: The basic premise lying behind the legality of the existence of ‘the community’ is its designated role of acting ‘for the good of the whole’. Instinctually believing one’s well-being to be assured, nobody calls the community to account. Has anyone fully realised that the community does not exist for the good of the individual?
 
-*
+\*
 
 The phrase ‘good of the whole’ seems to imply this, but closer examination reveals that ‘the whole’ exists only in bombast and blather ... it is a concept, an ideology. Only an individual person – a flesh-and-blood body – actually exists. Where people have no integrity – which is the case in order for the ‘whole’ to exist – they have no genuine individuality. They are invisible ... as if a non-person, a statistic, a number. They may complain about the ‘dehumanisation’ process, little realising that they are but a [[Social Identity|social identity]] ... a fictitious entity having only psychological existence. This social identity has taken up residence in the body and rules the roost in an autocratic manner. Nevertheless, it is itself subject to the commands of the community, for it is a loyal member, having been created by the community – the ‘whole’ – in the first place. This loyalty thrives on the moral investment that the social identity has made in the community; one’s very ‘well-being’ depends upon receiving a continuous supply of moral dividends.
 
