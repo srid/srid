@@ -16,13 +16,13 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
 - HOWTO
   - `nix develop`: The nix shell is your friend; inside it, you will have the full Haskell development environment (cabal, ghc, ghci, [[haskell-language-server]], cabal-fmt, hlint, etc.).
   - Common Haskell workflows
-    - Useful Scripts (defined via [mission-control](https://github.com/Platonic-Systems/mission-control))
+    - Useful Scripts (defined via [just](https://just.systems/))
 
       | Script   | Description                                             |
       | -------- | ------------------------------------------------------- |
-      | `, run`  | Run the main executable via [[ghcid]] (auto-recompiles) |
-      | `, repl` | Run `cabal repl` (gives you a `ghci` repl)              |
-      | `, docs` | Run `hoogle` (Documentation server for packages in use) |
+      | `just run`  | Run the main executable via [[ghcid]] (auto-recompiles) |
+      | `just repl` | Run `cabal repl` (gives you a `ghci` repl)              |
+      | `just docs` | Run `hoogle` (Documentation server for packages in use) |
 
     - [Adding dependencies](https://haskell.flake.page/dependency) (or how to override them in Nix)
     - [[haskell-template/add-tests]]
