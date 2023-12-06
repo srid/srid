@@ -2,7 +2,7 @@
 slug: nix
 ---
 
-See my [rapid introduction to Nix](https://haskell.flake.page/nix-rapid).
+See my [rapid introduction to Nix](https://nixos.asia/en/blog/nix-rapid).
 
 See also [[NixOS]].
 
