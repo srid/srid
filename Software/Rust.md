@@ -4,7 +4,7 @@ slug: rust
 
 https://www.rust-lang.org/
 
-## Rust community
+## Rust [[Community]]
 
 ### Criticism
 
