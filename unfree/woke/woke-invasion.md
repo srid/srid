@@ -36,11 +36,14 @@ Or for a conspiratorial summary,
 
 ## Woke-infiltrated groups and organizations
 
-- [What “diversity and inclusion” means at **Microsoft**](https://news.ycombinator.com/item?id=33165844)
+- Tech
+  - [What “diversity and inclusion” means at **Microsoft**](https://news.ycombinator.com/item?id=33165844)
+  - [**ChatGPT** Goes Woke](https://www.nationalreview.com/corner/chatgpt-goes-woke/)
+  - [An Open Letter to the **Python** Software Foundation](https://news.ycombinator.com/item?id=38542330) (Dec, 2023)
+  - **NixOS**: [[nixos-mod]] (Nov, 2023)
+  - Lesser known groups
+    - [SourceHut bans crypto and blockchain projects](https://news.ycombinator.com/item?id=33403780) (cf. [[anti-crypto]])
+    - [Asahi Linux - HN grievance](https://news.ycombinator.com/item?id=36230649)
 - [**Colleges** that ditched admission tests find it harder to fairly choose students](https://news.ycombinator.com/item?id=33298336)
-- [**ChatGPT** Goes Woke](https://www.nationalreview.com/corner/chatgpt-goes-woke/)
-- Lesser known groups
-  - [SourceHut bans crypto and blockchain projects](https://news.ycombinator.com/item?id=33403780) (cf. [[anti-crypto]])
-  - [Asahi Linux - HN grievance](https://news.ycombinator.com/item?id=36230649)
 
 [![[grok-woke-invasion.jpeg]]](https://twitter.com/stillgray/status/1721961880128778283)
