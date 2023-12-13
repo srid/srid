@@ -4,8 +4,8 @@ slug: phys
 
 > the late nineteenth-century/ early twentieth-century physics departed from being a study of the natural world (the physical world) and entered into the realm of the mathematical world ... an abstract world which does not exist in nature. [Ref](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-science.htm)
 
- {#bigbang}
- ## Creationist cosmology
+{#bigbang}
+## Creationist cosmology
 
 - [The Big Bang didn't happen](https://archive.is/EejJf)
   - A [[Wikipedia is not neutral|Wikipedia]] drama involving this author can be found [here](https://en.wikipedia.org/wiki/Wikipedia:Requests_for_arbitration/Pseudoscience).
