@@ -3,7 +3,8 @@ slug: phys
 ---
 
 > the late nineteenth-century/ early twentieth-century physics departed from being a study of the natural world (the physical world) and entered into the realm of the mathematical world ... an abstract world which does not exist in nature. [Ref](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-science.htm)
- 
+
+ {#bigbang}
  ## Creationist cosmology
 
 - [The Big Bang didn't happen](https://archive.is/EejJf)
@@ -15,6 +16,7 @@ slug: phys
   >
   > [..] There is no point or locale in space where the universe could have begun. Space exists within the universe; the universe does not exist in space. Space has no shape and no boundaries. Space is an endless expanse within the infinite universe.
 
+{#self}
 ## Self-centric projection
 
 What's going on here, ultimately, is that we take our own [[Identity|self]]-centric perception and apply it to the universe at large.
@@ -27,7 +29,6 @@ So the universe being infinite / eternal/ absolute becomes impossible to accept 
 
 In summary, we have a self-centric perspective (and a God-centric perspective as well on top) that is constantly tainting our understanding of the universe.
 
-  
 ## Related Links
 
 - [No one in physics dares say so, but the race to invent new particles is pointless](https://www.theguardian.com/commentisfree/2022/sep/26/physics-particles-physicists) (via [HN](https://news.ycombinator.com/item?id=33004799))
