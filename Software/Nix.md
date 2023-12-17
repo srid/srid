@@ -7,7 +7,7 @@ See my [rapid introduction to Nix](https://nixos.asia/en/blog/nix-rapid).
 See also [[NixOS]].
 
 ```query
-path:./*
+children:.
 ```
 
 ## Links
