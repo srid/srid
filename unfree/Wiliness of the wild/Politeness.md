@@ -12,6 +12,7 @@ This duality is an illusion that many people suffer from. People who are not par
 > 
 > [..] Underpoliteness could therefore, be defined as communicative acts which may cause offense though not triggered by malice.
 
+{#eg-elm}
 ## Example of being polite-but-malicious
 
 From https://lukeplant.me.uk/blog/posts/why-im-leaving-elm/
