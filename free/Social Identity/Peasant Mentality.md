@@ -13,3 +13,7 @@ In the seventh paragraph of ‘Article 20’ (appended further below) I have hig
 In other words, one is then free to conform with the legal laws and observe the social protocols – to ‘go along with’, to ‘pay lip-service to’ – whilst no longer [[Belief|believing]] in them.
 
 ‘Tis a remarkable freedom in itself – with no need to rebel at all – as all rebellion stems, primarily, from that deeply-held primordial \***feeling**\* of disfranchisement (and its associated feelings of resentment, envy, cynicism, and so on and so forth).
+
+## X Posts
+
+- [“[..] these days I advise enrolling one’s children in regular schools as they are going to be inculcated (a.k.a., ‘socialised’), anyway, by all the influences of society in general.”](https://twitter.com/sridca/status/1736809715810644139)
