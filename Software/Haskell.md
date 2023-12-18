@@ -45,6 +45,12 @@ Deepen your Haskell knowledge
 
 If you are feeling adventurous consider getting acquainted with [[Nix]], which in turns allows you to leverage [[haskell-template]] for bootstraping Haskell projects with full IDE support in [[VSCode]]. This works on [[Linux]], [[macOS]] and [[Windows]] (via WSL) without having to install dependencies other than Nix itself. In my opinion, this is the best way to set up a Haskell development environment if you are willing to approach the learning curve of Nix with alacritty.
 
+## Sub-pages
+
+```query
+children:.
+```
+
 [FP Slack]: https://fpslack.com
 [introjected]: https://archive.is/rUiwZ#selection-187.47-205.10
 
