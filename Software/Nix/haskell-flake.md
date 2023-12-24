@@ -9,3 +9,5 @@ slug: haskell-flake
 - Documentation: https://community.flake.parts/haskell-flake
 
 [haskell-flake]: https://github.com/srid/haskell-flake
+
+#[[Projects]]

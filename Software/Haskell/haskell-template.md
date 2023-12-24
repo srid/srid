@@ -18,8 +18,8 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
   - Common Haskell workflows
     - Useful Scripts (defined via [just](https://just.systems/))
 
-      | Script   | Description                                             |
-      | -------- | ------------------------------------------------------- |
+      | Script      | Description                                             |
+      | ----------- | ------------------------------------------------------- |
       | `just run`  | Run the main executable via [[ghcid]] (auto-recompiles) |
       | `just repl` | Run `cabal repl` (gives you a `ghci` repl)              |
       | `just docs` | Run `hoogle` (Documentation server for packages in use) |
@@ -42,3 +42,5 @@ The goal of `haskell-template` is to enable anyone to get started with [[Haskell
 ## Discussion
 
 Comments? Ideas? Post them [on GitHub](https://github.com/srid/haskell-template/discussions).
+
+#[[Projects]]
