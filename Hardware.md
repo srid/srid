@@ -5,5 +5,5 @@ slug: hw
 # :computer: Hardware
 
 ```query
-path:./*
+children:.
 ```
