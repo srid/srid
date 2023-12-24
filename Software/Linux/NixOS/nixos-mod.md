@@ -1,5 +1,6 @@
 ---
 date: 2023-11-23
+slug: nixos-mod
 ---
 
 # Have NixOS Mods Become Radicalized?
