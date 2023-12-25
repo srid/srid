@@ -10,7 +10,7 @@ Having gotten frustrated with the [[X1C7 WiFi issue]], I decided to use an exter
 
 After inserting the adapter to USB port, `dmesg` displayed
 
-```
+```text
 [  +0.933146] usb 1-3: USB disconnect, device number 6
 [  +4.194956] usb 1-3: new high-speed USB device number 11 using xhci_hcd
 [  +0.126132] usb 1-3: New USB device found, idVendor=0bda, idProduct=c811, bcdDevice= 2.00
@@ -23,7 +23,7 @@ After inserting the adapter to USB port, `dmesg` displayed
 And `lsusb` identified ([why?](https://askubuntu.com/questions/510713/ifconfig-cant-see-usb-wireless)) the device ID `c811`:
 
 
-```
+```sh
 $ lsusb | grep 802
 Bus 001 Device 011: ID 0bda:c811 Realtek Semiconductor Corp. 802.11ac NIC
 ```
