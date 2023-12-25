@@ -4,7 +4,7 @@ tags: [neovim]
 slug: cli/neovim/telescope
 ---
 
-# Adding a neovim plugin: telescope.nvim
+# Add a neovim plugin: telescope.nvim
 
 ![](https://user-images.githubusercontent.com/3998/162593346-e460468e-d867-46cb-8a78-2ca518629d09.png)
 

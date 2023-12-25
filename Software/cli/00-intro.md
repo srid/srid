@@ -4,7 +4,7 @@ tags: [neovim]
 slug: cli/neovim/install
 ---
 
-# Install Neovim on Linux/macOS using Nix
+# Install Neovim on using Nix
 
 Regardless of the platform, you can use the exact [[Nix]] specification to install and configure Neovim.
 

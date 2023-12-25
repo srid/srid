@@ -1,5 +1,5 @@
 ---
-title: A concise introduction to `generics-sop`
+title: A concise introduction to generics-sop
 author: Sridhar Ratnakumar
 slug: generics-sop-intro
 ---

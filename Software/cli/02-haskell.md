@@ -6,7 +6,7 @@ slug: cli/neovim/haskell
 
 # Haskell Language Server and Coc
 
-#[[Haskell]] has great IDE support via [[haskell-language-server]] (HLS).
+[[Haskell]] has great IDE support via #[[haskell-language-server]] (HLS).
 
 [Coc.nvim](https://github.com/neoclide/coc.nvim) is the recommended extension to get Language Server Protocol (LSP) support for editing Haskell in neovim.
 
