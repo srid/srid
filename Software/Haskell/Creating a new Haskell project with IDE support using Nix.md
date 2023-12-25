@@ -4,6 +4,8 @@ date: 2020-11-16
 tags: [blog]
 ---
 
+# Scaffold a Haskell project w/ IDE support + Nix
+
 **Update (May 31, 2021)**: If you use Flakes, try [[haskell-template]].
 
 ---
