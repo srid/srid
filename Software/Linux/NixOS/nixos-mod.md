@@ -1,6 +1,9 @@
 ---
 date: 2023-11-23
 slug: nixos-mod
+template:
+  sidebar:
+    enable: false
 ---
 
 # Have NixOS Mods Become Radicalized?

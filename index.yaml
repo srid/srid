@@ -5,21 +5,18 @@ page:
     <snippet var="js.highlightjs" />
 
 template:
-  name: /templates/layouts/book
-  flag:
-    uptree: true
-    sidebar: true
-    breadcrumbs: false
-  layout:
-    base:
-      bodyClass: overflow-y-scroll bg-gray-400
-    note:
-      containerClass: container mx-auto max-w-screen-lg
+  uptree:
+    enable: true
+  sidebar:
+    enable: true
+    collapsed: true
+  breadcrumbs:
+    enable: false
+  base:
+    bodyClass: overflow-y-scroll bg-gray-400
 
   theme: pink
   iconUrl: static/favicon.jpeg
-  sidebar:
-    collapsed: true
   urlStrategy: pretty
 
 pandoc:
