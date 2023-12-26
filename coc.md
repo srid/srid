@@ -1,5 +1,8 @@
 ---
 slug: coc
+template:
+  sidebar:
+    enable: false
 ---
 
 # Harmlessness Code of Conduct
