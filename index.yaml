@@ -8,7 +8,7 @@ template:
   name: /templates/layouts/book
   flag:
     uptree: true
-    sidebar: false
+    sidebar: true
     breadcrumbs: false
   layout:
     base:
