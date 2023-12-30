@@ -41,6 +41,7 @@
     "emanote": {
       "inputs": {
         "ema": "ema",
+        "emanote-template": "emanote-template",
         "flake-parts": "flake-parts",
         "flake-root": "flake-root",
         "haskell-flake": "haskell-flake",
@@ -51,17 +52,32 @@
         "unionmount": "unionmount"
       },
       "locked": {
-        "lastModified": 1703623667,
-        "narHash": "sha256-ZS+AOXjB4b0FHAMDkQDBiBbbkHhaLNM7YJ0wWqmqgok=",
+        "lastModified": 1703965574,
+        "narHash": "sha256-/alxL0yUJY5ymXIxnMWyp54jWp/tbhvepZ7x91a/oOg=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "bb4018dc6efde8c4fce8b4299907a08a5574d329",
+        "rev": "d26727df22e8b3a65eb01f541ec63b7f3123281a",
         "type": "github"
       },
       "original": {
         "owner": "srid",
-        "ref": "folgezettel-sidebar",
         "repo": "emanote",
+        "type": "github"
+      }
+    },
+    "emanote-template": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1703878803,
+        "narHash": "sha256-WhGyYjqNP8X4ob2f/GPslKyR970wQ03IGdm+VqLBq60=",
+        "owner": "srid",
+        "repo": "emanote-template",
+        "rev": "3243cb8d82d06934efc13c6f1da1e0146f27f15b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "srid",
+        "repo": "emanote-template",
         "type": "github"
       }
     },

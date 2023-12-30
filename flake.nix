@@ -1,6 +1,6 @@
 {
   inputs = {
-    emanote.url = "github:srid/emanote/folgezettel-sidebar";
+    emanote.url = "github:srid/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-parts.follows = "emanote/flake-parts";
   };
