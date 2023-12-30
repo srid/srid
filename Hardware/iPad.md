@@ -6,3 +6,5 @@ I own an **iPad Pro** (11 inch). It is useful particularly in the following ways
 
 - Brainstorming using the [Freeform](https://www.apple.com/ca/newsroom/2022/12/apple-launches-freeform-a-powerful-new-app-designed-for-creative-collaboration/) app
 - Reading books
+
+The iPad pencil on the other hand usually does not see much use.
