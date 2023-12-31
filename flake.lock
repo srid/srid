@@ -68,11 +68,11 @@
     "emanote-template": {
       "flake": false,
       "locked": {
-        "lastModified": 1703878803,
-        "narHash": "sha256-WhGyYjqNP8X4ob2f/GPslKyR970wQ03IGdm+VqLBq60=",
+        "lastModified": 1703877265,
+        "narHash": "sha256-2xdikzzHrIHr1s2pAJrBJU8mZP258Na3V4P4RWteDZM=",
         "owner": "srid",
         "repo": "emanote-template",
-        "rev": "3243cb8d82d06934efc13c6f1da1e0146f27f15b",
+        "rev": "9d458b63c80162519ae55814e60f17cc9d3f95a3",
         "type": "github"
       },
       "original": {
