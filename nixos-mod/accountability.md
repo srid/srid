@@ -1,3 +1,9 @@
+---
+date: 2023-12-31
+template:
+  sidebar:
+    enable: false
+---
 
 # "Moderation Team Accountability Issues" thread
 
