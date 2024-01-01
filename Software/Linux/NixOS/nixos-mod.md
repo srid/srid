@@ -114,7 +114,14 @@ For those interested in the facts of the matter, here’s what happened. The ori
 
 ## Moderators’ echo-chamber {#echo}
 
-This situation, alongside the aforementioned [discussion on mod accountability](https://discourse.nixos.org/t/moderation-team-accountability-issues/35482), is best considered from the larger context of how the NixOS moderation team came into picture over the years.
+This situation, alongside the aforementioned [discussion on mod accountability](https://discourse.nixos.org/t/moderation-team-accountability-issues/35482) (see note below), is best considered from the larger context of how the NixOS moderation team came into picture over the years.
+
+>[!warning] Important Note (2023-12-31)
+> Some time ago since this blog post was published, a number of comments in the aforementioned *"discussion on mod accountability"* thread got censored[^censor] by the moderators. Fortunately, someone who had archived the original (pre-censored[^censor]) version has just provided it to me informing me of the recent censorship; it can be accessed [[accountability-thread.html|here]].
+>
+> Among deleted comments is one by a certain Sven Slootweg (joepie91) containing the bizzare accusation that *"srid’s post is a bigoted screed that is exactly the sort of thing written by people who - quite literally - intend to murder us marginalized folks, or wish for others to do so."* as well as a response from Jonathan Ringer (jonringer) calling it out.
+
+[^censor]: censor (Oxford Dictionary): *officially examine (writing, artistic work, etc.) and suppress or remove any parts that are considered obscene, politically unacceptable, or a threat to security*
 
 According to more than one source (who chose not to reveal their identity in this post for fear of repercussions by Graham), it has been revealed to me that Graham Christensen, who was a mod [until the day of my ban](https://discourse.nixos.org/t/formally-stepping-down-from-the-moderation-team/35498), was the one behind the formation and the maintenance of the illiberal NixOS moderation team over the years.
 
