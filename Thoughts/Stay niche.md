@@ -17,6 +17,10 @@ The core problem here is the _monolithic_ nature of these social networks, not t
 
 It is time we humans (i.e., each of us individuals) let go of the idea of "humanity" (i.e., as a "group"); decentralized social networks today have a fantastic opportunity to play their technological role in it.
 
+## Decentralized networks to look forward to
+
+- Matrix: https://arewep2pyet.com/
+
 ## See also
 
 - Similar ideas
@@ -27,7 +31,6 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
 - [Social networks: It's worse than you think](https://meta.ath0.com/2020/12/social-notwork/) - *"as the number of messages in the network rises, the quality of those which propagate falls"* (interpreting [this research](https://www.scientificamerican.com/article/information-overload-helps-fake-news-spread-and-social-media-knows-it/))
 - What happened to [Monica Cellio](https://www.cellio.org/stack) is worth reading (here's [a timeline](https://meta.stackexchange.com/a/334417/135122)) to understand some of the fallings at Stack Exchange as the network grew beyond its original niche.
 - [Why Is the Web So Monotonous? Google.](https://reasonablypolymorphic.com/blog/monotonous-web/index.html) - degradation of the web from the perspective of boosting of "authorative" source (as a way of soft-[[censorship|censoring]] others).
-
 
 [vitalik]: https://decrypt.co/53890/parler-vitalik-buterin-ethereum
 
