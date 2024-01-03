@@ -1,9 +1,6 @@
 ---
 date: 2023-11-23
 slug: nixos-mod
-template:
-  sidebar:
-    enable: false
 ---
 
 # Have NixOS Mods Become Radicalized?
@@ -127,7 +124,7 @@ The narrow-mindedness of NixOS moderation team is not a recent phenomenon (inasm
 
 Despite the [newly announced Code of Conduct](https://github.com/NixOS/.github/blob/master/CODE_OF_CONDUCT.md) setting a standard of “_being respectful of differing viewpoints and experiences_”, the moderators ignored the violators Teo Camarasu “TeofilC” and Christina Sørensen “cafkafk” and thereon went after the person they attacked because of ideological misalignment. The NixOS moderation team, which appears to have been #[[woke-invasion|strategically set up]] originally by Graham Christensen, has been self-selecting the team to maintain over the years an ideologically-uniform and radicalized echo-chamber that, for some reason, is also decidedly _not_ geographically diverse.[^rfc98] It remains to be seen as to when and how this woke stronghold gets broken. It is only a matter of time (even if it takes years) that it disintegrates because, as [DHH wrote](https://world.hey.com/dhh/standing-up-to-golems-c98dd4a8), “_the tide indeed is turning_”.
 
-[^rfc98]: Much of this -- viz.: *"To form the initial team, the founding members will be appointed by Graham at his sole discretion."* and *"The team's focus should be on developing leadership from within, not on bringing in experienced people from outside. This is important to maintaining ideological continuity."* -- [has been publicly admitted](https://github.com/NixOS/rfcs/pull/98#issuecomment-892217196) as part of codifying these implicit processes in [the never-accepted and much-criticized RFC 98](https://github.com/NixOS/rfcs/pull/98). 
+[^rfc98]: Much of this -- viz.: *"To form the initial team, the founding members will be appointed by Graham at his sole discretion."* and *"The team's focus should be on developing leadership from within, not on bringing in experienced people from outside. This is important to maintaining ideological continuity."* -- [has been publicly admitted](https://github.com/NixOS/rfcs/pull/98#issuecomment-892217196) as part of codifying these implicit processes in [[rfc98|the never-accepted and much-criticized RFC 98]]. 
 
 We can whole-heartedly embrace the tech without also having to embrace the toxic people associated with it. If you are tired of [[woke|wokeism]] in the NixOS core #[[Community|community]], and would like an alternative place, we are building one from the Indian subcontinent – [join our Zulip](https://nixos.zulipchat.com/login/?next=/) for announcements.
 
