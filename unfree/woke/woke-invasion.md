@@ -44,6 +44,8 @@ Or for a conspiratorial summary,
   - Lesser known groups
     - [SourceHut bans crypto and blockchain projects](https://news.ycombinator.com/item?id=33403780) (cf. [[anti-crypto]])
     - [Asahi Linux - HN grievance](https://news.ycombinator.com/item?id=36230649)
-- [**Colleges** that ditched admission tests find it harder to fairly choose students](https://news.ycombinator.com/item?id=33298336)
+- Academia
+  - 2022 Oct: [**Colleges** that ditched admission tests find it harder to fairly choose students](https://news.ycombinator.com/item?id=33298336)
+  - 2024 Jan: [Harvard & Claudine Gay](https://twitter.com/BillAckman/status/1742441534627184760)
 
 [![[grok-woke-invasion.jpeg]]](https://twitter.com/stillgray/status/1721961880128778283)
