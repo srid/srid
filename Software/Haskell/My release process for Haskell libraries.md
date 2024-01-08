@@ -27,4 +27,4 @@ Just a note to myself as to the steps I normally follow when releasing a #[[Hask
 
 ## Open questions
 
-- [ ] Research a tool that automates much of the release process
+- [ ] Research a tool that automates much of the release process; cf. https://twitter.com/domenkozar/status/1744333116687184030
