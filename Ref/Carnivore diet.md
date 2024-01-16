@@ -18,7 +18,9 @@ In early 2013, a medical doctor prescribed me enough antibiotics[^prescription] 
 
 I suffered with this condition for over 4 years, and saw plethora of dermatologists \(who knew naught but to prescribe ever more antibiotics[^moreanti]\; one even had me do low-dose Accutane which lead to chronic dry skin). Then, just within two weeks of going on the carnivore diet \(beef, salt and pepper\) my symptoms dramatically reduced (down to about 95%). Over the next years I was to reintroduce several plant foods; and everytime I do, my symptoms would come back in vengeance.
 
-**Takeaway**: Doctors and [nutritionists](https://twitter.com/ifbacongrewont1/status/1322151733326450689) are not to be [[Trust|trusted]] blindly, especially when it comes to the topic of antibiotics and diet. Although harbouring no ill-will, they can't help but overweeningly[^ow][^bm] trot out what they had been taught (with [bias][pmasondoc]) in medical schools ... and [quackery][q1] and [misinformation][fl] is [not][q3] very [uncommon][q2]. As [one HN commenter](https://news.ycombinator.com/item?id=31711913) puts it:
+**Takeaway**: Doctors and [nutritionists](https://twitter.com/ifbacongrewont1/status/1322151733326450689) are generally not to be [[Trust|trusted]] blindly, especially when it comes to the topic of antibiotics and diet. Although harbouring no ill-will, most of them[^dtex] can't help but overweeningly[^ow][^bm] trot out what they had been taught (with [bias][pmasondoc]) in medical schools ... and [quackery][q1] and [misinformation][fl] is [not][q3] very [uncommon][q2]. As [one HN commenter](https://news.ycombinator.com/item?id=31711913) puts it:
+
+[^dtex]: With the exception of those who continue to read critically and keep their knowledge up to date in accordance with facts rather than conventional academic wisdom. 
 
 > Listen to the doctor, but also do your own research. I can guaran-damn-tee that you will obtain vastly superior results. It's not that all doctors are scoundrels looking to kill you & take your wallet. It's that they are afflicted by the same tunnel-vision, group-think, & subconscious self-interest as any other group of professionals.
 
