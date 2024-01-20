@@ -8,7 +8,7 @@ slug: haskell-template/start
 
 If this is your first time using [[Nix]] or [[haskell-template]] (or a project based on it) you will initially need to setup a few things on your system.
 
-### Ni
+### Nix
 
 - [Install Nix](https://nixos.asia/en/install) (version must be 2.8 or greater) 
     - If you are using Windows, you may install Nix [under WSL2](https://nixos.wiki/wiki/Nix_Installation_Guide#Windows_Subsystem_for_Linux_.28WSL.29) 
