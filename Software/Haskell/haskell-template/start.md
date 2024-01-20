@@ -15,6 +15,8 @@ If this is your first time using [[Nix]] or [[haskell-template]] (or a project b
     - [Enable Flakes](https://nixos.wiki/wiki/Flakes#Enable_flakes) if using the official installer
 - In the project directory, run `nix develop -i -c haskell-language-server` to sanity check your environment.
   - This will download the required dependencies and cache them to the local Nix store. If it succeeds, it means everything's good.
+- [Install direnv](https://nixos.asia/en/direnv)
+  - **NOTE**: If you choose not to use direnv, you must launch VSCode from _inside_ of `nix develop` shell.
 
 ### VSCode
 
@@ -23,10 +25,8 @@ While you may use any text editor with language-server support, we will use [[VS
 - Launch [[VSCode]], and open the `git clone`'ed project directory [as single-folder workspace](https://code.visualstudio.com/docs/editor/workspaces#_singlefolder-workspaces)
   - NOTE: If you are on Windows, you must use the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) to open the folder in WSL.
 - When prompted by VSCode, install the [workspace recommended](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions) extensions.
-    - If it doesn't prompt, press <kbd>Ctrl+Shift+X</kbd> and search for `@recommended` to install them all manually.
-- Press <kbd>Ctrl+Shift+P</kbd> to run the command "Nix-Env: Select Environment" and then select `shell.nix`. 
-     - The extension will ask you to reload VSCode at the end. Do it.
-     - Note: We recommend that you switch to using direnv; see [here](https://haskell.flake.page/direnv) for details.
+    - The direnv extension will load the nix shell.
+     - The extension will ask you to restart VSCode at the end. Do it.
 
 ## Running in VSCode
 
