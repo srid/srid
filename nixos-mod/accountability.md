@@ -16,5 +16,5 @@ Among the roughly 13 deleted comments is one by a certain Sven Slootweg (joepie9
 
 [^censor]: censor (Oxford Dictionary): *officially examine (writing, artistic work, etc.) and suppress or remove any parts that are considered obscene, politically unacceptable, or a threat to security*
 
-[^joe]: As a matter of related interest, Sven Slootweg (joepie91) is a self-professed manipulator. From https://archive.is/1xMuv
+[^joe]: As a matter of related interest, Sven Slootweg (joepie91) is a self-professed [[Gullibility|manipulator]]. From https://archive.is/1xMuv
     > In case it hasn't become obvious to you yet, I am a social engineer. Full-time. 24/7. I use manipulation and other psychological tactics in nearly every conversation I have. I will try to change the way you think, and try to solve problems you might not even realize you had. 
