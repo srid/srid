@@ -8,11 +8,10 @@ slug: haskell-template/start
 
 If this is your first time using [[Nix]] or [[haskell-template]] (or a project based on it) you will initially need to setup a few things on your system.
 
-### Nix
+### Ni
 
 - [Install Nix](https://nixos.asia/en/install) (version must be 2.8 or greater) 
     - If you are using Windows, you may install Nix [under WSL2](https://nixos.wiki/wiki/Nix_Installation_Guide#Windows_Subsystem_for_Linux_.28WSL.29) 
-    - [Enable Flakes](https://nixos.wiki/wiki/Flakes#Enable_flakes) if using the official installer
 - In the project directory, run `nix develop -i -c haskell-language-server` to sanity check your environment.
   - This will download the required dependencies and cache them to the local Nix store. If it succeeds, it means everything's good.
 - [Install direnv](https://nixos.asia/en/direnv)
