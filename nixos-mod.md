@@ -1,11 +1,13 @@
 ---
 date: 2023-11-23
 slug: nixos-mod
+page:
+  image: nixos-mod/modz1.png
 ---
 
 # Have NixOS Mods Become Radicalized?
 
-On Nov 14th, 2023 - the #[[NixOS]] moderation team permanently banned me from Discourse, Github and Matrix for ideological reasons thus violating the very Code of Conduct they recently proposed. A week earlier, on Nov 7th, 2023, they had issued their threat demanding that I (1) take down the link to my [[unwoke|unwoke]] page on my own Discourse profile, (2) remove a picture of a piece of steak that I had cooked, and (3) cease participating in the so-called ‘toxic threads’ (this latter request I readily agreed to). I sensibly counter-proposed that I’d take the link down only if they institute a public policy of there being no politically-oriented links in Discourse profile pages, which they refused leading to the only possible conclusion that the ban was motivated by wrongthink.
+On Nov 14th, 2023 - the #[[NixOS|NixOS]] moderation team permanently banned me from Discourse, Github and Matrix for ideological reasons thus violating the very Code of Conduct they recently proposed. A week earlier, on Nov 7th, 2023, they had issued their threat demanding that I (1) take down the link to my [[unwoke|unwoke]] page on my own Discourse profile, (2) remove a picture of a piece of steak that I had cooked, and (3) cease participating in the so-called ‘toxic threads’ (this latter request I readily agreed to). I sensibly counter-proposed that I’d take the link down only if they institute a public policy of there being no politically-oriented links in Discourse profile pages, which they refused leading to the only possible conclusion that the ban was motivated by wrongthink.
 
 As the events unfolded, it became clear that over the years the core team has deliberately instituted a woke echo-chamber of moderators.
 
