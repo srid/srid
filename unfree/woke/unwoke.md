@@ -30,7 +30,8 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
 	- DHH, in Dec 2021: "If we've passed peak "woke", and I sure hope we have, may it be followed soon thereafter with peak politics too." -- [Are we past peak "woke"?](https://world.hey.com/dhh/are-we-past-peak-woke-c313b7d1)
 	- DHH, in Nov 2022: "The DEI hegemony has gone from virtually unchallenged to come under severe stress." -- [The waning days of DEI's dominance](https://world.hey.com/dhh/the-waning-days-of-dei-s-dominance-9a5b656c)
 	- DHH, in Apr, 2023: "It's far easier to stand up to the [woke] golems today than it was a couple of years ago. At least in the realm of business. (Things still look pretty rough in academia!)" -- [Standing up to golems](https://world.hey.com/dhh/standing-up-to-golems-c98dd4a8)
-  - sriramk (quotting DHH and others), in Jan, 2024: "There is a vibe shift." -- https://twitter.com/sriramk/status/1742270488427041105
+  	- sriramk (quotting DHH and others), in Jan, 2024: "There is a vibe shift." -- https://twitter.com/sriramk/status/1742270488427041105
+  	- DHH in podcast with sriramk, in Jan,  2024: https://twitter.com/sriramk/status/1750221074900328602?t=1388
 - **Kraken**: https://twitter.com/jespow/status/1536978826344792064 
 - [[Twitter]]: https://twitter.com/greg_price11/status/1648128321505427456
     > Tucker: "So 80% [of Twitter staff] left [when you took over]. How do you run it with [only 20%](https://twitter.com/elonmusk/status/1593899029531803649) of the staff?
