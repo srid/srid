@@ -31,6 +31,14 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
 - [Social networks: It's worse than you think](https://meta.ath0.com/2020/12/social-notwork/) - *"as the number of messages in the network rises, the quality of those which propagate falls"* (interpreting [this research](https://www.scientificamerican.com/article/information-overload-helps-fake-news-spread-and-social-media-knows-it/))
 - What happened to [Monica Cellio](https://www.cellio.org/stack) is worth reading (here's [a timeline](https://meta.stackexchange.com/a/334417/135122)) to understand some of the fallings at Stack Exchange as the network grew beyond its original niche.
 - [Why Is the Web So Monotonous? Google.](https://reasonablypolymorphic.com/blog/monotonous-web/index.html) - degradation of the web from the perspective of boosting of "authorative" source (as a way of soft-[[censorship|censoring]] others).
+- > As a mission-driven startup, you win by converting a core group of true believers, not by trying to persuade the whole world. Trying to be universally liked would not only bankrupt you but would require becoming unrecognizably milquetoast and watering down your mission to the point of meaninglessness. If you’re pleasing everybody, something is wrong.
+  > 
+  > There is a trade-off between how many people you can appeal to and how deep an impression you can make on them. A message like “Be yourself” will be appealing in a bland, forgettable way to pretty much everyone. On the other hand, “Get in loser, we’re building armed drones” will totally alienate all but a small number of people — but those will be your people, and to them you’ll be irresistible.
+  > 
+  > Choosing your audience means choosing who you’re not talking to. Never contort your mission to appease nay-sayers, fence-sitters, and Johnny-come-latelies. They are not your people.
+  -- https://www.piratewires.com/p/anduril-comms-strategy-early-days https://twitter.com/sriramk/status/1750558683166093638
+
+
 
 [vitalik]: https://decrypt.co/53890/parler-vitalik-buterin-ethereum
 
