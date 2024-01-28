@@ -11,6 +11,8 @@ On Nov 14th, 2023 - the #[[NixOS|NixOS]] moderation team permanently banned me f
 
 As the events unfolded, it became clear that over the years the core team has deliberately instituted a woke echo-chamber of moderators.
 
+>[!info] Updates
+> For updates and follow-ups to this post, please see [this Twitter thread](https://twitter.com/sridca/status/1727690440986558653).
 
 ## Timeline of events {#timeline}
 
