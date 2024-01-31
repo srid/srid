@@ -3,8 +3,6 @@ slug: niche
 date: 2021-05-31
 ---
 
-[*Originally posted at [Satellite](https://satellite.earth/pub/@srid:stay-niche)*]{.text-sm}
-
 The quality of a social network goes down as it grows in size to represent the larger public. This happens merely as a result of the network now representing the "median" of the human condition. The median is of average quality. It represents the [[unfree|orthodox]], boring and conventional.
 
 In contrast, progress happens in [outliers](https://www.youtube.com/watch?v=dGDbpg1nG8Y). Humanity could not have been progressing towards betterment without the at-that-point-in-time fringe-heterodox thinking normally associated with creativity.
