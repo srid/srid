@@ -24,7 +24,7 @@ pandoc:
   rewriteClass:
     prose: max-w-prose mx-auto
     # Centered photo
-    photoframe-center: sm:w-3/4 md:w-1/2 mx-auto flex items-center justify-center
+    photoframe-center: sm:w-3/4 mx-auto flex items-center justify-center
     # Photo floating to right
     photoframe: w-full sm:w-64 float-right sm:ml-2 mb-2 sm:mb-0 border-2 p-1 bg-gray-50
     # Content immediately following a right-floated photo

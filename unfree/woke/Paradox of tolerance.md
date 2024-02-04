@@ -1,11 +1,13 @@
 ---
 slug: popper
+page:
+  image: unfree/woke/popper.jpg
 ---
 
 # Woke arrogation of Paradox of tolerance
 
 :::{.photoframe-center}
-[![](https://pbs.twimg.com/media/FQeADfTXsAsQyV4?format=jpg&name=900x900)](https://twitter.com/Liberalcoriano/status/1515320600604155906)
+![[popper.jpg]]
 :::
 
 The [[woke|Woke]] has arrogated Mr. Karl Popper's "Paradox of tolenrace" to advance their authoritarian [[censorship]] and deplatforming measures. The irony here is that, when Mr. Popper's "Paradox of tolerance" is followed to the tee it would result in the deplatforming of the Woke themselves. [u/LotsRegret](https://old.reddit.com/r/TheMotte/comments/nu5kvj/culture_war_roundup_for_the_week_of_june_07_2021/h13q102/?sort=confidence&context=3) explains this:
