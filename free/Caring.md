@@ -2,9 +2,6 @@
 slug: caring
 ---
 
-http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ15a.htm
-
-
 **RESPONDENT:** _Are you saying this \[taking care of other people and things\] only happens in a selfish sort of way? That all feeling caring is selfish – therefore not really caring at all?_
 
 **RICHARD:** I would rather say ‘self’-centred than _‘selfish’_ ... when someone is touched by another’s suffering, as in being moved sufficiently to stimulate caring action, it is their own suffering which is being kindled and quickened. Thus feelings are being aroused, which motivate the activity of caring, and taking care of the other works to assuage the aroused feelings (as well as working to help the other of course). Shall I put it this way? They are missing-out on experiencing the actuality of the caring action, the helpful activity itself, which is taking place.
@@ -42,3 +39,5 @@ Eventually they gave up as they could not ‘reach’ me (aka establish a feelin
 **RICHARD:** That is partly so – an unselfish ‘self’ is still a ‘self’ nevertheless and is perforce ‘self’-centred in all its activities – but there is also the factor of just who it is that is caring for who it is that is being cared for to take into account. In other words: it is an [[Identity|illusory identity]] inside one body which is caring for an illusory identity in another body. Which is what the born-again people in the above example were (futilely) attempting to do ... and I say ‘futilely’ because there is no entity inside this flesh and blood body to be stroked by their blandishments.
 
 Or to be goaded by intimations of perdition, of course.
+
+http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ15a.htm
