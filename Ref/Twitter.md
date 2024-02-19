@@ -4,6 +4,8 @@ slug: twitter
 
 # Twitter / X
 
+My X profile can be accessed here: https://twitter.com/sridca
+
 ## Some interesting facts
 
 - Elon Musk
