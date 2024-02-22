@@ -1,5 +1,7 @@
 ---
 slug: woke-invasion
+page:
+  image: https://pbs.twimg.com/media/FMT__sxXEAQHvYm?format=jpg&name=medium
 ---
 
 
