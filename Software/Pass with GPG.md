@@ -6,6 +6,9 @@ date: 2021-01-15
 
 [pass](https://www.passwordstore.org/) is a simple **password manager** that stores passwords in a [gpg]-encrypted file, not some obscure database. The files can in turn be put on Dropbox, git or any other file management service.
 
+>[!info] 1Password
+>The author now uses 1Password.
+
 ## Installing
 
 `pass` must be installed along `gpg`. On #[[NixOS]]:[^ubuntu]
@@ -78,9 +81,6 @@ gpg --edit-key <email> # and run `trust`
 - Setup Syncthing (use `.git` alias with `gitdir: /path/to/.git` as contents in order to exclude the git index from syncing)
 - Use Android apps: Password Store & OpenKeychain 
 
-## Discussions
-
-* 2020-01 [Lobste.rs: What do you use for password management?](https://lobste.rs/s/emqfkc/what_do_you_use_for_password_management)  (User-friendly alternative to `pass`)
 
 [keybase]: https://book.keybase.io/docs/files
 [gpg]: https://wiki.archlinux.org/index.php/GnuPG
