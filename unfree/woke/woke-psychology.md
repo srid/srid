@@ -66,6 +66,7 @@ Adherents of [[woke]] tend to exhibit certain psychological characteristics in c
     > "Keffals is just an online personality driven by the worst impulses that define the internet." https://defaultfriend.substack.com/p/suicide-by-kiwi-farms
     
     Also: https://corinnacohn.substack.com/p/the-world-should-not-need-kiwi-farms
+- [Abigail Shrier on Gen Z's Anxiety Problem and Why Therapy May Not Be the Solution](https://www.youtube.com/watch?v=z72hgYk-5iI) (via [dhh](https://twitter.com/dhh/status/1765923882543042665))
 
 ## Meta / Related
 
