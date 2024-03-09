@@ -3,6 +3,8 @@ slug: coc
 template:
   sidebar:
     enable: false
+  toc:
+    enable: false
 ---
 
 # Harmlessness Code of Conduct
