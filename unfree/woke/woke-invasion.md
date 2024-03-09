@@ -40,6 +40,9 @@ Or for a conspiratorial summary,
 
 - Tech
   - [What “diversity and inclusion” means at **Microsoft**](https://news.ycombinator.com/item?id=33165844)
+  - **Google**
+      - 2017: https://en.wikipedia.org/wiki/Google%27s_Ideological_Echo_Chamber
+      - 2024: DHH: [Google's sad ideological capture was exactly what we were trying to avoid](https://world.hey.com/dhh/google-s-sad-ideological-capture-was-exactly-what-we-were-trying-to-avoid-67fad361)
   - [**ChatGPT** Goes Woke](https://www.nationalreview.com/corner/chatgpt-goes-woke/)
   - [An Open Letter to the **Python** Software Foundation](https://news.ycombinator.com/item?id=38542330) (Dec, 2023)
   - **NixOS**: [[nixos-mod]] (Nov, 2023)
