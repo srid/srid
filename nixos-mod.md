@@ -12,7 +12,15 @@ On Nov 14th, 2023 - the #[[NixOS|NixOS]] moderation team permanently banned me f
 As the events unfolded, it became clear that over the years the core team has deliberately instituted a woke echo-chamber of moderators.
 
 >[!info] Updates
-> For events that happened after publishing this blog post — such as the NixOS moderators, two months later, carrying their witch hunt in other communities ... as well as permabanning another prominent member (David Arnold) — consult [this Twitter thread](https://twitter.com/sridca/status/1727690440986558653) (you will need to be logged in).
+> For events that happened after publishing this blog post, consult [this X thread](https://twitter.com/sridca/status/1727690440986558653). X requires you to be signed in to view threads, so here's an outline of the thread:
+>
+> 
+> Date | Event |
+> ---------|----------
+> [2024-01-02](https://twitter.com/sridca/status/1742164804612108372) | Censorship of 13 comments from the [[accountability\|accountability]] thread 
+> [2024-01-28](https://twitter.com/sridca/status/1751586790425895377) | Witch-hunt by NixOS moderator Martin Weinelt (hexa) to get the entire [NixOS Asia](https://nixos.asia/en/) domain, as well as Srid, banned from the Lobste.rs site
+> [2024-02-12](https://twitter.com/sridca/status/1757055395183374667) | Report of the moderators perma-banning David Arnold
+> [2024-03-10](https://twitter.com/sridca/status/1766944228129575327) | Continued criticism of the mod team by community members; a NixOS moderator "piegames" publicly accuses Srid of being "transphobic"
 
 ## Timeline of events {#timeline}
 
