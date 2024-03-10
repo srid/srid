@@ -12,7 +12,7 @@ On Nov 14th, 2023 - the #[[NixOS|NixOS]] moderation team permanently banned me f
 As the events unfolded, it became clear that over the years the core team has deliberately instituted a woke echo-chamber of moderators.
 
 >[!info] Updates
-> For events that happened after publishing this blog post — such as the NixOS moderators, two months later, carrying their witch hunt in other communities ... as well as permabanning another prominent member (David Arnold) — consult [this Twitter thread](https://twitter.com/sridca/status/1727690440986558653).
+> For events that happened after publishing this blog post — such as the NixOS moderators, two months later, carrying their witch hunt in other communities ... as well as permabanning another prominent member (David Arnold) — consult [this Twitter thread](https://twitter.com/sridca/status/1727690440986558653) (you will need to be logged in).
 
 ## Timeline of events {#timeline}
 
