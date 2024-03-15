@@ -20,11 +20,12 @@ A good tasting coffee makes all the difference.
 
 Invest in these:
 
+- **Aeropress**
 - Scale (0.1g precision)
-- Brew kettle with precision thermometer (I use Fellow Stagg)
-- Coffee canister (I use Airscape)
-- A good burr grinder (I use Niche Zero, or Comandante when travelling)
-- Aeropress
+- Brew kettle with precision thermometer
+  - I use Fellow Stagg
+- A good burr grinder 
+  - I use Niche Zero home; and Comandante when travelling
 
 ### Dialling
 
@@ -63,7 +64,8 @@ If you use fresh coffee with your preferred flavour profile, and select the righ
 
 #### Kalita Wave 155 recipe
 
-TODO: This recipe is usually not successful (probably because I tend to use espresso blends?).
+> [!warning] Questionable success
+> This recipe has usually not been very successful -- probably because I tend to use espresso blends?
 
 - 10g of coffee
 - 185-194f water temp (depends on beans)
@@ -72,13 +74,10 @@ TODO: This recipe is usually not successful (probably because I tend to use espr
 
 ### Beans
 
-I tend to buy  my coffee beans online from [iDrinkCoffee](https://idrinkcoffee.com/).
+I tend to buy  my coffee beans online from [iDrinkCoffee](https://idrinkcoffee.com/). Compared to local Quebec cafes, they tend to be fresher and of consistent quality.
 
 ### Learnings / experimentation
 
-- [x] More coffee doesn't impact sleep when fasting during the day (ie. OMAD close to bed time)
-- [x] Eating (creamy) butter in between cups helps 'reset' taste receptor.
-    - [x] But eating a meal is ideal.
-- [ ] Roast coffee myself
-
-
+- Eating (creamy) butter in between cups helps 'reset' taste receptor.
+    - But eating a meal is ideal.
+- One day, I want to try roasting coffee myself

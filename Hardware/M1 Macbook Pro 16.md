@@ -2,7 +2,7 @@
 slug: m1-macbook-pro-16
 ---
 
-The **M1 Macbook Pro (16 inch)** is my primary computer running #[[macOS]].
+The **Macbook Pro M1 Max (16 inch)** is my primary computer running #[[macOS]].
 
 ## Why I like it
 
