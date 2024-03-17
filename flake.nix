@@ -11,8 +11,7 @@
       imports = [ inputs.emanote.flakeModule ];
       perSystem = { self', pkgs, system, ... }: {
         emanote.sites."default" = {
-          layers = [ ./. ];
-          layersString = [ "./." ];
+          layers = [ { path = ./.; pathString = "./."; } ];
           port = 9801;
           prettyUrls = true;
         };
