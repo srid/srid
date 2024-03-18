@@ -4,7 +4,6 @@ slug: unwoke
 
 # Undoing Woke Invasion
 
-
 :::{.page-note .bg-blue-50 .border-2 .border-blue-700 .pt-4 .px-4 .shadow-md}
 For the [[Caring|actually caring]] (ie. not [[Luxury beliefs|pseudo-caring]]) readers who are looking to do good in the world without the artifice of woke ideology, the author recommends looking into [[Harmlessness|becoming harmless]].
 :::
@@ -20,6 +19,7 @@ The first step to resist or undo [[woke-invasion]] in your organization (or your
 
 ## Case studies
 
+{#org}
 ### Organizations
 
 A sample of tech companies successfully extricating themselves out of [[woke-invasion]] is presented below. What level of diplomacy you choose in your tactic is up to you; Brian Armstrong (Coinbase) and DHH (Basecamp) were demonstrably more diplomatic than Jesse Powell (Kraken).
@@ -43,11 +43,13 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
     > Elon: "If you're not trying to run some [[woke|glorified activist]] organization"
     - **xAI**: [Elon Musk Launches X.AI To Fight ChatGPT Woke AI](https://www.forbes.com/sites/martineparis/2023/04/16/elon-musk-launches-xai-to-fight-chatgpt-woke-ai-with-twitter-data/?sh=ae7c73151f82)
 
+{#org-watch}
 #### Organizations to watch out for
 
 - **Shopify**
   - CEO says calls to ban @libsoftiktok a [bad faith narrative](https://twitter.com/tobi/status/1596440473849274369), and Elon [supports](https://twitter.com/elonmusk/status/1597185759316152320) Toby.
 
+{#ideologies}
 #### Ideologies to watch out for
 
 - [[Gender Ideology]]
@@ -66,6 +68,7 @@ If there is one case study that I must pick as my favourite, it would be that of
   - [Video interview with Keri Smith](https://odysee.com/@unsafe:f/deprogrammed-grace-surviving-a-woke:2?)
 - **Pedro Domingos**: [Beating Back Cancel Culture: A Case Study from the Field of Artificial Intelligence](https://archive.ph/0yUs8)
 
+{#expose}
 ## Expose them
 
 You may then publicly expose[^no] the woke charlatans, as these do:
