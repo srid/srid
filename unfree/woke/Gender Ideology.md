@@ -20,7 +20,7 @@ slug: gender
 
 - [An Examen of “The Invention of ‘Heterosexuality’”](http://actualfreedom.com.au/an/contents.htm#contents)
 - #[[woke-psychology]]
-- #[[Social Identity]]
+- #[[Social Identity]], the larger theme behind the illiberal gender ideology.
 
 
 [^increate]: [Dictionary Definition]: (tr.v.): 1. to create within; [imp. & pp.: increated; ppr. & vb.n.: increating]. ~ [Webster’s 1913 Dictionary](https://www.webster-dictionary.org/definition/Increate).
