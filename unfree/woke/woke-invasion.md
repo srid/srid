@@ -36,6 +36,7 @@ Or for a conspiratorial summary,
 - Books
   - [The Origins of Woke](https://twitter.com/elonmusk/status/1704994439318372548)
 
+{#conquered}
 ## Woke-infiltrated groups and organizations
 
 - Tech
