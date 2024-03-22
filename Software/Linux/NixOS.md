@@ -7,7 +7,7 @@ NixOS is a #[[Linux]] distribution based on the purely functional [[Nix]]# packa
 * Community:
   * Zulip: https://nixos.asia/en
   * Discord: https://discord.gg/s5ScMNBp
-  * Matrix: I _do not_ recommend the NixOS Matrix ([[nixos-mod|why not?]])
+  * Matrix / Discourse: I _do not_ recommend the official avenues ([[nixos-mod|why not?]])
 * My NixOS config: https://github.com/srid/nixos-config
 
 ```query
