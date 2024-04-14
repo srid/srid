@@ -2,17 +2,17 @@
 slug: vibes
 ---
 
-http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-psyche.htm
-
 [Richard]: ‘All sentient [[Identity|beings]], to a greater or lesser extent, are connected via a psychic web ... a network of energies or currents that range from ‘good’ to ‘bad’. Feeling threatened or intimidated can result from the obvious cues – the offering of physical violence and/or verbal violence – or from the less obvious ... **‘vibe’** violence (to use a ‘60’s term) and/or psychic violence. Similarly, feeling accepted can occur via the same signals or intimations. Power trips – coercion or manipulation of any kind – whether for ‘good’ or ‘bad’ purposes, are all psychic at root ... the psychic currents are the most effective power plays for they are the most insidious (charisma, for example).
 
----
+http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-psyche.htm
 
-http://actualfreedom.com.au/richard/selectedcorrespondence/sc-vibes.htm
+---
 
 RICHARD: [..] as the many and various emotions/ passions are the same affective energy, at root, then directing all of that affective energy into being the [[Felicity and Innocuity|felicitous/ innocuous feelings]] (that is, ‘me’ at the core of ‘my’ being, which is ‘being’ itself), via minimisation of the ‘good’ and ‘bad’ feelings and maximisation of the happy and harmless feelings, will have the effect of involuntarily radiating felicitous/ innocuous vibes and currents as a matter of course.
 
 A feeling-being, by virtue of being an affective/ psychic ‘being’, involuntarily emanates/ transmits/ radiates affective vibes (and psychic currents), extrasensorially, regardless of whether they express or suppress feelings and/or whether they display or conceal any physical effects feelings may have on their tone of voice/ their facial expression/ their body language.
+
+http://actualfreedom.com.au/richard/selectedcorrespondence/sc-vibes.htm
 
 ---
 
@@ -37,8 +37,6 @@ Hence the inaccuracy inherent to psychic phenomena ... but that is another topic
 
 ---
 
-http://www.actualfreedom.com.au/richard/listdcorrespondence/listd14a.htm#09Nov09
-
 **RESPONDENT:** *You said some thing about vibes web between humans, like invisible threads. Only one free of psychic identity are also free of this psychic web, so, how to minimize this menace to avoid this subliminal effects after the lecture of your words and journal?*
 
 **RICHARD**: 
@@ -48,3 +46,5 @@ http://www.actualfreedom.com.au/richard/listdcorrespondence/listd14a.htm#09Nov09
 - fourth, being as happy and as [[Harmlessness|harmless]] (free of [[malice]] and sorrow) as is humanly possible can be contagious so to speak); 
 - fifth, the [[Courage of your convictions|courage of the conviction]] born of the [[PCE|PCE]] is always immensely beneficial; 
 - lastly, remembering that to care to dare is to dare to care.
+
+http://www.actualfreedom.com.au/richard/listdcorrespondence/listd14a.htm#09Nov09
