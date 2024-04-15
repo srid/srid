@@ -69,6 +69,7 @@ User [motohagiography wrote](https://news.ycombinator.com/item?id=34161236):
 - [Failed Prediction Timeline](https://wattsupwiththat.com/failed-prediction-timeline/)
 - [Judith Curry](https://twitter.com/curryja/status/1689419032368394241): *The global warming crisis is ‘manufactured’ to generate fear allowing for greater government control of every aspect of our lives.*
 - [I Left Out the Full Truth to Get My Climate Change Paper Published](https://www.thefp.com/p/i-overhyped-climate-change-to-get-published)
+- *“What a coincidence that to fight climate change we have to [[woke|become]] [[Vegan Propaganda|vegetarians]], have fewer kids, demolish the suburbs, redistribute wealth to minorities and abolish capitalism.”* https://www.themotte.org/post/960/the-vacuity-of-climate-science
 
 [^rel]: From [Judith Curry: A bad recipe for science](https://judithcurry.com/2023/11/17/a-bad-recipe-for-science/)
 
