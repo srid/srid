@@ -42,16 +42,18 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
     > 
     > Elon: "If you're not trying to run some [[woke|glorified activist]] organization"
     - **xAI**: [Elon Musk Launches X.AI To Fight ChatGPT Woke AI](https://www.forbes.com/sites/martineparis/2023/04/16/elon-musk-launches-xai-to-fight-chatgpt-woke-ai-with-twitter-data/?sh=ae7c73151f82)
-- **Google**: [Mission First](https://blog.google/inside-google/company-announcements/building-ai-future-april-2024/), Apr 18, 2024: *"ultimately we are a workplace and our policies and expectations are clear: this is a business, and not a place to act in a way that disrupts coworkers or makes them feel unsafe, to attempt to use the company as a personal platform, or to fight over disruptive issues or debate politics."*
-  - [Brian Armstrong](https://twitter.com/brian_armstrong/status/1781351372946022459)
-  - [Paul Graham](https://twitter.com/paulg/status/1781329523155357914)
-  - [DHH](https://twitter.com/dhh/status/1781299786236432737)
+- **Shopify**
+  - CEO says calls to ban @libsoftiktok a [bad faith narrative](https://twitter.com/tobi/status/1596440473849274369), and Elon [supports](https://twitter.com/elonmusk/status/1597185759316152320) Toby.
+
 
 {#org-watch}
 #### Organizations to watch out for
 
-- **Shopify**
-  - CEO says calls to ban @libsoftiktok a [bad faith narrative](https://twitter.com/tobi/status/1596440473849274369), and Elon [supports](https://twitter.com/elonmusk/status/1597185759316152320) Toby.
+- **Meta**: [Meta goes no politics at work (and nobody cares)](https://world.hey.com/dhh/meta-goes-no-politics-at-work-and-nobody-cares-d6409209), Dec, 2022.
+- **Google**: [Mission First](https://blog.google/inside-google/company-announcements/building-ai-future-april-2024/), Apr 18, 2024: *"ultimately we are a workplace and our policies and expectations are clear: this is a business, and not a place to act in a way that disrupts coworkers or makes them feel unsafe, to attempt to use the company as a personal platform, or to fight over disruptive issues or debate politics."*
+  - [Brian Armstrong](https://twitter.com/brian_armstrong/status/1781351372946022459)
+  - [Paul Graham](https://twitter.com/paulg/status/1781329523155357914)
+  - [DHH](https://twitter.com/dhh/status/1781299786236432737)
 
 {#ideologies}
 #### Ideologies to watch out for
