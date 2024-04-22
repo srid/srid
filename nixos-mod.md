@@ -22,6 +22,7 @@ As the events unfolded, it became clear that over the years the core team has de
 > [2024-02-12](https://twitter.com/sridca/status/1757055395183374667) | Report of the moderators perma-banning David Arnold
 > [2024-03-10](https://twitter.com/sridca/status/1766944228129575327) | Continued criticism of the mod team by community members; a NixOS moderator "piegamesde" publicly accuses Srid of being "transphobic"
 > [2024-03-20](https://twitter.com/sridca/status/1771523366983196975) | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism |
+> [2024-04-22](https://twitter.com/sridca/status/1782200842571198962) | Attempt to dethrone Eelco Dolstra |
 
 ## Timeline of events {#timeline}
 
