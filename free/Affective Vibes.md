@@ -23,13 +23,13 @@ http://actualfreedom.com.au/richard/selectedcorrespondence/sc-vibes.htm
 > - [Co-Respondent]\: Thoughts?
 > - [Richard]: Only if one is a feeling being with developed psychic abilities.
 > - [Co-Respondent]: 'From a distance?
-> - [Richard]: 'In the first instance ... yes, from a near-distance; in the latter instance ... yes, from a far-distance'.[![](http://www.actualfreedom.com.au/richard/images/footnote-link.jpg)](http://www.actualfreedom.com.au/richard/listafcorrespondence/listaf115.htm#10Jun06)
+> - [Richard]: 'In the first instance ... yes, from a near-distance; in the latter instance ... yes, from a far-distance'.[ref](http://www.actualfreedom.com.au/richard/listafcorrespondence/listaf115.htm#10Jun06)
 
 **RESPONDENT:** *Confused, please help.*
 
 **RICHARD:** By way of explanation I will first draw your attention to this quote (also posted four days before this e-mail of yours):
 
-> - [Richard]: '... there is an interconnectedness between all the emotional and passional [[Identity|entities]] -- all emotional and passional entities are connected via a psychic web -- a network of invisible **vibes** and currents. This interconnectedness in action is a powerful force -- colloquially called 'energy' or 'energies' -- wherein one entity can either seek power over another entity or seek communion with another entity by affective and/or psychic influence'.[![](http://www.actualfreedom.com.au/richard/images/footnote-link.jpg)](http://www.actualfreedom.com.au/richard/listafcorrespondence/listaf27b.htm#vibes)
+> - [Richard]: '... there is an interconnectedness between all the emotional and passional [[Identity|entities]] -- all emotional and passional entities are connected via a psychic web -- a network of invisible **vibes** and currents. This interconnectedness in action is a powerful force -- colloquially called 'energy' or 'energies' -- wherein one entity can either seek power over another entity or seek communion with another entity by affective and/or psychic influence'.[ref](http://www.actualfreedom.com.au/richard/listafcorrespondence/listaf27b.htm#vibes)
 
 Put briefly: a feeling being (an emotional/ passional entity within a body) imbues thought with affectivity and those affectively-tinged/ affectively-charged thoughts are involuntarily broadcast, as psychic currents/ energies, into the real world (the world of the psyche) ... thus another feeling being does not pick-up thoughts as such but, rather, intuitively feels what those psychic currents/ energies convey.
 
