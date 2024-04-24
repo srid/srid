@@ -54,6 +54,7 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
   - [Brian Armstrong](https://twitter.com/brian_armstrong/status/1781351372946022459)
   - [Paul Graham](https://twitter.com/paulg/status/1781329523155357914)
   - [DHH](https://twitter.com/dhh/status/1781299786236432737)
+  - [*"google concludes (they promise!) a decade of unhinged activism"*](https://www.piratewires.com/p/mission-accomplished)
 
 {#ideologies}
 #### Ideologies to watch out for
