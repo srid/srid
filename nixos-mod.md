@@ -23,6 +23,7 @@ As the events unfolded, it became clear that over the years the core team has de
 > [2024-03-10](https://twitter.com/sridca/status/1766944228129575327) | Continued criticism of the mod team by community members; a NixOS moderator "piegamesde" publicly accuses Srid of being "transphobic"
 > [2024-03-20](https://twitter.com/sridca/status/1771523366983196975) | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism |
 > [2024-04-22](https://twitter.com/sridca/status/1782200842571198962) | Attempt to dethrone Eelco Dolstra |
+> [2024-04-26](https://news.ycombinator.com/item?id=40204985) | RFC 175; Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes) |
 
 ## Timeline of events {#timeline}
 
