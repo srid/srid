@@ -1,0 +1,5 @@
+template:
+  sidebar:
+    enable: false
+  toc:
+    enable: false
