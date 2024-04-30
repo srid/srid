@@ -1,3 +1,6 @@
+---
+slug: nixos-mod/rfc98
+---
 
 # RFC 0098 (Nix)
 
