@@ -7,23 +7,13 @@ page:
 
 # Have NixOS Mods Become Radicalized?
 
-On Nov 14th, 2023 - the #[[NixOS|NixOS]] moderation team permanently banned me from Discourse, Github and Matrix for ideological reasons thus violating the very Code of Conduct they recently proposed. A week earlier, on Nov 7th, 2023, they had issued their threat demanding that I (1) take down the link to my [[unwoke|unwoke]] page on my own Discourse profile, (2) remove a picture of a piece of steak that I had cooked, and (3) cease participating in the so-called ‘toxic threads’ (this latter request I readily agreed to). I sensibly counter-proposed that I’d take the link down only if they institute a public policy of there being no politically-oriented links in Discourse profile pages, which they refused leading to the only possible conclusion that the ban was motivated by wrongthink.
+On Nov 14th, 2023 - the [[NixOS|NixOS]] moderation team permanently banned me from Discourse, Github and Matrix for ideological reasons thus violating the very Code of Conduct they recently proposed. A week earlier, on Nov 7th, 2023, they had issued their threat demanding that I (1) take down the link to my [[unwoke|unwoke]] page on my own Discourse profile, (2) remove a picture of a piece of steak that I had cooked, and (3) cease participating in the so-called ‘toxic threads’ (this latter request I readily agreed to). I sensibly counter-proposed that I’d take the link down only if they institute a public policy of there being no politically-oriented links in Discourse profile pages, which they refused leading to the only possible conclusion that the ban was motivated by wrongthink.
 
 As the events unfolded, it became clear that over the years the core team has deliberately instituted a woke echo-chamber of moderators.
 
 >[!info] Updates
-> For events that happened after publishing this blog post, consult [this X thread](https://twitter.com/sridca/status/1727690440986558653). X requires you to be signed in to view threads, so here's an outline of the thread:
+> For events that happened after publishing this blog post, consult [this X thread](https://twitter.com/sridca/status/1727690440986558653). For further events, and context, see [[nixos-woke-invasion]].
 >
-> 
-> Date | Event |
-> ---------|----------
-> [2024-01-02](https://twitter.com/sridca/status/1742164804612108372) | Censorship of 13 comments from the [[accountability\|accountability]] thread 
-> [2024-01-28](https://twitter.com/sridca/status/1751586790425895377) | Witch-hunt by NixOS moderator Martin Weinelt (hexa) to get the entire [NixOS Asia](https://nixos.asia/en/) domain, as well as Srid, banned from the Lobste.rs site
-> [2024-02-12](https://twitter.com/sridca/status/1757055395183374667) | Report of the moderators perma-banning David Arnold
-> [2024-03-10](https://twitter.com/sridca/status/1766944228129575327) | Continued criticism of the mod team by community members; a NixOS moderator "piegamesde" publicly accuses Srid of being "transphobic"
-> [2024-03-20](https://twitter.com/sridca/status/1771523366983196975) | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism |
-> [2024-04-22](https://twitter.com/sridca/status/1782200842571198962) | Attempt to dethrone Eelco Dolstra |
-> [2024-04-26](https://news.ycombinator.com/item?id=40204985) | RFC 175; Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes) |
 
 ## Timeline of events {#timeline}
 
@@ -106,7 +96,7 @@ For those interested in the facts of the matter, here’s what happened. The ori
 
 - The Twitter poll concludes with \~60% being _against_ the ban.[^br]
 
-- Following Srid’s ban, David Arnold, [Timothy DeHerrera](https://twitter.com/sridca/status/1724969147354788000), Taylor Gunnoe [[nixos-mod/accountability|initiates discussion on mod accountability]].
+- Following Srid’s ban, David Arnold, [Timothy DeHerrera](https://twitter.com/sridca/status/1724969147354788000), Taylor Gunnoe [[nixos-mod/accountability|initiates discussion on mod accountability]].[^censor]
 
   - [Graham Christensen](https://twitter.com/grhmc) of Determinate Systems finds a nicer way to [tell people](https://twitter.com/sridca/status/1724840862289408221) who may feel threatened by the mod actions to fuck off (as it were) and start their own community/project.
 
@@ -137,11 +127,11 @@ The narrow-mindedness of NixOS moderation team is not a recent phenomenon (inasm
 
 ## Conclusion {#conclusion}
 
-Despite the [newly announced Code of Conduct](https://github.com/NixOS/.github/blob/master/CODE_OF_CONDUCT.md) setting a standard of “_being respectful of differing viewpoints and experiences_”, the moderators ignored the violators Teo Camarasu “TeofilC” and Christina Sørensen “cafkafk” and thereon went after the person they attacked because of ideological misalignment. The NixOS moderation team, which appears to have been #[[woke-invasion|strategically set up]] originally by Graham Christensen, has been self-selecting the team to maintain over the years an ideologically-uniform and radicalized echo-chamber that, for some reason, is also decidedly _not_ geographically diverse.[^rfc98] It remains to be seen as to when and how this woke stronghold gets broken. It is only a matter of time (even if it takes years) that it disintegrates because, as [DHH wrote](https://world.hey.com/dhh/standing-up-to-golems-c98dd4a8), “_the tide indeed is turning,_” resulting in what [Sriram Krishnan called](https://twitter.com/sriramk/status/1742270488427041105) “_a [[Affective Vibes|vibe]] shift_”.
+Despite the [newly announced Code of Conduct](https://github.com/NixOS/.github/blob/master/CODE_OF_CONDUCT.md) setting a standard of “_being respectful of differing viewpoints and experiences_”, the moderators ignored the violators Teo Camarasu “TeofilC” and Christina Sørensen “cafkafk” and thereon went after the person they attacked because of ideological misalignment. The NixOS moderation team, which appears to have been #[[nixos-woke-invasion|strategically set up]] originally by Graham Christensen, has been self-selecting the team to maintain over the years an ideologically-uniform and radicalized echo-chamber that, for some reason, is also decidedly _not_ geographically diverse.[^rfc98] It remains to be seen as to when and how this woke stronghold gets broken. It is only a matter of time (even if it takes years) that it disintegrates because, as [DHH wrote](https://world.hey.com/dhh/standing-up-to-golems-c98dd4a8), “_the tide indeed is turning,_” resulting in what [Sriram Krishnan called](https://twitter.com/sriramk/status/1742270488427041105) “_a [[Affective Vibes|vibe]] shift_”.
 
 [^rfc98]: Much of this -- viz.: *"To form the initial team, the founding members will be appointed by Graham at his sole discretion."* and *"The team's focus should be on developing leadership from within, not on bringing in experienced people from outside. This is important to maintaining ideological continuity."* -- [has been publicly admitted](https://github.com/NixOS/rfcs/pull/98#issuecomment-892217196) as part of codifying these implicit processes in [[rfc98|the never-accepted and much-criticized RFC 98]]. 
 
-We can whole-heartedly embrace the tech without also having to embrace the toxic people associated with it. If you are tired of [[woke|wokeism]] in the NixOS core #[[Community|community]], and would like an alternative place, we are building one from the Indian subcontinent – [join our Zulip](https://nixos.zulipchat.com/login/?next=/) for announcements.
+We can whole-heartedly embrace the tech without also having to embrace the toxic people associated with it. If you are tired of [[woke|wokeism]] in the NixOS core [[Community|community]], and would like an alternative place, we are building one from the Indian subcontinent – [join our Zulip](https://nixos.zulipchat.com/login/?next=/) for announcements.
 
 [unlisted]: https://meta.discourse.org/t/the-difference-between-closed-unlisted-and-archived-topics/51238#unlisted-6
 
@@ -154,3 +144,5 @@ We can whole-heartedly embrace the tech without also having to embrace the toxic
 [^mp]: Meredith Patterson, for those that do not know her, is the author of the popular [When Nerds Collide](https://medium.com/@maradydd/when-nerds-collide-31895b01e68c) article.
 
 [^aw]: The simple reason I've put the [[unwoke|unwoke]] link on my various profile pages is to raise awareness among my fellow [hackers](https://en.wikipedia.org/wiki/Hacker_culture) as to how to go about defending [[woke-invasion]] in their communities (especially as such awareness [worked for Grace](https://twitter.com/graceisforyou/status/1386739669866455043)). However, since [[woke|wokeism]] is now largely [dying down](https://world.hey.com/dhh/standing-up-to-golems-c98dd4a8) (except for certain strongholds like the NixOS core community), I have now replaced that link with a link to my new [[coc|Code of Conduct]] (while still retaining the original principles).
+
+[^censor]: By end of the year, 13 comments got silently censored from the [[accountability|accountability]] thread. [Ref](https://twitter.com/sridca/status/1742164804612108372) 
