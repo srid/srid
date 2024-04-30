@@ -1,4 +1,9 @@
 {
+  nixConfig = {
+    extra-substituters = "https://cache.garnix.io";
+    extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
+  };
+
   inputs = {
     emanote.url = "github:srid/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
@@ -11,7 +16,7 @@
       imports = [ inputs.emanote.flakeModule ];
       perSystem = { self', pkgs, system, ... }: {
         emanote.sites."default" = {
-          layers = [ { path = ./.; pathString = "./."; } ];
+          layers = [{ path = ./.; pathString = "./."; }];
           port = 9801;
           prettyUrls = true;
         };
