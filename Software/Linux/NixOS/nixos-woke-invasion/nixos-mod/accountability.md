@@ -1,5 +1,6 @@
 ---
 date: 2023-12-31
+slug: nixos-mod/accountability
 ---
 
 # "Moderation Team Accountability Issues" thread
