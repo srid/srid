@@ -4,7 +4,9 @@ slug: nixos-woke
 
 # NixOS Woke Invasion
 
-#[[woke-invasion|Woke invasion]] of the [[NixOS|NixOS]] #[[Community|community]] can be traced back to as early as [April, 2021](https://github.com/NixOS/nixpkgs/pull/120729#discussion_r621607169). It appears to have reached its zenith in April, 2024 when the corrupt moderation team's shenanigans [reached public eye](https://news.ycombinator.com/item?id=40166912).
+#[[woke-invasion|Woke invasion]] of the [[NixOS|NixOS]] #[[Community|community]] can be traced back to as early as [April, 2021][origin]. It appears to have reached its zenith in April, 2024 when the corrupt moderation team's shenanigans [reached public eye](https://news.ycombinator.com/item?id=40166912).
+
+[origin]: https://github.com/NixOS/nixpkgs/pull/120729#issuecomment-828875838
 
 ## Timeline
 
