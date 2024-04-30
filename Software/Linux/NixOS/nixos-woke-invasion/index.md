@@ -22,3 +22,6 @@ Notable events since Nov, 2023:
 | [2024-04-22](https://twitter.com/sridca/status/1782200842571198962) | Attempt to depose Eelco Dolstra                                                                                                                                    |
 | [2024-04-26](https://news.ycombinator.com/item?id=40204985)         | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes)                                               |
 
+## Evidence of corrupt moderation team
+
+https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md
