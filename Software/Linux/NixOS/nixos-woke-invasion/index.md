@@ -4,7 +4,7 @@ slug: nixos-woke
 
 # NixOS Woke Invasion
 
-#[[woke-invasion|Woke invasion]] of the [[NixOS|NixOS]] #[[Community|community]] can be traced back to as early as [April, 2021][origin]. It appears to have reached its zenith in April, 2024 when the corrupt moderation team's shenanigans [reached public eye](https://news.ycombinator.com/item?id=40166912).
+#[[woke-invasion|Woke invasion]] of the [[NixOS|NixOS]] #[[Community|community]] can be traced back to as early as [April, 2021][origin]. It appears to have reached its zenith in April, 2024 when the woke moderation team's mischieves [reached the public eye](https://news.ycombinator.com/item?id=40166912).
 
 [origin]: https://github.com/NixOS/nixpkgs/pull/120729#issuecomment-828875838
 
@@ -23,6 +23,6 @@ Notable events since Nov, 2023:
 | [2024-04-26](https://news.ycombinator.com/item?id=40204985)         | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes)                                               |
 | [2024-05-01](https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/) | Eelco steps down |
 
-## Evidence of corrupt moderation team
+## Evidence of woke moderation team
 
 https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md
