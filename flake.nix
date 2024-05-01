@@ -15,10 +15,18 @@
       systems = nixpkgs.lib.systems.flakeExposed;
       imports = [ inputs.emanote.flakeModule ];
       perSystem = { self', pkgs, system, ... }: {
-        emanote.sites."default" = {
+        emanote.sites."srid" = {
           layers = [{ path = ./.; pathString = "./."; }];
           port = 9801;
           prettyUrls = true;
+        };
+        apps.default.program = self'.apps.srid.program;
+        packages.default = pkgs.symlinkJoin {
+          name = "srid-static-site";
+          paths = [ self'.packages.srid ];
+          postBuild = ''
+            cp -rv ${self}/.well-known $out/
+          '';
         };
         devShells.default = pkgs.mkShell {
           buildInputs = [ pkgs.nixpkgs-fmt ];
