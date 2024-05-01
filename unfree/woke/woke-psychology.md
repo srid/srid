@@ -26,6 +26,7 @@ Adherents of [[woke]] tend to exhibit certain psychological characteristics in c
 ## General themes 
 
 - [[SNAG]]#
+- [Purity Spiral](https://twitter.com/sridca/status/1785492439454949619)
 - From [How did American “wokeness” jump from elite schools to everyday life?](https://archive.ph/jVOl3#selection-773.0-773.18),
     > In a book entitled “The Coddling of the American Mind”, Mr Lukianoff and a social psychologist, Jonathan Haidt, posit that overprotective parenting in the shadow of the war on terrorism and the great recession led to “safetyism”, a belief that safety, including emotional safety, trumps all other practical and moral concerns. Its bounds grew to require disinviting disfavoured campus speakers (see chart 1), protesting about disagreeable readings and regulating the speech of fellow students.
 - [“The Tendency for Interpersonal Victimhood: The Personality Construct and Its Consequences”](https://gwern.net/doc/psychology/personality/index#gabay-et-al-2020-section)
