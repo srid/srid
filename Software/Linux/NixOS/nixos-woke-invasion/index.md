@@ -21,6 +21,7 @@ Notable events since Nov, 2023:
 | [2024-03-20](https://twitter.com/sridca/status/1771523366983196975) | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism               |
 | [2024-04-22](https://twitter.com/sridca/status/1782200842571198962) | Attempt to depose Eelco Dolstra                                                                                                                                    |
 | [2024-04-26](https://news.ycombinator.com/item?id=40204985)         | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes)                                               |
+| [2024-05-01](https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/) | Eelco steps down |
 
 ## Evidence of corrupt moderation team
 
