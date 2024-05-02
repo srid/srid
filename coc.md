@@ -9,6 +9,7 @@ template:
 
 # Harmlessness Code of Conduct
 
+{#coc}
 ## Code of Conduct
 
 (This document is based on [The Ruby Community Conduct Guideline](https://www.ruby-lang.org/en/conduct/))
@@ -20,15 +21,18 @@ This document provides community guidelines for a safe, respectful, productive, 
 - When interpreting the words and actions of others, participants should always assume good intentions.
 - Behaviour which can be reasonably considered harassment will not be tolerated.
 
+{#apol}
 ## Apolitical Stance
 
 Politics not directly relevant to the project or community should not be discussed or mentioned in project spaces. We are here to enjoy working together on creating software (with [[equity-parity|equity and parity]], regardless of our background or identity) not to push personal politics onto others.[^1]
 
 
+{#affect}
 ## Affective Stance
 
 Ultimately, a "code" of conduct is only a guideline. Participants are encouraged to #[[Harmlessness|become harmless]] (i.e., being sans [[malice]]) in all of their interactions, for it will make such ethics and guidelines utterly redundant.
 
+{#use}
 ## Using this CoC
 
 To use this CoC for your projects, add the following to the top of your `README.md`:
