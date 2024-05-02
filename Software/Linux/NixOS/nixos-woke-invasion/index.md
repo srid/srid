@@ -14,17 +14,34 @@ On May 1st, 2024, the Board decided to delegate powers to an unspecified "commun
 
 Notable events since Nov, 2023:
 
-| Date                                                                | Event                                                                                                                                                              |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [[nixos-mod\|2023-11-14]]                                           | Author gets banned for ideological reasons                                                                                                                         |
-| [2024-01-28](https://twitter.com/sridca/status/1751586790425895377) | Witch-hunt by NixOS moderator Martin Weinelt (hexa) to get the entire [NixOS Asia](https://nixos.asia/en/) domain, as well as Srid, banned from the Lobste.rs site |
-| [2024-02-12](https://twitter.com/sridca/status/1757055395183374667) | Report of the moderators perma-banning David Arnold                                                                                                                |
-| [2024-03-10](https://twitter.com/sridca/status/1766944228129575327) | Continued criticism of the mod team by community members; a NixOS moderator "piegamesde" publicly accuses Srid of being "transphobic"                              |
-| [2024-03-20](https://twitter.com/sridca/status/1771523366983196975) | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism               |
-| [2024-04-22](https://twitter.com/sridca/status/1782200842571198962) | Attempt to depose Eelco Dolstra                                                                                                                                    |
-| [2024-04-26](https://news.ycombinator.com/item?id=40204985)         | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes)                                               |
-| [2024-05-01](https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/) | Eelco steps down |
+| Date                                                                            | Event                                                                                                                                                                           |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[nixos-mod\|2023-11-14]]                                                       | Author gets banned for ideological reasons                                                                                                                                      |
+| [2024-01-28](https://twitter.com/sridca/status/1751586790425895377)             | Witch-hunt by NixOS moderator Martin Weinelt (hexa) to get the entire [NixOS Asia](https://nixos.asia/en/) domain, as well as Srid, banned from the Lobste.rs site              |
+| [2024-02-12](https://twitter.com/sridca/status/1757055395183374667)             | Report of the moderators perma-banning David Arnold                                                                                                                             |
+| [2024-03-10](https://twitter.com/sridca/status/1766944228129575327)             | Continued criticism of the mod team by community members; a NixOS moderator "piegamesde" publicly accuses Srid of being "transphobic"                                           |
+| [2024-03-20](https://twitter.com/sridca/status/1771523366983196975)             | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism                            |
+| [2024-04-22](https://twitter.com/sridca/status/1782200842571198962)             | Attempt to depose Eelco Dolstra                                                                                                                                                 |
+| [2024-04-26](https://news.ycombinator.com/item?id=40204985)                     | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes); moderators begin resigning (see below)                    |
+| [2024-05-01](https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/) | Eelco steps down                                                                                                                                                                |
+| [2024-5-01](https://github.com/NixOS/foundation/pull/142)                       | [Zulip](https://nixpkgs.zulipchat.com/) is chosen for governence discussions (allowing banned members with *"extreme prejudice"* and threat of permaban *"[if] they blow it""*) |
 
-## Evidence of woke moderation team
+{#moderation}
+## Moderation team
+
+{#mod-evidence}
+### Evidence of woke moderation
 
 https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md
+
+### Resignation
+
+Just a few hours after the PR for RFC 175 was opened, several moderators begin resigning:
+
+| Date                                                                                                   | Name                        |
+| ------------------------------------------------------------------------------------------------------ | --------------------------- |
+| [2024-04-26](https://old.reddit.com/r/NixOS/comments/1cfv8vo/moderation_nogo_zones/l1v9fhl/?context=3) | Ryan Mulligan               |
+| [2024-04-28](https://discourse.nixos.org/t/taking-a-step-back/44243)                                   | piegames                    |
+| [2024-05-01](https://discourse.nixos.org/t/resigning-from-the-moderation-team/44607)                   | rhendric (Ryan Hendrickson) |
+
+As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only moderators.
