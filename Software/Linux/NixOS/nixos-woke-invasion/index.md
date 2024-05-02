@@ -47,7 +47,7 @@ Just a few hours after the PR for RFC 175 was opened, several moderators began t
 As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only moderators.
 
 {#ca}
-### Will there be a woke constituent assembly?
+## Will there be a woke constituent assembly?
 
 >[!note] WIP
 >These are rough notes of events until I have the time to flesh things out.
