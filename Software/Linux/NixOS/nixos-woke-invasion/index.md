@@ -54,3 +54,4 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 
 - Preemptive squashing of dissenting opinions: https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25
 - Allowing safetyism-based silencing & banning: https://github.com/NixOS/foundation/pull/144#discussion_r1588136289
+  - cf. shlevy <-> zimbatm [on Matrix](https://matrix.to/#/!VyoUhyWvlhSpFWWxHL:matrix.org/$P7-nlgSP0QVA7W6qPPUZddmnXxRYW5d67EVfjKO-RiQ?via=nixos.org&via=matrix.org&via=nixos.dev)
