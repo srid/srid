@@ -36,7 +36,7 @@ https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md
 
 ### Resignation
 
-Just a few hours after the PR for RFC 175 was opened, several moderators begin resigning:
+Just a few hours after the PR for RFC 175 was opened, several moderators began to resign from the team:
 
 | Date                                                                                                   | Name                        |
 | ------------------------------------------------------------------------------------------------------ | --------------------------- |
