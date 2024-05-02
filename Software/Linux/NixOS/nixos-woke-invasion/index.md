@@ -45,3 +45,12 @@ Just a few hours after the PR for RFC 175 was opened, several moderators began t
 | [2024-05-01](https://discourse.nixos.org/t/resigning-from-the-moderation-team/44607)                   | rhendric (Ryan Hendrickson) |
 
 As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only moderators.
+
+{#ca}
+### Attempts to corrupt the constituent assembly
+
+>[!note] WIP
+>These are rough notes until I have the time to flesh things out.
+
+- Preemptive squashing of dissenting opinions: https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25
+- Allowing safetyism-based silencing & banning: https://github.com/NixOS/foundation/pull/144#discussion_r1588136289
