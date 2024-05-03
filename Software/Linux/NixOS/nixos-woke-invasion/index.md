@@ -60,3 +60,4 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - infinisil has so far been quite sensible.
   - RaitoBezarius is woke.
   - [endocrimes](https://toot.cat/@endocrimes) has liked several of woke comments on Discourse/GitHub, but it remains to be seen what this person's actions will be.
+  - [ ] Update this list based on the moderators list in https://github.com/NixOS/foundation/issues/143 and the final group
