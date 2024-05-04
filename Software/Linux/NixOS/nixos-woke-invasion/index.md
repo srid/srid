@@ -61,3 +61,5 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - RaitoBezarius is woke.
   - [endocrimes](https://toot.cat/@endocrimes) has liked several of woke comments on Discourse/GitHub, but it remains to be seen what this person's actions will be.
   - [ ] Update this list based on the moderators list in https://github.com/NixOS/foundation/issues/143 and the final group
+- Zulip topis of interest
+  - [constitutional assembly > Selection criteria: marginalized groups](https://nixpkgs.zulipchat.com/#narrow/stream/435937-constitutional-assembly/topic/Selection.20criteria.3A.20marginalized.20groups)
