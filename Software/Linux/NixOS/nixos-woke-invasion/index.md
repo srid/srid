@@ -63,3 +63,4 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - [ ] Update this list based on the moderators list in https://github.com/NixOS/foundation/issues/143 and the final group
 - Zulip topis of interest
   - [constitutional assembly > Selection criteria: marginalized groups](https://nixpkgs.zulipchat.com/#narrow/stream/435937-constitutional-assembly/topic/Selection.20criteria.3A.20marginalized.20groups)
+    - several call for anonymous polls
