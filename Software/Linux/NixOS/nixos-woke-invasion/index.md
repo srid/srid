@@ -65,4 +65,4 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - lassulus (unknown yet)
 - Zulip topis of interest
   - [constitutional assembly > Selection criteria: marginalized groups](https://nixpkgs.zulipchat.com/#narrow/stream/435937-constitutional-assembly/topic/Selection.20criteria.3A.20marginalized.20groups)
-    - several call for anonymous polls
+  - [governance > Fundamental Principles](https://nixpkgs.zulipchat.com/#narrow/stream/435724-governance/topic/Fundamental.20Principles)
