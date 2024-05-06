@@ -56,11 +56,13 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Preemptive squashing of dissenting opinions: https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25
 - Allowing safetyism-based silencing & banning: https://github.com/NixOS/foundation/pull/144#discussion_r1588136289
   - cf. shlevy <-> zimbatm [on Matrix](https://matrix.to/#/!VyoUhyWvlhSpFWWxHL:matrix.org/$P7-nlgSP0QVA7W6qPPUZddmnXxRYW5d67EVfjKO-RiQ?via=nixos.org&via=matrix.org&via=nixos.dev)
-- 3 Europeans (no surprise there) so far have been chosen to moderate the Zulip: https://github.com/NixOS/foundation/pull/144#issuecomment-2091819630
+- 6 Europeans (no surprise there) so far have been chosen to moderate the Zulip: https://github.com/NixOS/foundation/pull/144#issuecomment-2091819630
   - infinisil has so far been quite sensible.
   - RaitoBezarius is woke.
+  - hexa is woke.
+  - Janik is woke
   - [endocrimes](https://toot.cat/@endocrimes) has liked several of woke comments on Discourse/GitHub, but it remains to be seen what this person's actions will be.
-  - [ ] Update this list based on the moderators list in https://github.com/NixOS/foundation/issues/143 and the final group
+  - lassulus (unknown yet)
 - Zulip topis of interest
   - [constitutional assembly > Selection criteria: marginalized groups](https://nixpkgs.zulipchat.com/#narrow/stream/435937-constitutional-assembly/topic/Selection.20criteria.3A.20marginalized.20groups)
     - several call for anonymous polls
