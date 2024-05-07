@@ -24,7 +24,7 @@ I could be like this forever.
 {#ms}
 ## 'Microsoft PCE'
 
-A report of an [[PCE]] (may well be an [[EE]]) I had back in 2008 or 2009 while working for Microsoft in Vancouver
+A report of a [[PCE]] (may well be an [[EE]]) I had back in 2008 or 2009 while working for Microsoft in Vancouver
 
 :::{.text-sm .italic .px-4}
 tldr; despite doing the most boring job imaginable, I slipped into a state of mind where I thoroughly enjoyed the “mental machinery” behind the very activity of the so-called boring work. There was also sensuosity, particularly in the visual and tactile field.
