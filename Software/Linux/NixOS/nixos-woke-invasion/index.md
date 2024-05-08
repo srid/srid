@@ -57,7 +57,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Allowing safetyism-based silencing & banning: https://github.com/NixOS/foundation/pull/144#discussion_r1588136289
   - cf. shlevy <-> zimbatm [on Matrix](https://matrix.to/#/!VyoUhyWvlhSpFWWxHL:matrix.org/$P7-nlgSP0QVA7W6qPPUZddmnXxRYW5d67EVfjKO-RiQ?via=nixos.org&via=matrix.org&via=nixos.dev)
 - 6 Europeans (no surprise there) so far have been chosen to moderate the Zulip: https://github.com/NixOS/foundation/pull/144#issuecomment-2091819630
-  - infinisil has so far been quite sensible.
+  - infinisil was quite sensible, until to the point of ceding to banning Shea Levy (see below)
   - RaitoBezarius is woke.
   - hexa is woke.
   - Janik is woke
