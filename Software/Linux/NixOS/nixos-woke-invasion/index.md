@@ -66,3 +66,6 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Zulip topis of interest
   - [constitutional assembly > Selection criteria: marginalized groups](https://nixpkgs.zulipchat.com/#narrow/stream/435937-constitutional-assembly/topic/Selection.20criteria.3A.20marginalized.20groups)
   - [governance > Fundamental Principles](https://nixpkgs.zulipchat.com/#narrow/stream/435724-governance/topic/Fundamental.20Principles)
+- Shea Levy got banned (infinisil folded to the rest of the moderators)
+  - https://old.reddit.com/r/NixOS/comments/1cndnyw/broken_promises_the_nix_governance_discussions/
+  - https://old.reddit.com/r/NixOS/comments/1cn60v1/shea_levy_has_been_suspended_from_the_governance/
