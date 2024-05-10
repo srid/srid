@@ -2,11 +2,11 @@
 slug: serious
 ---
 
-http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-happy2.htm
-
 **RESPONDENT:** _I understand what you are saying. But I still fail to grasp why (and how you can say) that ‘physical death’ is essential for being happy and harmless (as you haven’t died but still are happy and harmless)._
 
 **RICHARD:** It is the very fact of physical [[Death|death]] – everybody alive today on this planet will eventually be dead – which ensures [[Felicity and Innocuity|happiness and harmlessness]] ... if everything alive today were to all-of-a-sudden endure forever then everything [[It doesn't really matter|would matter]] in the long-term (everything would be of enduring importance (in this ultimate sense) and, therefore, life would be **a serious business**.
+
+http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-happy2.htm
 
 \*
 
