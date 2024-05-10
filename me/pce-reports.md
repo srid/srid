@@ -1,5 +1,10 @@
 ---
 slug: pce-reports
+template:
+  sidebar:
+    enable: false
+  toc:
+    enable: false
 ---
 
 # PCE reports
