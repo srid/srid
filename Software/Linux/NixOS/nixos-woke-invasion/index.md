@@ -69,7 +69,9 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Shea Levy got banned (infinisil folded to the rest of the moderators)
   - https://old.reddit.com/r/NixOS/comments/1cndnyw/broken_promises_the_nix_governance_discussions/
   - https://old.reddit.com/r/NixOS/comments/1cn60v1/shea_levy_has_been_suspended_from_the_governance/
+  - https://old.reddit.com/r/NixOS/comments/1cqic4w/report_on_nixos_governance_discussions/
 - Assembly applications open https://old.reddit.com/r/NixOS/comments/1cojgjs/applications_for_nixos_constitutional_assembly/
   - 2/7 "marginalized" (ie., woke)
   - 2/7 external consultants (DEI consultants?)
-  - At the worst case, 4 can override the 3, formally establishing the woke invasion 
+  - At the worst case, 4 can override the 3, formally establishing the woke invasion
+- Assembly announced: https://old.reddit.com/r/NixOS/comments/1ct3tdb/nixos_foundation_board_constitutional_assembly/
