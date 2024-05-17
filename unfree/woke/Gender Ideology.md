@@ -2,7 +2,7 @@
 slug: gender
 ---
 
-[The Formation and Persistence of Social Identity](http://actualfreedom.com.au/an/various/persistentsocialidentity.htm):
+[The Formation and Persistence of Social Identity](http://actualfreedom.com.au/an/various/persistentsocialidentity.htm) arguably provides the best synopsis on this ideology:
 
 > This sexualised gender-[[Identity|identity]] became socio-politicised when ‘gender feminism’ and ‘[[woke|identity politics]]’ in particular gained traction due to clamorous ‘anti-discrimination’ vocalists and vociferous ‘equalitarian’ activists stridently cashing in on their minoritarian victimology socio-politico influence and its resultant lobbying pressure [..]
 
