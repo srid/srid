@@ -3,13 +3,11 @@ slug: niche
 date: 2021-05-31
 ---
 
-The quality of a social network goes down as it grows in size to represent the larger public. This happens merely as a result of the network now representing the "median" of the human condition. The median is of average quality. It represents the [[unfree|orthodox]], boring and conventional.
+The quality of a social network tends to decline as it grows to encompass a larger portion of the general public. This is because the network starts to reflect the "median" of the human condition, which is typically of average quality. The median represents the [[unfree|orthodox]], mundane, and conventional aspects of society.
 
-In contrast, progress happens in [outliers](https://www.youtube.com/watch?v=dGDbpg1nG8Y). Humanity could not have been progressing towards betterment without the at-that-point-in-time fringe-heterodox thinking normally associated with creativity.
+In contrast, progress occurs among the [outliers](https://www.youtube.com/watch?v=dGDbpg1nG8Y). Humanity could not have been progressing towards betterment without the at-that-point-in-time fringe-heterodox thinking normally associated with creativity.
 
-This explains why social media was interesting in its beginning years, but have gotten increasingly constrictive (due to [[censorship|censorship]]) and of average quality in the current times.
-
-[censorship]: https://reclaimthenet.org/
+This explains why social media was captivating in its early years but has become increasingly restrictive and of average quality over time, largely due to [[censorship|censorship]].
 
 The core problem here is the _monolithic_ nature of these social networks, not their size per se. The solution is [decentralization][vitalik],[^uk] making it impossible for there to be a large monolithic network thus discouraging any form of _universal_ group-think, for there will be no such universal group.
 
@@ -18,6 +16,7 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
 ## Decentralized networks to look forward to
 
 - Matrix: https://arewep2pyet.com/
+- Nostr: https://nostr.com/
 
 ## See also
 
