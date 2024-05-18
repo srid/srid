@@ -5,7 +5,7 @@ order: 9999
 
 # Humanity Orthodox
 
-Although we are increasingly becoming secular (via allowing individualism to increasingly emerge), religiosity and tribalism are still part of being a human:
+Although we are increasingly becoming secular (via allowing individualism to increasingly emerge), religiosity and tribalism are still part of being a human. A sample of such group-think are provided in the below list:
 
 ```query
 path:./*
