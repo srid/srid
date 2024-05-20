@@ -76,3 +76,4 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - At the worst case, 4 can override the 3, formally establishing the woke invasion
 - Assembly announced: https://old.reddit.com/r/NixOS/comments/1ct3tdb/nixos_foundation_board_constitutional_assembly/
   - delroth publicly accusing Shea Levy of being 'fascist' https://mastodon.delroth.net/@delroth/112450680035780629
+- https://x.com/sridca/status/1792321271608328487
