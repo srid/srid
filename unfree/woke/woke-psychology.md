@@ -68,6 +68,7 @@ Adherents of [[woke]] tend to exhibit certain psychological characteristics in c
     
     Also: https://corinnacohn.substack.com/p/the-world-should-not-need-kiwi-farms
 - [Abigail Shrier on Gen Z's Anxiety Problem and Why Therapy May Not Be the Solution](https://www.youtube.com/watch?v=z72hgYk-5iI) (via [dhh](https://twitter.com/dhh/status/1765923882543042665))
+- Psychopathy? https://old.reddit.com/r/NixOS/comments/1curmzm/acceptance_threshold_for_any_project_event_or/l4u95dr/?context=3
 
 ## Meta / Related
 
