@@ -61,8 +61,8 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - RaitoBezarius is woke.
   - hexa is woke.
   - Janik is woke
-  - [endocrimes](https://toot.cat/@endocrimes) is woke
-  - lassulus (unknown yet; either playing along or woke)
+  - [endocrimes](https://toot.cat/@endocrimes) is woke (responsible for banning Shea)
+  - lassulus (unknown yet; but did relay the spurious message justifying Jon's ban)
 - Zulip topis of interest
   - [constitutional assembly > Selection criteria: marginalized groups](https://nixpkgs.zulipchat.com/#narrow/stream/435937-constitutional-assembly/topic/Selection.20criteria.3A.20marginalized.20groups)
   - [governance > Fundamental Principles](https://nixpkgs.zulipchat.com/#narrow/stream/435724-governance/topic/Fundamental.20Principles)
@@ -71,9 +71,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - https://old.reddit.com/r/NixOS/comments/1cn60v1/shea_levy_has_been_suspended_from_the_governance/
   - https://old.reddit.com/r/NixOS/comments/1cqic4w/report_on_nixos_governance_discussions/
 - Assembly applications open https://old.reddit.com/r/NixOS/comments/1cojgjs/applications_for_nixos_constitutional_assembly/
-  - 2/7 "marginalized" (ie., woke)
-  - 2/7 external consultants (DEI consultants?)
-  - At the worst case, 4 can override the 3, formally establishing the woke invasion
+  - several months before their work is done, and the results can be appraised.
 - Assembly announced: https://old.reddit.com/r/NixOS/comments/1ct3tdb/nixos_foundation_board_constitutional_assembly/
   - delroth publicly accusing Shea Levy of being 'fascist' https://mastodon.delroth.net/@delroth/112450680035780629
 - Someone's calling out of recent (biased) mod actions https://x.com/sridca/status/1792321271608328487
