@@ -71,7 +71,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - https://old.reddit.com/r/NixOS/comments/1cn60v1/shea_levy_has_been_suspended_from_the_governance/
   - https://old.reddit.com/r/NixOS/comments/1cqic4w/report_on_nixos_governance_discussions/
 - Assembly applications open https://old.reddit.com/r/NixOS/comments/1cojgjs/applications_for_nixos_constitutional_assembly/
-  - several months before their work is done, and the results can be appraised.
 - Assembly announced: https://old.reddit.com/r/NixOS/comments/1ct3tdb/nixos_foundation_board_constitutional_assembly/
-  - delroth publicly accusing Shea Levy of being 'fascist' https://mastodon.delroth.net/@delroth/112450680035780629
+  - several months before their work is done, and the results can be appraised.
+- delroth publicly accusing Shea Levy of being 'fascist' https://mastodon.delroth.net/@delroth/112450680035780629
 - Someone's calling out of recent (biased) mod actions https://x.com/sridca/status/1792321271608328487
