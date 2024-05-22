@@ -19,7 +19,7 @@ Or for a conspiratorial summary,
 
 > This is overtly political and has nothing to do with being "nice" or "empathetic". The corporations have inadvertently made an arrangement with [[crt|critical theory]] leftists to transform society into a capitalist monopoly on top, and socialism on the bottom. That's the deal.
 >
-> It's been dubbed "Woke Capitalism" ([https://www.youtube.com/watch?v=Vog7Wn1WGRM](https://www.youtube.com/watch?v=Vog7Wn1WGRM)), where the managerial class has reached a compromise in which they get to keep and - through being appointed as stewards of the political movement - _gain_ power, while activists of the movement get the transformation they demand.
+> It's been dubbed ["Woke Capitalism"](https://www.youtube.com/watch?v=Vog7Wn1WGRM), where the managerial class has reached a compromise in which they get to keep and - through being appointed as stewards of the political movement - _gain_ power, while activists of the movement get the transformation they demand.
 >
 > This particular warning in Google Docs is just that. It's Google managing the changes in society that certain activists want, in order to maintain corporate power. Changes like this will keep being added (as we should know by now) while our social structures change into something comparable to a social credit system. These changes are promoted by manufactured social pressures and financial incentives from large investment banks and so are implemented by any company that wishes to grow while under public scrutiny.
 >
