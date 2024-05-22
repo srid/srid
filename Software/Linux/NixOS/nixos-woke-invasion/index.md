@@ -4,7 +4,7 @@ slug: nixos-woke
 
 # NixOS Woke Invasion
 
-#[[woke-invasion|Woke invasion]] of the [[NixOS|NixOS]] #[[Community|community]] can be traced back to as early as [April, 2021][origin]. It appears to have reached its zenith in April, 2024 when the woke moderation team's mischieves [reached the public eye](https://news.ycombinator.com/item?id=40166912).
+#[[woke-invasion|Woke invasion]] of the [[NixOS|NixOS]] #[[Community|community]] can be traced back to as early as [April, 2021][origin]. It appears to have reached its zenith in April, 2024 when the woke moderation team's mischiefs [reached the public eye](https://news.ycombinator.com/item?id=40166912).
 
 On May 1st, 2024, the Board decided to delegate powers to an unspecified "community" (see "Eelco steps down" below), however it remains to be seen as to what exactly this will engender.
 
