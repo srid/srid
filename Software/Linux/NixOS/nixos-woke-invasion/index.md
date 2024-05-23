@@ -46,11 +46,14 @@ Just a few hours after the PR for RFC 175 was opened, several moderators began t
 
 As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only moderators.
 
+
 {#ca}
 ## Will there be a woke constituent assembly?
 
 >[!warning] WIP
 >This is just a rough log of events; move along. A coherent report will be written once the assembly has done its job.
+
+:::{class="text-xs opacity-30 hover:opacity-100"}
 
 - Self-professed manipulator joepie91 (Sven Slootweg) is involved from beginning
 - Preemptive squashing of dissenting opinions: https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25
@@ -78,3 +81,5 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Calls to drop r/NixOS from nixos webpages; samueldr banning individuals from the wiki for political reasons: https://x.com/sridca/status/1793489723882664111
     - https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/
     - sock-puppets of woke users trying to worsen the drama, e.g.: https://old.reddit.com/user/Prudent_Confidence14
+
+:::
