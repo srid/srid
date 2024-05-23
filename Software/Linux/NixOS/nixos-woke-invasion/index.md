@@ -75,5 +75,5 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - several months before their work is done, and the results can be appraised.
 - delroth publicly accusing Shea Levy of being 'fascist' https://mastodon.delroth.net/@delroth/112450680035780629
 - Someone's calling out of recent (biased) mod actions https://x.com/sridca/status/1792321271608328487
-- samueldr banning individuals from the wiki for political reasons: https://x.com/sridca/status/1793489723882664111
+- Calls to drop r/NixOS from nixos webpages; samueldr banning individuals from the wiki for political reasons: https://x.com/sridca/status/1793489723882664111
     - https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/
