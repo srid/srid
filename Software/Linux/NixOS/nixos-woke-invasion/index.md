@@ -50,7 +50,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 ## Will there be a woke constituent assembly?
 
 >[!warning] WIP
->These are rough notes of events until I have the time to flesh things out.
+>This is just a rough log of events; move along. A coherent report will be written once the assembly has done its job.
 
 - Self-professed manipulator joepie91 (Sven Slootweg) is involved from beginning
 - Preemptive squashing of dissenting opinions: https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25
