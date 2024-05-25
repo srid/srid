@@ -42,6 +42,6 @@ To use this CoC for your projects, add the following to the top of your `README.
 ```
 
 
-[^1]: The recent years have been seeing a #[[unwoke|decline]] in toxic [[woke|woke]] politics in tech spaces, which wokeness goes directly against the meritocratic and (actually[^2]) inclusive nature of those spaces. Any resurgence of attempts at [[woke-invasion|reversing this decline]] will not be tolerated, and the people involved will be asked to stop or leave, for the benefit of the rest of the community members.
+[^1]: The recent years have been seeing a #[[unwoke|decline]] in toxic [[woke|sinistral statist ideological]] politics in tech spaces, which ideology goes directly against the meritocratic and (actually[^2]) inclusive nature of those spaces. Any resurgence of attempts at [[woke-invasion|reversing this decline]] will not be tolerated, and the people involved will be asked to stop or leave, for the benefit of the rest of the community members.
 
 [^2]: *actually*, as opposed to being a virtue signal or a [[Luxury beliefs|luxury belief]] only.
