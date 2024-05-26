@@ -9,7 +9,7 @@ slug: nixos-woke
 On May 1st, 2024, the Board decided to delegate powers to an unspecified "community" (see "Eelco steps down" below), however it remains to be seen as to what exactly this will engender.
 
 [origin1]: https://discourse.nixos.org/t/nursing-a-thriving-community/12742
-[origin2]: https://github.com/NixOS/nixpkgs/pull/120729#issuecomment-828875838
+[origin2]: https://github.com/NixOS/nixpkgs/pull/120729#discussion_r621116027
 
 
 ## Timeline
