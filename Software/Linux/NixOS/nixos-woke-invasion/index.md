@@ -85,3 +85,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
     - sock-puppets of woke users trying to worsen the drama, e.g.: `https://old.reddit.com/user/Prudent_Confidence14`
 
 :::
+
+## External Links
+
+- [themotte.org discussion](https://www.themotte.org/post/994/smallscale-question-sunday-for-may-5/209672?sort=top#context)
