@@ -22,7 +22,7 @@ Himalaya, but unused: https://github.com/srid/nixos-config/blob/master/home/hima
 
 ## Motivation
 
-- Get acquainted with CLI editing and workflows.
+- Get in touch with the delightfully old [hacker mentality](https://en.wikipedia.org/wiki/Hacker_ethic) of living in the command-line.
 - Why neovim?
   - VSCode can be sluggish. 
   - Hack editor extensions in Haskell (see [nvim-hs](https://hackage.haskell.org/package/nvim-hs))
