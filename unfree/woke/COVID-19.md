@@ -24,3 +24,6 @@ From [Understanding pandemic-emergent personality & behavioral psychopathology](
 [![[govern.webp]]](https://old.reddit.com/r/TheMotte/comments/v5v1mw/i_remain_unvaccinated_what_are_the_reasons_at/ibdqvvq/?context=2){.w-64}
 ::: 
 
+## News
+
+- June, 2024: [Covid vaccines may have helped fuel rise in excess deaths](https://archive.is/FX5OV)
