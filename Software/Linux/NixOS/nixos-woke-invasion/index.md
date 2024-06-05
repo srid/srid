@@ -83,7 +83,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Calls to drop r/NixOS from nixos webpages; samueldr banning individuals from the wiki for political reasons: https://x.com/sridca/status/1793489723882664111
     - https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/
     - sock-puppets of woke users trying to worsen the drama, e.g.: `https://old.reddit.com/user/Prudent_Confidence14`
-- Jun 4: zimbatm removes Srid from nix-system org (also replying to him on X); Srid is banned from nix-community GitHub org on the same day: https://x.com/sridca/status/1798025800798683161
+- Jun 4: zimbatm removes Srid from nix-system org (also replying to him on X) and blocks him on GitHub; Srid is (coincidentally?) banned from nix-community GitHub org on the same day: https://x.com/sridca/status/1798025800798683161
 
 :::
 
