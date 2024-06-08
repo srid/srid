@@ -33,7 +33,7 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
   > 
   > Choosing your audience means choosing who you’re not talking to. Never contort your mission to appease nay-sayers, fence-sitters, and Johnny-come-latelies. They are not your people.
   -- https://www.piratewires.com/p/anduril-comms-strategy-early-days https://twitter.com/sriramk/status/1750558683166093638
-
+- Tyler Cowen: [“I try to stay a bit weird and obscure enough that mostly quite smart people are writing me. If I had too many not smart emails I would feel that I was doing something else wrong with what I’m writing.”](https://www.tonykulesa.com/p/tyler-cowen-is-the-best-curator-of)
 
 
 [vitalik]: https://decrypt.co/53890/parler-vitalik-buterin-ethereum
