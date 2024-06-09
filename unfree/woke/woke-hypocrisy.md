@@ -13,6 +13,7 @@ slug: woke-hypocrisy
     - The author, Eric Kaufmann, has written [an article titled "Diversity for Thee—But Not for Me"](https://www.city-journal.org/article/white-progressives-more-likely-to-flee-diverse-neighborhoods) about this study, [summarizing](https://twitter.com/epkaufm/status/1654443913174818816) it as
         > White Americans with the most anti-Trump accounts move to ZIP codes with the same share of minorities as the most pro-Trump accounts. White progressives are voting differently with their ballots & their feet.
 - Erec Smith (a former diversity trainer): [“if you’re making all that money off of racism, the last thing you want is for racism to go away.”](https://twitter.com/JesseBWatters/status/1696360739450106090)
+- [Friendship Diversity by Education: Less Democrats have friends with diverse political views as they become more educated. Republicans, across education levels, have friends with diverse political views.](https://x.com/TheRabbitHole84/status/1799822243037618207)
 
 ## See also
 
