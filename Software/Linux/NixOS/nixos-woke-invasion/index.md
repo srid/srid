@@ -86,6 +86,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Jun 4: zimbatm removes Srid from nix-system org (also replying to him on X) and blocks him on GitHub; Srid is (coincidentally?) banned from nix-community GitHub org on the same day: https://x.com/sridca/status/1798025800798683161
 - Jun 7: zimbatm [formally announces leaving Foundation](https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644) writing *"I also messed up in many places [..] the worst part was all the conflicts that erupted in the community that I couldn’t address adequately. That was difficult. Many people got hurt emotionally. I’m sorry I failed there."*
 - Jun 10: [Target date, public repo, office hours, interviews](https://discourse.nixos.org/t/target-date-public-repo-office-hours-interviews/46827)
+- Jun 11: After his suspension, [Jon Ringer comments on RFC 175](https://x.com/jonringer117/status/1800644896920945146)
 
 :::
 
