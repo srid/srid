@@ -23,6 +23,7 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
 - Similar ideas
     - [Geeks, MOPs, and sociopaths in subculture evolution](https://meaningness.com/geeks-mops-sociopaths)
     - [The internet wants to be fragmented](https://noahpinion.substack.com/p/the-internet-wants-to-be-fragmented)
+    - - Sriram: [Group chats rule the world](https://sriramk.com/group-chats-rule-the-world) *"Every good group chat has an inverse relationship with size. It is impossible to add new members forever without decreasing quality. Over time, the group decays in quality and I often find groups with >100 members unsustainable. Far below Dunbar’s number, it breaks some human model of intimacy."*
 - [Big Tech censorship likely brought forward decentralized tech](https://reclaimthenet.org/big-tech-censorship-likely-brought-forward-decentralized-tech/)
 - [Social networks: It's worse than you think](https://meta.ath0.com/2020/12/social-notwork/) - *"as the number of messages in the network rises, the quality of those which propagate falls"* (interpreting [this research](https://www.scientificamerican.com/article/information-overload-helps-fake-news-spread-and-social-media-knows-it/))
 - What happened to [Monica Cellio](https://www.cellio.org/stack) is worth reading (here's [a timeline](https://meta.stackexchange.com/a/334417/135122)) to understand some of the fallings at Stack Exchange as the network grew beyond its original niche.
@@ -34,6 +35,7 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
   > Choosing your audience means choosing who you’re not talking to. Never contort your mission to appease nay-sayers, fence-sitters, and Johnny-come-latelies. They are not your people.
   -- https://www.piratewires.com/p/anduril-comms-strategy-early-days https://twitter.com/sriramk/status/1750558683166093638
 - Tyler Cowen: [“I try to stay a bit weird and obscure enough that mostly quite smart people are writing me. If I had too many not smart emails I would feel that I was doing something else wrong with what I’m writing.”](https://www.tonykulesa.com/p/tyler-cowen-is-the-best-curator-of)
+
 
 
 [vitalik]: https://decrypt.co/53890/parler-vitalik-buterin-ethereum
