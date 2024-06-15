@@ -44,6 +44,8 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
     - **xAI**: [Elon Musk Launches X.AI To Fight ChatGPT Woke AI](https://www.forbes.com/sites/martineparis/2023/04/16/elon-musk-launches-xai-to-fight-chatgpt-woke-ai-with-twitter-data/?sh=ae7c73151f82)
 - **Shopify**
   - CEO says calls to ban @libsoftiktok a [bad faith narrative](https://twitter.com/tobi/status/1596440473849274369), and Elon [supports](https://twitter.com/elonmusk/status/1597185759316152320) Toby.
+- Alexandr Wang at **Scale**:
+  > There is a mistaken belief that meritocracy somehow conflicts with diversity. I strongly disagree. No group has a monopoly on excellence. A hiring process based on merit will naturally yield a variety of backgrounds, perspectives, and ideas. Achieving this requires casting a wide net for talent and then objectively selecting the best, without bias in any direction. We will not pick winners and losers based on someone being the “right” or “wrong” race, gender, and so on. It should be needless to say, and yet it needs saying: doing so would be racist and sexist, not to mention illegal. https://x.com/alexandr_wang/status/1801331034916851995
 
 
 {#org-watch}
