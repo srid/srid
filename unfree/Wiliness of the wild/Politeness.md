@@ -41,4 +41,6 @@ From https://news.ycombinator.com/item?id=34746161
 
 - [[Luxury beliefs]] (inasmuch they are a modern status marker)
 - *["Modifying one’s negative feelings toward the other by coating them with positive feelings may fool some people for some of the time. Usually, however, one is only fooling oneself, because the positive is born out of the negative."](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-aggression.htm)*
-- [Dutch directness / bespreekbaarheid](https://twitter.com/sridca/status/1730312976450699643)
+- Cultural
+  - [Dutch directness / bespreekbaarheid](https://twitter.com/sridca/status/1730312976450699643)
+  - USA: ["East Coast folks are better people even if they aren't as 'nice' as those out West"](https://www.upworthy.com/nice-vs-kind-are-east-coast-people-better-than-west-coast-rp6) (via [HN](https://news.ycombinator.com/item?id=40696801))
