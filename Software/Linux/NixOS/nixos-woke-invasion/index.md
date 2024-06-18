@@ -87,6 +87,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Jun 7: zimbatm [formally announces leaving Foundation](https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644) writing *"I also messed up in many places [..] the worst part was all the conflicts that erupted in the community that I couldn’t address adequately. That was difficult. Many people got hurt emotionally. I’m sorry I failed there."*
 - Jun 10: [Target date, public repo, office hours, interviews](https://discourse.nixos.org/t/target-date-public-repo-office-hours-interviews/46827)
 - Jun 11: After his suspension, [Jon Ringer comments on RFC 175](https://x.com/jonringer117/status/1800644896920945146)
+- Jun 17: (word of mouth) Ron apparently is the only one running the Board (Théophane silently quit)
 
 :::
 
