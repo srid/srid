@@ -88,7 +88,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Jun 10: [Target date, public repo, office hours, interviews](https://discourse.nixos.org/t/target-date-public-repo-office-hours-interviews/46827)
 - Jun 11: After his suspension, [Jon Ringer comments on RFC 175](https://x.com/jonringer117/status/1800644896920945146)
 - Jun 17: (word of mouth) Ron apparently is the only one running the Board (Théophane silently quit)
-- Jun 19: Jon Ringer's request to restore commit access (which was removed when he was suspended) gets brigaded by woke mob https://github.com/NixOS/nixpkgs/issues/50105#issuecomment-2179462978
+- Jun 19: Jon Ringer's request to restore commit access (which was removed when he was suspended) gets brigaded by woke mob https://x.com/sridca/status/1803545277284143252
 
 :::
 
