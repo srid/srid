@@ -89,6 +89,10 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Jun 11: After his suspension, [Jon Ringer comments on RFC 175](https://x.com/jonringer117/status/1800644896920945146)
 - Jun 17: (word of mouth) Ron apparently is the only one running the Board (Théophane silently quit)
 - Jun 19: Jon Ringer's request to restore commit access (which was removed when he was suspended) gets brigaded by woke mob https://x.com/sridca/status/1803545277284143252
+    - wokies threaten to quit if Jon is not banned gain.
+    - Domen gets threatened by Jade ([comment link](https://old.reddit.com/r/NixOS/comments/1dku0l0/i_must_note_rnixos_is_a_moderation_free_zone/?cache-bust=1718978771090))
+    - Jon gets his commit bit back, but not yet Tim
+    - samuel [ragequits](https://discourse.nixos.org/t/maintainers-drop-samueldr-321436/47354)
 
 :::
 
