@@ -95,6 +95,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
     - samuel [ragequits](https://discourse.nixos.org/t/maintainers-drop-samueldr-321436/47354) and engages in sabotoge by deleting several packages from `nixpkgs`
 - June 21:
   - Jon is permabanned https://x.com/sridca/status/1804188339244843120
+    - https://old.reddit.com/r/NixOS/comments/1dloahg/constitutional_assembly_statement_on_jon_ringer/
   - r/nixos [reportedly](https://x.com/_DavSanchez/status/1804187182770311552) begins to get moderated by unknown users (mods list is private and hidden) with posts being hidden or removed.
     - On the same day, [Lassulus](https://old.reddit.com/user/Lassulus) (the new mod and CA member) [resurrects](https://old.reddit.com/r/NixOS/comments/1dl5rxe/list_of_open_source_games_and_their_status_on/l9mm01p/?context=3) his reddit account which had been inactive for 6 years
     - Unclear if Domen played a role: https://x.com/sridca/status/1804506753876299924
