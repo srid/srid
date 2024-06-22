@@ -99,6 +99,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - r/nixos [reportedly](https://x.com/_DavSanchez/status/1804187182770311552) begins to get moderated by unknown users (mods list is private and hidden) with posts being hidden or removed.
     - On the same day, [Lassulus](https://old.reddit.com/user/Lassulus) (the new mod and CA member) [resurrects](https://old.reddit.com/r/NixOS/comments/1dl5rxe/list_of_open_source_games_and_their_status_on/l9mm01p/?context=3) his reddit account which had been inactive for 6 years
     - Unclear if Domen played a role: https://x.com/sridca/status/1804506753876299924
+  - Domen ragequits in giving commit access, because mod action wasn't not taken on his attacker (welcome to the club), Jade: https://github.com/NixOS/nixpkgs/issues/50105#issuecomment-2183067965
   - Ongoing vandalism on nixos.wiki as well as impersonation by wokies (links to be added)
 - Jun 22: Following Jon's ban, Hexa talking "purge" https://x.com/sridca/status/1804533789760037221
 :::
