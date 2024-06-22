@@ -93,7 +93,9 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
     - Domen gets threatened by Jade ([comment link](https://old.reddit.com/r/NixOS/comments/1dku0l0/i_must_note_rnixos_is_a_moderation_free_zone/?cache-bust=1718978771090))
     - Jon gets his commit bit back, but not yet Tim
     - samuel [ragequits](https://discourse.nixos.org/t/maintainers-drop-samueldr-321436/47354) and engages in sabotoge by deleting several packages from `nixpkgs`
-- June 21: Jon is permabanned https://x.com/sridca/status/1804188339244843120
+- June 21:
+  - Jon is permabanned https://x.com/sridca/status/1804188339244843120
+  - r/nixos reportedly begins to get moderated by unknown users (mods list is private and hidden) with posts being hidden.
 
 :::
 
