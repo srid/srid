@@ -48,6 +48,15 @@ Just a few hours after the PR for RFC 175 was opened, several moderators began t
 
 As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only moderators.
 
+{#boardgg}
+#### Board members leaving
+
+| Date | Name |
+| -- | -- |
+| [2024-04-30](https://discourse.nixos.org/t/nixos-foundation-board-giving-power-to-the-community/44552) | Eelco Dolstra |
+| [2024-03-11](https://x.com/sridca/status/1767171520428728645) | Domen Kozar |
+| [2024-06-07](https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644) | Jonas Chevalier |
+| [2024-06-28](https://discourse.nixos.org/t/time-to-step-down/47835) | Théophane Hufschmitt |
 
 {#ca}
 ## Will the constituent assembly perpetuate or end wokeism?
@@ -103,6 +112,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - Ongoing vandalism on nixos.wiki as well as impersonation by wokies (links to be added)
 - Jun 22: Following Jon's ban, Hexa talking "purge" https://x.com/sridca/status/1804533789760037221
 - Jun 27: spamming of github repos to switch away from unofficial wiki: https://github.com/NixOS/nixos-wiki-infra/issues/105
+- Jun 28: Another board member, Théophane Hufschmitt, steps down writing *"I have also been deeply hurt by some behaviours, when people considered that pushing for their own idea of a successful community was worth spreading hate, defamation, fear and exclusion, or by the (too recurrent) thinking that one’s own agenda was more important than honesty, truth, and care for the others."*: https://discourse.nixos.org/t/time-to-step-down/47835
 :::
 
 ## External Links
