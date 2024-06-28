@@ -36,7 +36,7 @@ Notable events since Nov, 2023:
 
 https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md
 
-### Resignation
+## Resignations
 
 Just a few hours after the PR for RFC 175 was opened, several moderators began to resign from the team:
 
@@ -49,7 +49,7 @@ Just a few hours after the PR for RFC 175 was opened, several moderators began t
 As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only moderators.
 
 {#boardgg}
-#### Board members leaving
+### Board members leaving
 
 | Date | Name |
 | -- | -- |
