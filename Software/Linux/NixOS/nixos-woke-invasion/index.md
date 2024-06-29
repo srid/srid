@@ -116,6 +116,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Jun 27: spamming of github repos to switch away from unofficial wiki: https://github.com/NixOS/nixos-wiki-infra/issues/105
 - Jun 28: Another board member, Théophane Hufschmitt, steps down writing *"I have also been deeply hurt by some behaviours, when people considered that pushing for their own idea of a successful community was worth spreading hate, defamation, fear and exclusion, or by the (too recurrent) thinking that one’s own agenda was more important than honesty, truth, and care for the others."*: https://discourse.nixos.org/t/time-to-step-down/47835
     - This leaves Ron as the only board member: https://x.com/sridca/status/1806706500234039792
+- Jun 29: Domen and Graham fight out the blame game, while Domen continues to talk freely while utterly failing in leadership actions: https://x.com/sridca/status/1807063291132309905 & https://x.com/grhmc/status/1806997486621405227
 :::
 
 ## External Links
