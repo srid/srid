@@ -40,6 +40,7 @@ From https://news.ycombinator.com/item?id=34746161
 ## See also
 
 - [[Luxury beliefs]] (inasmuch they are a modern status marker)
+- [[Wiliness of the wild]] (what drives the sophistication factor)
 - *["Modifying one’s negative feelings toward the other by coating them with positive feelings may fool some people for some of the time. Usually, however, one is only fooling oneself, because the positive is born out of the negative."](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-aggression.htm)*
 - Cultural
   - [Dutch directness / bespreekbaarheid](https://twitter.com/sridca/status/1730312976450699643)
