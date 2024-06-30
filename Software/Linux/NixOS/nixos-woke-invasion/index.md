@@ -113,6 +113,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - Domen ragequits in giving commit access, because mod action wasn't not taken on his attacker (welcome to the club), Jade: https://github.com/NixOS/nixpkgs/issues/50105#issuecomment-2183067965
   - Ongoing vandalism on nixos.wiki as well as impersonation by wokies (links to be added)
 - Jun 22: Following Jon's ban, Hexa talking "purge" https://x.com/sridca/status/1804533789760037221
+  - In response to Srid's post, Hexa reveals himself as an antifa on the same day, https://x.com/sridca/status/1807516430260113904
 - Jun 27: spamming of github repos to switch away from unofficial wiki: https://github.com/NixOS/nixos-wiki-infra/issues/105
 - Jun 28: Another board member, Théophane Hufschmitt, steps down writing *"I have also been deeply hurt by some behaviours, when people considered that pushing for their own idea of a successful community was worth spreading hate, defamation, fear and exclusion, or by the (too recurrent) thinking that one’s own agenda was more important than honesty, truth, and care for the others."*: https://discourse.nixos.org/t/time-to-step-down/47835
     - This leaves Ron as the only board member: https://x.com/sridca/status/1806706500234039792
