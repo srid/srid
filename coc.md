@@ -38,7 +38,7 @@ Ultimately, a "code" of conduct is only a guideline. Participants are encouraged
 To use this CoC for your projects, add the following to the top of your `README.md`:
 
 ```markdown
-[![Harmelessness Code of Conduct](https://img.shields.io/badge/harmless-8A2BE2)](https://srid.ca/coc "This project follows the 'Harmlessness Code of Conduct'")
+[![Harmlessness Code of Conduct](https://img.shields.io/badge/harmless-8A2BE2)](https://srid.ca/coc "This project follows the 'Harmlessness Code of Conduct'")
 ```
 
 
