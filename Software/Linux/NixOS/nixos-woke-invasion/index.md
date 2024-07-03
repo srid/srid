@@ -68,6 +68,8 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 
 :::{class="text-xs opacity-30 hover:opacity-100"}
 
+### May
+
 - Self-professed manipulator joepie91 (Sven Slootweg) is involved from beginning
 - Preemptive squashing of dissenting opinions: https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25
 - Allowing safetyism-based silencing & banning: https://github.com/NixOS/foundation/pull/144#discussion_r1588136289
@@ -94,6 +96,9 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Calls to drop r/NixOS from nixos webpages; samueldr banning individuals from the wiki for political reasons: https://x.com/sridca/status/1793489723882664111
     - https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/
     - sock-puppets of woke users trying to worsen the drama, e.g.: `https://old.reddit.com/user/Prudent_Confidence14`
+
+### June
+
 - Jun 4: zimbatm removes Srid from nix-system org (also replying to him on X) and blocks him on GitHub; Srid is (coincidentally?) banned from nix-community GitHub org on the same day: https://x.com/sridca/status/1798025800798683161
 - Jun 7: zimbatm [formally announces leaving Foundation](https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644) writing *"I also messed up in many places [..] the worst part was all the conflicts that erupted in the community that I couldn’t address adequately. That was difficult. Many people got hurt emotionally. I’m sorry I failed there."*
 - Jun 10: [Target date, public repo, office hours, interviews](https://discourse.nixos.org/t/target-date-public-repo-office-hours-interviews/46827)
