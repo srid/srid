@@ -122,7 +122,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Jul 1: Infinisil concedes what went wrong, and promises to do better by collaborating with Jon; further woke fallout (more ragequits): https://x.com/sridca/status/1807842730132795653
   - More ragequits follow: https://old.reddit.com/r/NixOS/comments/1dtqlga/maintainers_exodus_over_recent_events/
 - Jul 3: First media report on the core issue (political activism): https://old.reddit.com/r/NixOS/comments/1dul0nw/nixos_commits_purge_of_nazi_contributors_forces/ which gets censored on Discourse https://x.com/sridca/status/1808577121465303149
-- Jul 3: Sometimes recently (in the last 3 weeks), Jonas blocks Srid from entire GitHub organization of his consultancy (Numtime): https://x.com/sridca/status/1808605343674450157 
+- Jul 3: Sometimes recently (in the last 3 weeks), Jonas blocks Srid from entire GitHub organization of his consultancy (Numtide): https://x.com/sridca/status/1808605343674450157 
 :::
 
 ## External Links
