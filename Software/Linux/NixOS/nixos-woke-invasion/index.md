@@ -64,7 +64,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 ## Will the constituent assembly perpetuate or end wokeism?
 
 >[!warning] WIP
->This is just a rough skeleton log of events as they continue to unfold. A coherent report will be written once the assembly has done its (increasingly-becoming-evident as pathetic) job.
+>This is just a rough skeleton log of events as they continue to unfold. A coherent report will be written once the assembly has done its job.
 
 :::{class="text-xs opacity-30 hover:opacity-100"}
 
