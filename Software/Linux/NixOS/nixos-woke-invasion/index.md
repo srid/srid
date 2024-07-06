@@ -128,7 +128,8 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - More ragequits follow: https://old.reddit.com/r/NixOS/comments/1dtqlga/maintainers_exodus_over_recent_events/
 - Jul 3: First media report on the core issue (political activism): https://old.reddit.com/r/NixOS/comments/1dul0nw/nixos_commits_purge_of_nazi_contributors_forces/ which gets censored on Discourse https://x.com/sridca/status/1808577121465303149
   - The reddit submittion gets shadowlisted in a day (by Domen?)
-- Jul 3: Sometime recently (in the last 3 weeks), Jonas Chevalier blocks Srid from the entire GitHub organization of his consultancy (Numtide): https://x.com/sridca/status/1808605343674450157 
+- Jul 3: Sometime recently (in the last 3 weeks), Jonas Chevalier blocks Srid from the entire GitHub organization of his consultancy (Numtide): https://x.com/sridca/status/1808605343674450157
+- Jul 6: Tim [Political Bikeshedding: NixOS Edition](https://nrd.sh/blog/nixos-policy-breakdown/)
 :::
 
 ## External Links
