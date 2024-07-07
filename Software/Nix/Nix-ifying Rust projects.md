@@ -4,9 +4,8 @@ tags: [blog/rust/learning]
 date: 2021-04-08
 ---
 
-:::{.page-note}
-**NOTE**: This article is somewhat out of date. But https://nixos.asia/en/rust is kept up to date.
-:::
+>[!note]
+> This article is somewhat out of date. But https://nixos.asia/en/rust is kept up to date. You will also want to checkout the template, https://github.com/srid/rust-nix-template
 
 While most would be satisfied with `rustup`, I wanted to use #[[Nix]] for writing any new project in #[[Rust]] - especially as I see the value of Nix, and I already use [[NixOS]]. It took a bit of digging to evaluate the existing options, and come up with a template Nix setup for new projects. 
 
