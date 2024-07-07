@@ -16,7 +16,7 @@ It is time we humans (i.e., each of us individuals) let go of the idea of "human
 ## Decentralized networks to look forward to
 
 - Matrix: https://arewep2pyet.com/
-- Nostr: https://nostr.com/
+- [[Nostr]]
 
 ## See also
 
