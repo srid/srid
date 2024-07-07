@@ -24,8 +24,11 @@ take for granted---otherwise, what's the point? Hypertrophy \(beyond the necessa
 desired strength\) however is an anti-goal; It is fatuous to carry all that
 extra muscle around and then ravenously eat more to maintain it.
 
+> [!tip] Kohei Uchimura
 > When strength, not hypertrophy, is the goal you maintain a lean physique.
-Like Kohei Uchimura - who, incidentally, [eats one meal a day](https://www.youtube.com/watch?v=JKXOBxcNF3E).
+> Like the gymnast [Kohei Uchimura](https://en.wikipedia.org/wiki/K%C5%8Dhei_Uchimura) - who, incidentally, [eats one meal a day][kohei-omad].
+
+[kohei-omad]: https://youtu.be/aEv3n44vPVQ?si=Jzi0Y6efjttSVmyF&t=118
 
 As a result of doing calisthenics I noticed that "normal" activities like walking, 
 standing, carrying, etc. became *more efficient*, in that my posture had dramatically improved
