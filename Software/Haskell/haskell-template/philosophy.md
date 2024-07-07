@@ -12,11 +12,13 @@ I originally created [[haskell-template]] to serve as the base template for my H
 - [[haskell-language-server]] (because IDE integration from the get-go is invaluable)
 - [[ghcid]] (for instant auto-recompilation and re-running of the program)
 - [[hlint]]
-- [[treefmt]] (to keep the project tree autoformatted)
+- [treefmt] (to keep the project tree autoformatted)
   - `fourmolu`[^ormolu] for Haskell
   - `cabal-fmt` for Cabal
   - `nixpkgs-fmt` for Nix
 - [mission-control](https://github.com/Platonic-Systems/mission-control) for devshell scripts and discovery
+
+[treefmt]: https://nixos.asia/en/treefmt
 
 [^ormolu]: I used to use `ormolu` but switched to `fourmolu` because ormolu is annoying in some cases (like it [throwing away multiline haddock comments](https://github.com/tweag/ormolu/issues/641))
 

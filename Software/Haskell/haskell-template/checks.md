@@ -7,7 +7,9 @@ slug: haskell-template/checks
 [[haskell-template]] provides a builtin list of flake checks:
 
 - [[haskell-language-server]] check (`hlsCheck.enable = true`) from [[haskell-flake]]: Tests that HLS continues to work with the project.
-- [[treefmt]] check: Tests that the project is autoformatted and does not have any hlint warnings.
+- [treefmt] check: Tests that the project is autoformatted and does not have any hlint warnings.
+
+[treefmt]: https://nixos.asia/en/treefmt
 
 ## `nix flake check` and IFD
 
