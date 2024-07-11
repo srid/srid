@@ -96,6 +96,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Calls to drop r/NixOS from nixos webpages; samueldr banning individuals from the wiki for political reasons: https://x.com/sridca/status/1793489723882664111
     - https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/
     - sock-puppets of woke users trying to worsen the drama, e.g.: `https://old.reddit.com/user/Prudent_Confidence14`
+- May 30: Raito dogpiles on nix 2.18 -> 2.22 PR: https://github.com/NixOS/nixpkgs/pull/315262
 
 ### June
 
