@@ -13,7 +13,7 @@ My NixOS config: https://github.com/srid/nixos-config
 Join the NixOS Asia Zulip: https://nixos.asia/en
 
 >[!warning]
-> I _do not_ recommend the official avenues, like Matrix & Discourse ([[nixos-woke-invasion|why not?]])
+> I _do not_ recommend the official avenues: Matrix & Discourse ([[nixos-woke-invasion|why not?]])
 
 ## Pages
 
