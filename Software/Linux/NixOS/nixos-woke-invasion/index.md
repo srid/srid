@@ -97,7 +97,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
     - https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/
     - sock-puppets of woke users trying to worsen the drama, e.g.: `https://old.reddit.com/user/Prudent_Confidence14`
 - May 30: Raito dogpiles on nix 2.18 -> 2.22 PR: https://github.com/NixOS/nixpkgs/pull/315262
-- May 30: Irene claims to be "closely associated" with the NixOS drama (despite not publicly engaging with it, AFAICT): https://lobste.rs/s/vyprdq/nixos_24_05_released#c_pxv3sb
+- May 30: Irene claims to be "closely associated" with the NixOS drama (despite not publicly engaging with it outside of signing the save-nix-together letter): https://lobste.rs/s/vyprdq/nixos_24_05_released#c_pxv3sb
 
 ### June
 
