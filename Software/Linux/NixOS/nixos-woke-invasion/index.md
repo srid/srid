@@ -135,6 +135,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - The reddit submittion gets shadowlisted in a day (by Domen?)
 - Jul 3: Sometime recently (in the last 3 weeks), Jonas Chevalier blocks Srid from the entire GitHub organization of his consultancy (Numtide): https://x.com/sridca/status/1808605343674450157
 - Jul 6: Tim [Political Bikeshedding: NixOS Edition](https://nrd.sh/blog/nixos-policy-breakdown/)
+- Jul 11: [Lix post gets flagged on HN](https://news.ycombinator.com/item?id=40932996)
 :::
 
 ## External Links
