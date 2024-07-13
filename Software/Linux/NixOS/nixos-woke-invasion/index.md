@@ -137,6 +137,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Jul 3: Sometime recently (in the last 3 weeks), Jonas Chevalier blocks Srid from the entire GitHub organization of his consultancy (Numtide): https://x.com/sridca/status/1808605343674450157
 - Jul 6: Tim [Political Bikeshedding: NixOS Edition](https://nrd.sh/blog/nixos-policy-breakdown/)
 - Jul 11: [Lix post gets flagged on HN](https://news.ycombinator.com/item?id=40932996); their bigotted beliefs get called out [elsewhere](https://lobste.rs/s/1hrh4a/announcing_lix_2_90_vanilla_ice_cream#c_gyzzmv) (albeit on a community which itself is moderated by a bigotted group)
+- Jul 13: /r/NixOS begins testing AI to assist with moderation (based on NixOS CoC): https://old.reddit.com/r/NixOS/comments/1e27pxq/automated_moderation/
 :::
 
 ## External Links
