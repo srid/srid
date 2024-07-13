@@ -28,3 +28,7 @@ A disgruntled vocal minority belong to the church of anti-[[Blockchain|crypto]],
 ## Popular heretics
 
 - [David Heinemeier Hansson](https://world.hey.com/dhh/i-was-wrong-we-need-crypto-587ccb03), a Danish programmer living in [less woke](https://twitter.com/dhh/status/1456142961008418817) Denmark. Created the Ruby framework, Ruby on Rails.
+
+## Related
+
+- > I have never particularly cared for the world of crypto. As Zvi Mowshowitz says, it’s been a hive of scum and villainy for most of its existence, with plenty of idealists and well-meaning honest people and plenty more scumbags getting rich and running exchanges. If someone wants to play the role of perennial industry critic, I can think of many worse spaces to do so than crypto.  https://www.tracingwoodgrains.com/p/reliable-sources-how-wikipedia-admin
