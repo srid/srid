@@ -43,3 +43,4 @@ As you peruse the revision history and Talk pages, keep an eye out for these edi
 - [User:Alexbrn](https://twitter.com/BrettWooldridge/status/1412768382936502277) on medical science (and [[COVID-19]] related) articles
 - [User:Simonm223](https://thepostmillennial.com/quillette-is-at-the-centre-of-a-wikipedia-edit-war/): on political articles
 - [User:ජපස](https://www.velikovsky.info/joshua-p-schroeder/) (aka. Joshua P. Schroeder, formerly User:ScienceApologist) on [[Modern Physics]]
+- [David Gerard](https://www.tracingwoodgrains.com/p/reliable-sources-how-wikipedia-admin)
