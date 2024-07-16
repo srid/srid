@@ -57,6 +57,8 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
   - [Paul Graham](https://twitter.com/paulg/status/1781329523155357914)
   - [DHH](https://twitter.com/dhh/status/1781299786236432737)
   - [*"google concludes (they promise!) a decade of unhinged activism"*](https://www.piratewires.com/p/mission-accomplished)
+- **Microsoft**:
+  - July 2024: [Microsoft laid off a DEI team, and its lead wrote an internal email blasting how DEI is 'no longer business critical'](https://archive.is/p5Ewk)
 
 {#ideologies}
 #### Ideologies to watch out for
