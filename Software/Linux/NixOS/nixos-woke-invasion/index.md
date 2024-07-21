@@ -138,6 +138,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Jul 6: Tim [Political Bikeshedding: NixOS Edition](https://nrd.sh/blog/nixos-policy-breakdown/)
 - Jul 11: [Lix post gets flagged on HN](https://news.ycombinator.com/item?id=40932996); their bigotted beliefs get called out [elsewhere](https://lobste.rs/s/1hrh4a/announcing_lix_2_90_vanilla_ice_cream#c_gyzzmv) (albeit on a community which itself is moderated by a bigotted group)
 - Jul 13: /r/NixOS begins testing AI to assist with moderation (based on NixOS CoC): https://old.reddit.com/r/NixOS/comments/1e27pxq/automated_moderation/
+  - Jul 21: And approaching failure: https://old.reddit.com/r/NixOS/comments/1e885up/an_argument_against_the_use_of_watchdog_chatbot/
 - July 18: Ron posts _"[The board] is now smaller than it once was. I would love to extend a call to action for those interested in helping out."_ https://discourse.nixos.org/t/call-to-action-interim-volunteers-for-nixos-foundation-efforts/49269
 :::
 
