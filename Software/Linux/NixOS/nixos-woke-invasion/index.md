@@ -119,6 +119,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
     - Unclear if Domen played a role: https://x.com/sridca/status/1804506753876299924
   - Domen ragequits in giving commit access, because mod action wasn't not taken on his attacker (welcome to the club), Jade: https://github.com/NixOS/nixpkgs/issues/50105#issuecomment-2183067965
   - Ongoing vandalism on nixos.wiki as well as impersonation by wokies (links to be added)
+    - Jul 22: Impersonation of Srid on an entirely unrelated community: https://x.com/sridca/status/1815545168982130707
 - Jun 22: Following Jon's ban, Hexa talking "purge" https://x.com/sridca/status/1804533789760037221
   - In response to Srid's post, Hexa reveals himself as an antifa on the same day, https://x.com/sridca/status/1807516430260113904
 - Jun 27: spamming of github repos to switch away from unofficial wiki: https://github.com/NixOS/nixos-wiki-infra/issues/105
