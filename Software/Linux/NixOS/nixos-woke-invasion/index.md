@@ -119,7 +119,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
     - Unclear if Domen played a role: https://x.com/sridca/status/1804506753876299924
   - Domen ragequits in giving commit access, because mod action wasn't not taken on his attacker (welcome to the club), Jade: https://github.com/NixOS/nixpkgs/issues/50105#issuecomment-2183067965
   - Ongoing vandalism on nixos.wiki as well as impersonation by wokies (links to be added)
-    - Jul 27: Impersonal of Shivaraj on nixos.wiki purloining this very page: https://old.reddit.com/r/NixOS/comments/1ed5gbc/the_nixos_conflict_in_under_5_minutes/lf70qh1/?context=3
+    - Jul 27: Impersonation of Shivaraj on nixos.wiki purloining this very page: https://old.reddit.com/r/NixOS/comments/1ed5gbc/the_nixos_conflict_in_under_5_minutes/lf70qh1/?context=3
     - Jul 22: Impersonation of Srid on an entirely unrelated community: https://x.com/sridca/status/1815545168982130707
 - Jun 22: Following Jon's ban, Hexa talking "purge" https://x.com/sridca/status/1804533789760037221
   - In response to Srid's post, Hexa reveals himself as an antifa on the same day, https://x.com/sridca/status/1807516430260113904
