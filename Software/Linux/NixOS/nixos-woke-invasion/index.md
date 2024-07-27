@@ -141,6 +141,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Jul 13: /r/NixOS begins testing AI to assist with moderation (based on NixOS CoC): https://old.reddit.com/r/NixOS/comments/1e27pxq/automated_moderation/
   - Jul 21: And approaching failure: https://old.reddit.com/r/NixOS/comments/1e885up/an_argument_against_the_use_of_watchdog_chatbot/
 - July 18: Ron posts _"[The board] is now smaller than it once was. I would love to extend a call to action for those interested in helping out."_ https://discourse.nixos.org/t/call-to-action-interim-volunteers-for-nixos-foundation-efforts/49269
+- July 5 (discovered on Jul 26): Chris posts [The NixOS Conflict in Under 5 Minutes](https://x.com/sridca/status/1817028976226791775)
 :::
 
 ## External Links
