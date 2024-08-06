@@ -18,6 +18,7 @@ Wikipedia's *revision history* however is useful in one way -- in [[Unearthing h
 
 ## See also 
 
+- [How the Regime Captured Wikipedia](https://www.piratewires.com/p/how-the-regime-captured-wikipedia): inside the cultural revolution at wikipedia, which pivoted it from a decentralized database of all the world's knowledge to a top-down social activism and advocacy machine
 - [Inside Wikipedia's leftist bias: socialism pages whitewashed, communist atrocities buried](https://www.foxnews.com/politics/wikipedia-bias-socialism-pages-whitewashed), Feb 18, 2021 ([via](https://mobile.twitter.com/MsMelChen/status/1364642598179139584))
 * [The face of crypto censorship on Wikipedia?](https://decrypt.co/23563/the-face-of-crypto-censorship-on-wikipedia) (See [Charles' tweet](https://twitter.com/IOHK_Charles/status/1242843188466982917))
 * [[Wiliness of the wild|Craftily]] funneling donations to woke causes
