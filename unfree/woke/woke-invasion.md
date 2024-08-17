@@ -46,7 +46,9 @@ Or for a conspiratorial summary,
       - 2024: DHH: [Google's sad ideological capture was exactly what we were trying to avoid](https://world.hey.com/dhh/google-s-sad-ideological-capture-was-exactly-what-we-were-trying-to-avoid-67fad361)
       - 2024: *Multiple former Google employees told The Free Press that the Gemini fiasco stems from a corporate culture that prioritizes the ideology of diversity, equity, and inclusion (DEI) over excellence.* -- [Google’s Woke AI Wasn’t a Mistake. We Know. We Were There.](https://www.thefp.com/p/ex-google-employees-woke-gemini-culture-broken)
   - [**ChatGPT** Goes Woke](https://www.nationalreview.com/corner/chatgpt-goes-woke/)
-  - [An Open Letter to the **Python** Software Foundation](https://news.ycombinator.com/item?id=38542330) (Dec, 2023)
+  - Python
+    - [An Open Letter to the **Python** Software Foundation](https://news.ycombinator.com/item?id=38542330) (Dec, 2023)
+    - [Core Python developer suspended for three months](https://x.com/sridca/status/1824485530601443759) (Aug, 2024)
   - Lesser known groups
     - [[nixos-woke-invasion]] 
     - [SourceHut bans crypto and blockchain projects](https://news.ycombinator.com/item?id=33403780) (cf. [[anti-crypto]])
