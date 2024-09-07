@@ -3,7 +3,7 @@ slug: niche
 date: 2021-05-31
 ---
 
-The quality of a social network tends to decline as it grows to encompass a larger portion of the general public. This is because the network starts to reflect the "median" of the human condition, which is typically of average quality. The median represents the [[unfree|orthodox]], mundane, and conventional aspects of society.
+The quality of a social network (or a [[Community|community]] more generally) tends to decline as it grows to encompass a larger portion of the general public. This is because the network starts to reflect the "median" of the human condition, which is typically of average quality. The median represents the [[unfree|orthodox]], mundane, and conventional aspects of society.
 
 In contrast, progress occurs among the [outliers](https://www.youtube.com/watch?v=dGDbpg1nG8Y). Humanity could not have been progressing towards betterment without the at-that-point-in-time fringe-heterodox thinking normally associated with creativity.
 
