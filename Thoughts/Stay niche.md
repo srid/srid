@@ -9,11 +9,13 @@ In contrast, progress occurs among the [outliers](https://www.youtube.com/watch?
 
 This explains why social media was captivating in its early years but has become increasingly restrictive and of average quality over time, largely due to [[censorship|censorship]].
 
-The core problem here is the _monolithic_ nature of these social networks, not their size per se. The solution is [decentralization][vitalik],[^uk] making it impossible for there to be a large monolithic network thus discouraging any form of _universal_ group-think, for there will be no such universal group.
+## Decentralization
+
+The core problem here is the _monolithic_ nature of these social networks, not their size per se. One solution is [decentralization][vitalik],[^uk] making it impossible for there to be a large monolithic network thus discouraging any form of _universal_ group-think, for there will be no such universal group.
 
 It is time we humans (i.e., each of us individuals) let go of the idea of "humanity" (i.e., as a "group"); decentralized social networks today have a fantastic opportunity to play their technological role in it.
 
-## Decentralized networks to look forward to
+Decentralized networks to look forward to:
 
 - Matrix: https://arewep2pyet.com/
 - [[Nostr]]
