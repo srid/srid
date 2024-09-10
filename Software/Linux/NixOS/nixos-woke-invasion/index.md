@@ -148,6 +148,13 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 
 - Aug 1: NCA publishes Nix Community Values draft for feedback. Ryan comments publicly. https://old.reddit.com/r/NixOS/comments/1eh8s7i/nix_community_values_draft_for_feedback_before/
 
+### Sept
+
+- Sep 10: Nix 2.24 vulnerability drama, mostly from Lix people
+  - https://news.ycombinator.com/item?id=41492994
+  - https://lobste.rs/s/ixb3v7/nix_2_24_is_vulnerable_remote_privilege
+  - Causing a Nix team member (Robert) to [object](https://functional.cafe/@roberth/113109319874108408) & then [apologize](https://functional.cafe/@roberth/113113241888848304)
+
 :::
 
 ## External Links
