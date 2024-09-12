@@ -154,6 +154,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - https://news.ycombinator.com/item?id=41492994
   - https://lobste.rs/s/ixb3v7/nix_2_24_is_vulnerable_remote_privilege
   - Causing a Nix team member (Robert) to [object](https://functional.cafe/@roberth/113109319874108408) & then [apologize](https://functional.cafe/@roberth/113113241888848304)
+- Sep 10: [Last call for feedback; Nix Governance Constitution to be finalised on 2024-09-16](https://old.reddit.com/r/NixOS/comments/1fd4bmk/last_call_for_feedback_nix_governance/)
 
 :::
 
