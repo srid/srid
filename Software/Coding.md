@@ -1,5 +1,10 @@
 ---
 slug: coding
+template:
+  sidebar:
+    enable: false
+  toc:
+    enable: false
 ---
 
 # Coding
