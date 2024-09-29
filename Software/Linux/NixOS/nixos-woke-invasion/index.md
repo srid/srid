@@ -156,6 +156,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - Causing a Nix team member (Robert) to [object](https://functional.cafe/@roberth/113109319874108408) & then [apologize](https://functional.cafe/@roberth/113113241888848304)
 - Sep 10: [Last call for feedback; Nix Governance Constitution to be finalised on 2024-09-16](https://old.reddit.com/r/NixOS/comments/1fd4bmk/last_call_for_feedback_nix_governance/)
 - Sep 19: SC election nominees are substantially wokies (which ought to be unsurprising given the political nature of this takeover), as of Sep 19: https://github.com/NixOS/SC-election-2024/pulls?q=is%3Apr+Nominate
+- Sep 29: Evidence of bigoted beliefs among candidates resurface: https://x.com/sridca/status/1840385121578291680
 :::
 
 ## External Links
