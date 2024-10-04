@@ -32,7 +32,10 @@ Let us run a bare Ubuntu container to get started:
 
 ```bash
 # You might first have to run `lxd init` to initialize LXD
-lxc launch ubuntu:23.04 pristine -c security.nesting=true
+#
+# You can run `lxc image list images:` to see availablke images
+#
+lxc launch ubuntu:24.04 pristine -c security.nesting=true
 ```
 
 (Note that `security.nesting` flag is being enabled so that we may be able to install Nix later; you may leave it disabled if you would not be using Nix).
