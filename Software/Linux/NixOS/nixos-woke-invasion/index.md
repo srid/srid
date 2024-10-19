@@ -159,6 +159,10 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Sep 29: Evidence of bigoted beliefs among candidates resurface: https://x.com/sridca/status/1840385121578291680
 :::
 
+### Oct
+
+- Oct 14: Tampering of the voting system and eventual deadline extension: https://old.reddit.com/r/NixOS/comments/1g6s0mc/nix_elections_voting_open_until_20241103/lslmdrs/?context=3
+
 ## External Links
 
 - [themotte.org discussion](https://www.themotte.org/post/994/smallscale-question-sunday-for-may-5/209672?sort=top#context)
