@@ -162,6 +162,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 ### Oct
 
 - Oct 14: Tampering of the voting system and eventual deadline extension: https://old.reddit.com/r/NixOS/comments/1g6s0mc/nix_elections_voting_open_until_20241103/lslmdrs/?context=3
+- Oct 20: Two SC candidates have CoI with the activist fork Lix, https://old.reddit.com/r/NixOS/comments/1g801r9/lix_forking_nixosnixpkgs/
 
 ## External Links
 
