@@ -6,6 +6,8 @@ slug: cli
 
 An ongoing project to get back to a CLI-centric workflow.
 
+**Update** (Oct, 2024): I'm using Hyprland on Thinkpad P14s. https://x.com/sridca/status/1849222477471236268
+
 ## Topics
 
 ### Zellij
@@ -14,7 +16,7 @@ Terminal pane management to emulate VSCode's pane management.
 
 ### Neovim
 
-I use `nixvim`: https://github.com/srid/nixos-config/blob/master/home/neovim.nix
+I use `nixvim`: https://github.com/srid/nixos-config/blob/master/modules/home/all/neovim/default.nix
 
 ### Email
 
