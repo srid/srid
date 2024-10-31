@@ -164,6 +164,8 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Oct 14: Tampering of the voting system and eventual deadline extension: https://old.reddit.com/r/NixOS/comments/1g6s0mc/nix_elections_voting_open_until_20241103/lslmdrs/?context=3
 - Oct 20: Two SC candidates have CoI with the activist fork Lix, https://old.reddit.com/r/NixOS/comments/1g801r9/lix_forking_nixosnixpkgs/
 - Oct 20: A SC candidate demonstrates bigotry openly against a community member: https://x.com/GabriellaG439/status/1850915429050708063
+- Oct 27: Domen ("I won’t be contributing to Nix anymore and will put my efforts into Tvix") [attacks](https://old.reddit.com/r/NixOS/comments/1ge2rkb/domen_i_wont_be_contributing_to_nix_anymore_and/) DetSys; [Graham responds](https://discourse.nixos.org/t/parting-from-the-documentation-team/24900/36) 
+- Oct 30: SC candidate cafkafk getting called out by another (numinit): https://discourse.nixos.org/t/announcing-determinate-nix/54709/120
 
 ## External Links
 
