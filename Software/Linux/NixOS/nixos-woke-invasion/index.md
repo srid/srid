@@ -121,6 +121,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - Ongoing vandalism on nixos.wiki as well as impersonation by wokies (links to be added)
     - Jul 27: Impersonation of Shivaraj on nixos.wiki purloining this very page: https://old.reddit.com/r/NixOS/comments/1ed5gbc/the_nixos_conflict_in_under_5_minutes/lf70qh1/?context=3
     - Jul 22: Impersonation of Srid on an entirely unrelated community: https://x.com/sridca/status/1815545168982130707
+    - Nov 7: "isabelroses" brings up the impersonated page for political gain: https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489/110
 - Jun 22: Following Jon's ban, Hexa talking "purge" https://x.com/sridca/status/1804533789760037221
   - In response to Srid's post, Hexa reveals himself as an antifa on the same day, https://x.com/sridca/status/1807516430260113904
 - Jun 27: spamming of github repos to switch away from unofficial wiki: https://github.com/NixOS/nixos-wiki-infra/issues/105
@@ -166,6 +167,12 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Oct 20: A SC candidate demonstrates bigotry openly against a community member: https://x.com/GabriellaG439/status/1850915429050708063
 - Oct 27: Domen ("I won’t be contributing to Nix anymore and will put my efforts into Tvix") [attacks](https://old.reddit.com/r/NixOS/comments/1ge2rkb/domen_i_wont_be_contributing_to_nix_anymore_and/) DetSys; [Graham responds](https://discourse.nixos.org/t/parting-from-the-documentation-team/24900/36) 
 - Oct 30: SC candidate cafkafk getting called out by another (numinit): https://discourse.nixos.org/t/announcing-determinate-nix/54709/120
+
+### Nov
+
+- The yearly gender ritual:
+  - https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489
+  - https://discourse.nixos.org/t/improving-diversity-in-this-community/55547 
 
 ## External Links
 
