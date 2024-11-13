@@ -11,6 +11,12 @@ Although we are increasingly becoming secular (via allowing individualism to inc
 path:./*
 ```
 
+## Self-help movement
+
+- "How to communicate"
+  - https://x.com/sridca/status/1856846023852802073
+  - https://x.com/sridca/status/1856362134768165092 
+
 ## See also
 
 - For the obverse, where this instinctual-cum-tribalistic circle-jerk plays no part, see [[free]].
