@@ -173,6 +173,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - The yearly gender ritual:
   - https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489
   - https://discourse.nixos.org/t/improving-diversity-in-this-community/55547 
+- [SC kicks off](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_).
 
 ## External Links
 
