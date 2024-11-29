@@ -22,6 +22,10 @@ Here are some examples of [[Naive Optimism|cynicism]] exhibited by non-enthusias
 
 See [here](http://actualfreedom.com.au/sundry/commonobjections/croindex.htm).
 
+> RICHARD: [..] the term ‘cognitive dissonance’ would be better described as a ‘feeling-fed cognitive dissonance’ as it is not just a mental blockage which causes people to be unable to grasp innovative things that are to their own advantage and to fight so hard to retain the existing belief systems which are inimical to their welfare.
+> 
+> It is the strangest of incongruities in regards to human pertinacity that peoples will invent reasons and struggle to maintain a state of affairs that is detrimental to their own advancement ... even those conditions which enslave them.
+
 ## See also
 
 - [Geeks, MOPs, and sociopaths in subculture evolution](https://meaningness.com/geeks-mops-sociopaths)
