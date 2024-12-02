@@ -7,7 +7,7 @@ slug: polite
 Politeness is often seen as counteracting what is known as "impoliteness" in people. Implicit in this duality is an automatic projection of [[malice]] (ie., "*feelings of discomfort, disharmony and even revenge*" referred to below) onto the "impolite" (regardless of actual malice being felt by the latter), while masking of the same if it exists in the "polite" (see the 'ripples' phenomenon in [[SNAG]] for an example).
 
 >[!info] History
-> Politeness tends to be more of a trait in Occidental than Oriental cultures. It originated (and arguably still is) as [a marker of the upper class](https://en.wikipedia.org/w/index.php?title=Politeness&oldid=1073436216#History). See also [Victorian morality](https://en.wikipedia.org/wiki/Victorian_morality).
+> Politeness tends to be more of a trait in Occidental than Oriental cultures. It originated (and arguably still is, in some respects) as [a marker of the upper class](https://en.wikipedia.org/w/index.php?title=Politeness&oldid=1073436216#History). See also [Victorian morality](https://en.wikipedia.org/wiki/Victorian_morality).
 
 This duality is an illusion that many people suffer from. People who are not particularly acting polite (according to whatever cultural norms) are not necessarily "impolite" (aka. "rude"), for they can also be [underpolite](https://www.sciencedirect.com/science/article/pii/S2210831910000032). Unlike impoliteness (with its implicit projected "rudeness"), underpoliteness involves no malice on the underpolite.
 
