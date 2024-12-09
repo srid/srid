@@ -9,9 +9,9 @@ template:
 
 # PCE reports
 
-This page is dedicated to publishing my self-reports of [[PCE]]s and [[EE]]s. 
+This page is dedicated to publishing self-reports of a handful of my [[PCE]]s and [[EE]]s - all of which happened [[Spontaneity|spontaneously]].[^spo]
 
-Both the reports below were not self-induced; they happened [[Spontaneity|spontaneously]]. But it is possible to develop the skill of triggering PCEs at will.
+[^spo]: It is also possible to develop the skill of triggering PCEs at will.
 
 {#voodoo}
 ## Dec 5, 2021
@@ -29,7 +29,7 @@ I could be like this forever.
 {#ms}
 ## 'Microsoft PCE'
 
-A report of a [[PCE]] (may well be an [[EE]]) I had back in 2008 or 2009 while working for Microsoft in Vancouver
+A report of a [[PCE]] I had back in 2008 or 2009 while working for Microsoft in Vancouver
 
 :::{.text-sm .italic .px-4}
 tldr; despite doing the most boring job imaginable, I slipped into a state of mind where I thoroughly enjoyed the “mental machinery” behind the very activity of the so-called boring work. There was also sensuosity, particularly in the visual and tactile field.
