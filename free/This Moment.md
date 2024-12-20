@@ -22,11 +22,13 @@ If this realisation is not thrilling I would like to know what is!
 
 -- http://www.actualfreedom.com.au/richard/listafcorrespondence/listafvineeto.htm
 
-## See also
+---
+
+See also
 
 - [Audio-Taped Dialogue: This Moment Has No Duration](https://actualfreedom.com.au/richard/audiotapeddialogues/thismomenthasnoduration.htm)
 
-## Sub
+## Child pages
 
 ```query
 path:./*
