@@ -26,7 +26,9 @@ Notable events since Nov, 2023:
 | [2024-04-22](https://twitter.com/sridca/status/1782200842571198962)             | Attempt to depose Eelco Dolstra                                                                                                                                                 |
 | [2024-04-26](https://news.ycombinator.com/item?id=40204985)                     | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes); moderators begin resigning (see below)                    |
 | [2024-05-01](https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/) | Eelco steps down                                                                                                                                                                |
-| [2024-5-01](https://github.com/NixOS/foundation/pull/142)                       | [Zulip](https://nixpkgs.zulipchat.com/) is chosen for governence discussions (allowing banned members with *"extreme prejudice"* and threat of permaban *"[if] they blow it""*) |
+| [2024-05-01](https://github.com/NixOS/foundation/pull/142)                       | [Zulip](https://nixpkgs.zulipchat.com/) is chosen for governence discussions (allowing banned members with *"extreme prejudice"* and threat of permaban *"[if] they blow it""*) |
+| [2024-11-08](https://github.com/NixOS/moderation/commits/main/) | RFC 175 authors get permanently banned |
+| [2024-11-21](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) | SC kicks off their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_) |
 
 {#moderation}
 ## Moderation team
@@ -172,7 +174,8 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 
 - The yearly gender ritual:
   - https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489
-  - https://discourse.nixos.org/t/improving-diversity-in-this-community/55547 
+  - https://discourse.nixos.org/t/improving-diversity-in-this-community/55547
+- The rest of RFC 175 authors get permanently banned: [Andreas](https://github.com/NixOS/moderation/commit/a40d73948299c9d622ef6a09bed219b56464bb95), [Tim](https://github.com/NixOS/moderation/commit/4d6ff96b9213d1d6bf704cb57af4f23f4f864f61).
 - [SC kicks off](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_).
 
 ## External Links
