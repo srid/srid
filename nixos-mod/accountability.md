@@ -10,7 +10,9 @@ date: 2023-12-31
 > - Archived version (uncensored): [[accountability-thread.html|Archived Locally]]
 > - Current version (censored): [On Discourse](https://discourse.nixos.org/t/moderation-team-accountability-issues/35482)
 
-Some time during 2023 since [[nixos-mod|the blog post]] was published, a number of comments in the "Moderation Team Accountability Issues" thread got censored[^censor] by the moderators. Fortunately, someone who had archived the original uncensored[^censor] version has provided it to me informing me of the recent censorship; it can be accessed [[accountability-thread.html|here]].
+Some time during 2023 since [[nixos-mod|the blog post]] was published, a number of comments in the "Moderation Team Accountability Issues" thread[^ghi] got censored[^censor] by the moderators. Fortunately, someone who had archived the original uncensored[^censor] version has provided it to me informing me of the recent censorship; it can be accessed [[accountability-thread.html|here]].
+
+[^ghi]: For the GitHub issue that preceded this, see https://github.com/NixOS/moderation/issues/14
 
 Among the [13 deleted comments](https://gist.github.com/srid/58e5bcbe66f16b099411683cce1060d4) is one by the self-professed manipulator[^joemanip], schmuck[^schmuck] and reclusive[^joeloner] Sven Slootweg (joepie91) containing the bizzare accusation that *"srid’s post is a bigoted screed that is exactly the sort of thing written by people who - quite literally - intend to murder us marginalized folks, or wish for others to do so."* as well as a response from Jonathan Ringer (jonringer) calling it out, viz.:
 
