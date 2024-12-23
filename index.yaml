@@ -9,10 +9,9 @@ template:
   uptree:
     enable: true
   sidebar:
-    enable: true
-    collapsed: true
-  breadcrumbs:
     enable: false
+  breadcrumbs:
+    enable: true
   base:
     bodyClass: overflow-y-scroll bg-gray-400
 
