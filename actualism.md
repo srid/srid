@@ -1,4 +1,4 @@
-# Actualism
+# Synopsis of Actualism
 
 >[!info]  About This Page
 > The following description of the actualism [[Actualism Method|method]] & [[Out from control|process]] is based on Srid's **ongoing** understanding which is **still** developing, since May of 2024. Consider them as draft being edited from time to time before a final version is ready and gets published (expected to be around the time Srid becomes free).
