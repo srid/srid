@@ -11,11 +11,12 @@ template:
   sidebar:
     enable: false
   breadcrumbs:
-    enable: true
+    enable: false
   base:
     bodyClass: overflow-y-scroll bg-gray-400
+    containerClass: container mx-auto max-w-screen-lg
 
-  theme: pink
+  theme: green
   iconUrl: static/favicon.jpeg
   urlStrategy: pretty
 
