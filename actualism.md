@@ -3,7 +3,9 @@
 >[!info]  About This Page
 > The following description of the actualism [[Actualism Method|method]] & [[Out from control|process]] is based on Srid's **ongoing** understanding which is **still** developing, since May of 2024. Consider them as draft being edited from time to time before a final version is ready and gets published (expected to be around the time Srid becomes free).
 
-TODO
+Practicing the actualism method is simple: you **enjoy & appreciate this moment of being alive**. Pay particular attention to the "[[This Moment|this moment]]" part. To invite this moment to be experienced will take "clearing the site", by dealing with the many passions and feelings (see [[Social Identity]]) ‘in the way’ of experiencing it. With the more exciting feelings out of the way, fear of sorrow, depression and/or boredom may take their place. Just sit still, appreciate this moment even if it appears ordinary or empty; allow appreciation to expand.
+
+...
 
 ## Relevant posts elsewhere
 
