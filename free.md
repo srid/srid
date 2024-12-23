@@ -18,7 +18,7 @@ Start from [[Actualism Method]] if you wish to get to the nitty-gritty of what t
 > These notes primarily serve the purpose of being a quick reference to the author, and secondarily of providing potentially serendipitous benefits to any non-[[unfree|conforming]] passerbys.
 
 >[!warning] Requires Update
-> These notes may not be always up-to-date. Consult the [Actual Freedom website][AFTweb] for that. The author plans to revamp this part of the site to be in accord with his renewed understanding of the method (as of May, 2024).
+> These notes may not be always up-to-date. Consult the [Actual Freedom website][AFTweb] for that. The author plans to revamp this part of the site to be in accord with his renewed ongoing understanding of the method (see [[actualism]]#).
 
 ```query
 path:./*
