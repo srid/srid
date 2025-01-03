@@ -6,7 +6,7 @@ slug: carnivore-diet
 
 I eat only animal-based foods.[^coffee]
 
-[^coffee]: [[Coffee]] being the delightful exception.
+[^coffee]: [[Coffee]] (when consumed on empty stomach) being the delightful exception.
 
 ![[steak.jpg]]
 
