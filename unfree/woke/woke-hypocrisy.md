@@ -19,4 +19,8 @@ slug: woke-hypocrisy
 
 - [[Luxury beliefs]]
 
+## Related
+
+- In [[nixos-woke-invasion]] context, https://x.com/sridca/status/1877012272012312960
+
 ![image](https://github.com/srid/srid/assets/3998/f222388b-faae-4594-b075-33f824824f3f)
