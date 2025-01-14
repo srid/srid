@@ -35,6 +35,7 @@ Or for a conspiratorial summary,
 - [No One Is Happy About Diversity Efforts at Work](https://news.ycombinator.com/item?id=36571407)
 - Books
   - [The Origins of Woke](https://twitter.com/elonmusk/status/1704994439318372548)
+- [Entryism](https://x.com/ConceptualJames/status/1878474324417417601)
 
 {#conquered}
 ## Woke-infiltrated groups and organizations
