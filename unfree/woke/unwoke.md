@@ -54,6 +54,7 @@ A sample of tech companies successfully extricating themselves out of [[woke-inv
 - **Meta**:
   - Dec 2022: [Meta goes no politics at work (and nobody cares)](https://world.hey.com/dhh/meta-goes-no-politics-at-work-and-nobody-cares-d6409209)
   - Jan 2025: [Meta kills DEI programs](https://www.axios.com/2025/01/10/meta-dei-programs-employees-trump)
+  - Jan 2025: [Meta announces 5% cuts in preparation for 'intense year'](https://news.ycombinator.com/item?id=42700134)
 - **Google**: [Mission First](https://blog.google/inside-google/company-announcements/building-ai-future-april-2024/), Apr 18, 2024: *"ultimately we are a workplace and our policies and expectations are clear: this is a business, and not a place to act in a way that disrupts coworkers or makes them feel unsafe, to attempt to use the company as a personal platform, or to fight over disruptive issues or debate politics."*
   - [Brian Armstrong](https://twitter.com/brian_armstrong/status/1781351372946022459)
   - [Paul Graham](https://twitter.com/paulg/status/1781329523155357914)
