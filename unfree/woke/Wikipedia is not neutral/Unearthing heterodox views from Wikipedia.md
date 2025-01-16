@@ -44,3 +44,4 @@ As you peruse the revision history and Talk pages, keep an eye out for these edi
 - [User:Simonm223](https://thepostmillennial.com/quillette-is-at-the-centre-of-a-wikipedia-edit-war/): on political articles
 - [User:ජපස](https://www.velikovsky.info/joshua-p-schroeder/) (aka. Joshua P. Schroeder, formerly User:ScienceApologist) on [[Modern Physics]]
 - [David Gerard](https://www.tracingwoodgrains.com/p/reliable-sources-how-wikipedia-admin)
+- [User:Psychologist_Guy](https://old.reddit.com/r/moreplatesmoredates/comments/17x8sei/the_wikipedia_page_on_high_protein_diets_has_been/) on veganism / keto / low-carb / carnivore diet articles
