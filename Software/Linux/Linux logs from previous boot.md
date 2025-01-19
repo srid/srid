@@ -32,7 +32,7 @@ This will open `less` in which you may press `GG` to go the end of the logs. Thi
 SYSTEMD_COLORS=1 journalctl -b -1 -k | less +G -r
 ```
 
-Use `j` and `k`, as well as `Ctrl+U` and `Space`, to page through the logs.
+Use <kbd>j</kbd> and <kbd>k</kbd>, as well as <kbd>Ctrl+U</kbd> and <kbd>Space</kbd>, to page through the logs.
 
 [systemd]: https://wiki.archlinux.org/index.php/systemd
 [Journal]: https://wiki.archlinux.org/index.php/Systemd/Journal

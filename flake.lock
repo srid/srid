@@ -64,11 +64,11 @@
         "unionmount": "unionmount"
       },
       "locked": {
-        "lastModified": 1735061220,
-        "narHash": "sha256-ayF46287W+tJeNOa8cJWb7DLasqlIw2x5bJ3CHDrync=",
+        "lastModified": 1737314005,
+        "narHash": "sha256-xLbDOXMw/yzeBoatl7CHKckj0P/w5uRbJPkxDwBSoTY=",
         "owner": "srid",
         "repo": "emanote",
-        "rev": "55c116182b84fd59302e38bb114fc6e7555e408b",
+        "rev": "c0c00664f396d51e529f84a929bbaf119fd28db2",
         "type": "github"
       },
       "original": {
@@ -147,11 +147,11 @@
     "heist-extra": {
       "flake": false,
       "locked": {
-        "lastModified": 1710541479,
-        "narHash": "sha256-9e4U78eutom6D3EJqsCdV8iQxNgYA/pi001r5CZdm0A=",
+        "lastModified": 1737313814,
+        "narHash": "sha256-WCXhs/xhCR4CKBEadQjqqgUb47bLzDY7P7oL5cSgDHc=",
         "owner": "srid",
         "repo": "heist-extra",
-        "rev": "589b7636f620dcdfc0dc07dea720feed1ab3e0fa",
+        "rev": "6f73e000a34b7c054b516b9504b5a7ed08ce6a2d",
         "type": "github"
       },
       "original": {

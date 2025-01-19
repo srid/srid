@@ -32,7 +32,7 @@ The MMark extension will replace this with the actual link to the zettel, along 
 
 ## Searching zettels
 
-Neuron does not officially support this yet, but I have scripts put together using [fzf](https://github.com/junegunn/fzf), [ripgrep](https://github.com/BurntSushi/ripgrep) that will search zettel files by title (or even by content) before opening them. In neovim, I have bound [Ctrl+L](kbd:) to invoke this search to quickly access any of my zettels.
+Neuron does not officially support this yet, but I have scripts put together using [fzf](https://github.com/junegunn/fzf), [ripgrep](https://github.com/BurntSushi/ripgrep) that will search zettel files by title (or even by content) before opening them. In neovim, I have bound <kbd>Ctrl+L</kbd> to invoke this search to quickly access any of my zettels.
 
 ## Creating zettels
 

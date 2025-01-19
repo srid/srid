@@ -38,7 +38,7 @@ $ nix-shell -p ghc
 Hello World
 ```
 
-As you can see, nix-shell dropped us in a shell environment with the "ghc" package installed and activated. This puts `runhaskell` (part of the "ghc" package) in your PATH, running which will compile and run your first Haskell program. When you exit the nix-shell (`Ctrl+D`), `runhaskell` will no longer be in scope, however the "ghc" package will have been cached so that subsequent invocations of `nix-shell -p ghc` would not have to download and install it once again.[^nix]
+As you can see, nix-shell dropped us in a shell environment with the "ghc" package installed and activated. This puts `runhaskell` (part of the "ghc" package) in your PATH, running which will compile and run your first Haskell program. When you exit the nix-shell (<kbd>Ctrl+D</kbd>), `runhaskell` will no longer be in scope, however the "ghc" package will have been cached so that subsequent invocations of `nix-shell -p ghc` would not have to download and install it once again.[^nix]
 
 ### Using library dependencies
 
