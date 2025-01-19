@@ -10,6 +10,8 @@ template:
     enable: true
   sidebar:
     enable: false
+  toc:
+    enable: false
   breadcrumbs:
     enable: false
   base:

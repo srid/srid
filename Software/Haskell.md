@@ -6,7 +6,9 @@ slug: haskell
 
 [^gotcha]: Do be wary of [[Haskell Gotchas]].
 
-My first foray into Haskell was to write fullstack web applications using [[Reflex-FRP]], after having used [[Elm]] prior to that. Nowadays I consider it my go-to language for general application development.
+My first foray into Haskell was to write fullstack web applications using [[Reflex-FRP]], after having used [[Elm]] prior to that. Nowadays I consider it my go-to language for general application development.[^rust]
+
+[^rust]: For anything that needs low-level, [[Rust]] is an option.
 
 [On GitHub](https://github.com/srid) you can find a list of Haskell projects I work on, the notable of which are [[Neuron]], [[Ema]] and [[Emanote]].
 
@@ -32,7 +34,7 @@ Practice
 : Learning anything takes practice, and this is particularly a key for a purely functional language like Haskell. See [Haskell Mentors List](https://willbasky.github.io/Awesome-list-of-Haskell-mentors/) for progressing in learning Haskell by way of contributing to open source projects that you already enjoy using.
 
 Talk / Share
-: Join [FP Slack] to chat with other Haskellers (the Slack also has rooms for other FP languages). If you prefer a forum-like format, post to [StackOverflow \#haskell](https://stackoverflow.com/questions/tagged/haskell), which has been quite helpful in my experience. Read [r/haskell](https://old.reddit.com/r/haskell/) for news. Be wary of other communities.[^wk] If you are interested in hacking on my open source projects, join [this room on Matrix](https://matrix.to/#/#ema:matrix.org) (it is a part of [Awesome-list-of-Haskell-mentors](https://github.com/willbasky/Awesome-list-of-Haskell-mentors)). See [Haskell Planetarium](https://haskell.pl-a.net/) for recent Haskell news & discussions.
+: Join [Haskell Discourse](https://discourse.haskell.org/) to interact with other Haskellers. You may also post to [StackOverflow \#haskell](https://stackoverflow.com/questions/tagged/haskell), which has been quite helpful in my experience. Read [r/haskell](https://old.reddit.com/r/haskell/) for news. Be wary of other communities.[^wk]. See [Haskell Planetarium](https://haskell.pl-a.net/) for recent Haskell news & discussions.
 
 Deepen your Haskell knowledge
 : [[Haskell from the ground up]] (Work in progress)

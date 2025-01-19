@@ -9,6 +9,8 @@ template:
 
 # Coding
 
+WIP
+
 {#guidelines}
 ## Coding Guidelins
 
