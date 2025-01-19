@@ -16,7 +16,9 @@ In early 2013, a medical doctor prescribed me enough antibiotics[^prescription] 
 
 [^prescription]: Minocycline, 100g a day for 30 days--had to stop due to severe side effects. Then another prescription of the same but 50g a day, followed by same side effects. After stopping the second round of antibiotics, within about a week the skin reactions -- 30+ pus-filled inflammatory boils in face, neck and eventually scalp -- started.
 
-I suffered with this condition for over 4 years, and saw plethora of dermatologists \(who knew naught but to prescribe ever more antibiotics[^moreanti]\; one even had me do low-dose Accutane which lead to chronic dry skin). Then, just within two weeks of going on the carnivore diet \(beef, salt and pepper\) my symptoms dramatically reduced (down to about 95%). Over the next years I was to reintroduce several plant foods; and everytime I do, my symptoms would come back in vengeance.
+I suffered with this condition for over 4 years, and saw plethora of dermatologists \(who knew naught but to prescribe ever more antibiotics[^moreanti]\; one even had me do low-dose Accutane which lead to chronic dry skin). Then, just within two weeks of going on the carnivore diet \(beef, salt and pepper\) my symptoms dramatically reduced (down to about 95%[^sul]). Over the next years I was to reintroduce several plant foods; and everytime I do, my symptoms would come back in vengeance.
+
+[^sul]: I had also begun using [[Sulfur Soap]], which I estimate to account for about 20% of it. Carnivore diet, on its own, is not *totally* helpful.
 
 **Takeaway**: Doctors and [nutritionists](https://twitter.com/ifbacongrewont1/status/1322151733326450689) are generally not to be [[Trust|trusted]] blindly, especially when it comes to the topic of antibiotics and diet. Although harbouring no ill-will, most of them[^dtex] can't help but overweeningly[^ow][^bm] trot out what they had been taught (with [bias][pmasondoc]) in medical schools ... and [quackery][q1] and [misinformation][fl] is [not][q3] very [uncommon][q2]. As [one HN commenter](https://news.ycombinator.com/item?id=31711913) puts it:
 
