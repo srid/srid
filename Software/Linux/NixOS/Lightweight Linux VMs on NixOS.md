@@ -24,7 +24,9 @@ On NixOS, you can install LXD by adding `virtualisation.lxd.enable = true;` to y
   };
 ```
 
-You might also want to run `sudo lxd init` to initialize LXD.
+## Initial setup
+
+Run `sudo lxd init` to initialize LXD.
 
 ## Running a Ubuntu container
 
