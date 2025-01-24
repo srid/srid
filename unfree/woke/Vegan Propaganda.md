@@ -2,6 +2,8 @@
 slug: vegan
 ---
 
+# Vegan Indoctrination
+
 Some resources on the pro-plant / anti-meat bias in nutrition:
 
 
