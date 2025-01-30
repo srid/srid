@@ -58,4 +58,3 @@ Or for a conspiratorial summary,
   - 2022 Oct: [**Colleges** that ditched admission tests find it harder to fairly choose students](https://news.ycombinator.com/item?id=33298336)
   - 2024 Jan: [Harvard & Claudine Gay](https://twitter.com/BillAckman/status/1742441534627184760)
 
-[![[grok-woke-invasion.jpeg]]](https://twitter.com/stillgray/status/1721961880128778283)
