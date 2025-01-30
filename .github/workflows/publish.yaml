@@ -27,7 +27,7 @@ jobs:
             substituters = https://cache.garnix.io?priority=41 https://cache.nixos.org/
       - name: Build the website (Nix) 🔧
         run: |
-          nix build -o ./_site
+          nix --accept-flake-config build -o ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
   deploy:
