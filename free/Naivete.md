@@ -25,21 +25,8 @@ RICHARD: Any sense of **naiveté**, no matter how small, is to be encouraged ...
 
 In this context delight is the sensuous experience of the thrill that being a flesh and blood body automatically evokes: the delicious (physical) excitation of the senses ... all the senses tingling with utter enjoyment and exhilaration.
 
-## Evoking naiveté
-
-[From Peter](http://www.actualfreedom.com.au/actualism/peter/list-af/corr58a.htm#18.11.2003),
-
-There is a lot in Richard’s writings that evokes naiveté, yet reading it is one thing but taking the time, and making the effort, to contemplate on what one reads is quite another. This is the work that is up to ‘you’ to do.
-
-I had Richard’s journal 📖 by my bedside 🛏️ and would read a few paragraphs and then lay back and think about it a while or I would take myself off for a walk 🚶 in a favourite place and just sit down and gaze 👀 at the world with soft eyes thinking 🤔 about what I had read, what I had done with my life, what I was doing with my life and what I wanted to do with my life.
-
-I also found it essential to stop beating myself up and start liking myself ❤️, to start to [[Your own best friend|enjoy my own company]] which in turn led me to start being interested in [[Being here now|being here]] 📆, which in turn led to a naïve [[Curiosity-Fascination-Obsession|curiosity]] about life, the universe 🌄 and what it is to be a human being.
-
-I don’t know if that is of use to you but the first is obvious – **read** – and the second is equally important – **contemplate** – and the second will be best done at a time when you feel most relaxed and at ease.
-
-
-## Impacts
-
-http://actualfreedom.com.au/richard/listbcorrespondence/listb32.htm
+---
 
 RICHARD: Getting in touch with one’s in-built naiveté is the first step towards [[Native intelligence|sagacious reasoning]].
+
+http://actualfreedom.com.au/richard/listbcorrespondence/listb32.htm
