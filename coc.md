@@ -11,7 +11,4 @@ template:
 
 # Naiveté ~~Code of Conduct~~ Compass of Mood
 
-[[Naivete|Naively]] be [[Harmlessness|sans]] [[malice]][^ex] in all of your interactions thereby maintaining [[equity-parity|parity]].
-
-[^ex]: Examples of [[malice|malice]] range from being mildly frustrated to being [[woke-invasion|ideologically aggressive]].
-
+PAGE MOVED => https://compass.naivete.me/
