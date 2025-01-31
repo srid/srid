@@ -157,7 +157,6 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 - Sep 10: [Last call for feedback; Nix Governance Constitution to be finalised on 2024-09-16](https://old.reddit.com/r/NixOS/comments/1fd4bmk/last_call_for_feedback_nix_governance/)
 - Sep 19: SC election nominees are substantially wokies (which ought to be unsurprising given the political nature of this takeover), as of Sep 19: https://github.com/NixOS/SC-election-2024/pulls?q=is%3Apr+Nominate
 - Sep 29: Evidence of bigoted beliefs among candidates resurface: https://x.com/sridca/status/1840385121578291680
-:::
 
 ### Oct
 
@@ -174,6 +173,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - https://discourse.nixos.org/t/improving-diversity-in-this-community/55547
 - The rest of RFC 175 authors get permanently banned: [Andreas](https://github.com/NixOS/moderation/commit/a40d73948299c9d622ef6a09bed219b56464bb95), [Tim](https://github.com/NixOS/moderation/commit/4d6ff96b9213d1d6bf704cb57af4f23f4f864f61).
 - [SC kicks off](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_).
+:::
 
 ## External Links
 
