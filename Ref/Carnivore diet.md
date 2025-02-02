@@ -43,7 +43,7 @@ I suffered with this condition for over 4 years, and saw plethora of dermatologi
 
 ## "Isn't it unsafe?"
 
-Contrary to popular belief and health "knowledge" -- promoted by [[Dietary Guidelines Misinformation]] based in part on [[Vegan Propaganda]] - the carnivore diet (especially with offal) provides all the necessary nutrients and is safe. Meat is the only ["nutritionally complete" food](http://www.diagnosisdiet.com/food/meats/), and [some indigenous groups](https://justmeat.co/peoples/) have traditionally eaten an all-meat (or predominantlly animal-based) diet.
+Contrary to popular belief and health "knowledge" -- promoted by [[Dietary Guidelines Misinformation]] based in part on [[Vegan Propaganda]] - the carnivore diet (especially with offal, like [[Liver]]#) provides all the necessary nutrients and is safe. Meat is the only ["nutritionally complete" food](http://www.diagnosisdiet.com/food/meats/), and [some indigenous groups](https://justmeat.co/peoples/) have traditionally eaten an all-meat (or predominantlly animal-based) diet.
 
 One ought to pay lip service to general medical wisdom and any dominant nutrition ideology as they are laced with an [[Vegan Propaganda|anti-meat bias]]# (as well as [[climate-alarmism]]#) using [pseudoscientific nutrition epidemiological studies](https://www.diagnosisdiet.com/epidemilogical-studies/) where, depending on the researcher's nutritional bias, one can establish [_any_ food item to be problematic](https://pubmed.ncbi.nlm.nih.gov/23193004/).
 

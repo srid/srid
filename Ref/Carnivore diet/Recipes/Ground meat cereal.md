@@ -6,8 +6,6 @@ tags: [blog]
 
 # Ground meat "cereal"
 
-**Update(March, 2023)**: I now cook the entire day's of ground meat in a [wok](https://www.youtube.com/@wokwithtak).
-
 A "[[Carnivore diet|carnivore]] cereal" made from duck fat[^butter], ground meat and salt is my typical meal.
 
 [^butter]: Butter is better-tasting if you can tolerate it. 
@@ -42,3 +40,7 @@ I like to add Atlantic **shrimps** (precooked) at the end to give a more interes
 
 
 :::
+
+## See also
+
+- If you want to cook an entire day's worth of ground meat, try a [wok](https://www.youtube.com/@wokwithtak).
