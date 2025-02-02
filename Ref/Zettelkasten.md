@@ -8,6 +8,8 @@ Zettelkasten is a smart note taking system created by a German sociologist, whos
 
 All notes in a Zettelkasten are linear, [atomic and autonomous](https://neuron.zettel.page/atomic), with links created between them, enabling a [heterarchy](https://neuron.zettel.page/heterarchy) to evolve organically, rather than having to preconceive a hierarchy ahead (as is the case with outliners like Workflowy and Dynalist).
 
+For software, see [[Emanote]]#.
+
 ```query
 children:.
 ```
