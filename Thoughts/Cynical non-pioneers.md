@@ -16,7 +16,8 @@ Here are some examples of [[Naive Optimism|cynicism]] exhibited by non-enthusias
 
 - [Getting downvoted](https://old.reddit.com/r/haskell/comments/y6a07e/simple_ghc_stack_for_a_novice/iso56t8/) when recommending [[Nix]] in [[Haskell]] community.
 - Ad hominem accusations of [being "religious" or "bullying" or "smug"](https://news.ycombinator.com/item?id=33433783)[^fp-criticaster] when someone recommends or encourages the use of functional programing (e.g. [[Haskell]]) to them.
-  - https://x.com/Aron_Adler/status/1815873999529992693
+  - _"needless condescension"_ https://x.com/Aron_Adler/status/1815873999529992693
+  - _"superior, enlightened & God's gift to the earth"_ & _"super fucking arrogant"_ (yet also, _"deep & nerded out"_ & _"accept worse conditions / pay"_) https://x.com/sridca/status/1886776431809618411
 
 ### ... [[free|Actualism]]
 
