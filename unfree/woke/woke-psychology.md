@@ -22,6 +22,8 @@ Adherents of [[woke]] tend to exhibit certain psychological characteristics in c
 - ["I feel somewhat resentful that I missed out on a pre-packaged identity/meaning/worldview combo. wake up, open twitter, take a cheap shot at the acceptable targets, signal the proper signals, gain free clout for existing. any interpersonal conflict can be solved by playing victim and accusing the other person of some kind of -ism, no need to take responsibility for anything. must be a nice life."](https://old.reddit.com/r/TheMotte/comments/nl9y7a/wellness_wednesday_for_may_26_2021/gzj2qv6/?context=3)
 - [Corinna Cohn](https://archive.ph/Iw5U6#selection-651.0-651.369)
   > I once believed that I would be more successful finding [[Love|love]] as a woman than as a man, but in truth, few straight men are interested in having a physical relationship with a person who was born the same sex as them. In high school, when I experienced crushes on my male classmates, I believed that the only way those feelings could be requited was [[Gender Ideology|if I altered my body]].
+- Andreas Kling on his past self
+    > I wanted to **fit in** at Apple, so I said [Brendan Eich] deserved the hate, even though I felt the outrage was excessive and unfair. https://x.com/awesomekling/status/1888206446577246225
 
 ## General themes 
 
