@@ -173,6 +173,11 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - https://discourse.nixos.org/t/improving-diversity-in-this-community/55547
 - The rest of RFC 175 authors get permanently banned: [Andreas](https://github.com/NixOS/moderation/commit/a40d73948299c9d622ef6a09bed219b56464bb95), [Tim](https://github.com/NixOS/moderation/commit/4d6ff96b9213d1d6bf704cb57af4f23f4f864f61).
 - [SC kicks off](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_).
+- 
+
+### 2025 Feb
+- Jon publishes a 2+ hr video summarizing the whole drama. [Reddit](https://www.reddit.com/r/NixOS/comments/1imqc14/nixos_drama_explained_a_personal_account/?utm_source=reddit&utm_medium=usertext&utm_name=NixOS), [X](https://x.com/jonringer117/status/1889114268991426949), [YouTube](https://www.youtube.com/watch?v=gp0FI8Gw1iA), [Text](https://gist.github.com/jonringer/11744f5489aa2b9feb83e6e85d79d5ee). Infinisil uses midwit rhetoric with an air of caring, but factually uncaring, exposing his lack of boldness and fairhandedess in these issues.
+
 :::
 
 ## External Links
