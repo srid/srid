@@ -42,3 +42,7 @@ A nutritionist reflects back on how she fell prey to propaganda, much like other
 
 * [The Great Plant-Based Con by Jayne Buxton review — the case for eating meat](https://www.thetimes.co.uk/article/the-great-plant-based-con-by-jayne-buxton-review-the-case-for-eating-meat-xqj3fdx3x) (Twitter [thread](https://twitter.com/TheTimesBooks/status/1535901764922355713))
 * [New research says "blue zones" can be explained by flawed data](https://news.ycombinator.com/item?id=41738434)
+
+## Descent
+
+- Feb, 2025: [The anti-vegan backlash that made Britain fall back in love with meat](https://x.com/bigfatsurprise/status/1889360931701858744) *Even health-conscious Gen Z are eating meat again, citing the cost of living and changing perceptions of what constitutes a nutritious diet*
