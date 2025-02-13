@@ -19,7 +19,7 @@ This very page seems to have played a part in [[nixos-mod|enraging woke leftists
 
 - 2021: [The Economist: A backlash against gender ideology is starting in universities](https://archive.ph/JPkAT)
 - 2023: [The Telegraph: The cult of gender ideology is finally disintegrating](https://archive.is/20230609223701/https://www.telegraph.co.uk/columnists/2023/05/30/the-cult-of-gender-ideology-finally-crumbling/#selection-2957.4-2957.57)
-
+- 2025: Trump executive order: ["Defending Women from Gender Ideology Extremism and Restoring Biological Truth to the Federal Government"](https://www.whitehouse.gov/presidential-actions/2025/01/defending-women-from-gender-ideology-extremism-and-restoring-biological-truth-to-the-federal-government/)
 
 ## See also
 
