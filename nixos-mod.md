@@ -137,7 +137,7 @@ We can whole-heartedly embrace the tech without also having to embrace the toxic
 
 [^br]: It is quite possible that the 32% “Yes” response is largely a result of brigading.
 
-[^g]: Here, the accuser is referring to the page: [[Gender Ideology]].
+[^g]: Here, the accuser is referring to the page: [[Gender Ideology]]. For further context, see [here](https://x.com/sridca/status/1890168642287071249).
 
 [^st]: Yours truly, of course, having brought up in the [actually inclusive](http://esr.ibiblio.org/?p=6642) “Shut up and show them the code” hacker-culture does not give two hoots as to whether someone identifies as a tree, a frog, a coffee cup or whatever, and is quite happy to pay lip service to the social norms (such as using preferred pronouns, for instance).
 
