@@ -3,7 +3,7 @@ slug: harmless
 ---
 Being 'harmless' refers not to being a pacifist or a pushover but rather to the ability to not feel [[malice]] (for e.g., not 'take offence'). It impossible to be [[Feeling good|happy]] as long as one is not harmless. Richard & Vineeto has written extensively of it.
 
-> [!quote] [Richard’s Selected Correspondence: On Harmless](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-harmless.htm)
+> [!cite] [Richard’s Selected Correspondence: On Harmless](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-harmless.htm)
 > 
 > RICHARD: What the word ‘==harmless==’ refers to [..] is being **sans [[malice|malice]]#** – just as being happy refers to being without sorrow – thus provided there be no [[malice]] generating/ driving/ motivating one’s thoughts, words, or actions, being no longer capable of fulfilling a previously made pledge can in no way be going against being harmless.
 > 
@@ -12,13 +12,13 @@ Being 'harmless' refers not to being a pacifist or a pushover but rather to the 
 > [..] to be harmless as per actualism lingo (being free of [[malice]]) is beneficial both to oneself – plus it feels unpleasant (hedonically) to feel malicious (affectively) anyway – as well to others due to being unable to induce suffering either in oneself or another, via affective [[Affective Vibes|vibes]] and psychic currents, and vice versa.
 
 
-> [!quote] [Richard’s Selected Correspondence: On Aggression](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-aggression.htm)
+> [!cite] [Richard’s Selected Correspondence: On Aggression](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-aggression.htm)
 > RESPONDENT: Are you saying that its possible to be stern and forceful without being angry?
 > 
 > RICHARD: Indeed so ... to actually be harmless (be free of [[malice]]) means one does not have to pretend to be harmless (be a pacifist).
 
 
-> [!quote] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
+> [!cite] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
 > 
 > VINEETO: The way I approached the task of becoming harmless was that I first sought to stop any of my harmless actions or verbal expressions of harm towards other people. When I got to the stage when I could rely on my [[Aware-Cum-Attentive|attentiveness]] such that I could detect my aggressive mood before I verbally expressed it to those around me, I then raised the bar to detecting any aggressive moods or vibes as [[Diminishment|soon as they arose]]. It became readily apparent that a bottled up aggression or resentment towards others only served to make me unhappy and did not count as being really harmless because any such feelings are [[Affective Vibes|detectible]] by others and have an influence on others.
 > 
@@ -29,7 +29,7 @@ Editor's note: Related to Vineeto's _"detect my aggressive mood before I verball
 ## What it is not
 
 
-> [!quote] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
+> [!cite] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
 > 
 > VINEETO: The reason I said that there is a remarkable difference between **feeling** harmless and actually being harmless is because it is easy to assess one’s happiness by checking if I am feeling happy whereas many people may feel themselves to be harmless when they are not experiencing feelings of aggression or anger against somebody. Yet they are nevertheless causing harm via their thoughtless [[Identity|‘self’]]-oriented instinctual feelings and actions, something that all human beings are prone to do unless they become fully aware of their instinctual passions **before** these translate into [[Affective Vibes|vibes]] and/or actions.
 > 
@@ -49,7 +49,7 @@ Editor's note: Related to Vineeto's _"detect my aggressive mood before I verball
  
 ---
 
-> [!quote] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
+> [!cite] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
 > 
 > VINEETO: [..] I have spent many years exploring therapy groups and [[Spirituality|spiritual feeling states]] and it was quite a challenge to slowly wake up to the fact that feeling is not identical to actuality – in fact, feeling has nothing to do with actuality. In the past I might have felt harmless[^p] but was nevertheless quite harmful in that my ‘self’-centredness inevitably caused ripples in other peoples lives. I found that while I might have felt that I valued peace, I still instinctively acted in attack and defence mode. While I might have felt that I was willing to sacrifice my ego for a higher cause, I was actually cultivating humbleness as a means of soul-istic ‘self’-aggrandizement, and so forth.
 > 
@@ -57,13 +57,13 @@ Editor's note: Related to Vineeto's _"detect my aggressive mood before I verball
 
 ## Vulnerability
 
-> [!quote] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
+> [!cite] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
 > 
 > VINEETO: [..] When I made it my goal to become harmless, in the early days I sometimes **felt toothless, castrated and helpless, particularly in situations where I felt I was being ‘wronged’ or I was being treated ‘unjustly’**. But once these feeling subsided and I looked at the situation as it really was, I could [[Seeing the silliness|see how silly]] it would have been to waste my time passionately fighting other people or riling against the beliefs, morals or ethics of other people in order for ‘me’ to be right or for ‘me’ to feel justly treated. The simple act of becoming aware of having antagonistic and/or indignant feelings inevitably caused me to look at my own ideas and ideals of what I thought and felt was ‘right’ and ‘just’ and ‘fair’– after all the only person I need to change, and can change, is me.
 
 ## On changing others
 
-> [!quote] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
+> [!cite] [Vineeto's Selected Correspondence: Harmless](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-harmless.htm)
 > 
 > VINEETO: [..] You might also have observed that pointing out a fact that pulls the rug from under someone’s precious belief often raises their hackles and as such is considered to be an act of aggression in the believer’s eyes. Whilst I would not choose to take someone’s beliefs apart in ‘real life’, as you call it, this mailing list is up front about being a non-spiritual mailing list and has been specifically set up ‘to assist in elucidating just what is entailed in becoming free of the human condition’. (From the welcome message to the Actual Freedom mailing list) As such this list is the very place to openly question and actively investigate all of the [[Spirituality|spiritual]]/philosophical beliefs, worldviews and psittacisms that pass for wisdoms and truths within the human condition so as to be able to make a clear-eyed investigation and assessment of the facts of the matter.
 > 
