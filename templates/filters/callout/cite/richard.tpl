@@ -1,4 +1,4 @@
-<apply template="/templates/filters/callout/_base">
+<apply template="/templates/filters/callout/cite/_base">
   <bind tag="color">#7B3F00</bind>
   <bind tag="icon">
     <path
