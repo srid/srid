@@ -9,6 +9,7 @@ When it comes to liver as food, beef liver is most popular. In South India, goat
 ## Recipes
 
 - [[Liver pancake]]
+- [Stir-fried with salmon & bacon](https://x.com/sridca/status/1891901523161964678)
 
 ## Nutrition
 
