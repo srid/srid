@@ -33,3 +33,4 @@ pandoc:
     photoframe-below: clear-right
     page-note: text-sm text-gray-600 flex items-center justify-center my-4 italic
     editor-note: text-gray-500 text-sm
+    respondent: text-gray-400
