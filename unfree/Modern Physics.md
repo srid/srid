@@ -11,7 +11,7 @@ slug: phys
 
 - [The Big Bang didn't happen](https://archive.is/EejJf)
   - A [[Wikipedia is not neutral|Wikipedia]] drama involving this author can be found [here](https://en.wikipedia.org/wiki/Wikipedia:Requests_for_arbitration/Pseudoscience).
-- In the words of [Sabine Hossenfelder](https://news.ycombinator.com/item?id=32618719), all cosmological theories supposing a "beginning" of the universe are essentially "*a creation myth written in the language of mathematics*".
+- All cosmological theories supposing a "beginning" of the universe are essentially, in the words of [Sabine Hossenfelder](https://news.ycombinator.com/item?id=32618719), "*a creation myth written in the language of mathematics*".
 - Very rarely does someone interested in this field[^act] accept the infinite/ eternal/ absolute nature of the universe. Closest I am able to find: https://www.ospublishers.com/pdf/JPA-2-108.pdf 
   > [!quote]
     > The alleged big bang never happened. That the universe could have begun from any kind of singularity is both logically impossible and scientifically indefensible. There is no point in time at which time began. Time is in the universe; the universe is not in time. The universe is a limitless, endless, infinite expanse that is without beginning or ending.
