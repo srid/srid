@@ -22,6 +22,7 @@ slug: procrastination
 > Personally, I have found the need to belong to some group, any group, one of the most persistent instinctual forces that time and again caused me to **procrastinate** from stepping out of humanity.
 
 
+{#ostrich}
 > [!cite/vineeto] [Selected Correspondence Vineeto: Affective Feelings – Emotions and Passions](http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings3.htm)
 > 
 > {.respondent}
