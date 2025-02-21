@@ -27,3 +27,9 @@ slug: channeling
 ## Discussions
 
 - Vineeto to Claudiu (21 Feb, 2025): [The passionate energy \[underlying aggression\] which can be harnessed could be an increased determination not to chicken out](https://discuss.actualism.online/t/claudius-journal/274/408).  See also: [[Courage of your convictions]]
+
+## See also {#see}
+
+- [[Courage of your convictions]]#
+- [[Altruistic self-immolation]]#
+- [[Curiosity-Fascination-Obsession]]# and [[Diligence and perseverance]]#
