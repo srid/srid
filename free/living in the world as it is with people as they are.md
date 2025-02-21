@@ -2,7 +2,7 @@
 slug: world-as-it-is
 ---
 
-RICHARD: How on earth can one live happily and harmlessly **in the world as-it-is with people as-they-are** whilst one nurses [[malice|malice and sorrow]] in one’s bosom?
+RICHARD: How on earth can one live happily and harmlessly **in the world as-it-is with people as-they-are** whilst one nurses [[malice]] and [[sorrow]] in one’s bosom?
 
 http://www.actualfreedom.com.au/richard/
 

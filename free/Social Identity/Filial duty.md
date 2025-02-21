@@ -20,7 +20,7 @@ http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-socialidentity
 
 **RESPONDENT:** _When I originally told my mom, she was ecstatic, and if I were to tell her that I changed my mind, I fear that I would cause harm, which goes against being ‘harmless.’_
 
-**RICHARD:** What the word ‘[[Harmlessness|harmless]]’ refers to, on both The Actual Freedom Trust web site and mailing list, is being sans [[malice]] – just as being [[Felicity and Innocuity|happy]] refers to being without sorrow – thus provided there be no [[malice]] generating/driving/motivating one’s thoughts, words, or actions, being no longer capable of fulfilling a previously made pledge can in no way be going against being harmless.
+**RICHARD:** What the word ‘[[Harmlessness|harmless]]’ refers to, on both The Actual Freedom Trust web site and mailing list, is being sans [[malice]] – just as being [[Felicity and Innocuity|happy]] refers to being without [[sorrow]] – thus provided there be no [[malice]] generating/driving/motivating one’s thoughts, words, or actions, being no longer capable of fulfilling a previously made pledge can in no way be going against being harmless.
 
 None of this is to deny that another’s feelings may, and can be, self-induced to feel hurt as a result ... the simple fact of the matter is that if they choose to harbour such feelings that is their business.
 
