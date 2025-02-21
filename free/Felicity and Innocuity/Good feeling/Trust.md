@@ -15,3 +15,8 @@ date: 2021-05-21
 > [..] **Trust** is the ‘faith or conviction in the loyalty, strength, veracity, etc., of a person or thing; reliance on the truth of a statement etc., without examination’ ... and faith is ‘[[Belief|belief]], especially without evidence or proof’ 
 > 
 > Trust is but the antidote to doubt ... without doubt, where is the need for trust? And, as doubt arises out of [[Security|insecurity]], then your trust is based on – and fuelled by – uncertainty and lack of confidence in your [[Native intelligence|ability to discern and appraise]].
+
+## Associated emotions
+
+- [[Hope]]
+	- [[Disappointment]]
