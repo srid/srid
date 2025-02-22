@@ -2,46 +2,37 @@
 slug: autonomy
 ---
 
-From http://actualfreedom.com.au/
+> [!cite/richard] [Richard’s Selected Correspondence: On Hope](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-hope.htm)
+> 
+> {.respondent}
+> RESPONDENT: Are you not subject to the pain of loss? Wouldn’t this cause some fear?
+> 
+> RICHARD: Again, no. I am==completely and utterly autonomous== ... I do not need anyone to satisfy some lack in me. Thus I free the other from ‘my’ graceless demands.
+> 
+> I experience no fear whatsoever ... which does away with the need for [[Trust|trust]], faith, [[Hope|hope]] and [[Belief|belief]]. This is my on-going experience twenty four hours a day, year after year.
 
-It is possible to live in this modern era, freed from out-dated Philosophy and Psychiatry, challenging every [[Spirituality|Spiritual]] and Metaphysical tenet and surpassing any of the Altered States of Consciousness. Discarding all of the beliefs which have held humankind in thralldom for eons, the way has now been discovered which cuts through the ‘Tried and True’ and enables anybody to be, for the very first time, a fully free and **autonomous** individual, living in utter peace and tranquillity, beholden to no-one.
 
-...
 
-The [[Actualism Method|way of becoming actually free]] is both simple and practical. One starts by dismantling the shadowy [[Social Identity|social identity]] which has been overlaid, from birth onward, on top of the innate self until one is virtually free from all the social mores and psittacisms (those mechanical repetitions of previously received ideas or images, reflecting neither [[Apperception|apperception]] nor **autonomous** [[Native intelligence|reasoning]]). One can be virtually free from all the [[Belief|beliefs]], ideas, values, theories, truths, customs, traditions, ideals, superstitions and all the other [[Identity Building|schemes and dreams]]. One can become aware of all the socialisation, of all the conditioning, of all the programming, of all the methods and techniques which were used to produce what one feels and thus thinks oneself to be: a wayward identity careering around in confusion and illusion. A ‘mature adult’ is actually a lost, lonely, frightened and very cunning entity. However, it is never too late to start in on uncovering and discovering what one actually is.
- 
----
+> [!cite/peter] [Selected Correspondence Peter: Identity](http://www.actualfreedom.com.au/actualism/peter/selected-correspondence/corr-identity.htm):
+> 
+> My experience is that autonomy leads to neither isolation nor ostracization as I feared it would at some stage, but if it is pursued [[Curiosity-Fascination-Obsession|diligently and persistently]] it ==leads to an actual [[Grace's scale|intimacy]] and ease== with all of my fellow human beings – and I, once again, experienced the peace on earth that already, always exists.
 
-From [Richard’s Selected Writings on People](http://actualfreedom.com.au/richard/selectedwriting/sw-people.htm):
+> [!cite/peter] [Selected Correspondence Peter: Social Identity](https://actualfreedom.com.au/actualism/peter/selected-correspondence/corr-socialidentity2.htm)
+> 
+> For me, the key was to stop expecting or demanding that other people behave how I thought they should behave, to stop imposing my moods and whims on others, to stop obliging the whims and moods of others, to stop expecting or demanding of others what I was unwilling or unable to give.
+> 
+> The magic outcome of this process is that one eventually ceases to expect anything of anyone else – then you can never feel let down, [[Disappointment|disappointed]], obligated, grateful or [[Basic Resentment|resentful]]. This cleaning yourself up – eliminating your [[Social Identity|social]] and instinctual identity – leads to a ==delicious and tangible autonomy==. You become ==delightful company==, both happy and harmless, free to interact with all of your fellow human beings in a way that is always appropriate, for you are [[Naivete|guileless, innocent – childlike]] but with all the benefits of life experiences and a passion-free benign clarity.
+## In relation to love {#love}
 
-**RICHARD**: Unlike within the ancient _‘human’_ purview on life, compromise, allegiance, [[Authority|authority]], hierarchy, tolerance, acceptance and other methods of coping, play no part here. What does play a part here is consensus, independence, **autonomy**, [[equity-parity|equity]], reciprocal understanding based on clear articulation and a general ease of living together in mutual peace and harmony
+{#vineeto}
+> [!cite/vineeto] [Vineeto’s Correspondence with Cross.Chrono](https://actualfreedom.com.au/actualism/actualvineeto/crosscrono.htm)
+> 
+> The key ingredient for feeling-being ‘Vineeto’ was, when ‘she’ investigated the pining aspect of [[Love|love]], ‘her’ childhood-inspired romantic dream of belonging to a man and therefrom having an iron-clad identity as a woman ([A Bit of Vineeto, \#love](https://actualfreedom.com.au/actualism/vineeto/vineeto.htm#love)). Seeing this fact, thus abandoning the romantic dream, and ==reclaiming ‘her’ autonomy==, was only the beginning of a longer process of weening ‘herself’ off the whole maze of female identity and man-woman relating in general.
+> 
+> [..] If this fact, that [[Love|love]] will not solve your problem of aloneness and loneliness, is allowed to sink in, as an irrefutable fact, love will lose its appeal and you can ==regain your autonomy and dignity as a person in your own right== – and simultaneous ==recognize your partner’s own autonomy and dignity==. It also dispenses with pining and jealousy in one fell swoop.
+> 
+> With ==autonomy and dignity restored== you can then [[Naivete|naively]] relate to your fellow human beings in an increasingly intimate way, unilaterally. I know from experience how much a woman can appreciate [[Grace's scale|intimacy]], even though she may not know that this is really what she is looking for when she says she wants [[Love|love]]. You will find out yourself when you proceed interacting with your partner in an intimate rather than loving way.
 
-## Vs assertiveness
-
-From [Selected Correspondence Peter Affective Feelings – Emotions and Passions](http://actualfreedom.com.au/actualism/peter/selected-correspondence/corr-feelings.htm):
-
-**GARY:** _<font color="#DD2200">I’m having a little difficulty seeing the difference between assertiveness and autonomy. Assertiveness is concerned with ‘me’ and ‘my rights’. Assertiveness is commonly described as a way of discharging angry feelings through sticking up for one’s rights in a situation. Autonomy, on the other hand, is something that one can practice without putting forward one’s beliefs or views or asserting one’s rights.</font>_
-
-**PETER:** You have done a good job defining the ==difference between assertiveness and autonomy==. I’ll just take the opportunity to follow up on this issue, as it is a good topic to explore.
-
-The two common human reactions can be crudely summarized as fight or flight – **assertiveness, standing up for ‘my’ rights**, making ‘my’ point, demanding justice, etc. are in the ==fight ⚔️== category and **being humble, surrendering ‘my’ will**, being grateful, turning the other cheek, being a pacifist, etc. are reactions in the ==flight 🏃== category. These typical reactions are prevalent both in the [[Spirituality|spiritual]] world and the real world and are [[Social Identity|socially]] instilled and/or instinctually programmed.
-
-The one common denominator in all these reactions is that there is a ‘me’ involved – a ‘me’ who is strong or weak, a ‘me’ who is right or wrong, a ‘me’ who is good or bad, a ‘me’ who stands and fights or slinks away. The only way out of this seesawing emotional turmoil is to **become autonomous** – to become free of one’s own social and instinctual programming such that ==your being happy and [[Harmlessness|harmless]] is independent of external influences and conditions==.
-
-Autonomy isn’t something that can be practiced because this only leads to feeling independent with its inherent qualities of feeling separate and feeling superior. Becoming autonomous is the inevitable result of becoming actually free of the shackles of the human condition.
-
-Just as an aside to the issue of assertiveness, it is both interesting and informative to see the parallels between the psychologically-based movements aimed at establishing a strong and assertive self and the Eastern religious-based movements aimed at establishing a dissociated and superior self. The distinctions are seemingly nowhere more blurred than in the U.S. where the utter ‘self’-ishness and ‘self’-centred nature of both movements are so intermingled that every pursuit and every activity has the tag [[Spirituality|spiritual]] added to it.
-
-There is really scant difference between a self-help Guru and a Self-realized Guru. Both make their living, and get their kudos, from appealing to deep-seated narcissistic urges within every human psyche.
-
-## Fears
-
-[Selected Correspondence Peter Identity](http://www.actualfreedom.com.au/actualism/peter/selected-correspondence/corr-identity.htm):
-
-PETER: When I started to become free of [[malice]] and [[sorrow]], I found my emotional bonds or ‘neediness’ with other people became noticeably weaker. The most noticeable effect of this was that I lost my former [[Spirituality|spiritual]] ‘friends’ because I was no longer a member of a group of fellow believers. ==As I progressively became free of [[Harmlessness|malice]], I was no longer interested in participating in conversations where the ills of the world were blamed on others.== And as I became progressively free of [[sorrow]], I was no longer interested in participating in conversations where being here was regarded as a miserable business and where it was firmly believed that succour or relief could only be found by retreating ‘inside’. There was a period of time where I felt an outsider or a [[Loner|loner]] but recently I had occasion to meet quite a few old friends at a social event and all feelings of being an outsider and a [[Loner|loner]] had totally disappeared. I had a pleasurable time with a group of fellow human beings, regardless of their beliefs, gender or cultural conditioning.
-
-My experience is that **autonomy** leads to neither isolation nor ostracization as I feared it would at some stage, but if it is pursued [[Curiosity-Fascination-Obsession|diligently and persistently]] it leads to an actual [[Grace's scale|intimacy]] and ease with all of my fellow human beings – and I, once again, experienced the peace on earth that already, always exists.
-
-From [Selected Correspondence Peter: Fear](http://www.actualfreedom.com.au/actualism/peter/selected-correspondence/corr-fear.htm),
-
-PETER: The feeling of being an outsider ([[Loner]]) is common to everyone, for ‘who’ I think and feel I am is an alien entity, cut-off from the actual world that seems to be happening outside of ‘my’ body. Similarly other humans I meet are seen and regarded as separate and alien to ‘me’. ‘I’ am ever fearful, ever on-guard, ever isolated, and ever lonely. The only relief from these terrible feelings is to be found in the [[Good feeling|good feelings]] of being needed, being useful, belonging to a group, and producing, providing for, and nurturing offspring. In the ‘normal’ world, these worldly fulfilments are often insufficient for some and the search begins for the other socially acceptable alternative – indulging in the feeling of ‘inner’ fulfillment and contentment.
+> [!cite/vineeto] [Richard’s Selected Correspondence On Love and Love Agapé](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-love.htm)
+> 
+> VINEETO: One thing that I particularly didn’t like about falling in [[Love|love]] was the pining. Whenever I was not with Peter I felt **I was tied to him on a long elastic cord and not able to fully enjoy whatever I was doing by myself**. Digging into what could be the reason for my pining, I discovered what I call the ‘Cinderella-syndrome’ – **the romantic dream that most women have** about the perfect and noble man. We are not only looking for someone who takes care of us when our own strength fails us, but also for someone who gives perspective, meaning, definition and identity to our lives, be it as father of our kids, provider of social status, security or a purpose for life. According to this dream Peter should be the answer to the question which I wasn’t willing to face myself: ‘What do I really want to do with my life?’ I remember a Monday evening after a weekend together, and I had been pining the whole day. I had not enjoyed work as I found myself struggling to get out of this exhausting dependency. Here I was, **44 years old and as silly as a teenager!** After work I took a long walk across rolling hills into a spectacular sunset, trying to work out what I wanted to do with my life. (...). That very evening the situation changed. My pining stopped. The fog in the head cleared. **My expectations disappeared. I could again stand on my own feet and equally enjoy the time when I was by myself.** I had ==**recovered my autonomy**== – my autonomy in the sense that I am the only one in my life who is responsible for my happiness
