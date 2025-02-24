@@ -22,6 +22,24 @@ slug: autonomy
 > For me, the key was to stop expecting or demanding that other people behave how I thought they should behave, to stop imposing my moods and whims on others, to stop obliging the whims and moods of others, to stop expecting or demanding of others what I was unwilling or unable to give.
 > 
 > The magic outcome of this process is that one eventually ceases to expect anything of anyone else – then you can never feel let down, [[Disappointment|disappointed]], obligated, grateful or [[Basic Resentment|resentful]]. This cleaning yourself up – eliminating your [[Social Identity|social]] and instinctual identity – leads to a ==delicious and tangible autonomy==. You become ==delightful company==, both happy and harmless, free to interact with all of your fellow human beings in a way that is always appropriate, for you are [[Naivete|guileless, innocent – childlike]] but with all the benefits of life experiences and a passion-free benign clarity.
+
+## Physicality of being on one's own {#physicality}
+
+> [!cite/richard] [This Moment Has No Duration](https://www.actualfreedom.com.au/richard/audiotapeddialogues/thismomenthasnoduration.htm)
+> **R:** One can still enjoy sexuality ... the important thing is to be self-generating, self-reliant, self-contained. Then whatever happens with another is a bonus. One is not dependent upon anyone for anything ... the need for [[Sex|sexual]] gratification is gone. Then, and only then, sexuality is a delight; a freely enjoyed delight. There is no necessity, no need for claims upon another, no bargaining, no power-trips, no being caught-up in the grip of addictive compulsions ... and so on. This is freedom indeed!
+> 
+> {.respondent}
+> **Q:** _This is delicious ... I am enjoying this._
+> 
+> **R:** You see, anything one has with another is, per definition, not lasting. They can turn away, disappear, whatever. What you have for yourself is yours forever. The cute part in all this is that ==when you are totally self-sufficient, self-generating, then you can be with another one hundred per cent==. This is a joy and a felicity for both yourself and the other.
+> 
+> {.respondent}
+> **Q:** _Yes. That’s what it is. Anything I feel for another is actually polluting me._
+> 
+> **R:** Without feelings, only then can you enjoy the other fully ... which allows for mutual pleasure. Then you are not dependent on another for your core being, your basic being.
+> 
+> When I get up early in the morning, when everyone else is asleep, ==I am on my own, physically==. How I experience myself then is the same as I experience myself now, with company. This exchange of views, this interaction with you two is a delightful bonus, a freely enjoyed interchange. Yet how I am in myself now is no different to being on my own.
+
 ## In relation to love {#love}
 
 {#vineeto}
