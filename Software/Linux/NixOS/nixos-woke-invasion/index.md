@@ -6,7 +6,7 @@ slug: nixos-woke
 
 #[[woke-invasion|Woke invasion]] of the [[NixOS|NixOS]] #[[Community|community]] can be traced back to as early as April, 2021 ([1][origin1], [2][origin2]). It appears to have reached its zenith in April, 2024 when the woke moderation team's mischiefs [reached the public eye](https://news.ycombinator.com/item?id=40166912).
 
-On May 1st, 2024, the Board decided to delegate powers to an unspecified "community" (see "Eelco steps down" below), however it remains to be seen as to what exactly this will engender.
+On May 1st, 2024, the Board decided to delegate powers to an unspecified "community" (see "Eelco steps down" below), leading to the formation of the "Steering Committee" on November 2024 - however it remains to be seen as to what exactly this will engender.
 
 [origin1]: https://discourse.nixos.org/t/nursing-a-thriving-community/12742
 [origin2]: https://github.com/NixOS/nixpkgs/pull/120729#discussion_r621116027
@@ -16,19 +16,19 @@ On May 1st, 2024, the Board decided to delegate powers to an unspecified "commun
 
 Notable events since Nov, 2023:
 
-| Date                                                                            | Event                                                                                                                                                                           |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[nixos-mod\|2023-11-14]]                                                       | Author gets banned for ideological reasons                                                                                                                                      |
-| [2024-01-28](https://twitter.com/sridca/status/1751586790425895377)             | Witch-hunt by NixOS moderator Martin Weinelt (hexa) to get the entire [NixOS Asia](https://nixos.asia/en/) domain, as well as Srid, banned from the Lobste.rs site              |
-| [2024-02-12](https://twitter.com/sridca/status/1757055395183374667)             | Report of the moderators perma-banning David Arnold                                                                                                                             |
-| [2024-03-10](https://twitter.com/sridca/status/1766944228129575327)             | Continued criticism of the mod team by community members; a NixOS moderator "piegamesde" publicly accuses Srid of being "transphobic"                                           |
-| [2024-03-20](https://twitter.com/sridca/status/1771523366983196975)             | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism                            |
-| [2024-04-22](https://twitter.com/sridca/status/1782200842571198962)             | Attempt to depose Eelco Dolstra                                                                                                                                                 |
-| [2024-04-26](https://news.ycombinator.com/item?id=40204985)                     | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes); moderators begin resigning (see below)                    |
-| [2024-05-01](https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/) | Eelco steps down                                                                                                                                                                |
+| Date                                                                             | Event                                                                                                                                                                           |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[nixos-mod\|2023-11-14]]                                                        | Author gets banned for ideological reasons                                                                                                                                      |
+| [2024-01-28](https://twitter.com/sridca/status/1751586790425895377)              | Witch-hunt by NixOS moderator Martin Weinelt (hexa) to get the entire [NixOS Asia](https://nixos.asia/en/) domain, as well as Srid, banned from the [[Lobste.rs]] site          |
+| [2024-02-12](https://twitter.com/sridca/status/1757055395183374667)              | Report of the moderators perma-banning David Arnold                                                                                                                             |
+| [2024-03-10](https://twitter.com/sridca/status/1766944228129575327)              | Continued criticism of the mod team by community members; a NixOS moderator "piegamesde" publicly accuses Srid of being [[Gender Ideology\|"transphobic"]]                      |
+| [2024-03-20](https://twitter.com/sridca/status/1771523366983196975)              | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism                            |
+| [2024-04-22](https://twitter.com/sridca/status/1782200842571198962)              | Attempt to depose Eelco Dolstra                                                                                                                                                 |
+| [2024-04-26](https://news.ycombinator.com/item?id=40204985)                      | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes); moderators begin resigning (see below)                    |
+| [2024-05-01](https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/)  | Eelco steps down                                                                                                                                                                |
 | [2024-05-01](https://github.com/NixOS/foundation/pull/142)                       | [Zulip](https://nixpkgs.zulipchat.com/) is chosen for governence discussions (allowing banned members with *"extreme prejudice"* and threat of permaban *"[if] they blow it""*) |
-| [2024-11-08](https://github.com/NixOS/moderation/commits/main/) | RFC 175 authors get permanently banned |
-| [2024-11-21](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) | SC kicks off their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_) |
+| [2024-11-08](https://github.com/NixOS/moderation/commits/main/)                  | Both authors of RFC 175 get permanently banned                                                                                                                                  |
+| [2024-11-21](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) | SC kicks off their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_)                                                                          |
 
 {#moderation}
 ## Moderation team
@@ -36,7 +36,7 @@ Notable events since Nov, 2023:
 {#mod-evidence}
 ### Evidence of woke moderation
 
-https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md
+Consult [the appendix of RFC 175](https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md) to read the concrete evidence for woke moderation in the NixOS community.
 
 ### Resignations
 

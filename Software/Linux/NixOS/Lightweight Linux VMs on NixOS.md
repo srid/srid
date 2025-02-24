@@ -4,9 +4,13 @@ tags: [blog]
 date: 2020-03-25
 ---
 
-:::{.page-note}
-If you wish to run #[[NixOS]] container on a NixOS host, checkout NixOS's [declarative container management](https://nixos.org/manual/nixos/stable/#ch-containers) which may be a more appealing option than LXD. For VMs, see [microvm.nix](https://github.com/astro/microvm.nix).
-::: 
+>[!warning]
+>I now use `incus` over `lxc`. Accordingly, this page needs an update; but for now, see [srid/nixos-config](https://github.com/srid/nixos-config/tree/master/modules/flake-parts/incus-image).
+
+
+>[!note]
+> If you wish to run #[[NixOS]] container on a NixOS host, checkout NixOS's [declarative container management](https://nixos.org/manual/nixos/stable/#ch-containers) which may be a more appealing option than LXD. For VMs, see [microvm.nix](https://github.com/astro/microvm.nix).
+
 
 Often I find myself needing a *pristine* Linux system for testing some program that is expected to work on a user's machine with an environment that is possibly quite different to mine. I could spin up a virtual machine, but that is too heavyweight. Alternatively, I could use Docker, but a Docker container is conceptually more of a process and less of a system. 
 
