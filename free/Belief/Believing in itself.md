@@ -8,7 +8,7 @@ slug: believing
 > 
 > RICHARD: Speaking personally, I cannot believe anything. The ability to [[Belief|believe]] – **believing in itself** – has vanished out of me. Which brings this discussion back to the believing activity of thought and feelings. You are asking, in effect: Is there some real ‘me’ to experience? Am ‘I’ real?
 > 
-> When one observes oneself in action, ‘I’ seem to be real – very real at times – but am ‘I’ actual? No? Then why do ‘I’ appear to be real? Is it the activity of believing? The action of believing is to emotionally imagine something to be real that is not actual.
+> When one observes oneself in action, ‘I’ seem to be real – very real at times – but am ‘I’ actual? No? Then why do ‘I’ appear to be real? Is it the activity of believing? ==The action of believing is to emotionally imagine something to be real that is not actual.==
 
 ---
 
