@@ -2,7 +2,6 @@
 slug: vf.enc
 ---
 
-https://wiki.archlinux.org/title/Dm-crypt/Encrypting_a_non-root_file_system
 
 Create a virtual folder (`~/foo`) from an encrypted file `~/foo.img`:
 
@@ -32,6 +31,12 @@ sudo cryptsetup open $LOOP $NAME
 sudo mount -t ext4 /dev/mapper/$NAME ~/$NAME
 ```
 
-- [ ] Nixify?
-- [ ] Avoid having to `chown -R $USER` inside mounted dir?
-- [ ] What does it take to resize later? Can we do it unbounded from beginning?
+## TODO
+
+-  [[Nix|Nixify]] this
+- Avoid having to `chown -R $USER` inside mounted dir?
+- What does it take to resize later? Can we do it unbounded from beginning?
+
+## References
+
+- https://wiki.archlinux.org/title/Dm-crypt/Encrypting_a_non-root_file_system

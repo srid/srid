@@ -30,6 +30,7 @@ Things like tests are not in the template repo, because I personally do not use 
 
 I wish to keep all the Nix code (`flake.nix`) as small and simple as possible. This is why much of the Nix is delegated to [[haskell-flake]]. Consequently, it also becomes easier for the user to do some Nix-based Haskell workflows (I'm yet to document these).
 
-- [ ] Explain the usefulness `flake-parts` (and thus `haskell-flake` and `mission-control`)
-  - To keep Nix code simple by modularizing orthogonal features. Especially in monorepos. 
-  - Nix itself may get a modue system for flakes. Unti then, `flake-parts` is relevant.
+> [!tip] TODO Explain the usefulness `flake-parts` (and thus `haskell-flake` and `mission-control`)
+> 
+> - To keep Nix code simple by modularizing orthogonal features. Especially in monorepos. 
+> - Nix itself may get a modue system for flakes. Unti then, `flake-parts` is relevant.

@@ -48,29 +48,29 @@ TODO
 
 Where do these fit in?
 
-- [ ] _Thinking in Types_, by isovector
-- [ ] Category Theory, and other theory
-- [ ] Functional Programming and Proof Checking Course Plan: https://oxij.org/activity/itmo/fp/plan/
+-  _Thinking in Types_, by isovector
+- Category Theory, and other theory
+-  Functional Programming and Proof Checking Course Plan: https://oxij.org/activity/itmo/fp/plan/
 
 Resources for these?
 
-- [ ] MTL
-- [ ] Lenses
+-  MTL
+-  Lenses
 
 Perspectives,
 
-- [ ] Types = Values; https://vitez.me/hts-language
+-  Types = Values; https://vitez.me/hts-language
 
 Create a course
 
-- [ ] Find relevant papers, in order.
-- [ ] [Write You A Haskell](https://github.com/sdiehl/write-you-a-haskell): Building a modern functional compiler from first principles.
+-  Find relevant papers, in order.
+-  [Write You A Haskell](https://github.com/sdiehl/write-you-a-haskell): Building a modern functional compiler from first principles.
 
 
 From https://github.com/sdiehl/write-you-a-haskell/issues/93#issuecomment-962082153
 
 > There are two good lists of foundational papers for implementing a Haskell compiler:
 > 
-> [https://www.stephendiehl.com/posts/essential_compilers.html](https://www.stephendiehl.com/posts/essential_compilers.html)
+> https://www.stephendiehl.com/posts/essential_compilers.html
 > 
-> [https://gitlab.haskell.org/ghc/ghc/-/wikis/reading-list](https://gitlab.haskell.org/ghc/ghc/-/wikis/reading-list)
+> https://gitlab.haskell.org/ghc/ghc/-/wikis/reading-list
