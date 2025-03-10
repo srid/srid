@@ -1,7 +1,7 @@
 ---
 slug: channeling
 ---
-# Channeling of instinctual passions
+# Channeling of affective energy
 
 > [!cite/richard] [Richard’s Selected Correspondence On Delight](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-delight.htm)
 > 
@@ -30,9 +30,7 @@ slug: channeling
 > 
 > Now I come to the point that I was making: ‘For me, a vital drive has been the – instinctually driven – ==searching for the ultimate achievement==...’ I experienced it as the instinct of desire that has driven me to search for freedom, to clean myself up, to ==be the best ‘I’ can be==.
 
-## Discussions
-
-- Vineeto to Claudiu (21 Feb, 2025): [The passionate energy \[underlying aggression\] which can be harnessed could be an increased determination not to chicken out](https://discuss.actualism.online/t/claudius-journal/274/408).  See also: [[Courage of your convictions]]
+The above passage was used by Vineeto in the context of writing to Claudiu (21 Feb, 2025): [The passionate energy \[underlying aggression\] which can be harnessed could be an increased determination not to chicken out](https://discuss.actualism.online/t/claudius-journal/274/408). 
 
 ## See also {#see}
 
