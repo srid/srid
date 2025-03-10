@@ -6,7 +6,11 @@ slug: anti-crypto
 
 A disgruntled vocal minority belong to the church of anti-[[Blockchain|crypto]], and they have taken upon themselves to proselytize (see [[woke-invasion]]) the unsuspecting masses - which [[Righteousness|righteous]] indignation is best illustrated by their following decree:
 
-> "I have instead come to believe that [crypto is] so harmful that I cannot ethically continue to ignore them, and must instead do my best to educate and advocate against their wider adoption. I am picking my battles, and this is one of them." --[Ms. Molly White](https://archive.ph/WRUba) (a self-[[Social Identity|identified]] "[queer feminist](https://archive.ph/KTYAt)" and [anti-crypto grifter](https://archive.is/0uCjy) who is also described as ["leading" a crowd in an attack](https://news.ycombinator.com/item?id=36128484)).
+> [!cite/default] Anti-crypto decree
+> 
+> I have instead come to believe that [crypto is] so harmful that I cannot ethically continue to ignore them, and must instead do my best to educate and advocate against their wider adoption. I am picking my battles, and this is one of them.
+> 
+> -- [Ms. Molly White](https://archive.ph/WRUba) (a self-[[Social Identity|identified]] "[queer feminist](https://archive.ph/KTYAt)", "a pretty visible editor of [[Wikipedia is not neutral|wikipedia]] articles on controversial subjects" and [anti-crypto grifter](https://archive.is/0uCjy) who is also described as ["leading" a crowd in an attack](https://news.ycombinator.com/item?id=36128484))
 
 ## Potential factors
 
@@ -19,15 +23,16 @@ A disgruntled vocal minority belong to the church of anti-[[Blockchain|crypto]],
 
   > I predict essentially identical [[censorship]]/deplatforming policies across all layers of the legacy Internet stack. Client-side & server-side ISPs, cloud platforms, CDNs, payment networks, client OSs, browsers, email clients. With only rare exceptions. The pressure is intense. ---[Marc Andreessen](https://twitter.com/elonmusk/status/1516470730136952833)
 
-## Popular worshippers
+## Popular worshippers {#normies}
 
 - [Mr. Guido van Rossum](https://twitter.com/gvanrossum/status/1508959260905918465), a Dutch programmer living in [[woke|woke]][^rossum] California. Created the Python programming language. 
 
-[^rossum]: Incidentally, Mr Rossum's Twitter biography reads "[[COVID-19|fully vaccinated]]" with pronouns "He/him" (usually a form of [status signalling](https://twitter.com/robkhenderson/status/1101164598365966342?lang=en) of [[woke|woke]] identity politics, if not a bizzare reinforcement of one's illusory [[Social Identity|gender identity]]) plastared over it.
+[^rossum]: Incidentally, Mr Rossum's [[Twitter]] biography [reads](https://archive.is/lPqTq) "[[COVID-19|fully vaccinated]]" with pronouns "He/him" (usually a form of [status signalling](https://twitter.com/robkhenderson/status/1101164598365966342?lang=en) of [[woke|woke]] identity politics, if not a bizzare reinforcement of one's illusory [[Social Identity|gender identity]]) plastared over it.
 
-## Popular heretics
+## Popular heretics {#based}
 
-- [David Heinemeier Hansson](https://world.hey.com/dhh/i-was-wrong-we-need-crypto-587ccb03), a Danish programmer living in [less woke](https://twitter.com/dhh/status/1456142961008418817) Denmark. Created the Ruby framework, Ruby on Rails.
+- [Mr. David Heinemeier Hansson](https://world.hey.com/dhh/i-was-wrong-we-need-crypto-587ccb03) (DHH), a Danish programmer living in [less woke](https://twitter.com/dhh/status/1456142961008418817) Denmark. Created the Ruby framework, Ruby on Rails.
+	- Incidentally, DHH has also been a part of [[unwoke]].
 
 ## Related
 
