@@ -39,6 +39,10 @@ From https://news.ycombinator.com/item?id=34746161
 
 ## See also
 
+- [Politeness theory](https://en.wikipedia.org/wiki/Politeness_theory)
+	- _proposed by Penelope Brown and Stephen Levinson, centers on the notion of politeness, construed as efforts to redress the affronts to a person's [[Self-worth|self-esteems or face]] (as in "save face" or "lose face") in social interactions_
+- [High-context and low-context cultures](https://en.wikipedia.org/wiki/High-context_and_low-context_cultures)
+	- _When people from different cultures and communication styles work together, misunderstandings and conflicts can arise. Low-context communicators might seem distant or unfriendly to those from high-context societies, while high-context communicators might appear pushy or impolite._
 - [[Luxury beliefs]] (inasmuch they are a modern status marker)
 - [[Wiliness of the wild]] (what drives the sophistication factor)
 - *["Modifying one’s negative feelings toward the other by coating them with positive feelings may fool some people for some of the time. Usually, however, one is only fooling oneself, because the positive is born out of the negative."](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-aggression.htm)*
