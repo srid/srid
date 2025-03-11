@@ -11,7 +11,7 @@ Politeness is often seen as counteracting what is known as "impoliteness" in peo
 
 This duality is an illusion that many people suffer from. People who are not particularly acting polite (according to whatever cultural norms) are not necessarily "impolite" (aka. "rude"), for they can also be [underpolite](https://www.sciencedirect.com/science/article/pii/S2210831910000032). Unlike impoliteness (with its implicit projected "rudeness"), underpoliteness involves no malice on the underpolite.
 
-> I propose to establish another variety[^var] of impoliteness, namely “underpoliteness”. This is impoliteness exercised without [[malice]] or spite which occasionally appears to be incidental and a result of socializing habits. Nevertheless, similar to other types of rudeness it creates feelings of discomfort, disharmony and even revenge. 
+> I propose to establish another variety[^var] of impoliteness, namely “underpoliteness”. This is impoliteness exercised without #[[malice]] or spite which occasionally appears to be incidental and a result of socializing habits. Nevertheless, similar to other types of rudeness it creates feelings of discomfort, disharmony and even revenge. 
 > 
 > [..] Underpoliteness could therefore, be defined as communicative acts which may cause offense though not triggered by malice.
 
@@ -41,11 +41,12 @@ From https://news.ycombinator.com/item?id=34746161
 
 - [Politeness theory](https://en.wikipedia.org/wiki/Politeness_theory)
 	- _proposed by Penelope Brown and Stephen Levinson, centers on the notion of politeness, construed as efforts to redress the affronts to a person's [[Self-worth|self-esteems or face]] (as in "save face" or "lose face") in social interactions_
-- [High-context and low-context cultures](https://en.wikipedia.org/wiki/High-context_and_low-context_cultures)
-	- _When people from different cultures and communication styles work together, misunderstandings and conflicts can arise. Low-context communicators might seem distant or unfriendly to those from high-context societies, while high-context communicators might appear pushy or impolite._
 - [[Luxury beliefs]] (inasmuch they are a modern status marker)
 - [[Wiliness of the wild]] (what drives the sophistication factor)
 - *["Modifying one’s negative feelings toward the other by coating them with positive feelings may fool some people for some of the time. Usually, however, one is only fooling oneself, because the positive is born out of the negative."](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-aggression.htm)*
 - Cultural
-  - [Dutch directness / bespreekbaarheid](https://twitter.com/sridca/status/1730312976450699643)
-  - USA: ["East Coast folks are better people even if they aren't as 'nice' as those out West"](https://www.upworthy.com/nice-vs-kind-are-east-coast-people-better-than-west-coast-rp6) (via [HN](https://news.ycombinator.com/item?id=40696801))
+	- [High-context and low-context cultures](https://en.wikipedia.org/wiki/High-context_and_low-context_cultures)
+		- _When people from different cultures and communication styles work together, misunderstandings and conflicts can arise. Low-context communicators might seem distant or unfriendly to those from high-context societies, while high-context communicators might appear pushy or impolite._
+		- https://x.com/sridca/status/1899508751918420395
+	- [Dutch directness / bespreekbaarheid](https://twitter.com/sridca/status/1730312976450699643)
+	- USA: ["East Coast folks are better people even if they aren't as 'nice' as those out West"](https://www.upworthy.com/nice-vs-kind-are-east-coast-people-better-than-west-coast-rp6) (via [HN](https://news.ycombinator.com/item?id=40696801))
