@@ -54,7 +54,7 @@ When pockets of commonsense emerge through regurgigated nonsense on the orange s
 > 
 > The evidence is all based on models, controlled by the very people who have incentive for those models to support their claims (scientists receiving grants, corporate kickbacks, etc and NGOs/politicians doing the same).
 >
-> For decades, the very people who support these models have been telling people we're just a few short years away from the demise[^doom] of the species...only for nothing to happen (and for the very things they claim to be getting worse, actually getting better). Again, and again, and again. First it was global warming, then it was "climate change" (hint: the climate always changes—the real subtext here is Malthusian discontent for humanity, not a desire to protect nature).
+> For decades, the very people who support these models have been telling people we're just a few short years away from the demise of the species...only for nothing to happen (and for the very things they claim to be getting worse, actually getting better). Again, and again, and again. First it was global warming, then it was "climate change" (hint: the climate always changes—the real subtext here is Malthusian discontent for humanity, not a desire to protect nature).
 > 
 > Those very same people, too, go out of their way to dismiss technology like nuclear energy and carbon capture which can solve the problem they claim to wish to solve (reducing and/or eliminating emissions). Why? Because if they solve the problem, they can't milk subsidies from the government and will actually have to find real work to do. Not just parading around (in f\*cking private jets pouring out emissions) and self-flagellating at conferences and "summits."
 > 
