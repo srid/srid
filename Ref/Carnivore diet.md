@@ -48,7 +48,7 @@ Contrary to popular belief and health "knowledge" -- promoted by [[Dietary Guide
 One ought to pay lip service to general medical wisdom and any dominant nutrition ideology as they are laced with an [[Vegan Propaganda|anti-meat bias]]# (as well as [[climate-alarmism]]#) using [pseudoscientific nutrition epidemiological studies](https://www.diagnosisdiet.com/epidemilogical-studies/) where, depending on the researcher's nutritional bias, one can establish [_any_ food item to be problematic](https://pubmed.ncbi.nlm.nih.gov/23193004/).
 
 ## Resources
-
+``
 * Healing reports[^elim]
   * [Charlene  Andersen](http://web.archive.org/web/20191101053010/http://meatheals.com/2018/02/04/charlene-andersen/)
   * [Mikhaila Peterson](https://selfhack.com/blog/mikhaila-peterson-why-the-carnivore-diet-helps-autoimmunity/)
@@ -70,7 +70,9 @@ One ought to pay lip service to general medical wisdom and any dominant nutritio
 * Medical
   * [Antibiotic abuse](https://en.wikipedia.org/wiki/Antibiotic_misuse)
   * [Vaccine abuse](https://archive.is/TZrWH) ([also relevant](https://jamanetwork.com/journals/jamadermatology/fullarticle/2782441?widget=personalizedcontent&previousarticle=0))
-* [[Recipes]] on this site
+* On this site
+	* [[Recipes]]#
+	* [[Carnivore diet in Canada]]
 * Social Media / Culture / Politics (of meat)
   * [Frédéric Leroy](https://twitter.com/fleroy1974)
 
