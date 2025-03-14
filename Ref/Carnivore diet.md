@@ -4,9 +4,13 @@ slug: carnivore-diet
 
 # :cut_of_meat: Carnivore diet
 
-I eat only animal-based foods.[^coffee]
+I eat primarily animal-based foods.[^coffee]
 
-[^coffee]: [[Coffee]] (when consumed on empty stomach) being the delightful exception.
+> [!warning] Importance of animal fat
+> 
+> If you are looking to _maintain_ (rather than lose) weight on carnivore diet, it is **critical** to be on ketosis by aiming close to a 2:1 fat:protein ratio in weight. The author had to [learn this](https://x.com/sridca/status/1899854990325248351) over time.
+
+[^coffee]: Spices and [[Coffee|coffee]] (when consumed on empty stomach) being the delightful exception.
 
 ![[steak.jpg]]
 
