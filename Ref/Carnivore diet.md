@@ -45,7 +45,7 @@ I suffered with this condition for over 4 years, and saw plethora of dermatologi
 
 [^moreanti]: Cefalexin, doxycycline and one another antibiotic that I don't remember the name of. They work temporarily, anywhere from 2 weeks to 3 months, and then the symptoms return even more severely than before!
 
-## "Isn't it unsafe?"
+## "Isn't it unsafe?" {#safe}
 
 Contrary to popular belief and health "knowledge" -- promoted by [[Dietary Guidelines Misinformation]] based in part on [[Vegan Propaganda]] - the carnivore diet (especially with offal, like [[Liver]]#) provides all the necessary nutrients and is safe. Meat is the only ["nutritionally complete" food](http://www.diagnosisdiet.com/food/meats/), and [some indigenous groups](https://justmeat.co/peoples/) have traditionally eaten an all-meat (or predominantlly animal-based) diet.
 
@@ -82,7 +82,7 @@ One ought to pay lip service to general medical wisdom and any dominant nutritio
 
 [^elim]: It is worth keeping in mind that the carnivore diet can be considered to be an extreme form of [elimination diet](https://en.wikipedia.org/wiki/Elimination_diet) (albeit a more nutritious one), and that your condition might resolve better with other diets, even [a vegan diet](https://www.dailymail.co.uk/femail/article-5646085/Twins-Nina-Randa-Nelson-suffering-severe-acne-reveal-tweaking-diet-cleared-skin.html). Experiment and find out for yourself.
 
-## Relevant News
+## Relevant News {#news}
 
 - 2020 Feb: "The use of minocycline in acne vulgaris has been associated with skin and gut dysbiosis" ([Wikipedia](https://en.wikipedia.org/w/index.php?title=Broad-spectrum_antibiotic&oldid=1037794222#Disruption_of_normal_microbiome)) 
   - Source: [Minocycline and Its Impact on Microbial Dysbiosis in the Skin and Gastrointestinal Tract of Acne Patients](https://pubmed.ncbi.nlm.nih.gov/33911705/) 2020 Feb;32(1):21-30. doi: 10.5021/ad.2020.32.1.21. Epub 2020 Jan 9. [Reddit submission](https://old.reddit.com/r/HumanMicrobiome/comments/p0l6im/minocycline_and_its_impact_on_microbial_dysbiosis/)

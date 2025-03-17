@@ -15,3 +15,4 @@ path:./*
 - [Eggs on heavy cream](https://x.com/Lady_StandBy/status/1899938391573049655)
 	- [Spicy version](https://www.youtube.com/shorts/0Ql-8MX_izk)
 	- https://x.com/sridca/status/1899950734835101982
+- [Eggyo Waffles](https://x.com/sridca/status/1900696648302408067)

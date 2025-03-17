@@ -6,15 +6,14 @@ slug: coffee
 
 A good tasting coffee makes all the difference.
 
+## Moka pot
+
+Get a 3-cup Bialetti or equivalent, which produces about ~60g of espresso which can be diluted to make a 100g drink. You can actually use pre-ground coffee without fret; notably, I've had good experience with [Illy Intenso Dark Roast](https://www.illy.com/en-ca/coffee/ground-coffee/ground-espresso-intenso-coffee-dark-roast/A060ST.html) coffee.
 ## Espresso
-
-
->[!info] Update (Nov, 2023)
-> I now drink espresso, as [long black](https://en.wikipedia.org/wiki/Long_black). https://x.com/sridca/status/1727085521946443918 
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Review of this 5x cheaper espresso machine: Bellezza Bellona <br><br>I really like it, and it makes as consistent espresso as Linea Micra.<br><br>- Got a bottomless portafilter (indisputable IMO)<br>- Hot water comes from water boiler<br>- Rapid heat up with steam boiler off. ~3 mins or probably… <a href="https://t.co/rFVryiUTT0">https://t.co/rFVryiUTT0</a> <a href="https://t.co/E1i5QDhQ4C">pic.twitter.com/E1i5QDhQ4C</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1727085521946443918?ref_src=twsrc%5Etfw">November 21, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Non-espresso
+## Aeropress
 
 ### Essential equipment
 
@@ -47,7 +46,7 @@ Generally speaking, you mainly want to vary grind size and/or water temperature.
 
 [^h]: If getting a manual hand grinder, note the the way of grinding [may matter](https://old.reddit.com/r/Coffee/comments/lkazl5/hand_grinder_use_ive_been_doing_it_all_wrong/).
 
-### Brew methods
+### Aeropress brew methods
 
 How I typically make coffee:
 
@@ -63,7 +62,7 @@ How I typically make coffee:
 
 If you use fresh coffee with your preferred flavour profile, and select the right grind size and water temperature for those beans - expect this method to consistently produce a great cup of rich coffee that is equivalent in strength to what the [Québécois](https://en.wikipedia.org/wiki/Qu%C3%A9b%C3%A9cois_people) call [café allongé](https://en.wikipedia.org/wiki/Lungo).
 
-#### Kalita Wave 155 recipe
+## Kalita Wave 155 recipe
 
 > [!warning] Questionable success
 > This recipe has usually not been very successful -- probably because I tend to use espresso blends?
@@ -73,11 +72,14 @@ If you use fresh coffee with your preferred flavour profile, and select the righ
 - 35g pour, wait 35 secs.
 - Pour rest, total 135g. Wait till water comes through.
 
-### Beans
+## Beans
 
-I tend to buy  my coffee beans online from [iDrinkCoffee](https://idrinkcoffee.com/). Compared to local Quebec cafes, they tend to be fresher and of consistent quality.
+Good beans can be bought from:
 
-### Learnings / experimentation
+- Online from [iDrinkCoffee](https://idrinkcoffee.com/). 
+- Yirgacheffe from [Caprice d'Alice](https://lescapricesdalice.com/)
+
+## Learnings / experimentation
 
 - Eating (creamy) butter in between cups helps 'reset' taste receptor.
     - But eating a meal is ideal.
