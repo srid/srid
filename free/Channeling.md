@@ -18,7 +18,7 @@ slug: channeling
 > 
 > VINEETO: With pleasure. I have spent wonderful hours on the balcony the other night, watching the sky and listening to the different sounds of the night while contemplating about all the different instincts that I have encountered and learnt to understand on the path to freedom. So this is what I have come up with:
 > 
-> **Fear** – We all know it at nauseam; it includes trickery, cunningness, numbness, confusion, escape, denial, excuses, guilt and beliefs in all kinds of good (helpful) and bad (harming) spirits. And, of course, there are panic, terror and good old dread and the escape into enlightenment. But ==fear is also the doorway to [[Courage of your convictions|courage]], thrill and excitement== to reach closer and closer to one’s destiny.
+> **Fear** – We all know it at nauseam; it includes trickery, cunningness, numbness, confusion, escape, denial, excuses, guilt and beliefs in all kinds of good (helpful) and bad (harming) spirits. And, of course, there are panic, terror and good old dread and the escape into enlightenment. But ==fear is also the doorway to [[Courage of your convictions|courage]], thrill and [[Excitement|excitement]]== to reach closer and closer to one’s destiny.
 > 
 > **[[Aggression|Aggression]]** – Besides physical attack, aggression has many more subtle nuances: blaming, resentment, verbal abuse, nagging, boredom, being the victim, arrogance, clever-clever, competition, self-destruction and revenge. I made use of this instinct for becoming free as a ==bloody-mindedness, persistence, not to ‘let the buggers get me down’ and refusal to run with the crowd==.
 > 
