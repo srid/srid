@@ -2,10 +2,47 @@
 slug: world-as-it-is
 ---
 
-RICHARD: How on earth can one live happily and harmlessly **in the world as-it-is with people as-they-are** whilst one nurses [[malice]] and [[sorrow]] in one’s bosom?
 
-http://www.actualfreedom.com.au/richard/
 
-VINEETO: Actualism is about **living in the world as it is with people as they are**. I am not intending to change other people – or the world – but I whittle away at removing what prevents me from being happy and [[Harmlessness|harmless]] right [[Being here now|here, right now]].
+> [!cite/richard] [Richard’s Selected Correspondence On Noam Chomsky](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-chomsky.htm)
+> 
+> {.respondent}
+> **RESPONDENT:** _At first glance that seems totally reasonable as [Noam Chomsky] has never offered any solution to what fundamentally is wrong in my life._
+> 
+> **RICHARD:** Indeed not ... it is common-place to blame the politicians, the teachers, the clergy, the parents and so on, for the troubles that beset the community and the citizen alike. It is to no avail to blame the politician, for example, for the antics they get up to, because underneath the politician – under the role and the image – lies a ‘human’ heart. The politician is making the best job of it that he or she can do, considering the burden that they carry ... which is the burden of being ‘human’. They have, like any other ‘human’, an ego and a soul nestled uncomfortably within them.
+> 
+> They have an identity, a psychological or psychic entity that exists inside of their bodies.
+> 
+> {.respondent}
+> **RESPONDENT:** _But is it not true that their entity causes my entity pain in making decisions that restrict my movement, my happiness?_
+> 
+> **RICHARD:** It matters not whether it is true, that another identity causes you pain with their decisions, or not ... the fact remains that any action, as proposed by Mr. Noam Chomsky for instance, within ‘humanity’ as it is, is doomed to failure. Unless this fact can be grasped with both hands and taken on board to such an extent that it hits home deeply, nothing will change, radically. There will be changes around the edges, variations upon a familiar theme, but nothing structurally new, nothing even approaching the mutation-like change which is essential for the human race to fully appreciate the fullness and prosperity of being alive on planet earth, in this era, as a flesh and blood body.
+> 
+> To remain ‘human’ is to remain a failure.
+> 
+> [..]
+> 
+> {.respondent}
+> **RESPONDENT:** _Should I just toss it all off and get fired, etc?_
+> 
+> **RICHARD:** If all you wish to do is make changes around the edges, to produce variations upon a familiar theme, then that is your business ... I can only suggest and what another does with my suggestions is, of course, entirely up to them because, when all is said and done, it is they who either reap the rewards or pay the consequences for any action or inaction they may or may not have happen.
+> 
+> {.respondent}
+> **RESPONDENT:** _Okay so there is no point whatsoever in reading of how the world is organised?_
+> 
+> **RICHARD:** No ... all I said was that it is common-place to blame the politicians, the teachers, the clergy, the parents and so on, for the troubles that beset the community and the citizen alike and that it is to no avail to blame the politician, for example, for the antics they get up to, because underneath the politician – under the role and the image – lies a ‘human’ heart and that the politician is making the best job of it that he or she can do, considering the burden that they carry (which is the burden of being ‘human’) inasmuch they have, like any other ‘human’, an ego and a soul nestled uncomfortably within them ... that they have an identity, a psychological or psychic entity that exists inside of their bodies.
+> 
+> {.respondent}
+> **RESPONDENT:** _I certainly see that nothing of use can come of it._
+> 
+> **RICHARD:** I never said that nothing of use can come of reading how the (human) world is organised ... all I said was that any action within ‘humanity’ as it is, is doomed to failure and that unless this fact can be grasped with both hands and taken on board to such an extent that it hits home deeply, nothing will change radically inasmuch there will be changes around the edges, variations upon a familiar theme, but nothing structurally new, nothing even approaching the mutation-like change which is essential for the human race to fully appreciate the fullness and prosperity of being alive on planet earth, in this era, as a flesh and blood body ... that to remain ‘human’ is to remain a failure.
+> 
+> {.respondent}
+> **RESPONDENT:** _Is my interest in such analysis therefore fraudulent and based on a stupid desire to work out the problem from the problem?_
+> 
+> **RICHARD:** Indeed so ... just as Mr. Noam Chomsky has been doing/currently does, for instance, all throughout human history peoples have been endeavouring to bring about communal peace and harmony through political change, social reform, economic reconstruction, cultural revisionism, and so on.
+> 
+> ==It is vital to comprehend that one of the fundamental understandings, if there is to be radical change, is that peace and harmony comes about by **living happily and harmlessly in the world as-it-is with people as-they-are** ... and not by attempting to change people, things and events so as to have the world at large conform with whatever scheme or dream the identity within may come up with in order to perpetuate its existence.==
+> 
+> In other words: global peace and harmony starts at home.
 
-http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-people.htm
