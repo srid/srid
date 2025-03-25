@@ -23,19 +23,11 @@ slug: world-as-it-is
 > [..]
 > 
 > {.respondent}
-> **RESPONDENT:** _Should I just toss it all off and get fired, etc?_
-> 
-> **RICHARD:** If all you wish to do is make changes around the edges, to produce variations upon a familiar theme, then that is your business ... I can only suggest and what another does with my suggestions is, of course, entirely up to them because, when all is said and done, it is they who either reap the rewards or pay the consequences for any action or inaction they may or may not have happen.
-> 
-> {.respondent}
 > **RESPONDENT:** _Okay so there is no point whatsoever in reading of how the world is organised?_
 > 
 > **RICHARD:** No ... all I said was that it is common-place to blame the politicians, the teachers, the clergy, the parents and so on, for the troubles that beset the community and the citizen alike and that it is to no avail to blame the politician, for example, for the antics they get up to, because underneath the politician – under the role and the image – lies a ‘human’ heart and that the politician is making the best job of it that he or she can do, considering the burden that they carry (which is the burden of being ‘human’) inasmuch they have, like any other ‘human’, an ego and a soul nestled uncomfortably within them ... that they have an identity, a psychological or psychic entity that exists inside of their bodies.
 > 
-> {.respondent}
-> **RESPONDENT:** _I certainly see that nothing of use can come of it._
-> 
-> **RICHARD:** I never said that nothing of use can come of reading how the (human) world is organised ... all I said was that any action within ‘humanity’ as it is, is doomed to failure and that unless this fact can be grasped with both hands and taken on board to such an extent that it hits home deeply, nothing will change radically inasmuch there will be changes around the edges, variations upon a familiar theme, but nothing structurally new, nothing even approaching the mutation-like change which is essential for the human race to fully appreciate the fullness and prosperity of being alive on planet earth, in this era, as a flesh and blood body ... that to remain ‘human’ is to remain a failure.
+> [..]
 > 
 > {.respondent}
 > **RESPONDENT:** _Is my interest in such analysis therefore fraudulent and based on a stupid desire to work out the problem from the problem?_
