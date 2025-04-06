@@ -8,7 +8,9 @@ I'm visiting Vineeto in Ballina, where I'll be staying for 3 months until June.
 
 ## Published Video Recordings {#videos}
 
-Below you'll find some of the actualism-relevant videos I'm recording, and publishing on [[Twitter|X]], during this trip. While there's no expectation that I'll talk about every subject, I do find that there's value (not only, potentially, to viewers but also to myself) in expressing myself through means other than text. 
+Below you'll find some of the actualism-relevant videos I'm recording, and publishing on [[Twitter|X]], during this trip. While there's no expectation that I'll talk about every subject,[^p] I do find that there's value (not only, potentially, to viewers but also to myself) in expressing myself through means other than text. 
+
+[^p]: Practicing and succeeding in actualism, as much as humanly possible, is of paramount focus during this trip.
 
 2025-04-06: [Being here now](https://x.com/sridca/status/1908659248319652192)
 : *Being here now* as map-less simple way of actualism. Paying *attention* to all the instances—especially fear (see below)—when straying off the path (of being here now). This video does not talk about the following, which Srid may get to talk about in future:
