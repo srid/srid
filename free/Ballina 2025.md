@@ -18,6 +18,7 @@ Below you'll find some of the actualism-relevant videos I'm recording, and publi
 	- Recognizing the core of 'myself' in these passions & emotions, and being that, then liking 'myself' (thus naive)
 	- Naiveté: being likeable and liking (liking 'myself' and everything/everyone, as well as others, potentially, liking 'me')
 	- Being naiveté itself: when "I" _am_ naive as a default persona.
+	- Tangential: recognizing my role in the actualism zulip kerfuffle, and acknowledging that part to other actualists when/if the time comes for interaction.
 
 :::{.flex .justify-center}
 <blockquote class="twitter-tweet" data-media-max-width="560">&mdash; Being here now (@sridca) <a href="https://twitter.com/sridca/status/1908659248319652192?ref_src=twsrc%5Etfw">April 5, 2025</a></blockquote> 
