@@ -17,3 +17,9 @@ Below you'll find some of the actualism-relevant videos I'm recording, and publi
 	- Naiveté: being likeable and liking (liking 'myself' and everything/everyone, as well as others, potentially, liking 'me')
 	- Being naiveté itself: when "I" _am_ naive as a default persona.
 
+:::{.flex .justify-center}
+<blockquote class="twitter-tweet" data-media-max-width="560">&mdash; Being here now (@sridca) <a href="https://twitter.com/sridca/status/1908659248319652192?ref_src=twsrc%5Etfw">April 5, 2025</a></blockquote> 
+:::
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
