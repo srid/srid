@@ -49,7 +49,7 @@ RICHARD: [..] the eternal cry of each group-member, each _identity,_ is: ‘But 
 
 From [Selected Writings from Peter’s Journal on our Animal Instincts in the Primitive Brain](http://actualfreedom.com.au/actualism/peter/selected-writings/instincts.htm):
 
-PETER: Even if a woman had a man, this offered no **security**, so she had to continuously hone and test her seductive powers on other men in case they were needed at any time. She knew that when these powers failed, when beauty faded, when old age set in, she was useless, on the scrap heap. This behaviour is all too evident in current times: women’s magazines bear testimony to this, with their endless beauty and seductive tips. The threat of failure or loss of male protection meant that the support of the other women around the campfire was all she could ultimately fall back on; hence the woman’s loyalty to the ‘sisterhood’ is much stronger than her loyalty to her man.
+PETER: Even if a woman had a man, this offered no **security**, so she had to continuously hone and test her seductive powers on other men in case they were needed at any time. She knew that when these powers failed, when [[Beauty|beauty]] faded, when old age set in, she was useless, on the scrap heap. This behaviour is all too evident in current times: women’s magazines bear testimony to this, with their endless [[Beauty|beauty]] and seductive tips. The threat of failure or loss of male protection meant that the support of the other women around the campfire was all she could ultimately fall back on; hence the woman’s loyalty to the ‘sisterhood’ is much stronger than her loyalty to her man.
 
 ---
 

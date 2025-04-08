@@ -2,7 +2,7 @@
 slug: rememoration
 ---
 
-> [!cite/richard] [RICHARD: I am resurrecting and introducing several obscure and/or obsolete words so as to facilitate communication](http://www.actualfreedom.com.au/richard/listdcorrespondence/listdclaudiu3.htm),
+> [!cite/richard] [RICHARD: I am resurrecting and introducing several obscure and/or obsolete words so as to facilitate communication](https://www.actualfreedom.com.au/richard/listdcorrespondence/listdclaudiu3.htm#:~:text=I%20am%20resurrecting%20and%20introducing%20several%20obscure%20and/or%20obsolete%20words),
 > 
 > [..] by dint of a viscerally-felt instinctually-intuitive rememoration (‘re-’ + ‘memoration’) of memorable experiencing already memorialised in the memorative facility – ==revivified== feelingly therein and thereby infused ==presentially==[^p] with luminous vibrancy when brought thus anew into consciousness – any such indelibly-impressed experience comes freshly into present conscious existence by that rememorative function itself.
 > 
