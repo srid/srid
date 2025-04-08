@@ -13,6 +13,35 @@ This page is dedicated to publishing self-reports of a handful of my [[PCE]]s an
 
 [^spo]: It is also possible to develop the skill of triggering PCEs at will.
 
+## March 5, 2025
+
+> [!quote] Facilitative origins of these contemplations
+> 
+> The most salient of the precipitating factors was in fact what I wrote on 1st of March,  
+> 
+> > SRID on March 1st: \[..\] allowing myself to get as close (aka. intimate; cf. [link](https://discuss.actualism.online/t/kub933s-journal/467/1391)) to people, things **\*and\*** events (**\*as they happen now\***, rather than anytime/anywhere else).
+> 
+>   
+> The key here being 'get as close' to this moment as possible which initially allowed me to pull my head out of the habitual sand (as it were), and thus become more interested in being here where this moment is happening.  
+>   
+> The other precipitating factor was an intermittently ongoing contemplation of [[Death]] (which contemplation had long segued from my past considerations of 'euthanasia'). Basically, I considered death as in oblivion - the end of consciousness (as in: life after my death, which is non-existence). From that 'clean slate' of non-existence (no consciousness whatsoever; 'clean' of all 'my' problems), I looked at how life was patently happening right here in front of my eyes - and the very fact that I'm even alive (rather than dead) became an exuberant [[Delight|delight]] ... because, for the moment, all of 'my' problems had just taken a back seat (inasmuch as they are irrelevant to oblivion), and therefore what's unfolding right in front of me is 'fresh' -- sans the staleness of 'me' -- and can now freely be partaken on with appreciation (inasmuch as the non-existence of death makes it all even more worthy).  
+>   
+> These two perspectives/intentions were 'brewing' as they were in the background, and then that experience happened (naturally, in hindsight).
+
+I put on my headphones listening to music, as usual, before stepping outside the café to walk home. At an intersection, I waited for about 1-2 mins for the crosswalk signal to change; then proceeded across to walk on the opposite side of the street. The experience happened here. 
+
+> [!quote] "Suddenly?" Not
+> About a couple seconds earlier the experienced happened, I was gently [[Pure Contemplation|contemplating]] along the lines of [[Being the doing of what is happening]] ... not just contemplating but actually curiously trying to [[Rememoration|revivify]] it in [[This Moment|that very moment]] that was happening. And then the experience happened (unexpectedly). For the next few days, I  established a good sense of 'golden clew' from the experience, for life was quite good during days ....
+
+Suddenly[^s], instead of being a puny self living a 'meh' life, there is this ongoing "experiencing" (which is *all-encompassing*) by this organic body (which itself is the universe in action, and thus reflexively part of that experience; which reflexivity is wondrous!) living this moment that is happening now ("my" problems were no more). It is a mildly rainy, wet and overcast day (just above 2c temp) - and instead of being more of 'me' driving this body (with whatever modicum of habitual [[Basic Resentment|resentment]]/ [[Boredom|boredom]]), it felt very close to [[Apperception|apperceptive]] awareness in that I was thoroughly 'experiencing' cutting-edge living as this organic being. Upon first experiencing this, I felt a bit of shock along with goose-pump like excitement, bordering on having panic attack (there was no "lynchpin", aside from the diminished sense of 'me', to keep it all in place; so, in hindsight, I think this was fear) -- I was wondering if I would end up in an emergency hospital -- but awareness of the nature of what was happening relieved the shock/panic aspect.
+
+[^s]: See quote titled _"Suddenly" Not_ above.
+  
+While it may have started as PCE, the experience short after was not a PCE. Amidst this (near-apperceptive?) experience, "I" was so diminished but not in abeyance. I found that I enjoyed and appreciated that experience; in fact, the very 'experiencing' *is* the enjoyment and appreciation in action. Moreover, the hitherto solid "I" (with "his" various problems) was not there - just very receded in the background sufficiently enough to (I suppose?) derive a 'clew' to how to go about it once back to normal. In contrast to this free ongoing "experiencing" (I can see how the 'naive beer' stuff can be very close here!), I realized that living life as the usual "me" is absolutely bollocks and suboptimal in comparison. As the experience was withering off (but not completely gone away), the first thing I noticed (as "I" was becoming more solid) was the intuition that "I" am indeed a fraud/ interloper. Far from fretting it, however, I figured that the best course of action is to pay attention, and give way (from being 'me' as I've known) towards this 'experiencing' ... gently.
+
+  
+I completely forgot about walking home, and instead strolled aimlessly to a nearby mall, checking the stores and their contents with interest, while rememorating this experience (rather successfully). I had a very pleasant demeanour (opposite of 'poker face') that was unforced, and even my gait became the opposite of the habitual controlled rigidity (consequently it felt very good to walk). Part of the demeanour change involved losing that 'intense focus' intuition in between the eyes (which connotes [[Seriousness|seriousness]], and evokes the habitual poker face, the female version of which is called 'resting bitch face') ... the controller no longer controlled the facial muscles, I suppose. I next visit the grocery store, even though I had no plans to buy anything for today. There, I found myself transfixed at the various products (European processed meats, exotic seafood, etc.), with no sense of urgency to move on (I think at one point I must have been standing by the foie gras aisle for a good 5 minutes, trying to figure out how to utilize this new food element in my keto meals). The mind functioned so freely. "I" was there, but "my" problems were absent, except for this vague sense of being an interloper.
+
 {#voodoo}
 ## Dec 5, 2021
 
