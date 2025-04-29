@@ -8,7 +8,10 @@ A good tasting coffee makes all the difference.
 
 ## Moka pot
 
-Get a 3-cup Bialetti or equivalent, which produces about ~60g of espresso which can be diluted to make a 100g drink. You can actually use pre-ground coffee without fret; notably, I've had good experience with [Illy Intenso Dark Roast](https://www.illy.com/en-ca/coffee/ground-coffee/ground-espresso-intenso-coffee-dark-roast/A060ST.html) coffee.
+Get a 3-cup Bialetti or equivalent, which produces about ~60g of espresso that can be diluted to make a 100g drink. You can actually use pre-ground coffee without fret; notably, I've had good experience with [Illy Intenso Dark Roast](https://www.illy.com/en-ca/coffee/ground-coffee/ground-espresso-intenso-coffee-dark-roast/A060ST.html) coffee.
+
+You may have to tamp the grounds: https://x.com/sridca/status/1916970293912080880
+
 ## Espresso
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Review of this 5x cheaper espresso machine: Bellezza Bellona <br><br>I really like it, and it makes as consistent espresso as Linea Micra.<br><br>- Got a bottomless portafilter (indisputable IMO)<br>- Hot water comes from water boiler<br>- Rapid heat up with steam boiler off. ~3 mins or probably… <a href="https://t.co/rFVryiUTT0">https://t.co/rFVryiUTT0</a> <a href="https://t.co/E1i5QDhQ4C">pic.twitter.com/E1i5QDhQ4C</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1727085521946443918?ref_src=twsrc%5Etfw">November 21, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
