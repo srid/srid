@@ -35,7 +35,7 @@ cf. [Weird amalgamation of bliss seeking watered-down Buddhists cum rationalists
 ## People skeptical of rationalists
 
 - [Alexandros Marinos](https://twitter.com/search?q=rationalists%20from%3AalexandrosM&src=typed_query) -- who is also known to have gotten into [argument with](https://nitter.net/alexandrosM/status/1533327207795335168) Mr. Scott Alexander (yet another '[[Authority|authority]]' in this movement, commanding its denizens [what to think](https://doyourownresearch.substack.com/p/scott-alexandriad-iii-driving-up?s=r)).
-- "tpot" https://x.com/LauraDeming/status/1836800977023963368
+
 
 [^ex]: <kbd>Ctrl+F</kbd> `excursive` in [this page](http://www.actualfreedom.com.au/richard/listdcorrespondence/listdclaudiu2.htm) for examples.
 
