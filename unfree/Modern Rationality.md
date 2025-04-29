@@ -27,6 +27,10 @@ EA proponents generally care more about, say, [[Vegan Propaganda|animal rights]]
 
 [Rob Henderson](https://twitter.com/sridca/status/1720474628005482524), et al.
 
+### Spiritual dissociation
+
+cf. [Weird amalgamation of bliss seeking watered-down Buddhists cum rationalists](https://x.com/sridca/status/1910266789906534595)
+
 {#skep}
 ## People skeptical of rationalists
 
