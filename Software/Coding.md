@@ -12,7 +12,11 @@ template:
 WIP
 
 {#guidelines}
-## Coding Guidelins
+## Coding Guidelines
+
+### Refactoring
+
+- https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
 
 {#fn-interface}
 ### Function interface should be small
