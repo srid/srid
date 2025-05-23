@@ -16,7 +16,7 @@
                 City</a>, Canada
             </div>
             <div class="font-bold mt-4">
-              Technical Lead (Haskell, Nix)
+              Technical Lead / Software Architect (Haskell, Nix)
             </div>
           </div>
           <div class="w-24">
