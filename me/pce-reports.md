@@ -72,9 +72,9 @@ Being a ‘Software Test Engineer’ in the Windows Vista team, I was sitting in
 
 I noticed that my visual acuity and perception increased at the same time. The yellow-lit ambiance of the office in the evening took a brilliant character such that I enjoyed basking in it. Then the time came to take the shuttle bus (Microsoft’s service, running at periodic times) to go back home. At this point my PCE subsided, presumably due to people around.
 
-Once I’m back home in my apartment, I decided to wash my face in the bathroom sink. The PCE resumed, and I felt it during splashing that water in my face - the [[Sensuousness|sensations]] (the feeling of touch, the warmth of the soapy water, and the suffusing amber of the bathroom) were intense, [[Delight|delightful]] and being experienced with a thoroughness unlike before. I go back to my room to sit on my Poang chair. This time, instead of starting Age of Empires 3 (as I normally do that time), I decided to just sit and do nothing for no reason in particular. I remember sitting there doing nothing for about an hour, just enjoying [[Being here now|being alive]] - and the visual ambiance of my room (equally yellow-lit).
+Once I’m back home in my apartment, I decided to wash my face in the bathroom sink. The PCE resumed, and I felt it during splashing that water in my face - the [[Sensuousness|sensations]] (the feeling of touch, the warmth of the soapy water, and the suffusing amber of the bathroom) were intense, [[Delight|delightful]] and being experienced with a thoroughness unlike before. I go back to my room to sit on my Poang chair. This time, instead of starting [Age of Empires 3][aoe3] (as I normally do that time), I decided to just sit and do nothing for no reason in particular. I remember sitting there doing nothing for about an hour, just enjoying [[Being here now|being alive]] - and the visual ambiance of my room (equally yellow-lit).
 
-
+[aoe3]: https://en.wikipedia.org/wiki/Age_of_Empires_III
 
 ### Peter's report
 
