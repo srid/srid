@@ -3,7 +3,7 @@
 
 An unbalanced[^un] and deteriorating[^de] PvP game.
 
-## Superior Alternatives
+## Alternatives
 
 - **The Outlast Trials**
   - Comparison with DbD
