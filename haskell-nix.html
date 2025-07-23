@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+
+
+
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Nix recipes for Haskellers – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='The goal of this article is to get you comfortable managing simple [[Haskell]] programs and projects using the [[Nix]] package manager without getting too much into the details. See [[haskell-template]] if you want a ready-made Nix-based project template for Haskell.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content='https://srid.ca/' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Nix recipes for Haskellers' />
+      
+        <meta name='twitter:card' content='summary_large_image' />
+      
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+
+  
+  
+  <link href='tailwind.css?instanceId=5bcf93f2-2596-4372-99b7-91ee6c5b7219' rel='stylesheet' type='text/css' />
+
+  <link rel='stylesheet' href='_emanote-static/fonts/maven-pro.css' />
+
+<style data-category='global-font'>
+  /* Maven Pro font for the entire site */
+  body {
+    font-family: 'Maven Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+</style>
+
+<style data-category='error'>
+  /* Heist error element */
+  strong.error {
+    color: lightcoral;
+    font-size: 90%;
+    font-family: monospace;
+  }
+</style>
+
+<style data-category='kbd'>
+  /* <kbd> styling */
+  kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+  }
+</style>
+
+<style data-category='callout'>
+  /* To prevent overemphasis of link styles in callout titles */
+  .callout .callout-title a {
+    color: inherit;
+    text-decoration: underline;
+  }
+</style>
+
+<style data-category='toc'>
+  a.--ema-toc:not(.toc-item-active) {
+    background-color: #ffffff !important;
+  }
+</style>
+
+<style data-category='external-link'>
+  /* External link icon */
+  a[data-linkicon=""]::after {
+    content: ""
+  }
+
+  a[data-linkicon=none]::after {
+    content: ""
+  }
+
+  a[data-linkicon="external"] {
+    padding-right: 24px;
+  }
+
+  a[data-linkicon="external"]::after {
+    margin-right: -24px;
+    content: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" height="0.7em" viewBox="0 0 20 20"> \
+        <g style="stroke:gray;stroke-width:1"> \
+          <line x1="5" y1="5" x2="5" y2="14" /> \
+          <line x1="14" y1="9" x2="14" y2="14" /> \
+          <line x1="5" y1="14" x2="14" y2="14" /> \
+          <line x1="5" y1="5" x2="9" y2="5"  /> \
+          <line x1="10" y1="2" x2="17" y2="2"  /> \
+          <line x1="17" y1="2" x2="17" y2="9" /> \
+          <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.0" /> \
+        </g> \
+      </svg>');
+  }
+
+  a[data-linkicon="external"][href^="mailto:"]::after {
+    content: url('data:image/svg+xml,\
+        <svg \
+          xmlns="http://www.w3.org/2000/svg" \
+          height="0.7em" \
+          fill="none" \
+          viewBox="0 0 24 24" \
+          stroke="gray" \
+          stroke-width="2"> \
+          <path \
+            stroke-linecap="round" \
+            stroke-linejoin="round" \
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /> \
+        </svg>');
+  }
+</style>
+  <link rel='stylesheet' href='/obsidian-snippets/headers.css' />
+
+
+  
+    <style>
+      /* For use in sidebar.tpl, as we cannot achieve this in tailwind itself! */
+      /* md:min-w-48  */
+      @media (min-width: 768px) {
+        #sidebar {
+          min-width: 12rem;
+        }
+      }
+
+      /* xl:min-w-64  */
+      @media (min-width: 1280px) {
+        #sidebar {
+          min-width: 16rem;
+        }
+      }
+    </style>
+
+    
+      <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+    
+  
+  <link rel='stylesheet' href='_emanote-static/stork/flat.css' />
+<!-- Custom Stork-search styling for Emanote -->
+<style data-category='stork'>
+  #stork-search-container {
+    z-index: 1000;
+    background-color: rgb(15 23 42/.8);
+  }
+
+  .stork-overflow-hidden-important {
+    overflow: hidden !important;
+  }
+</style>
+
+
+<script src='_emanote-static/stork/stork.js'></script>
+
+  
+    <script id='emanote-stork' data-emanote-base-url='/'>
+      window.emanote = {};
+      window.emanote.stork = {
+        searchShown: false,
+        indexIsStale: false,
+        toggleSearch: function () {
+          window.emanote.stork.refreshIndex();
+          document.getElementById('stork-search-container').classList.toggle('hidden');
+          window.emanote.stork.searchShown = document.body.classList.toggle('stork-overflow-hidden-important');
+          if (window.emanote.stork.searchShown) {
+            document.getElementById('stork-search-input').focus();
+          }
+        },
+        clearSearch: function () {
+          document.getElementById('stork-search-container').classList.add('hidden');
+          document.body.classList.remove('stork-overflow-hidden-important');
+          window.emanote.stork.searchShown = false;
+        },
+
+        getBaseUrl: function () {
+          const baseUrl = document.getElementById("emanote-stork").getAttribute('data-emanote-base-url') || '/';
+          return baseUrl;
+        },
+
+        registerIndex: function (options) {
+          const indexName = 'emanote-search'; // used to match input[data-stork] attribute value
+          const indexUrl = window.emanote.stork.getBaseUrl() + '-/stork.st';
+          stork.register(
+            indexName,
+            indexUrl,
+            options);
+        },
+
+        init: function () {
+          if (document.readyState !== 'complete') {
+            window.addEventListener('load', function () {
+              stork.initialize(window.emanote.stork.getBaseUrl() + '_emanote-static/stork/stork.wasm');
+              window.emanote.stork.registerIndex();
+            });
+
+            document.addEventListener('keydown', event => {
+              if (window.emanote.stork.searchShown && event.key === 'Escape') {
+                window.emanote.stork.clearSearch();
+                event.preventDefault();
+              } else if ((event.key == 'k' || event.key == 'K') && (event.ctrlKey || event.metaKey)) {
+                window.emanote.stork.toggleSearch();
+                event.preventDefault();
+              }
+            });
+          } else {
+            // This section is called during Ema's hot reload.
+            // 
+            // Mark the current index as stale, and refresh it *only when* the
+            // user actually invokes search.
+            // 
+            // We do not refresh the index *right away*, as that will cause
+            // memory leaks in the browser. See
+            // https://github.com/srid/emanote/issues/411#issuecomment-1402056235
+            console.log("stork: Marking index as stale");
+            window.emanote.stork.markIndexAsStale();
+          }
+        },
+
+        markIndexAsStale: function () {
+          window.emanote.stork.indexIsStale = true;
+        },
+
+        refreshIndex: function () {
+          if (window.emanote.stork.indexIsStale) {
+            console.log("stork: Reloading index");
+            window.emanote.stork.indexIsStale = false;
+            // NOTE: This will leak memory. See the comment above.
+            window.emanote.stork.registerIndex({ forceOverwrite: true });
+          }
+        }
+
+      };
+
+      window.emanote.stork.init();
+    </script>
+  
+
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg mt-2 md:mt-4  '>
+      
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree font-medium' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <a href='haskell'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Haskell
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='software'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href=''>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Sridhar Ratnakumar
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+            <li>
+
+  <a href='nix'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Nix
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='nixos'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      NixOS
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='linux'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Linux
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+      
+
+      
+
+      
+        <div id='container' class='relative md:shadow-2xl md:mb-8'>
+          
+  <div class='absolute -top-6 right-1 md:right-0 flex flex-row items-center justify-center'>
+    <a title='Search (Ctrl+K)' class='cursor-pointer' onclick='window.emanote.stork.toggleSearch()'>
+      <svg xmlns='http://www.w3.org/2000/svg' style='width: 1rem;' class='hover:text-green-700' f
+ fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+  <path stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
+</svg>
+    </a>
+  </div>
+
+          <!-- Main body column -->
+          <div class='flex-1 w-full bg-white'>
+  <main class='px-4 py-4'>
+    <h1 class='flex items-end justify-center mb-4 p-3 bg-green-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Nix recipes for Haskellers
+  </a>
+</h1>
+    
+      <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+
+
+
+
+
+
+    <p class='mb-3'>
+      The goal of this article is to get you comfortable managing simple <a href='haskell' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkTag'>Haskell</a> programs and projects using the <a href='nix' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix</a> package manager without getting too much into the details. See <a href='haskell-template' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>haskell-template</code></a> if you want a ready-made Nix-based project template for Haskell.
+    </p>
+  
+    <h2 id='prerequisites' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Prerequisites
+  
+  <a href='haskell-nix#prerequisites' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      You are running either <a href='linux' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Linux</a> or macOS
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='haskell-nix#fn1'>
+        1
+      </a>
+    </sup>
+  , and have installed the <strong>Nix</strong> package manager using <a href='https://nixos.org/download.html#nix-quick-install' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>these instructions</a> 
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='haskell-nix#fn2'>
+        2
+      </a>
+    </sup>
+  . You do <em>not</em> need to install anything else, including needing to install Haskell, as Nix will manage that for you.
+    </p>
+  
+    <h2 id='simple-programs' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Simple programs
+  
+  <a href='haskell-nix#simple-programs' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Let us begin with the simplest Haskell program, try to compile and run it with the help of Nix.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>-- HelloWorld.hs
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello World"</code></pre></div>
+    <p class='mb-3'>
+      Haskell code is compiled by GHC, which is provided by the Nix package called “ghc”. How do we install it? According to the <a href='https://nixos.org/nix/manual/#chap-package-management' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Nix manual</a> this can be done by running the command <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-env -i ghc</code>. For Haskell developers, there is a better approach. Instead of installing packages in a global environment, you may install them to an <em>isolated</em> area and launch a shell with those packages in its environment. This is done using the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-shell -p ghc</code> command.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='language-none'># This drops us in a bash shell with ghc package installed and 
+# $PATH updated.
+$ nix-shell -p ghc
+...
+# Now let's run our module.
+[nix-shell:~] runhaskell HelloWorld.hs
+Hello World</code></pre></div>
+    <p class='mb-3'>
+      As you can see, nix-shell dropped us in a shell environment with the “ghc” package installed and activated. This puts <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>runhaskell</code> (part of the “ghc” package) in your PATH, running which will compile and run your first Haskell program. When you exit the nix-shell (<span xmlhtmlRaw><kbd>Ctrl+D</kbd></span>), <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>runhaskell</code> will no longer be in scope, however the “ghc” package will have been cached so that subsequent invocations of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-shell -p ghc</code> would not have to download and install it once again.
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='haskell-nix#fn3'>
+        3
+      </a>
+    </sup>
+  
+    </p>
+  
+    <h3 id='using-library-dependencies' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Using library dependencies
+  
+  <a href='haskell-nix#using-library-dependencies' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      What if our program relied on an third-party Haskell library? The following program uses the <a href='http://hackage.haskell.org/package/brick' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>brick</a> UI library.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>-- HelloWorld.hs
+module Main where
+
+import Brick
+
+ui :: Widget ()
+ui = str "Hello, world!"
+
+main :: IO ()
+main = simpleMain ui</code></pre></div>
+    <p class='mb-3'>
+      We can no longer use the “ghc” package here. Fortunately, Nix is also a programming language, and as such as we can evaluate arbitrary Nix expressions to create a customized environment. Official Nix packages come from the <a href='https://github.com/NixOS/nixpkgs' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>nixpkgs</a> channel, which provides a function called <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>ghcWithPackages</code>. Evaluating this function, passing it a list of Haskell libraries (already in nixpkgs), will create an environment with both GHC and the specific Haskell libraries installed.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='language-none'>$ nix-shell \
+    -p "haskellPackages.ghcWithPackages (p: [p.brick])" \
+    --run "runhaskell HelloWorld.hs"</code></pre></div>
+    <p class='mb-3'>
+      The <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>--run</code> argument will invoke the given command instead of dropping us in an interactive shell. This single command does <em>so much</em>—install the Haskell compiler with the requested libraries, compile our program and run it!
+    </p>
+  
+    <h3 id='haskell-scripts' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Haskell scripts
+  
+  <a href='haskell-nix#haskell-scripts' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      You can use the above nix-shell command in the shebang to create self-contained Haskell scripts. Let us see an example, but using <a href='ghcid' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>ghcid</a>, instead of runhaskell:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>#! /usr/bin/env -S"ANSWER=42" nix-shell
+#! nix-shell -p ghcid
+#! nix-shell -p "haskellPackages.ghcWithPackages (p: [p.shower])"
+#! nix-shell -i "ghcid -c 'ghci -Wall' -T main"
+
+import Shower (printer)
+import System.Environment (getEnv)
+
+main :: IO ()
+main = do
+  let question = "The answer to life the universe and everything"
+  answer &lt;- getEnv "ANSWER"
+  printer (question, "is", answer)</code></pre></div>
+    <p class='mb-3'>
+      Save this file as <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>myscript.hs</code> and run <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>chmod u+x myscript.hs</code> to make it an executable, and then run it as <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>./myscript.hs</code>. Not only is it a self-sufficient script (depending on nothing but nix in the environment), but thanks to ghcid it also re-compiles and re-launches itself whenever it changes! See more examples <a href='https://github.com/srid/aoc2019' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>here</a>.
+    </p>
+  
+    <h2 id='cabal-project' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Cabal project
+  
+  <a href='haskell-nix#cabal-project' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Haskell projects normally use <a href='https://www.haskell.org/cabal/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>cabal</a>, and you might already be familiar with <a href='https://haskellstack.org/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Stack</a> which uses Cabal underneath. Nix is an alternative to Stack with many advantanges, chief of them being the creation of reproducible development environments using declarative configuration that handles even non-Haskell packages.
+    </p>
+  
+    <p class='mb-3'>
+      Adding Nix support to most Cabal projects is a matter of creating a file called <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>default.nix</code> in the project root (just make sure you have a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>.cabal</code> file named appropriately). This file is by default used by commands like <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-build</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-shell</code>, which we will use when developing the project.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='nix language-nix'># default.nix
+let 
+  pkgs = import &lt;nixpkgs&gt; { };
+in 
+  pkgs.haskellPackages.developPackage {
+    root = ./.;
+    modifier = drv:
+      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
+        [ cabal-install
+          ghcid
+        ]);
+  }</code></pre></div>
+    <p class='mb-3'>
+      Now if you run <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-shell</code> it will drop you in a shell with all Haskell dependencies (from .cabal file) installed. This will be your development shell; from here you can run your usual <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>cabal</code> commands, and everything will function as expected.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='language-none'>$ nix-shell
+...
+[nix-shell:~] cabal new-build
+..</code></pre></div>
+    <p class='mb-3'>
+      If you only want to <em>build</em> the project, creating a final executable, use <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-build</code>.
+    </p>
+  
+    <h3 id='development-dependencies' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Development dependencies
+  
+  <a href='haskell-nix#development-dependencies' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Notice the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>modifier</code> attribute in the previous example. It specifies a list of build dependencies, using the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>addBuildTools</code> function, that becomes available when we run either <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-shell</code> or <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-build</code>. Here, you will specify all the packages you need for development.
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='haskell-nix#fn4'>
+        4
+      </a>
+    </sup>
+   We speficied two—<code class='py-0.5 px-0.5 bg-gray-100 font-mono'>cabal</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>ghcid</code>. If you removed <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>cabal</code> from this list, then cabal will not be in scope of your nix-shell. We added <a href='https://github.com/ndmitchell/ghcid' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>ghcid</code></a>, which can be used to run a daemon that will recompile your project if any of the source files change; go ahead and give it a try using <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-shell --run ghcid</code>.
+    </p>
+  
+    <h3 id='overriding-dependencies' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Overriding dependencies
+  
+  <a href='haskell-nix#overriding-dependencies' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      The above will work as long as the libraries your project depends on exist on nixpkgs (which itself is derived from Stackage). That will not always be the case and you may want to <em>override</em> certain dependencies.
+    </p>
+  
+    <p class='mb-3'>
+      In Nix overriding library packages is rather straightforward. The aforementioned <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>developPackage</code> function exposes this capability via the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>source-overrides</code> attribute. Suppose your cabal project depends on the <a href='https://github.com/monadfix/named' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>named</a> package at a particular git revision (<code class='py-0.5 px-0.5 bg-gray-100 font-mono'>e684a00</code>), then you would modify your <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>default.nix</code> to look like:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='nix language-nix'>let
+  pkgs = import &lt;nixpkgs&gt; { };
+  compilerVersion = "ghc865"; 
+  compiler = pkgs.haskell.packages."${compilerVersion}";
+in
+  compiler.developPackage {
+    root = ./.;
+    source-overrides = {
+      named = builtins.fetchTarball 
+        "https://github.com/monadfix/named/archive/e684a00.tar.gz";
+    };
+    modifier = drv:
+      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
+        [ cabal-install
+          ghcid
+        ]);
+  }</code></pre></div>
+    <p class='mb-3'>
+      Now, if you re-run <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-shell</code> or <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-build</code> Nix will rebuild your package, and any packages depending on <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>named</code>, using the new source.
+    </p>
+  
+    <p class='mb-3'>
+      Note that this example also demonstrates how to select a compiler version.
+    </p>
+  
+    <p class='mb-3'>
+      See <a href='https://tek.brick.do/how-to-override-dependency-versions-when-building-a-haskell-project-with-nix-K3VXJd8mEKO7' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Artyom’s tech notes</a> for more on overriding Haskell dependencies in Nix.
+    </p>
+  
+    <h3 id='multi-package-cabal-project' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Multi-package cabal project
+  
+  <a href='haskell-nix#multi-package-cabal-project' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>developPackage</code> cannot be used if your project has multiple Haskell packages. You will have to go a few steps lower in the abstraction ladder, and use the underlying Nix functions (<code class='py-0.5 px-0.5 bg-gray-100 font-mono'>callCabal2nix</code>, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>shellFor</code>, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>extend</code>) in the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>default.nix</code> (or <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>flake.nix</code>) of a multiple-package cabal project. See <a href='https://github.com/srid/haskell-multi-nix' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/srid/haskell-multi-nix</a> for a full example.
+    </p>
+  
+    <h2 id='caching' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Caching
+  
+  <a href='haskell-nix#caching' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Nix has builtin support for caching. Packages from the nixpkgs channel are already cached in the official cache. If you want to provide caching for your own packages, you may use <a href='https://nixos.wiki/wiki/Binary_Cache' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>nix-serve</a> (from NixOS) or <a href='https://cachix.org/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Cachix</a> (third-party service).
+    </p>
+  
+    <h2 id='continuous-integration' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Continuous Integration
+  
+  <a href='haskell-nix#continuous-integration' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Setting up CI for a Haskell project that already uses Nix is rather simple. If you use Github and Cachix, the easiest way is to use <a href='https://github.com/cachix/cachix-action' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>the cachix Github Action</a>. 
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='haskell-nix#fn5'>
+        5
+      </a>
+    </sup>
+  
+    </p>
+  
+    <h2 id='external-links' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  External links
+  
+  <a href='haskell-nix#external-links' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://nixos.org/manual/nixpkgs/unstable/#sec-haskell' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Official Nix manual on using Haskell</a>
+        </li>
+      
+        <li>
+          <a href='https://nix.dev/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Unofficial developer guide to Nix</a>
+        </li>
+      
+        <li>
+          <a href='haskell-template' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>haskell-template</code></a>: A prebuilt Haskell project template using Nix flakes, among other defaults
+        </li>
+      
+        <li>
+          <a href='https://www.haskellforall.com/2022/08/incrementally-package-haskell-program.html' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Incrementally package a Haskell program using Nix</a>
+        </li>
+      
+    </ul>
+  
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            If you use Windows, you should set up <a href='https://docs.microsoft.com/en-us/windows/wsl/install' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>WSL2</a> Ubuntu and install Nix on it (or setup <a href='nixos' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a> using <a href='https://github.com/Trundle/NixOS-WSL' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>NixOS-WSL</a> instead of Ubuntu).
+          </div>
+        </div>
+      
+        <div id='fn2'>
+          <header class='italic'>
+            2.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Alternatively, if you are feeling adventurous enough, you may install <a href='nixos' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a>, a Linux distribution based on Nix.
+          </div>
+        </div>
+      
+        <div id='fn3'>
+          <header class='italic'>
+            3.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Nix is a <em>general</em> package manager. You may use it to manage not only haskell packages, but also any other program. For example, to temporarily use the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>tree</code> package, so as to dispay the directory tree of the current directory, you would run: <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nix-shell -p tree --run tree</code>.
+          </div>
+        </div>
+      
+        <div id='fn4'>
+          <header class='italic'>
+            4.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Use <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>pkgs.lib.haskell.inNixShell</code> to conditionally include dependencies on nix-shell but not nix-build.
+          </div>
+        </div>
+      
+        <div id='fn5'>
+          <header class='italic'>
+            5.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            If you are however using a <em>self-hosted</em> runner in Github Actions with public repos, read this <a href='https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-self-hosted-runners#self-hosted-runner-security-with-public-repositories' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>security warning</a>.
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/Software/Nix/Nix recipes for Haskellers.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+</article>
+    
+    <div class='flex flex-col lg:flex-row lg:space-x-2'>
+      
+      
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='nix-haskell-static-binaries'>
+            Building Static Haskell binaries using Nix
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div>Nixify your project: write a <code>default.nix</code> (See <a href='haskell-nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Nix recipes for Haskellers</a>)</div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+    </div>
+    
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-green-500' href='-/tags/blog'>
+        <!-- DoNotFormat -->
+        #blog
+        <!-- DoNotFormat -->
+      </a>
+    
+  </section>
+
+    <!-- What goes in this file will at the very end of the main div -->
+  </main>
+</div>
+        </div>
+      
+      <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 1.3.30.0'>
+      <img class='w-6 h-6 hover:text-green-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-green-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+    </div>
+  
+  <div id='stork-search-container' class='hidden fixed w-screen h-screen inset-0 backdrop-filter backdrop-blur-sm'>
+  <div class='fixed w-screen h-screen inset-0' onclick='window.emanote.stork.toggleSearch()'></div>
+
+  <div class='container mx-auto p-10 mt-10'>
+    <div class='stork-wrapper-flat container mx-auto'>
+      <input id='stork-search-input' data-stork='emanote-search' class='stork-input' placeholder='Search (Ctrl+K) ...' />
+      <div data-stork='emanote-search-output' class='stork-output'></div>
+    </div>
+  </div>
+</div>
+  
+    
+  
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+\usepackage{fancyvrb,newverbs,xcolor}
+
+\definecolor{Light}{HTML}{F4F4F4}
+
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{
+  \setlength\fboxsep{0pt}
+  \colorbox{Light}{\oldtexttt{#1}}
+  \setlength\fboxsep{3pt}
+}

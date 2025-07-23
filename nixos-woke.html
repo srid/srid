@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+
+
+
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    NixOS Woke Invasion – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='Woke invasion of the NixOS community can be traced back to as early as April, 2021 (1, 2). It appears to have reached its zenith in April, 2024 when the woke moderation team’s mischiefs reached the public eye.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content='https://srid.ca/' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='NixOS Woke Invasion' />
+      
+        <meta name='twitter:card' content='summary_large_image' />
+      
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+
+  
+  
+  <link href='tailwind.css?instanceId=5bcf93f2-2596-4372-99b7-91ee6c5b7219' rel='stylesheet' type='text/css' />
+
+  <link rel='stylesheet' href='_emanote-static/fonts/maven-pro.css' />
+
+<style data-category='global-font'>
+  /* Maven Pro font for the entire site */
+  body {
+    font-family: 'Maven Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+</style>
+
+<style data-category='error'>
+  /* Heist error element */
+  strong.error {
+    color: lightcoral;
+    font-size: 90%;
+    font-family: monospace;
+  }
+</style>
+
+<style data-category='kbd'>
+  /* <kbd> styling */
+  kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+  }
+</style>
+
+<style data-category='callout'>
+  /* To prevent overemphasis of link styles in callout titles */
+  .callout .callout-title a {
+    color: inherit;
+    text-decoration: underline;
+  }
+</style>
+
+<style data-category='toc'>
+  a.--ema-toc:not(.toc-item-active) {
+    background-color: #ffffff !important;
+  }
+</style>
+
+<style data-category='external-link'>
+  /* External link icon */
+  a[data-linkicon=""]::after {
+    content: ""
+  }
+
+  a[data-linkicon=none]::after {
+    content: ""
+  }
+
+  a[data-linkicon="external"] {
+    padding-right: 24px;
+  }
+
+  a[data-linkicon="external"]::after {
+    margin-right: -24px;
+    content: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" height="0.7em" viewBox="0 0 20 20"> \
+        <g style="stroke:gray;stroke-width:1"> \
+          <line x1="5" y1="5" x2="5" y2="14" /> \
+          <line x1="14" y1="9" x2="14" y2="14" /> \
+          <line x1="5" y1="14" x2="14" y2="14" /> \
+          <line x1="5" y1="5" x2="9" y2="5"  /> \
+          <line x1="10" y1="2" x2="17" y2="2"  /> \
+          <line x1="17" y1="2" x2="17" y2="9" /> \
+          <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.0" /> \
+        </g> \
+      </svg>');
+  }
+
+  a[data-linkicon="external"][href^="mailto:"]::after {
+    content: url('data:image/svg+xml,\
+        <svg \
+          xmlns="http://www.w3.org/2000/svg" \
+          height="0.7em" \
+          fill="none" \
+          viewBox="0 0 24 24" \
+          stroke="gray" \
+          stroke-width="2"> \
+          <path \
+            stroke-linecap="round" \
+            stroke-linejoin="round" \
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /> \
+        </svg>');
+  }
+</style>
+  <link rel='stylesheet' href='/obsidian-snippets/headers.css' />
+
+
+  
+    <style>
+      /* For use in sidebar.tpl, as we cannot achieve this in tailwind itself! */
+      /* md:min-w-48  */
+      @media (min-width: 768px) {
+        #sidebar {
+          min-width: 12rem;
+        }
+      }
+
+      /* xl:min-w-64  */
+      @media (min-width: 1280px) {
+        #sidebar {
+          min-width: 16rem;
+        }
+      }
+    </style>
+
+    
+      <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+    
+  
+  <link rel='stylesheet' href='_emanote-static/stork/flat.css' />
+<!-- Custom Stork-search styling for Emanote -->
+<style data-category='stork'>
+  #stork-search-container {
+    z-index: 1000;
+    background-color: rgb(15 23 42/.8);
+  }
+
+  .stork-overflow-hidden-important {
+    overflow: hidden !important;
+  }
+</style>
+
+
+<script src='_emanote-static/stork/stork.js'></script>
+
+  
+    <script id='emanote-stork' data-emanote-base-url='/'>
+      window.emanote = {};
+      window.emanote.stork = {
+        searchShown: false,
+        indexIsStale: false,
+        toggleSearch: function () {
+          window.emanote.stork.refreshIndex();
+          document.getElementById('stork-search-container').classList.toggle('hidden');
+          window.emanote.stork.searchShown = document.body.classList.toggle('stork-overflow-hidden-important');
+          if (window.emanote.stork.searchShown) {
+            document.getElementById('stork-search-input').focus();
+          }
+        },
+        clearSearch: function () {
+          document.getElementById('stork-search-container').classList.add('hidden');
+          document.body.classList.remove('stork-overflow-hidden-important');
+          window.emanote.stork.searchShown = false;
+        },
+
+        getBaseUrl: function () {
+          const baseUrl = document.getElementById("emanote-stork").getAttribute('data-emanote-base-url') || '/';
+          return baseUrl;
+        },
+
+        registerIndex: function (options) {
+          const indexName = 'emanote-search'; // used to match input[data-stork] attribute value
+          const indexUrl = window.emanote.stork.getBaseUrl() + '-/stork.st';
+          stork.register(
+            indexName,
+            indexUrl,
+            options);
+        },
+
+        init: function () {
+          if (document.readyState !== 'complete') {
+            window.addEventListener('load', function () {
+              stork.initialize(window.emanote.stork.getBaseUrl() + '_emanote-static/stork/stork.wasm');
+              window.emanote.stork.registerIndex();
+            });
+
+            document.addEventListener('keydown', event => {
+              if (window.emanote.stork.searchShown && event.key === 'Escape') {
+                window.emanote.stork.clearSearch();
+                event.preventDefault();
+              } else if ((event.key == 'k' || event.key == 'K') && (event.ctrlKey || event.metaKey)) {
+                window.emanote.stork.toggleSearch();
+                event.preventDefault();
+              }
+            });
+          } else {
+            // This section is called during Ema's hot reload.
+            // 
+            // Mark the current index as stale, and refresh it *only when* the
+            // user actually invokes search.
+            // 
+            // We do not refresh the index *right away*, as that will cause
+            // memory leaks in the browser. See
+            // https://github.com/srid/emanote/issues/411#issuecomment-1402056235
+            console.log("stork: Marking index as stale");
+            window.emanote.stork.markIndexAsStale();
+          }
+        },
+
+        markIndexAsStale: function () {
+          window.emanote.stork.indexIsStale = true;
+        },
+
+        refreshIndex: function () {
+          if (window.emanote.stork.indexIsStale) {
+            console.log("stork: Reloading index");
+            window.emanote.stork.indexIsStale = false;
+            // NOTE: This will leak memory. See the comment above.
+            window.emanote.stork.registerIndex({ forceOverwrite: true });
+          }
+        }
+
+      };
+
+      window.emanote.stork.init();
+    </script>
+  
+
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg mt-2 md:mt-4  '>
+      
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree font-medium' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <a href='community'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Community
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='identity/social'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Social Identity
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='free'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Humanity Unorthodox
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href=''>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Sridhar Ratnakumar
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+            <li>
+
+  <a href='woke-invasion'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Woke Invasion
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='woke'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Wokeism
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='unfree'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Humanity Orthodox
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+            <li>
+
+  <a href='nixos'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      NixOS
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='linux'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Linux
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='software'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+      
+
+      
+
+      
+        <div id='container' class='relative md:shadow-2xl md:mb-8'>
+          
+  <div class='absolute -top-6 right-1 md:right-0 flex flex-row items-center justify-center'>
+    <a title='Search (Ctrl+K)' class='cursor-pointer' onclick='window.emanote.stork.toggleSearch()'>
+      <svg xmlns='http://www.w3.org/2000/svg' style='width: 1rem;' class='hover:text-green-700' f
+ fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+  <path stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
+</svg>
+    </a>
+  </div>
+
+          <!-- Main body column -->
+          <div class='flex-1 w-full bg-white'>
+  <main class='px-4 py-4'>
+    <h1 class='flex items-end justify-center mb-4 p-3 bg-green-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    NixOS Woke Invasion
+  </a>
+</h1>
+    
+      <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+
+
+
+
+
+
+    <p class='mb-3'>
+      <a href='woke-invasion' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkTag'>Woke invasion</a> of the <a href='nixos' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a> <a href='community' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkTag'>community</a> can be traced back to as early as April, 2021 (<a href='https://discourse.nixos.org/t/nursing-a-thriving-community/12742' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>1</a>, <a href='https://github.com/NixOS/nixpkgs/pull/120729#discussion_r621116027' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2</a>). It appears to have reached its zenith in April, 2024 when the woke moderation team’s mischiefs <a href='https://news.ycombinator.com/item?id=40166912' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>reached the public eye</a>.
+    </p>
+  
+    <p class='mb-3'>
+      On May 1st, 2024, the Board decided to delegate powers to an unspecified “community” (see “Eelco steps down” below), leading to the formation of the “Steering Committee” on November 2024 - however it remains to be seen as to what exactly this will engender.
+    </p>
+  
+    <h2 id='timeline' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Timeline
+  
+  <a href='nixos-woke#timeline' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Notable events since Nov, 2023:
+    </p>
+  <table class='mb-3'><thead><tr class='border-b-2 border-t-2 border-gray-300'><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Date</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Event</th></tr></thead><tbody><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='nixos-mod' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>2023-11-14</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Author gets banned for ideological reasons</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://twitter.com/sridca/status/1751586790425895377' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-01-28</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Witch-hunt by NixOS moderator Martin Weinelt (hexa) to get the entire <a href='https://nixos.asia/en/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>NixOS Asia</a> domain, as well as Srid, banned from the <a href='lobsters-site' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Lobste.rs</a> site</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://twitter.com/sridca/status/1757055395183374667' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-02-12</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Report of the moderators perma-banning David Arnold</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://twitter.com/sridca/status/1766944228129575327' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-03-10</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Continued criticism of the mod team by community members; a NixOS moderator “piegamesde” publicly accuses Srid of being <a href='gender' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>"transphobic"</a></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://twitter.com/sridca/status/1771523366983196975' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-03-20</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://twitter.com/sridca/status/1782200842571198962' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-04-22</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Attempt to depose Eelco Dolstra</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://news.ycombinator.com/item?id=40204985' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-04-26</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://github.com/NixOS/rfcs/pull/175' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>RFC 175</a>; Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes); moderators begin resigning (see below)</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-05-01</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Eelco steps down</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://github.com/NixOS/foundation/pull/142' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-05-01</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://nixpkgs.zulipchat.com/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Zulip</a> is chosen for governence discussions (allowing banned members with <em>“extreme prejudice”</em> and threat of permaban <em>“[if] they blow it““</em>)</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://github.com/NixOS/moderation/commits/main/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-11-08</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Both authors of RFC 175 get permanently banned</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-11-21</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>SC kicks off their deliberately designed echo-chamber (<em>“We want to speak and act as a single voice”</em>)</td></tr></tbody></table>
+    <h2 id='moderation' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Moderation team
+  
+  <a href='nixos-woke#moderation' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <h3 id='mod-evidence' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Evidence of woke moderation
+  
+  <a href='nixos-woke#mod-evidence' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Consult <a href='https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>the appendix of RFC 175</a> to read the concrete evidence for woke moderation in the NixOS community.
+    </p>
+  
+    <h3 id='resignations' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Resignations
+  
+  <a href='nixos-woke#resignations' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Just a few hours after the PR for RFC 175 was opened, several moderators began to resign from the team:
+    </p>
+  <table class='mb-3'><thead><tr class='border-b-2 border-t-2 border-gray-300'><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Date</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Name</th></tr></thead><tbody><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://old.reddit.com/r/NixOS/comments/1cfv8vo/moderation_nogo_zones/l1v9fhl/?context=3' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-04-26</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Ryan Mulligan</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://discourse.nixos.org/t/taking-a-step-back/44243' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-04-28</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>piegames</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://discourse.nixos.org/t/resigning-from-the-moderation-team/44607' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-05-01</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>rhendric (Ryan Hendrickson)</td></tr></tbody></table>
+    <p class='mb-3'>
+      As of May 2nd, this leaves <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hexa</code> and the newly-joined <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>lassulus</code> as the only moderators.
+    </p>
+  
+    <h2 id='boardgg' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Board member resignations
+  
+  <a href='nixos-woke#boardgg' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      4/5 board members have so far quit, leaving Ron as the only one left.
+    </p>
+  <table class='mb-3'><thead><tr class='border-b-2 border-t-2 border-gray-300'><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Date</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Name</th></tr></thead><tbody><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://discourse.nixos.org/t/nixos-foundation-board-giving-power-to-the-community/44552' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-04-30</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Eelco Dolstra</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://x.com/sridca/status/1767171520428728645' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-03-11</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Domen Kozar</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-06-07</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Jonas Chevalier</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><a href='https://discourse.nixos.org/t/time-to-step-down/47835' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2024-06-28</a></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Théophane Hufschmitt</td></tr></tbody></table>
+    <h2 id='ca' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Timeline
+  
+  <a href='nixos-woke#ca' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  <div class='text-xs opacity-30 hover:opacity-100'>
+    <h3 id='may' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  May
+  
+  <a href='nixos-woke#may' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Self-professed manipulator joepie91 (Sven Slootweg) is involved from beginning
+        </li>
+      
+        <li>
+          Preemptive squashing of dissenting opinions: <a href='https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25</a>
+        </li>
+      
+        <li>
+          Allowing safetyism-based silencing & banning: <a href='https://github.com/NixOS/foundation/pull/144#discussion_r1588136289' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/NixOS/foundation/pull/144#discussion_r1588136289</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          cf. shlevy &lt;-&gt; zimbatm <a href='https://matrix.to/#/!VyoUhyWvlhSpFWWxHL:matrix.org/$P7-nlgSP0QVA7W6qPPUZddmnXxRYW5d67EVfjKO-RiQ?via=nixos.org&amp;via=matrix.org&amp;via=nixos.dev' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>on Matrix</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          A predominantly woke moderation team (6 of them from Europe, incidentally) was chosen to moderate the Zulip: <a href='https://github.com/NixOS/foundation/pull/144#issuecomment-2091819630' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/NixOS/foundation/pull/144#issuecomment-2091819630</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          infinisil was quite sensible, until to the point of ceding to banning Shea Levy (see below)
+        </li>
+      
+        <li>
+          RaitoBezarius is woke.
+        </li>
+      
+        <li>
+          hexa is woke.
+        </li>
+      
+        <li>
+          Janik is woke
+        </li>
+      
+        <li>
+          <a href='https://toot.cat/@endocrimes' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>endocrimes</a> is woke (responsible for banning Shea)
+        </li>
+      
+        <li>
+          lassulus (unknown yet; but did relay the spurious message justifying Jon’s ban)
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Zulip topis of interest
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://nixpkgs.zulipchat.com/#narrow/stream/435937-constitutional-assembly/topic/Selection.20criteria.3A.20marginalized.20groups' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>constitutional assembly &gt; Selection criteria: marginalized groups</a>
+        </li>
+      
+        <li>
+          <a href='https://nixpkgs.zulipchat.com/#narrow/stream/435724-governance/topic/Fundamental.20Principles' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>governance &gt; Fundamental Principles</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Shea Levy got banned (infinisil folded to the rest of the moderators)
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://old.reddit.com/r/NixOS/comments/1cndnyw/broken_promises_the_nix_governance_discussions/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1cndnyw/broken_promises_the_nix_governance_discussions/</a>
+        </li>
+      
+        <li>
+          <a href='https://old.reddit.com/r/NixOS/comments/1cn60v1/shea_levy_has_been_suspended_from_the_governance/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1cn60v1/shea_levy_has_been_suspended_from_the_governance/</a>
+        </li>
+      
+        <li>
+          <a href='https://old.reddit.com/r/NixOS/comments/1cqic4w/report_on_nixos_governance_discussions/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1cqic4w/report_on_nixos_governance_discussions/</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Assembly applications open <a href='https://old.reddit.com/r/NixOS/comments/1cojgjs/applications_for_nixos_constitutional_assembly/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1cojgjs/applications_for_nixos_constitutional_assembly/</a>
+        </li>
+      
+        <li>
+          Assembly announced: <a href='https://old.reddit.com/r/NixOS/comments/1ct3tdb/nixos_foundation_board_constitutional_assembly/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1ct3tdb/nixos_foundation_board_constitutional_assembly/</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          several months before their work is done, and the results can be appraised.
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          delroth publicly accusing Shea Levy of being ‘fascist’ <a href='https://mastodon.delroth.net/@delroth/112450680035780629' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://mastodon.delroth.net/@delroth/112450680035780629</a>
+        </li>
+      
+        <li>
+          Someone’s calling out of recent (biased) mod actions <a href='https://x.com/sridca/status/1792321271608328487' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1792321271608328487</a>
+        </li>
+      
+        <li>
+          Calls to drop r/NixOS from nixos webpages; samueldr banning individuals from the wiki for political reasons: <a href='https://x.com/sridca/status/1793489723882664111' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1793489723882664111</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/</a>
+        </li>
+      
+        <li>
+          sock-puppets of woke users trying to worsen the drama, e.g.: <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>https://old.reddit.com/user/Prudent_Confidence14</code>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          May 30: Raito dogpiles on nix 2.18 -&gt; 2.22 PR: <a href='https://github.com/NixOS/nixpkgs/pull/315262' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/NixOS/nixpkgs/pull/315262</a>
+        </li>
+      
+        <li>
+          May 30: Irene claims to be “closely associated” with the NixOS drama (despite not publicly engaging with it outside of signing the save-nix-together letter): <a href='https://lobste.rs/s/vyprdq/nixos_24_05_released#c_pxv3sb' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://lobste.rs/s/vyprdq/nixos_24_05_released#c_pxv3sb</a>
+        </li>
+      
+    </ul>
+  
+    <h3 id='june' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  June
+  
+  <a href='nixos-woke#june' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Jun 4: zimbatm removes Srid from nix-system org (also replying to him on X) and blocks him on GitHub; Srid is (coincidentally?) banned from nix-community GitHub org on the same day: <a href='https://x.com/sridca/status/1798025800798683161' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1798025800798683161</a>
+        </li>
+      
+        <li>
+          Jun 7: zimbatm <a href='https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>formally announces leaving Foundation</a> writing <em>“I also messed up in many places [..] the worst part was all the conflicts that erupted in the community that I couldn’t address adequately. That was difficult. Many people got hurt emotionally. I’m sorry I failed there.”</em>
+        </li>
+      
+        <li>
+          Jun 10: <a href='https://discourse.nixos.org/t/target-date-public-repo-office-hours-interviews/46827' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Target date, public repo, office hours, interviews</a>
+        </li>
+      
+        <li>
+          Jun 11: After his suspension, <a href='https://x.com/jonringer117/status/1800644896920945146' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Jon Ringer comments on RFC 175</a>
+        </li>
+      
+        <li>
+          Jun 17: (word of mouth) Ron apparently is the only one running the Board (Théophane silently quit)
+        </li>
+      
+        <li>
+          Jun 19: Jon Ringer’s request to restore commit access (which was removed when he was suspended) gets brigaded by woke mob <a href='https://x.com/sridca/status/1803545277284143252' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1803545277284143252</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          wokies threaten to quit if Jon is not banned gain.
+        </li>
+      
+        <li>
+          Domen gets threatened by Jade (<a href='https://old.reddit.com/r/NixOS/comments/1dku0l0/i_must_note_rnixos_is_a_moderation_free_zone/?cache-bust=1718978771090' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>comment link</a>)
+        </li>
+      
+        <li>
+          Jon gets his commit bit back, but not yet Tim
+        </li>
+      
+        <li>
+          samuel <a href='https://discourse.nixos.org/t/maintainers-drop-samueldr-321436/47354' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ragequits</a> and engages in sabotoge by deleting several packages from <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>nixpkgs</code>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          June 21:
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Jon is permabanned <a href='https://x.com/sridca/status/1804188339244843120' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1804188339244843120</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://old.reddit.com/r/NixOS/comments/1dloahg/constitutional_assembly_statement_on_jon_ringer/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1dloahg/constitutional_assembly_statement_on_jon_ringer/</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          r/nixos <a href='https://x.com/_DavSanchez/status/1804187182770311552' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>reportedly</a> begins to get moderated by unknown users (mods list is private and hidden) with posts being hidden or removed.
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          On the same day, <a href='https://old.reddit.com/user/Lassulus' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Lassulus</a> (the new mod and CA member) <a href='https://old.reddit.com/r/NixOS/comments/1dl5rxe/list_of_open_source_games_and_their_status_on/l9mm01p/?context=3' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>resurrects</a> his reddit account which had been inactive for 6 years
+        </li>
+      
+        <li>
+          Unclear if Domen played a role: <a href='https://x.com/sridca/status/1804506753876299924' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1804506753876299924</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Domen ragequits in giving commit access, because mod action wasn’t not taken on his attacker (welcome to the club), Jade: <a href='https://github.com/NixOS/nixpkgs/issues/50105#issuecomment-2183067965' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/NixOS/nixpkgs/issues/50105#issuecomment-2183067965</a>
+        </li>
+      
+        <li>
+          Ongoing vandalism on nixos.wiki as well as impersonation by wokies (links to be added)
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Jul 27: Impersonation of Shivaraj on nixos.wiki purloining this very page: <a href='https://old.reddit.com/r/NixOS/comments/1ed5gbc/the_nixos_conflict_in_under_5_minutes/lf70qh1/?context=3' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1ed5gbc/the_nixos_conflict_in_under_5_minutes/lf70qh1/?context=3</a>
+        </li>
+      
+        <li>
+          Jul 22: Impersonation of Srid on an entirely unrelated community: <a href='https://x.com/sridca/status/1815545168982130707' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1815545168982130707</a>
+        </li>
+      
+        <li>
+          Nov 7: “isabelroses” brings up the impersonated page for political gain: <a href='https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489/110' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489/110</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Jun 22: Following Jon’s ban, Hexa talking “purge” <a href='https://x.com/sridca/status/1804533789760037221' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1804533789760037221</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          In response to Srid’s post, Hexa reveals himself as an antifa on the same day, <a href='https://x.com/sridca/status/1807516430260113904' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1807516430260113904</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Jun 27: spamming of github repos to switch away from unofficial wiki: <a href='https://github.com/NixOS/nixos-wiki-infra/issues/105' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/NixOS/nixos-wiki-infra/issues/105</a>
+        </li>
+      
+        <li>
+          Jun 28: Another board member, Théophane Hufschmitt, steps down writing <em>“I have also been deeply hurt by some behaviours, when people considered that pushing for their own idea of a successful community was worth spreading hate, defamation, fear and exclusion, or by the (too recurrent) thinking that one’s own agenda was more important than honesty, truth, and care for the others.”</em>: <a href='https://discourse.nixos.org/t/time-to-step-down/47835' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://discourse.nixos.org/t/time-to-step-down/47835</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          This leaves Ron as the only board member: <a href='https://x.com/sridca/status/1806706500234039792' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1806706500234039792</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Jun 29: Domen and Graham fight out the blame game, while Domen continues to talk freely while utterly failing in leadership actions: <a href='https://x.com/sridca/status/1807063291132309905' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1807063291132309905</a> & <a href='https://x.com/grhmc/status/1806997486621405227' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/grhmc/status/1806997486621405227</a>
+        </li>
+      
+        <li>
+          Jun 29: Domen, Shea, Graham publicly talking about commercial fork/consortium <a href='https://x.com/domenkozar/status/1807047507404312592' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/domenkozar/status/1807047507404312592</a>
+        </li>
+      
+    </ul>
+  
+    <h3 id='july' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  July
+  
+  <a href='nixos-woke#july' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Jul 1: Infinisil concedes what went wrong, and promises to do better by collaborating with Jon; further woke fallout (more ragequits): <a href='https://x.com/sridca/status/1807842730132795653' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1807842730132795653</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          More ragequits follow: <a href='https://old.reddit.com/r/NixOS/comments/1dtqlga/maintainers_exodus_over_recent_events/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1dtqlga/maintainers_exodus_over_recent_events/</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Yet, in all factuality, there extortion is empty rhetoric: <a href='https://old.reddit.com/r/NixOS/comments/1e0clk6/growth_in_nixpkgs_maintainers_jul_2020_to_present/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1e0clk6/growth_in_nixpkgs_maintainers_jul_2020_to_present/</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Jul 3: First media report on the core issue (political activism): <a href='https://old.reddit.com/r/NixOS/comments/1dul0nw/nixos_commits_purge_of_nazi_contributors_forces/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1dul0nw/nixos_commits_purge_of_nazi_contributors_forces/</a> which gets censored on Discourse <a href='https://x.com/sridca/status/1808577121465303149' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1808577121465303149</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          The reddit submittion gets shadowlisted in a day (by Domen?)
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Jul 3: Sometime recently (in the last 3 weeks), Jonas Chevalier blocks Srid from the entire GitHub organization of his consultancy (Numtide): <a href='https://x.com/sridca/status/1808605343674450157' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1808605343674450157</a>
+        </li>
+      
+        <li>
+          Jul 6: Tim <a href='https://nrd.sh/blog/nixos-policy-breakdown/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Political Bikeshedding: NixOS Edition</a>
+        </li>
+      
+        <li>
+          Jul 11: <a href='https://news.ycombinator.com/item?id=40932996' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Lix post gets flagged on HN</a>; their bigotted beliefs get called out <a href='https://lobste.rs/s/1hrh4a/announcing_lix_2_90_vanilla_ice_cream#c_gyzzmv' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>elsewhere</a> (albeit on a community which itself is moderated by a bigotted group)
+        </li>
+      
+        <li>
+          Jul 13: /r/NixOS begins testing AI to assist with moderation (based on NixOS CoC): <a href='https://old.reddit.com/r/NixOS/comments/1e27pxq/automated_moderation/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1e27pxq/automated_moderation/</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Jul 21: And approaching failure: <a href='https://old.reddit.com/r/NixOS/comments/1e885up/an_argument_against_the_use_of_watchdog_chatbot/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1e885up/an_argument_against_the_use_of_watchdog_chatbot/</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          July 18: Ron posts <em>“[The board] is now smaller than it once was. I would love to extend a call to action for those interested in helping out.”</em> <a href='https://discourse.nixos.org/t/call-to-action-interim-volunteers-for-nixos-foundation-efforts/49269' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://discourse.nixos.org/t/call-to-action-interim-volunteers-for-nixos-foundation-efforts/49269</a>
+        </li>
+      
+        <li>
+          July 5 (discovered on Jul 26): Chris posts <a href='https://x.com/sridca/status/1817028976226791775' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>The NixOS Conflict in Under 5 Minutes</a>
+        </li>
+      
+    </ul>
+  
+    <h3 id='aug' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Aug
+  
+  <a href='nixos-woke#aug' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Aug 1: NCA publishes Nix Community Values draft for feedback. Ryan comments publicly. <a href='https://old.reddit.com/r/NixOS/comments/1eh8s7i/nix_community_values_draft_for_feedback_before/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1eh8s7i/nix_community_values_draft_for_feedback_before/</a>
+        </li>
+      
+    </ul>
+  
+    <h3 id='sept' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Sept
+  
+  <a href='nixos-woke#sept' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Sep 10: Nix 2.24 vulnerability drama, mostly from Lix people
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://news.ycombinator.com/item?id=41492994' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://news.ycombinator.com/item?id=41492994</a>
+        </li>
+      
+        <li>
+          <a href='https://lobste.rs/s/ixb3v7/nix_2_24_is_vulnerable_remote_privilege' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://lobste.rs/s/ixb3v7/nix_2_24_is_vulnerable_remote_privilege</a>
+        </li>
+      
+        <li>
+          Causing a Nix team member (Robert) to <a href='https://functional.cafe/@roberth/113109319874108408' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>object</a> & then <a href='https://functional.cafe/@roberth/113113241888848304' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>apologize</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Sep 10: <a href='https://old.reddit.com/r/NixOS/comments/1fd4bmk/last_call_for_feedback_nix_governance/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Last call for feedback; Nix Governance Constitution to be finalised on 2024-09-16</a>
+        </li>
+      
+        <li>
+          Sep 19: SC election nominees are substantially wokies (which ought to be unsurprising given the political nature of this takeover), as of Sep 19: <a href='https://github.com/NixOS/SC-election-2024/pulls?q=is%3Apr+Nominate' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/NixOS/SC-election-2024/pulls?q=is%3Apr+Nominate</a>
+        </li>
+      
+        <li>
+          Sep 29: Evidence of bigoted beliefs among candidates resurface: <a href='https://x.com/sridca/status/1840385121578291680' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1840385121578291680</a>
+        </li>
+      
+    </ul>
+  
+    <h3 id='oct' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Oct
+  
+  <a href='nixos-woke#oct' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Oct 14: Tampering of the voting system and eventual deadline extension: <a href='https://old.reddit.com/r/NixOS/comments/1g6s0mc/nix_elections_voting_open_until_20241103/lslmdrs/?context=3' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1g6s0mc/nix_elections_voting_open_until_20241103/lslmdrs/?context=3</a>
+        </li>
+      
+        <li>
+          Oct 20: Two SC candidates have CoI with the activist fork Lix, <a href='https://old.reddit.com/r/NixOS/comments/1g801r9/lix_forking_nixosnixpkgs/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://old.reddit.com/r/NixOS/comments/1g801r9/lix_forking_nixosnixpkgs/</a>
+        </li>
+      
+        <li>
+          Oct 20: A SC candidate demonstrates bigotry openly against a community member: <a href='https://x.com/GabriellaG439/status/1850915429050708063' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/GabriellaG439/status/1850915429050708063</a>
+        </li>
+      
+        <li>
+          Oct 27: Domen (“I won’t be contributing to Nix anymore and will put my efforts into Tvix”) <a href='https://old.reddit.com/r/NixOS/comments/1ge2rkb/domen_i_wont_be_contributing_to_nix_anymore_and/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>attacks</a> DetSys; <a href='https://discourse.nixos.org/t/parting-from-the-documentation-team/24900/36' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Graham responds</a>
+        </li>
+      
+        <li>
+          Oct 30: SC candidate cafkafk getting called out by another (numinit): <a href='https://discourse.nixos.org/t/announcing-determinate-nix/54709/120' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://discourse.nixos.org/t/announcing-determinate-nix/54709/120</a>
+        </li>
+      
+    </ul>
+  
+    <h3 id='nov' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Nov
+  
+  <a href='nixos-woke#nov' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          The yearly gender ritual:
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489</a>
+        </li>
+      
+        <li>
+          <a href='https://discourse.nixos.org/t/improving-diversity-in-this-community/55547' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://discourse.nixos.org/t/improving-diversity-in-this-community/55547</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          The rest of RFC 175 authors get permanently banned: <a href='https://github.com/NixOS/moderation/commit/a40d73948299c9d622ef6a09bed219b56464bb95' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Andreas</a>, <a href='https://github.com/NixOS/moderation/commit/4d6ff96b9213d1d6bf704cb57af4f23f4f864f61' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Tim</a>.
+        </li>
+      
+        <li>
+          <a href='https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>SC kicks off</a> their deliberately designed echo-chamber (<em>“We want to speak and act as a single voice”</em>).
+        </li>
+      
+        <li>
+          
+        </li>
+      
+    </ul>
+  
+    <h3 id='2025-feb' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  2025 Feb
+  
+  <a href='nixos-woke#2025-feb' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Jon publishes a 2+ hr video summarizing the whole drama. <a href='https://www.reddit.com/r/NixOS/comments/1imqc14/nixos_drama_explained_a_personal_account/?utm_source=reddit&amp;utm_medium=usertext&amp;utm_name=NixOS' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Reddit</a>, <a href='https://x.com/jonringer117/status/1889114268991426949' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>X</a>, <a href='https://www.youtube.com/watch?v=gp0FI8Gw1iA' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>YouTube</a>, <a href='https://gist.github.com/jonringer/11744f5489aa2b9feb83e6e85d79d5ee' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Text</a>. Infinisil uses midwit rhetoric with an air of caring, but factually uncaring, exposing his lack of boldness and fairhandedess in these issues.
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <strong>NOTE:</strong> The author, Srid, has lost interest in keeping this timeline up to date, but the drama does continue (<a href='https://x.com/mightyiam/status/1924013214448415188' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>1</a>; <a href='https://x.com/jonringer117/status/1931736499198070883' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>2</a>).
+    </p>
+  </div>
+    <h2 id='external-links' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  External Links
+  
+  <a href='nixos-woke#external-links' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://www.themotte.org/post/994/smallscale-question-sunday-for-may-5/209672?sort=top#context' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>themotte.org discussion</a>
+        </li>
+      
+    </ul>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/Software/Linux/NixOS/nixos-woke-invasion/index.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+</article>
+    
+    <div class='flex flex-col lg:flex-row lg:space-x-2'>
+      
+      
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='woke-invasion'>
+            Woke Invasion
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><a href='nixos-woke' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>NixOS Woke Invasion</a></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='woke-hypocrisy'>
+            Woke Hypocrisy
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div>In <a href='nixos-woke' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>NixOS Woke Invasion</a> context, <a href='https://x.com/sridca/status/1877012272012312960' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1877012272012312960</a></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='nixos'>
+            NixOS
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>[!warning] I <em>do not</em> recommend the official avenues: Matrix & Discourse (<a href='nixos-woke' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>why not?</a>)</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='nixos-mod'>
+            Have NixOS Mods Become Radicalized?
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>[!info] Updates For events that happened after publishing this blog post, consult <a href='https://twitter.com/sridca/status/1727690440986558653' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>this X thread</a>. For further events, and context, see <a href='nixos-woke' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>NixOS Woke Invasion</a>.</p></div>
+    </div>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Despite the <a href='https://github.com/NixOS/.github/blob/master/CODE_OF_CONDUCT.md' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>newly announced Code of Conduct</a> setting a standard of “<em>being respectful of differing viewpoints and experiences</em>”, the moderators ignored the violators Teo Camarasu “TeofilC” and Christina Sørensen “cafkafk” and thereon went after the person they attacked because of ideological misalignment. The NixOS moderation team, which appears to have been <a href='nixos-woke' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>strategically set up</a> originally by Graham Christensen, has been self-selecting the team to maintain over the years an ideologically-uniform and radicalized echo-chamber that, for some reason, is also decidedly <em>not</em> geographically diverse.<sup>*</sup> It remains to be seen as to when and how this woke stronghold gets broken. It is only a matter of time (even if it takes years) that it disintegrates because, as <a href='https://world.hey.com/dhh/standing-up-to-golems-c98dd4a8' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>DHH wrote</a>, “<em>the tide indeed is turning,</em>” resulting in what <a href='https://twitter.com/sriramk/status/1742270488427041105' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Sriram Krishnan called</a> “<em>a <a href='vibes' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>vibe</a> shift</em>”.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+    </div>
+    
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+  </section>
+
+    <!-- What goes in this file will at the very end of the main div -->
+  </main>
+</div>
+        </div>
+      
+      <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 1.3.30.0'>
+      <img class='w-6 h-6 hover:text-green-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-green-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+    </div>
+  
+  <div id='stork-search-container' class='hidden fixed w-screen h-screen inset-0 backdrop-filter backdrop-blur-sm'>
+  <div class='fixed w-screen h-screen inset-0' onclick='window.emanote.stork.toggleSearch()'></div>
+
+  <div class='container mx-auto p-10 mt-10'>
+    <div class='stork-wrapper-flat container mx-auto'>
+      <input id='stork-search-input' data-stork='emanote-search' class='stork-input' placeholder='Search (Ctrl+K) ...' />
+      <div data-stork='emanote-search-output' class='stork-output'></div>
+    </div>
+  </div>
+</div>
+  
+    
+  
+</body>
+
+</html>

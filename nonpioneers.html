@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+
+
+
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Cynical non-pioneers – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='It appears there does not exist a suitable antonym for the word “pioneer”. The closest that exists, as far as I can tell, is the Plato’s Cave metaphor. Baring a suitable word that gets suggested to me, I will use “Cynical non-pioneers” to refer to such peoples.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content='https://srid.ca/' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Cynical non-pioneers' />
+      
+        <meta name='twitter:card' content='summary_large_image' />
+      
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+
+  
+  
+  <link href='tailwind.css?instanceId=5bcf93f2-2596-4372-99b7-91ee6c5b7219' rel='stylesheet' type='text/css' />
+
+  <link rel='stylesheet' href='_emanote-static/fonts/maven-pro.css' />
+
+<style data-category='global-font'>
+  /* Maven Pro font for the entire site */
+  body {
+    font-family: 'Maven Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+</style>
+
+<style data-category='error'>
+  /* Heist error element */
+  strong.error {
+    color: lightcoral;
+    font-size: 90%;
+    font-family: monospace;
+  }
+</style>
+
+<style data-category='kbd'>
+  /* <kbd> styling */
+  kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+  }
+</style>
+
+<style data-category='callout'>
+  /* To prevent overemphasis of link styles in callout titles */
+  .callout .callout-title a {
+    color: inherit;
+    text-decoration: underline;
+  }
+</style>
+
+<style data-category='toc'>
+  a.--ema-toc:not(.toc-item-active) {
+    background-color: #ffffff !important;
+  }
+</style>
+
+<style data-category='external-link'>
+  /* External link icon */
+  a[data-linkicon=""]::after {
+    content: ""
+  }
+
+  a[data-linkicon=none]::after {
+    content: ""
+  }
+
+  a[data-linkicon="external"] {
+    padding-right: 24px;
+  }
+
+  a[data-linkicon="external"]::after {
+    margin-right: -24px;
+    content: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" height="0.7em" viewBox="0 0 20 20"> \
+        <g style="stroke:gray;stroke-width:1"> \
+          <line x1="5" y1="5" x2="5" y2="14" /> \
+          <line x1="14" y1="9" x2="14" y2="14" /> \
+          <line x1="5" y1="14" x2="14" y2="14" /> \
+          <line x1="5" y1="5" x2="9" y2="5"  /> \
+          <line x1="10" y1="2" x2="17" y2="2"  /> \
+          <line x1="17" y1="2" x2="17" y2="9" /> \
+          <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.0" /> \
+        </g> \
+      </svg>');
+  }
+
+  a[data-linkicon="external"][href^="mailto:"]::after {
+    content: url('data:image/svg+xml,\
+        <svg \
+          xmlns="http://www.w3.org/2000/svg" \
+          height="0.7em" \
+          fill="none" \
+          viewBox="0 0 24 24" \
+          stroke="gray" \
+          stroke-width="2"> \
+          <path \
+            stroke-linecap="round" \
+            stroke-linejoin="round" \
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /> \
+        </svg>');
+  }
+</style>
+  <link rel='stylesheet' href='/obsidian-snippets/headers.css' />
+
+
+  
+    <style>
+      /* For use in sidebar.tpl, as we cannot achieve this in tailwind itself! */
+      /* md:min-w-48  */
+      @media (min-width: 768px) {
+        #sidebar {
+          min-width: 12rem;
+        }
+      }
+
+      /* xl:min-w-64  */
+      @media (min-width: 1280px) {
+        #sidebar {
+          min-width: 16rem;
+        }
+      }
+    </style>
+
+    
+      <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+    
+  
+  <link rel='stylesheet' href='_emanote-static/stork/flat.css' />
+<!-- Custom Stork-search styling for Emanote -->
+<style data-category='stork'>
+  #stork-search-container {
+    z-index: 1000;
+    background-color: rgb(15 23 42/.8);
+  }
+
+  .stork-overflow-hidden-important {
+    overflow: hidden !important;
+  }
+</style>
+
+
+<script src='_emanote-static/stork/stork.js'></script>
+
+  
+    <script id='emanote-stork' data-emanote-base-url='/'>
+      window.emanote = {};
+      window.emanote.stork = {
+        searchShown: false,
+        indexIsStale: false,
+        toggleSearch: function () {
+          window.emanote.stork.refreshIndex();
+          document.getElementById('stork-search-container').classList.toggle('hidden');
+          window.emanote.stork.searchShown = document.body.classList.toggle('stork-overflow-hidden-important');
+          if (window.emanote.stork.searchShown) {
+            document.getElementById('stork-search-input').focus();
+          }
+        },
+        clearSearch: function () {
+          document.getElementById('stork-search-container').classList.add('hidden');
+          document.body.classList.remove('stork-overflow-hidden-important');
+          window.emanote.stork.searchShown = false;
+        },
+
+        getBaseUrl: function () {
+          const baseUrl = document.getElementById("emanote-stork").getAttribute('data-emanote-base-url') || '/';
+          return baseUrl;
+        },
+
+        registerIndex: function (options) {
+          const indexName = 'emanote-search'; // used to match input[data-stork] attribute value
+          const indexUrl = window.emanote.stork.getBaseUrl() + '-/stork.st';
+          stork.register(
+            indexName,
+            indexUrl,
+            options);
+        },
+
+        init: function () {
+          if (document.readyState !== 'complete') {
+            window.addEventListener('load', function () {
+              stork.initialize(window.emanote.stork.getBaseUrl() + '_emanote-static/stork/stork.wasm');
+              window.emanote.stork.registerIndex();
+            });
+
+            document.addEventListener('keydown', event => {
+              if (window.emanote.stork.searchShown && event.key === 'Escape') {
+                window.emanote.stork.clearSearch();
+                event.preventDefault();
+              } else if ((event.key == 'k' || event.key == 'K') && (event.ctrlKey || event.metaKey)) {
+                window.emanote.stork.toggleSearch();
+                event.preventDefault();
+              }
+            });
+          } else {
+            // This section is called during Ema's hot reload.
+            // 
+            // Mark the current index as stale, and refresh it *only when* the
+            // user actually invokes search.
+            // 
+            // We do not refresh the index *right away*, as that will cause
+            // memory leaks in the browser. See
+            // https://github.com/srid/emanote/issues/411#issuecomment-1402056235
+            console.log("stork: Marking index as stale");
+            window.emanote.stork.markIndexAsStale();
+          }
+        },
+
+        markIndexAsStale: function () {
+          window.emanote.stork.indexIsStale = true;
+        },
+
+        refreshIndex: function () {
+          if (window.emanote.stork.indexIsStale) {
+            console.log("stork: Reloading index");
+            window.emanote.stork.indexIsStale = false;
+            // NOTE: This will leak memory. See the comment above.
+            window.emanote.stork.registerIndex({ forceOverwrite: true });
+          }
+        }
+
+      };
+
+      window.emanote.stork.init();
+    </script>
+  
+
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg mt-2 md:mt-4  '>
+      
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree font-medium' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <a href='thoughts'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      <span class='emoji' data-emoji='brain' style='font-family: emoji'>🧠</span> Thoughts
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href=''>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Sridhar Ratnakumar
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+      
+
+      
+
+      
+        <div id='container' class='relative md:shadow-2xl md:mb-8'>
+          
+  <div class='absolute -top-6 right-1 md:right-0 flex flex-row items-center justify-center'>
+    <a title='Search (Ctrl+K)' class='cursor-pointer' onclick='window.emanote.stork.toggleSearch()'>
+      <svg xmlns='http://www.w3.org/2000/svg' style='width: 1rem;' class='hover:text-green-700' f
+ fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+  <path stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
+</svg>
+    </a>
+  </div>
+
+          <!-- Main body column -->
+          <div class='flex-1 w-full bg-white'>
+  <main class='px-4 py-4'>
+    <h1 class='flex items-end justify-center mb-4 p-3 bg-green-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Cynical non-pioneers
+  </a>
+</h1>
+    
+      <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+
+
+
+
+
+
+    <p class='mb-3'>
+      It appears there does not exist a suitable antonym for the word “pioneer”
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='nonpioneers#fn1'>
+        1
+      </a>
+    </sup>
+  . The closest that exists, as far as I can tell, is the <a href='https://en.wikipedia.org/wiki/Allegory_of_the_cave' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Plato’s Cave</a> metaphor. Baring a suitable word that gets suggested to me, I will use “Cynical non-pioneers” to refer to such peoples.
+    </p>
+  
+    <h2 id='cynicism-of-non-pioneers-' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Cynicism of non-pioneers …
+  
+  <a href='nonpioneers#cynicism-of-non-pioneers-' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      A non-pioneer is merely someone that is not a pioneer (in whatever field/ idea). A <em>cynical</em> non-pioneer is one that <em>obdurately resists</em> that new thing using spurious reasons, thus exhibiting a cynical outlook. One of the things that prevents people from adopting a new idea in general is cynicism or doubt. How does it manifest in various domains?
+    </p>
+  
+    <h3 id='-in-tech' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  … in tech
+  
+  <a href='nonpioneers#-in-tech' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Here are some examples of <a href='naive-optimism' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>cynicism</a> exhibited by non-enthusiastic “outsiders” (non-<a href='niche' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>niche</a> population) in tech:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://old.reddit.com/r/haskell/comments/y6a07e/simple_ghc_stack_for_a_novice/iso56t8/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Getting downvoted</a> when recommending <a href='nix' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix</a> in <a href='haskell' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Haskell</a> community.
+        </li>
+      
+        <li>
+          Ad hominem accusations of <a href='https://news.ycombinator.com/item?id=33433783' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>being “religious” or “bullying” or “smug”</a>
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='nonpioneers#fn2'>
+        2
+      </a>
+    </sup>
+   when someone recommends or encourages the use of functional programing (e.g. <a href='haskell' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Haskell</a>) to them.
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <em>“needless condescension”</em> <a href='https://x.com/Aron_Adler/status/1815873999529992693' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/Aron_Adler/status/1815873999529992693</a>
+        </li>
+      
+        <li>
+          <em>“superior, enlightened & God’s gift to the earth”</em> & <em>“super fucking arrogant”</em> (yet also, <em>“deep & nerded out”</em> & <em>“accept worse conditions / pay”</em>) <a href='https://x.com/sridca/status/1886776431809618411' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://x.com/sridca/status/1886776431809618411</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+    <h3 id='-actualism' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  … <a href='free' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Actualism</a>
+  
+  <a href='nonpioneers#-actualism' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      See <a href='http://actualfreedom.com.au/sundry/commonobjections/croindex.htm' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>here</a>.
+    </p>
+  
+    <blockquote class='py-0.5 px-4 mb-3 italic border-l-4 bg-gray-50 text-gray-600 border-gray-400 quote'>
+      
+    <p class='mb-3'>
+      RICHARD: [..] the term ‘cognitive dissonance’ would be better described as a ‘feeling-fed cognitive dissonance’ as it is not just a mental blockage which causes people to be unable to grasp innovative things that are to their own advantage and to fight so hard to retain the existing belief systems which are inimical to their welfare.
+    </p>
+  
+    <p class='mb-3'>
+      It is the strangest of incongruities in regards to human pertinacity that peoples will invent reasons and struggle to maintain a state of affairs that is detrimental to their own advancement … even those conditions which enslave them.
+    </p>
+  
+    </blockquote>
+  
+    <h2 id='see-also' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  See also
+  
+  <a href='nonpioneers#see-also' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://meaningness.com/geeks-mops-sociopaths' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Geeks, MOPs, and sociopaths in subculture evolution</a>
+        </li>
+      
+        <li>
+          “<em><a href='courage-of-your-convinctions' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>the mediocrity of those who say you can not do it</a></em>”
+        </li>
+      
+        <li>
+          <a href='https://archive.is/c4uEQ' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Trump/Elon Derangement Syndrome</a>
+    <blockquote class='py-0.5 px-4 mb-3 italic border-l-4 bg-gray-50 text-gray-600 border-gray-400 quote'>
+      
+    <p class='mb-3'>
+      Chalk it down to MDS - Musk Derangement Syndrome. There is something in Elon Musk which triggers people to start acting irrationally just like there is something in e.g. Donald Trump which does the same. It is probably related to the way they - Musk and Trump and others like them - act like they are not bound by the laws which keep others from attempting the types of ventures these often undertake as well as their lack of humility about them. Some are awed by their boldness and become fanboys, others are disgusted by their lack of humility and failure to abide by the standards and fall victim to some form of ‘derangement syndrome’. When Musk started gaining successes with SpaceX and Tesla there were many articles posted by the ‘fanboy’ section of the crowd while those who started to suffer from DS were just waiting for him or his companies to trip somewhere, somehow so they could torch the man. His purchase of <a href='twitter' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Twitter / X</a> as well as the underwhelming performance (compared to the claimed capabilities) of Tesla’s ‘fully self driving’ system have given them ample fuel just waiting for someone to put a match to.
+    </p>
+  
+    </blockquote>
+  
+        </li>
+      
+        <li>
+          <a href='https://www.bbc.com/news/magazine-22447726' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Stockholm syndrome</a>
+        </li>
+      
+    </ul>
+  
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            <em>a person who is among the first to research and develop a new area of knowledge or activity</em>
+          </div>
+        </div>
+      
+        <div id='fn2'>
+          <header class='italic'>
+            2.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            
+    <p class='mb-3'>
+      From the comment by user “kstenerud”:
+    </p>
+  
+    <blockquote class='py-0.5 px-4 mb-3 italic border-l-4 bg-gray-50 text-gray-600 border-gray-400 quote'>
+      
+    <p class='mb-3'>
+      What’s interesting to notice about this thread is how many messages are just oozing with <strong>smug superiority and disdain</strong> for anyone who doesn’t share their knowledge.
+    </p>
+  
+    </blockquote>
+  
+    <p class='mb-3'>
+      The cynicism characterization comes from the fact that the person (kstenerud) who wrote the top-level thread engages in the <a href='https://en.wikipedia.org/wiki/Psychological_projection' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>projection</a> of one’s own feelings of offense (else, the author can surely and readily reference those specific words that connoted “<em>smug superiority and disdain</em>”) rather than discussing the merits of the topic at hand.
+    </p>
+  
+    <p class='mb-3'>
+      “Gatekeeping” is another fancy word used elsewhere to express this felt offense, making it pass for a factoid.
+    </p>
+  
+    <p class='mb-3'>
+      The author even goes to the extent of condescendingly claiming to read the minds of the people involved (FP proponents) better than those people themselves can by exclaiming, “<em>I don’t think they can even see what they’ve become.</em>” when the fact of the matter simply is that “<em>what they’ve become</em>” is nothing but a cynical creation of this person’s mind (else, the author can surely and readily reference those specific words that connoted “<em>smug superiority and disdain</em>”) which projection is then <a href='https://archive.is/rUiwZ#selection-187.47-205.10' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>introjected</a> by other such criticasters and naysayers as evidenced by the place this factoid holds in the hierarchy of comments.
+    </p>
+  
+    <p class='mb-3'>
+      None of this is unique to functional programming per see. When something new is presented to humanity, the initial tendency generally is to resist it at all costs. See <a href='https://en.wikipedia.org/wiki/Allegory_of_the_cave' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://en.wikipedia.org/wiki/Allegory_of_the_cave</a>
+    </p>
+  
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/Thoughts/Cynical non-pioneers.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+</article>
+    
+    <div class='flex flex-col lg:flex-row lg:space-x-2'>
+      
+      
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='haskell'>
+            Haskell
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div>Lose the limiting beliefs, if any.<sup>*</sup> Approach Haskell, with maximum <a href='https://www.wikiwand.com/en/Locus_of_control' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>locus of control</a>, as if it is a new programming language that had been created this year (ie. sans any vague preconceptions <a href='https://archive.is/rUiwZ#selection-187.47-205.10' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>introjected</a> from <a href='nonpioneers' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>naysayers and their enablers</a>).</div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='courage-of-your-convinctions'>
+            Courage of your convictions
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>[!cite/richard] <a href='https://actualfreedom.com.au/richard/listacorrespondence/lista08.htm' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Richard’s Correspondence On Mailing List ‘A’ with Respondent No. 8</a> At times this audacity<sup>*</sup> – that it will be me who does it – approaches megalomania<sup>*</sup> … after all, one thinks, who am I to think that I can break through the impasse that has baffled humankind for millennia? As long as one does not succumb to delusions of grandeur, a healthy dose of what appears to be megalomania<sup>*</sup> is appropriate … otherwise one is held back by <a href='nonpioneers' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>the mediocrity of those</a> who say you can not do it. You can. The only requirement is that one be a human being – and that I hereby devote my entire life to breaking through to the perfection and peace that is lying open all around right now … if only I had the eyes to see it. It takes great courage and fortitude to fly in the face of all those ‘would be’s’ and ‘want to be’s’ who, alas, only talk about it. One has to do it … because, after all is said and done, it is my life that I am living.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+    </div>
+    
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+  </section>
+
+    <!-- What goes in this file will at the very end of the main div -->
+  </main>
+</div>
+        </div>
+      
+      <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 1.3.30.0'>
+      <img class='w-6 h-6 hover:text-green-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-green-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+    </div>
+  
+  <div id='stork-search-container' class='hidden fixed w-screen h-screen inset-0 backdrop-filter backdrop-blur-sm'>
+  <div class='fixed w-screen h-screen inset-0' onclick='window.emanote.stork.toggleSearch()'></div>
+
+  <div class='container mx-auto p-10 mt-10'>
+    <div class='stork-wrapper-flat container mx-auto'>
+      <input id='stork-search-input' data-stork='emanote-search' class='stork-input' placeholder='Search (Ctrl+K) ...' />
+      <div data-stork='emanote-search-output' class='stork-output'></div>
+    </div>
+  </div>
+</div>
+  
+    
+  
+</body>
+
+</html>

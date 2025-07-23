@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+
+
+
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Composability and generic routes in Ema 0.8 – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='tldr: Announcing a rewrite of [[Ema]] (a static site generator in [[Haskell]] with hot reload destined to develop an unique kind of apps) with support for generic route encoders and composability.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content='https://srid.ca/' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Composability and generic routes in Ema 0.8' />
+      
+        <meta name='twitter:card' content='summary_large_image' />
+      
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+
+  
+  
+  <link href='tailwind.css?instanceId=5bcf93f2-2596-4372-99b7-91ee6c5b7219' rel='stylesheet' type='text/css' />
+
+  <link rel='stylesheet' href='_emanote-static/fonts/maven-pro.css' />
+
+<style data-category='global-font'>
+  /* Maven Pro font for the entire site */
+  body {
+    font-family: 'Maven Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+</style>
+
+<style data-category='error'>
+  /* Heist error element */
+  strong.error {
+    color: lightcoral;
+    font-size: 90%;
+    font-family: monospace;
+  }
+</style>
+
+<style data-category='kbd'>
+  /* <kbd> styling */
+  kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+  }
+</style>
+
+<style data-category='callout'>
+  /* To prevent overemphasis of link styles in callout titles */
+  .callout .callout-title a {
+    color: inherit;
+    text-decoration: underline;
+  }
+</style>
+
+<style data-category='toc'>
+  a.--ema-toc:not(.toc-item-active) {
+    background-color: #ffffff !important;
+  }
+</style>
+
+<style data-category='external-link'>
+  /* External link icon */
+  a[data-linkicon=""]::after {
+    content: ""
+  }
+
+  a[data-linkicon=none]::after {
+    content: ""
+  }
+
+  a[data-linkicon="external"] {
+    padding-right: 24px;
+  }
+
+  a[data-linkicon="external"]::after {
+    margin-right: -24px;
+    content: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" height="0.7em" viewBox="0 0 20 20"> \
+        <g style="stroke:gray;stroke-width:1"> \
+          <line x1="5" y1="5" x2="5" y2="14" /> \
+          <line x1="14" y1="9" x2="14" y2="14" /> \
+          <line x1="5" y1="14" x2="14" y2="14" /> \
+          <line x1="5" y1="5" x2="9" y2="5"  /> \
+          <line x1="10" y1="2" x2="17" y2="2"  /> \
+          <line x1="17" y1="2" x2="17" y2="9" /> \
+          <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.0" /> \
+        </g> \
+      </svg>');
+  }
+
+  a[data-linkicon="external"][href^="mailto:"]::after {
+    content: url('data:image/svg+xml,\
+        <svg \
+          xmlns="http://www.w3.org/2000/svg" \
+          height="0.7em" \
+          fill="none" \
+          viewBox="0 0 24 24" \
+          stroke="gray" \
+          stroke-width="2"> \
+          <path \
+            stroke-linecap="round" \
+            stroke-linejoin="round" \
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /> \
+        </svg>');
+  }
+</style>
+  <link rel='stylesheet' href='/obsidian-snippets/headers.css' />
+
+
+  
+    <style>
+      /* For use in sidebar.tpl, as we cannot achieve this in tailwind itself! */
+      /* md:min-w-48  */
+      @media (min-width: 768px) {
+        #sidebar {
+          min-width: 12rem;
+        }
+      }
+
+      /* xl:min-w-64  */
+      @media (min-width: 1280px) {
+        #sidebar {
+          min-width: 16rem;
+        }
+      }
+    </style>
+
+    
+      <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+    
+  
+  <link rel='stylesheet' href='_emanote-static/stork/flat.css' />
+<!-- Custom Stork-search styling for Emanote -->
+<style data-category='stork'>
+  #stork-search-container {
+    z-index: 1000;
+    background-color: rgb(15 23 42/.8);
+  }
+
+  .stork-overflow-hidden-important {
+    overflow: hidden !important;
+  }
+</style>
+
+
+<script src='_emanote-static/stork/stork.js'></script>
+
+  
+    <script id='emanote-stork' data-emanote-base-url='/'>
+      window.emanote = {};
+      window.emanote.stork = {
+        searchShown: false,
+        indexIsStale: false,
+        toggleSearch: function () {
+          window.emanote.stork.refreshIndex();
+          document.getElementById('stork-search-container').classList.toggle('hidden');
+          window.emanote.stork.searchShown = document.body.classList.toggle('stork-overflow-hidden-important');
+          if (window.emanote.stork.searchShown) {
+            document.getElementById('stork-search-input').focus();
+          }
+        },
+        clearSearch: function () {
+          document.getElementById('stork-search-container').classList.add('hidden');
+          document.body.classList.remove('stork-overflow-hidden-important');
+          window.emanote.stork.searchShown = false;
+        },
+
+        getBaseUrl: function () {
+          const baseUrl = document.getElementById("emanote-stork").getAttribute('data-emanote-base-url') || '/';
+          return baseUrl;
+        },
+
+        registerIndex: function (options) {
+          const indexName = 'emanote-search'; // used to match input[data-stork] attribute value
+          const indexUrl = window.emanote.stork.getBaseUrl() + '-/stork.st';
+          stork.register(
+            indexName,
+            indexUrl,
+            options);
+        },
+
+        init: function () {
+          if (document.readyState !== 'complete') {
+            window.addEventListener('load', function () {
+              stork.initialize(window.emanote.stork.getBaseUrl() + '_emanote-static/stork/stork.wasm');
+              window.emanote.stork.registerIndex();
+            });
+
+            document.addEventListener('keydown', event => {
+              if (window.emanote.stork.searchShown && event.key === 'Escape') {
+                window.emanote.stork.clearSearch();
+                event.preventDefault();
+              } else if ((event.key == 'k' || event.key == 'K') && (event.ctrlKey || event.metaKey)) {
+                window.emanote.stork.toggleSearch();
+                event.preventDefault();
+              }
+            });
+          } else {
+            // This section is called during Ema's hot reload.
+            // 
+            // Mark the current index as stale, and refresh it *only when* the
+            // user actually invokes search.
+            // 
+            // We do not refresh the index *right away*, as that will cause
+            // memory leaks in the browser. See
+            // https://github.com/srid/emanote/issues/411#issuecomment-1402056235
+            console.log("stork: Marking index as stale");
+            window.emanote.stork.markIndexAsStale();
+          }
+        },
+
+        markIndexAsStale: function () {
+          window.emanote.stork.indexIsStale = true;
+        },
+
+        refreshIndex: function () {
+          if (window.emanote.stork.indexIsStale) {
+            console.log("stork: Reloading index");
+            window.emanote.stork.indexIsStale = false;
+            // NOTE: This will leak memory. See the comment above.
+            window.emanote.stork.registerIndex({ forceOverwrite: true });
+          }
+        }
+
+      };
+
+      window.emanote.stork.init();
+    </script>
+  
+
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg mt-2 md:mt-4  '>
+      
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree font-medium' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <a href='ema'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Ema
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='haskell'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Haskell
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='software'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href=''>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Sridhar Ratnakumar
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+        <li>
+
+  <a href='projects'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Projects
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+      
+
+      
+
+      
+        <div id='container' class='relative md:shadow-2xl md:mb-8'>
+          
+  <div class='absolute -top-6 right-1 md:right-0 flex flex-row items-center justify-center'>
+    <a title='Search (Ctrl+K)' class='cursor-pointer' onclick='window.emanote.stork.toggleSearch()'>
+      <svg xmlns='http://www.w3.org/2000/svg' style='width: 1rem;' class='hover:text-green-700' f
+ fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+  <path stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
+</svg>
+    </a>
+  </div>
+
+          <!-- Main body column -->
+          <div class='flex-1 w-full bg-white'>
+  <main class='px-4 py-4'>
+    <h1 class='flex items-end justify-center mb-4 p-3 bg-green-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Composability and generic routes in Ema 0.8
+  </a>
+</h1>
+    
+      <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+
+
+
+
+
+<div class='text-sm text-gray-600 flex items-center justify-center my-4 italic'>
+    <p class='mb-3'>
+      <strong>tldr</strong>: Announcing a rewrite of <a href='ema' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Ema</a> (a static site generator in <a href='haskell' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Haskell</a> with hot reload destined to develop an unique kind of apps) with support for generic route encoders and composability.
+    </p>
+  </div>
+    <p class='mb-3'>
+      I’d like announce version 0.8 of <a href='ema' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Ema</a>. This version is nearly a total rewrite,
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='ema-0.8#fn1'>
+        1
+      </a>
+    </sup>
+   aimed at improving Ema towards two ends:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
+      
+        <li>
+          <a href='https://ema.srid.ca/guide/route/generic' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><strong>Generic routes</strong></a>: automatically derive route encoders and decoders using generics
+        </li>
+      
+        <li>
+          <a href='https://ema.srid.ca/guide/compose' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><strong>Composability</strong></a>: combine multiple Ema sites to produce a new top-level site.
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      This post will give a rough overview of the new features, but checkout <a href='https://ema.srid.ca/tutorial' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>the official <strong>tutorial</strong></a> if you are new to Ema.
+    </p>
+  
+    <h2 id='generic-routes' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Generic routes
+  
+  <a href='ema-0.8#generic-routes' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Until Ema 0.6, one had to <em>manually</em> write route encoders and decoders. In addition to being tedious, this is an error-prone process. Ema 0.8 introduces the <a href='https://ema.srid.ca/guide/route/class' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code></a> typeclass (for route encoding and decoding) that can be <a href='https://ema.srid.ca/guide/route/generic' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>generically</a> derived in an inductive manner. A simple <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>TemplateHaskell</code> based API is also provided. What this means is that you can define your routes simply as follows and get encoders and decoders for free:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>data Route 
+  = Route_Index -- /index.html
+  | Route_About -- /about.html
+  deriving stock (Show, Eq, Generic)
+
+deriveGeneric ''Route 
+deriveIsRoute ''Route [t|'[]|]</code></pre></div>
+    <p class='mb-3'>
+      The TH function <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>deriveIsRoute</code> will create the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> instance for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Route</code>, which in turn provides a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>routePrism</code> method that returns, effectively, an <a href='https://hackage.haskell.org/package/optics-core-0.4.1/docs/Optics-Prism.html#t:Prism-39-' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>optics-core</code> <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Prism'</code> type</a>–specifically, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Prism' FilePath Route</code>. This prism can be used to both encode and decode routes to and from the associated file paths, viz.:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>ghci&gt; let rp = routePrism @Route ()
+ghci&gt; preview rp "about.html"
+Just Route_About
+ghci&gt; review rp Route_Index
+"index.html"</code></pre></div>
+    <h3 id='derivingvia' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>DerivingVia</code>
+  
+  <a href='ema-0.8#derivingvia' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      TemplateHaskell is not strictly required, as you can alternatively use <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>DerivingVia</code> (via <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>GenericRoute</code>), though it is slightly more verbose. The above can equivalently be rewritten as:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>import Generic.SOP qualified as SOP
+
+data Route 
+  = Route_Index
+  | Route_About
+  deriving stock (Show, Eq, Generic)
+  deriving anyclass (SOP.Generic, SOP.HasDatatypeInfo)
+  deriving (HasSubRoutes, HasSubModels, IsRoute) via (GenericRoute Route '[])</code></pre></div>
+    <p class='mb-3'>
+      The TH approach, however, has better error messages due to use of standalone deriving.
+    </p>
+  
+    <h3 id='sub-routes' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Sub-routes
+  
+  <a href='ema-0.8#sub-routes' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      ADTs are a natural fit to represent route types. Routes can also be nested. For example, here’s <a href='https://ema.srid.ca/guide/route/example' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>the official example</a> of a weblog:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>data Route
+  = Route_Index
+  | Route_About
+  | Route_Contact
+  | Route_Blog BlogRoute
+
+data BlogRoute
+  = BlogRoute_Index
+  | BlogRoute_Post Slug
+
+newtype Slug = Slug { unSlug :: String }</code></pre></div>
+    <p class='mb-3'>
+      Here, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>BlogRoute</code> is a sub-route of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Route</code>. Furthermore, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Slug</code> is a sub-route of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>BlogRoute</code>. The generic deriving mechanism knows how to delegate encoding/decoding to sub-routes.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>ghci&gt; let rp = routePrism @BlogRoute ()
+ghci&gt; preview rp "post/foo.html"
+Just (BlogRoute_Post (Slug "foo"))
+ghci&gt; review rp $ BlogRoute_Post (Slug "foo")
+"post/foo.html"</code></pre></div>
+    <h3 id='sub-route-representation' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Sub-route representation
+  
+  <a href='ema-0.8#sub-route-representation' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>GenericRoute</code> is designed in such a way as to delegate the generic logic into two different type classes: <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>HasSubRoutes</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>HasSubModels</code>. This enables customizability of generic behaviour.
+    </p>
+  
+    <p class='mb-3'>
+      The first of these, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>HasSubRoutes</code>, enables deriving the encoding and decoding behaviour of individual route constructors “via” their coercible types. Let’s consider the typical way to derive <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>BlogRoute</code> above:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>-- Let us assume that this is the top-level route in our site.
+data BlogRoute
+  = BlogRoute_Index
+  | BlogRoute_Post Slug
+  deriving stock (Show, Eq, Generic)
+
+deriveGeneric ''BlogRoute 
+deriveIsRoute ''BlogRoute [t|[]|]</code></pre></div>
+    <p class='mb-3'>
+      Generic deriving here generates encoder and decoder such that <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>BlogPost_Post "foo"</code> maps to <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>/post/foo.html</code>. That is, the “folder prefix” is determined from the constructor name’s suffix (<code class='py-0.5 px-0.5 bg-gray-100 font-mono'>_Post</code>). This behaviour can be customized using the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>WithSubRoutes</code> option to <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>GenericRoute</code> thus controlling the semantics of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>HasSubModels</code>:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>data BlogRoute
+  = BlogRoute_Index
+  | BlogRoute_Post Slug
+  deriving stock (Show, Eq, Generic)
+
+deriveGeneric ''Route 
+deriveIsRoute ''Route [t|
+  '[ WithSubRoutes 
+     [ FileRoute "index.html"
+     , FolderRoute "blog" Slug
+     ]
+   ]
+  |]</code></pre></div>
+    <p class='mb-3'>
+      Now, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>BlogPost_Post "foo"</code> maps to <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>/blog/foo.html</code>; note the distinction between <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>/blog</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>/post</code> prefix. You can also drop the prefix entirely by using <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>WithSubRoutes [FileRoute "index.html", Slug]</code>. Ema provides <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>FileRoute</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>FolderRoute</code> (which have an <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> instance), but nothing should you stop from writing your own representation types; the only requirement is that they are coercible and the target type has an <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> instance.
+    </p>
+  
+    <h3 id='route-isomorphism-checks' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Route isomorphism checks
+  
+  <a href='ema-0.8#route-isomorphism-checks' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      If your route prism is unlawful (they fail to satisfy the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Prism'</code> laws), Ema will check this at runtime. This is useful when you want to derive <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> manually. On the other hand, it is impossible to create unlawful prisms when using only generic deriving (assuming no custom <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>WithSubRoutes</code> encoding).
+    </p>
+  
+    <h2 id='composability' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Composability
+  
+  <a href='ema-0.8#composability' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Another key feature of Ema 0.8 is that multiple Ema apps can be <a href='https://ema.srid.ca/guide/compose' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>combined</a> to produce a new top-level site. <a href='emanote' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Emanote</a>, a note-publishing system, is an Ema app. Say, you want to create a personal website using Ema, but want to delegate publishing of your notes to Emanote. You can combine both your Ema app and the Emanote managed site into a single site, by definining a top-level route like this:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>import Emanote.Route.SiteRoute.Type qualified as Emanote
+
+data Route = ...  -- My Ema app's route
+
+type TopRoute =
+  MultiRoute 
+    '[ Route 
+     , FolderRoute "notes" Emnote.SiteRoute
+     ]
+
+main = do 
+  Ema.runSite @TopRoute ...</code></pre></div>
+    <p class='mb-3'>
+      Alternatively, you may create a top-level ADT instead (this has its own pros and cons):
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>data TopRoute
+  = TopRoute_MyApp Route 
+  | TopRoute_Notes Emanote.SiteRoute
+
+deriveGeneric ''TopRoute 
+deriveIsRoute ''TopRoute [t|
+  '[ WithSubRoutes 
+     [ Route -- Override this to drop the /myapp prefix.
+     , FolderRoute "notes" Emanote.SiteRoute
+     ]
+   ]
+  |]</code></pre></div>
+    <p class='mb-3'>
+      Now, your notes are served at path <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>/notes</code> with the rest of the site served from <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>/</code>.
+    </p>
+  
+    <p class='mb-3'>
+      You can view the full code for this pattern <a href='https://github.com/srid/emanima/pull/2' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>here</a>. See the “Multi” and “MultiRoute” <a href='https://github.com/EmaApps/ema/tree/master/src/Ema/Example' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>examples</a> in Ema source tree.
+    </p>
+  
+    <h2 id='dynamic-instead-of-lvar' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Dynamic</code> instead of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>LVar</code>
+  
+  <a href='ema-0.8#dynamic-instead-of-lvar' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      This release also introduces the <a href='https://ema.srid.ca/guide/model/dynamic' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Dynamic</code></a> type to represent type-varying model values. <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Dynamic</code>’s compose better than LVar’s. The <a href='https://github.com/srid/unionmount' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>unionmount</a> library, which <a href='emanote' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Emanote</a> uses, has also been updated to be <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Dynamic</code>-friendly.
+    </p>
+  
+    <h2 id='real-world-example' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Real-world example
+  
+  <a href='ema-0.8#real-world-example' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      See <a href='https://github.com/fpindia/fpindia-site' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/fpindia/fpindia-site</a> (powering <a href='https://functionalprogramming.in/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://functionalprogramming.in/</a>) for a real-world example that uses Ema 0.8 (the jobs data is <a href='https://github.com/fpindia/fpindia-site/pull/24' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>managed using <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Dynamic</code></a>). There are more <a href='https://ema.srid.ca/examples' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>here</a>.
+    </p>
+  
+    <h2 id='credits' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Credits
+  
+  <a href='ema-0.8#credits' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      I greatly appreciate feedback and contributions from the following people in enabling this release:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://github.com/lucasvreis' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Lucas Viana</a>, for actually <a href='https://github.com/lucasvreis/abacateiro' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>using</a> the development branch (<code class='py-0.5 px-0.5 bg-gray-100 font-mono'>multisite</code>) of Ema as it is being developed and thereby influencing much of the design behind generic deriving of routes.
+        </li>
+      
+        <li>
+          <a href='https://github.com/RiugaBachi' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Riuga Bachi</a>, for <a href='https://github.com/EmaApps/ema/pulls?q=author%3ARiugaBachi+' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>contributing</a> TemplateHaskell support, better compiler error messages, etc.
+        </li>
+      
+        <li>
+          <a href='https://stackoverflow.com/users/165806/iceland-jack' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Iceland_jack</a>, <a href='https://stackoverflow.com/users/1477667/dfeuer' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>dfeuer</a>, <a href='https://stackoverflow.com/users/7203016/k-a-buhr' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>K. A. Buhr</a> and others for answering my Haskell questions on Stackoverflow.
+        </li>
+      
+        <li>
+          <a href='https://github.com/TheMatten' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>TheMatten</a> who explained to me a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>lens</code>-based design for achieving composability (the final design, based on <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Prism'</code> instead, is not fundamentally different).
+        </li>
+      
+        <li>
+          <a href='https://twitter.com/fresheyeball' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Isaac Shapira</a> for inspiring me to consider some of the ideas (isomorphism checks, generic deriving, etc.) in this release.
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      For further information, see the official documentation: <a href='https://ema.srid.ca' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://ema.srid.ca</a>. If you want to get started right away, see <a href='https://github.com/EmaApps/ema-template' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/EmaApps/ema-template</a>.
+    </p>
+  
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            <a href='https://github.com/EmaApps/ema-template/pull/22' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>The PR</a> spawned commits over nearly 7 months of intermittent work with feedback and contributions from others.
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/Projects/Ema/Composability and generic routes in Ema 0.8.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+</article>
+    
+    <div class='flex flex-col lg:flex-row lg:space-x-2'>
+      
+      
+    </div>
+    
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-green-500' href='-/tags/blog/ema'>
+        <!-- DoNotFormat -->
+        #blog/ema
+        <!-- DoNotFormat -->
+      </a>
+    
+  </section>
+
+    <!-- What goes in this file will at the very end of the main div -->
+  </main>
+</div>
+        </div>
+      
+      <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 1.3.30.0'>
+      <img class='w-6 h-6 hover:text-green-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-green-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+    </div>
+  
+  <div id='stork-search-container' class='hidden fixed w-screen h-screen inset-0 backdrop-filter backdrop-blur-sm'>
+  <div class='fixed w-screen h-screen inset-0' onclick='window.emanote.stork.toggleSearch()'></div>
+
+  <div class='container mx-auto p-10 mt-10'>
+    <div class='stork-wrapper-flat container mx-auto'>
+      <input id='stork-search-input' data-stork='emanote-search' class='stork-input' placeholder='Search (Ctrl+K) ...' />
+      <div data-stork='emanote-search-output' class='stork-output'></div>
+    </div>
+  </div>
+</div>
+  
+    
+  
+</body>
+
+</html>

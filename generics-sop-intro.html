@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+
+
+
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    A concise introduction to generics-sop – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='A PDF version of this article can be accessed here.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content='https://srid.ca/' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='A concise introduction to generics-sop' />
+      
+        <meta name='twitter:card' content='summary_large_image' />
+      
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+
+  
+  
+  <link href='tailwind.css?instanceId=5bcf93f2-2596-4372-99b7-91ee6c5b7219' rel='stylesheet' type='text/css' />
+
+  <link rel='stylesheet' href='_emanote-static/fonts/maven-pro.css' />
+
+<style data-category='global-font'>
+  /* Maven Pro font for the entire site */
+  body {
+    font-family: 'Maven Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+</style>
+
+<style data-category='error'>
+  /* Heist error element */
+  strong.error {
+    color: lightcoral;
+    font-size: 90%;
+    font-family: monospace;
+  }
+</style>
+
+<style data-category='kbd'>
+  /* <kbd> styling */
+  kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+  }
+</style>
+
+<style data-category='callout'>
+  /* To prevent overemphasis of link styles in callout titles */
+  .callout .callout-title a {
+    color: inherit;
+    text-decoration: underline;
+  }
+</style>
+
+<style data-category='toc'>
+  a.--ema-toc:not(.toc-item-active) {
+    background-color: #ffffff !important;
+  }
+</style>
+
+<style data-category='external-link'>
+  /* External link icon */
+  a[data-linkicon=""]::after {
+    content: ""
+  }
+
+  a[data-linkicon=none]::after {
+    content: ""
+  }
+
+  a[data-linkicon="external"] {
+    padding-right: 24px;
+  }
+
+  a[data-linkicon="external"]::after {
+    margin-right: -24px;
+    content: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" height="0.7em" viewBox="0 0 20 20"> \
+        <g style="stroke:gray;stroke-width:1"> \
+          <line x1="5" y1="5" x2="5" y2="14" /> \
+          <line x1="14" y1="9" x2="14" y2="14" /> \
+          <line x1="5" y1="14" x2="14" y2="14" /> \
+          <line x1="5" y1="5" x2="9" y2="5"  /> \
+          <line x1="10" y1="2" x2="17" y2="2"  /> \
+          <line x1="17" y1="2" x2="17" y2="9" /> \
+          <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.0" /> \
+        </g> \
+      </svg>');
+  }
+
+  a[data-linkicon="external"][href^="mailto:"]::after {
+    content: url('data:image/svg+xml,\
+        <svg \
+          xmlns="http://www.w3.org/2000/svg" \
+          height="0.7em" \
+          fill="none" \
+          viewBox="0 0 24 24" \
+          stroke="gray" \
+          stroke-width="2"> \
+          <path \
+            stroke-linecap="round" \
+            stroke-linejoin="round" \
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /> \
+        </svg>');
+  }
+</style>
+  <link rel='stylesheet' href='/obsidian-snippets/headers.css' />
+
+
+  
+    <style>
+      /* For use in sidebar.tpl, as we cannot achieve this in tailwind itself! */
+      /* md:min-w-48  */
+      @media (min-width: 768px) {
+        #sidebar {
+          min-width: 12rem;
+        }
+      }
+
+      /* xl:min-w-64  */
+      @media (min-width: 1280px) {
+        #sidebar {
+          min-width: 16rem;
+        }
+      }
+    </style>
+
+    
+      <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+    
+  
+  <link rel='stylesheet' href='_emanote-static/stork/flat.css' />
+<!-- Custom Stork-search styling for Emanote -->
+<style data-category='stork'>
+  #stork-search-container {
+    z-index: 1000;
+    background-color: rgb(15 23 42/.8);
+  }
+
+  .stork-overflow-hidden-important {
+    overflow: hidden !important;
+  }
+</style>
+
+
+<script src='_emanote-static/stork/stork.js'></script>
+
+  
+    <script id='emanote-stork' data-emanote-base-url='/'>
+      window.emanote = {};
+      window.emanote.stork = {
+        searchShown: false,
+        indexIsStale: false,
+        toggleSearch: function () {
+          window.emanote.stork.refreshIndex();
+          document.getElementById('stork-search-container').classList.toggle('hidden');
+          window.emanote.stork.searchShown = document.body.classList.toggle('stork-overflow-hidden-important');
+          if (window.emanote.stork.searchShown) {
+            document.getElementById('stork-search-input').focus();
+          }
+        },
+        clearSearch: function () {
+          document.getElementById('stork-search-container').classList.add('hidden');
+          document.body.classList.remove('stork-overflow-hidden-important');
+          window.emanote.stork.searchShown = false;
+        },
+
+        getBaseUrl: function () {
+          const baseUrl = document.getElementById("emanote-stork").getAttribute('data-emanote-base-url') || '/';
+          return baseUrl;
+        },
+
+        registerIndex: function (options) {
+          const indexName = 'emanote-search'; // used to match input[data-stork] attribute value
+          const indexUrl = window.emanote.stork.getBaseUrl() + '-/stork.st';
+          stork.register(
+            indexName,
+            indexUrl,
+            options);
+        },
+
+        init: function () {
+          if (document.readyState !== 'complete') {
+            window.addEventListener('load', function () {
+              stork.initialize(window.emanote.stork.getBaseUrl() + '_emanote-static/stork/stork.wasm');
+              window.emanote.stork.registerIndex();
+            });
+
+            document.addEventListener('keydown', event => {
+              if (window.emanote.stork.searchShown && event.key === 'Escape') {
+                window.emanote.stork.clearSearch();
+                event.preventDefault();
+              } else if ((event.key == 'k' || event.key == 'K') && (event.ctrlKey || event.metaKey)) {
+                window.emanote.stork.toggleSearch();
+                event.preventDefault();
+              }
+            });
+          } else {
+            // This section is called during Ema's hot reload.
+            // 
+            // Mark the current index as stale, and refresh it *only when* the
+            // user actually invokes search.
+            // 
+            // We do not refresh the index *right away*, as that will cause
+            // memory leaks in the browser. See
+            // https://github.com/srid/emanote/issues/411#issuecomment-1402056235
+            console.log("stork: Marking index as stale");
+            window.emanote.stork.markIndexAsStale();
+          }
+        },
+
+        markIndexAsStale: function () {
+          window.emanote.stork.indexIsStale = true;
+        },
+
+        refreshIndex: function () {
+          if (window.emanote.stork.indexIsStale) {
+            console.log("stork: Reloading index");
+            window.emanote.stork.indexIsStale = false;
+            // NOTE: This will leak memory. See the comment above.
+            window.emanote.stork.registerIndex({ forceOverwrite: true });
+          }
+        }
+
+      };
+
+      window.emanote.stork.init();
+    </script>
+  
+
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg mt-2 md:mt-4  '>
+      
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree font-medium' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <a href='haskell'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Haskell
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='software'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href=''>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Sridhar Ratnakumar
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+            <li>
+
+  <a href='PDFs'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      PDFs
+    </div>
+  </a>
+
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+      
+
+      
+
+      
+        <div id='container' class='relative md:shadow-2xl md:mb-8'>
+          
+  <div class='absolute -top-6 right-1 md:right-0 flex flex-row items-center justify-center'>
+    <a title='Search (Ctrl+K)' class='cursor-pointer' onclick='window.emanote.stork.toggleSearch()'>
+      <svg xmlns='http://www.w3.org/2000/svg' style='width: 1rem;' class='hover:text-green-700' f
+ fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+  <path stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
+</svg>
+    </a>
+  </div>
+
+          <!-- Main body column -->
+          <div class='flex-1 w-full bg-white'>
+  <main class='px-4 py-4'>
+    <h1 class='flex items-end justify-center mb-4 p-3 bg-green-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    A concise introduction to generics-sop
+  </a>
+</h1>
+    
+      <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+
+
+
+
+
+<div class='text-sm text-gray-600 flex items-center justify-center my-4 italic'>
+    <p class='mb-3'>
+      A PDF version of this article can be accessed <a href='PDFs/generics-sop-intro.pdf' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>here</a>.
+    </p>
+  </div>
+    <p class='mb-3'>
+      A fascinating aspect of Lisp-based programming languages is that <a href='https://en.wikipedia.org/wiki/Code_as_data' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>code is data and data is code</a>. This property, called <a href='https://en.wikipedia.org/wiki/Homoiconicity' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>homoiconicity</a>, is what makes Lisp macros so powerful. This sort of runtime operation performed on arbitrary datatypes is called <a href='https://en.wikipedia.org/wiki/Polymorphism_(computer_science)#Polytypism' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>polytypism</a>, or datatype genericity. In <a href='haskell' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkTag'>Haskell</a>, several packages provide datatype genericity, of which the following two are notable:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
+      
+        <li>
+          <a href='https://hackage.haskell.org/package/base-4.16.0.0/docs/GHC-Generics.html' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>GHC Generics</a>
+        </li>
+      
+        <li>
+          <a href='https://hackage.haskell.org/package/generics-sop' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>generics-sop</a>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      While GHC Generics comes with <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>base</code>, writing generics code using generics-sop is generally simpler. This article introduces <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>generics-sop</code>.
+    </p>
+  
+    <h2 id='motivation' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Motivation
+  
+  <a href='generics-sop-intro#motivation' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Generic programming allows one to avoid writing boilerplate implementations for each similar datatype. The implementation could be a (<a href='https://www.sciencedirect.com/science/article/pii/S0167642304000152' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>polytypic</a>) function or a typeclass instance. For example, instead of having to manually write <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>FromJSON</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>ToJSON</code> instances for each of your datatypes, you can use generics to derive them automatically. Other examples of generic programming include pretty printers, parsers, equality functions and route encoders.
+    </p>
+  
+    <h2 id='basics' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Basics
+  
+  <a href='generics-sop-intro#basics' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Before diving further into this topic, we must understand the “SOP” in generics-<strong>sop</strong>.
+    </p>
+  
+    <h3 id='datatypes-are-sops-under-the-hood' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Datatypes are SOPs under the hood
+  
+  <a href='generics-sop-intro#datatypes-are-sops-under-the-hood' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Haskell has two kinds of datatypes:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
+      
+        <li>
+          <a href='https://en.wikipedia.org/wiki/Algebraic_data_type' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Algebraic data types</a>, or ADTs
+        </li>
+      
+        <li>
+          Newtypes
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      Both ADTs and newtypes are a “sum-of-product” (SOP) under the hood. When writing generics-sop code, we operate on these SOPs rather than directly on the datatype, because every datatype is “polymorphic” in their SOP representation. The basic idea is that if you can write a function <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>SOP -&gt; a</code>, then you get <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>SomeDataType -&gt; a</code> for free for <em>any</em> <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>SomeDataType</code>. This is called <a href='https://en.wikipedia.org/wiki/Polymorphism_(computer_science)#Polytypism' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>polytypism</a>.
+    </p>
+  
+    <p class='mb-3'>
+      Consider the following ADT (from <a href='https://hackage.haskell.org/package/these-1.1.1.1/docs/Data-These.html' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>these</code> package</a>):
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>-- `These` is like `Either`, but with a 3rd possibility of representing both values.
+data These a b
+  = This a 
+  | That b
+  | These a b</code></pre></div>
+    <p class='mb-3'>
+      Here, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> is a <a href='https://en.wikipedia.org/wiki/Tagged_union' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><strong>sum</strong> type</a>, with <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>This</code>, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>That</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> being its three sum constructors. Each sum constructor itself is a <a href='https://en.wikipedia.org/wiki/Product_type' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><strong>product</strong> type</a> - inasmuch as, say, the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>a</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>b</code> in the third constructor together represent a product type associated with <em>that</em> constructor. The type <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> is therefore a “sum of product”.
+    </p>
+  
+    <h3 id='sops-are-tables' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  SOPs are tables
+  
+  <a href='generics-sop-intro#sops-are-tables' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      To gain better intuition, we may visualize the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> SOP in a table form:
+    </p>
+  <table class='mb-3'><thead><tr class='border-b-2 border-t-2 border-gray-300'><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Constructor</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Arg 1</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Arg 2</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>…</th></tr></thead><tbody><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>This</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>a</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>That</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>b</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>These</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>a</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>b</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td></tr></tbody></table>
+    <p class='mb-3'>
+      As every Haskell datatype is a SOP, they can be (visually) reduced to a table like the one above. Each row represents the sum constructor; the individual cells to the right represent the arguments to the constructors (product type). We can drop the constructor <em>names</em> entirely and simplify the table as:
+    </p>
+  <table class='mb-3'><thead><tr class='border-b-2 border-t-2 border-gray-300'><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></th></tr></thead><tbody><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>a</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>b</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>a</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>b</td></tr></tbody></table>
+    <p class='mb-3'>
+      (<em><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code></em> type visually represented as a table)
+    </p>
+  
+    <p class='mb-3'>
+      Every cell in this table is a unique type. To define this table in Haskell, we could use type-level lists; specifically, a type-level <em>list of lists</em>. The outer list represents the sum constructor, while the inner list represents the products. The <a href='https://wiki.haskell.org/Kind' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>kind</a> of this table type would then be <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>[[Type]]</code>. Indeed, <a href='https://hackage.haskell.org/package/generics-sop-0.5.1.2/docs/Generics-SOP.html#t:Code' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>this</a> is what generics-sop uses. We can define the table type for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> in Haskell as follows:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>type TheseTable a b =
+  '[ '[ a ]
+     '[ b ]
+     '[ a, b ]
+  ]</code></pre></div>
+    <p class='mb-3'>
+      If this syntax seems confusing, see the following “Interlude” section.
+    </p>
+  
+    <h3 id='interlude-a-foray-into-type-level-programming' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Interlude: a foray into type-level programming
+  
+  <a href='generics-sop-intro#interlude-a-foray-into-type-level-programming' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      What is a “kind”? Kinds are to types what types are to terms. For example, the <em>type of</em> of the term <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>"Hello world"</code> is <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>String</code>. The latter is a “type,” whereas the former is a “term”. Furthermore, we can go one level up and ask what the <em>kind of</em> of the type <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>String</code> is. The answer is <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Type</code>. We can clarify this further by explicitly annotating the kinds of types when defining them (just as we annotate the types of terms when defining them):
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>-- Here, we define a term (2nd line) and declare its type (1st line)
+someBool :: Bool
+someBool = True 
+
+-- Here, we define a type (2nd line) and declare its kind (1st line)
+type Bool :: Type
+data Bool = False | True</code></pre></div>
+    <p class='mb-3'>
+      Parametrized types, such as <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Maybe</code>, belong to the kind of type-level functions:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>type Maybe :: Type -&gt; Type 
+data Maybe a = Nothing | Just a</code></pre></div>
+    <p class='mb-3'>
+      Here, we say that “the type <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Maybe</code> is of kind <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Type -&gt; Type</code>”. In other words, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Maybe</code> is a <em>type-level function</em> that takes a type of kind <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Type</code> as an argument and returns another type of the same kind <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Type</code> as its result.
+    </p>
+  
+    <p class='mb-3'>
+      Finally, we are now in a position to understand the kind of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>TheseTable</code> described in the prior section:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>type TheseTable :: Type -&gt; Type -&gt; [[Type]]
+type TheseTable a b =
+  '[ '[ a ]
+     '[ b ]
+     '[ a, b ]
+  ]</code></pre></div>
+    <p class='mb-3'>
+      <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>[Type]</code> is the kind of type-level lists, and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>[[Type]]</code> is the kind of type-level lists of lists. The tick (<code class='py-0.5 px-0.5 bg-gray-100 font-mono'>'</code>) lifts a term into a type. So, while <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>True</code> represents a <em>term</em> of type <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Bool</code>, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>'True</code>, on the other hand, represents a <em>type</em> of <em>kind</em> <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Bool</code> - just as <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>'[a]</code> represents a type of the kind <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>[Type]</code>. See <a href='https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/data_kinds.html#' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Datatype promotion</a> in GHC user guide for details.
+    </p>
+  
+    <p class='mb-3'>
+      See <a href='https://lexi-lambda.github.io/blog/2021/03/25/an-introduction-to-typeclass-metaprogramming/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>An introduction to typeclass metaprogramming</a>, as well as <a href='https://thinkingwithtypes.com/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Thinking with Types</a> for more on type-level programming.
+    </p>
+  
+    <h2 id='lets-play-with-sops' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Let’s play with SOPs
+  
+  <a href='generics-sop-intro#lets-play-with-sops' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Enough theory; let’s get our hands dirty in GHCi. If you use Nix, you can clone <a href='https://github.com/srid/generics-sop-examples' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>this repo</a> and run <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>bin/repl</code> to get GHCi with everything configured ahead for you.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='sh language-sh'>$ git clone https://github.com/srid/generics-sop-examples.git 
+$ cd ./generics-sop-examples
+$ bin/repl
+[1 of 1] Compiling Main             ( src/Main.hs, interpreted )
+Ok, one module loaded.
+*Main&gt;</code></pre></div>
+    <p class='mb-3'>
+      The project already has <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>generics-sop</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>sop-core</code> added to the .cabal file, so you should be able to import it:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; import Generics.SOP</code></pre></div>
+    <p class='mb-3'>
+      We also have <a href='https://hackage.haskell.org/package/these-1.1.1.1/docs/Data-These.html' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>these</code> package</a> added to the .cabal file, because it provides the above <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> type from the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Data.These</code> module. To explore the SOP representation of the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> type, let’s do some bootstrapping:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; import Data.These 
+&gt; instance Generic (These a b) -- Derive generics-sop instance
+&gt; let breakfast = These "Egg" "Sausage" :: These String String</code></pre></div>
+    <p class='mb-3'>
+      We derived <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Generic</code> on the type and created a term value called <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>breakfast</code> (for which we are eating both eggs and sausage). To get the SOP representation of this value, we can use <a href='https://hackage.haskell.org/package/generics-sop-0.5.1.2/docs/Generics-SOP.html#v:from' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>from</code></a>:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; unSOP . from $ breakfast
+S (S (Z (I "Egg" :* I "Sausage" :* Nil)))</code></pre></div>
+    <p class='mb-3'>
+      The key takeaway here is that the breakfast value corresponds to the third row in the SOP table for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code>, because <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>breakfast</code> is a value of the third constructor and it contains two values (the product of “Egg” and “Sausage”).
+    </p>
+  <table class='mb-3'><thead><tr class='border-b-2 border-t-2 border-gray-300'><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></th></tr></thead><tbody><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>String</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>String</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>String</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>String</td></tr></tbody></table>
+    <p class='mb-3'>
+      The corresponding Haskell type for this table appears as follows:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>type TheseTable :: [[Type]]
+type TheseTable =
+  '[ '[ String ]
+     '[ String ]
+     '[ String, String ]
+  ]</code></pre></div>
+    <p class='mb-3'>
+      This type is automatically provided by <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>generics-sop</code> whenever we derive a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Generic</code> instance for the type in question. We did precisely that further above by evaluating <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>instance Generic (These a b)</code> in GHCi. Instead of manually defining <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>TheseTable</code> as above, deriving <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Generic</code> does it for free, in the form of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Code a</code> (viz. <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Code (These a b)</code>).
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; :k Code (These String String)
+Code (These String String) :: [[Type]]</code></pre></div>
+    <p class='mb-3'>
+      In brief, remember this: <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Code a</code> gives us the SOP table <em>type</em> for the datatype <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>a</code>. Now, how do we get the SOP table <em>value</em>? That’s what <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>from</code> is for:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; :t (unSOP . from $ breakfast)
+(unSOP . from $ breakfast)
+  :: NS
+       @[Type]
+       (NP @Type I)
+       ((':)
+          @[Type]
+          ((':) @Type [Char] ('[] @Type))
+          ((':)
+             @[Type]
+             ((':) @Type [Char] ('[] @Type))
+             ((':)
+                @[Type]
+                ((':) @Type [Char] ((':) @Type [Char] ('[] @Type)))
+                ('[] @[Type]))))</code></pre></div>
+    <p class='mb-3'>
+      Sadly, type-level lists are not displayed cleanly in GHCi. But we can reduce it (in our minds) to the following:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; :t (unSOP . from $ breakfast)
+(unSOP . from $ breakfast)
+  :: NS (NP I) '[ [String], [String], [String, String] ]</code></pre></div>
+    <p class='mb-3'>
+      Notice how this construction is more or less isomorphic to our <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>TheseTable</code> definition above. Next, I will explain the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NP</code> parts.
+    </p>
+  
+    <h3 id='interlude-ns--np' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Interlude: <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code> & <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NP</code>
+  
+  <a href='generics-sop-intro#interlude-ns--np' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      You might wonder what the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS (NP I)</code> part refers to in our table type above. <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code> is a n-ary sum and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NP</code> an n-ary product. These are explained well in section 2 of <a href='https://github.com/kosmikus/SSGEP/blob/master/LectureNotes.pdf' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Applying Type-Level and Generic Programming in Haskell</a>. However, for our purposes, you can treat <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code> as similar to the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Nat</code> type from the <a href='https://hackage.haskell.org/package/fin-0.2.1/docs/Data-Nat.html' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>fin package</a>, and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NP</code> as similar to the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Vec</code> type from the <a href='https://hackage.haskell.org/package/vec-0.4.1/docs/Data-Vec-Lazy.html#t:Vec' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>vec package</a>.
+    </p>
+  
+    <p class='mb-3'>
+      The difference is that unlike <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Vec</code> (a homogenous list), <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NP</code> is a heterogenous list whose element types are specified by a type-level list.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; :k NP I '[String, Int]
+NP I '[String, Int] :: Type</code></pre></div>
+    <p class='mb-3'>
+      Like Vec, the size of an NP heterogenous list (size 2) is specified at the type-level. However, unlike <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Vec</code>, we also say that the first element is of type <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>String</code> and the second (and the last) element is of type <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Int</code> (hence, a heterogenous list). To create a value of this heterogeneous list:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; I "Meaning" :* I 42 :* Nil  :: NP I '[String, Int]
+I "Meaning" :* I 42 :* Nil</code></pre></div>
+    <p class='mb-3'>
+      This syntax should be unsurprising because <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Nil</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>(:*)</code> are constructors of the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NP</code> type:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; :info NP
+data NP :: (k -&gt; Type) -&gt; [k] -&gt; Type where
+  Nil  :: NP f '[]
+  (:*) :: f x -&gt; NP f xs -&gt; NP f (x ': xs)</code></pre></div>
+    <p class='mb-3'>
+      (<a href='https://hackage.haskell.org/package/sop-core-0.5.0.2/docs/Data-SOP.html#t:NP' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>View haddocks</a>)
+    </p>
+  
+    <p class='mb-3'>
+      The <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>I</code> is the identity functor, but it could also be something else, like <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Maybe</code>:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; Nothing :* Just 42 :* Nil  :: NP Maybe '[String, Int]
+Nothing :* Just 42 :* Nil</code></pre></div>
+    <p class='mb-3'>
+      <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code> is the same, except now we are representing the same characteristics (heterogeneity) for the sum type instead of a product type. A sum of length ‘n’ over some functor ‘f’:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; :info NS 
+data NS :: (k -&gt; Type) -&gt; [k] -&gt; Type where
+  Z :: f x -&gt; NS f (x ': xs)
+  S :: NS f xs -&gt; NS f (x ': xs)</code></pre></div>
+    <p class='mb-3'>
+      (<a href='https://hackage.haskell.org/package/sop-core-0.5.0.2/docs/Data-SOP.html#t:NS' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>View haddocks</a>)
+    </p>
+  
+    <p class='mb-3'>
+      When the value is <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Z</code>, it indicates the first sum constructor. When the value is <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>S . Z</code>, it indicates the second constructor, and so on. Our <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>breakfast</code> value above uses <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code>, which is the third constructor. So, to construct the SOP representation of this value directly, we would use <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>S . S . Z</code>. This is exactly what we saw above (repeated here):
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>-- Note the `S . S . Z`
+&gt; unSOP . from $ breakfast
+S (S (Z (I "Egg" :* I "Sausage" :* Nil)))
+&gt;
+&gt; :t (unSOP . from $ breakfast)
+(unSOP . from $ breakfast)
+  :: NS (NP I) '[ [String], [String], [String, String] ]</code></pre></div>
+    <p class='mb-3'>
+      <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code>’s functor is a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NP I</code>, so the sum choice’s inner value is an n-ary product (remember: we are working with a sum-of-product), whose value is <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>I "Egg" :* I "Sausage" :* Nil</code>. Putting that product inside a sum, we get <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>S (S (Z (I "Egg" :* I "Sausage" :* Nil)))</code>.
+    </p>
+  
+    <h3 id='code-as-data-data-as-code' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Code as data; data as code
+  
+  <a href='generics-sop-intro#code-as-data-data-as-code' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      The SOP representation of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> can be manually constructed. First, we build the constructor arguments (product), followed by the constructor itself (sum):
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; let prod = I "Egg" :* I "Sausage" :* Nil :: NP I '[String, String]
+&gt; let sum = S $ S $ Z prod :: NP I '[[String], [String], [String, String]]
+&gt; :t sum 
+sum :: NS (NP I) '[[String], [String], [String, String]]</code></pre></div>
+    <p class='mb-3'>
+      From this representation, we can easily produce a value of type <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> using <a href='https://hackage.haskell.org/package/generics-sop-0.5.1.2/docs/Generics-SOP.html#v:to' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>to</code></a>:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; to @(These String String) (SOP sum)
+These "Egg" "Sausage"</code></pre></div>
+    <p class='mb-3'>
+      Let’s pause for a moment and reflect on what we just did. By treating the type-definition of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>These</code> (“code”) as a generic <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>SOP</code> table (“data”)–i.e., code as data–we are able to generate a value (“code”) for that type (“data”)–ie., data as code–but without using the constructors of that type. This is generic programming in Haskell; you program <em>generically</em> without being privy to the actual type used.
+    </p>
+  
+    <p class='mb-3'>
+      This concludes our playing with SOPs. Now let’s do something useful.
+    </p>
+  
+    <h2 id='example-1-generic-equality' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Example 1: generic equality
+  
+  <a href='generics-sop-intro#example-1-generic-equality' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      GHC’s <a href='https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/deriving_strategies.html#deriving-strategies' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>stock deriving</a> can be used to derive instances for builtin type classes, like <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Eq</code>, on user-defined datatypes. This works for builtin type classes, but generics-sop (as well as GHC.Generics) comes in handy when you want to derive generically for arbitrary typeclasses. For a moment, let’s assume that GHC had no support for stock deriving. How, then, would we derive our <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Eq</code> instance?
+    </p>
+  
+    <p class='mb-3'>
+      We want a function <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>geq</code> that takes <em>any</em> datatype <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>a</code> (making the function <a href='https://www.sciencedirect.com/science/article/pii/S0167642304000152' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>polytypic</a>) and performs an equality check on its arguments. In effect, we want:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>geq :: Generic a =&gt; a -&gt; a -&gt; Bool</code></pre></div>
+    <p class='mb-3'>
+      This function can be broken down further to operate on SOP structures directly, so as to “forget” the specific <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>a</code>:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>geq :: forall a. Generic a =&gt; a -&gt; a -&gt; Bool
+geq x y = geq' @a (unSOP $ from x) (unSOP $ from y)
+
+geq' :: NS (NP I) (Code a) -&gt; NS (NP I) (Code a) -&gt; Bool
+geq' = undefined</code></pre></div>
+    <p class='mb-3'>
+      Our problem has now been reduced to operating on SOP tables, and our task is to implement <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>geq'</code>.
+    </p>
+  
+    <p class='mb-3'>
+      At this point, you are probably thinking we can simply case-match on the arguments. But remember that the n-ary sum type <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code> is a <a href='https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/exts/gadt.html#gadt' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>GADT</a> (i.e., its type index is <a href='https://en.wikipedia.org/wiki/Dependent_type' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>dependent</a> on the sum constructor). Instead, we have to case-match at the <em>type-level</em>, as it were. This is what type-classes are for. When wanting a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>foo</code> that case-matches at type-level, the general pattern calls for writing a type-class <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Foo</code> and then writing instances for each case-match pattern.
+    </p>
+  
+    <h3 id='naive-implementation' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Naive implementation
+  
+  <a href='generics-sop-intro#naive-implementation' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      For pedagogic reasons, we begin with a naive implementation of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>geq'</code> to illustrate the above explanation. We need a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>sumEq</code> function that checks the equality of the first constructor and then recurses for others. The function will case-match on the outer list. Likewise, for each sum constructor, we will need a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>prodEq</code> that checks the equality of its products. It does so, similarly, by checking the equality of the first product and then recursing for the rest; <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>prodEq</code> will case-match on the inner list.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>geq' :: SumEq (Code a) =&gt; NS (NP I) (Code a) -&gt; NS (NP I) (Code a) -&gt; Bool
+geq' = sumEq
+
+-- `xss` is a type-level list of lists; `Code a`
+class SumEq xss where
+  sumEq :: NS (NP I) xss -&gt; NS (NP I) xss -&gt; Bool
+
+instance SumEq '[] where
+  sumEq = \case
+
+instance (ProdEq xs, SumEq xss) =&gt; SumEq (xs ': xss) where
+  -- Both values are the same constructor; so check equality on their products,
+  -- using `prodEq`.
+  sumEq (Z x) (Z y) = prodEq x y
+  -- Recurse on next sum constructor.
+  sumEq (S x) (S y) = sumEq x y
+  -- Mismatching sum constructor; equality check failed.
+  sumEq _ _ = False
+
+class ProdEq xs where
+  prodEq :: NP I xs -&gt; NP I xs -&gt; Bool
+
+instance ProdEq '[] where
+  prodEq Nil Nil = True
+
+instance (Eq x, ProdEq xs) =&gt; ProdEq (x ': xs) where
+  -- First product argument should be equal; then we recurse for rest of arguments.
+  prodEq (x :* xs) (y :* ys) = x == y && prodEq xs ys</code></pre></div>
+    <p class='mb-3'>
+      Notice how, in the first instance for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>SumEq</code>, we are “pattern matching”, as it were, at the type-level and defining the implementation for the scenario of zero sum constructors (not inhabitable). Then, inductively, we define the next instance using recursion. When both arguments are at <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Z</code>, we match their products, using <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>prodEq</code>, which is defined similarly. Otherwise, we recurse into the successor constructor (the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>x</code> in <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>S x</code>). The story for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>ProdEq</code> is similar.
+    </p>
+  
+    <p class='mb-3'>
+      Finally, we can test that it works:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; geq (This True) (That False)
+False
+&gt; geq (These 42 "Hello") (These 42 "Hello" :: These Int String)
+True</code></pre></div>
+    <p class='mb-3'>
+      Thus, we have implemented an equality function that works for <em>any</em> datatype (with <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Generic</code> instance).
+    </p>
+  
+    <h3 id='combinator-based-implementation' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Combinator-based implementation
+  
+  <a href='generics-sop-intro#combinator-based-implementation' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Hopefully, the above naive implementation illustrates how one can “transform” SOP structures straightforwardly using typeclasses. N-ary sums and products need to be processed at type-level, so it is not uncommon to write new type-classes to dispatch on their constructors, as shown above. Typically, however, you do not have to do that because <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>generics-sop</code> provides combinators for common operations. Here, we will rewrite the above implementation using these combinators.
+    </p>
+  
+    <p class='mb-3'>
+      The combinators are explained in depth in <a href='https://github.com/kosmikus/SSGEP/blob/master/LectureNotes.pdf' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ATLGP</a>. We will introduce a few in this article. The particular combinators we need for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>geq</code> are:
+    </p>
+  <table class='mb-3'><thead><tr class='border-b-2 border-t-2 border-gray-300'><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Combinator</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Description</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Typeclass it replaces</th></tr></thead><tbody><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcliftA2</code></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Lift elements of a NP or NS using given function</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>ProdEq</code></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcollapse</code></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Convert heterogenous structure into homogenous value</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>ProdEq</code></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>ccompare_NS</code></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Compare two <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code> values</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>SumEq</code></td></tr></tbody></table>
+    <p class='mb-3'>
+      To appreciate the value of these particular combinators, notice the third column indicating the type-class it intends to replace. Withtout further ado, here is the new (compact) implementation:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>geq :: forall a. (Generic a, All2 Eq (Code a)) =&gt; a -&gt; a -&gt; Bool
+geq x y = geq' @a (from x) (from y)
+
+geq' :: All2 Eq (Code a) =&gt; SOP I (Code a) -&gt; SOP I (Code a) -&gt; Bool
+geq' (SOP c1) (SOP c2) =
+  ccompare_NS (Proxy @(All Eq)) False eqProd False c1 c2
+  where
+    eqProd :: All Eq xs =&gt; NP I xs -&gt; NP I xs -&gt; Bool
+    eqProd p1 p2 =
+      and $
+        hcollapse $ hcliftA2 (Proxy :: Proxy Eq) eqTerm p1 p2
+      where
+        eqTerm :: forall a. Eq a =&gt; I a -&gt; I a -&gt; K Bool a
+        eqTerm a b =
+          K $ a == b</code></pre></div>
+    <p class='mb-3'>
+      This code introduces two more aspects to <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>generics-sop</code>:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <strong>Constraint propagation</strong>: When generically transforming SOP structures, we want to be able to “propagate” inner constraints outwardly. Here, the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Proxy</code> class is used for this purpose. <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>All c xs</code> is simply an alias for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>(c x1, c x2, ...)</code> where <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>xs</code> is a type-level list. Likewise, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>All2 c xss</code> is <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>c x11, c x12, ... </code> where <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>xss</code> is type-level list of lists (ie., <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Code a ~ xss</code>). Clearly, we want the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Eq</code> constraint in the table elements to apply to the whole table row and, thereon, to the table itself. <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>All2 Eq (Code a)</code> on <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>geq'</code> specifies this.
+        </li>
+      
+        <li>
+          <strong>Constant functor</strong>: The constant functor <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>K</code> is defined as <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>data K a b = K a</code>. Always containing the first type parameter, this functor “discards” the second type. Where you see <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>K Bool a</code>, we are discarding the polymorphic <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>a</code> (the type of cell in the table), and returning the (constant) type <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Bool</code>. When we transform the structure to be over <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>K</code> (using <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcliftA2</code>), we are essentially making the structure <em>homogenous</em> in its elements, which in turn allows us to “collapse” it using <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcollapse</code> to produce a single value (which we need to be the result of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>geq</code>).
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      This is just a brief taste of generics-sop combinators. Read <a href='https://github.com/kosmikus/SSGEP/blob/master/LectureNotes.pdf' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ATLGP</a> for details, and I shall introduce more combinators in the examples below.
+    </p>
+  
+    <h4 id='interlude-specialized-combinators' class='group mt-6 mb-4 font-bold text-gray-700 text-2xl'>
+      
+  Interlude: Specialized combinators
+  
+  <a href='generics-sop-intro#interlude-specialized-combinators' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h4>
+  
+    <p class='mb-3'>
+      Most combinators are polymorphic over the containing structure; as such, their type signatures can be pretty complex to understand. For this reason, you might want to begin by using their <em>monomorphized</em> versions, which have simpler type signatures. For example, the polymorphic combinator <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcollapse</code> has the following signature that makes it possible to work with any structure (<code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code> or a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NP</code>, etc):
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>hcollapse :: SListIN h xs =&gt; h (K a) xs -&gt; CollapseTo h a</code></pre></div>
+    <p class='mb-3'>
+      If you are not very familiar with the library, this signature can be difficult to understand. But the monomorphized versions, such as that for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code>, are more straightforward:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>collapse_NP :: NP (K a) xs -&gt; [a]</code></pre></div>
+    <p class='mb-3'>
+      These specialized versions are typically suffixed as above (i.e., <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>_NP</code>).
+    </p>
+  
+    <h2 id='example-2-route-encoding' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Example 2: route encoding
+  
+  <a href='generics-sop-intro#example-2-route-encoding' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      In the first example above, I demonstrated how to use generics-sop to generically implement <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>eq</code>. Here, I will provide a more interesting example: specifically, how to represent routes for a statically generated site using algebraic data types. We will derive encoders (<code class='py-0.5 px-0.5 bg-gray-100 font-mono'>route -&gt; FilePath</code>) for them automatically using generics-sop.
+    </p>
+  
+    <p class='mb-3'>
+      Imagine you are writing a static site in Haskell
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='generics-sop-intro#fn1'>
+        1
+      </a>
+    </sup>
+   for your blog posts. Each “route” in that site corresponds to a generated <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>.html</code> file. We will use ADTs to represent the routes:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>data Route
+  = Route_Index -- index.html
+  | Route_Blog BlogRoute -- blog/*
+
+data BlogRoute
+  = BlogRoute_Index -- blog/index.html
+  | BlogRoute_Post PostSlug -- blog/${slug}.html
+
+newtype PostSlug = PostSlug {unPostSlug :: Text}</code></pre></div>
+    <p class='mb-3'>
+      To compute the path to the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>.html</code> file for each route, we need a function <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>encodeRoute :: r -&gt; FilePath</code>. It is worth creating a typeclass for it because we can recursively encode the ADT:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>-- Class of routes that can be encoded to a filename.
+class IsRoute r where
+  encodeRoute :: r -&gt; FilePath</code></pre></div>
+    <h3 id='manual-implementation' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Manual implementation
+  
+  <a href='generics-sop-intro#manual-implementation' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Before writing generic implementation, it is always useful to write the implementation “by hand”. Doing so enables us to begin building an intuition for what the generic version will look like.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>-- This instance will remain manual.
+instance IsRoute PostSlug where
+  encodeRoute (PostSlug slug) = T.unpack slug &lt;&gt; ".html"
+
+-- These instances eventually will be generalized.
+instance IsRoute BlogRoute where
+  encodeRoute = \case
+    BlogRoute_Index -&gt; "index.html"
+    BlogRoute_Post slug -&gt; "post" &lt;/&gt; encodeRoute slug
+
+instance IsRoute Route where
+  encodeRoute = \case
+    Route_Index -&gt; "index.html"
+    Route_Blog br -&gt; "blog" &lt;/&gt; encodeRoute br</code></pre></div>
+    <p class='mb-3'>
+      We can do nothing about the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>PostSlug</code> instance because it is not an ADT, but we <em>do</em> want to implement <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>encodeRoute</code> for both <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>BlogRoute</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Route</code> generically.
+    </p>
+  
+    <h3 id='identify-the-general-pattern' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Identify the general pattern
+  
+  <a href='generics-sop-intro#identify-the-general-pattern' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Once you have written the implementation manually, the next step is to make it as general as possible. Try to extract the “general pattern” behind these manual implementations. From looking at the <em>specialized</em> instances above, we can determine a <em>general</em> pattern described as follows:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          To encode <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Foo_Bar</code> in a datatype <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Foo</code>, we drop the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Foo_</code> and take the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Bar</code>. Then, we convert it to <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>bar.html</code>.
+        </li>
+      
+        <li>
+          If a sum constructor has arguments, we check that it possesses exactly one argument (arity &lt;=1). Then, we call <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>encodeRoute</code> on that argument and append it to the constructor’s encoding using <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>/</code>.
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          For example, to encode <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>BlogPost_Post (PostSlug "hello")</code>, we first encode the constructor as <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>"post"</code>. Then, we encode the only argument as <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>encodeRoute (PostSlug "hello")</code>, which reduces to <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>"hello.html"</code>, thus producing the encoding <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>"post/hello.html"</code>. Finally, when encoding <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Route_Blog br</code>, it gets inductively encoded into <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>"blog/post/hello.html"</code>.
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+    <h3 id='write-the-generic-version' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Write the generic version
+  
+  <a href='generics-sop-intro#write-the-generic-version' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Having identified the general pattern, we are now able to write the generic version of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>encodeRoute</code>. Keep in mind the above pattern while you follow the code below:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>gEncodeRoute :: Generic r =&gt; r -&gt; FilePath
+gEncodeRoute = undefined</code></pre></div>
+    <p class='mb-3'>
+      To derive route encoding from the constructor name, we need the datatype metadata (provided by <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>HasDatatypeInfo</code>) from generics-sop. <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>constructorInfo . datatypeInfo</code> gives us the constructor information, from which we will determine the final route encoding using the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hindex</code> combinator. Effectively, this enables us to produce <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>"foo.html"</code> from a sum constructor like <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Route_Foo</code>.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>gEncodeRoute :: forall r. 
+  (Generic r, All2 IsRoute (Code r), All IsRouteProd (Code r), HasDatatypeInfo r) =&gt; 
+  r -&gt; FilePath
+gEncodeRoute x = gEncodeRoute' @r (from x)
+
+gEncodeRoute' :: forall r. 
+  (All2 IsRoute (Code r), All IsRouteProd (Code r), HasDatatypeInfo r) =&gt;
+  SOP I (Code r) -&gt; FilePath
+gEncodeRoute' (SOP x) =
+  -- Determine the contructor name and then strip its prefix.
+  let ctorSuffix = ctorStripPrefix @r ctorName
+  -- Encode the product argument, if any; otherwise, end the route string with ".html"
+   in case hcollapse $ hcmap (Proxy @IsRouteProd) encProd x of
+        Nothing -&gt; ctorSuffix &lt;&gt; ".html"
+        Just p -&gt; ctorSuffix &lt;/&gt; p
+  where
+    encProd :: (IsRouteProd xs) =&gt; NP I xs -&gt; K (Maybe FilePath) xs
+    encProd =
+      K . hcollapseMaybe . hcmap (Proxy @IsRoute) encTerm
+    encTerm :: IsRoute b =&gt; I b -&gt; K FilePath b
+    encTerm =
+      K . encodeRoute . unI
+    ctorName :: ConstructorName
+    ctorName =
+      hcollapse $
+        hzipWith
+          (\c _ -&gt; K (constructorName c))
+          (datatypeCtors @r)
+
+datatypeCtors :: forall a. HasDatatypeInfo a =&gt; NP ConstructorInfo (Code a)
+datatypeCtors = constructorInfo $ datatypeInfo (Proxy @a)
+
+ctorStripPrefix :: forall a. HasDatatypeInfo a =&gt; ConstructorName -&gt; String
+ctorStripPrefix ctorName =
+  let name = datatypeName $ datatypeInfo (Proxy @a)
+   in maybe (error "ctor: bad naming") (T.unpack . T.toLower) $
+        T.stripPrefix (T.pack $ name &lt;&gt; "_") (T.pack ctorName)</code></pre></div>
+    <p class='mb-3'>
+      <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcollapse</code> should be familiar, and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcmap</code> is just an alias of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcliftA</code> (analogous to <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcliftA2</code> used in the above example). New here is <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcollapseMaybe</code>, which is a custom version of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcollapse</code>. We defined it to constrain the number of products to either zero or one (as it would not make sense for a route tye otherwise). Its full implementation
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='generics-sop-intro#fn2'>
+        2
+      </a>
+    </sup>
+   is available in the <a href='https://github.com/srid/generics-sop-examples/blob/master/src/RouteEncoding.hs' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>source</a>.
+    </p>
+  
+    <p class='mb-3'>
+      Finally, we make use of <a href='https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/default_signatures.html' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>DefaultSignatures</code></a> to provide a default implementation in the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> class:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>class IsRoute r where
+  encodeRoute :: r -&gt; FilePath
+  default encodeRoute ::
+    (Generic r, All2 IsRoute (Code r), HasDatatypeInfo r) =&gt;
+    r -&gt;
+    FilePath
+  encodeRoute = gEncodeRoute</code></pre></div>
+    <p class='mb-3'>
+      This implementation, in turn, allows us to derive <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> arbitrarily via <a href='https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/deriving_strategies.html' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>DeriveAnyClass</code></a>–which is to say that we get our <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> instances for “free”:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>data Route
+  = Route_Foo
+  | Route_Blog BlogRoute
+  deriving stock (GHC.Generic, Eq, Show)
+  deriving anyclass (Generic, HasDatatypeInfo, IsRoute)`</code></pre></div>
+    <p class='mb-3'>
+      <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>encodeRoute Route_Foo</code> now returns <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>"foo.html"</code>, and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>encodeRoute $ Route_Blog BlogRoute_Index</code> returns <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>"blog/index.html"</code>–all without needing boilerplate implementation.
+    </p>
+  
+    <h2 id='example-3-route-decoding' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Example 3: route decoding
+  
+  <a href='generics-sop-intro#example-3-route-decoding' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      As a final example, I shall demonstrate what it takes to <em>construct</em> new values. Naturally, our <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> class above needs a new method: <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>decodeRoute</code> for the reverse conversion. (A function like decodeRoute is useful for checking the validity of links in the generated HTML):
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>class IsRoute r where
+  -- | Encode a route to file path on disk.
+  encodeRoute :: r -&gt; FilePath
+  -- | Decode a route from its encoded filepath
+  decodeRoute :: FilePath -&gt; Maybe r
+
+gDecodeRoute :: forall r. 
+  (Generic r, All2 IsRoute (Code r), HasDatatypeInfo r) =&gt; 
+  FilePath -&gt; Maybe r
+gDecodeRoute fp = undefined</code></pre></div>
+    <h3 id='slist' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>SList</code>
+  
+  <a href='generics-sop-intro#slist' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Generically constructing values is a little more involved. Here, it is useful to know about singleton for type-level lists: <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>SList</code>.
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>data SList :: [k] -&gt; Type where
+  SNil  :: SList '[]
+  SCons :: SListI xs =&gt; SList (x ': xs)
+
+-- | Get hold of an explicit singleton (that one can then
+-- pattern match on) for a type-level list
+--
+sList :: SListI xs =&gt; SList xs
+sList = ...</code></pre></div>
+    <p class='mb-3'>
+      To generically implement <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>decodeRoute</code> we need <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>sList</code>. <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>sList</code> pretty much allows us to “case-match” on the type-level list and build our combinators accordingly, as we will see below.
+    </p>
+  
+    <h3 id='anamorphism-combinators' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Anamorphism combinators
+  
+  <a href='generics-sop-intro#anamorphism-combinators' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      To implement <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>decodeRoute</code> generically, we are looking to construct a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS (NP I) (Code r)</code> depending on which constructor the first path segment of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>fp</code> matches. Then, we recurse into constructing the inner route for the sum constructor’s (only and optional) product type. This recursive building of values is called <a href='https://en.wikipedia.org/wiki/Anamorphism#Anamorphisms_in_functional_programming' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>anamorphism</a>. In particular, we need two anamorphisms: one for the outer sum and another for the inner product.
+    </p>
+  
+    <p class='mb-3'>
+      <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>generics-sop</code> already provides <a href='https://hackage.haskell.org/package/sop-core-0.5.0.2/docs/Data-SOP-NS.html#v:cana_NS' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>cana_NS</code></a> and <a href='https://hackage.haskell.org/package/sop-core-0.5.0.2/docs/Data-SOP-NP.html#v:cana_NP' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>cana_NP</code></a> as anamorphisms for <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NS</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>NP</code>, respectively. However, we need a slightly different version of them to return <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Maybe</code> values instead. We shall define these anamorphisms (prefixed with <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>m</code>) accordingly as follows (note the use of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>sList</code>):
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>-- | Like `cana_NS` but returns a Maybe
+mcana_NS ::
+  forall c proxy s f xs.
+  (All c xs) =&gt;
+  proxy c -&gt;
+  (forall y ys. c y =&gt; s (y ': ys) -&gt; Either (Maybe (f y)) (s ys)) -&gt;
+  s xs -&gt;
+  Maybe (NS f xs)
+mcana_NS _ decide = go sList
+  where
+    go :: forall ys. (All c ys) =&gt; SList ys -&gt; s ys -&gt; Maybe (NS f ys)
+    go SNil _ = Nothing
+    go SCons s = case decide s of
+      Left x -&gt; Z &lt;$&gt; x
+      Right s' -&gt; S &lt;$&gt; go sList s'
+
+-- | Like `cana_NP` but returns a Maybe
+mcana_NP ::
+  forall c proxy s f xs.
+  (All c xs) =&gt;
+  proxy c -&gt;
+  (forall y ys. (c y, SListI ys) =&gt; s (y ': ys) -&gt; Maybe (f y, s ys)) -&gt;
+  s xs -&gt;
+  Maybe (NP f xs)
+mcana_NP _ uncons = go sList
+  where
+    go :: forall ys. (All c ys) =&gt; SList ys -&gt; s ys -&gt; Maybe (NP f ys)
+    go SNil _ = pure Nil
+    go SCons s = do
+      (x, s') &lt;- uncons s
+      xs &lt;- go sList s'
+      pure $ x :* xs</code></pre></div>
+    <h3 id='implement-gdecoderoute' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Implement <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>gDecodeRoute</code>
+  
+  <a href='generics-sop-intro#implement-gdecoderoute' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Now we are ready to use a combination of <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>sList</code>, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>mcana_NS</code> and <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>mcana_NP</code> to implement <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>gDecodeRoute</code>:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>gDecodeRoute :: forall r.
+  (Generic r, All IsRouteProd (Code r), All2 IsRoute (Code r), HasDatatypeInfo r) =&gt;
+  FilePath -&gt; Maybe r
+gDecodeRoute fp = do
+  -- We operate on first element of the filepath and inductively decode the rest.
+  basePath : restPath &lt;- pure $ splitDirectories fp
+  -- Build the sum using an anamorphism
+  to . SOP
+    &lt;$&gt; mcana_NS @IsRouteProd @_ @_ @(NP I)
+      Proxy
+      (anamorphismSum basePath restPath)
+      (datatypeCtors @r)
+  where
+    -- The `base` part of the path should correspond to the constructor name. 
+    anamorphismSum :: forall xs xss. 
+     IsRouteProd xs =&gt; 
+     FilePath -&gt; 
+     [FilePath] -&gt;
+     NP ConstructorInfo (xs ': xss) -&gt;
+     Either (Maybe (NP I xs)) (NP ConstructorInfo xss)
+    anamorphismSum base rest (p :* ps) =
+      fromMaybe (Right ps) $ do
+        let ctorSuffix = ctorStripPrefix @r (constructorName p)
+        Left &lt;$&gt; case sList @xs of
+          SNil -&gt; do
+            -- For constructors without arguments, we simply expect the `rest`
+            -- of the path to be empty.
+            guard $ ctorSuffix &lt;&gt; ".html" == base && null rest
+            pure $ Just Nil
+          SCons -&gt; do
+            -- For constructors with an argument, we ensure that the constructor
+            -- name matches the base part and then recurse into decoding the
+            -- argument itself.
+            guard $ ctorSuffix == base
+            pure $
+              mcana_NP @_ @_ @_ @I
+                (Proxy @IsRoute)
+                anamorphismProduct
+                Proxy
+      where
+        anamorphismProduct :: forall y1 ys1. 
+         (IsRoute y1, SListI ys1) =&gt; 
+         Proxy (y1 ': ys1) -&gt; Maybe (I y1, Proxy ys1)
+        anamorphismProduct Proxy = case sList @ys1 of
+          -- We "case match" on the rest of the products to handle the scenario
+          -- of there being exactly one product.
+          SNil -&gt; do
+            -- Recurse into the only product argument
+            guard $ not $ null rest
+            r' &lt;- decodeRoute @y1 $ joinPath rest
+            pure (I r', Proxy)
+          SCons -&gt;
+            -- Not reachable, due to HCollapseMaybe constraint
+            Nothing</code></pre></div>
+    <p class='mb-3'>
+      We split the path <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>fp</code> and process the first path segment by matching it with one of the sum constructors. In <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>anamorphismSum</code>, we handle the two cases of null product constructor and singleton product constructor (<code class='py-0.5 px-0.5 bg-gray-100 font-mono'>mcana_NS</code> is responsible for recursing into other sum constructors). For null product, we match the file path with “${constructorSuffix}.html” and return immediately. For a single product case, we use <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>mcana_NP</code> to build the product. <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>anammorphismProduct</code> uses <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>sList</code> to case match on the rest of the products (i.e. 2nd, etc.) and calls <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>decodeRoute</code> on the first product only if the rest is empty–which, in turn, requires us to use the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> constraint all the way above.
+    </p>
+  
+    <p class='mb-3'>
+      Finally, we use <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>DefaultSignatures</code> to specify a default implementation in <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>IsRoute</code> class.
+    </p>
+  
+    <h3 id='putting-it-all-together' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Putting it all together
+  
+  <a href='generics-sop-intro#putting-it-all-together' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      We can test that our code works in GHCi:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; import RouteEncoding 
+&gt; encodeRoute Route_Index
+"index.html"
+&gt; decodeRoute @Route $ encodeRoute Route_Index
+Just Route_Index</code></pre></div>
+    <p class='mb-3'>
+      To be completely sure, we can test it with inductive route values:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>&gt; encodeRoute $ Route_Blog $ BlogRoute_Post "hello"
+"blog/post/hello.html"
+&gt; decodeRoute @Route "blog/post/hello.html"
+Just (Route_Blog (BlogRoute_Post "hello"))
+&gt; </code></pre></div>
+    <p class='mb-3'>
+      This concludes the introduction to <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>generics-sop</code>.
+    </p>
+  
+    <h2 id='further-information' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Further information
+  
+  <a href='generics-sop-intro#further-information' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://github.com/srid/generics-sop-examples/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Source code</a> for this article.
+        </li>
+      
+        <li>
+          <a href='https://www.youtube.com/watch?v=sQxH349HOik' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>This ZuriHac talk</a> provides a good introduction to generics-sop.
+        </li>
+      
+        <li>
+          <a href='https://github.com/kosmikus/SSGEP/blob/master/LectureNotes.pdf' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Applying Type-Level and Generic Programming in Haskell</a> by Andres Löh acts as a lengthy tutorial cum documentation for generics-sop.
+        </li>
+      
+    </ul>
+  
+    <h2 id='acknowledgements' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Acknowledgements
+  
+  <a href='generics-sop-intro#acknowledgements' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Thanks for <a href='https://github.com/TotallyNotChase' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Chase</a>, <a href='https://github.com/tbidne' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Tommy Bidne</a> and <a href='https://well-typed.com/who_we_are/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Andres Löh</a> for giving feedback on earlier drafts of this article.
+    </p>
+  
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Using generators like <a href='https://jaspervdj.be/hakyll/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Hakyll</a> or <a href='https://ema.srid.ca/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Ema</a>
+          </div>
+        </div>
+      
+        <div id='fn2'>
+          <header class='italic'>
+            2.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            
+    <p class='mb-3'>
+      In particular, we create a <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>HCollapseMaybe</code> constraint that limits <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>hcollapse</code> to work on, at most, one product:
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>class HCollapseMaybe h xs where
+  hcollapseMaybe :: SListIN h xs =&gt; h (K a) xs -&gt; Maybe a
+
+instance HCollapseMaybe NP '[] where
+  hcollapseMaybe _ = Nothing
+
+instance HCollapseMaybe NP '[p] where
+  hcollapseMaybe (K x :* Nil) = Just x
+
+instance (ps ~ TypeError ('Text "Expected at most 1 product")) =&gt; HCollapseMaybe NP (p ': p1 ': ps) where
+  hcollapseMaybe _ = Nothing -- Unreachable
+
+class (All IsRoute xs, HCollapseMaybe NP xs) =&gt; IsRouteProd xs
+
+instance (All IsRoute xs, HCollapseMaybe NP xs) =&gt; IsRouteProd xs</code></pre></div>
+    <p class='mb-3'>
+      Then we change <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>encProd</code> to be
+    </p>
+  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>encProd :: (IsRouteProd xs) =&gt; NP I xs -&gt; K (Maybe FilePath) xs
+encProd =
+  K . hcollapseMaybe . hcmap (Proxy @IsRoute) encTerm</code></pre></div>
+    <p class='mb-3'>
+      while propagating the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>All IsRouteProd (Code r)</code> constraint all the way up.
+    </p>
+  
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/PDFs/generics-sop-intro.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+</article>
+    
+    <div class='flex flex-col lg:flex-row lg:space-x-2'>
+      
+      
+    </div>
+    
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+  </section>
+
+    <!-- What goes in this file will at the very end of the main div -->
+  </main>
+</div>
+        </div>
+      
+      <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 1.3.30.0'>
+      <img class='w-6 h-6 hover:text-green-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-green-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+    </div>
+  
+  <div id='stork-search-container' class='hidden fixed w-screen h-screen inset-0 backdrop-filter backdrop-blur-sm'>
+  <div class='fixed w-screen h-screen inset-0' onclick='window.emanote.stork.toggleSearch()'></div>
+
+  <div class='container mx-auto p-10 mt-10'>
+    <div class='stork-wrapper-flat container mx-auto'>
+      <input id='stork-search-input' data-stork='emanote-search' class='stork-input' placeholder='Search (Ctrl+K) ...' />
+      <div data-stork='emanote-search-output' class='stork-output'></div>
+    </div>
+  </div>
+</div>
+  
+    
+  
+</body>
+
+</html>

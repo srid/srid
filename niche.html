@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+
+
+
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Stay niche – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='The quality of a social network (or a community more generally) tends to decline as it grows to encompass a larger portion of the general public. This is because the network starts to reflect the “median” of the human condition, which is typically of average quality. The median represents the orthodox, mundane, and conventional aspects of society.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content='https://srid.ca/' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Stay niche' />
+      
+        <meta name='twitter:card' content='summary_large_image' />
+      
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+
+  
+  
+  <link href='tailwind.css?instanceId=5bcf93f2-2596-4372-99b7-91ee6c5b7219' rel='stylesheet' type='text/css' />
+
+  <link rel='stylesheet' href='_emanote-static/fonts/maven-pro.css' />
+
+<style data-category='global-font'>
+  /* Maven Pro font for the entire site */
+  body {
+    font-family: 'Maven Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+</style>
+
+<style data-category='error'>
+  /* Heist error element */
+  strong.error {
+    color: lightcoral;
+    font-size: 90%;
+    font-family: monospace;
+  }
+</style>
+
+<style data-category='kbd'>
+  /* <kbd> styling */
+  kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+  }
+</style>
+
+<style data-category='callout'>
+  /* To prevent overemphasis of link styles in callout titles */
+  .callout .callout-title a {
+    color: inherit;
+    text-decoration: underline;
+  }
+</style>
+
+<style data-category='toc'>
+  a.--ema-toc:not(.toc-item-active) {
+    background-color: #ffffff !important;
+  }
+</style>
+
+<style data-category='external-link'>
+  /* External link icon */
+  a[data-linkicon=""]::after {
+    content: ""
+  }
+
+  a[data-linkicon=none]::after {
+    content: ""
+  }
+
+  a[data-linkicon="external"] {
+    padding-right: 24px;
+  }
+
+  a[data-linkicon="external"]::after {
+    margin-right: -24px;
+    content: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" height="0.7em" viewBox="0 0 20 20"> \
+        <g style="stroke:gray;stroke-width:1"> \
+          <line x1="5" y1="5" x2="5" y2="14" /> \
+          <line x1="14" y1="9" x2="14" y2="14" /> \
+          <line x1="5" y1="14" x2="14" y2="14" /> \
+          <line x1="5" y1="5" x2="9" y2="5"  /> \
+          <line x1="10" y1="2" x2="17" y2="2"  /> \
+          <line x1="17" y1="2" x2="17" y2="9" /> \
+          <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.0" /> \
+        </g> \
+      </svg>');
+  }
+
+  a[data-linkicon="external"][href^="mailto:"]::after {
+    content: url('data:image/svg+xml,\
+        <svg \
+          xmlns="http://www.w3.org/2000/svg" \
+          height="0.7em" \
+          fill="none" \
+          viewBox="0 0 24 24" \
+          stroke="gray" \
+          stroke-width="2"> \
+          <path \
+            stroke-linecap="round" \
+            stroke-linejoin="round" \
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /> \
+        </svg>');
+  }
+</style>
+  <link rel='stylesheet' href='/obsidian-snippets/headers.css' />
+
+
+  
+    <style>
+      /* For use in sidebar.tpl, as we cannot achieve this in tailwind itself! */
+      /* md:min-w-48  */
+      @media (min-width: 768px) {
+        #sidebar {
+          min-width: 12rem;
+        }
+      }
+
+      /* xl:min-w-64  */
+      @media (min-width: 1280px) {
+        #sidebar {
+          min-width: 16rem;
+        }
+      }
+    </style>
+
+    
+      <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+    
+  
+  <link rel='stylesheet' href='_emanote-static/stork/flat.css' />
+<!-- Custom Stork-search styling for Emanote -->
+<style data-category='stork'>
+  #stork-search-container {
+    z-index: 1000;
+    background-color: rgb(15 23 42/.8);
+  }
+
+  .stork-overflow-hidden-important {
+    overflow: hidden !important;
+  }
+</style>
+
+
+<script src='_emanote-static/stork/stork.js'></script>
+
+  
+    <script id='emanote-stork' data-emanote-base-url='/'>
+      window.emanote = {};
+      window.emanote.stork = {
+        searchShown: false,
+        indexIsStale: false,
+        toggleSearch: function () {
+          window.emanote.stork.refreshIndex();
+          document.getElementById('stork-search-container').classList.toggle('hidden');
+          window.emanote.stork.searchShown = document.body.classList.toggle('stork-overflow-hidden-important');
+          if (window.emanote.stork.searchShown) {
+            document.getElementById('stork-search-input').focus();
+          }
+        },
+        clearSearch: function () {
+          document.getElementById('stork-search-container').classList.add('hidden');
+          document.body.classList.remove('stork-overflow-hidden-important');
+          window.emanote.stork.searchShown = false;
+        },
+
+        getBaseUrl: function () {
+          const baseUrl = document.getElementById("emanote-stork").getAttribute('data-emanote-base-url') || '/';
+          return baseUrl;
+        },
+
+        registerIndex: function (options) {
+          const indexName = 'emanote-search'; // used to match input[data-stork] attribute value
+          const indexUrl = window.emanote.stork.getBaseUrl() + '-/stork.st';
+          stork.register(
+            indexName,
+            indexUrl,
+            options);
+        },
+
+        init: function () {
+          if (document.readyState !== 'complete') {
+            window.addEventListener('load', function () {
+              stork.initialize(window.emanote.stork.getBaseUrl() + '_emanote-static/stork/stork.wasm');
+              window.emanote.stork.registerIndex();
+            });
+
+            document.addEventListener('keydown', event => {
+              if (window.emanote.stork.searchShown && event.key === 'Escape') {
+                window.emanote.stork.clearSearch();
+                event.preventDefault();
+              } else if ((event.key == 'k' || event.key == 'K') && (event.ctrlKey || event.metaKey)) {
+                window.emanote.stork.toggleSearch();
+                event.preventDefault();
+              }
+            });
+          } else {
+            // This section is called during Ema's hot reload.
+            // 
+            // Mark the current index as stale, and refresh it *only when* the
+            // user actually invokes search.
+            // 
+            // We do not refresh the index *right away*, as that will cause
+            // memory leaks in the browser. See
+            // https://github.com/srid/emanote/issues/411#issuecomment-1402056235
+            console.log("stork: Marking index as stale");
+            window.emanote.stork.markIndexAsStale();
+          }
+        },
+
+        markIndexAsStale: function () {
+          window.emanote.stork.indexIsStale = true;
+        },
+
+        refreshIndex: function () {
+          if (window.emanote.stork.indexIsStale) {
+            console.log("stork: Reloading index");
+            window.emanote.stork.indexIsStale = false;
+            // NOTE: This will leak memory. See the comment above.
+            window.emanote.stork.registerIndex({ forceOverwrite: true });
+          }
+        }
+
+      };
+
+      window.emanote.stork.init();
+    </script>
+  
+
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg mt-2 md:mt-4  '>
+      
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree font-medium' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <a href='thoughts'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      <span class='emoji' data-emoji='brain' style='font-family: emoji'>🧠</span> Thoughts
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href=''>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Sridhar Ratnakumar
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+      
+
+      
+
+      
+        <div id='container' class='relative md:shadow-2xl md:mb-8'>
+          
+  <div class='absolute -top-6 right-1 md:right-0 flex flex-row items-center justify-center'>
+    <a title='Search (Ctrl+K)' class='cursor-pointer' onclick='window.emanote.stork.toggleSearch()'>
+      <svg xmlns='http://www.w3.org/2000/svg' style='width: 1rem;' class='hover:text-green-700' f
+ fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+  <path stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
+</svg>
+    </a>
+  </div>
+
+          <!-- Main body column -->
+          <div class='flex-1 w-full bg-white'>
+  <main class='px-4 py-4'>
+    <h1 class='flex items-end justify-center mb-4 p-3 bg-green-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Stay niche
+  </a>
+</h1>
+    
+      <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+
+
+
+
+
+
+    <p class='mb-3'>
+      The quality of a social network (or a <a href='community' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>community</a> more generally) tends to decline as it grows to encompass a larger portion of the general public. This is because the network starts to reflect the “median” of the human condition, which is typically of average quality. The median represents the <a href='unfree' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>orthodox</a>, mundane, and conventional aspects of society.
+    </p>
+  
+    <p class='mb-3'>
+      In contrast, progress occurs among the <a href='https://www.youtube.com/watch?v=dGDbpg1nG8Y' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>outliers</a>. Humanity could not have been progressing towards betterment without the at-that-point-in-time fringe-heterodox thinking normally associated with creativity.
+    </p>
+  
+    <p class='mb-3'>
+      This explains why social media was captivating in its early years but has become increasingly restrictive and of average quality over time, largely due to <a href='censorship' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>censorship</a>.
+    </p>
+  
+    <h2 id='decentralization' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Decentralization
+  
+  <a href='niche#decentralization' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      The core problem here is the <em>monolithic</em> nature of these social networks, not their size per se. One solution is <a href='https://decrypt.co/53890/parler-vitalik-buterin-ethereum' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>decentralization</a>,
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='niche#fn1'>
+        1
+      </a>
+    </sup>
+   making it impossible for there to be a large monolithic network thus discouraging any form of <em>universal</em> group-think, for there will be no such universal group.
+    </p>
+  
+    <p class='mb-3'>
+      It is time we humans (i.e., each of us individuals) let go of the idea of “humanity” (i.e., as a “group”); decentralized social networks today have a fantastic opportunity to play their technological role in it.
+    </p>
+  
+    <p class='mb-3'>
+      Decentralized networks to look forward to:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Matrix: <a href='https://arewep2pyet.com/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://arewep2pyet.com/</a>
+        </li>
+      
+        <li>
+          <a href='nostr' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Nostr</a>
+        </li>
+      
+    </ul>
+  
+    <h2 id='see-also' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  See also
+  
+  <a href='niche#see-also' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Similar ideas
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://meaningness.com/geeks-mops-sociopaths' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Geeks, MOPs, and sociopaths in subculture evolution</a>
+        </li>
+      
+        <li>
+          <a href='https://noahpinion.substack.com/p/the-internet-wants-to-be-fragmented' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>The internet wants to be fragmented</a>
+        </li>
+      
+        <li>
+          Sriram: <a href='https://sriramk.com/group-chats-rule-the-world' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Group chats rule the world</a> <em>“Every good group chat has an inverse relationship with size. It is impossible to add new members forever without decreasing quality. Over time, the group decays in quality and I often find groups with &gt;100 members unsustainable. Far below Dunbar’s number, it breaks some human model of intimacy.”</em>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://news.ycombinator.com/item?id=40660867' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://news.ycombinator.com/item?id=40660867</a>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <a href='https://reclaimthenet.org/big-tech-censorship-likely-brought-forward-decentralized-tech/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Big Tech censorship likely brought forward decentralized tech</a>
+        </li>
+      
+        <li>
+          <a href='https://meta.ath0.com/2020/12/social-notwork/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Social networks: It’s worse than you think</a> - <em>“as the number of messages in the network rises, the quality of those which propagate falls”</em> (interpreting <a href='https://www.scientificamerican.com/article/information-overload-helps-fake-news-spread-and-social-media-knows-it/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>this research</a>)
+        </li>
+      
+        <li>
+          What happened to <a href='https://www.cellio.org/stack' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Monica Cellio</a> is worth reading (here’s <a href='https://meta.stackexchange.com/a/334417/135122' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>a timeline</a>) to understand some of the fallings at Stack Exchange as the network grew beyond its original niche.
+        </li>
+      
+        <li>
+          <a href='https://reasonablypolymorphic.com/blog/monotonous-web/index.html' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Why Is the Web So Monotonous? Google.</a> - degradation of the web from the perspective of boosting of “authorative” source (as a way of soft-<a href='censorship' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>censoring</a> others).
+        </li>
+      
+        <li>
+          
+    <blockquote class='py-0.5 px-4 mb-3 italic border-l-4 bg-gray-50 text-gray-600 border-gray-400 quote'>
+      
+    <p class='mb-3'>
+      As a mission-driven startup, you win by converting a core group of true believers, not by trying to persuade the whole world. Trying to be universally liked would not only bankrupt you but would require becoming unrecognizably milquetoast and watering down your mission to the point of meaninglessness. If you’re pleasing everybody, something is wrong.
+    </p>
+  
+    <p class='mb-3'>
+      There is a trade-off between how many people you can appeal to and how deep an impression you can make on them. A message like “Be yourself” will be appealing in a bland, forgettable way to pretty much everyone. On the other hand, “Get in loser, we’re building armed drones” will totally alienate all but a small number of people — but those will be your people, and to them you’ll be irresistible.
+    </p>
+  
+    <p class='mb-3'>
+      Choosing your audience means choosing who you’re not talking to. Never contort your mission to appease nay-sayers, fence-sitters, and Johnny-come-latelies. They are not your people. – <a href='https://www.piratewires.com/p/anduril-comms-strategy-early-days' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://www.piratewires.com/p/anduril-comms-strategy-early-days</a> <a href='https://twitter.com/sriramk/status/1750558683166093638' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://twitter.com/sriramk/status/1750558683166093638</a>
+    </p>
+  
+    </blockquote>
+  
+        </li>
+      
+        <li>
+          Tyler Cowen: <a href='https://www.tonykulesa.com/p/tyler-cowen-is-the-best-curator-of' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>“I try to stay a bit weird and obscure enough that mostly quite smart people are writing me. If I had too many not smart emails I would feel that I was doing something else wrong with what I’m writing.”</a>
+        </li>
+      
+    </ul>
+  
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            
+    <p class='mb-3'>
+      Until we get there federation might be an acceptable compromise, as the UK House of Lords <a href='https://reclaimthenet.org/uk-house-of-lords-blasts-big-tech-as-monopolizers-of-the-public-square-in-new-report/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>recommended</a> in <a href='https://publications.parliament.uk/pa/ld5802/ldselect/ldcomuni/54/5408.htm#_idTextAnchor118' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>its report</a>
+    </p>
+  
+    <blockquote class='py-0.5 px-4 mb-3 italic border-l-4 bg-gray-50 text-gray-600 border-gray-400 quote'>
+      
+    <p class='mb-3'>
+      Social media services offer citizens unparalleled opportunities to share their opinions with others. However, this market is dominated by a small number of very powerful companies. Rather than allowing these platforms to monopolise the digital public square, there should be <strong>a range of interlinked services between which users can freely choose and move</strong>. The Digital Markets Unit should make structural interventions to increase competition, including <strong>mandating interoperability</strong>.
+    </p>
+  
+    </blockquote>
+  
+    <p class='mb-3'>
+      It is worth keeping in mind, however, that when it comes to <a href='mastodon' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Mastodon</a> (federated alternative to <a href='twitter' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Twitter / X</a>) - federation blocklists adopted by instance admins – and enforced <em>unilaterally</em> on their users – beats the spirit of it all, because many popular instances that adopt <a href='https://archive.is/gqzcn' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>IdPol-fested</a> policies end up clustering, and <a href='https://archive.is/eoNcR' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>blocking</a> other (non-IdPol adopting) instances en masse. See <a href='https://jointhefedi.com/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>jointhefedi.com</a> for a list of servers. The problem here is that moderation and censorship is still done by centralized parties (ie. instance admins) rather than <a href='https://matrix.org/blog/2020/10/19/combating-abuse-in-matrix-without-backdoors' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>voluntarily by the individual people</a> themselves. Any centralized and unilateral enforcing of speech online is <a href='https://reclaimthenet.org/former-aclu-head-ira-glasser-explains-why-you-cant-ban-hate-speech/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>likely to become corrupt no matter the intention</a>. <a href='mastodon' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Mastodon</a> instances are also more likely to suffer from <a href='https://news.ycombinator.com/item?id=34748195' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>activist pressure</a> than Twitter.
+    </p>
+  
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/Thoughts/Stay niche.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+</article>
+    
+    <div class='flex flex-col lg:flex-row lg:space-x-2'>
+      
+      
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='haskell'>
+            Haskell
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div>Join <a href='https://discourse.haskell.org/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Haskell Discourse</a> to interact with other Haskellers. You may also post to <a href='https://stackoverflow.com/questions/tagged/haskell' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>StackOverflow #haskell</a>, which has been quite helpful in my experience. Read <a href='https://old.reddit.com/r/haskell/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>r/haskell</a> for news. Be wary of other communities.<sup>*</sup>. See <a href='https://haskell.pl-a.net/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Haskell Planetarium</a> for recent Haskell news & discussions.</div>
+    </div>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>In particular, you want to avoid the non-<a href='niche' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>niche</a> ones <a href='woke-invasion' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>invaded</a> by <a href='woke' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>woke</a> activist moderators.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='nonpioneers'>
+            Cynical non-pioneers
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Here are some examples of <a href='naive-optimism' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>cynicism</a> exhibited by non-enthusiastic “outsiders” (non-<a href='niche' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>niche</a> population) in tech:</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='censorship'>
+            Censorship
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Censorship in <a href='niche' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>social media</a>, academic, professional organizations and various other fields became increasingly prevalent as <a href='woke' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Wokeism</a> began taking a foothold.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='covid19'>
+            COVID-19
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Diathesis-stress processes [<em>a latent vulnerability to experience anxiety, fear, and a more general lowered threshold for emotional lability</em>] are almost certainly a likely driver of pandemic behavioral response among a subset of the population,<sup>*</sup> which in turn disproportionately influences media coverage and policy decisions.</p></div>
+    </div>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>’tis not surprising that this originated on “<em>a subset of the population</em>”; see <a href='niche' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Stay niche</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+    </div>
+    
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+  </section>
+
+    <!-- What goes in this file will at the very end of the main div -->
+  </main>
+</div>
+        </div>
+      
+      <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 1.3.30.0'>
+      <img class='w-6 h-6 hover:text-green-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-green-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+    </div>
+  
+  <div id='stork-search-container' class='hidden fixed w-screen h-screen inset-0 backdrop-filter backdrop-blur-sm'>
+  <div class='fixed w-screen h-screen inset-0' onclick='window.emanote.stork.toggleSearch()'></div>
+
+  <div class='container mx-auto p-10 mt-10'>
+    <div class='stork-wrapper-flat container mx-auto'>
+      <input id='stork-search-input' data-stork='emanote-search' class='stork-input' placeholder='Search (Ctrl+K) ...' />
+      <div data-stork='emanote-search-output' class='stork-output'></div>
+    </div>
+  </div>
+</div>
+  
+    
+  
+</body>
+
+</html>

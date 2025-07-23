@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+
+
+
+<!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>
+    Haskell – Sridhar Ratnakumar
+  </title>
+  
+    
+      <meta property='og:description' content='Haskell is an advanced, purely functional programming language. I use Haskell because of its correctness guarantees that are difficult or impossible to achieve with mainstream programming languages.' />
+      <meta property='og:site_name' content='Sridhar Ratnakumar' />
+      <meta property='og:image' content='https://srid.ca/' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Haskell' />
+      
+        <meta name='twitter:card' content='summary_large_image' />
+      
+    
+    
+      <base href='/' />
+      <link href='static/favicon.jpeg' rel='icon' />
+    
+    <!-- highlight.js -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js'></script>
+<!-- Include languages that Emanote itself uses -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/haskell.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/nix.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+
+
+  
+  
+  <link href='tailwind.css?instanceId=5bcf93f2-2596-4372-99b7-91ee6c5b7219' rel='stylesheet' type='text/css' />
+
+  <link rel='stylesheet' href='_emanote-static/fonts/maven-pro.css' />
+
+<style data-category='global-font'>
+  /* Maven Pro font for the entire site */
+  body {
+    font-family: 'Maven Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+</style>
+
+<style data-category='error'>
+  /* Heist error element */
+  strong.error {
+    color: lightcoral;
+    font-size: 90%;
+    font-family: monospace;
+  }
+</style>
+
+<style data-category='kbd'>
+  /* <kbd> styling */
+  kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+  }
+</style>
+
+<style data-category='callout'>
+  /* To prevent overemphasis of link styles in callout titles */
+  .callout .callout-title a {
+    color: inherit;
+    text-decoration: underline;
+  }
+</style>
+
+<style data-category='toc'>
+  a.--ema-toc:not(.toc-item-active) {
+    background-color: #ffffff !important;
+  }
+</style>
+
+<style data-category='external-link'>
+  /* External link icon */
+  a[data-linkicon=""]::after {
+    content: ""
+  }
+
+  a[data-linkicon=none]::after {
+    content: ""
+  }
+
+  a[data-linkicon="external"] {
+    padding-right: 24px;
+  }
+
+  a[data-linkicon="external"]::after {
+    margin-right: -24px;
+    content: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" height="0.7em" viewBox="0 0 20 20"> \
+        <g style="stroke:gray;stroke-width:1"> \
+          <line x1="5" y1="5" x2="5" y2="14" /> \
+          <line x1="14" y1="9" x2="14" y2="14" /> \
+          <line x1="5" y1="14" x2="14" y2="14" /> \
+          <line x1="5" y1="5" x2="9" y2="5"  /> \
+          <line x1="10" y1="2" x2="17" y2="2"  /> \
+          <line x1="17" y1="2" x2="17" y2="9" /> \
+          <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.0" /> \
+        </g> \
+      </svg>');
+  }
+
+  a[data-linkicon="external"][href^="mailto:"]::after {
+    content: url('data:image/svg+xml,\
+        <svg \
+          xmlns="http://www.w3.org/2000/svg" \
+          height="0.7em" \
+          fill="none" \
+          viewBox="0 0 24 24" \
+          stroke="gray" \
+          stroke-width="2"> \
+          <path \
+            stroke-linecap="round" \
+            stroke-linejoin="round" \
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /> \
+        </svg>');
+  }
+</style>
+  <link rel='stylesheet' href='/obsidian-snippets/headers.css' />
+
+
+  
+    <style>
+      /* For use in sidebar.tpl, as we cannot achieve this in tailwind itself! */
+      /* md:min-w-48  */
+      @media (min-width: 768px) {
+        #sidebar {
+          min-width: 12rem;
+        }
+      }
+
+      /* xl:min-w-64  */
+      @media (min-width: 1280px) {
+        #sidebar {
+          min-width: 16rem;
+        }
+      }
+    </style>
+
+    
+      <link rel='stylesheet' href='_emanote-static/inverted-tree.css' />
+    
+  
+  <link rel='stylesheet' href='_emanote-static/stork/flat.css' />
+<!-- Custom Stork-search styling for Emanote -->
+<style data-category='stork'>
+  #stork-search-container {
+    z-index: 1000;
+    background-color: rgb(15 23 42/.8);
+  }
+
+  .stork-overflow-hidden-important {
+    overflow: hidden !important;
+  }
+</style>
+
+
+<script src='_emanote-static/stork/stork.js'></script>
+
+  
+    <script id='emanote-stork' data-emanote-base-url='/'>
+      window.emanote = {};
+      window.emanote.stork = {
+        searchShown: false,
+        indexIsStale: false,
+        toggleSearch: function () {
+          window.emanote.stork.refreshIndex();
+          document.getElementById('stork-search-container').classList.toggle('hidden');
+          window.emanote.stork.searchShown = document.body.classList.toggle('stork-overflow-hidden-important');
+          if (window.emanote.stork.searchShown) {
+            document.getElementById('stork-search-input').focus();
+          }
+        },
+        clearSearch: function () {
+          document.getElementById('stork-search-container').classList.add('hidden');
+          document.body.classList.remove('stork-overflow-hidden-important');
+          window.emanote.stork.searchShown = false;
+        },
+
+        getBaseUrl: function () {
+          const baseUrl = document.getElementById("emanote-stork").getAttribute('data-emanote-base-url') || '/';
+          return baseUrl;
+        },
+
+        registerIndex: function (options) {
+          const indexName = 'emanote-search'; // used to match input[data-stork] attribute value
+          const indexUrl = window.emanote.stork.getBaseUrl() + '-/stork.st';
+          stork.register(
+            indexName,
+            indexUrl,
+            options);
+        },
+
+        init: function () {
+          if (document.readyState !== 'complete') {
+            window.addEventListener('load', function () {
+              stork.initialize(window.emanote.stork.getBaseUrl() + '_emanote-static/stork/stork.wasm');
+              window.emanote.stork.registerIndex();
+            });
+
+            document.addEventListener('keydown', event => {
+              if (window.emanote.stork.searchShown && event.key === 'Escape') {
+                window.emanote.stork.clearSearch();
+                event.preventDefault();
+              } else if ((event.key == 'k' || event.key == 'K') && (event.ctrlKey || event.metaKey)) {
+                window.emanote.stork.toggleSearch();
+                event.preventDefault();
+              }
+            });
+          } else {
+            // This section is called during Ema's hot reload.
+            // 
+            // Mark the current index as stale, and refresh it *only when* the
+            // user actually invokes search.
+            // 
+            // We do not refresh the index *right away*, as that will cause
+            // memory leaks in the browser. See
+            // https://github.com/srid/emanote/issues/411#issuecomment-1402056235
+            console.log("stork: Marking index as stale");
+            window.emanote.stork.markIndexAsStale();
+          }
+        },
+
+        markIndexAsStale: function () {
+          window.emanote.stork.indexIsStale = true;
+        },
+
+        refreshIndex: function () {
+          if (window.emanote.stork.indexIsStale) {
+            console.log("stork: Reloading index");
+            window.emanote.stork.indexIsStale = false;
+            // NOTE: This will leak memory. See the comment above.
+            window.emanote.stork.registerIndex({ forceOverwrite: true });
+          }
+        }
+
+      };
+
+      window.emanote.stork.init();
+    </script>
+  
+
+</head>
+
+<!-- DoNotFormat -->
+
+
+
+<!-- DoNotFormat -->
+
+<body class='overflow-y-scroll bg-gray-400'>
+  
+    <div class='container mx-auto max-w-screen-lg mt-2 md:mt-4  '>
+      
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree font-medium' style='transform-origin: 50%;'>
+  <ul class='root'>
+    <li>
+      
+        <ul>
+          
+            <li>
+
+  <a href='software'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href=''>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Sridhar Ratnakumar
+    </div>
+  </a>
+
+  
+</li>
+      
+    </ul>
+  
+</li>
+          
+        </ul>
+      
+    </li>
+  </ul>
+</nav>
+      
+
+      
+
+      
+        <div id='container' class='relative md:shadow-2xl md:mb-8'>
+          
+  <div class='absolute -top-6 right-1 md:right-0 flex flex-row items-center justify-center'>
+    <a title='Search (Ctrl+K)' class='cursor-pointer' onclick='window.emanote.stork.toggleSearch()'>
+      <svg xmlns='http://www.w3.org/2000/svg' style='width: 1rem;' class='hover:text-green-700' f
+ fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+  <path stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
+</svg>
+    </a>
+  </div>
+
+          <!-- Main body column -->
+          <div class='flex-1 w-full bg-white'>
+  <main class='px-4 py-4'>
+    <h1 class='flex items-end justify-center mb-4 p-3 bg-green-100 text-5xl font-extrabold text-black rounded'>
+  <a class='z-40 tracking-tighter '>
+    Haskell
+  </a>
+</h1>
+    
+      <article class='overflow-auto'>
+  <!-- What goes in this file will appear on top of note body-->
+  
+
+
+
+
+
+
+    <p class='mb-3'>
+      <a href='https://www.haskell.org/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Haskell</a> is an advanced, purely functional programming language. I use Haskell because of its correctness guarantees that are difficult or impossible to achieve with mainstream programming languages
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='haskell#fn1'>
+        1
+      </a>
+    </sup>
+  .
+    </p>
+  
+    <p class='mb-3'>
+      My first foray into Haskell was to write fullstack web applications using <a href='reflex-frp' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Reflex-FRP</a>, after having used <a href='elm' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Elm</a> prior to that. Nowadays I consider it my go-to language for general application development.
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='haskell#fn2'>
+        2
+      </a>
+    </sup>
+  
+    </p>
+  
+    <p class='mb-3'>
+      <a href='https://github.com/srid' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>On GitHub</a> you can find a list of Haskell projects I work on, the notable of which are <a href='neuron' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Neuron</a>, <a href='ema' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Ema</a> and <a href='emanote' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Emanote</a>.
+    </p>
+  
+    <h2 id='learning-haskell' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Learning Haskell
+  
+  <a href='haskell#learning-haskell' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      If you wish to learn Haskell yourself, these pointers may be of help:
+    </p>
+  
+    <dl class='flex flex-col mb-3'>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            Get Inspired
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                <a href='https://serokell.io/blog/10-reasons-to-use-haskell' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>10 Reasons to Use Haskell</a>
+              </dd>
+            </div>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                <a href='https://www.tweag.io/blog/2019-09-06-why-haskell-is-important/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Why Haskell is Important</a>
+              </dd>
+            </div>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                <a href='https://wiki.haskell.org/Why_Haskell_matters' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Why Haskell matters</a>.
+              </dd>
+            </div>
+          
+        </div>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            Attitude
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                Lose the limiting beliefs, if any.
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='haskell#fn3'>
+        3
+      </a>
+    </sup>
+   Approach Haskell, with maximum <a href='https://www.wikiwand.com/en/Locus_of_control' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>locus of control</a>, as if it is a new programming language that had been created this year (ie. sans any vague preconceptions <a href='https://archive.is/rUiwZ#selection-187.47-205.10' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>introjected</a> from <a href='nonpioneers' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>naysayers and their enablers</a>).
+              </dd>
+            </div>
+          
+        </div>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            Books
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                Some prefer <em>concise</em> learning materials; if this is you, check out the two books by Graham Hutton and Richard Bird. For a thorough and practical book, Vitaly Bragilevsky’s Haskell in Depth or Will Kurt’s Get Programming with Haskell might be of interest. Books are only a starting point (see the next two sections).
+              </dd>
+            </div>
+          
+        </div>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            Self-learning courses
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                <a href='https://github.com/system-f/fp-course' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>fp-course</a> and <a href='https://github.com/qfpl/applied-fp-course' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>applied-fp-course</a>
+              </dd>
+            </div>
+          
+        </div>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            Practice
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                Learning anything takes practice, and this is particularly a key for a purely functional language like Haskell. See <a href='https://willbasky.github.io/Awesome-list-of-Haskell-mentors/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Haskell Mentors List</a> for progressing in learning Haskell by way of contributing to open source projects that you already enjoy using.
+              </dd>
+            </div>
+          
+        </div>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            Talk / Share
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                Join <a href='https://discourse.haskell.org/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Haskell Discourse</a> to interact with other Haskellers. You may also post to <a href='https://stackoverflow.com/questions/tagged/haskell' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>StackOverflow #haskell</a>, which has been quite helpful in my experience. Read <a href='https://old.reddit.com/r/haskell/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>r/haskell</a> for news. Be wary of other communities.
+    <sup class='px-0.5'>
+      <a class='text-green-600 hover:underline' href='haskell#fn4'>
+        4
+      </a>
+    </sup>
+  . See <a href='https://haskell.pl-a.net/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Haskell Planetarium</a> for recent Haskell news & discussions.
+              </dd>
+            </div>
+          
+        </div>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            Deepen your Haskell knowledge
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                <a href='haskell-foundational' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Haskell from the ground up</a> (Work in progress)
+              </dd>
+            </div>
+          
+        </div>
+      
+    </dl>
+  
+    <h2 id='take-the-red-pill-with-nix' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Take the red pill with Nix
+  
+  <a href='haskell#take-the-red-pill-with-nix' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      If you are feeling adventurous consider getting acquainted with <a href='nix' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix</a>, which in turns allows you to leverage <a href='haskell-template' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'><code class='py-0.5 px-0.5 bg-gray-100 font-mono'>haskell-template</code></a> for bootstraping Haskell projects with full IDE support in <a href='vscode' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>VSCode</a>. This works on <a href='linux' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Linux</a>, <a href='macos' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>macOS</a> and <a href='windows' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Windows</a> (via WSL) without having to install dependencies other than Nix itself. In my opinion, this is the best way to set up a Haskell development environment if you are willing to approach the learning curve of Nix with alacritty.
+    </p>
+  
+    <h2 id='sub-pages' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Sub-pages
+  
+  <a href='haskell#sub-pages' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  <nav>
+  <div class='mb-8'>
+    <header data-nosnippet class='pb-2 mb-2 font-semibold text-gray-600'>
+      Folgezettel children
+    </header>
+    <ul>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='nix-docker-ci-decouple'>
+              Decouple GitHub Pages build from Nix using Docker
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='heist-start'>
+              Heist mini-tutorial
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='xmonad-conf-ide'>
+              Edit XMonad configuration with IDE support
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='haskell-new-project'>
+              Scaffold a Haskell project w/ IDE support + Nix
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='nix-haskell-static-binaries'>
+              Building Static Haskell binaries using Nix
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='remove-references-to'>
+              Nix derivation dependency graph
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='purescript-nix'>
+              PureScript mini-tutorial using Nix
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='haskell-release-process'>
+              My release process for Haskell libraries
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='haskell-nix'>
+              Nix recipes for Haskellers
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='generics-sop-intro'>
+              A concise introduction to generics-sop
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='ema'>
+              Ema
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='emanote'>
+              Emanote
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='ka'>
+              ka Project
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='neuron'>
+              Neuron
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='haskell-gotchas'>
+              Haskell Gotchas
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='haskell-foundational'>
+              Haskell from the ground up
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='reflex-frp'>
+              Reflex-FRP
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='relude'>
+              Relude
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='ghcid'>
+              ghcid
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='hls'>
+              haskell-language-server
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='haskell-template'>
+              <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>haskell-template</code>
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='hlint'>
+              hlint
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='haskell-flake'>
+              <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>haskell-flake</code>
+            </a>
+          </div>
+        </li>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-green-600 font-semibold border-l-2 pl-2 hover:underline' href='xmonad'>
+              XMonad
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Do be wary of <a href='haskell-gotchas' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Haskell Gotchas</a>.
+          </div>
+        </div>
+      
+        <div id='fn2'>
+          <header class='italic'>
+            2.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            For anything that needs low-level, <a href='rust' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Rust</a> is an option.
+          </div>
+        </div>
+      
+        <div id='fn3'>
+          <header class='italic'>
+            3.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            
+    <p class='mb-3'>
+      Graham Hutton: “<a href='https://archive.is/Teseb' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><em>My experience is that people need to be ‘ready’ to learn what a monad is. If they are ready, it’s not too difficult, but still requires quite a bit of effort - as with anything worthwhile.</em></a>”
+    </p>
+  
+    <p class='mb-3'>
+      Travis Whitaker: <a href='https://archive.is/qqEt7' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><em>How do you know the difference between “novelty budget” and “inertia” and “sunk cost fallacy?”</em></a>
+    </p>
+  
+          </div>
+        </div>
+      
+        <div id='fn4'>
+          <header class='italic'>
+            4.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            In particular, you want to avoid the non-<a href='niche' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>niche</a> ones <a href='woke-invasion' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>invaded</a> by <a href='woke' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>woke</a> activist moderators.
+          </div>
+        </div>
+      
+    </div>
+  
+  <div class='flex items-center justify-center mt-2'>
+  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/Software/Haskell.md'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
+    </svg>
+  </a>
+</div>
+</article>
+    
+    <div class='flex flex-col lg:flex-row lg:space-x-2'>
+      
+      
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='ka'>
+            ka Project
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><code>ka</code> (originally announced in <a href='neuron-v1' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Neuron 1.0 released</a>) was a research playground (and an instance of <a href='hybrid-rewrite-refactor' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Hybrid rewrite-refactor</a> model of project develoment) for <a href='zettelkasten' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'><span class='emoji' data-emoji='notebook' style='font-family: emoji'>📓</span> Zettelkasten</a>, as well as an independent app, for <a href='neuron' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Neuron</a>. Like Neuron, it is written in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a>, but built on top of <a href='reflex-frp' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Reflex-FRP</a>. See <a href='https://ka.srid.ca/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ka.srid.ca</a> for details.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='haskell-template'>
+            <code>haskell-template</code>
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>The goal of <code>haskell-template</code> is to enable anyone to get started with <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a> development without much fanfare (thanks to <a href='nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Nix</a>). I also use <code>haskell-template</code> to bootstrap all of my new Haskell projects. See <a href='haskell-template/start' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Getting started</a> to get started.</p></div>
+    </div>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><code>haskell-template</code> (<a href='https://github.com/srid/haskell-template' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/srid/haskell-template</a>) is a template Git repository for ready-made, fully reproducible and friendly <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> development using <a href='nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Nix</a>. It comes with full IDE support in <a href='vscode' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>VSCode</a> (and other editors with LSP support). See <a href='haskell-template/philosophy' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Philosophy</a> for what’s (and why it is) included.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='haskell-flake'>
+            <code>haskell-flake</code>
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><a href='https://github.com/srid/haskell-flake' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>haskell-flake</a> is a <a href='flake-parts' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>flake-parts</a> module for <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> development. It is used in <a href='haskell-template' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'><code>haskell-template</code></a> and in <a href='https://github.com/search?q=%22github%3Asrid%2Fhaskell-flake%22&amp;type=code' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>several Haskell projects</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='ghcid'>
+            ghcid
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a></p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='xmonad'>
+            XMonad
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><a href='https://xmonad.org/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>XMonad</a> is a tiling window manager for <a href='linux' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Linux</a> configurable in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='haskell-new-project'>
+            Scaffold a Haskell project w/ IDE support + Nix
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>I create new <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> libraries and applications using <a href='nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Nix</a>, along with IDE support in <a href='vscode' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>VSCode</a> as follows.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='reflex-frp'>
+            Reflex-FRP
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>A full-stack functional reactive programming framework for developing web apps in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a>. Se <a href='https://reflex-frp.org/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://reflex-frp.org/</a></p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='purescript-nix'>
+            PureScript mini-tutorial using Nix
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>My <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> app <a href='neuron' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Neuron</a> recently received a <a href='https://github.com/srid/neuron/pull/90' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>contribution</a> that added support for the very useful client-side search feature. JavaScript was used to implement it; however after having gotten used to merrily creating <a href='reflex-frp' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Reflex-FRP</a>-based web apps (frontend and backend both in Haskell), writing raw JavaScript had very little appeal to me, which left me with the following options:</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='projects'>
+            Projects
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Just a sample of my own open source projects (mostly in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a>) are show below. You can find my GitHub profile <a href='https://github.com/srid' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>here</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='org'>
+            Org Mode
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>For parsing org files in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a>, checkout <a href='https://github.com/lucasvreis/org-parser' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'><code>org-parser</code></a> (also provides <a href='heist-start' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Heist templating</a>) by lucasvreis … as well as the <a href='ema' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Ema</a> app <a href='https://github.com/lucasvreis/abacateiro' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>abacateiro</a> by the same author.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='nojs'>
+            No JavaScript
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a></div>
+    </div>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a> programmers like me who have gotten used to functional programming and static typing find JavaScript to be painful to use. We can’t avoid JavaScript entirely – there are some useful JS libraries out there in the world – however for actual app development we can continue using <em>safer</em> programming languages (see below) via either a JS-transpiler or a <a href='https://webassembly.org/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Wasm</a>-compiler.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='haskell-nix'>
+            Nix recipes for Haskellers
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>The goal of this article is to get you comfortable managing simple <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> programs and projects using the <a href='nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Nix</a> package manager without getting too much into the details. See <a href='haskell-template' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'><code>haskell-template</code></a> if you want a ready-made Nix-based project template for Haskell.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='remove-references-to'>
+            Nix derivation dependency graph
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>I recently had to debug <a href='https://web.archive.org/web/20210125202157/https://github.com/srid/neuron/issues/193' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>a problem</a> wherein a <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> binary created using Nix was created with a runtime dependency on the entire GHC ecosystem (despite using <code>justStaticExecutables</code>). This investigation led to identifying Cabal’s <code>Paths_*</code> module autogeneration as the root cause.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='neuron'>
+            Neuron
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><a href='https://neuron.zettel.page/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Neuron</a> is a note-taking tool written in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> and optimized for publishing, based on the <a href='zettelkasten' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'><span class='emoji' data-emoji='notebook' style='font-family: emoji'>📓</span> Zettelkasten</a> method. Visit <a href='https://neuron.zettel.page/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>the project website</a> to learn more. Neuron got superceded by <a href='emanote' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Emanote</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='haskell-release-process'>
+            My release process for Haskell libraries
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Just a note to myself as to the steps I normally follow when releasing a <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> library to <a href='http://hackage.haskell.org/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Hackage</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='heist-start'>
+            Heist mini-tutorial
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><a href='https://github.com/snapframework/heist' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Heist</a> is an “<em>xhtml-based templating engine, allowing Haskell functions to be bound to XML tags.</em>” and is suitable for use as a HTML templating <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> <a href='https://vrom911.github.io/blog/html-libraries' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>library</a> where we need to care about using on-disk file templates rather a type-safe DSL. I found <a href='http://snapframework.com/docs/tutorials/heist#heist-programming' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>its library documentation</a> somewhat lacking in regards to just getting started, so here’s a quick howto.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='haskell-foundational'>
+            Haskell from the ground up
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Roughly there exists three autodidactic approaches to learning the individual <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> concepts.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='cli/neovim/haskell'>
+            Haskell Language Server and Coc
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a> has great IDE support via <a href='hls' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>haskell-language-server</a> (HLS).</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='haskell-gotchas'>
+            Haskell Gotchas
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Some of <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a>’s gotchas:</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='emanote'>
+            Emanote
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Spiritual successor to <a href='neuron' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Neuron</a>, based on <a href='ema' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Ema</a> (written in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a>).</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='ema'>
+            Ema
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Ema, a <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> project, is partly inspired by <a href='neuron' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Neuron</a> and <a href='emanote-obelisk' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>emanote.obelisk Project</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='nix-docker-ci-decouple'>
+            Decouple GitHub Pages build from Nix using Docker
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Projects like <a href='ema' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Ema</a> enable creating your own static-site generator in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a>, while leveraging <a href='nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Nix</a> for reproducibility. The challenge with deploying your Haskell-based static site on <a href='https://pages.github.com/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>GitHub Pages</a>, however, is the lack of Nix caching. Every time you update your site, the CI will run slowly due to having to:</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='nonpioneers'>
+            Cynical non-pioneers
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div>Ad hominem accusations of <a href='https://news.ycombinator.com/item?id=33433783' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>being “religious” or “bullying” or “smug”</a><sup>*</sup> when someone recommends or encourages the use of functional programing (e.g. <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a>) to them.</div>
+    </div>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><a href='https://old.reddit.com/r/haskell/comments/y6a07e/simple_ghc_stack_for_a_novice/iso56t8/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Getting downvoted</a> when recommending <a href='nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Nix</a> in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a> community.</div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='ema-0.8'>
+            Composability and generic routes in Ema 0.8
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p><strong>tldr</strong>: Announcing a rewrite of <a href='ema' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Ema</a> (a static site generator in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a> with hot reload destined to develop an unique kind of apps) with support for generic route encoders and composability.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='cerveau-announce'>
+            Cerveau, a future-proof web app for notes
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Both the backend and frontend components of Cerveau are written in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a>. Haskell is my programming language of choice, because it gets a lot of things right (see <a href='https://wiki.haskell.org/Why_Haskell_matters' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Why Haskell matters</a>). Software I write in Haskell tends to be reliable; and I can refactor with confidence without being unduly afraid of introducing bugs. This is especially important when dealing with otherwise brittle JavaScript code in frontend code.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='nix-haskell-static-binaries'>
+            Building Static Haskell binaries using Nix
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>Static binaries are useful to distribute <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a> applications without requiring the user to build it themselves. Fully static Haskell executables are <em>mostly</em> supported by <a href='nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Nix</a>; see <a href='https://github.com/NixOS/nixpkgs/issues/43795' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>this issue</a> for details on what’s left.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='ema-announce'>
+            Announcing Ema - Static Sites in Haskell
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>A little over a year ago I created the <a href='https://github.com/srid/rib' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>rib</a> static site generator in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a> based on <a href='https://shakebuild.com/' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Shake</a> and <a href='ghcid' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>ghcid</a>. The idea was to be able to write a more intuitive (so no Makefile-like rules) set of instructions for building a static site, in a type-safe language while enabling quick recompilation cycle that <a href='ghcid' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>ghcid</a> provided, all made reproducible in <a href='nix' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Nix</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='agda'>
+            Agda
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>As learning Haskell is a good way to develop oneself as a better Java programmer, learning a dependent typed programming language [Agda] is a good way to develop oneself as a better <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a> programmer. – <a href='https://kseo.github.io/posts/2014-02-21-learning-agda-to-be-a-better-haskell-programmer.html' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://kseo.github.io/posts/2014-02-21-learning-agda-to-be-a-better-haskell-programmer.html</a></p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='generics-sop-intro'>
+            A concise introduction to generics-sop
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>A fascinating aspect of Lisp-based programming languages is that <a href='https://en.wikipedia.org/wiki/Code_as_data' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>code is data and data is code</a>. This property, called <a href='https://en.wikipedia.org/wiki/Homoiconicity' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>homoiconicity</a>, is what makes Lisp macros so powerful. This sort of runtime operation performed on arbitrary datatypes is called <a href='https://en.wikipedia.org/wiki/Polymorphism_(computer_science)#Polytypism' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>polytypism</a>, or datatype genericity. In <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkTag'>Haskell</a>, several packages provide datatype genericity, of which the following two are notable:</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='fsharp-exploration'>
+            A brief F# exploration
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
+      <div><p>I have been writing full-stack web apps in <a href='haskell' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Haskell</a> using functional reactive programming (<a href='reflex-frp' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Reflex-FRP</a>) for 3 years now. Curiosity stuck me as to find out what the <a href='https://en.wikipedia.org/wiki/Functional_programming' class='text-gray-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>FP</a> languages other than Haskell had to offer in this area.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+    </div>
+    
+  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+  </section>
+
+    <!-- What goes in this file will at the very end of the main div -->
+  </main>
+</div>
+        </div>
+      
+      <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
+  
+  <div>
+    <a href='' title='Go to Home page'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/all' title='View Index'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253'></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 1.3.30.0'>
+      <img class='w-6 h-6 hover:text-green-700' src='_emanote-static/emanote-logo.svg' />
+    </a>
+  </div>
+  <div>
+    <a href='-/tags' title='View tags'>
+      <svg class='w-6 h-6 hover:text-green-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
+        </path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <a href='-/tasks' title='View tasks'>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-green-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+    </div>
+  
+  <div id='stork-search-container' class='hidden fixed w-screen h-screen inset-0 backdrop-filter backdrop-blur-sm'>
+  <div class='fixed w-screen h-screen inset-0' onclick='window.emanote.stork.toggleSearch()'></div>
+
+  <div class='container mx-auto p-10 mt-10'>
+    <div class='stork-wrapper-flat container mx-auto'>
+      <input id='stork-search-input' data-stork='emanote-search' class='stork-input' placeholder='Search (Ctrl+K) ...' />
+      <div data-stork='emanote-search-output' class='stork-output'></div>
+    </div>
+  </div>
+</div>
+  
+    
+  
+</body>
+
+</html>
