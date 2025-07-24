@@ -1,4 +1,8 @@
 # Cloudflare Pages URL redirects
 # https://developers.cloudflare.com/pages/configuration/redirects/
 
+# Moved
 /coc https://compass.naivete.me/ 301
+
+# Convenient aliases
+/sop /PDFs/generics-sop-intro.pdf
