@@ -12,6 +12,10 @@ I recommend learning to create web apps using **HTML**, **CSS** and **JavaScript
       - Sign in using your Github account 
       - Do the ["Certified Full Stack Developer Curriculum"](https://www.freecodecamp.org/learn/full-stack-developer/)
 1. Learn HTML, CSS & JavaScript in the above curriculum.
+1. Interact with Others
+    - freeCodeCamp has an ...
+        - [online forum](https://forum.freecodecamp.org/), and
+        - [Discord](https://chat.freecodecamp.org/) chat
 
 
 ## Special interests
@@ -22,4 +26,6 @@ Once you have done the "Foundations" above, you may be interested in specialized
 
 For example, you like the idea of writing games or doing graphics work in general. If so, you can get started with:
 
-- TODO
+- [ ] TODO: Write this guide
+- Some useful resources in the meanwhile:
+    - https://motioncanvas.io/ (graphics/animation in code)
