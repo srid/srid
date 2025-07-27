@@ -20,7 +20,6 @@ I recommend learning to create web apps using **HTML**, **CSS** and **JavaScript
 1. Learn HTML, CSS & JavaScript in the above curriculum.
 1. Connect with supportive communities
     - freeCodeCamp has an [online forum](https://forum.freecodecamp.org/), [Discord](https://chat.freecodecamp.org/) chat, and [YouTube channel](https://www.youtube.com/c/Freecodecamp) with extensive tutorials
-    - For additional inspiration and advice, see [Lulu's perspective on women in tech](https://x.com/lulumeservey/status/1949191738272158003)
 
 ## Overcoming common challenges {#challenges}
 
