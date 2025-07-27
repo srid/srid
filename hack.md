@@ -4,20 +4,22 @@ Computer programming is such a delightful hobby for the author that he wishes to
 
 ## Foundations
 
-If you would like to find out if you would be motivated by this, here are some resources to get started:
+I recommend learning to create web apps using **HTML**, **CSS** and **JavaScript** because it gives you quick visual feedback which can serve to motivate you better.
 
 1. Create an account on [GitHub](https://github.com/)
-    - Choose as *small* an username as possible (e.g.: see [mine](https://github.com/srid)), because it is for all life.
-1. [freeCodeCamp](https://www.freecodecamp.org/)
-  - Sign in using your Github account 
-  - Do the ["Certified Full Stack Developer Curriculum"](https://www.freecodecamp.org/learn/full-stack-developer/)
+    - Choose as *small* an username as possible (e.g.: see [mine](https://github.com/srid)), because it will be for all life.
+1. Enter [freeCodeCamp](https://www.freecodecamp.org/)
+      - Sign in using your Github account 
+      - Do the ["Certified Full Stack Developer Curriculum"](https://www.freecodecamp.org/learn/full-stack-developer/)
 1. Learn HTML, CSS & JavaScript in the above curriculum.
 
 
 ## Special interests
 
-You may be interested in special things.
+Once you have done the "Foundations" above, you may be interested in specialized aspects.
 
 ### Graphics
 
-... TODO
+For example, you like the idea of writing games or doing graphics work in general. If so, you can get started with:
+
+- TODO
