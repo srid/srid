@@ -6,7 +6,7 @@ slug: cli
 
 An ongoing project to get back to a CLI-centric workflow.
 
-**Update** (Oct, 2024): I'm using [[Hyprland]] on Thinkpad P14s. https://x.com/sridca/status/1849222477471236268
+**Update** (Oct, 2024): I'm using [[Hyprland]] on Thinkpad [[P14s]]. https://x.com/sridca/status/1849222477471236268
 
 **Update** (Jan, 2025): [[macOS]] is fine, if you don't buy into the Apple ecosystem. https://x.com/sridca/status/1878962756290068705
 
