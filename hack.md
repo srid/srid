@@ -1,16 +1,22 @@
-# Get into computer programming
+---
+template:
+  theme: pink
+  base:
+    containerClass: container mx-auto max-w-prose
+---
 
-Computer programming is an incredibly rewarding skill that opens doors to creativity, problem-solving, and endless possibilities. Whether you want to build apps, create art with code, or solve real-world problems, programming is for everyone - including you!
+# Become a hacker
 
-## Why programming is amazing {#why}
+> [!note] What is a "hacker"?
+> In this context, "hacker" refers to someone who enjoys the intellectual challenge of creatively overcoming limitations and solving problems through programming. This is the original, positive meaning - not the malicious "cracker" stereotype often portrayed in media. A hacker is simply a skilled programmer who loves to tinker, learn, and build things with code. ([Source](http://catb.org/jargon/html/H/hacker.html))
 
-Programming allows you to bring your ideas to life, think logically, and create solutions that can impact millions of people. Many successful programmers started exactly where you are now, and the tech industry needs diverse perspectives and talents.[^1]
+Programming lets you build cool stuff and solve problems with code. Whether you want to make apps, games, or art, it's a skill worth learning.[^1]
 
 [^1]: The author was originally inspired by Eric S. Raymond's essay ["How to become a hacker"](http://www.catb.org/esr/faqs/hacker-howto.html), which provides a foundational perspective on the hacker (i.e., programmer) mindset and culture.
 
 ## Foundations
 
-I recommend learning to create web apps using **HTML**, **CSS** and **JavaScript** because it gives you quick visual feedback which can serve to motivate you better.
+I recommend starting by learning to create web apps using **HTML**, **CSS** and **JavaScript** because it gives you quick visual feedback which can serve to motivate you better.
 
 1. Create an account on [GitHub](https://github.com/)
     - Choose a professional username you're comfortable with (you can always change it later if needed)
