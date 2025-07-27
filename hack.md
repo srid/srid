@@ -12,7 +12,7 @@ template:
 
 Programming lets you build cool stuff and solve problems with code. Whether you want to make apps, games, or art, it's a skill worth learning.[^1]
 
-[^1]: The author was originally inspired by Eric S. Raymond's essay ["How to become a hacker"](http://www.catb.org/esr/faqs/hacker-howto.html), which provides a foundational perspective on the hacker (i.e., programmer) mindset and culture.
+[^1]: The author was originally inspired by Eric S. Raymond's essay ["How to become a hacker"](http://www.catb.org/esr/faqs/hacker-howto.html), which provides a foundational perspective on the hacker (i.e., programmer) mindset and culture. The documentary ["Revolution OS"](https://www.youtube.com/watch?v=k0RYQVkQmWU) illuminates the hacker culture of that era.
 
 ## Foundations
 
