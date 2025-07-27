@@ -2,9 +2,11 @@
 
 Computer programming is an incredibly rewarding skill that opens doors to creativity, problem-solving, and endless possibilities. Whether you want to build apps, create art with code, or solve real-world problems, programming is for everyone - including you!
 
-## Why programming is amazing
+## Why programming is amazing {#why}
 
-Programming allows you to bring your ideas to life, think logically, and create solutions that can impact millions of people. Many successful programmers started exactly where you are now, and the tech industry needs diverse perspectives and talents.
+Programming allows you to bring your ideas to life, think logically, and create solutions that can impact millions of people. Many successful programmers started exactly where you are now, and the tech industry needs diverse perspectives and talents.[^1]
+
+[^1]: The author was originally inspired by Eric S. Raymond's essay ["How to become a hacker"](http://www.catb.org/esr/faqs/hacker-howto.html), which provides a foundational perspective on the hacker (i.e., programmer) mindset and culture.
 
 ## Foundations
 
@@ -20,7 +22,7 @@ I recommend learning to create web apps using **HTML**, **CSS** and **JavaScript
     - freeCodeCamp has an [online forum](https://forum.freecodecamp.org/) and [Discord](https://chat.freecodecamp.org/) chat
     - For additional inspiration and advice, see [Lulu's perspective on women in tech](https://x.com/lulumeservey/status/1949191738272158003)
 
-## Overcoming common challenges
+## Overcoming common challenges {#challenges}
 
 **Imposter syndrome is normal** - Almost every programmer feels like they don't belong at some point. This feeling doesn't reflect your actual abilities or potential.
 
@@ -33,7 +35,7 @@ I recommend learning to create web apps using **HTML**, **CSS** and **JavaScript
 
 Once you have done the "Foundations" above, you may be interested in specialized aspects.
 
-### Graphics & Game Development
+### Graphics & Game Development {#graphics}
 
 > [!warning] 
 > This section is AI-generated, and needs to be vetted by the author.
@@ -41,8 +43,8 @@ Once you have done the "Foundations" above, you may be interested in specialized
 If you're interested in games, animation, or visual programming:
 
 - **Web-based graphics**: Start with [p5.js](https://p5js.org/) for creative coding
-- **Game engines**: Try [Unity](https://unity.com/) (C\#) or [Godot](https://godotengine.org/) (GDScript/C\#)
 - **Animation**: [Motion Canvas](https://motioncanvas.io/) for programmatic animations
+- **Game engines**: Try [Unity](https://unity.com/) (C\#) or [Godot](https://godotengine.org/) (GDScript/C\#)
 - **3D graphics**: Learn [Three.js](https://threejs.org/) for web-based 3D
 
 ### Other exciting paths
