@@ -21,3 +21,6 @@ Canada is not particularly known for readily available fattyâ€”thus flavourfulâ€
 - Fattier meat (1.5:1 fat:protein ratio or higher) easily available here
 	- Sausages ([duBreton](https://www.dubreton.com/en-ca/products/organic/toulouse-sausages))
 	- [Pork Belly from Costco](https://x.com/sridca/status/1898138719083020523)
+- Canadians are afraid of fat, so fattier is harder to come by. So supplement with butter or suet.
+  - Get the [Allfat 1.6kg suet bucket](https://www.allfat.ca/products/100-grass-fed-grass-finished-beef-tallow?variant=44727966859435)
+	- In cooking, it is more flavour than butter: https://x.com/sridca/status/1889342391087214825
