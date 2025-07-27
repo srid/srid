@@ -42,23 +42,16 @@ Once you have done the "Foundations" above, you may be interested in specialized
 
 ### Graphics & Game Development {#graphics}
 
-> [!warning] 
-> This section is AI-generated, and needs to be vetted by the author.
-
 If you're interested in games, animation, or visual programming:
 
 - **Web-based graphics**: Start with [p5.js](https://p5js.org/) for creative coding
 - **Animation**: [Motion Canvas](https://motioncanvas.io/) for programmatic animations
-- **Game engines**: Try [Unity](https://unity.com/) (C\#) or [Godot](https://godotengine.org/) (GDScript/C\#)
+- **Game engines**: Try [Phaser](https://phaser.io/) for 2D games or [Babylon.js](https://babylonjs.com/) for 3D games in the browser
 - **3D graphics**: Learn [Three.js](https://threejs.org/) for web-based 3D
 
 ### Other exciting paths
 
 > [!warning] 
-> This section is AI-generated, and needs to be vetted by the author.
+> This section needs to be written.
 
-- **Mobile apps**: React Native, Flutter, or native iOS/Android development
-- **Data science**: Python with pandas, matplotlib, and Jupyter notebooks
-- **AI/Machine Learning**: Start with Python and TensorFlow or PyTorch
-- **Cybersecurity**: Ethical hacking, penetration testing, secure coding practices
-- **Web development**: Frontend (React, Vue) or backend (Node.js, Python, Ruby)
+
