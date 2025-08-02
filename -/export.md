@@ -9863,6 +9863,10 @@ Here’s Peter (who at that time worked as a civil architect) reporting a very s
 > 
 > **The operation of the human brain is such an exquisite intricacy as to be truly wondrous**. With no ‘I’ in the road to agonize over the process, nor a ‘me’ present to either exalt or despair at the outcome, there was simply the brain doing what the brain does – think, plan, reflect, evaluate, compare, compute, assess and mull over, as well as simultaneously being aware that this is what it is doing. And not only that, whilst the brain is being apperceptively aware, it is also serving as the central processing unit for the sensory perceptive system of the body – continually processing the myriad of sensate information that is this flesh and blood body’s sensual sensitivity to whatever is happening in this moment.
 
+## Other experiences {#other}
+
+- Aug 2, 2025: **Appreciation** whilst strolling: https://x.com/sridca/status/1951693356263989416
+
 
 ===
 
