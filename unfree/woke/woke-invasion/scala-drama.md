@@ -1,3 +1,7 @@
+---
+slug: scala-drama
+---
+
 # Scala drama
 
 ## AI summary
