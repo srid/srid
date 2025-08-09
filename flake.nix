@@ -1,9 +1,4 @@
 {
-  nixConfig = {
-    extra-substituters = "https://cache.garnix.io";
-    extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
-  };
-
   inputs = {
     emanote.url = "github:srid/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
@@ -18,7 +13,7 @@
         emanote.sites."srid" = {
           layers = [{ path = ./.; pathString = "./."; }];
           port = 9801;
-          prettyUrls = true;
+          extraConfig.template.urlStrategy = "pretty";
         };
         apps.default.program = self'.apps.srid.program;
         packages.default = pkgs.symlinkJoin {
