@@ -18,8 +18,8 @@ In 2025, Jon Pretty detailed the fallout: severe financial losses, emotional tra
 | Year | Event                                                                                                                         |
 | ---- | ----------------------------------------------------------------------------------------------------------------------------- |
 | 2021 | [My experience with sexual harassment in the Scala community](https://news.ycombinator.com/item?id=26961482)                  |
-| 2025 | [The untold impact of cancellation](https://news.ycombinator.com/item?id=44755644)                                            |
 | 2024 | [Jon Pretty wins in court against sexual harassment claims by Scala community](https://news.ycombinator.com/item?id=40169578) |
+| 2025 | [The untold impact of cancellation](https://news.ycombinator.com/item?id=44755644)                                            |
 | 2025 | [The Dereliction of Due Process in the Scala Community](https://news.ycombinator.com/item?id=44836170)                        |
 
 
