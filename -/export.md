@@ -11125,9 +11125,13 @@ Or for a conspiratorial summary,
 ===
 
 <!-- Source: unfree/woke/woke-invasion/scala-drama.md -->
-<!-- URL: https://srid.ca/unfree/woke/woke-invasion/scala-drama -->
+<!-- URL: https://srid.ca/scala-drama -->
 <!-- Title: Scala drama -->
 <!-- Wikilinks: [[unfree/woke/woke-invasion/scala-drama]], [[woke/woke-invasion/scala-drama]], [[woke-invasion/scala-drama]], [[scala-drama]] -->
+
+---
+slug: scala-drama
+---
 
 # Scala drama
 
