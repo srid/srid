@@ -20,9 +20,12 @@ slug: hw
 
 # :computer: Hardware
 
+I own a Thinkpad P14s, Beelink and [[M1 Macbook Pro 16]].
+
 ```query
 children:.
 ```
+
 
 ===
 
@@ -52,17 +55,19 @@ For brightness configuration in [[NixOS]] Linux using `ddcutil`, see [here](http
 slug: m1-macbook-pro-16
 ---
 
-The **Macbook Pro M1 Max (16 inch)** is my primary computer running #[[macOS]].
+The **MacBook Pro M1 Max (16 inch)** is my primary computer running #[[macOS]].
 
 ## Why I like it
 
 - Great performance
-- Great usability (macOS)
+- Great usability ([[macOS]])
 - Fantastic display
   - Fonts are beautiful to look at on the retina display
-  - 16" in particular is sufficient to do real work without an external monitor (like [[LG Ultrafine 5k]])
+  - 16" in particular is sufficient to do real work without an external monitor
+      - However, an external monitor (like [[LG Ultrafine 5k]]) does make a huge difference.
 - Good portability and battery life
-  - Just the right size-performance for carrying elsewhere (eg: [[Coffee]] shops) and do real work.
+  - Just the right size-performance tradeoff for carrying elsewhere (eg: [[Coffee]] shops) and do real work.
+      - That said, 13" MacBook Air wins over in regards to portability.
 
 
 ===
@@ -326,12 +331,13 @@ ThinkPad X1 Extreme
 slug: ipad
 ---
 
-I own an **iPad Pro** (11 inch). It is useful particularly in the following ways (compared to doing the same on [[M1 Macbook Pro 16|a macbook]]):
+I used to own an **iPad Pro** (11 inch). It was useful particularly in the following ways (compared to doing the same on [[M1 Macbook Pro 16|a macbook]]):
 
 - Brainstorming using the [Freeform](https://www.apple.com/ca/newsroom/2022/12/apple-launches-freeform-a-powerful-new-app-designed-for-creative-collaboration/) app
 - Reading books
 
-The iPad pencil on the other hand usually does not see much use.
+The iPad pencil on the other hand usually does not see much use. Overall, I've come to realize that tablets are not very useful to me in the long-run. They are little more than a toy that seems short-term use.
+
 
 ===
 
@@ -2119,9 +2125,7 @@ In early 2013, a medical doctor prescribed me enough antibiotics[^prescription] 
 
 [^prescription]: Minocycline, 100g a day for 30 days--had to stop due to severe side effects. Then another prescription of the same but 50g a day, followed by same side effects. After stopping the second round of antibiotics, within about a week the skin reactions -- 30+ pus-filled inflammatory boils in face, neck and eventually scalp -- started.
 
-I suffered with this condition for over 4 years, and saw plethora of dermatologists \(who knew naught but to prescribe ever more antibiotics[^moreanti]\; one even had me do low-dose Accutane which lead to chronic dry skin). Then, just within two weeks of going on the carnivore diet \(beef, salt and pepper\) my symptoms dramatically reduced (down to about 95%[^sul]). Over the next years I was to reintroduce several plant foods; and everytime I do, my symptoms would come back in vengeance.
-
-[^sul]: I had also begun using [[Sulfur Soap]], which I estimate to account for about 20% of it. Carnivore diet, on its own, is not *totally* helpful.
+I suffered with this condition for over 4 years, and saw plethora of dermatologists \(who knew naught but to prescribe ever more antibiotics[^moreanti]\; one even had me do low-dose Accutane which lead to chronic dry skin). Then, just within two weeks of going on the carnivore diet \(beef, salt and pepper\) my symptoms dramatically reduced (down to about 99%). Over the next years I was to reintroduce several plant foods; and everytime I do, my symptoms would come back in vengeance.
 
 **Takeaway**: Doctors and [nutritionists](https://twitter.com/ifbacongrewont1/status/1322151733326450689) are generally not to be [[Trust|trusted]] blindly, especially when it comes to the topic of antibiotics and diet. Although harbouring no ill-will, most of them[^dtex] can't help but overweeningly[^ow][^bm] trot out what they had been taught (with [bias][pmasondoc]) in medical schools ... and [quackery][q1] and [misinformation][fl] is [not][q3] very [uncommon][q2]. As [one HN commenter](https://news.ycombinator.com/item?id=31711913) puts it:
 
