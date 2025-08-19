@@ -2620,7 +2620,7 @@ slug: twitter
 
 # Twitter / X
 
-My X profile can be accessed here: https://twitter.com/sridca
+My X profile can be accessed here: https://x.com/sridca
 
 ## Some interesting facts
 
