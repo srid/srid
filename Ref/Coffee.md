@@ -4,7 +4,7 @@ slug: coffee
 
 # Coffee ☕️
 
-A good tasting coffee makes all the difference.
+A good tasting coffee makes all the difference. Fortunately, despite a [[Carnivore diet|restrictive diet]] I'm still allowed to coffee.
 
 ## Moka pot
 
