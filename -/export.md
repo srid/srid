@@ -2113,7 +2113,7 @@ I eat primarily animal-based foods.[^coffee]
 
 > [!warning] Importance of animal fat
 > 
-> If you are looking to _maintain_ (rather than lose) weight on carnivore diet, it is **critical** to be on ketosis by aiming close to a 2:1 fat:protein ratio in weight. The author had to [learn this](https://x.com/sridca/status/1899854990325248351) over time.
+> If you are looking to _maintain_ (rather than lose) weight on carnivore diet, it is **critical** to be on ketosis (aka. Carnivore Keto) by aiming close to a 2:1 fat:protein ratio in weight. The author had to [learn this](https://x.com/sridca/status/1899854990325248351) over time.
 
 [^coffee]: Spices and [[Coffee|coffee]] (when consumed on empty stomach) being the delightful exception.
 
@@ -2376,7 +2376,7 @@ slug: coffee
 
 # Coffee ☕️
 
-A good tasting coffee makes all the difference.
+A good tasting coffee makes all the difference. Fortunately, despite a [[Carnivore diet|restrictive diet]] I'm still allowed to coffee.
 
 ## Moka pot
 
