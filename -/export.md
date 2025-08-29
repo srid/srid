@@ -1998,7 +1998,7 @@ slug: ref
 
 # 📖 Ref
 
-Pages that do not belong to any specific category.
+Encyclopaedic pages belong here
 
 ```query
 path:./*
@@ -2365,6 +2365,27 @@ A more palatable way of consuming #[[Liver]] is to make batter out of 100g calf 
 
 ===
 
+<!-- Source: Ref/Ciprodex.md -->
+<!-- URL: https://srid.ca/ciprodex -->
+<!-- Title: Ciprodex -->
+<!-- Wikilinks: [[Ref/Ciprodex]], [[Ciprodex]] -->
+
+---
+slug: ciprodex
+---
+
+Generic: Ciprofloxacin (antibiotic) and dexamethasone otic (steroid)
+
+Prescribed for: #[[Swimmer's Ear]]
+
+## Risks
+
+Per [[Floxies]]
+
+> Co-administration with a steroid increases the risk profile of FQ antibiotics. --[DrHungrytheChemist](https://old.reddit.com/r/floxies/comments/sdrg3p/ciprodex_drops/)
+
+===
+
 <!-- Source: Ref/Coffee.md -->
 <!-- URL: https://srid.ca/coffee -->
 <!-- Title: Coffee ☕️ -->
@@ -2497,6 +2518,27 @@ https://canardsdulacbrome.com/en/produits/rendered-duck-fat/
 
 ===
 
+<!-- Source: Ref/Floxies.md -->
+<!-- URL: https://srid.ca/floxies -->
+<!-- Title: Floxies -->
+<!-- Wikilinks: [[Ref/Floxies]], [[Floxies]] -->
+
+---
+slug: floxies
+---
+/r/Floxies is a subreddit dedicated to adverse reports on the fluoroquinolones class of antibiotics.
+
+## Medicines
+
+- [[Ciprodex]]#
+
+## Links
+
+- [Mini comprehensive overview](https://old.reddit.com/r/floxies/comments/1e2xkai/the_unstuck_mini_sticky_a_comprehensive_overview/)
+
+
+===
+
 <!-- Source: Ref/Liver.md -->
 <!-- URL: https://srid.ca/liver -->
 <!-- Title: Liver -->
@@ -2572,6 +2614,18 @@ The soap can cause dryness. Apply a suitable noncomedogenic moisturizer on face 
 
 ===
 
+<!-- Source: Ref/Swimmer's Ear.md -->
+<!-- URL: https://srid.ca/swimmers-ear -->
+<!-- Title: Swimmer's Ear -->
+<!-- Wikilinks: [[Ref/Swimmer's Ear]], [[Swimmer's Ear]] -->
+
+---
+slug: swimmers-ear
+---
+Also called _Otitis Externa_
+
+===
+
 <!-- Source: Ref/Swimming.md -->
 <!-- URL: https://srid.ca/swimming -->
 <!-- Title: Swimming -->
@@ -2585,11 +2639,18 @@ The author started learning to swim in 2025. Follow his progress here, https://x
 
 ## Graceful / effortless methods to try {#effortless}
 
+- [[Total Immersion]]#
 - Ocean Walker
-- Total Immersion
 - Swim Smooth
 
-(The author can somewhat do Total Immersion)
+(The author is learning to perfect [[Total Immersion]])
+
+## Risks & mitigation {#risks}
+
+| Risk                              | Mitigation    |
+| --------------------------------- | ------------- |
+| [[Swimmer's Ear\|ear infection]]# | Use ear plugs |
+
 
 
 ===
@@ -2606,6 +2667,18 @@ slug: tallow
 [Tallow](https://en.wikipedia.org/wiki/Tallow) is rendered from suet. I find beef tallow to be the best source of fat in #[[Carnivore diet]], especially for cooking [[Liver pancake]].
 
 In Canada (Quebec), the only reliable source of beef tallow I can find is [[Allfat Tallow]].
+
+===
+
+<!-- Source: Ref/Total Immersion.md -->
+<!-- URL: https://srid.ca/total-immersion -->
+<!-- Title: Total Immersion -->
+<!-- Wikilinks: [[Ref/Total Immersion]], [[Total Immersion]] -->
+
+---
+slug: total-immersion
+---
+Tim Feriss: [Total Immersion: How I Learned to Swim Effortlessly in 10 Days and You Can Too](https://tim.blog/2008/08/13/total-immersion-how-i-learned-to-swim-effortlessly-in-10-days-and-you-can-too/)
 
 ===
 
@@ -7918,11 +7991,7 @@ http://www.actualfreedom.com.au/actualism/peter/selected-correspondence/corr-sex
 
 ---
 slug: trust
-tags: []
-date: 2021-05-21
 ---
-
-
 > [!cite/richard] [Richard’s Selected Correspondence On Faith and Trust](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-faithtrust.htm)
 > 
 > [..] **Trust** is the ‘faith or conviction in the loyalty, strength, veracity, etc., of a person or thing; reliance on the truth of a statement etc., without examination’ ... and faith is ‘[[Belief|belief]], especially without evidence or proof’ 
