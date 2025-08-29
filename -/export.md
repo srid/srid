@@ -9,338 +9,6 @@ When referencing notes, you can use any of the wikilinks provided.
 The base URL is: https://srid.ca
 -->
 
-<!-- Source: Hardware.md -->
-<!-- URL: https://srid.ca/hw -->
-<!-- Title: 💻 Hardware -->
-<!-- Wikilinks: [[Hardware]] -->
-
----
-slug: hw
----
-
-# :computer: Hardware
-
-I own a Thinkpad P14s, Beelink and [[M1 Macbook Pro 16]].
-
-```query
-children:.
-```
-
-
-===
-
-<!-- Source: Hardware/LG Ultrafine 5k.md -->
-<!-- URL: https://srid.ca/lg-ultrafine-5k -->
-<!-- Title: LG Ultrafine 5k -->
-<!-- Wikilinks: [[Hardware/LG Ultrafine 5k]], [[LG Ultrafine 5k]] -->
-
----
-slug: lg-ultrafine-5k
----
-
-[LG Ultrafine 5k](https://www.apple.com/ca/shop/product/HMUB2LL/A/lg-ultrafine-5k-display) ~~appears to be the only~~ is a 27" monitor with retina-quality display matching that of Macbooks.
-
-For brightness configuration in [[NixOS]] Linux using `ddcutil`, see [here](https://github.com/srid/nixos-config/blob/79152ec57509a957118a385d60f6e335b2ac51d3/nixos/monitor-brightness.nix).
-
-
-
-===
-
-<!-- Source: Hardware/M1 Macbook Pro 16.md -->
-<!-- URL: https://srid.ca/m1-macbook-pro-16 -->
-<!-- Title: M1 Macbook Pro 16 -->
-<!-- Wikilinks: [[Hardware/M1 Macbook Pro 16]], [[M1 Macbook Pro 16]] -->
-
----
-slug: m1-macbook-pro-16
----
-
-The **MacBook Pro M1 Max (16 inch)** is my primary computer running #[[macOS]].
-
-## Why I like it
-
-- Great performance
-- Great usability ([[macOS]])
-- Fantastic display
-  - Fonts are beautiful to look at on the retina display
-  - 16" in particular is sufficient to do real work without an external monitor
-      - However, an external monitor (like [[LG Ultrafine 5k]]) does make a huge difference.
-- Good portability and battery life
-  - Just the right size-performance tradeoff for carrying elsewhere (eg: [[Coffee]] shops) and do real work.
-      - That said, 13" MacBook Air wins over in regards to portability.
-
-
-===
-
-<!-- Source: Hardware/P14s.md -->
-<!-- URL: https://srid.ca/p14s -->
-<!-- Title: P14s -->
-<!-- Wikilinks: [[Hardware/P14s]], [[P14s]] -->
-
----
-slug: p14s
----
-
-**ThinkPad P14s** is a compact workstation laptop I used as an experiment in running [[Hyprland]] with [[NixOS]] before ultimately returning to [[macOS]] as my primary OS on the [[M1 Macbook Pro 16]].
-
-
-===
-
-<!-- Source: Hardware/P71.md -->
-<!-- URL: https://srid.ca/p71 -->
-<!-- Title: P71 -->
-<!-- Wikilinks: [[Hardware/P71]], [[P71]] -->
-
----
-slug: p71
----
-
-Thinkpad P71, my laptop when I [started](https://x.com/sridca/status/1941137185778131347) using [[Haskell]] and [[NixOS]]
-
-Picture: https://x.com/sridca/status/1941138401165807872
-
-
-===
-
-<!-- Source: Hardware/X1C7.md -->
-<!-- URL: https://srid.ca/x1c7 -->
-<!-- Title: X1C7 -->
-<!-- Wikilinks: [[Hardware/X1C7]], [[X1C7]] -->
-
----
-slug: x1c7
----
-
-Thinkpad X1 Carbon Gen 7
-
-```query
-path:./*
-```
-
-===
-
-<!-- Source: Hardware/X1C7/AC600M USB WiFi Adapter.md -->
-<!-- URL: https://srid.ca/rtl8821cu -->
-<!-- Title: AC600M USB WiFi Adapter -->
-<!-- Wikilinks: [[Hardware/X1C7/AC600M USB WiFi Adapter]], [[X1C7/AC600M USB WiFi Adapter]], [[AC600M USB WiFi Adapter]] -->
-
----
-slug: rtl8821cu
----
-
-Having gotten frustrated with the [[X1C7 WiFi issue]], I decided to use an external USB WiFi adapter. [Here is the specific adapter](https://www.amazon.ca/gp/product/B078MHKFJ9/)[^title] I purchased from Amazon. It does not work with Linux out of the box; however, the shipment came with a mini CD (with presumably the Windows driver) that had the code `RTL8811/RTL8812` which hinted at the possible Linux driver to use.
-
-[^title]: Product title: *WiFi Adapter Flenco 600Mbps WiFi Dongle Mini Dual Band 2.4G/5G USB Wireless Network Adapter Support for Win 7/8/8.1/10/XP/Vista*
-
-## Initial investigation
-
-After inserting the adapter to USB port, `dmesg` displayed
-
-```text
-[  +0.933146] usb 1-3: USB disconnect, device number 6
-[  +4.194956] usb 1-3: new high-speed USB device number 11 using xhci_hcd
-[  +0.126132] usb 1-3: New USB device found, idVendor=0bda, idProduct=c811, bcdDevice= 2.00
-[  +0.000006] usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
-[  +0.000003] usb 1-3: Product: 802.11ac NIC
-[  +0.000003] usb 1-3: Manufacturer: Realtek
-[  +0.000003] usb 1-3: SerialNumber: 123456
-```
-
-And `lsusb` identified ([why?](https://askubuntu.com/questions/510713/ifconfig-cant-see-usb-wireless)) the device ID `c811`:
-
-
-```sh
-$ lsusb | grep 802
-Bus 001 Device 011: ID 0bda:c811 Realtek Semiconductor Corp. 802.11ac NIC
-```
-
-Which led me to [this post](https://askubuntu.com/questions/1162974/wireless-usb-adapter-0bdac811-realtek-semiconductor-corp) that indicated that I needed to use the [`8821cu`](https://github.com/brektrou/rtl8821CU) (matching what's on the mini CD) Linux driver for this particular hardware.
-
-## Configuring NixOS
-
-Fortunately, this is all in nixpkgs; I only had to add the following to my NixOS configuration and reboot:
-
-```nix
-boot.extraModulePackages = [ config.boot.kernelPackages.rtl8821cu ];
-```
-
-Reboot.
-
-## Using the card
-
-Expect to see the card in `ifconfig`. If connecting via `nmtui` produces this error:
-
-```
-Could not activate connection
-Insufficient privileges
-```
-
-... use `sudo nmtui`.
-
-
-===
-
-<!-- Source: Hardware/X1C7/Installing NixOS on X1 Carbon Gen 7.md -->
-<!-- URL: https://srid.ca/x1c7-install -->
-<!-- Title: Installing NixOS on X1 Carbon Gen 7 -->
-<!-- Wikilinks: [[Hardware/X1C7/Installing NixOS on X1 Carbon Gen 7]], [[X1C7/Installing NixOS on X1 Carbon Gen 7]], [[Installing NixOS on X1 Carbon Gen 7]] -->
-
----
-slug: x1c7-install
----
-
-I used [these instructions](https://github.com/andywhite37/nixos/blob/master/DUAL_BOOT_WINDOWS_GUIDE.md)[^nat] to install #[[NixOS]] alongside Windows on my #[[X1C7]]
-
-[^nat]: Note that you can use the builtin Windows disk manager to resize the partition. No need to install a third party app as this article indicates.
-
-Note the following:
-
-- Disable Secure Boot in BIOS. NixOS won't boot otherwise.
-- Use nixos-unstable and choose the latest kernel (`linuxPackages_latest`)
-
-As usual, refer to [the Arch wiki](https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Carbon_(Gen_7)) for details.
-
-See my [configuration.nix][x1c7.nix] for full NixOS config.
-
-[x1c7.nix]: https://github.com/srid/nixos-config/blob/master/systems/laptops/x1c7.nix
-
-
-
-===
-
-<!-- Source: Hardware/X1C7/Thinkpad X1 Carbon Gen 7 review.md -->
-<!-- URL: https://srid.ca/x1c7-review -->
-<!-- Title: Thinkpad X1 Carbon Gen 7 review -->
-<!-- Wikilinks: [[Hardware/X1C7/Thinkpad X1 Carbon Gen 7 review]], [[X1C7/Thinkpad X1 Carbon Gen 7 review]], [[Thinkpad X1 Carbon Gen 7 review]] -->
-
----
-slug: x1c7-review
-tags: [blog/x1c7]
-date: 2020-12-21
----
-
-On September 10th 2020, I received my #[[X1C7]] (Gen 7, with 10th gen processor) shipped from Lenovo, and this is a brief review of having used it as my primary computer in the last 3+ months.
-
-## Setting up Linux
-
-I usually run [[NixOS]] on my computers, which is what I did on the Carbon. Read the specifics in [[Installing NixOS on X1 Carbon Gen 7]].
-
-## What works
-
-Linux kernel 5.9 or later has the best hardware support. Everything including Thunderbolt and fingerprint reader works on Linux. I was surprised in particular to see that 5k resolution worked in [[LG Ultrafine 5k]], which is a retina-quality Thunderbolt monitor designed specifically for Macbooks. Compared to previous Thinkpads (such as [[P71]]), the trackpad is as good as that of a Macbook.
-
-## WiFI can be unstable
-
-The only annoying issue with the Carbon is that the WiFi card included in my laptop experiences [[X1C7 WiFi issue|periodic disconnections]]# on Linux. Others have reported the same. In the end, the problem vanished when I switched to [[Clear Linux]]. 
-
-![[X1C7 WiFi issue]]
-
-## Performance
-
-[[X1C7 - Moderate Performance|Performance]]# is good enough for general use and light programming, but not ideal for any heavy lifting. 
-
-![[X1C7 - Moderate Performance]]
-
-## Battery Life
-
-I did not explicitly measure battery life on this laptop with a 4k screen. It looks to be around 6 hours which is more than enough for my use cases. I used the default [nixos-hardware] configuration; and reddit has [some tips][bat-red]. A fellow programmer reported [5 hours][bat-5h].
-
-## Next computer
-
-My next computer, if I choose to buy one in ~3 years, would likely be similar to the X1C7 but with a bit more performance (assuming battery life does not suffer); i.e., if I were to make this decision again, I'd consider Thinkpad [[X1E]] or P1[^amd] - but with integrated graphics (nvidia has poor support on Linux). That said, I still use the Carbon as my primary computer, and use [[VSCode]] remote to shift much of the develoment heavylifting to the [[P71]] workstation at home.
-
-## Verdict after a year
-
-[(added on Sep 23, 2021)]{.italic .text-sm .flex .items-center .justify-center}
-
-I keep going back to my [[P71]] as the default machine when working docked (home office), and the Carbon has been relegated to situations where I work from the couch or from elsewhere (but doing bulk of stuff remotely on a powerful machine).
-  
-[bat-red]: https://old.reddit.com/r/thinkpad/comments/gc5nn2/x1_extreme_gen_2_4k_uhd_linux_battery_life/fp9ebs5/?utm_source=reddit&utm_medium=web2x&context=3
-
-[bat-5h]: https://old.reddit.com/r/thinkpad/comments/hwonb5/x1_carbon_gen_8_4k_battery_life/
-
-[nixos-hardware]: https://github.com/srid/nix-config/blob/48c1c44a7ed52c25c25a19a1771b71a16e174da5/nixos-configuration/x1c7.nix#L11-L13
-
-[^amd]: And if Thunderbolt wasn't a requirement, I'd easily go for a Thinkpad with AMD processor, such as the T14 or P14.
-
-
-===
-
-<!-- Source: Hardware/X1C7/X1C7 - Moderate Performance.md -->
-<!-- URL: https://srid.ca/x1c7-perf -->
-<!-- Title: X1C7 - Moderate Performance -->
-<!-- Wikilinks: [[Hardware/X1C7/X1C7 - Moderate Performance]], [[X1C7/X1C7 - Moderate Performance]], [[X1C7 - Moderate Performance]] -->
-
----
-slug: x1c7-perf
----
-
-#[[X1C7]]'s performance is reasonably good for both home-office and coffee-shop use. 
-
-The carbon does suffer a bit with heavy workloads, such as some long compilation (eg: GHCJS) tasks, IDE heavylifting (haskell-language-server) or when using complex (bloated) web apps. Some of those, such as Nix compilation, can be offloaded to my [[P71]] workstation at home (via manual ssh, [[VSCode]] [remote ssh][vsr] or [distributed](https://nixos.wiki/wiki/Distributed_build) build).
-
-Per the pareto principle, the carbon is still a delight to use, although one must be aware of this compromise in performance, and not to mention memory limit (16G max RAM).
-
-Performance and portability tradeoff wise, the [[X1E]] is positioned in between [[X1C7]] and [[P71]].
-
-[vsr]: https://code.visualstudio.com/docs/remote/ssh
-
-
-===
-
-<!-- Source: Hardware/X1C7/X1C7 WiFi issue.md -->
-<!-- URL: https://srid.ca/x1c7-wifi -->
-<!-- Title: X1C7 WiFi issue -->
-<!-- Wikilinks: [[Hardware/X1C7/X1C7 WiFi issue]], [[X1C7/X1C7 WiFi issue]], [[X1C7 WiFi issue]] -->
-
----
-slug: x1c7-wifi
----
-
-WiFi can disconnect from time to time (in [[Linux]]). This is the most annoying problem with the #[[X1C7]]. It vanishes for some days, before returning.
-
-[See reddit discussion](https://old.reddit.com/r/thinkpad/comments/iu1de6/x1_carbon_w_5k_monitor_running_linux/g5ijbw9/?utm_source=reddit&utm_medium=web2x&context=3); Looks to be [this bug](https://bugzilla.kernel.org/show_bug.cgi?id=203709), though in 2021 I'm seeing more of the [0x707](https://bugzilla.kernel.org/show_bug.cgi?id=203593) bug.
-
-As a workaround, I decided to use an external wifi card ([[AC600M USB WiFi Adapter]]#) - but that also had its own connectivity problems from time to time.
-
-**Update (Sep 8,2021)**: This issue appears only on [[NixOS]] (as well as Ubuntu, and possibly several other distros), but not on [[Clear Linux]].
-
-
-===
-
-<!-- Source: Hardware/X1E.md -->
-<!-- URL: https://srid.ca/x1e -->
-<!-- Title: X1E -->
-<!-- Wikilinks: [[Hardware/X1E]], [[X1E]] -->
-
----
-slug: x1e
----
-
-ThinkPad X1 Extreme
-
-
-===
-
-<!-- Source: Hardware/iPad.md -->
-<!-- URL: https://srid.ca/ipad -->
-<!-- Title: iPad -->
-<!-- Wikilinks: [[Hardware/iPad]], [[iPad]] -->
-
----
-slug: ipad
----
-
-I used to own an **iPad Pro** (11 inch). It was useful particularly in the following ways (compared to doing the same on [[M1 Macbook Pro 16|a macbook]]):
-
-- Brainstorming using the [Freeform](https://www.apple.com/ca/newsroom/2022/12/apple-launches-freeform-a-powerful-new-app-designed-for-creative-collaboration/) app
-- Reading books
-
-The iPad pencil on the other hand usually does not see much use. Overall, I've come to realize that tablets are not very useful to me in the long-run. They are little more than a toy that seems short-term use.
-
-
-===
-
 <!-- Source: KB.md -->
 <!-- URL: https://srid.ca/kb -->
 <!-- Title: 📖 KB -->
@@ -893,6 +561,338 @@ slug: floxies
 
 ===
 
+<!-- Source: KB/Hardware.md -->
+<!-- URL: https://srid.ca/hw -->
+<!-- Title: 💻 Hardware -->
+<!-- Wikilinks: [[KB/Hardware]], [[Hardware]] -->
+
+---
+slug: hw
+---
+
+# :computer: Hardware
+
+I own a Thinkpad P14s, Beelink and [[M1 Macbook Pro 16]].
+
+```query
+children:.
+```
+
+
+===
+
+<!-- Source: KB/Hardware/LG Ultrafine 5k.md -->
+<!-- URL: https://srid.ca/lg-ultrafine-5k -->
+<!-- Title: LG Ultrafine 5k -->
+<!-- Wikilinks: [[KB/Hardware/LG Ultrafine 5k]], [[Hardware/LG Ultrafine 5k]], [[LG Ultrafine 5k]] -->
+
+---
+slug: lg-ultrafine-5k
+---
+
+[LG Ultrafine 5k](https://www.apple.com/ca/shop/product/HMUB2LL/A/lg-ultrafine-5k-display) ~~appears to be the only~~ is a 27" monitor with retina-quality display matching that of Macbooks.
+
+For brightness configuration in [[NixOS]] Linux using `ddcutil`, see [here](https://github.com/srid/nixos-config/blob/79152ec57509a957118a385d60f6e335b2ac51d3/nixos/monitor-brightness.nix).
+
+
+
+===
+
+<!-- Source: KB/Hardware/M1 Macbook Pro 16.md -->
+<!-- URL: https://srid.ca/m1-macbook-pro-16 -->
+<!-- Title: M1 Macbook Pro 16 -->
+<!-- Wikilinks: [[KB/Hardware/M1 Macbook Pro 16]], [[Hardware/M1 Macbook Pro 16]], [[M1 Macbook Pro 16]] -->
+
+---
+slug: m1-macbook-pro-16
+---
+
+The **MacBook Pro M1 Max (16 inch)** is my primary computer running #[[macOS]].
+
+## Why I like it
+
+- Great performance
+- Great usability ([[macOS]])
+- Fantastic display
+  - Fonts are beautiful to look at on the retina display
+  - 16" in particular is sufficient to do real work without an external monitor
+      - However, an external monitor (like [[LG Ultrafine 5k]]) does make a huge difference.
+- Good portability and battery life
+  - Just the right size-performance tradeoff for carrying elsewhere (eg: [[Coffee]] shops) and do real work.
+      - That said, 13" MacBook Air wins over in regards to portability.
+
+
+===
+
+<!-- Source: KB/Hardware/P14s.md -->
+<!-- URL: https://srid.ca/p14s -->
+<!-- Title: P14s -->
+<!-- Wikilinks: [[KB/Hardware/P14s]], [[Hardware/P14s]], [[P14s]] -->
+
+---
+slug: p14s
+---
+
+**ThinkPad P14s** is a compact workstation laptop I used as an experiment in running [[Hyprland]] with [[NixOS]] before ultimately returning to [[macOS]] as my primary OS on the [[M1 Macbook Pro 16]].
+
+
+===
+
+<!-- Source: KB/Hardware/P71.md -->
+<!-- URL: https://srid.ca/p71 -->
+<!-- Title: P71 -->
+<!-- Wikilinks: [[KB/Hardware/P71]], [[Hardware/P71]], [[P71]] -->
+
+---
+slug: p71
+---
+
+Thinkpad P71, my laptop when I [started](https://x.com/sridca/status/1941137185778131347) using [[Haskell]] and [[NixOS]]
+
+Picture: https://x.com/sridca/status/1941138401165807872
+
+
+===
+
+<!-- Source: KB/Hardware/X1C7.md -->
+<!-- URL: https://srid.ca/x1c7 -->
+<!-- Title: X1C7 -->
+<!-- Wikilinks: [[KB/Hardware/X1C7]], [[Hardware/X1C7]], [[X1C7]] -->
+
+---
+slug: x1c7
+---
+
+Thinkpad X1 Carbon Gen 7
+
+```query
+path:./*
+```
+
+===
+
+<!-- Source: KB/Hardware/X1C7/AC600M USB WiFi Adapter.md -->
+<!-- URL: https://srid.ca/rtl8821cu -->
+<!-- Title: AC600M USB WiFi Adapter -->
+<!-- Wikilinks: [[KB/Hardware/X1C7/AC600M USB WiFi Adapter]], [[Hardware/X1C7/AC600M USB WiFi Adapter]], [[X1C7/AC600M USB WiFi Adapter]], [[AC600M USB WiFi Adapter]] -->
+
+---
+slug: rtl8821cu
+---
+
+Having gotten frustrated with the [[X1C7 WiFi issue]], I decided to use an external USB WiFi adapter. [Here is the specific adapter](https://www.amazon.ca/gp/product/B078MHKFJ9/)[^title] I purchased from Amazon. It does not work with Linux out of the box; however, the shipment came with a mini CD (with presumably the Windows driver) that had the code `RTL8811/RTL8812` which hinted at the possible Linux driver to use.
+
+[^title]: Product title: *WiFi Adapter Flenco 600Mbps WiFi Dongle Mini Dual Band 2.4G/5G USB Wireless Network Adapter Support for Win 7/8/8.1/10/XP/Vista*
+
+## Initial investigation
+
+After inserting the adapter to USB port, `dmesg` displayed
+
+```text
+[  +0.933146] usb 1-3: USB disconnect, device number 6
+[  +4.194956] usb 1-3: new high-speed USB device number 11 using xhci_hcd
+[  +0.126132] usb 1-3: New USB device found, idVendor=0bda, idProduct=c811, bcdDevice= 2.00
+[  +0.000006] usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  +0.000003] usb 1-3: Product: 802.11ac NIC
+[  +0.000003] usb 1-3: Manufacturer: Realtek
+[  +0.000003] usb 1-3: SerialNumber: 123456
+```
+
+And `lsusb` identified ([why?](https://askubuntu.com/questions/510713/ifconfig-cant-see-usb-wireless)) the device ID `c811`:
+
+
+```sh
+$ lsusb | grep 802
+Bus 001 Device 011: ID 0bda:c811 Realtek Semiconductor Corp. 802.11ac NIC
+```
+
+Which led me to [this post](https://askubuntu.com/questions/1162974/wireless-usb-adapter-0bdac811-realtek-semiconductor-corp) that indicated that I needed to use the [`8821cu`](https://github.com/brektrou/rtl8821CU) (matching what's on the mini CD) Linux driver for this particular hardware.
+
+## Configuring NixOS
+
+Fortunately, this is all in nixpkgs; I only had to add the following to my NixOS configuration and reboot:
+
+```nix
+boot.extraModulePackages = [ config.boot.kernelPackages.rtl8821cu ];
+```
+
+Reboot.
+
+## Using the card
+
+Expect to see the card in `ifconfig`. If connecting via `nmtui` produces this error:
+
+```
+Could not activate connection
+Insufficient privileges
+```
+
+... use `sudo nmtui`.
+
+
+===
+
+<!-- Source: KB/Hardware/X1C7/Installing NixOS on X1 Carbon Gen 7.md -->
+<!-- URL: https://srid.ca/x1c7-install -->
+<!-- Title: Installing NixOS on X1 Carbon Gen 7 -->
+<!-- Wikilinks: [[KB/Hardware/X1C7/Installing NixOS on X1 Carbon Gen 7]], [[Hardware/X1C7/Installing NixOS on X1 Carbon Gen 7]], [[X1C7/Installing NixOS on X1 Carbon Gen 7]], [[Installing NixOS on X1 Carbon Gen 7]] -->
+
+---
+slug: x1c7-install
+---
+
+I used [these instructions](https://github.com/andywhite37/nixos/blob/master/DUAL_BOOT_WINDOWS_GUIDE.md)[^nat] to install #[[NixOS]] alongside Windows on my #[[X1C7]]
+
+[^nat]: Note that you can use the builtin Windows disk manager to resize the partition. No need to install a third party app as this article indicates.
+
+Note the following:
+
+- Disable Secure Boot in BIOS. NixOS won't boot otherwise.
+- Use nixos-unstable and choose the latest kernel (`linuxPackages_latest`)
+
+As usual, refer to [the Arch wiki](https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Carbon_(Gen_7)) for details.
+
+See my [configuration.nix][x1c7.nix] for full NixOS config.
+
+[x1c7.nix]: https://github.com/srid/nixos-config/blob/master/systems/laptops/x1c7.nix
+
+
+
+===
+
+<!-- Source: KB/Hardware/X1C7/Thinkpad X1 Carbon Gen 7 review.md -->
+<!-- URL: https://srid.ca/x1c7-review -->
+<!-- Title: Thinkpad X1 Carbon Gen 7 review -->
+<!-- Wikilinks: [[KB/Hardware/X1C7/Thinkpad X1 Carbon Gen 7 review]], [[Hardware/X1C7/Thinkpad X1 Carbon Gen 7 review]], [[X1C7/Thinkpad X1 Carbon Gen 7 review]], [[Thinkpad X1 Carbon Gen 7 review]] -->
+
+---
+slug: x1c7-review
+tags: [blog/x1c7]
+date: 2020-12-21
+---
+
+On September 10th 2020, I received my #[[X1C7]] (Gen 7, with 10th gen processor) shipped from Lenovo, and this is a brief review of having used it as my primary computer in the last 3+ months.
+
+## Setting up Linux
+
+I usually run [[NixOS]] on my computers, which is what I did on the Carbon. Read the specifics in [[Installing NixOS on X1 Carbon Gen 7]].
+
+## What works
+
+Linux kernel 5.9 or later has the best hardware support. Everything including Thunderbolt and fingerprint reader works on Linux. I was surprised in particular to see that 5k resolution worked in [[LG Ultrafine 5k]], which is a retina-quality Thunderbolt monitor designed specifically for Macbooks. Compared to previous Thinkpads (such as [[P71]]), the trackpad is as good as that of a Macbook.
+
+## WiFI can be unstable
+
+The only annoying issue with the Carbon is that the WiFi card included in my laptop experiences [[X1C7 WiFi issue|periodic disconnections]]# on Linux. Others have reported the same. In the end, the problem vanished when I switched to [[Clear Linux]]. 
+
+![[X1C7 WiFi issue]]
+
+## Performance
+
+[[X1C7 - Moderate Performance|Performance]]# is good enough for general use and light programming, but not ideal for any heavy lifting. 
+
+![[X1C7 - Moderate Performance]]
+
+## Battery Life
+
+I did not explicitly measure battery life on this laptop with a 4k screen. It looks to be around 6 hours which is more than enough for my use cases. I used the default [nixos-hardware] configuration; and reddit has [some tips][bat-red]. A fellow programmer reported [5 hours][bat-5h].
+
+## Next computer
+
+My next computer, if I choose to buy one in ~3 years, would likely be similar to the X1C7 but with a bit more performance (assuming battery life does not suffer); i.e., if I were to make this decision again, I'd consider Thinkpad [[X1E]] or P1[^amd] - but with integrated graphics (nvidia has poor support on Linux). That said, I still use the Carbon as my primary computer, and use [[VSCode]] remote to shift much of the develoment heavylifting to the [[P71]] workstation at home.
+
+## Verdict after a year
+
+[(added on Sep 23, 2021)]{.italic .text-sm .flex .items-center .justify-center}
+
+I keep going back to my [[P71]] as the default machine when working docked (home office), and the Carbon has been relegated to situations where I work from the couch or from elsewhere (but doing bulk of stuff remotely on a powerful machine).
+  
+[bat-red]: https://old.reddit.com/r/thinkpad/comments/gc5nn2/x1_extreme_gen_2_4k_uhd_linux_battery_life/fp9ebs5/?utm_source=reddit&utm_medium=web2x&context=3
+
+[bat-5h]: https://old.reddit.com/r/thinkpad/comments/hwonb5/x1_carbon_gen_8_4k_battery_life/
+
+[nixos-hardware]: https://github.com/srid/nix-config/blob/48c1c44a7ed52c25c25a19a1771b71a16e174da5/nixos-configuration/x1c7.nix#L11-L13
+
+[^amd]: And if Thunderbolt wasn't a requirement, I'd easily go for a Thinkpad with AMD processor, such as the T14 or P14.
+
+
+===
+
+<!-- Source: KB/Hardware/X1C7/X1C7 - Moderate Performance.md -->
+<!-- URL: https://srid.ca/x1c7-perf -->
+<!-- Title: X1C7 - Moderate Performance -->
+<!-- Wikilinks: [[KB/Hardware/X1C7/X1C7 - Moderate Performance]], [[Hardware/X1C7/X1C7 - Moderate Performance]], [[X1C7/X1C7 - Moderate Performance]], [[X1C7 - Moderate Performance]] -->
+
+---
+slug: x1c7-perf
+---
+
+#[[X1C7]]'s performance is reasonably good for both home-office and coffee-shop use. 
+
+The carbon does suffer a bit with heavy workloads, such as some long compilation (eg: GHCJS) tasks, IDE heavylifting (haskell-language-server) or when using complex (bloated) web apps. Some of those, such as Nix compilation, can be offloaded to my [[P71]] workstation at home (via manual ssh, [[VSCode]] [remote ssh][vsr] or [distributed](https://nixos.wiki/wiki/Distributed_build) build).
+
+Per the pareto principle, the carbon is still a delight to use, although one must be aware of this compromise in performance, and not to mention memory limit (16G max RAM).
+
+Performance and portability tradeoff wise, the [[X1E]] is positioned in between [[X1C7]] and [[P71]].
+
+[vsr]: https://code.visualstudio.com/docs/remote/ssh
+
+
+===
+
+<!-- Source: KB/Hardware/X1C7/X1C7 WiFi issue.md -->
+<!-- URL: https://srid.ca/x1c7-wifi -->
+<!-- Title: X1C7 WiFi issue -->
+<!-- Wikilinks: [[KB/Hardware/X1C7/X1C7 WiFi issue]], [[Hardware/X1C7/X1C7 WiFi issue]], [[X1C7/X1C7 WiFi issue]], [[X1C7 WiFi issue]] -->
+
+---
+slug: x1c7-wifi
+---
+
+WiFi can disconnect from time to time (in [[Linux]]). This is the most annoying problem with the #[[X1C7]]. It vanishes for some days, before returning.
+
+[See reddit discussion](https://old.reddit.com/r/thinkpad/comments/iu1de6/x1_carbon_w_5k_monitor_running_linux/g5ijbw9/?utm_source=reddit&utm_medium=web2x&context=3); Looks to be [this bug](https://bugzilla.kernel.org/show_bug.cgi?id=203709), though in 2021 I'm seeing more of the [0x707](https://bugzilla.kernel.org/show_bug.cgi?id=203593) bug.
+
+As a workaround, I decided to use an external wifi card ([[AC600M USB WiFi Adapter]]#) - but that also had its own connectivity problems from time to time.
+
+**Update (Sep 8,2021)**: This issue appears only on [[NixOS]] (as well as Ubuntu, and possibly several other distros), but not on [[Clear Linux]].
+
+
+===
+
+<!-- Source: KB/Hardware/X1E.md -->
+<!-- URL: https://srid.ca/x1e -->
+<!-- Title: X1E -->
+<!-- Wikilinks: [[KB/Hardware/X1E]], [[Hardware/X1E]], [[X1E]] -->
+
+---
+slug: x1e
+---
+
+ThinkPad X1 Extreme
+
+
+===
+
+<!-- Source: KB/Hardware/iPad.md -->
+<!-- URL: https://srid.ca/ipad -->
+<!-- Title: iPad -->
+<!-- Wikilinks: [[KB/Hardware/iPad]], [[Hardware/iPad]], [[iPad]] -->
+
+---
+slug: ipad
+---
+
+I used to own an **iPad Pro** (11 inch). It was useful particularly in the following ways (compared to doing the same on [[M1 Macbook Pro 16|a macbook]]):
+
+- Brainstorming using the [Freeform](https://www.apple.com/ca/newsroom/2022/12/apple-launches-freeform-a-powerful-new-app-designed-for-creative-collaboration/) app
+- Reading books
+
+The iPad pencil on the other hand usually does not see much use. Overall, I've come to realize that tablets are not very useful to me in the long-run. They are little more than a toy that seems short-term use.
+
+
+===
+
 <!-- Source: KB/Head ache.md -->
 <!-- URL: https://srid.ca/head-ache -->
 <!-- Title: Head ache -->
@@ -956,6 +956,3466 @@ https://news.ycombinator.com/item?id=43152534
 slug: mastodon
 ---
 
+
+
+===
+
+<!-- Source: KB/Software.md -->
+<!-- URL: https://srid.ca/software -->
+<!-- Title: 💾 Software -->
+<!-- Wikilinks: [[KB/Software]], [[Software]] -->
+
+---
+slug: software
+order: -9
+---
+
+# :floppy_disk: Software
+
+```query
+path:./*
+```
+
+===
+
+<!-- Source: KB/Software/A brief FSharp exploration.md -->
+<!-- URL: https://srid.ca/fsharp-exploration -->
+<!-- Title: A brief F# exploration -->
+<!-- Wikilinks: [[KB/Software/A brief FSharp exploration]], [[Software/A brief FSharp exploration]], [[A brief FSharp exploration]] -->
+
+---
+slug: fsharp-exploration
+tags: [blog/fsharp, nojs]
+date: 2021-04-02
+---
+
+# A brief F\# exploration
+
+I have been writing full-stack web apps in [[Haskell]] using functional reactive programming ([[Reflex-FRP]]) for 3 years now. Curiosity stuck me as to find out what the [FP](https://en.wikipedia.org/wiki/Functional_programming) languages other than Haskell had to offer in this area.
+
+## My critieria were:
+
+- Must be a functional programming language
+- Should compile to JS or Wasm (cf. [[No JavaScript]])
+- Must run natively on backend without nodeJS (rules out the likes of [[PureScript]])
+
+Haskell's GHCJS (esp. when used with [[Obelisk]]) satisfies all of this, but there is one pain-point: the future of GHCJS (which has [not been updated](https://github.com/ghcjs/ghcjs) in a year) and Reflex seems to be in the hands of *one small company*, Obsidian Systems.
+
+That **lead me to F\#**, a hybrid FP language ("hybrid" because it supports OOP, which is essential to integrate with the rest of the .NET ecosystem). I've documented my learnings [here](https://srid.github.io/learning-fsharp/).
+
+## What I found impressive:
+
+- Full access to the entire **.NET** ecosystem of libraries and frameworks (which is larger than that of Haskell).
+- [.NET 5.0](https://devblogs.microsoft.com/dotnet/announcing-net-5-0/#unified-platform-vision) ecosystem is a pleasure to work with (and it works well on Linux with VSCode); and you can create cross-platform apps [more straightforwardly](https://github.com/srid/neuron/pull/586) than in Haskell, including on mobile devices.
+    - If I were to start developing [[Neuron]] today, I would certainly consider F# (but see below).
+- Microsoft has a great **full-stack** web development story; and they support WebAssembly ([`Blazor`](https://srid.github.io/learning-fsharp/Blazor)), including a framework for real-time communication (`SignalR`).
+    - In F#, [Bolero](https://fsbolero.io/) today is the go-to framework to make use of the above technology.
+- I find it reassuring that I can **rely on Microsoft** to advance the full-stack web development more than one small consultancy (Obsidian Systems) with less than transparent open source development in the Haskell land. 
+    - That said, I have some hopes that Tweag's [Asterius](https://github.com/tweag/asterius) catches up, and the community is encouraged to proliferate a whole new ecosystem of full-stack development tools in Haskell not necessarily tied to Reflex.
+
+## Some things are better in the Haskell ecosystem, though. 
+
+- Fast development reload workflow works super well in Haskell, thanks to [[ghcid]]. In .NET, you have `dotnet watch` - but that recompiles the whole project on every change leading to annoying delay[^net6]; it made me [switch back](https://github.com/srid/Feather/issues/10) to using Haskell for DSL-based static sites, while live-reload is essential to get quick feedback on things like CSS changes.
+- Having to work with OOP-based .NET libraries (written in C\#) can be an annoyance from a pure-FP perspective, though that can be dealt with by wrapping these libraries in a functional layer, and then using that in the F# program.
+- Overriding dependencies to use a fork in *straightforward* manner is virtually impossible. You have to create a local Nuget repo containing the binary of your overriden dependency. Whereas in Haskell world, one can easily use [[Nix]] to use a Git repo ([[Neuron]] [does this](https://github.com/srid/neuron/tree/master/dep)) as a package dependency.[^paket]
+
+[^net6]: .NET 6.0 will [address this](https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-3/#initial-net-hot-reload-support) at least for Blazor projects.
+[^paket]: No, [Paket's Git feature](https://fsprojects.github.io/Paket/git-dependencies.html) does *not* support this.
+
+**F# will continue to remain in my toolbox**. If the aforementioned downsides are addressed in some way, I might just pick it for some of the next projects over Haskell, which is still my go-to language today.
+
+## See also
+
+- My F# notes: https://srid.github.io/learning-fsharp/
+- Disussion on [Hacker News](https://news.ycombinator.com/item?id=26739501) & [Lobsters](https://lobste.rs/s/odejpy/brief_f_exploration)
+
+
+===
+
+<!-- Source: KB/Software/Agda.md -->
+<!-- URL: https://srid.ca/agda -->
+<!-- Title: Agda -->
+<!-- Wikilinks: [[KB/Software/Agda]], [[Software/Agda]], [[Agda]] -->
+
+---
+slug: agda
+---
+
+> As learning Haskell is a good way to develop oneself as a better Java programmer, learning a dependent typed programming language [Agda] is a good way to develop oneself as a better [[Haskell]] programmer. -- https://kseo.github.io/posts/2014-02-21-learning-agda-to-be-a-better-haskell-programmer.html
+
+## For writing apps?
+
+> I code real life programs in Agda. Some part of my server and my tools are in Agda. One time I was in #haskell freenode IRC channels and people started acting out as if I'm some crazy person. Agda has _seemless_ integration with Haskell. There is almost no friction writing 20% of your program in Haskell (unsafe) and 80% in Agda (safer). https://news.ycombinator.com/item?id=24567404
+
+## Resources
+
+- [Agda CheatSheet](https://alhassy.github.io/AgdaCheatSheet/CheatSheet.pdf)
+- [Dependently Typed Programming in Agda](http://www.cse.chalmers.se/~ulfn/papers/afp08/tutorial.pdf), a concise introduction to Agda, targeted at functional programmers
+- https://plfa.github.io
+- [[Nix]] project template: https://github.com/srid/agda-template
+
+===
+
+<!-- Source: KB/Software/Blockchain.md -->
+<!-- URL: https://srid.ca/blockchain -->
+<!-- Title: Blockchain -->
+<!-- Wikilinks: [[KB/Software/Blockchain]], [[Software/Blockchain]], [[Blockchain]] -->
+
+---
+slug: blockchain
+---
+
+- General blockchain knowledge: https://academy.horizen.io
+- Cardano Plutus: https://plutus-pioneer-program.readthedocs.io/en/latest/
+
+
+===
+
+<!-- Source: KB/Software/Coding.md -->
+<!-- URL: https://srid.ca/coding -->
+<!-- Title: Coding -->
+<!-- Wikilinks: [[KB/Software/Coding]], [[Software/Coding]], [[Coding]] -->
+
+---
+slug: coding
+template:
+  sidebar:
+    enable: false
+  toc:
+    enable: false
+---
+
+# Coding
+
+WIP
+
+## Refactoring
+
+- https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
+
+
+{#guidelines}
+## Coding Guidelines
+
+{#fn-interface}
+### Function interface should be small
+
+Functions should take only the arguments it uses. Its types should be relevant to its logic, without any extraneous information.
+
+
+===
+
+<!-- Source: KB/Software/Dhall.md -->
+<!-- URL: https://srid.ca/dhall -->
+<!-- Title: Dhall -->
+<!-- Wikilinks: [[KB/Software/Dhall]], [[Software/Dhall]], [[Dhall]] -->
+
+---
+slug: dhall
+---
+
+If your configuration file can benefit from a combination of JSON + functions + types, then consider [Dhall](https://dhall-lang.org/).
+
+[[Neuron]] uses Dhall for configuration, but only in a simple fashion (no functions, for instance).
+
+
+===
+
+<!-- Source: KB/Software/Elm.md -->
+<!-- URL: https://srid.ca/elm -->
+<!-- Title: Elm -->
+<!-- Wikilinks: [[KB/Software/Elm]], [[Software/Elm]], [[Elm]] -->
+
+---
+slug: elm
+---
+
+# Elm
+
+https://en.wikipedia.org/wiki/Elm_(programming_language)
+
+I recommend [[PureScript]] or GHCJS ([[Reflex-FRP]]) -- see [[No JavaScript]] -- over Elm due to the later's controversial design decisions and [[Politeness#example-of-being-polite-but-malicious|aggressive leadership]].
+
+## External links
+
+- [Why and How We Retired Elm at Culture Amp](https://news.ycombinator.com/item?id=35495910) (Apr, 2023)
+
+
+===
+
+<!-- Source: KB/Software/Emacs.md -->
+<!-- URL: https://srid.ca/emacs -->
+<!-- Title: Emacs -->
+<!-- Wikilinks: [[KB/Software/Emacs]], [[Software/Emacs]], [[Emacs]] -->
+
+---
+slug: emacs
+---
+
+If you want to start using Emacs as your text editor, I recommend starting from [Doom Emacs](https://github.com/doomemacs/).
+
+```query
+path:./*
+```
+
+
+===
+
+<!-- Source: KB/Software/Emacs/Emacs-XWidgets.md -->
+<!-- URL: https://srid.ca/xwidgets -->
+<!-- Title: Emacs Xwidgets -->
+<!-- Wikilinks: [[KB/Software/Emacs/Emacs-XWidgets]], [[Software/Emacs/Emacs-XWidgets]], [[Emacs/Emacs-XWidgets]], [[Emacs-XWidgets]] -->
+
+---
+slug: xwidgets
+---
+
+# Emacs Xwidgets
+
+
+> Xwidgets are a feature that allows Emacs to display GTK+ and NS widgets inside buffers.
+
+https://www.emacswiki.org/emacs/EmacsXWidgets
+
+{#macos}
+## Notes from last attempt to get it working on [[macOS]]:
+
+- Still broken on nixpkgs: https://github.com/NixOS/nixpkgs/pull/185714
+
+===
+
+<!-- Source: KB/Software/Emacs/Org Mode.md -->
+<!-- URL: https://srid.ca/org -->
+<!-- Title: Org Mode -->
+<!-- Wikilinks: [[KB/Software/Emacs/Org Mode]], [[Software/Emacs/Org Mode]], [[Emacs/Org Mode]], [[Org Mode]] -->
+
+---
+slug: org
+---
+
+https://orgmode.org/
+
+Although Markdown is good enough for [[Zettelkasten]], wikis and such (cf. [[Emanote]]), for writing *outline* content Org Mode in [[Emacs]] shines the best.
+
+For parsing org files in [[Haskell]], checkout [`org-parser`](https://github.com/lucasvreis/org-parser) (also provides [[Heist mini-tutorial|Heist templating]]) by lucasvreis ... as well as the [[Ema]] app [abacateiro](https://github.com/lucasvreis/abacateiro) by the same author.
+
+
+
+===
+
+<!-- Source: KB/Software/Haskell.md -->
+<!-- URL: https://srid.ca/haskell -->
+<!-- Title: Haskell -->
+<!-- Wikilinks: [[KB/Software/Haskell]], [[Software/Haskell]], [[Haskell]] -->
+
+---
+slug: haskell
+---
+
+[Haskell](https://www.haskell.org/) is an advanced, purely functional programming language. I use Haskell because of its correctness guarantees that are difficult or impossible to achieve with mainstream programming languages[^gotcha].
+
+[^gotcha]: Do be wary of [[Haskell Gotchas]].
+
+My first foray into Haskell was to write fullstack web applications using [[Reflex-FRP]], after having used [[Elm]] prior to that. Nowadays I consider it my go-to language for general application development.[^rust]
+
+[^rust]: For anything that needs low-level, [[Rust]] is an option.
+
+[On GitHub](https://github.com/srid) you can find a list of Haskell projects I work on, the notable of which are [[Neuron]], [[Ema]] and [[Emanote]].
+
+## Learning Haskell
+
+If you wish to learn Haskell yourself, these pointers may be of help:
+
+Get Inspired
+: [10 Reasons to Use Haskell](https://serokell.io/blog/10-reasons-to-use-haskell)
+: [Why Haskell is Important](https://www.tweag.io/blog/2019-09-06-why-haskell-is-important/)
+: [Why Haskell matters](https://wiki.haskell.org/Why_Haskell_matters).
+
+Attitude
+: Lose the limiting beliefs, if any.[^lb] Approach Haskell, with maximum [locus of control], as if it is a new programming language that had been created this year (ie. sans any vague preconceptions [introjected] from [[Cynical non-pioneers|naysayers and their enablers]]).
+
+Books
+: Some prefer *concise* learning materials; if this is you, check out the two books by Graham Hutton and Richard Bird. For a thorough and practical book, Vitaly Bragilevsky's Haskell in Depth or Will Kurt's Get Programming with Haskell might be of interest. Books are only a starting point (see the next two sections).
+
+Self-learning courses
+: [fp-course](https://github.com/system-f/fp-course) and [applied-fp-course](https://github.com/qfpl/applied-fp-course)
+
+Practice
+: Learning anything takes practice, and this is particularly a key for a purely functional language like Haskell. See [Haskell Mentors List](https://willbasky.github.io/Awesome-list-of-Haskell-mentors/) for progressing in learning Haskell by way of contributing to open source projects that you already enjoy using.
+
+Talk / Share
+: Join [Haskell Discourse](https://discourse.haskell.org/) to interact with other Haskellers. You may also post to [StackOverflow \#haskell](https://stackoverflow.com/questions/tagged/haskell), which has been quite helpful in my experience. Read [r/haskell](https://old.reddit.com/r/haskell/) for news. Be wary of other communities.[^wk]. See [Haskell Planetarium](https://haskell.pl-a.net/) for recent Haskell news & discussions.
+
+Deepen your Haskell knowledge
+: [[Haskell from the ground up]] (Work in progress)
+
+[locus of control]: https://www.wikiwand.com/en/Locus_of_control
+
+[^wk]: In particular, you want to avoid the non-[[Stay niche|niche]] ones [[woke-invasion|invaded]] by [[woke|woke]] activist moderators.
+
+## Take the red pill with Nix
+
+If you are feeling adventurous consider getting acquainted with [[Nix]], which in turns allows you to leverage [[haskell-template]] for bootstraping Haskell projects with full IDE support in [[VSCode]]. This works on [[Linux]], [[macOS]] and [[Windows]] (via WSL) without having to install dependencies other than Nix itself. In my opinion, this is the best way to set up a Haskell development environment if you are willing to approach the learning curve of Nix with alacritty.
+
+## Sub-pages
+
+```query
+children:.
+```
+
+[FP Slack]: https://fpslack.com
+[introjected]: https://archive.is/rUiwZ#selection-187.47-205.10
+
+
+[^lb]: 
+      Graham Hutton: "[*My experience is that people need to be 'ready' to learn what a monad is.  If they are ready, it's not too difficult, but still requires quite a bit of effort - as with anything worthwhile.*](https://archive.is/Teseb)"
+
+      Travis Whitaker: [*How do you know the difference between "novelty budget" and "inertia" and "sunk cost fallacy?"*](https://archive.is/qqEt7)
+
+
+===
+
+<!-- Source: KB/Software/Haskell/Creating a new Haskell project with IDE support using Nix.md -->
+<!-- URL: https://srid.ca/haskell-new-project -->
+<!-- Title: Scaffold a Haskell project w/ IDE support + Nix -->
+<!-- Wikilinks: [[KB/Software/Haskell/Creating a new Haskell project with IDE support using Nix]], [[Software/Haskell/Creating a new Haskell project with IDE support using Nix]], [[Haskell/Creating a new Haskell project with IDE support using Nix]], [[Creating a new Haskell project with IDE support using Nix]] -->
+
+---
+slug: haskell-new-project
+date: 2020-11-16
+tags: [blog]
+---
+
+# Scaffold a Haskell project w/ IDE support + Nix
+
+**Update (May 31, 2021)**: If you use Flakes, try [[haskell-template]].
+
+---
+
+I create new #[[Haskell]] libraries and applications using #[[Nix]], along with IDE support in #[[VSCode]] as follows.
+
+First, install [nix-thunk](https://github.com/obsidiansystems/nix-thunk) (alternatively, you may use niv or flakes).
+
+```bash
+# Initialize project layout using cabal
+mkdir mypkg && cd mypkg
+# Note: Pass --lib, --exe or --libandexe as appropriate
+nix-shell -p cabal-install -p ghc --run \
+  "cabal init --cabal-version=3.0 -m -l BSD3 --lib -p mypkg"
+
+# Add to git
+git init && git add . && git commit -m "Initial commit"
+
+# Remove, or update, version constraint on base to match compiler
+vim *.cabal  # and remove version constraint on `base`
+
+# Pin nixpkgs, etc
+# You might want to pass --rev, using the value from status.nixos.org
+nix-thunk create \
+  https://github.com/nixos/nixpkgs.git dep/nixpkgs
+nix-thunk create \
+  https://github.com/hercules-ci/gitignore.nix.git dep/gitignoresrc
+
+# Write template default.nix
+cat << EOF > default.nix
+{ pkgs ? import ./dep/nixpkgs {} }:
+let 
+  inherit (import ./dep/gitignoresrc { inherit (pkgs) lib; }) gitignoreSource;
+in 
+  pkgs.haskellPackages.developPackage {
+    name = "mypkg";
+    root = gitignoreSource ./.;
+    modifier = drv:
+      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
+        [ cabal-install
+          cabal-fmt
+          ghcid
+          ormolu
+          haskell-language-server
+        ]);
+  }
+EOF
+
+# Test your changes
+nix-build
+nix-shell --run 'cabal-fmt -i *.cabal'  # Formats your cabal file
+nix-shell --run 'ghcid -T :main'
+
+# Create .gitignore and commit
+echo -e "dist-newstyle\nresult" > .gitignore
+git add . && git commit -m "Nixify"
+```
+
+To enable IDE support,
+
+- Copy [.vscode template](https://github.com/srid/reflex-stone/tree/master/.vscode) to `./.vscode` (note: settings.json should point to default.nix instead of shell.nix)
+- Add the [appropriate hie.yaml](https://github.com/haskell/haskell-language-server#configuring-your-project-build)
+- Test your configuration by running `nix-shell --run haskell-language-server` (it should succeed with module-level reports)
+- Open the folder in VSCode and follow the instructions
+
+Other things you might want to do:
+
+- Use [[Relude]] as Prelude
+- Enable some `default-extensions`
+- Enable [sensible warnings][warn] in `ghc-options`
+
+[warn]: https://kowainik.github.io/posts/2019-02-06-style-guide#ghc-options
+
+## Alternatives
+
+- Using Flakes? See [this blog post](https://serokell.io/blog/practical-nix-flakes) from Serokell, and try out the [[haskell-template]] Git template.
+
+
+===
+
+<!-- Source: KB/Software/Haskell/Decouple GitHub Pages build from Nix using Docker.md -->
+<!-- URL: https://srid.ca/nix-docker-ci-decouple -->
+<!-- Title: Decouple GitHub Pages build from Nix using Docker -->
+<!-- Wikilinks: [[KB/Software/Haskell/Decouple GitHub Pages build from Nix using Docker]], [[Software/Haskell/Decouple GitHub Pages build from Nix using Docker]], [[Haskell/Decouple GitHub Pages build from Nix using Docker]], [[Decouple GitHub Pages build from Nix using Docker]] -->
+
+---
+slug: nix-docker-ci-decouple
+tags: [blog]
+date: 2021-10-10
+---
+
+Projects like [[Ema]] enable creating your own static-site generator in [[Haskell]], while leveraging #[[Nix]] for reproducibility. The challenge with deploying your Haskell-based static site on [GitHub Pages], however, is the lack of Nix caching. Every time you update your site, the CI will run slowly due to having to:
+
+- Download, and rebuild any Haskell dependencies overriden in the Nix file
+- Rebuild the static site Haskell project itself
+
+Now, if you are *scheduling* generation of site (presumably because the *input* to your site is fetched afresh from the internet), then the above steps will re-run needlessly. This can be avoided by **decoupling** the `build` and `generate` steps.
+
+## The build step
+
+The build step should run `nix-build`, effectively - and then use [Nix's docker infrastructure][nix-docker] to produce a Docker image out of it and push it to a remote (Docker Hub or GitHub's image registry).
+
+[Example](https://github.com/srid/TheMotteDashboard/actions/runs/1226415802)
+
+## The generate step
+
+The generate step of the CI would then *use* the latest Docker image from the registry and simply "run" your project. There is no compilation whastoever involved here, so it completes instantly. 
+
+[Example](https://github.com/srid/TheMotteDashboard/actions/runs/1266781482)
+
+## Links
+
+- First step illustration: [build.yaml](https://github.com/srid/TheMotteDashboard/blob/0cf1c6927253284cc51e65e1c4dd12b528690759/.github/workflows/build.yaml)
+- Second step illustration: [cron.yaml](https://github.com/srid/TheMotteDashboard/blob/0cf1c6927253284cc51e65e1c4dd12b528690759/.github/workflows/cron.yml) (generate)
+
+[nix-docker]: https://nix.dev/tutorials/building-and-running-docker-images
+[GitHub Pages]: https://pages.github.com/
+
+===
+
+<!-- Source: KB/Software/Haskell/Edit XMonad configuration with IDE support.md -->
+<!-- URL: https://srid.ca/xmonad-conf-ide -->
+<!-- Title: Edit XMonad configuration with IDE support -->
+<!-- Wikilinks: [[KB/Software/Haskell/Edit XMonad configuration with IDE support]], [[Software/Haskell/Edit XMonad configuration with IDE support]], [[Haskell/Edit XMonad configuration with IDE support]], [[Edit XMonad configuration with IDE support]] -->
+
+---
+slug: xmonad-conf-ide
+date: 2020-11-26
+tags: [blog]
+---
+
+:::{.sticky-note}
+Why XMonad? Because this opens me up to write complex workflows in Haskell with its type-safety benefits.
+:::
+
+[Over at FP Zulip](https://funprog.srid.ca/haskell/i3-configuration-in-haskell.html#217619324), when I floated the idea of writing Haskell DSL for i3 configuration, someone suggested to just use #[[XMonad]] instead. XMonad is a window manager where your configuration file is just Haskell code. 
+
+Because it is all Haskell, we can use [`haskell-language-server`](https://github.com/haskell/haskell-language-server) to provide full IDE support -- autocomplete, hover popups, documentation links, etc. -- for editing window manager configuration.
+
+![[static/xmonad-vscode.jpeg]]
+
+Here's how you do it:
+
+1. Create a cabal project (see [[Creating a new Haskell project with IDE support using Nix]])
+2. Add your XMonad configuration to the `Main.hs`
+3. Add `xmonad`, `xmonad-contrib` and other dependencies to the cabal file
+4. Adjust your #[[NixOS]] XMonad configuration to use this project
+
+Step 4 basically involves using the `Main.hs` as the config file, as well as copying over the Cabal dependencies. So, in your `configuration.nix` you would do something like:
+
+```nix
+services.xserver.windowManager.xmonad = {
+  enable = true;
+  extraPackages = haskellPackages: [
+    haskellPackages.xmonad-contrib
+    haskellPackages.containers
+  ];
+  enableContribAndExtras = true;
+  config = pkgs.lib.readFile ./xmonad-config/Main.hs;
+};
+```
+
+Your Cabal project lives at `./xmonad-config` ... and, if you followed the instructions in [[Creating a new Haskell project with IDE support using Nix]] to setup IDE configuration, you can simply launch [[VSCode]] using `code ./xmonad-config` to start editing your configuration.
+
+## Example
+
+- [My config: nixos/xmonad-srid](https://github.com/srid/nixos-config/tree/master/nixos/gui/desktopish/xmonad)
+- [Taffybar, done similarly](https://github.com/srid/nixos-config/tree/master/nixos/gui/desktopish/taffybar)
+
+## Discussion
+
+- [r/haskell](https://old.reddit.com/r/haskell/comments/k1kcif/edit_xmonad_configuration_with_ide_support/)
+
+
+===
+
+<!-- Source: KB/Software/Haskell/Haskell Gotchas.md -->
+<!-- URL: https://srid.ca/haskell-gotchas -->
+<!-- Title: Haskell Gotchas -->
+<!-- Wikilinks: [[KB/Software/Haskell/Haskell Gotchas]], [[Software/Haskell/Haskell Gotchas]], [[Haskell/Haskell Gotchas]], [[Haskell Gotchas]] -->
+
+---
+slug: haskell-gotchas
+---
+
+Some of #[[Haskell]]'s gotchas:
+
+| Gotcha                    | Recommendation                                                                                            |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Strings                   | [Understand](https://free.cofree.io/2020/05/06/string-types/)                                             |
+| Unicode Normalization     | https://github.com/srid/neuron/issues/611                                                                 |
+| Functions to avoid        | [haskell-dangerous-functions](https://github.com/NorfairKing/haskell-dangerous-functions); use [[Relude]] |
+| [[ghcid]] [ghost threads] | Track all threads; or use `race_`                                                                         |
+| Ratio type                | [The Hidden Dangers of Haskell's Ratio Type](https://www.fpcomplete.com/blog/hidden-dangers-of-ratio/)    |
+| Laziness                  | [Comparing strict vs lazy](https://www.tweag.io/blog/2022-05-12-strict-vs-lazy/)                          |
+| `TChan` and `TQueue`      | [Used bounded variants](https://www.parsonsmatt.org/2018/10/12/tchan_vs_tqueue.html) |
+
+[ghost threads]: https://stackoverflow.com/q/24999636/55246
+[relude]: https://github.com/kowainik/relude
+
+
+===
+
+<!-- Source: KB/Software/Haskell/Haskell from the ground up.md -->
+<!-- URL: https://srid.ca/haskell-foundational -->
+<!-- Title: Haskell from the ground up -->
+<!-- Wikilinks: [[KB/Software/Haskell/Haskell from the ground up]], [[Software/Haskell/Haskell from the ground up]], [[Haskell/Haskell from the ground up]], [[Haskell from the ground up]] -->
+
+---
+slug: haskell-foundational
+---
+
+:::{.page-note}
+**Note**: This page is in its **nascent form** with much more content to be added, and then organized.
+:::
+
+Roughly there exists three autodidactic approaches to learning the individual #[[Haskell]] concepts.
+
+1. Read tutorials & learn by doing
+1. Dig into the theory behind
+2. Learn GHC-level implementation details
+
+Approach (1) is great for "getting started", but proceeding to (2) and maybe even (3) will give a more **foundational** perspective, while demystifying otherwise complex ideas. Here, I aim to collect the various resources toward that end.
+
+## Dig into the theory behind
+
+- https://www.haskellforall.com/2022/05/introductory-resources-to-type-theory.html
+- [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
+- Theory behind it all (Lambda calculus, System F, logic, etc. -- see "course" below)
+	- [Programming Language Foundations in Agda](https://plfa.github.io/)
+- Dependent types
+	- For intuition into how type class/ type family/ data kinds/ etc fit together: https://lexi-lambda.github.io/blog/2021/03/25/an-introduction-to-typeclass-metaprogramming/
+	- [[Agda]]
+		- *Agda is, in some ways, the most advanced functional programming language in existence, and so if you learn how to program in Agda, you will have a very strong foundation for programming in other languages that use the idioms of functional programming.* --Verified Functional Programming in Agda, Aaron Stump
+	- Idris
+	
+### Math
+
+TODO
+
+- https://www.cs.uoregon.edu/research/summerschool/summer14/lectures/zdancewic-sf-lec01.pdf
+- The book 'Program = Proof' seems excellent
+- https://github.com/prathyvsh/category-theory-resources
+
+
+## GHC-level implementation details
+
+[GHC User Guide](https://downloads.haskell.org/ghc/latest/docs/html/users_guide/)
+: Language manual is a good starting point.
+[Haskell to Core: Understanding Haskell Features Through Their Desugaring](https://serokell.io/blog/haskell-to-core)
+: *"Thinking about the way Haskell language constructs are desugared into Core provides a deeper understanding of these features, rather than a superficial familiarity. For example, it provides a clear intuition for existential quantification, GADTs, and do-notation."*
+: - GHC Core is “System F with Type Equality Coercions" and “System FC with Explicit Kind Equality" .... and Haskell is an abstraction over GHC Core. ([Ref](https://old.reddit.com/r/haskell/comments/qn2xwc/importance_of_lambda_calculus/hjemcat/?context=1), on relation of Haskell to typed lambda calculus)
+
+
+## Todo
+
+Where do these fit in?
+
+-  _Thinking in Types_, by isovector
+- Category Theory, and other theory
+-  Functional Programming and Proof Checking Course Plan: https://oxij.org/activity/itmo/fp/plan/
+
+Resources for these?
+
+-  MTL
+-  Lenses
+
+Perspectives,
+
+-  Types = Values; https://vitez.me/hts-language
+
+Create a course
+
+-  Find relevant papers, in order.
+-  [Write You A Haskell](https://github.com/sdiehl/write-you-a-haskell): Building a modern functional compiler from first principles.
+
+
+From https://github.com/sdiehl/write-you-a-haskell/issues/93#issuecomment-962082153
+
+> There are two good lists of foundational papers for implementing a Haskell compiler:
+> 
+> https://www.stephendiehl.com/posts/essential_compilers.html
+> 
+> https://gitlab.haskell.org/ghc/ghc/-/wikis/reading-list
+
+
+===
+
+<!-- Source: KB/Software/Haskell/Heist mini-tutorial.md -->
+<!-- URL: https://srid.ca/heist-start -->
+<!-- Title: Heist mini-tutorial -->
+<!-- Wikilinks: [[KB/Software/Haskell/Heist mini-tutorial]], [[Software/Haskell/Heist mini-tutorial]], [[Haskell/Heist mini-tutorial]], [[Heist mini-tutorial]] -->
+
+---
+slug: heist-start
+tags: [blog]
+date: 2021-05-10
+---
+
+[Heist](https://github.com/snapframework/heist) is an "*xhtml-based templating engine, allowing Haskell functions to be bound to XML tags.*" and is suitable for use as a HTML templating #[[Haskell]] [library](https://vrom911.github.io/blog/html-libraries) where we need to care about using on-disk file templates rather a type-safe DSL. I found [its library documentation](http://snapframework.com/docs/tutorials/heist#heist-programming) somewhat lacking in regards to just getting started, so here's a quick howto.
+
+The most simple use of `heist` library is a two-stage process. 
+
+## Load templates
+
+We *interpret* the templates here (but in your application you might want to compile them instead). `H.HeistState Identity` is the type we should keep track of in our application state.
+
+```haskell
+import qualified Heist as H
+import qualified Heist.Interpreted as HI
+
+loadHeistTemplates 
+  :: MonadIO m => FilePath -> m (Either [String] (H.HeistState Identity))
+loadHeistTemplates templateDir = do
+  let heistCfg :: H.HeistConfig Identity =
+        H.emptyHeistConfig
+          & H.hcNamespace .~ ""
+          & H.hcTemplateLocations .~ [H.loadTemplates templateDir]
+  liftIO $ H.initHeist heistCfg
+```
+
+## Render templates
+
+This is the part where we render HTML with a given context (what heist calls "splices").
+
+```haskell
+import qualified Text.Blaze.Renderer.XmlHtml as RX
+
+renderHeistTemplate 
+  :: ByteString -> Either [String] (H.HeistState Identity) -> LByteString
+renderHeistTemplate name etmpl =
+  either error id . runExcept $ do
+    heist <-
+      hoistEither . first (unlines . fmap toText) $ etmpl
+    let 
+      heistWithCtx = 
+        heist 
+          & HI.bindString "markdown-title" "Hello world"
+          & HI.bindSplice "markdown-html" $ RX.renderHtml ...
+    (builder, _mimeType) <-
+      tryJust "Unable to render" $
+        runIdentity $ HI.renderTemplate heistWithCtx name
+    pure $ toLazyByteString builder
+```
+
+## External links
+
+- https://github.com/srid/heist-extra (useful in particular for [[Ema]] apps)
+
+
+===
+
+<!-- Source: KB/Software/Haskell/My release process for Haskell libraries.md -->
+<!-- URL: https://srid.ca/haskell-release-process -->
+<!-- Title: My release process for Haskell libraries -->
+<!-- Wikilinks: [[KB/Software/Haskell/My release process for Haskell libraries]], [[Software/Haskell/My release process for Haskell libraries]], [[Haskell/My release process for Haskell libraries]], [[My release process for Haskell libraries]] -->
+
+---
+slug: haskell-release-process
+tags: [blog]
+date: 2020-04-08
+---
+
+Just a note to myself as to the steps I normally follow when releasing a #[[Haskell]] library to [Hackage](http://hackage.haskell.org/).
+
+## Release steps
+
+1. Create a `release-x.y` branch
+2. Finalize ChangeLog.md
+3. Run `nix develop -c cabal haddock` and sanity check the haddocks
+4. Commit all changes, and push a release PR.
+5. Generated sdist using `cabal sdist` (if using flakes, run `nix run nixpkgs#cabal-install -- sdist`)
+6. Run `cabal upload [--publish] <path/to/sdist>` to upload the sdist. Ignore `--publish` if you want to preview it first.
+7. Publish Haddocks manually (optional, if Hackage doesn't do it automatically)
+    1. Run `cabal haddock --haddock-for-hackage` to generated haddocks for hackage.
+    1. Run `cabal upload -d --publish $PATH_TO_TARBALL` to update haddocks on the release.
+10. Squash merge the PR.
+11. [Draft a new release](https://github.com/srid/rib/releases) on Github. Copy paste the change log. This will automatically create and push the new git tag.
+
+### Post-release
+
+1. Increment cabal version in .cabal file
+2. Plan, as first task, updating of nixpkgs and package dependencies.
+
+## Open questions
+
+- Research a tool that automates much of the release process; cf. https://twitter.com/domenkozar/status/1744333116687184030
+
+
+===
+
+<!-- Source: KB/Software/Haskell/Reflex-FRP.md -->
+<!-- URL: https://srid.ca/reflex-frp -->
+<!-- Title: Reflex-FRP -->
+<!-- Wikilinks: [[KB/Software/Haskell/Reflex-FRP]], [[Software/Haskell/Reflex-FRP]], [[Haskell/Reflex-FRP]], [[Reflex-FRP]] -->
+
+---
+slug: reflex-frp
+---
+
+A full-stack functional reactive programming framework for developing web apps in #[[Haskell]]. Se https://reflex-frp.org/
+
+The recommended way to get started with writing reflex apps is via [[Obelisk]]# ... or [reflex-stone] if you do not want a backend server.
+
+[reflex-stone]: https://github.com/srid/reflex-stone
+
+===
+
+<!-- Source: KB/Software/Haskell/Reflex-FRP/Obelisk.md -->
+<!-- URL: https://srid.ca/obelisk -->
+<!-- Title: Obelisk -->
+<!-- Wikilinks: [[KB/Software/Haskell/Reflex-FRP/Obelisk]], [[Software/Haskell/Reflex-FRP/Obelisk]], [[Haskell/Reflex-FRP/Obelisk]], [[Reflex-FRP/Obelisk]], [[Obelisk]] -->
+
+---
+slug: obelisk
+---
+
+https://github.com/obsidiansystems/obelisk
+
+===
+
+<!-- Source: KB/Software/Haskell/Reflex-FRP/Obelisk/Obelisk tutorial, Markdown preview with Reflex.md -->
+<!-- URL: https://srid.ca/obelisk-tutorial -->
+<!-- Title: Obelisk tutorial, Markdown preview with Reflex -->
+<!-- Wikilinks: [[KB/Software/Haskell/Reflex-FRP/Obelisk/Obelisk tutorial, Markdown preview with Reflex]], [[Software/Haskell/Reflex-FRP/Obelisk/Obelisk tutorial, Markdown preview with Reflex]], [[Haskell/Reflex-FRP/Obelisk/Obelisk tutorial, Markdown preview with Reflex]], [[Reflex-FRP/Obelisk/Obelisk tutorial, Markdown preview with Reflex]], [[Obelisk/Obelisk tutorial, Markdown preview with Reflex]], [[Obelisk tutorial, Markdown preview with Reflex]] -->
+
+---
+slug: obelisk-tutorial
+tags: [blog, nojs]
+date: 2020-05-08
+---
+
+In this article, I'll describe how to get a full-stack Haskell application up and running. In particular, the app will render user-entered Markdown text in real-time (the final version is hosted at <https://commonmark.srid.ca>). Notably, our app will use Haskell even on the frontend. This is made possible by the [GHCJS](https://github.com/ghcjs/ghcjs) compiler, that compiles Haskell code to JavaScript. 
+
+We will not work directly with GHCJS, however, and instead will use the [[Reflex-FRP]] library, through the excellent #[[Obelisk]] full-stack framework.
+
+## Create an Obelisk project
+
+First and foremost, make sure you have [Obelisk installed](https://github.com/obsidiansystems/obelisk#installing-obelisk), and then follow along.
+
+Obelisk includes a command called `ob` that can be used to initialize a project. We will also use git to keep track of changes:
+
+```bash
+mkdir MarkdownPreview
+cd ./MarkdownPreview
+# Create an Obelisk project
+ob init
+# Add to git
+git init
+git add .
+git commit -m "first commit"
+```
+
+This gives us a project layout with three Haskell packages: `backend`, `common` and `frontend`. As the names indicate, `frontend` contains the Haskell code that ultimate gets compiled to JavaScript. The `common` package however contains code that is shared between the backend and the frontend. This is extremely useful for type sharing, which is impossible with something like [[Elm]] or PureScript (without explicit conversion).
+
+```sh
+backend
+cabal.project
+common
+config
+default.nix
+frontend
+shell.nix
+static
+```
+
+You will notice that Obelisk uses [[Nix]] to build your project. The command `ob run` (described below) will abstract over the Nix stuff, including any GHCi handling, so you do not have to deal directly with Nix except for overriding dependencies.
+
+## Running hello world
+
+Now, it is time to run our app. 
+
+```sh
+ob run
+```
+
+This command may take a while to finish the very first time it is run, as it would need to download packages from the Nix caches. At the end you would expect to see: `Frontend running on http://localhost:8000/`. Your obelisk app will be accessible at that URL.
+
+### Interlude: `ob run` reloads your code
+
+So what does this `ob run` command do? Think of it as `stack run` or `cabal run` - but it also recompiles changed sources and reloads application. `ob run` uses [ghcid](https://github.com/ndmitchell/ghcid) underneath, in combination with custom `ghci` config to specify the modules to reload.
+
+There is also `ob repl` which gives you a GHCi repl for your project. As well as `ob hoogle` providing a local Hoogle server for project and its dependencies.
+
+## Add `commonmark-hs` dependency
+
+Our application will use the Pure Haskell Markdown parser [commonmark-hs](https://github.com/jgm/commonmark-hs), which is written by the author of Pandoc, who intends to [migrate Pandoc over to it](https://github.com/jgm/commonmark-hs/issues/1#issuecomment-395802118) eventually. 
+
+We will also use the latest version from Git, instead of Hackage. Some [Nix-fu](https://nixos.org/nix/) is helpful at this stage. But the main thing you need to know, in order to add a custom Haskell dependency, is the following general workflow:
+
+* Clone the git repo under a subdirectory
+* "Pack" it using `ob thunk`
+* Load it in `default.nix` using `hackGet`
+
+As briefly as possible, you would do this for commonmark-hs as follows:
+
+```sh
+# Get the source
+git clone https://github.com/jgm/commonmark-hs.git dep/commonmark-hs
+...
+# Pack it
+ob thunk pack dep/commonmark-hs
+...
+```
+
+Next, edit your `default.nix` and:
+
+* Add `hackGet` and `pkgs` as arguments to the `project` if they don't already exist
+* Use the packed thunk by calling `hackGet`
+* The git rep contains multiple Haskell packages; use `commonmark` and `commonmark-extensions`
+
+Here's how your `default.nix` should look:
+
+```nix
+project ./. ({ pkgs, hackGet, ... }: {
+  packages = let 
+    commonmarkSrc = hackGet ./dep/commonmark-hs;
+  in {
+    commonmark = commonmarkSrc + "/commonmark";
+    commonmark-extensions = commonmarkSrc + "/commonmark-extensions";
+  };
+  ...
+})
+```
+
+If you run `ob run` at this point, it may complain about further missing dependencies. Let's override each of them:
+
+```sh
+git clone https://github.com/jgm/emojis.git dep/emojis
+ob thunk pack dep/emojis
+```
+
+Go back to `default.nix`, and add this new dependency to the `packages` attribute:
+
+```nix
+    ...
+    emojis = hackGet ./dep/emojis;
+```
+
+As we will be using commonmark directly in the frontend, go ahead and add these to `frontend.cabal` (under the library stanza):
+
+```haskell
+-- frontend/frontend.cabal
+               ...
+               , commonmark
+               , commonmark-extensions
+  
+```
+
+Restart `ob run`, which should build the the new dependency before starting our app.
+
+### Interlude: What is an Obelisk thunk?
+
+If you are familiar with [Haskell overrides in Nix](https://www.srid.ca/1948201.html#overriding-dependencies), then think of the obelisk thunk mechanism as an abstraction on top. A "packed" thunk is essentially similar to Nix's `fetchGit` in that you specify the exact source revision of the dependency to use. 
+
+But a thunk can also be "unpacked", using `ob thunk unpack`, which -- in addition to unpacking it as a git clone -- has the effect of adding it to `ob run` and `ob repl` sessions. For example, you could unpack the above commonmark thunk using `ob thunk unpack dep/commonmark-hs` and restart `ob run`. Now, when you hack on `./dep/commonmark-hs` and change its Haskell sources, `ob run` will automatically reload the app using the modified commonmark-hs. See the Obelisk [ChangeLog](https://github.com/obsidiansystems/obelisk/blob/master/ChangeLog.md#v0500---2020-02-07) for details.
+
+## Let's add a textbox
+
+If you are unfamiliar with Reflex, checkout [the official guide](https://reflex-frp.org/get-started). All our frontend code is defined in the `frontend/src/Frontend.hs` file. With `ob run` running by side, open that module and try changing a few things, like the title - and the app should update. Let's add a textbox element where the user would write their Markdown text.
+
+Somewhere in `_frontend_body`, add the following:
+
+```haskell
+markdownText :: Dynamic t T.Text <-
+  fmap value $ textAreaElement $
+    def
+    & initialAttributes .~ ("style" =: "width:50%;height:15em;")
+```
+
+`markdownText` is a reflex Dynamic that holds the user-entered text.
+
+## Parse Markdown
+
+Now it is time to actually use the commonmark library. Let's import it:
+
+```haskell
+import qualified Commonmark as CM
+
+renderMarkdown :: T.Text -> Either CM.ParseError (CM.Html ())
+renderMarkdown =
+  CM.commonmark "markdown"
+```
+
+The `renderMarkdown` function will parse our Markdown and return the HTML representation of it. Calling `show` on the Right value gets us the raw HTML.
+
+## Render to HTML
+
+Finally let's plug everything together. We want to parse and render the resulting HTML every time the user changes the textbox. Reflex's Dynamic automatically updates, so let's use that.
+
+```haskell
+result <- eitherDyn $ fmap renderMarkdown markdownText
+dyn_ $ ffor result $ \case
+  Left err ->
+    dyn_ $ ffor err $ \_ -> text "Parse error"
+  Right htmlVal ->
+    prerender_ blank $ void $ elDynHtml' "div" $ T.pack . show <$> htmlVal
+
+```
+
+That's all it takes! Now as you type the Markdown text, its live preview will automatically update next to the textbox.
+
+You can even hack on commonmark-hs (see the Obelisk thunk interlude above), and have `ob run` automatically reload when the library sources change. This is extremely handy if you want to play with the internals of the Markdown parser and see its live result in the browser.
+
+## Further resources
+
+* Source code for this app on Github: <https://github.com/srid/MarkdownPreview>
+
+* Fully built version of it running at: <https://commonmark.srid.ca/>
+
+
+===
+
+<!-- Source: KB/Software/Haskell/Relude.md -->
+<!-- URL: https://srid.ca/relude -->
+<!-- Title: Relude -->
+<!-- Wikilinks: [[KB/Software/Haskell/Relude]], [[Software/Haskell/Relude]], [[Haskell/Relude]], [[Relude]] -->
+
+---
+slug: relude
+---
+
+https://github.com/kowainik/relude
+
+===
+
+<!-- Source: KB/Software/Haskell/ghcid.md -->
+<!-- URL: https://srid.ca/ghcid -->
+<!-- Title: ghcid -->
+<!-- Wikilinks: [[KB/Software/Haskell/ghcid]], [[Software/Haskell/ghcid]], [[Haskell/ghcid]], [[ghcid]] -->
+
+---
+slug: ghcid
+---
+
+`ghcid` is advertisied as "a very low feature GHCi based IDE". When one uses `ghcid`, Haskell's lack of formal IDE support becomes less of an issue; because `ghcid` provides the most important feature of instant-recompilation feedback, all in the terminal.
+
+<https://github.com/ndmitchell/ghcid>
+
+#[[Haskell]]
+
+===
+
+<!-- Source: KB/Software/Haskell/haskell-language-server.md -->
+<!-- URL: https://srid.ca/hls -->
+<!-- Title: haskell-language-server -->
+<!-- Wikilinks: [[KB/Software/Haskell/haskell-language-server]], [[Software/Haskell/haskell-language-server]], [[Haskell/haskell-language-server]], [[haskell-language-server]] -->
+
+---
+slug: hls
+---
+
+# haskell-language-server
+
+https://github.com/haskell/haskell-language-server
+
+For [[VSCode]] support, see https://marketplace.visualstudio.com/items?itemName=haskell.haskell
+
+
+===
+
+<!-- Source: KB/Software/Haskell/haskell-template.md -->
+<!-- URL: https://srid.ca/haskell-template -->
+<!-- Title: haskell-template -->
+<!-- Wikilinks: [[KB/Software/Haskell/haskell-template]], [[Software/Haskell/haskell-template]], [[Haskell/haskell-template]], [[haskell-template]] -->
+
+---
+slug: haskell-template
+---
+
+# `haskell-template`
+
+`haskell-template` (<https://github.com/srid/haskell-template>) is a template Git repository for ready-made, fully reproducible and friendly #[[Haskell]] development using #[[Nix]]. It comes with full IDE support in [[VSCode]] (and other editors with LSP support). See [[philosophy]] for what's (and why it is) included.
+
+## Rationale
+
+The goal of `haskell-template` is to enable anyone to get started with [[Haskell]] development without much fanfare (thanks to [[Nix]]). I also use `haskell-template` to bootstrap all of my new Haskell projects. See [[haskell-template/start]] to get started.
+
+## Documentation
+
+- [[haskell-template/start]]
+- HOWTO
+  - `nix develop`: The nix shell is your friend; inside it, you will have the full Haskell development environment (cabal, ghc, ghci, [[haskell-language-server]], cabal-fmt, hlint, etc.).
+  - Common Haskell workflows
+    - Useful Scripts (defined via [just](https://just.systems/))
+
+      | Script      | Description                                             |
+      | ----------- | ------------------------------------------------------- |
+      | `just run`  | Run the main executable via [[ghcid]] (auto-recompiles) |
+      | `just repl` | Run `cabal repl` (gives you a `ghci` repl)              |
+      | `just docs` | Run `hoogle` (Documentation server for packages in use) |
+
+    - [Adding dependencies](https://haskell.flake.page/dependency) (or how to override them in Nix)
+    - [[haskell-template/add-tests]]
+  - Common Nix workflows
+    - `nix build`: Build the nix package.
+    - `nix run .`: Run the program via Nix.
+      - `nix run github:srid/haskell-template`: Run the program via Nix remotely.
+    - `nix profile install github:srid/haskell-template`: Install the program via Nix.
+    - [[haskell-template/checks]]
+  - Removing features from the template
+    - [[remove-relude]]
+  - [Switching to `direnv`](https://haskell.flake.page/direnv)
+  - CI
+    - [[haskell-template/garnix]]
+
+
+## Discussion
+
+Comments? Ideas? Post them [on GitHub](https://github.com/srid/haskell-template/discussions).
+
+#[[Projects]]
+
+===
+
+<!-- Source: KB/Software/Haskell/haskell-template/add-tests.md -->
+<!-- URL: https://srid.ca/haskell-template/tests -->
+<!-- Title: Adding tests -->
+<!-- Wikilinks: [[KB/Software/Haskell/haskell-template/add-tests]], [[Software/Haskell/haskell-template/add-tests]], [[Haskell/haskell-template/add-tests]], [[haskell-template/add-tests]], [[add-tests]] -->
+
+---
+slug: haskell-template/tests
+---
+
+# Adding tests
+
+[[haskell-template]] does not include tests by default (see [[philosophy]]), but you may add them as follows:
+
+1. Split any logic code out of `Main.hs` into, say, a `Lib.hs`.
+1. Correspondingly, add `other-modules: Lib` to the "shared" section of your cabal file.
+1. Add `tests/Spec.hs` (example below):
+    ```haskell
+    module Main where
+
+    import Lib qualified
+    import Test.Hspec (describe, hspec, it, shouldContain)
+
+    main :: IO ()
+    main = hspec $ do
+      describe "Lib.hello" $ do
+        it "contains the world emoji" $ do
+          toString Lib.hello `shouldContain` "🌎"
+    ```
+1. Add the tests stanza to the cabal file:
+    ```yaml
+    test-suite tests
+        import:         shared
+        main-is:        Spec.hs
+        type:           exitcode-stdio-1.0
+        hs-source-dirs: tests
+        build-depends:  hspec
+    ```
+1. Update `hie.yaml` accordingly; for example, by adding,
+    ```yaml
+      - path: "tests"
+        component: "test:tests"
+    ```
+1. Add the test command to the mission-control scripts section of the flake file
+    ```nix
+      mission-control.scripts = {
+        test = {
+          description = "Run all tests";
+          exec = ''
+             ghcid -c "cabal repl test:tests" -T :main
+          '';
+          };
+      };
+    ```
+1. Commit your changes to Git, and test it out by running `, test` from the (reloaded) dev shell.
+
+
+===
+
+<!-- Source: KB/Software/Haskell/haskell-template/checks.md -->
+<!-- URL: https://srid.ca/haskell-template/checks -->
+<!-- Title: Flake checks for Haskell -->
+<!-- Wikilinks: [[KB/Software/Haskell/haskell-template/checks]], [[Software/Haskell/haskell-template/checks]], [[Haskell/haskell-template/checks]], [[haskell-template/checks]], [[checks]] -->
+
+---
+slug: haskell-template/checks
+---
+
+# Flake checks for Haskell
+
+[[haskell-template]] provides a builtin list of flake checks:
+
+- [[haskell-language-server]] check (`hlsCheck.enable = true`) from [[haskell-flake]]: Tests that HLS continues to work with the project.
+- [treefmt] check: Tests that the project is autoformatted and does not have any hlint warnings.
+
+[treefmt]: https://nixos.asia/en/treefmt
+
+## `nix flake check` and IFD
+
+You cannot use `nix flake check` (unless your `systems` list is singular) [due to IFD](https://nixos.wiki/wiki/Haskell#IFD_and_Haskell). You can work around this by using the [check-flake](https://github.com/srid/check-flake) [[flake-parts]] module; make the following changes to your `flake.nix`:
+
+1. Add `check-flake.url = "github:srid/check-flake";` to "inputs"
+2. Add `inputs.check-flake.flakeModule` to "imports"
+
+Now you can run the following command[^sandbox] to run all flake checks locally for the current system:
+
+```sh
+nix --option sandbox false build .#check -L
+```
+
+## See also
+
+- https://github.com/NixOS/nix/pull/7759
+
+[^sandbox]: sandbox is being disabled because of [an issue](https://github.com/srid/haskell-flake/issues/21) with [[haskell-language-server]].
+
+
+===
+
+<!-- Source: KB/Software/Haskell/haskell-template/garnix.md -->
+<!-- URL: https://srid.ca/haskell-template/garnix -->
+<!-- Title: Adding Garnix CI -->
+<!-- Wikilinks: [[KB/Software/Haskell/haskell-template/garnix]], [[Software/Haskell/haskell-template/garnix]], [[Haskell/haskell-template/garnix]], [[haskell-template/garnix]], [[garnix]] -->
+
+---
+slug: haskell-template/garnix
+---
+
+# Adding Garnix CI
+
+[[haskell-template]] already uses Github Actions for CI, but you may also use [Garnix](https://garnix.io/). Garnix is a Nix based hosted CI service that integrates well with GitHub. Compared to Github Actions, Garnix CI jobs run faster and finally you get a free Nix cache as a result (no need to manually push to cachix). 
+
+You may use the following `garnix.yaml` to enable both Linux and macOS builds:
+
+```yaml
+builds:
+  include:
+    - "*.aarch64-darwin.*"
+    - "*.x86_64-linux.*"
+  exclude:
+    # https://github.com/srid/haskell-flake/issues/21
+    - "checks.*.main-hls"
+```
+
+
+===
+
+<!-- Source: KB/Software/Haskell/haskell-template/philosophy.md -->
+<!-- URL: https://srid.ca/haskell-template/philosophy -->
+<!-- Title: Philosophy -->
+<!-- Wikilinks: [[KB/Software/Haskell/haskell-template/philosophy]], [[Software/Haskell/haskell-template/philosophy]], [[Haskell/haskell-template/philosophy]], [[haskell-template/philosophy]], [[philosophy]] -->
+
+---
+slug: haskell-template/philosophy
+---
+
+# Philosophy
+
+## Use opinionated base tools
+
+I originally created [[haskell-template]] to serve as the base template for my Haskell [[Projects]]. As such, I wanted it to include by default the following:
+
+- [[Relude]] (because `Prelude` is [dangerous](https://github.com/NorfairKing/haskell-dangerous-functions))
+- [[haskell-language-server]] (because IDE integration from the get-go is invaluable)
+- [[ghcid]] (for instant auto-recompilation and re-running of the program)
+- [[hlint]]
+- [treefmt] (to keep the project tree autoformatted)
+  - `fourmolu`[^ormolu] for Haskell
+  - `cabal-fmt` for Cabal
+  - `nixpkgs-fmt` for Nix
+- [mission-control](https://github.com/Platonic-Systems/mission-control) for devshell scripts and discovery
+
+[treefmt]: https://nixos.asia/en/treefmt
+
+[^ormolu]: I used to use `ormolu` but switched to `fourmolu` because ormolu is annoying in some cases (like it [throwing away multiline haddock comments](https://github.com/tweag/ormolu/issues/641))
+
+## If it is not used in every repo, do not add it to the template
+
+Things like tests are not in the template repo, because I personally do not use it in *every* project created off this repo. Instead, a workflow like "How to add tests" should be documented (eg.: [[add-tests]]). The same goes for project documentation (which normally would use [[Emanote]]).
+
+## Keep [[Nix]] as simple as possible
+
+I wish to keep all the Nix code (`flake.nix`) as small and simple as possible. This is why much of the Nix is delegated to [[haskell-flake]]. Consequently, it also becomes easier for the user to do some Nix-based Haskell workflows (I'm yet to document these).
+
+> [!tip] TODO Explain the usefulness `flake-parts` (and thus `haskell-flake` and `mission-control`)
+> 
+> - To keep Nix code simple by modularizing orthogonal features. Especially in monorepos. 
+> - Nix itself may get a modue system for flakes. Unti then, `flake-parts` is relevant.
+
+===
+
+<!-- Source: KB/Software/Haskell/haskell-template/remove-relude.md -->
+<!-- URL: https://srid.ca/haskell-template/relude -->
+<!-- Title: Removing relude -->
+<!-- Wikilinks: [[KB/Software/Haskell/haskell-template/remove-relude]], [[Software/Haskell/haskell-template/remove-relude]], [[Haskell/haskell-template/remove-relude]], [[haskell-template/remove-relude]], [[remove-relude]] -->
+
+---
+slug: haskell-template/relude
+---
+
+# Removing `relude`
+
+[[haskell-template]] uses #[[Relude]] as the alternative "prelude" due to convenience and safety. I recommend that you use relude. However, if you want to remove it, you can do so as follows:
+
+- In the `.cabal` file:
+  - Remove `relude` from the `build-depends` section.
+  - Remove the `mixins` section entirely.
+- In the `.hlint.yaml` file, delete all lines from the line that reads "Relude's .hlint.yaml goes here".
+- Open `src/Main.hs` and replace any relude functions with their `base` equivalents. 
+  - For example, `putTextLn` becomes `putStrLn`.
+
+===
+
+<!-- Source: KB/Software/Haskell/haskell-template/start.md -->
+<!-- URL: https://srid.ca/haskell-template/start -->
+<!-- Title: Getting started -->
+<!-- Wikilinks: [[KB/Software/Haskell/haskell-template/start]], [[Software/Haskell/haskell-template/start]], [[Haskell/haskell-template/start]], [[haskell-template/start]], [[start]] -->
+
+---
+slug: haskell-template/start
+---
+
+# Getting started
+
+## First-time setup
+
+If this is your first time using [[Nix]] or [[haskell-template]] (or a project based on it) you will initially need to setup a few things on your system.
+
+### Nix
+
+- [Install Nix](https://nixos.asia/en/install) (version must be 2.8 or greater) 
+    - If you are using Windows, you may install Nix [under WSL2](https://nixos.wiki/wiki/Nix_Installation_Guide#Windows_Subsystem_for_Linux_.28WSL.29) 
+- In the project directory, run `nix develop -i -c haskell-language-server` to sanity check your environment.
+  - This will download the required dependencies and cache them to the local Nix store. If it succeeds, it means everything's good.
+- [Install direnv](https://nixos.asia/en/direnv)
+  - **NOTE**: If you choose not to use direnv, you must launch VSCode from _inside_ of `nix develop` shell.
+
+### VSCode
+
+While you may use any text editor with language-server support, we will use [[VSCode]] because it is generally the easiest way to get started.
+
+- Launch [[VSCode]], and open the `git clone`'ed project directory [as single-folder workspace](https://code.visualstudio.com/docs/editor/workspaces#_singlefolder-workspaces)
+  - NOTE: If you are on Windows, you must use the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) to open the folder in WSL.
+- When prompted by VSCode, install the [workspace recommended](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions) extensions.
+    - The direnv extension will load the nix shell.
+     - The extension will ask you to restart VSCode at the end. Do it.
+
+## Running in VSCode
+
+Once the project has been reloaded in VSCode, you are ready to start developing it. But first, it is useful to sanity check a few things:
+
+### Test that [[haskell-language-server]] works
+
+- Open `src/Main.hs`. 
+  - Notice [[haskell-language-server]] launching in the footer (you should see "*Processing (1/2)*"), and wait for it finish.
+- Hover your mouse over something, say `putTextLn`, and see the hover tooltip giving you the type signature.
+    - This means the IDE support works!
+
+### Test that [[ghcid]] works
+
+- Launch the terminal inside VSCode
+- Run `nix develop` shell and run `just run`.
+    - This will launch [[ghcid]] to run the `main` entrypoint in `src/Main.hs`. 
+- Modify `src/Main.hs` and save it.
+
+This should have `just run` instantly re-compile and re-run the program.
+
+Note: you can also press <kbd>Ctrl+Shift+B</kbd> to run `just run`.
+
+## Rename the project
+
+Finally, if you are going to be using this template for a real project, you should rename it.
+
+```sh
+NAME=myproject
+# First, click the green "Use this template" button on GitHub to create your copy
+# You may name the new repository to be the same as $NAME
+git clone <your-clone-url> $NAME
+cd $NAME
+
+
+# Copy-paste these 4 lines at the same time
+git mv haskell-template.cabal ${NAME}.cabal
+nix run nixpkgs\#sd -- haskell-template ${NAME} * */*
+echo "# ${NAME}\n\n" > README.md
+git add . && git commit -m rename
+```
+
+## Next steps
+
+See [[haskell-template]] for further documentation.
+
+
+===
+
+<!-- Source: KB/Software/Haskell/hlint.md -->
+<!-- URL: https://srid.ca/hlint -->
+<!-- Title: hlint -->
+<!-- Wikilinks: [[KB/Software/Haskell/hlint]], [[Software/Haskell/hlint]], [[Haskell/hlint]], [[hlint]] -->
+
+---
+slug: hlint
+---
+
+
+===
+
+<!-- Source: KB/Software/Helix.md -->
+<!-- URL: https://srid.ca/helix -->
+<!-- Title: Helix -->
+<!-- Wikilinks: [[KB/Software/Helix]], [[Software/Helix]], [[Helix]] -->
+
+---
+slug: helix
+---
+
+Helix, *a post-modern modal text editor*, written in [[Rust]].
+
+https://helix-editor.com/
+
+## External links
+
+- [My Helix config](https://github.com/srid/nixos-config/blob/master/home/helix.nix) in [[Nix]]
+
+===
+
+<!-- Source: KB/Software/Hyprland.md -->
+<!-- URL: https://srid.ca/hyprland -->
+<!-- Title: Hyprland -->
+<!-- Wikilinks: [[KB/Software/Hyprland]], [[Software/Hyprland]], [[Hyprland]] -->
+
+---
+slug: hyprland
+---
+
+https://hyprland.org/
+
+The best tiling window manager I've use (better than [[XMonad]] even). 
+
+My [[Nix]] Hyprland config: https://github.com/srid/nixos-config/tree/master/modules/nixos/linux/gui/hyprland
+
+===
+
+<!-- Source: KB/Software/Linux.md -->
+<!-- URL: https://srid.ca/linux -->
+<!-- Title: Linux -->
+<!-- Wikilinks: [[KB/Software/Linux]], [[Software/Linux]], [[Linux]] -->
+
+---
+slug: linux
+---
+
+```query
+path:./*
+```
+
+===
+
+<!-- Source: KB/Software/Linux/Clear Linux.md -->
+<!-- URL: https://srid.ca/clear-linux -->
+<!-- Title: Clear Linux -->
+<!-- Wikilinks: [[KB/Software/Linux/Clear Linux]], [[Software/Linux/Clear Linux]], [[Linux/Clear Linux]], [[Clear Linux]] -->
+
+---
+slug: clear-linux
+---
+
+[Clear Linux](https://clearlinux.org/) is an optimized Linux distribution by Intel.
+
+It performs better than [[NixOS]] as desktop experience on [[X1C7]], thus improving on [[X1C7 - Moderate Performance]]. In addition, the system is much more reliable, such as there not being any [[X1C7 WiFi issue]] (or Thunderbolt issues) so far.
+
+## App notes
+
+- If using NVIDIA, its proprietary drivers must be [manually installed](https://docs.01.org/clearlinux/latest/zh_CN/tutorials/nvidia.html) (be sure to copy the long CLI commands in a text file before rebooting the computer post-nouveau-deactivation to avoid having to type them all)
+- **Brave** browser: needs to be [manually updated](https://community.clearlinux.org/t/installing-brave-browser-on-clear-linux/1131)
+- [[VSCode]] 
+  - Flatpak install has broken terminal shell (uses some sandboxed shell); install vscode [using .rpm](https://community.clearlinux.org/t/best-way-to-install-rpms/5036) instead.
+  - settings sync: GitHub opens a new VSCode instance, and thus breaks. Manually copy-pasting the auth token in the original window works.
+    - Sometimes also [Error code 801](https://github.com/microsoft/vscode-pull-request-github/issues/1221)
+
+## External links
+
+- [NixOS tracker discussion](https://github.com/NixOS/nixpkgs/issues/63708) on adopting Clear Linux patches
+
+===
+
+<!-- Source: KB/Software/Linux/Encrypted Virtual Folder in Linux.md -->
+<!-- URL: https://srid.ca/vf.enc -->
+<!-- Title: Encrypted Virtual Folder in Linux -->
+<!-- Wikilinks: [[KB/Software/Linux/Encrypted Virtual Folder in Linux]], [[Software/Linux/Encrypted Virtual Folder in Linux]], [[Linux/Encrypted Virtual Folder in Linux]], [[Encrypted Virtual Folder in Linux]] -->
+
+---
+slug: vf.enc
+---
+
+
+Create a virtual folder (`~/foo`) from an encrypted file `~/foo.img`:
+
+```bash
+# Create ~/private that is encrypted
+NAME=private
+SIZE=100M
+
+# First-time setup
+dd if=/dev/urandom of=~/${NAME}.img bs=$SIZE count=1 iflag=fullblock
+
+LOOP=$(losetup --find)
+sudo losetup $LOOP ~/${NAME}.img
+sudo cryptsetup luksFormat $LOOP
+sudo cryptsetup open $LOOP $NAME
+sudo mkfs.ext4 /dev/mapper/$NAME
+mkdir ~/$NAME
+
+# Mount
+sudo cryptsetup open $LOOP $NAME
+sudo mount -t ext4 /dev/mapper/$NAME ~/$NAME
+
+# Then, after reboots:
+LOOP=$(losetup --find)
+sudo losetup $LOOP ~/${NAME}.img
+sudo cryptsetup open $LOOP $NAME
+sudo mount -t ext4 /dev/mapper/$NAME ~/$NAME
+```
+
+## TODO
+
+-  [[Nix|Nixify]] this
+- Avoid having to `chown -R $USER` inside mounted dir?
+- What does it take to resize later? Can we do it unbounded from beginning?
+
+## References
+
+- https://wiki.archlinux.org/title/Dm-crypt/Encrypting_a_non-root_file_system
+
+
+===
+
+<!-- Source: KB/Software/Linux/Linux logs from previous boot.md -->
+<!-- URL: https://srid.ca/linux-logs-boot -->
+<!-- Title: Linux logs from previous boot -->
+<!-- Wikilinks: [[KB/Software/Linux/Linux logs from previous boot]], [[Software/Linux/Linux logs from previous boot]], [[Linux/Linux logs from previous boot]], [[Linux logs from previous boot]] -->
+
+---
+slug: linux-logs-boot
+tags: [micro]
+date: 2021-01-23
+---
+
+On a #[[Linux]] system managed by [systemd], its [Journal] feature manages the logs for everything from kernel to user level services.  These logs can be accessed using the [`journalctl`] command. The particular query of interest is to retrieve kernel logs from the time *before* current boot.
+
+To display all log messages across all services and components, but since the current boot:
+
+```bash
+journalctl -b
+```
+
+The `-b` arguments specifies the boot ID, which can be obtained from the first column of the output of `journalctl --list-boots`. The current boot's ID is 0, and the previous boot's ID is -1, and so on. 
+
+If you just did a **cold reboot following a system crash**, you get the logs prior to crash by retrieving the logs for boot ID -1:
+
+```bash
+journalctl -b -1
+```
+
+Be warned that this displays logs from *all* components and services. Typically to investigate a system crash you only need the kernel logs; the `-k` option will filter out everything bug kernel messages.
+
+```bash
+journalctl -b -1 -k
+```
+
+This will open `less` in which you may press `GG` to go the end of the logs. This can be automated by explicitly piping to `less +G` (whilst forcing colored output on both ends of the pipe):
+
+```bash
+SYSTEMD_COLORS=1 journalctl -b -1 -k | less +G -r
+```
+
+Use <kbd>j</kbd> and <kbd>k</kbd>, as well as <kbd>Ctrl+U</kbd> and <kbd>Space</kbd>, to page through the logs.
+
+[systemd]: https://wiki.archlinux.org/index.php/systemd
+[Journal]: https://wiki.archlinux.org/index.php/Systemd/Journal
+[`journalctl`]: https://www.loggly.com/ultimate-guide/using-journalctl/
+
+
+===
+
+<!-- Source: KB/Software/Linux/NixOS.md -->
+<!-- URL: https://srid.ca/nixos -->
+<!-- Title: NixOS -->
+<!-- Wikilinks: [[KB/Software/Linux/NixOS]], [[Software/Linux/NixOS]], [[Linux/NixOS]], [[NixOS]] -->
+
+---
+slug: nixos
+---
+
+NixOS is a #[[Linux]] distribution based on the purely functional [[Nix]]# package manager, with declarative configuration.
+
+## Configuration
+
+My NixOS config: https://github.com/srid/nixos-config
+
+## Community
+
+Join the NixOS Asia Zulip: https://nixos.asia/en
+
+>[!warning]
+> I _do not_ recommend the official avenues: Matrix & Discourse ([[nixos-woke-invasion|why not?]])
+
+## Pages
+
+```query
+children:.
+```
+
+
+===
+
+<!-- Source: KB/Software/Linux/NixOS/A NixOS container for ProtonVPN.md -->
+<!-- URL: https://srid.ca/protonvpn-nixos-container -->
+<!-- Title: A NixOS container for ProtonVPN -->
+<!-- Wikilinks: [[KB/Software/Linux/NixOS/A NixOS container for ProtonVPN]], [[Software/Linux/NixOS/A NixOS container for ProtonVPN]], [[Linux/NixOS/A NixOS container for ProtonVPN]], [[NixOS/A NixOS container for ProtonVPN]], [[A NixOS container for ProtonVPN]] -->
+
+---
+slug: protonvpn-nixos-container
+tags: [micro]
+date: 2021-03-03
+---
+
+:::{.page-note}
+**NOTE**: This article is incorrect, but you should use `nixos-shell`; see [instructions here](https://github.com/srid/nixos-config/pull/14).
+:::
+
+#[[NixOS]]'s [declarative container management](https://nixos.org/manual/nixos/stable/#ch-containers) provides a way to *declaratively* configure an *entire* (NixOS) Linux system to be run inside the host. Below you will find the Nix config that configures a new container named "vpn" in the following way:
+
+- Add the specified system packages
+- Add the specified user
+
+Of course, you can do more - such as adding systemd services, configuring firewall, etc. But for this post, we are interested only in creating an **isolated system** that will connect to a VPN network whilst leaving the rest of your computer remain connected without VPN[^dis]. 
+
+```nix
+  containers.vpn = { 
+    config =  { config, pkgs, ... }: {
+      environment.systemPackages = with pkgs; [
+        protonvpn-cli  # Our VPN client
+        tmux
+        youtube-dl
+        aria
+      ];
+      users.extraUsers.user = {
+        isNormalUser = true;
+        uid = 1000;
+      };
+    };
+  };
+```
+
+Add the above to your host's `configuration.nix`, and then `nixos-rebuild switch`. Now you can start the container as:
+
+```sh
+sudo nixos-container start vpn
+```
+
+And access its root shell as:
+
+```sh
+sudo nixos-container root-login vpn
+```
+
+From within the root shell, you will want to login to your [ProtonVPN](https://protonvpn.com/) account:
+
+```sh
+protonvpn init
+```
+
+Connect to VPN,
+
+```sh
+protonvpn c --fastest
+```
+
+And then login as a non-root user (important!) with tmux:
+
+```sh
+su - user -c "tmux new -A"
+```
+
+From here, you can use your favourite network clients to access the outside world through VPN.
+
+[^dis]: In particular, the `protonvpn` Linux client is not always reliable over long-time; it is not uncommon to find my home-server host unreachable from the outside due to a frozen VPN connection. 
+
+===
+
+<!-- Source: KB/Software/Linux/NixOS/Blocking social media in NixOS.md -->
+<!-- URL: https://srid.ca/block-social-media -->
+<!-- Title: Blocking social media in NixOS -->
+<!-- Wikilinks: [[KB/Software/Linux/NixOS/Blocking social media in NixOS]], [[Software/Linux/NixOS/Blocking social media in NixOS]], [[Linux/NixOS/Blocking social media in NixOS]], [[NixOS/Blocking social media in NixOS]], [[Blocking social media in NixOS]] -->
+
+---
+slug: block-social-media
+tags: [micro]
+date: 2021-04-16
+---
+
+Add this to your #[[NixOS]] Linux `configuration.nix`:
+
+```nix
+{
+  networking.extraHosts =
+    ''
+      127.0.0.1 reddit.com
+      127.0.0.1 www.reddit.com
+      127.0.0.1 np.reddit.com
+      127.0.0.1 old.reddit.com
+      127.0.0.1 www.old.reddit.com
+
+      127.0.0.1 news.ycombinator.com
+      127.0.0.1 hckrnews.com
+
+      127.0.0.1 twitter.com
+      127.0.0.1 www.twitter.com
+      127.0.0.1 mobile.twitter.com
+    '';
+}
+```
+
+- On [[Windows]], the file to modify is `c:\windows\system32\drivers\etc\hosts`.
+- On [[macOS]], the file to modify is `/private/etc/hosts`
+
+===
+
+<!-- Source: KB/Software/Linux/NixOS/Lightweight Linux VMs on NixOS.md -->
+<!-- URL: https://srid.ca/lxc-nixos -->
+<!-- Title: Lightweight Linux VMs on NixOS -->
+<!-- Wikilinks: [[KB/Software/Linux/NixOS/Lightweight Linux VMs on NixOS]], [[Software/Linux/NixOS/Lightweight Linux VMs on NixOS]], [[Linux/NixOS/Lightweight Linux VMs on NixOS]], [[NixOS/Lightweight Linux VMs on NixOS]], [[Lightweight Linux VMs on NixOS]] -->
+
+---
+slug: lxc-nixos
+tags: [blog]
+date: 2020-03-25
+---
+
+>[!warning]
+>I now use `incus` over `lxc`. Accordingly, this page needs an update; but for now, see [srid/nixos-config](https://github.com/srid/nixos-config/tree/master/modules/flake-parts/incus-image).
+
+
+>[!note]
+> If you wish to run #[[NixOS]] container on a NixOS host, checkout NixOS's [declarative container management](https://nixos.org/manual/nixos/stable/#ch-containers) which may be a more appealing option than LXD. For VMs, see [microvm.nix](https://github.com/astro/microvm.nix).
+
+
+Often I find myself needing a *pristine* Linux system for testing some program that is expected to work on a user's machine with an environment that is possibly quite different to mine. I could spin up a virtual machine, but that is too heavyweight. Alternatively, I could use Docker, but a Docker container is conceptually more of a process and less of a system. 
+
+Enter [LXD](https://linuxcontainers.org/lxd/introduction/), which advertises itself as offering a *"user experience similar to virtual machines but using Linux containers instead."* Or, as [u/Floppie7th](https://old.reddit.com/r/selfhosted/comments/b50h9t/docker_vs_lxd/) puts it, *"LXD makes 'pet' containers. Basically, VMs without the virtual hardware and extra kernel."* In other words, LXD allows us to spin up lightweight (Linux) VMs on a Linux machine, where one cares more about the separation of userland than hardware or kernel.
+
+## Installing lxd 
+
+On NixOS, you can install LXD by adding `virtualisation.lxd.enable = true;` to your configuration.nix. You might also want to add yourself to the `lxd` user group so as to not have to use `sudo` when running the `lxc` command. Add these to your `configuration.nix`:
+
+```nix
+  virtualisation.lxd.enable = true;
+
+  users.users.srid = {
+    extraGroups = [ "lxd" ];
+  };
+```
+
+## Initial setup
+
+Run `sudo lxd init` to initialize LXD.
+
+## Running a Ubuntu container
+
+Let us run a bare Ubuntu container to get started:
+
+```bash
+# You might first have to run `lxd init` to initialize LXD
+#
+# You can run `lxc image list images: | grep ubuntu` to see availablke images
+#
+lxc launch ubuntu:noble pristine -c security.nesting=true
+```
+
+(Note that `security.nesting` flag is being enabled so that we may be able to install Nix later; you may leave it disabled if you would not be using Nix).
+
+We named the container "pristine", and you can check its status in `lxc list`---it should be in the RUNNING state.
+
+### Entering the container 
+
+This will drop us in the root shell:
+
+```bash
+lxc exec pristine -- /bin/bash
+```
+
+However, usually, it is better to create a user account (with sudo access) first, and then use it:
+
+```bash
+lxc exec pristine -- adduser --shell /bin/bash --ingroup sudo srid
+```
+
+Then you may directly log in as that user as follows:
+
+```bash
+lxc exec pristine -- su - srid -c 'tmux new-session -A -s main'
+```
+
+Note that we use `tmux` so that programs requiring tty will work correctly.
+
+
+### Installing Nix 
+
+Assuming you have enabled the `security.nesting` flag on the container, you should now be able to [install Nix](https://github.com/DeterminateSystems/nix-installer).
+
+I use Nix to develop and install my programs, so the above is all I need to do in order to begin testing them on a pristine Linux machine without much fanfare.
+
+## Running a NixOS container
+
+The official image server for LXD does not support NixOS. However, we can build our own using [nixos-generators](https://github.com/nix-community/nixos-generators). Let's wrap the commands in a script (call it [`buildLxcImage.sh`](https://github.com/srid/nix-config/blob/adce2673d6f2fdf6dfd9466612a71fda6da72961/device/lxc/buildLxcImage.sh)):
+
+```bash
+#! /usr/bin/env nix-shell
+#! nix-shell -p nixos-generators
+#! nix-shell -i bash
+set -xe
+
+CONFIGURATIONNIX=$1
+METAIMG=`nixos-generate -f lxc-metadata`
+IMG=`nixos-generate -c ${CONFIGURATIONNIX} -f lxc`
+
+lxc image delete nixos || echo true
+lxc image import --alias nixos ${METAIMG} ${IMG}
+```
+
+You will need a `configuration.nix` (see [mine][lxc.nix]) to build a NixOS image, using this script:
+
+[lxc.nix]: https://github.com/srid/nix-config/blob/adce2673d6f2fdf6dfd9466612a71fda6da72961/device/lxc.nix
+
+```bash
+# Builds the "nixos" lxc image
+./buildLxcImage.sh configuration.nix
+```
+
+Then launch a container:
+
+```bash
+lxc launch nixos childnixos -c security.nesting=true
+```
+
+Access its root shell:
+
+```bash
+lxc exec childnixos -- /run/current-system/sw/bin/bash
+```
+
+If the configuration.nix also declares a user account, you can instead directly log in as that user:
+
+```bash
+lxc exec childnixos -- /run/current-system/sw/bin/su - srid  \
+  -c 'tmux new-session -A -s main'
+```
+
+
+
+===
+
+<!-- Source: KB/Software/Linux/NixOS/nixos-woke-invasion.md -->
+<!-- URL: https://srid.ca/nixos-woke -->
+<!-- Title: NixOS Woke Invasion -->
+<!-- Wikilinks: [[KB/Software/Linux/NixOS/nixos-woke-invasion]], [[Software/Linux/NixOS/nixos-woke-invasion]], [[Linux/NixOS/nixos-woke-invasion]], [[NixOS/nixos-woke-invasion]], [[nixos-woke-invasion]] -->
+
+---
+slug: nixos-woke
+---
+
+# NixOS Woke Invasion
+
+#[[woke-invasion|Woke invasion]] of the [[NixOS|NixOS]] #[[Community|community]] can be traced back to as early as April, 2021 ([1][origin1], [2][origin2]). It appears to have reached its zenith in April, 2024 when the woke moderation team's mischiefs [reached the public eye](https://news.ycombinator.com/item?id=40166912).
+
+On May 1st, 2024, the Board decided to delegate powers to an unspecified "community" (see "Eelco steps down" below), leading to the formation of the "Steering Committee" on November 2024 - however it remains to be seen as to what exactly this will engender.
+
+[origin1]: https://discourse.nixos.org/t/nursing-a-thriving-community/12742
+[origin2]: https://github.com/NixOS/nixpkgs/pull/120729#discussion_r621116027
+
+
+## Timeline
+
+Notable events since Nov, 2023:
+
+| Date                                                                             | Event                                                                                                                                                                           |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[nixos-mod\|2023-11-14]]                                                        | Author gets banned for ideological reasons                                                                                                                                      |
+| [2024-01-28](https://twitter.com/sridca/status/1751586790425895377)              | Witch-hunt by NixOS moderator Martin Weinelt (hexa) to get the entire [NixOS Asia](https://nixos.asia/en/) domain, as well as Srid, banned from the [[Lobste.rs]] site          |
+| [2024-02-12](https://twitter.com/sridca/status/1757055395183374667)              | Report of the moderators perma-banning David Arnold                                                                                                                             |
+| [2024-03-10](https://twitter.com/sridca/status/1766944228129575327)              | Continued criticism of the mod team by community members; a NixOS moderator "piegamesde" publicly accuses Srid of being [[Gender Ideology\|"transphobic"]]                      |
+| [2024-03-20](https://twitter.com/sridca/status/1771523366983196975)              | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism                            |
+| [2024-04-22](https://twitter.com/sridca/status/1782200842571198962)              | Attempt to depose Eelco Dolstra                                                                                                                                                 |
+| [2024-04-26](https://news.ycombinator.com/item?id=40204985)                      | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes); moderators begin resigning (see below)                    |
+| [2024-05-01](https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/)  | Eelco steps down                                                                                                                                                                |
+| [2024-05-01](https://github.com/NixOS/foundation/pull/142)                       | [Zulip](https://nixpkgs.zulipchat.com/) is chosen for governence discussions (allowing banned members with *"extreme prejudice"* and threat of permaban *"[if] they blow it""*) |
+| [2024-11-08](https://github.com/NixOS/moderation/commits/main/)                  | Both authors of RFC 175 get permanently banned                                                                                                                                  |
+| [2024-11-21](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) | SC kicks off their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_)                                                                          |
+
+{#moderation}
+## Moderation team
+
+{#mod-evidence}
+### Evidence of woke moderation
+
+Consult [the appendix of RFC 175](https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md) to read the concrete evidence for woke moderation in the NixOS community.
+
+### Resignations
+
+Just a few hours after the PR for RFC 175 was opened, several moderators began to resign from the team:
+
+| Date                                                                                                   | Name                        |
+| ------------------------------------------------------------------------------------------------------ | --------------------------- |
+| [2024-04-26](https://old.reddit.com/r/NixOS/comments/1cfv8vo/moderation_nogo_zones/l1v9fhl/?context=3) | Ryan Mulligan               |
+| [2024-04-28](https://discourse.nixos.org/t/taking-a-step-back/44243)                                   | piegames                    |
+| [2024-05-01](https://discourse.nixos.org/t/resigning-from-the-moderation-team/44607)                   | rhendric (Ryan Hendrickson) |
+
+As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only moderators.
+
+{#boardgg}
+## Board member resignations
+
+4/5 board members have so far quit, leaving Ron as the only one left.
+
+| Date | Name |
+| -- | -- |
+| [2024-04-30](https://discourse.nixos.org/t/nixos-foundation-board-giving-power-to-the-community/44552) | Eelco Dolstra |
+| [2024-03-11](https://x.com/sridca/status/1767171520428728645) | Domen Kozar |
+| [2024-06-07](https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644) | Jonas Chevalier |
+| [2024-06-28](https://discourse.nixos.org/t/time-to-step-down/47835) | Théophane Hufschmitt |
+
+{#ca}
+## Timeline
+
+:::{class="text-xs opacity-30 hover:opacity-100"}
+
+### May
+
+- Self-professed manipulator joepie91 (Sven Slootweg) is involved from beginning
+- Preemptive squashing of dissenting opinions: https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25
+- Allowing safetyism-based silencing & banning: https://github.com/NixOS/foundation/pull/144#discussion_r1588136289
+  - cf. shlevy <-> zimbatm [on Matrix](https://matrix.to/#/!VyoUhyWvlhSpFWWxHL:matrix.org/$P7-nlgSP0QVA7W6qPPUZddmnXxRYW5d67EVfjKO-RiQ?via=nixos.org&via=matrix.org&via=nixos.dev)
+- A predominantly woke moderation team (6 of them from Europe, incidentally) was chosen to moderate the Zulip: https://github.com/NixOS/foundation/pull/144#issuecomment-2091819630
+  - infinisil was quite sensible, until to the point of ceding to banning Shea Levy (see below)
+  - RaitoBezarius is woke.
+  - hexa is woke.
+  - Janik is woke
+  - [endocrimes](https://toot.cat/@endocrimes) is woke (responsible for banning Shea)
+  - lassulus (unknown yet; but did relay the spurious message justifying Jon's ban)
+- Zulip topis of interest
+  - [constitutional assembly > Selection criteria: marginalized groups](https://nixpkgs.zulipchat.com/#narrow/stream/435937-constitutional-assembly/topic/Selection.20criteria.3A.20marginalized.20groups)
+  - [governance > Fundamental Principles](https://nixpkgs.zulipchat.com/#narrow/stream/435724-governance/topic/Fundamental.20Principles)
+- Shea Levy got banned (infinisil folded to the rest of the moderators)
+  - https://old.reddit.com/r/NixOS/comments/1cndnyw/broken_promises_the_nix_governance_discussions/
+  - https://old.reddit.com/r/NixOS/comments/1cn60v1/shea_levy_has_been_suspended_from_the_governance/
+  - https://old.reddit.com/r/NixOS/comments/1cqic4w/report_on_nixos_governance_discussions/
+- Assembly applications open https://old.reddit.com/r/NixOS/comments/1cojgjs/applications_for_nixos_constitutional_assembly/
+- Assembly announced: https://old.reddit.com/r/NixOS/comments/1ct3tdb/nixos_foundation_board_constitutional_assembly/
+  - several months before their work is done, and the results can be appraised.
+- delroth publicly accusing Shea Levy of being 'fascist' https://mastodon.delroth.net/@delroth/112450680035780629
+- Someone's calling out of recent (biased) mod actions https://x.com/sridca/status/1792321271608328487
+- Calls to drop r/NixOS from nixos webpages; samueldr banning individuals from the wiki for political reasons: https://x.com/sridca/status/1793489723882664111
+    - https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/
+    - sock-puppets of woke users trying to worsen the drama, e.g.: `https://old.reddit.com/user/Prudent_Confidence14`
+- May 30: Raito dogpiles on nix 2.18 -> 2.22 PR: https://github.com/NixOS/nixpkgs/pull/315262
+- May 30: Irene claims to be "closely associated" with the NixOS drama (despite not publicly engaging with it outside of signing the save-nix-together letter): https://lobste.rs/s/vyprdq/nixos_24_05_released#c_pxv3sb
+
+### June
+
+- Jun 4: zimbatm removes Srid from nix-system org (also replying to him on X) and blocks him on GitHub; Srid is (coincidentally?) banned from nix-community GitHub org on the same day: https://x.com/sridca/status/1798025800798683161
+- Jun 7: zimbatm [formally announces leaving Foundation](https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644) writing *"I also messed up in many places [..] the worst part was all the conflicts that erupted in the community that I couldn’t address adequately. That was difficult. Many people got hurt emotionally. I’m sorry I failed there."*
+- Jun 10: [Target date, public repo, office hours, interviews](https://discourse.nixos.org/t/target-date-public-repo-office-hours-interviews/46827)
+- Jun 11: After his suspension, [Jon Ringer comments on RFC 175](https://x.com/jonringer117/status/1800644896920945146)
+- Jun 17: (word of mouth) Ron apparently is the only one running the Board (Théophane silently quit)
+- Jun 19: Jon Ringer's request to restore commit access (which was removed when he was suspended) gets brigaded by woke mob https://x.com/sridca/status/1803545277284143252
+    - wokies threaten to quit if Jon is not banned gain.
+    - Domen gets threatened by Jade ([comment link](https://old.reddit.com/r/NixOS/comments/1dku0l0/i_must_note_rnixos_is_a_moderation_free_zone/?cache-bust=1718978771090))
+    - Jon gets his commit bit back, but not yet Tim
+    - samuel [ragequits](https://discourse.nixos.org/t/maintainers-drop-samueldr-321436/47354) and engages in sabotoge by deleting several packages from `nixpkgs`
+- June 21:
+  - Jon is permabanned https://x.com/sridca/status/1804188339244843120
+    - https://old.reddit.com/r/NixOS/comments/1dloahg/constitutional_assembly_statement_on_jon_ringer/
+  - r/nixos [reportedly](https://x.com/_DavSanchez/status/1804187182770311552) begins to get moderated by unknown users (mods list is private and hidden) with posts being hidden or removed.
+    - On the same day, [Lassulus](https://old.reddit.com/user/Lassulus) (the new mod and CA member) [resurrects](https://old.reddit.com/r/NixOS/comments/1dl5rxe/list_of_open_source_games_and_their_status_on/l9mm01p/?context=3) his reddit account which had been inactive for 6 years
+    - Unclear if Domen played a role: https://x.com/sridca/status/1804506753876299924
+  - Domen ragequits in giving commit access, because mod action wasn't not taken on his attacker (welcome to the club), Jade: https://github.com/NixOS/nixpkgs/issues/50105#issuecomment-2183067965
+  - Ongoing vandalism on nixos.wiki as well as impersonation by wokies (links to be added)
+    - Jul 27: Impersonation of Shivaraj on nixos.wiki purloining this very page: https://old.reddit.com/r/NixOS/comments/1ed5gbc/the_nixos_conflict_in_under_5_minutes/lf70qh1/?context=3
+    - Jul 22: Impersonation of Srid on an entirely unrelated community: https://x.com/sridca/status/1815545168982130707
+    - Nov 7: "isabelroses" brings up the impersonated page for political gain: https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489/110
+- Jun 22: Following Jon's ban, Hexa talking "purge" https://x.com/sridca/status/1804533789760037221
+  - In response to Srid's post, Hexa reveals himself as an antifa on the same day, https://x.com/sridca/status/1807516430260113904
+- Jun 27: spamming of github repos to switch away from unofficial wiki: https://github.com/NixOS/nixos-wiki-infra/issues/105
+- Jun 28: Another board member, Théophane Hufschmitt, steps down writing *"I have also been deeply hurt by some behaviours, when people considered that pushing for their own idea of a successful community was worth spreading hate, defamation, fear and exclusion, or by the (too recurrent) thinking that one’s own agenda was more important than honesty, truth, and care for the others."*: https://discourse.nixos.org/t/time-to-step-down/47835
+    - This leaves Ron as the only board member: https://x.com/sridca/status/1806706500234039792
+- Jun 29: Domen and Graham fight out the blame game, while Domen continues to talk freely while utterly failing in leadership actions: https://x.com/sridca/status/1807063291132309905 & https://x.com/grhmc/status/1806997486621405227
+- Jun 29: Domen, Shea, Graham publicly talking about commercial fork/consortium https://x.com/domenkozar/status/1807047507404312592
+
+### July
+
+- Jul 1: Infinisil concedes what went wrong, and promises to do better by collaborating with Jon; further woke fallout (more ragequits): https://x.com/sridca/status/1807842730132795653
+  - More ragequits follow: https://old.reddit.com/r/NixOS/comments/1dtqlga/maintainers_exodus_over_recent_events/
+    - Yet, in all factuality, there extortion is empty rhetoric: https://old.reddit.com/r/NixOS/comments/1e0clk6/growth_in_nixpkgs_maintainers_jul_2020_to_present/
+- Jul 3: First media report on the core issue (political activism): https://old.reddit.com/r/NixOS/comments/1dul0nw/nixos_commits_purge_of_nazi_contributors_forces/ which gets censored on Discourse https://x.com/sridca/status/1808577121465303149
+  - The reddit submittion gets shadowlisted in a day (by Domen?)
+- Jul 3: Sometime recently (in the last 3 weeks), Jonas Chevalier blocks Srid from the entire GitHub organization of his consultancy (Numtide): https://x.com/sridca/status/1808605343674450157
+- Jul 6: Tim [Political Bikeshedding: NixOS Edition](https://nrd.sh/blog/nixos-policy-breakdown/)
+- Jul 11: [Lix post gets flagged on HN](https://news.ycombinator.com/item?id=40932996); their bigotted beliefs get called out [elsewhere](https://lobste.rs/s/1hrh4a/announcing_lix_2_90_vanilla_ice_cream#c_gyzzmv) (albeit on a community which itself is moderated by a bigotted group)
+- Jul 13: /r/NixOS begins testing AI to assist with moderation (based on NixOS CoC): https://old.reddit.com/r/NixOS/comments/1e27pxq/automated_moderation/
+  - Jul 21: And approaching failure: https://old.reddit.com/r/NixOS/comments/1e885up/an_argument_against_the_use_of_watchdog_chatbot/
+- July 18: Ron posts _"[The board] is now smaller than it once was. I would love to extend a call to action for those interested in helping out."_ https://discourse.nixos.org/t/call-to-action-interim-volunteers-for-nixos-foundation-efforts/49269
+- July 5 (discovered on Jul 26): Chris posts [The NixOS Conflict in Under 5 Minutes](https://x.com/sridca/status/1817028976226791775)
+
+### Aug
+
+- Aug 1: NCA publishes Nix Community Values draft for feedback. Ryan comments publicly. https://old.reddit.com/r/NixOS/comments/1eh8s7i/nix_community_values_draft_for_feedback_before/
+
+### Sept
+
+- Sep 10: Nix 2.24 vulnerability drama, mostly from Lix people
+  - https://news.ycombinator.com/item?id=41492994
+  - https://lobste.rs/s/ixb3v7/nix_2_24_is_vulnerable_remote_privilege
+  - Causing a Nix team member (Robert) to [object](https://functional.cafe/@roberth/113109319874108408) & then [apologize](https://functional.cafe/@roberth/113113241888848304)
+- Sep 10: [Last call for feedback; Nix Governance Constitution to be finalised on 2024-09-16](https://old.reddit.com/r/NixOS/comments/1fd4bmk/last_call_for_feedback_nix_governance/)
+- Sep 19: SC election nominees are substantially wokies (which ought to be unsurprising given the political nature of this takeover), as of Sep 19: https://github.com/NixOS/SC-election-2024/pulls?q=is%3Apr+Nominate
+- Sep 29: Evidence of bigoted beliefs among candidates resurface: https://x.com/sridca/status/1840385121578291680
+
+### Oct
+
+- Oct 14: Tampering of the voting system and eventual deadline extension: https://old.reddit.com/r/NixOS/comments/1g6s0mc/nix_elections_voting_open_until_20241103/lslmdrs/?context=3
+- Oct 20: Two SC candidates have CoI with the activist fork Lix, https://old.reddit.com/r/NixOS/comments/1g801r9/lix_forking_nixosnixpkgs/
+- Oct 20: A SC candidate demonstrates bigotry openly against a community member: https://x.com/GabriellaG439/status/1850915429050708063
+- Oct 27: Domen ("I won’t be contributing to Nix anymore and will put my efforts into Tvix") [attacks](https://old.reddit.com/r/NixOS/comments/1ge2rkb/domen_i_wont_be_contributing_to_nix_anymore_and/) DetSys; [Graham responds](https://discourse.nixos.org/t/parting-from-the-documentation-team/24900/36) 
+- Oct 30: SC candidate cafkafk getting called out by another (numinit): https://discourse.nixos.org/t/announcing-determinate-nix/54709/120
+
+### Nov
+
+- The yearly gender ritual:
+  - https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489
+  - https://discourse.nixos.org/t/improving-diversity-in-this-community/55547
+- The rest of RFC 175 authors get permanently banned: [Andreas](https://github.com/NixOS/moderation/commit/a40d73948299c9d622ef6a09bed219b56464bb95), [Tim](https://github.com/NixOS/moderation/commit/4d6ff96b9213d1d6bf704cb57af4f23f4f864f61).
+- [SC kicks off](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_).
+- 
+
+### 2025 Feb
+- Jon publishes a 2+ hr video summarizing the whole drama. [Reddit](https://www.reddit.com/r/NixOS/comments/1imqc14/nixos_drama_explained_a_personal_account/?utm_source=reddit&utm_medium=usertext&utm_name=NixOS), [X](https://x.com/jonringer117/status/1889114268991426949), [YouTube](https://www.youtube.com/watch?v=gp0FI8Gw1iA), [Text](https://gist.github.com/jonringer/11744f5489aa2b9feb83e6e85d79d5ee). Infinisil uses midwit rhetoric with an air of caring, but factually uncaring, exposing his lack of boldness and fairhandedess in these issues.
+
+**NOTE:** The author, Srid, has lost interest in keeping this timeline up to date, but the drama does continue ([1](https://x.com/mightyiam/status/1924013214448415188); [2](https://x.com/jonringer117/status/1931736499198070883)).
+
+:::
+
+## External Links
+
+- [themotte.org discussion](https://www.themotte.org/post/994/smallscale-question-sunday-for-may-5/209672?sort=top#context)
+
+
+===
+
+<!-- Source: KB/Software/Linux/Recording screencasts.md -->
+<!-- URL: https://srid.ca/screencast -->
+<!-- Title: Recording screencasts -->
+<!-- Wikilinks: [[KB/Software/Linux/Recording screencasts]], [[Software/Linux/Recording screencasts]], [[Linux/Recording screencasts]], [[Recording screencasts]] -->
+
+---
+slug: screencast
+tags: [micro]
+date: 2021-04-27
+---
+
+GNOME runs on  #[[NixOS]] by default using Wayland, however [Peek] works only in X. For the [[Ema]] demo, I recorded a short screencast spawning two windows, [[VSCode]] and web browser, as follows:
+
+- Disconnect from external monitor
+- Logout and login choosing X over Wayland in the login screen
+- Go to display settings: reduce resolution and increase scalling 
+- Arrange two windows side by side
+- Open [Peek] and record
+
+Some tips before recording:
+
+- Practice a few attempts before; it is good to avoid unnecessary delays, and unnecessary UI interactions and dialogs
+
+The screencast I produced is [available here](https://ema.srid.ca/static/ema-demo.mp4) (and is used in [[Announcing Ema - Static Sites in Haskell|this blog post]]). It weighs almost 700KB, though perhaps it could be compressed (`ffmpeg`?) without much loss in quality.
+
+[Peek]: https://github.com/phw/peek
+
+
+===
+
+<!-- Source: KB/Software/Nix.md -->
+<!-- URL: https://srid.ca/nix -->
+<!-- Title: Nix -->
+<!-- Wikilinks: [[KB/Software/Nix]], [[Software/Nix]], [[Nix]] -->
+
+---
+slug: nix
+---
+
+See my [rapid introduction to Nix][nix-rapid].
+
+See also [[NixOS]].
+
+```query
+children:.
+```
+
+## Links
+
+- https://nix.dev -- An opinionated guide for developers getting things done using the Nix ecosystem.
+
+
+[nix-rapid]: https://nixos.asia/en/nix-rapid
+
+===
+
+<!-- Source: KB/Software/Nix/Building Static Haskell binaries using Nix.md -->
+<!-- URL: https://srid.ca/nix-haskell-static-binaries -->
+<!-- Title: Building Static Haskell binaries using Nix -->
+<!-- Wikilinks: [[KB/Software/Nix/Building Static Haskell binaries using Nix]], [[Software/Nix/Building Static Haskell binaries using Nix]], [[Nix/Building Static Haskell binaries using Nix]], [[Building Static Haskell binaries using Nix]] -->
+
+---
+slug: nix-haskell-static-binaries
+tags: [blog]
+date: 2020-09-29
+---
+
+Static binaries are useful to distribute #[[Haskell]] applications without requiring the user to build it themselves. Fully static Haskell executables are *mostly* supported by #[[Nix]]; see [this issue][issue] for details on what's left.
+
+To get started quickly with building static binaries for your Haskell project,
+
+1. Nixify your project: write a `default.nix` (See [[Nix recipes for Haskellers]])
+1. Switch to a fork of [nixpkgs] reverting `3c7ef6b`.[^revert]
+   1. You can try [mine][nixpkgs-fork].
+1. Write a `static.nix` (see below), that invokes this `default.nix`, using [musl] to build your app with static linking
+1. Run `nix-build static.nix` to produce a static binary under `./result/bin`
+   1. Expect it to take a long time as it builds everything from source.
+
+```nix
+let 
+  # Assuming we pin nixpkgs using https://github.com/nmattia/niv
+  sources = import ./nix/sources.nix;
+  # Your nixpkgs fork (see step 2 above)
+  nixpkgs = import sources.nixpkgs-fork { };
+  # Use `pkgsMusl` for static libraries to link against
+  pkgs = nixpkgs.pkgsMusl;
+  # This is your Haskell app compiled normally.
+  # It's default.nix takes a `pkgs` argument which we override with `pkgsMusl`
+  myapp = import ./default.nix { inherit pkgs; };
+  inherit (pkgs.haskell.lib) appendConfigureFlags justStaticExecutables;
+in 
+  # All that's left to do is call `justStaticExecutables` to configure Cabal to
+  # produce a static executable, as well as add the necessary GHC configure
+  # flags to link against static libraries.
+  appendConfigureFlags (justStaticExecutables ka)
+    [
+      "--ghc-option=-optl=-static"
+      "--extra-lib-dirs=${pkgs.gmp6.override { withStatic = true; }}/lib"
+      "--extra-lib-dirs=${pkgs.zlib.static}/lib"
+      "--extra-lib-dirs=${pkgs.libffi.overrideAttrs (old: { dontDisableStatic = true; })}/lib"
+      "--extra-lib-dirs=${pkgs.ncurses.override { enableStatic = true; }}/lib"
+    ]
+```
+
+## Other changes you might need to make
+
+More complex projects may require additional fixes and workarounds.
+
+* If you see the error `crtbeginT.o: relocation R_X86_64_32 against hidden symbol '__TMC_END__'`, you might want to add `"--disable-shared"` to the configure flags (see above).[^tmc]
+* Some tests may fail on musl (eg: [hslua]); disable them using `dontCheck`
+
+For [[Neuron]] in particular, see [this PR][neuron-pr] for the actual changes to support building static binaries on Linux.
+
+## macOS
+
+macOS does not support fully static binaries. And there is nothing in nixpkgs to build partially static binaries either.
+
+[issue]: https://github.com/NixOS/nixpkgs/issues/43795
+[musl]: https://musl.libc.org/
+[nixpkgs]: https://github.com/NixOS/nixpkgs
+[nixpkgs-fork]: https://github.com/srid/nixpkgs/commits/static
+[hslua]: https://github.com/hslua/hslua/issues/67
+[neuron-pr]: https://github.com/srid/neuron/pull/417/files
+
+[^revert]: See <https://github.com/NixOS/nixpkgs/issues/85924#issuecomment-619199832>
+[^tmc]: See [this recommendation](https://logs.nix.samueldr.com/nixos/2019-05-11#2210564;) by nh2 on IRC. Though, a better solution seems to be to make the GHC bootstrap binary use ncurses6. See [issue \#99](https://github.com/nh2/static-haskell-nix/issues/99#issuecomment-665400600).
+
+
+===
+
+<!-- Source: KB/Software/Nix/Nix derivation dependency graph.md -->
+<!-- URL: https://srid.ca/remove-references-to -->
+<!-- Title: Nix derivation dependency graph -->
+<!-- Wikilinks: [[KB/Software/Nix/Nix derivation dependency graph]], [[Software/Nix/Nix derivation dependency graph]], [[Nix/Nix derivation dependency graph]], [[Nix derivation dependency graph]] -->
+
+---
+slug: remove-references-to
+date: 2020-06-18
+---
+
+# Nix derivation dependency graph
+
+I recently had to debug [a problem](https://web.archive.org/web/20210125202157/https://github.com/srid/neuron/issues/193) wherein a #[[Haskell]] binary created using Nix was created with a runtime dependency on the entire GHC ecosystem (despite using `justStaticExecutables`). This investigation led to identifying Cabal’s `Paths_*` module autogeneration as the root cause.
+
+The following commands came in handy when investigating the problem, which was fixed (as a workaround) using `remove-references-to`.
+
+## Useful commands
+
+- Get the dependency tree:
+    
+    ```sh
+    nix-store -q --tree result
+    ```
+    
+- Ask “why” as to a particular dependency:
+    
+    ```sh
+    nix why-depends -a ./result \
+     /nix/store/bicv5nnibqg0qsqyjvb3nw01447yms0j-shake-0.18.5-data
+    ```
+    
+- Remove reference to a dependency manually using [`remove-references-to`](https://web.archive.org/web/20210125202157/https://github.com/NixOS/nixpkgs/blob/master/pkgs/build-support/remove-references-to/default.nix).
+
+## Cleaning up after Cabal using `remove-references-to`
+
+Some examples:
+
+- [from nixpkgs](https://web.archive.org/web/20210125202157/https://github.com/NixOS/nixpkgs/blob/46405e7952c4b41ca0ba9c670fe9a84e8a5b3554/pkgs/development/tools/pandoc/default.nix#L13-L28)
+- [neuron’s PR](https://web.archive.org/web/20210125202157/https://github.com/srid/neuron/pull/240/files)
+- [Emanote's PR](https://github.com/EmaApps/emanote/pull/392)
+
+
+===
+
+<!-- Source: KB/Software/Nix/Nix recipes for Haskellers.md -->
+<!-- URL: https://srid.ca/haskell-nix -->
+<!-- Title: Nix recipes for Haskellers -->
+<!-- Wikilinks: [[KB/Software/Nix/Nix recipes for Haskellers]], [[Software/Nix/Nix recipes for Haskellers]], [[Nix/Nix recipes for Haskellers]], [[Nix recipes for Haskellers]] -->
+
+---
+slug: haskell-nix
+tags: [blog]
+date: 2019-12-03
+---
+
+The goal of this article is to get you comfortable managing simple #[[Haskell]] programs and projects using the [[Nix]] package manager without getting too much into the details. See [[haskell-template]] if you want a ready-made Nix-based project template for Haskell.
+
+## Prerequisites
+
+You are running either [[Linux]] or macOS[^win], and have installed the **Nix** package manager using [these instructions][install-nix] [^nixos]. You do *not* need to install anything else, including needing to install Haskell, as Nix will manage that for you.
+
+[install-nix]: https://nixos.org/download.html#nix-quick-install
+
+[^win]: If you use Windows, you should set up [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) Ubuntu and install Nix on it (or setup [[NixOS]] using [NixOS-WSL](https://github.com/Trundle/NixOS-WSL) instead of Ubuntu). 
+
+## Simple programs
+
+Let us begin with the simplest Haskell program, try to compile and run it with the help of Nix.
+
+```haskell
+-- HelloWorld.hs
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello World"
+```
+
+Haskell code is compiled by GHC, which is provided by the Nix package called "ghc". How do we install it? According to the [Nix manual](https://nixos.org/nix/manual/#chap-package-management) this can be done by running the command `nix-env -i ghc`. For Haskell developers, there is a better approach. Instead of installing packages in a global environment, you may install them to an *isolated* area and launch a shell with those packages in its environment. This is done using the `nix-shell -p ghc` command.
+
+```
+# This drops us in a bash shell with ghc package installed and 
+# $PATH updated.
+$ nix-shell -p ghc
+...
+# Now let's run our module.
+[nix-shell:~] runhaskell HelloWorld.hs
+Hello World
+```
+
+As you can see, nix-shell dropped us in a shell environment with the "ghc" package installed and activated. This puts `runhaskell` (part of the "ghc" package) in your PATH, running which will compile and run your first Haskell program. When you exit the nix-shell (<kbd>Ctrl+D</kbd>), `runhaskell` will no longer be in scope, however the "ghc" package will have been cached so that subsequent invocations of `nix-shell -p ghc` would not have to download and install it once again.[^nix]
+
+### Using library dependencies
+
+What if our program relied on an third-party Haskell library? The following program uses the [brick](http://hackage.haskell.org/package/brick) UI library.
+
+```haskell
+-- HelloWorld.hs
+module Main where
+
+import Brick
+
+ui :: Widget ()
+ui = str "Hello, world!"
+
+main :: IO ()
+main = simpleMain ui
+```
+
+We can no longer use the "ghc" package here. Fortunately, Nix is also a programming language, and as such as we can evaluate arbitrary Nix expressions to create a customized environment. Official Nix packages come from the [nixpkgs](https://github.com/NixOS/nixpkgs) channel, which provides a function called `ghcWithPackages`. Evaluating this function, passing it a list of Haskell libraries (already in nixpkgs), will create an environment with both GHC and the specific Haskell libraries installed. 
+
+```
+$ nix-shell \
+    -p "haskellPackages.ghcWithPackages (p: [p.brick])" \
+    --run "runhaskell HelloWorld.hs"
+```
+
+The `--run` argument will invoke the given command instead of dropping us in an interactive shell. This single command does *so much*---install the Haskell compiler with the requested libraries, compile our program and run it!
+
+### Haskell scripts
+
+You can use the above nix-shell command in the shebang to create self-contained Haskell scripts. Let us see an example, but using [[ghcid]], instead of runhaskell:
+
+```haskell
+#! /usr/bin/env -S"ANSWER=42" nix-shell
+#! nix-shell -p ghcid
+#! nix-shell -p "haskellPackages.ghcWithPackages (p: [p.shower])"
+#! nix-shell -i "ghcid -c 'ghci -Wall' -T main"
+
+import Shower (printer)
+import System.Environment (getEnv)
+
+main :: IO ()
+main = do
+  let question = "The answer to life the universe and everything"
+  answer <- getEnv "ANSWER"
+  printer (question, "is", answer)
+```
+
+Save this file as `myscript.hs` and run `chmod u+x myscript.hs` to make it an executable, and then run it as `./myscript.hs`. Not only is it a self-sufficient script (depending on nothing but nix in the environment), but thanks to ghcid it also re-compiles and re-launches itself whenever it changes! See more examples [here](https://github.com/srid/aoc2019).
+
+## Cabal project
+
+Haskell projects normally use [cabal](https://www.haskell.org/cabal/), and you might already be familiar with [Stack](https://haskellstack.org/) which uses Cabal underneath. Nix is an alternative to Stack with many advantanges, chief of them being the creation of reproducible development environments using declarative configuration that handles even non-Haskell packages.
+
+Adding Nix support to most Cabal projects is a matter of creating a file called `default.nix` in the project root (just make sure you have a `.cabal` file named appropriately). This file is by default used by commands like `nix-build` and `nix-shell`, which we will use when developing the project.
+
+```nix
+# default.nix
+let 
+  pkgs = import <nixpkgs> { };
+in 
+  pkgs.haskellPackages.developPackage {
+    root = ./.;
+    modifier = drv:
+      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
+        [ cabal-install
+          ghcid
+        ]);
+  }
+```
+
+Now if you run `nix-shell` it will drop you in a shell with all Haskell dependencies (from .cabal file) installed. This will be your development shell; from here you can run your usual `cabal` commands, and everything will function as expected.
+
+```
+$ nix-shell
+...
+[nix-shell:~] cabal new-build
+..
+```
+
+If you only want to *build* the project, creating a final executable, use `nix-build`.
+
+### Development dependencies
+
+Notice the `modifier` attribute in the previous example. It specifies a list of build dependencies, using the `addBuildTools` function, that becomes available when we run either `nix-shell` or `nix-build`. Here, you will specify all the packages you need for development.[^shell] We speficied two---`cabal` and `ghcid`. If you removed `cabal` from this list, then cabal will not be in scope of your nix-shell. We added [`ghcid`](https://github.com/ndmitchell/ghcid), which can be used to run a daemon that will recompile your project if any of the source files change; go ahead and give it a try using `nix-shell --run ghcid`.
+
+### Overriding dependencies
+
+The above will work as long as the libraries your project depends on exist on nixpkgs (which itself is derived from Stackage). That will not always be the case and you may want to *override* certain dependencies.
+
+In Nix overriding library packages is rather straightforward. The aforementioned `developPackage` function exposes this capability via the `source-overrides` attribute. Suppose your cabal project depends on the [named](https://github.com/monadfix/named) package at a particular git revision (`e684a00`), then you would modify your `default.nix` to look like:
+
+```nix
+let
+  pkgs = import <nixpkgs> { };
+  compilerVersion = "ghc865"; 
+  compiler = pkgs.haskell.packages."${compilerVersion}";
+in
+  compiler.developPackage {
+    root = ./.;
+    source-overrides = {
+      named = builtins.fetchTarball 
+        "https://github.com/monadfix/named/archive/e684a00.tar.gz";
+    };
+    modifier = drv:
+      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
+        [ cabal-install
+          ghcid
+        ]);
+  }
+```
+
+Now, if you re-run `nix-shell` or `nix-build` Nix will rebuild your package, and any packages depending on `named`, using the new source.
+
+Note that this example also demonstrates how to select a compiler version.
+
+See [Artyom's tech notes](https://tek.brick.do/how-to-override-dependency-versions-when-building-a-haskell-project-with-nix-K3VXJd8mEKO7) for more on overriding Haskell dependencies in Nix.
+
+### Multi-package cabal project
+
+`developPackage` cannot be used if your project has multiple Haskell packages. You will have to go a few steps lower in the abstraction ladder, and use the underlying Nix functions (`callCabal2nix`, `shellFor`, `extend`) in the `default.nix` (or `flake.nix`) of a multiple-package cabal project. See https://github.com/srid/haskell-multi-nix for a full example.
+
+## Caching
+
+Nix has builtin support for caching. Packages from the nixpkgs channel are already cached in the official cache. If you want to provide caching for your own packages, you may use [nix-serve](https://nixos.wiki/wiki/Binary_Cache) (from NixOS) or [Cachix](https://cachix.org/) (third-party service).
+
+## Continuous Integration
+
+Setting up CI for a Haskell project that already uses Nix is rather simple. If you use Github and Cachix, the easiest way is to use [the cachix Github Action](https://github.com/cachix/cachix-action). [^sec]
+
+## External links
+
+* [Official Nix manual on using Haskell](https://nixos.org/manual/nixpkgs/unstable/#sec-haskell)
+* [Unofficial developer guide to Nix](https://nix.dev/)
+* [[haskell-template]]: A prebuilt Haskell project template using Nix flakes, among other defaults
+* [Incrementally package a Haskell program using Nix](https://www.haskellforall.com/2022/08/incrementally-package-haskell-program.html)
+
+[^nixos]: Alternatively, if you are feeling adventurous enough, you may install [[NixOS]], a Linux distribution based on Nix.
+
+[^nix]: Nix is a *general* package manager. You may use it to manage not only haskell packages, but also any other program. For example, to temporarily use the `tree` package, so as to dispay the directory tree of the current directory, you would run: `nix-shell -p tree --run tree`.
+
+[^shell]: Use `pkgs.lib.haskell.inNixShell` to conditionally include dependencies on nix-shell but not nix-build.
+
+[^sec]: If you are however using a *self-hosted* runner in Github Actions with public repos, read this [security warning](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-self-hosted-runners#self-hosted-runner-security-with-public-repositories).
+
+
+===
+
+<!-- Source: KB/Software/Nix/Nix-ifying Rust projects.md -->
+<!-- URL: https://srid.ca/rust-nix -->
+<!-- Title: Nix-ifying Rust projects -->
+<!-- Wikilinks: [[KB/Software/Nix/Nix-ifying Rust projects]], [[Software/Nix/Nix-ifying Rust projects]], [[Nix/Nix-ifying Rust projects]], [[Nix-ifying Rust projects]] -->
+
+---
+slug: rust-nix
+tags: [blog/rust/learning]
+date: 2021-04-08
+---
+
+>[!note]
+> This article is somewhat out of date. But https://nixos.asia/en/rust is kept up to date. You will also want to checkout the template, https://github.com/srid/rust-nix-template
+
+While most would be satisfied with `rustup`, I wanted to use #[[Nix]] for writing any new project in #[[Rust]] - especially as I see the value of Nix, and I already use [[NixOS]]. It took a bit of digging to evaluate the existing options, and come up with a template Nix setup for new projects. 
+
+:::{.ui .message}
+All the code in this post is part of [rust-nix-template](https://github.com/srid/rust-nix-template) which you can use to bootstrap your Rust project using the Nix approach detailed here. Thanks to  [Alexander Bantyev](https://old.reddit.com/r/rust/comments/mmbfnj/nixifying_a_rust_project/) for the pointers.
+:::
+
+Let's support [Flakes](https://nixos.wiki/wiki/Flakes) from the get-go. To nixify your Rust project, add the following files to your project *and* set the `name` and `description` fields in `flake.nix` file appropriately. Then run `nix develop` to get a nix shell (`nix-shell` also works), or `nix run` to run the app (`nix-build` also works).
+
+Some points to note:
+
+- We are using the `oxalica/rust-overlay` overlay to get Rust and friends, because this gives a more recent version than what's available in nixpkgs.
+- `kolloch/crate2nix:tools.nix` is like `callCabal2nix` in Haskell but for Rust projects
+- `numtide/flake-utils` provides Flake utility functions, notably `eachDefaultSystem`
+- `edolstra/flake-compat` enables us to use our `flake.nix` to automatically support legacy Nix builders: `nix-shell` and `nix-build`.
+- The `.vscode` folder contains all the settings necessary to open the project with full IDE support in #[[VSCode]], for Rust and Nix (including auto format).
+
+## `flake.nix`
+
+```nix
+# This file is pretty general, and you can adapt it in your project replacing
+# only `name` and `description` below.
+
+{
+  description = "...";
+
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    utils.url = "github:numtide/flake-utils";
+    rust-overlay.url = "github:oxalica/rust-overlay";
+    crate2nix = {
+      url = "github:kolloch/crate2nix";
+      flake = false;
+    };
+    flake-compat = {
+      url = "github:edolstra/flake-compat";
+      flake = false;
+    };
+  };
+
+  outputs = { self, nixpkgs, utils, rust-overlay, crate2nix, ... }:
+    let
+      name = "my-app";
+    in
+    utils.lib.eachDefaultSystem
+      (system:
+        let
+          # Imports
+          pkgs = import nixpkgs {
+            inherit system;
+            overlays = [
+              rust-overlay.overlay
+              (self: super: {
+                # Because rust-overlay bundles multiple rust packages into one
+                # derivation, specify that mega-bundle here, so that crate2nix
+                # will use them automatically.
+                rustc = self.rust-bin.stable.latest.default;
+                cargo = self.rust-bin.stable.latest.default;
+              })
+            ];
+          };
+          inherit (import "${crate2nix}/tools.nix" { inherit pkgs; })
+            generatedCargoNix;
+
+          # Create the cargo2nix project
+          project = pkgs.callPackage
+            (generatedCargoNix {
+              inherit name;
+              src = ./.;
+            })
+            {
+              # Individual crate overrides go here
+              # Example: https://github.com/balsoft/simple-osd-daemons/blob/6f85144934c0c1382c7a4d3a2bbb80106776e270/flake.nix#L28-L50
+              defaultCrateOverrides = pkgs.defaultCrateOverrides // {
+                # The app crate itself is overriden here. Typically we
+                # configure non-Rust dependencies (see below) here.
+                ${name} = oldAttrs: {
+                  inherit buildInputs nativeBuildInputs;
+                } // buildEnvVars;
+              };
+            };
+
+          # Configuration for the non-Rust dependencies
+          buildInputs = with pkgs; [ openssl.dev ];
+          nativeBuildInputs = with pkgs; [ rustc cargo pkgconfig nixpkgs-fmt ];
+          buildEnvVars = {
+            PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+          };
+        in
+        rec {
+          packages.${name} = project.rootCrate.build;
+
+          # `nix build`
+          defaultPackage = packages.${name};
+
+          # `nix run`
+          apps.${name} = utils.lib.mkApp {
+            inherit name;
+            drv = packages.${name};
+          };
+          defaultApp = apps.${name};
+
+          # `nix develop`
+          devShell = pkgs.mkShell
+            {
+              inherit buildInputs nativeBuildInputs;
+              RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
+            } // buildEnvVars;
+        }
+      );
+}
+```
+
+## `shell.nix`
+
+```nix
+(import
+  (
+    let
+      lock = builtins.fromJSON (builtins.readFile ./flake.lock);
+    in
+    fetchTarball {
+      url = "https://github.com/edolstra/flake-compat/archive/${lock.nodes.flake-compat.locked.rev}.tar.gz";
+      sha256 = lock.nodes.flake-compat.locked.narHash;
+    }
+  )
+  {
+    src = ./.;
+  }).shellNix
+```
+
+## `default.nix`
+
+```nix
+(import
+  (
+    let
+      lock = builtins.fromJSON (builtins.readFile ./flake.lock);
+    in
+    fetchTarball {
+      url = "https://github.com/edolstra/flake-compat/archive/${lock.nodes.flake-compat.locked.rev}.tar.gz";
+      sha256 = lock.nodes.flake-compat.locked.narHash;
+    }
+  )
+  {
+    src = ./.;
+  }).defaultNix
+```
+
+## `.vscode/`
+
+Add a `.vscode/` folder containing these files,
+
+### `.vscode/extensions.json`
+
+```json
+{
+    "recommendations": [
+        "matklad.rust-analyzer",
+        "jnoortheen.nix-ide"
+    ]
+}
+```
+
+### `.vscode/settings.json`
+
+```json
+{
+    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+    "editor.formatOnSave": true
+}
+```
+
+All these files are available in [this project](https://github.com/srid/bouncy).
+
+
+===
+
+<!-- Source: KB/Software/Nix/flake-parts.md -->
+<!-- URL: https://srid.ca/flake-parts -->
+<!-- Title: flake-parts -->
+<!-- Wikilinks: [[KB/Software/Nix/flake-parts]], [[Software/Nix/flake-parts]], [[Nix/flake-parts]], [[flake-parts]] -->
+
+---
+slug: flake-parts
+---
+
+https://github.com/hercules-ci/flake-parts
+
+Make monorepos awesome when using [[Nix]] flakes.
+
+Module docs: https://community.flake.parts/
+
+
+===
+
+<!-- Source: KB/Software/Nix/haskell-flake.md -->
+<!-- URL: https://srid.ca/haskell-flake -->
+<!-- Title: haskell-flake -->
+<!-- Wikilinks: [[KB/Software/Nix/haskell-flake]], [[Software/Nix/haskell-flake]], [[Nix/haskell-flake]], [[haskell-flake]] -->
+
+---
+slug: haskell-flake
+---
+
+# `haskell-flake`
+
+[haskell-flake] is a #[[flake-parts]] module for #[[Haskell]] development. It is used in #[[haskell-template]] and in [several Haskell projects](https://github.com/search?q=%22github%3Asrid%2Fhaskell-flake%22&type=code).
+
+- Documentation: https://community.flake.parts/haskell-flake
+
+[haskell-flake]: https://github.com/srid/haskell-flake
+
+#[[Projects]]
+
+===
+
+<!-- Source: KB/Software/No JavaScript.md -->
+<!-- URL: https://srid.ca/nojs -->
+<!-- Title: No JavaScript -->
+<!-- Wikilinks: [[KB/Software/No JavaScript]], [[Software/No JavaScript]], [[No JavaScript]] -->
+
+---
+slug: nojs
+---
+
+[[Haskell]] programmers like me who have gotten used to functional programming and static typing find JavaScript to be painful to use. We can't avoid JavaScript entirely -- there are some useful JS libraries out there in the world -- however for actual app development we can continue using *safer* programming languages (see below) via either a JS-transpiler or a [Wasm](https://webassembly.org/)-compiler. 
+
+
+| Language        | Toolkits                                                | Notes                                                                                                                                     |
+| --------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Haskell]]     | GHCJS; [[Reflex-FRP]]#; [[Obelisk]]                     | Developed by a small consultancy (Obsidian Systems) with uncertain future; also see Tweag's [Asterius](https://github.com/tweag/asterius) |
+| F# / .NET       | [Blazor](https://srid.github.io/learning-fsharp/Blazor) | Can expect Microsoft's investment to provide it a solid future.                                                                           |
+| [[Rust]][^nofp] | [Yew](https://yew.rs/)[^trunk], [Leptos](https://twitter.com/sridca/status/1686496441760460800)                          | Has an [actively evolving](https://www.arewewebyet.org/topics/frameworks/#frontend) wasm story; needs further exploration                 |
+
+[^trunk]: via https://github.com/yewstack/yew-trunk-minimal-template for JS-less dev tools.
+
+[^nofp]: Quoting Michael Snoyman, however, "*Rust is not a functional programming language, it’s imperative; [...] Rust does adhere to many of the tenets of functional programming; [...] In many cases, you can easily, naturally, and idiomatically write Rust in a functional style*" https://www.fpcomplete.com/blog/2018/10/is-rust-functional/
+
+## Blog posts on #nojs/main
+
+```query {.timeline}
+tag:#nojs
+```
+
+## Related
+
+- [[PureScript]] generally relies on NodeJS toolchain being peppered in the project repo, but [purs-nix](https://github.com/ursi/purs-nix) aims to provide a "No JavaScript" development environment using [[Nix]].
+- **htmlx**: https://www.reddit.com/r/haskell/comments/ud2ii9/haskell_htmx_hyperscript/
+
+
+===
+
+<!-- Source: KB/Software/Nostr.md -->
+<!-- URL: https://srid.ca/nostr -->
+<!-- Title: Nostr -->
+<!-- Wikilinks: [[KB/Software/Nostr]], [[Software/Nostr]], [[Nostr]] -->
+
+---
+slug: nostr
+---
+
+# Nostr
+
+[Nostr] is a decentralized social network created by [fiatjaf] and currently being [funded by Jack][jack-funding], a former CEO of [[Twitter]].
+
+## Me
+
+Srid's nostr profile: https://satellite.earth/@srid@srid.ca
+
+[Nostr]: https://nostr.com/
+[fiatjaf]: https://github.com/fiatjaf
+[jack-funding]: https://www.coindesk.com/business/2024/05/06/jack-dorsey-leaves-bluesky-board-touts-freedom-technology-of-x-and-nostr/
+
+{#identity}
+## Create your own Nostr identity
+
+Just as mine above, you can use a DNS-based internet identifier if you own a domain, using [NIP-05]. This works on clients like [Satellite.earth]. It is fairly to simple to configure; just add a `.well-known/nostr.json` (see [mine](https://github.com/srid/srid/blob/master/.well-known/nostr.json)) to your site.
+
+[NIP-05]: https://github.com/nostr-protocol/nips/blob/master/05.md
+[Satellite.earth]: https://satellite.earth/
+
+===
+
+<!-- Source: KB/Software/Pass with GPG.md -->
+<!-- URL: https://srid.ca/pass -->
+<!-- Title: Pass with GPG -->
+<!-- Wikilinks: [[KB/Software/Pass with GPG]], [[Software/Pass with GPG]], [[Pass with GPG]] -->
+
+---
+slug: pass
+tags: [blog]
+date: 2021-01-15
+---
+
+[pass](https://www.passwordstore.org/) is a simple **password manager** that stores passwords in a [gpg]-encrypted file, not some obscure database. The files can in turn be put on Dropbox, git or any other file management service.
+
+>[!info] 1Password
+>The author now uses 1Password.
+
+## Installing
+
+`pass` must be installed along `gpg`. On #[[NixOS]]:[^ubuntu]
+
+[^ubuntu]: On non-NixOS Linuxes, you may want to use the native package, as home-manager's [shell completion is broken](https://github.com/nix-community/home-manager/issues/1871).
+
+```nix
+{
+    # Must restart computer, otherwise you may hit this bug:
+    # https://github.com/NixOS/nixpkgs/issues/35464#issuecomment-383894005
+    programs.gnupg = {
+      agent = {
+        enable = true;
+        enableExtraSocket = true;
+        pinentryFlavor = "curses";
+      };
+    };
+    environment.systemPackages = with pkgs; [
+      pass
+    ];
+}
+```
+
+## Using
+
+Generate a GPG key
+
+```sh
+gpg --full-gen-key
+```
+
+Initialize the password store, along with git:
+
+```sh
+pass init <email>
+pass git init
+```
+
+Test:
+
+```sh
+pass insert test/example.org
+pass show test/example.org
+pass git push
+```
+
+## Backup GPG key in Keybase
+
+:::{.highlight-block}
+As of summer 2021, I no longer use Keybase. Re-using [[ProtonMail]] email keys is another option.
+:::
+
+Since I already use [keybase], I store my GPG key securely in [kbfs](https://book.keybase.io/docs/files), and then import it on other computers.
+
+```sh
+gpg --export-secret-keys --armor "Sridhar Ratnakumar" > ~/keybase/private/srid/gpg/me.asc
+```
+
+## Import GPG key
+
+To import a GPG key (either from Keybase backup or from the canonical ProtonMail key):
+
+```sh
+gpg --import ~/keybase/private/srid/gpg/me.asc
+gpg --edit-key <email> # and run `trust`
+```
+
+## Android support
+
+- Setup Syncthing (use `.git` alias with `gitdir: /path/to/.git` as contents in order to exclude the git index from syncing)
+- Use Android apps: Password Store & OpenKeychain 
+
+
+[keybase]: https://book.keybase.io/docs/files
+[gpg]: https://wiki.archlinux.org/index.php/GnuPG
+
+
+===
+
+<!-- Source: KB/Software/ProtonMail.md -->
+<!-- URL: https://srid.ca/protonmail -->
+<!-- Title: ProtonMail -->
+<!-- Wikilinks: [[KB/Software/ProtonMail]], [[Software/ProtonMail]], [[ProtonMail]] -->
+
+---
+slug: protonmail
+---
+
+
+https://protonmail.com
+
+===
+
+<!-- Source: KB/Software/PureScript.md -->
+<!-- URL: https://srid.ca/purescript -->
+<!-- Title: PureScript -->
+<!-- Wikilinks: [[KB/Software/PureScript]], [[Software/PureScript]], [[PureScript]] -->
+
+---
+slug: purescript
+---
+
+
+===
+
+<!-- Source: KB/Software/PureScript/PureScript mini-tutorial using Nix.md -->
+<!-- URL: https://srid.ca/purescript-nix -->
+<!-- Title: PureScript mini-tutorial using Nix -->
+<!-- Wikilinks: [[KB/Software/PureScript/PureScript mini-tutorial using Nix]], [[Software/PureScript/PureScript mini-tutorial using Nix]], [[PureScript/PureScript mini-tutorial using Nix]], [[PureScript mini-tutorial using Nix]] -->
+
+---
+slug: purescript-nix
+tags: [blog, nojs]
+date: 2020-04-16
+---
+
+**EDIT (Mar, 2023)**: Checkout https://github.com/purifix/purifix if you want to Nixify your PureScript projects.
+
+My #[[Haskell]] app [[Neuron]] recently received a [contribution](https://github.com/srid/neuron/pull/90) that added support for the very useful client-side search feature. JavaScript was used to implement it; however after having gotten used to merrily creating [[Reflex-FRP]]-based web apps (frontend and backend both in Haskell), writing raw JavaScript had very little appeal to me, which left me with the following options:
+
+* GHCJS: Reflex
+* GHCJS: Miso
+* PureScript
+
+One appeal of PureScript is that it is comparitively lightweight to install, develop and use (which is how I'd describe neuron itself).
+
+## Creating a Hello World project
+
+If you already use [[Nix]] (or [[NixOS]]), getting a quick feel for PureScript is just a
+matter of running:
+
+```bash
+nix-shell -p purescript -p spago
+```
+
+[Spago](https://github.com/purescript/spago) is the PureScript package manager.
+It uses [[Dhall]] for configuration, which is exactly what Neuron uses as well. Once
+you are in the nix-shell we shall create a new PureScript project:
+
+```bash
+mkdir /tmp/app1 && cd /tmp/app1
+spago init
+```
+
+The project will have minimal files:
+
+```bash
+$ tree
+.
+├── packages.dhall
+├── spago.dhall
+├── src
+│   └── Main.purs
+└── test
+    └── Main.purs
+
+2 directories, 4 files
+```
+
+and very basic PureScript code:
+```haskell
+-- src/Main.purs
+module Main where
+
+import Prelude
+
+import Effect (Effect)
+import Effect.Console (log)
+
+main :: Effect Unit
+main = do
+  log "🍝"
+```
+
+To build the final JavaScript "executable", run `spago bundle-app`; it will
+generate a `index.js` for use from HTML.
+
+```bash
+$ spago bundle-app
+[info] Installation complete.
+[info] Build succeeded.
+[info] Bundle succeeded and output file to index.js
+
+$ wc -l -c index.js
+ 29 792 index.js
+```
+
+That's basically it. Very easy to install and use!
+
+## ghcid of PureScript
+
+Not using any fancy IDE, I find [[ghcid]] to be
+critical to my Haskell development workflow; its fast compile-reload cycle
+facilitates a very delightful development experience. I wanted to have this
+with PureScript. Fortunately, such a tool exists ---
+[pscid](https://github.com/kritzcreek/pscid). pscid is available in Nix, so you
+may simply restart that nix-shell as:
+
+```bash
+nix-shell -p purescript -p spago -p pscid
+```
+
+Then visit the project directory, and run:
+
+```bash
+pscid
+```
+
+Now modify `src/Main.hs` and watch it recompile on the fly. When you are done
+with your changes, you would run `spago bundle-app` at the end to build the
+final JavaScript.
+
+## "So how do I use `getElementById`?"
+
+Haskellers are familiar with Hoogle. In PureScript ecosystem, that is called
+[Pursuit](https://pursuit.purescript.org/). I wanted to know, as part of [adding
+PureScript to neuron](https://github.com/srid/neuron/pull/106), how to use the
+famous `getElementById` function in PureScript; and pursuit [came to
+help](https://pursuit.purescript.org/search?q=getElementById).
+
+```haskell
+getElementById :: String -> NonElementParentNode -> Effect (Maybe Element)
+```
+
+Hmm, what is "`NonElementParentNode`"? This function is from the
+`purescript-web-dom` library, which uses the [DOM
+spec](https://dom.spec.whatwg.org/) which does indeed
+[document](https://dom.spec.whatwg.org/#interface-nonelementparentnode) this
+second argument, although it is implicitly provided by `this` in JavaScript. In
+PureScript you would pass it explicitly. HTML Document is one of the values it
+can take:
+
+
+```haskell
+main = do
+  doc <- map toNonElementParentNode $ document =<< window
+  myElem <- getElementById "someId" doc
+```
+
+**EDIT:** The lack of documentation around things like this is something I
+noticed immediately in the PureScript ecosystem; a lobste.rs user [explains it here](https://lobste.rs/s/wa99yt/coming_purescript_from_haskell_reflex#c_faof1j).
+
+## Logging to console
+
+The project template already uses the `log` function to log strings to browser
+console. But how do we log an arbitrary PureScript object, like the DOM element?
+Using
+[`traceM`](https://pursuit.purescript.org/packages/purescript-debug/4.0.0/docs/Debug.Trace#v:traceM):
+
+```haskell
+import Debug.Trace (traceM)
+main = do
+  doc <- map toNonElementParentNode $ document =<< window
+  myElem <- getElementById "someId" doc
+  traceM myElem
+```
+
+And that's all it takes to get the initial feel for what it is like to develop
+PureScript as a Haskeller who comes from the world of Nix and GHCJS.
+
+## External links
+
+- [Getting Started with PureScript](https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md) (official guide)
+
+
+===
+
+<!-- Source: KB/Software/Rust.md -->
+<!-- URL: https://srid.ca/rust -->
+<!-- Title: Rust -->
+<!-- Wikilinks: [[KB/Software/Rust]], [[Software/Rust]], [[Rust]] -->
+
+---
+slug: rust
+---
+
+https://www.rust-lang.org/
+
+```query
+children:.
+```
+
+===
+
+<!-- Source: KB/Software/Rust/Rust Community.md -->
+<!-- URL: https://srid.ca/rust-community -->
+<!-- Title: Rust Community -->
+<!-- Wikilinks: [[KB/Software/Rust/Rust Community]], [[Software/Rust/Rust Community]], [[Rust/Rust Community]], [[Rust Community]] -->
+
+---
+slug: rust-community
+---
+
+# Rust Community
+
+## Criticism
+
+> An important aspect of inclusivity is being able to accommodate a diversity of opinions. If we can only get along when everyone agrees, then we cannot be diverse or inclusive. While our [[woke|preference for consensus]] has served us well in some areas, it has also **caused problems**. Our culture of avoiding conflict rather than resolving it is unhealthy and has led to **dysfunctional governance**. --[17 September 2022: Ten challenges for Rust](https://www.ncameron.org/blog/ten-challenges-for-rust/)
+
+### Discussions
+
+In 2020, the forum post titled [Rust says tech will* always be political](https://users.rust-lang.org/t/rust-says-tech-will-always-be-political/43627) - discussed the Rust core team publicly promulgating their [[Luxury beliefs]] around [[woke|American culture wars]] as if to speak on behalf of the members of the wider #[[Community]].
+
+A year later another, in August 2021, another [post](https://users.rust-lang.org/t/worries-about-tech-always-being-political-statement-by-rust-team/63272?u=srid) was made by another member which immediately got locked by a moderator.
+
+
+===
+
+<!-- Source: KB/Software/Syncthing.md -->
+<!-- URL: https://srid.ca/syncthing -->
+<!-- Title: Syncthing -->
+<!-- Wikilinks: [[KB/Software/Syncthing]], [[Software/Syncthing]], [[Syncthing]] -->
+
+---
+slug: syncthing
+---
+
+https://docs.syncthing.net/
+
+```query
+path:./*
+```
+
+===
+
+<!-- Source: KB/Software/Syncthing/Syncthing data loss.md -->
+<!-- URL: https://srid.ca/syncthing-data-loss -->
+<!-- Title: Syncthing data loss -->
+<!-- Wikilinks: [[KB/Software/Syncthing/Syncthing data loss]], [[Software/Syncthing/Syncthing data loss]], [[Syncthing/Syncthing data loss]], [[Syncthing data loss]] -->
+
+---
+slug: syncthing-data-loss
+---
+
+Data loss in [[Syncthing]] is not uncommon. Always use Syncthing in conjunction with Git for important documents, like [[Zettelkasten]]. [[VSCode]] extensions like [this](https://marketplace.visualstudio.com/items?itemName=alfredbirk.git-add-commit-push) facilitate "saving" files to Git more often.
+
+===
+
+<!-- Source: KB/Software/Urbit.md -->
+<!-- URL: https://srid.ca/urbit -->
+<!-- Title: Urbit -->
+<!-- Wikilinks: [[KB/Software/Urbit]], [[Software/Urbit]], [[Urbit]] -->
+
+---
+slug: urbit
+---
+
+https://urbit.org/
+
+## Links
+
+- On [Urbit's politics](https://old.reddit.com/r/TheMotte/comments/nljqir/free_urbit_town_hall_conference_tomorrow/gzliqvr/?sort=confidence&context=2) in the [tech](https://themotte.zettel.page/tech-woke) community
+
+===
+
+<!-- Source: KB/Software/VSCode.md -->
+<!-- URL: https://srid.ca/vscode -->
+<!-- Title: VSCode -->
+<!-- Wikilinks: [[KB/Software/VSCode]], [[Software/VSCode]], [[VSCode]] -->
+
+---
+slug: vscode
+---
+
+An open source text editor from Microsoft with extension support.
+
+https://code.visualstudio.com/
+
+```query
+children:.
+```
+
+
+===
+
+<!-- Source: KB/Software/Windows.md -->
+<!-- URL: https://srid.ca/windows -->
+<!-- Title: Windows -->
+<!-- Wikilinks: [[KB/Software/Windows]], [[Software/Windows]], [[Windows]] -->
+
+---
+slug: windows
+---
+
+
+
+===
+
+<!-- Source: KB/Software/XMonad Tips.md -->
+<!-- URL: https://srid.ca/xmonad-tips -->
+<!-- Title: XMonad Tips -->
+<!-- Wikilinks: [[KB/Software/XMonad Tips]], [[Software/XMonad Tips]], [[XMonad Tips]] -->
+
+---
+slug: xmonad-tips
+---
+
+Note that the `<super>` key is usually `Win` or `Alt`, to the left of the space bar.
+
+---
+
+1. Press `<Super>-Shift-Enter` to open the **terminal**
+1. Press `<Super>-p` to launch dmenu (**application launcher**)
+1. **Layouts**
+	1. `ThreeCol` (useful for wider screens)
+	```haskell
+	myThreeCol =
+      ThreeColMid
+        1 -- Master window count
+        (3 / 100) -- Resize delta
+        (1 / 2) -- Initial column size
+	```
+	1. [Tabbed](https://hackage.haskell.org/package/xmonad-contrib-0.17.0/docs/XMonad-Layout-Tabbed.html) (useful when managing related windows *one at a time*)
+1. `<Super>-h/l` - resize active window
+1. `<Super>-j/k` - switch focus to left/right window
+1. `<Super>-w/e` - switch focus to other monitor
+1. More keybindings [here](https://wiki.haskell.org/wikiupload/d/d6/Xmbindings.svg) (poster-friendly)
+1. Ideas for **keybindings**
+	1. Screenshot mouse-selected region to clipboard
+	```nix
+	# In NixOS, add this to your packages list:
+	pkgs.writeScriptBin "screenshot"
+	  '' 
+	  #!${pkgs.runtimeShell}
+	  ${pkgs.maim}/bin/maim -s | ${pkgs.xclip}/bin/xclip -selection clipboard -t image/png
+	  '';
+	```
+1. Integrations
+	1. If you are using [[Pass with GPG]], `passmenu` can be invoked from dmenu (see above) to get autocompletion in passwords.
+
+===
+
+<!-- Source: KB/Software/XMonad.md -->
+<!-- URL: https://srid.ca/xmonad -->
+<!-- Title: XMonad -->
+<!-- Wikilinks: [[KB/Software/XMonad]], [[Software/XMonad]], [[XMonad]] -->
+
+---
+slug: xmonad
+---
+
+[XMonad](https://xmonad.org/) is a tiling window manager for #[[Linux]] configurable in #[[Haskell]].
+
+- See [[Edit XMonad configuration with IDE support]] for getting started on [[NixOS]]. 
+- [[XMonad Tips]]# shows a bunch of things you could do with it.
+
+===
+
+<!-- Source: KB/Software/cli.md -->
+<!-- URL: https://srid.ca/cli -->
+<!-- Title: Make CLI Great Again 🚀 -->
+<!-- Wikilinks: [[KB/Software/cli]], [[Software/cli]], [[cli]] -->
+
+---
+slug: cli
+---
+
+# Make CLI Great Again 🚀
+
+An ongoing project to get back to a CLI-centric workflow.
+
+**Update** (Oct, 2024): I'm using [[Hyprland]] on Thinkpad [[P14s]]. https://x.com/sridca/status/1849222477471236268
+
+**Update** (Jan, 2025): [[macOS]] is fine, if you don't buy into the Apple ecosystem. https://x.com/sridca/status/1878962756290068705
+
+## Topics
+
+### Zellij
+
+Terminal pane management to emulate VSCode's pane management.
+
+### Neovim
+
+I use `nixvim`: https://github.com/srid/nixos-config/blob/master/modules/home/all/neovim/default.nix
+
+### Email
+
+Himalaya, but unused: https://github.com/srid/nixos-config/blob/master/home/himalaya.nix
+
+## Motivation
+
+- Get in touch with the delightfully old [hacker mentality](https://en.wikipedia.org/wiki/Hacker_ethic) of living in the command-line.
+- Why neovim?
+  - VSCode can be sluggish. 
+  - Hack editor extensions in Haskell (see [nvim-hs](https://hackage.haskell.org/package/nvim-hs))
+      - Maybe even write a first-class [Emanote](https://emanote.srid.ca/) extension.
+- CLI email workflows: for more efficient processing (and scripting) of email
+
+## Posts
+
+```query {.timeline}
+path:./*
+```
+
+
+===
+
+<!-- Source: KB/Software/cli/00-intro.md -->
+<!-- URL: https://srid.ca/cli/neovim/install -->
+<!-- Title: Install Neovim on using Nix -->
+<!-- Wikilinks: [[KB/Software/cli/00-intro]], [[Software/cli/00-intro]], [[cli/00-intro]], [[00-intro]] -->
+
+---
+date: 2022-04-08
+tags: [neovim]
+slug: cli/neovim/install
+---
+
+# Install Neovim on using Nix
+
+Regardless of the platform, you can use the exact [[Nix]] specification to install and configure Neovim.
+
+https://github.com/srid/nixos-config/blob/04a3ddeb3ee8ef1ba793a876fac10f759cda500b/home/neovim.nix
+
+The home-manager module:
+
+```nix
+{ pkgs, inputs, system, ... }:
+let
+  neovim-nightly = inputs.neovim-nightly-overlay.packages.${system}.neovim;
+in
+{
+  programs.neovim = {
+    enable = true;
+    package = neovim-nightly;
+
+    extraPackages = [
+    ];
+
+    plugins = with pkgs.vimPlugins; [
+      vim-airline
+      papercolor-theme
+    ];
+
+    extraConfig = ''
+      set background=light
+      colorscheme PaperColor
+    '';
+  };
+}
+```
+
+Then, in your `home.nix` (or `flake.nix` if using the homeManager module):
+
+```nix
+imports = [ ./neovim.nix ]
+```
+
+- NixOS: https://github.com/srid/nixos-config/blob/04a3ddeb3ee8ef1ba793a876fac10f759cda500b/flake.nix#L53
+- macOS: https://github.com/srid/nixos-config/blob/04a3ddeb3ee8ef1ba793a876fac10f759cda500b/flake.nix#L133
+
+
+
+===
+
+<!-- Source: KB/Software/cli/01-telescope.md -->
+<!-- URL: https://srid.ca/cli/neovim/telescope -->
+<!-- Title: Add a neovim plugin: telescope.nvim -->
+<!-- Wikilinks: [[KB/Software/cli/01-telescope]], [[Software/cli/01-telescope]], [[cli/01-telescope]], [[01-telescope]] -->
+
+---
+date: 2022-04-09
+tags: [neovim]
+slug: cli/neovim/telescope
+---
+
+# Add a neovim plugin: telescope.nvim
+
+![](https://user-images.githubusercontent.com/3998/162593346-e460468e-d867-46cb-8a78-2ca518629d09.png)
+
+The [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) plugin gives us Doom [[Emacs]]-like fuzzy finder for standard editor operations, like opening files or switching buffers.
+
+Continuing from the Nix of [[00-intro|previous post]], you only need to make two changes to the Nix to add this plugin:
+
+1. Add the plugin to `plugins` list
+   1. To find the exact Nix plugin name, look for 'telescope' in [generated.nix](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/editors/vim/plugins/generated.nix)
+   1. I found `telescope-nvim`, but I'm also going to add `telescope-zoxide` since I also use `zoxide` directory switcher.
+1. Add the vim config to `extraConfig`.
+
+
+```nix
+{
+    plugins = with pkgs.vimPlugins; [
+      ...
+      telescope-nvim
+      telescope-zoxide
+    ];
+    extraConfig = ''
+      ..
+      nnoremap <leader>ff <cmd>Telescope find_files<cr>
+      nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+      nnoremap <leader>fb <cmd>Telescope buffers<cr>
+      nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+    '';
+}
+```
+
+Open nvim, and hit `<leader>ff`. The leader key is by default `\`, so hit `\ ff`. This will bring up a fuzzy finder for opening files in current directory.
+
+## Nits
+
+I wish the plugin installation and configuration was modularized in home-manager, so that you can configure the individual plugins using Nix instead of writing vim.
+
+
+===
+
+<!-- Source: KB/Software/cli/02-haskell.md -->
+<!-- URL: https://srid.ca/cli/neovim/haskell -->
+<!-- Title: Haskell Language Server and Coc -->
+<!-- Wikilinks: [[KB/Software/cli/02-haskell]], [[Software/cli/02-haskell]], [[cli/02-haskell]], [[02-haskell]] -->
+
+---
+date: 2022-04-15
+tags: [neovim, haskell]
+slug: cli/neovim/haskell
+---
+
+# Haskell Language Server and Coc
+
+[[Haskell]] has great IDE support via #[[haskell-language-server]] (HLS).
+
+[Coc.nvim](https://github.com/neoclide/coc.nvim) is the recommended extension to get Language Server Protocol (LSP) support for editing Haskell in neovim.
+
+It turns out that [`home-manager`](https://github.com/nix-community/home-manager/blob/master/modules/programs/neovim.nix) has a module that, unlike the [[NixOS]] version, provides a declarative way to install and configure coc.nvim with Haskell support (EDIT: this is [language-independent](https://github.com/srid/nixos-config/commit/32c3a733e0768d75d6c7c294a9473305a5c5a928)):
+
+```nix
+{
+  programs.neovim = {
+    coc = {
+      enable = true;
+      settings = {
+        languageserver = {
+          haskell = {
+            command = "haskell-language-server-wrapper";
+            args = [ "--lsp" ];
+            rootPatterns = [
+              "*.cabal"
+              "cabal.project"
+              "hie.yaml"
+            ];
+            filetypes = [ "haskell" "lhaskell" ];
+          };
+        };
+      };
+    };
+  };
+}
+```
+
+https://github.com/srid/nixos-config/commit/9a6410331063ae97ae405837559cf4c5b3990ada
+
+It does work when trying out in the nix-shell of [[haskell-template]].
+
+## Declarative plugin config in Nix
+
+The above is neat---no need to hand-write VimScript or Lua just to configure the extension. Can we do the same for *other* neovim extensions in Nix? A couple of attempts exist: [nix-neovim](https://github.com/syberant/nix-neovim) and [NixVim](https://github.com/pta2002/nixvim).
+
+
+===
+
+<!-- Source: KB/Software/cli/03-modular.md -->
+<!-- URL: https://srid.ca/cli/neovim/modular -->
+<!-- Title: Modular neovim plugin configuration -->
+<!-- Wikilinks: [[KB/Software/cli/03-modular]], [[Software/cli/03-modular]], [[cli/03-modular]], [[03-modular]] -->
+
+---
+date: 2022-04-16
+tags: [neovim]
+slug: cli/neovim/modular
+---
+
+# Modular neovim plugin configuration
+
+In the [[02-haskell|previous post]] I hinted about configuring neovim plugins declaratively in Nix. Today, I discovered that this is indeed possible,[^dec] in some basic form, in `home-manager`.
+
+The feature was added in [PR \#2637](https://github.com/nix-community/home-manager/pull/2637). 
+
+## The old way
+
+The old way is to add your plugin in Nix,
+
+```nix
+  plugins = with pkgs.vimPlugins; [
+    telescope-nvim
+  ]
+```
+
+And then *separately* configure it in `init.vim` or `init.lua` --- ie., `extraConfig`, as we did in [[01-telescope]].
+
+## The new way
+
+However, instead, you could do both the above in the same place as:
+
+```nix
+  plugins = with pkgs.vimPlugins; [
+    { 
+      plugin = telescope-nvim;
+      type = "lua";
+      config = ''
+        nmap("<leader>ff", ":Telescope find_files<cr>")
+        nmap("<leader>fg", ":Telescope live_grep<cr>")
+        nmap("<leader>fb", ":Telescope buffers<cr>")
+        nmap("<leader>fh", ":Telescope help_tags<cr>")
+        '';
+    }
+  }
+```
+
+https://github.com/srid/nixos-config/commit/88a202421c262ce60509feca14ce1505b726e258
+
+
+[^dec]: It is not really *declarative*, though --- more like *modular*. Declarative would be how Coc is configured in home-manager; see [[02-haskell]]. Nevertheless, it is nice to be able to both configure and enable a plugin in the same place. Give the large number of neovim plugins in nixpkgs, it is not realistic to expect all of them to support declarative config anyway.
+
+
+===
+
+<!-- Source: KB/Software/cli/04-email.md -->
+<!-- URL: https://srid.ca/cli/email -->
+<!-- Title: Command-line email -->
+<!-- Wikilinks: [[KB/Software/cli/04-email]], [[Software/cli/04-email]], [[cli/04-email]], [[04-email]] -->
+
+---
+date: 2022-04-22
+tags: [neovim, email]
+slug: cli/email
+---
+
+# Command-line email
+
+Can we use Neovim as an email client? Yes, this is actually possible [using Himalaya](https://github.com/soywod/himalaya/tree/master/vim)!
+
+As a first step, though, we should enable Himalaya itself using [[Nix]]. `home-manager` provides a module for that. Without much ado:
+
+```nix
+{
+  programs.himalaya = {
+    enable = true;
+  };
+  accounts.email.accounts = {
+    icloud = {
+      primary = true;
+      himalaya.enable = true;
+      address = "srid@srid.ca";
+      realName = "Sridhar Ratnakumar";
+      userName = "happyandharmless";
+      passwordCommand = "op item get iCloud --fields label=himalaya";
+      imap = {
+        host = "imap.mail.me.com";
+        port = 993;
+        tls.enable = true;
+      };
+      smtp = {
+        host = "smtp.mail.me.com";
+        port = 587;
+        tls.enable = true;
+      };
+    };
+  };
+}
+```
+
+I added my iCloud account details. Note that `passwordCommand` uses 1Password's CLI tool, which uses Mac's Touch ID authentication. I generated an App-specific password and put it under the "himalaya" label of the iCloud entry in 1Password. As a result, we get a no-fuss way to read email!
+
+![[himalaya.png]]
+
+https://github.com/srid/nixos-config/commit/1c188414286f5e81f0ea4a0e3ccd4ed555241f69
+
+## Vim extension
+
+Installing the Vim extension is fairly simple:
+
+```nix
+      (pkgs.vimUtils.buildVimPlugin {
+        name = "himalaya";
+        src = inputs.himalaya + /vim;
+      })
+```
+
+https://github.com/srid/nixos-config/commit/9bb76425b78906830a72846e005eb551b7a9eef4
+
+The Vim extension is not bad. But it does bring up the Mac Touch ID prompt upon *every* email operation, which needs to be fixed.
+
+
+
+===
+
+<!-- Source: KB/Software/macOS.md -->
+<!-- URL: https://srid.ca/macos -->
+<!-- Title: macOS -->
+<!-- Wikilinks: [[KB/Software/macOS]], [[Software/macOS]], [[macOS]] -->
+
+---
+slug: macos
+---
 
 
 ===
@@ -2765,3466 +6225,6 @@ Incidentally this change now allows the user to swap out their syntax hilighting
 hi
 
 [srid.ca](https://srid.ca)
-
-
-===
-
-<!-- Source: Software.md -->
-<!-- URL: https://srid.ca/software -->
-<!-- Title: 💾 Software -->
-<!-- Wikilinks: [[Software]] -->
-
----
-slug: software
-order: -9
----
-
-# :floppy_disk: Software
-
-```query
-path:./*
-```
-
-===
-
-<!-- Source: Software/A brief FSharp exploration.md -->
-<!-- URL: https://srid.ca/fsharp-exploration -->
-<!-- Title: A brief F# exploration -->
-<!-- Wikilinks: [[Software/A brief FSharp exploration]], [[A brief FSharp exploration]] -->
-
----
-slug: fsharp-exploration
-tags: [blog/fsharp, nojs]
-date: 2021-04-02
----
-
-# A brief F\# exploration
-
-I have been writing full-stack web apps in [[Haskell]] using functional reactive programming ([[Reflex-FRP]]) for 3 years now. Curiosity stuck me as to find out what the [FP](https://en.wikipedia.org/wiki/Functional_programming) languages other than Haskell had to offer in this area.
-
-## My critieria were:
-
-- Must be a functional programming language
-- Should compile to JS or Wasm (cf. [[No JavaScript]])
-- Must run natively on backend without nodeJS (rules out the likes of [[PureScript]])
-
-Haskell's GHCJS (esp. when used with [[Obelisk]]) satisfies all of this, but there is one pain-point: the future of GHCJS (which has [not been updated](https://github.com/ghcjs/ghcjs) in a year) and Reflex seems to be in the hands of *one small company*, Obsidian Systems.
-
-That **lead me to F\#**, a hybrid FP language ("hybrid" because it supports OOP, which is essential to integrate with the rest of the .NET ecosystem). I've documented my learnings [here](https://srid.github.io/learning-fsharp/).
-
-## What I found impressive:
-
-- Full access to the entire **.NET** ecosystem of libraries and frameworks (which is larger than that of Haskell).
-- [.NET 5.0](https://devblogs.microsoft.com/dotnet/announcing-net-5-0/#unified-platform-vision) ecosystem is a pleasure to work with (and it works well on Linux with VSCode); and you can create cross-platform apps [more straightforwardly](https://github.com/srid/neuron/pull/586) than in Haskell, including on mobile devices.
-    - If I were to start developing [[Neuron]] today, I would certainly consider F# (but see below).
-- Microsoft has a great **full-stack** web development story; and they support WebAssembly ([`Blazor`](https://srid.github.io/learning-fsharp/Blazor)), including a framework for real-time communication (`SignalR`).
-    - In F#, [Bolero](https://fsbolero.io/) today is the go-to framework to make use of the above technology.
-- I find it reassuring that I can **rely on Microsoft** to advance the full-stack web development more than one small consultancy (Obsidian Systems) with less than transparent open source development in the Haskell land. 
-    - That said, I have some hopes that Tweag's [Asterius](https://github.com/tweag/asterius) catches up, and the community is encouraged to proliferate a whole new ecosystem of full-stack development tools in Haskell not necessarily tied to Reflex.
-
-## Some things are better in the Haskell ecosystem, though. 
-
-- Fast development reload workflow works super well in Haskell, thanks to [[ghcid]]. In .NET, you have `dotnet watch` - but that recompiles the whole project on every change leading to annoying delay[^net6]; it made me [switch back](https://github.com/srid/Feather/issues/10) to using Haskell for DSL-based static sites, while live-reload is essential to get quick feedback on things like CSS changes.
-- Having to work with OOP-based .NET libraries (written in C\#) can be an annoyance from a pure-FP perspective, though that can be dealt with by wrapping these libraries in a functional layer, and then using that in the F# program.
-- Overriding dependencies to use a fork in *straightforward* manner is virtually impossible. You have to create a local Nuget repo containing the binary of your overriden dependency. Whereas in Haskell world, one can easily use [[Nix]] to use a Git repo ([[Neuron]] [does this](https://github.com/srid/neuron/tree/master/dep)) as a package dependency.[^paket]
-
-[^net6]: .NET 6.0 will [address this](https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-3/#initial-net-hot-reload-support) at least for Blazor projects.
-[^paket]: No, [Paket's Git feature](https://fsprojects.github.io/Paket/git-dependencies.html) does *not* support this.
-
-**F# will continue to remain in my toolbox**. If the aforementioned downsides are addressed in some way, I might just pick it for some of the next projects over Haskell, which is still my go-to language today.
-
-## See also
-
-- My F# notes: https://srid.github.io/learning-fsharp/
-- Disussion on [Hacker News](https://news.ycombinator.com/item?id=26739501) & [Lobsters](https://lobste.rs/s/odejpy/brief_f_exploration)
-
-
-===
-
-<!-- Source: Software/Agda.md -->
-<!-- URL: https://srid.ca/agda -->
-<!-- Title: Agda -->
-<!-- Wikilinks: [[Software/Agda]], [[Agda]] -->
-
----
-slug: agda
----
-
-> As learning Haskell is a good way to develop oneself as a better Java programmer, learning a dependent typed programming language [Agda] is a good way to develop oneself as a better [[Haskell]] programmer. -- https://kseo.github.io/posts/2014-02-21-learning-agda-to-be-a-better-haskell-programmer.html
-
-## For writing apps?
-
-> I code real life programs in Agda. Some part of my server and my tools are in Agda. One time I was in #haskell freenode IRC channels and people started acting out as if I'm some crazy person. Agda has _seemless_ integration with Haskell. There is almost no friction writing 20% of your program in Haskell (unsafe) and 80% in Agda (safer). https://news.ycombinator.com/item?id=24567404
-
-## Resources
-
-- [Agda CheatSheet](https://alhassy.github.io/AgdaCheatSheet/CheatSheet.pdf)
-- [Dependently Typed Programming in Agda](http://www.cse.chalmers.se/~ulfn/papers/afp08/tutorial.pdf), a concise introduction to Agda, targeted at functional programmers
-- https://plfa.github.io
-- [[Nix]] project template: https://github.com/srid/agda-template
-
-===
-
-<!-- Source: Software/Blockchain.md -->
-<!-- URL: https://srid.ca/blockchain -->
-<!-- Title: Blockchain -->
-<!-- Wikilinks: [[Software/Blockchain]], [[Blockchain]] -->
-
----
-slug: blockchain
----
-
-- General blockchain knowledge: https://academy.horizen.io
-- Cardano Plutus: https://plutus-pioneer-program.readthedocs.io/en/latest/
-
-
-===
-
-<!-- Source: Software/Coding.md -->
-<!-- URL: https://srid.ca/coding -->
-<!-- Title: Coding -->
-<!-- Wikilinks: [[Software/Coding]], [[Coding]] -->
-
----
-slug: coding
-template:
-  sidebar:
-    enable: false
-  toc:
-    enable: false
----
-
-# Coding
-
-WIP
-
-## Refactoring
-
-- https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
-
-
-{#guidelines}
-## Coding Guidelines
-
-{#fn-interface}
-### Function interface should be small
-
-Functions should take only the arguments it uses. Its types should be relevant to its logic, without any extraneous information.
-
-
-===
-
-<!-- Source: Software/Dhall.md -->
-<!-- URL: https://srid.ca/dhall -->
-<!-- Title: Dhall -->
-<!-- Wikilinks: [[Software/Dhall]], [[Dhall]] -->
-
----
-slug: dhall
----
-
-If your configuration file can benefit from a combination of JSON + functions + types, then consider [Dhall](https://dhall-lang.org/).
-
-[[Neuron]] uses Dhall for configuration, but only in a simple fashion (no functions, for instance).
-
-
-===
-
-<!-- Source: Software/Elm.md -->
-<!-- URL: https://srid.ca/elm -->
-<!-- Title: Elm -->
-<!-- Wikilinks: [[Software/Elm]], [[Elm]] -->
-
----
-slug: elm
----
-
-# Elm
-
-https://en.wikipedia.org/wiki/Elm_(programming_language)
-
-I recommend [[PureScript]] or GHCJS ([[Reflex-FRP]]) -- see [[No JavaScript]] -- over Elm due to the later's controversial design decisions and [[Politeness#example-of-being-polite-but-malicious|aggressive leadership]].
-
-## External links
-
-- [Why and How We Retired Elm at Culture Amp](https://news.ycombinator.com/item?id=35495910) (Apr, 2023)
-
-
-===
-
-<!-- Source: Software/Emacs.md -->
-<!-- URL: https://srid.ca/emacs -->
-<!-- Title: Emacs -->
-<!-- Wikilinks: [[Software/Emacs]], [[Emacs]] -->
-
----
-slug: emacs
----
-
-If you want to start using Emacs as your text editor, I recommend starting from [Doom Emacs](https://github.com/doomemacs/).
-
-```query
-path:./*
-```
-
-
-===
-
-<!-- Source: Software/Emacs/Emacs-XWidgets.md -->
-<!-- URL: https://srid.ca/xwidgets -->
-<!-- Title: Emacs Xwidgets -->
-<!-- Wikilinks: [[Software/Emacs/Emacs-XWidgets]], [[Emacs/Emacs-XWidgets]], [[Emacs-XWidgets]] -->
-
----
-slug: xwidgets
----
-
-# Emacs Xwidgets
-
-
-> Xwidgets are a feature that allows Emacs to display GTK+ and NS widgets inside buffers.
-
-https://www.emacswiki.org/emacs/EmacsXWidgets
-
-{#macos}
-## Notes from last attempt to get it working on [[macOS]]:
-
-- Still broken on nixpkgs: https://github.com/NixOS/nixpkgs/pull/185714
-
-===
-
-<!-- Source: Software/Emacs/Org Mode.md -->
-<!-- URL: https://srid.ca/org -->
-<!-- Title: Org Mode -->
-<!-- Wikilinks: [[Software/Emacs/Org Mode]], [[Emacs/Org Mode]], [[Org Mode]] -->
-
----
-slug: org
----
-
-https://orgmode.org/
-
-Although Markdown is good enough for [[Zettelkasten]], wikis and such (cf. [[Emanote]]), for writing *outline* content Org Mode in [[Emacs]] shines the best.
-
-For parsing org files in [[Haskell]], checkout [`org-parser`](https://github.com/lucasvreis/org-parser) (also provides [[Heist mini-tutorial|Heist templating]]) by lucasvreis ... as well as the [[Ema]] app [abacateiro](https://github.com/lucasvreis/abacateiro) by the same author.
-
-
-
-===
-
-<!-- Source: Software/Haskell.md -->
-<!-- URL: https://srid.ca/haskell -->
-<!-- Title: Haskell -->
-<!-- Wikilinks: [[Software/Haskell]], [[Haskell]] -->
-
----
-slug: haskell
----
-
-[Haskell](https://www.haskell.org/) is an advanced, purely functional programming language. I use Haskell because of its correctness guarantees that are difficult or impossible to achieve with mainstream programming languages[^gotcha].
-
-[^gotcha]: Do be wary of [[Haskell Gotchas]].
-
-My first foray into Haskell was to write fullstack web applications using [[Reflex-FRP]], after having used [[Elm]] prior to that. Nowadays I consider it my go-to language for general application development.[^rust]
-
-[^rust]: For anything that needs low-level, [[Rust]] is an option.
-
-[On GitHub](https://github.com/srid) you can find a list of Haskell projects I work on, the notable of which are [[Neuron]], [[Ema]] and [[Emanote]].
-
-## Learning Haskell
-
-If you wish to learn Haskell yourself, these pointers may be of help:
-
-Get Inspired
-: [10 Reasons to Use Haskell](https://serokell.io/blog/10-reasons-to-use-haskell)
-: [Why Haskell is Important](https://www.tweag.io/blog/2019-09-06-why-haskell-is-important/)
-: [Why Haskell matters](https://wiki.haskell.org/Why_Haskell_matters).
-
-Attitude
-: Lose the limiting beliefs, if any.[^lb] Approach Haskell, with maximum [locus of control], as if it is a new programming language that had been created this year (ie. sans any vague preconceptions [introjected] from [[Cynical non-pioneers|naysayers and their enablers]]).
-
-Books
-: Some prefer *concise* learning materials; if this is you, check out the two books by Graham Hutton and Richard Bird. For a thorough and practical book, Vitaly Bragilevsky's Haskell in Depth or Will Kurt's Get Programming with Haskell might be of interest. Books are only a starting point (see the next two sections).
-
-Self-learning courses
-: [fp-course](https://github.com/system-f/fp-course) and [applied-fp-course](https://github.com/qfpl/applied-fp-course)
-
-Practice
-: Learning anything takes practice, and this is particularly a key for a purely functional language like Haskell. See [Haskell Mentors List](https://willbasky.github.io/Awesome-list-of-Haskell-mentors/) for progressing in learning Haskell by way of contributing to open source projects that you already enjoy using.
-
-Talk / Share
-: Join [Haskell Discourse](https://discourse.haskell.org/) to interact with other Haskellers. You may also post to [StackOverflow \#haskell](https://stackoverflow.com/questions/tagged/haskell), which has been quite helpful in my experience. Read [r/haskell](https://old.reddit.com/r/haskell/) for news. Be wary of other communities.[^wk]. See [Haskell Planetarium](https://haskell.pl-a.net/) for recent Haskell news & discussions.
-
-Deepen your Haskell knowledge
-: [[Haskell from the ground up]] (Work in progress)
-
-[locus of control]: https://www.wikiwand.com/en/Locus_of_control
-
-[^wk]: In particular, you want to avoid the non-[[Stay niche|niche]] ones [[woke-invasion|invaded]] by [[woke|woke]] activist moderators.
-
-## Take the red pill with Nix
-
-If you are feeling adventurous consider getting acquainted with [[Nix]], which in turns allows you to leverage [[haskell-template]] for bootstraping Haskell projects with full IDE support in [[VSCode]]. This works on [[Linux]], [[macOS]] and [[Windows]] (via WSL) without having to install dependencies other than Nix itself. In my opinion, this is the best way to set up a Haskell development environment if you are willing to approach the learning curve of Nix with alacritty.
-
-## Sub-pages
-
-```query
-children:.
-```
-
-[FP Slack]: https://fpslack.com
-[introjected]: https://archive.is/rUiwZ#selection-187.47-205.10
-
-
-[^lb]: 
-      Graham Hutton: "[*My experience is that people need to be 'ready' to learn what a monad is.  If they are ready, it's not too difficult, but still requires quite a bit of effort - as with anything worthwhile.*](https://archive.is/Teseb)"
-
-      Travis Whitaker: [*How do you know the difference between "novelty budget" and "inertia" and "sunk cost fallacy?"*](https://archive.is/qqEt7)
-
-
-===
-
-<!-- Source: Software/Haskell/Creating a new Haskell project with IDE support using Nix.md -->
-<!-- URL: https://srid.ca/haskell-new-project -->
-<!-- Title: Scaffold a Haskell project w/ IDE support + Nix -->
-<!-- Wikilinks: [[Software/Haskell/Creating a new Haskell project with IDE support using Nix]], [[Haskell/Creating a new Haskell project with IDE support using Nix]], [[Creating a new Haskell project with IDE support using Nix]] -->
-
----
-slug: haskell-new-project
-date: 2020-11-16
-tags: [blog]
----
-
-# Scaffold a Haskell project w/ IDE support + Nix
-
-**Update (May 31, 2021)**: If you use Flakes, try [[haskell-template]].
-
----
-
-I create new #[[Haskell]] libraries and applications using #[[Nix]], along with IDE support in #[[VSCode]] as follows.
-
-First, install [nix-thunk](https://github.com/obsidiansystems/nix-thunk) (alternatively, you may use niv or flakes).
-
-```bash
-# Initialize project layout using cabal
-mkdir mypkg && cd mypkg
-# Note: Pass --lib, --exe or --libandexe as appropriate
-nix-shell -p cabal-install -p ghc --run \
-  "cabal init --cabal-version=3.0 -m -l BSD3 --lib -p mypkg"
-
-# Add to git
-git init && git add . && git commit -m "Initial commit"
-
-# Remove, or update, version constraint on base to match compiler
-vim *.cabal  # and remove version constraint on `base`
-
-# Pin nixpkgs, etc
-# You might want to pass --rev, using the value from status.nixos.org
-nix-thunk create \
-  https://github.com/nixos/nixpkgs.git dep/nixpkgs
-nix-thunk create \
-  https://github.com/hercules-ci/gitignore.nix.git dep/gitignoresrc
-
-# Write template default.nix
-cat << EOF > default.nix
-{ pkgs ? import ./dep/nixpkgs {} }:
-let 
-  inherit (import ./dep/gitignoresrc { inherit (pkgs) lib; }) gitignoreSource;
-in 
-  pkgs.haskellPackages.developPackage {
-    name = "mypkg";
-    root = gitignoreSource ./.;
-    modifier = drv:
-      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
-        [ cabal-install
-          cabal-fmt
-          ghcid
-          ormolu
-          haskell-language-server
-        ]);
-  }
-EOF
-
-# Test your changes
-nix-build
-nix-shell --run 'cabal-fmt -i *.cabal'  # Formats your cabal file
-nix-shell --run 'ghcid -T :main'
-
-# Create .gitignore and commit
-echo -e "dist-newstyle\nresult" > .gitignore
-git add . && git commit -m "Nixify"
-```
-
-To enable IDE support,
-
-- Copy [.vscode template](https://github.com/srid/reflex-stone/tree/master/.vscode) to `./.vscode` (note: settings.json should point to default.nix instead of shell.nix)
-- Add the [appropriate hie.yaml](https://github.com/haskell/haskell-language-server#configuring-your-project-build)
-- Test your configuration by running `nix-shell --run haskell-language-server` (it should succeed with module-level reports)
-- Open the folder in VSCode and follow the instructions
-
-Other things you might want to do:
-
-- Use [[Relude]] as Prelude
-- Enable some `default-extensions`
-- Enable [sensible warnings][warn] in `ghc-options`
-
-[warn]: https://kowainik.github.io/posts/2019-02-06-style-guide#ghc-options
-
-## Alternatives
-
-- Using Flakes? See [this blog post](https://serokell.io/blog/practical-nix-flakes) from Serokell, and try out the [[haskell-template]] Git template.
-
-
-===
-
-<!-- Source: Software/Haskell/Decouple GitHub Pages build from Nix using Docker.md -->
-<!-- URL: https://srid.ca/nix-docker-ci-decouple -->
-<!-- Title: Decouple GitHub Pages build from Nix using Docker -->
-<!-- Wikilinks: [[Software/Haskell/Decouple GitHub Pages build from Nix using Docker]], [[Haskell/Decouple GitHub Pages build from Nix using Docker]], [[Decouple GitHub Pages build from Nix using Docker]] -->
-
----
-slug: nix-docker-ci-decouple
-tags: [blog]
-date: 2021-10-10
----
-
-Projects like [[Ema]] enable creating your own static-site generator in [[Haskell]], while leveraging #[[Nix]] for reproducibility. The challenge with deploying your Haskell-based static site on [GitHub Pages], however, is the lack of Nix caching. Every time you update your site, the CI will run slowly due to having to:
-
-- Download, and rebuild any Haskell dependencies overriden in the Nix file
-- Rebuild the static site Haskell project itself
-
-Now, if you are *scheduling* generation of site (presumably because the *input* to your site is fetched afresh from the internet), then the above steps will re-run needlessly. This can be avoided by **decoupling** the `build` and `generate` steps.
-
-## The build step
-
-The build step should run `nix-build`, effectively - and then use [Nix's docker infrastructure][nix-docker] to produce a Docker image out of it and push it to a remote (Docker Hub or GitHub's image registry).
-
-[Example](https://github.com/srid/TheMotteDashboard/actions/runs/1226415802)
-
-## The generate step
-
-The generate step of the CI would then *use* the latest Docker image from the registry and simply "run" your project. There is no compilation whastoever involved here, so it completes instantly. 
-
-[Example](https://github.com/srid/TheMotteDashboard/actions/runs/1266781482)
-
-## Links
-
-- First step illustration: [build.yaml](https://github.com/srid/TheMotteDashboard/blob/0cf1c6927253284cc51e65e1c4dd12b528690759/.github/workflows/build.yaml)
-- Second step illustration: [cron.yaml](https://github.com/srid/TheMotteDashboard/blob/0cf1c6927253284cc51e65e1c4dd12b528690759/.github/workflows/cron.yml) (generate)
-
-[nix-docker]: https://nix.dev/tutorials/building-and-running-docker-images
-[GitHub Pages]: https://pages.github.com/
-
-===
-
-<!-- Source: Software/Haskell/Edit XMonad configuration with IDE support.md -->
-<!-- URL: https://srid.ca/xmonad-conf-ide -->
-<!-- Title: Edit XMonad configuration with IDE support -->
-<!-- Wikilinks: [[Software/Haskell/Edit XMonad configuration with IDE support]], [[Haskell/Edit XMonad configuration with IDE support]], [[Edit XMonad configuration with IDE support]] -->
-
----
-slug: xmonad-conf-ide
-date: 2020-11-26
-tags: [blog]
----
-
-:::{.sticky-note}
-Why XMonad? Because this opens me up to write complex workflows in Haskell with its type-safety benefits.
-:::
-
-[Over at FP Zulip](https://funprog.srid.ca/haskell/i3-configuration-in-haskell.html#217619324), when I floated the idea of writing Haskell DSL for i3 configuration, someone suggested to just use #[[XMonad]] instead. XMonad is a window manager where your configuration file is just Haskell code. 
-
-Because it is all Haskell, we can use [`haskell-language-server`](https://github.com/haskell/haskell-language-server) to provide full IDE support -- autocomplete, hover popups, documentation links, etc. -- for editing window manager configuration.
-
-![[static/xmonad-vscode.jpeg]]
-
-Here's how you do it:
-
-1. Create a cabal project (see [[Creating a new Haskell project with IDE support using Nix]])
-2. Add your XMonad configuration to the `Main.hs`
-3. Add `xmonad`, `xmonad-contrib` and other dependencies to the cabal file
-4. Adjust your #[[NixOS]] XMonad configuration to use this project
-
-Step 4 basically involves using the `Main.hs` as the config file, as well as copying over the Cabal dependencies. So, in your `configuration.nix` you would do something like:
-
-```nix
-services.xserver.windowManager.xmonad = {
-  enable = true;
-  extraPackages = haskellPackages: [
-    haskellPackages.xmonad-contrib
-    haskellPackages.containers
-  ];
-  enableContribAndExtras = true;
-  config = pkgs.lib.readFile ./xmonad-config/Main.hs;
-};
-```
-
-Your Cabal project lives at `./xmonad-config` ... and, if you followed the instructions in [[Creating a new Haskell project with IDE support using Nix]] to setup IDE configuration, you can simply launch [[VSCode]] using `code ./xmonad-config` to start editing your configuration.
-
-## Example
-
-- [My config: nixos/xmonad-srid](https://github.com/srid/nixos-config/tree/master/nixos/gui/desktopish/xmonad)
-- [Taffybar, done similarly](https://github.com/srid/nixos-config/tree/master/nixos/gui/desktopish/taffybar)
-
-## Discussion
-
-- [r/haskell](https://old.reddit.com/r/haskell/comments/k1kcif/edit_xmonad_configuration_with_ide_support/)
-
-
-===
-
-<!-- Source: Software/Haskell/Haskell Gotchas.md -->
-<!-- URL: https://srid.ca/haskell-gotchas -->
-<!-- Title: Haskell Gotchas -->
-<!-- Wikilinks: [[Software/Haskell/Haskell Gotchas]], [[Haskell/Haskell Gotchas]], [[Haskell Gotchas]] -->
-
----
-slug: haskell-gotchas
----
-
-Some of #[[Haskell]]'s gotchas:
-
-| Gotcha                    | Recommendation                                                                                            |
-| ------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Strings                   | [Understand](https://free.cofree.io/2020/05/06/string-types/)                                             |
-| Unicode Normalization     | https://github.com/srid/neuron/issues/611                                                                 |
-| Functions to avoid        | [haskell-dangerous-functions](https://github.com/NorfairKing/haskell-dangerous-functions); use [[Relude]] |
-| [[ghcid]] [ghost threads] | Track all threads; or use `race_`                                                                         |
-| Ratio type                | [The Hidden Dangers of Haskell's Ratio Type](https://www.fpcomplete.com/blog/hidden-dangers-of-ratio/)    |
-| Laziness                  | [Comparing strict vs lazy](https://www.tweag.io/blog/2022-05-12-strict-vs-lazy/)                          |
-| `TChan` and `TQueue`      | [Used bounded variants](https://www.parsonsmatt.org/2018/10/12/tchan_vs_tqueue.html) |
-
-[ghost threads]: https://stackoverflow.com/q/24999636/55246
-[relude]: https://github.com/kowainik/relude
-
-
-===
-
-<!-- Source: Software/Haskell/Haskell from the ground up.md -->
-<!-- URL: https://srid.ca/haskell-foundational -->
-<!-- Title: Haskell from the ground up -->
-<!-- Wikilinks: [[Software/Haskell/Haskell from the ground up]], [[Haskell/Haskell from the ground up]], [[Haskell from the ground up]] -->
-
----
-slug: haskell-foundational
----
-
-:::{.page-note}
-**Note**: This page is in its **nascent form** with much more content to be added, and then organized.
-:::
-
-Roughly there exists three autodidactic approaches to learning the individual #[[Haskell]] concepts.
-
-1. Read tutorials & learn by doing
-1. Dig into the theory behind
-2. Learn GHC-level implementation details
-
-Approach (1) is great for "getting started", but proceeding to (2) and maybe even (3) will give a more **foundational** perspective, while demystifying otherwise complex ideas. Here, I aim to collect the various resources toward that end.
-
-## Dig into the theory behind
-
-- https://www.haskellforall.com/2022/05/introductory-resources-to-type-theory.html
-- [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
-- Theory behind it all (Lambda calculus, System F, logic, etc. -- see "course" below)
-	- [Programming Language Foundations in Agda](https://plfa.github.io/)
-- Dependent types
-	- For intuition into how type class/ type family/ data kinds/ etc fit together: https://lexi-lambda.github.io/blog/2021/03/25/an-introduction-to-typeclass-metaprogramming/
-	- [[Agda]]
-		- *Agda is, in some ways, the most advanced functional programming language in existence, and so if you learn how to program in Agda, you will have a very strong foundation for programming in other languages that use the idioms of functional programming.* --Verified Functional Programming in Agda, Aaron Stump
-	- Idris
-	
-### Math
-
-TODO
-
-- https://www.cs.uoregon.edu/research/summerschool/summer14/lectures/zdancewic-sf-lec01.pdf
-- The book 'Program = Proof' seems excellent
-- https://github.com/prathyvsh/category-theory-resources
-
-
-## GHC-level implementation details
-
-[GHC User Guide](https://downloads.haskell.org/ghc/latest/docs/html/users_guide/)
-: Language manual is a good starting point.
-[Haskell to Core: Understanding Haskell Features Through Their Desugaring](https://serokell.io/blog/haskell-to-core)
-: *"Thinking about the way Haskell language constructs are desugared into Core provides a deeper understanding of these features, rather than a superficial familiarity. For example, it provides a clear intuition for existential quantification, GADTs, and do-notation."*
-: - GHC Core is “System F with Type Equality Coercions" and “System FC with Explicit Kind Equality" .... and Haskell is an abstraction over GHC Core. ([Ref](https://old.reddit.com/r/haskell/comments/qn2xwc/importance_of_lambda_calculus/hjemcat/?context=1), on relation of Haskell to typed lambda calculus)
-
-
-## Todo
-
-Where do these fit in?
-
--  _Thinking in Types_, by isovector
-- Category Theory, and other theory
--  Functional Programming and Proof Checking Course Plan: https://oxij.org/activity/itmo/fp/plan/
-
-Resources for these?
-
--  MTL
--  Lenses
-
-Perspectives,
-
--  Types = Values; https://vitez.me/hts-language
-
-Create a course
-
--  Find relevant papers, in order.
--  [Write You A Haskell](https://github.com/sdiehl/write-you-a-haskell): Building a modern functional compiler from first principles.
-
-
-From https://github.com/sdiehl/write-you-a-haskell/issues/93#issuecomment-962082153
-
-> There are two good lists of foundational papers for implementing a Haskell compiler:
-> 
-> https://www.stephendiehl.com/posts/essential_compilers.html
-> 
-> https://gitlab.haskell.org/ghc/ghc/-/wikis/reading-list
-
-
-===
-
-<!-- Source: Software/Haskell/Heist mini-tutorial.md -->
-<!-- URL: https://srid.ca/heist-start -->
-<!-- Title: Heist mini-tutorial -->
-<!-- Wikilinks: [[Software/Haskell/Heist mini-tutorial]], [[Haskell/Heist mini-tutorial]], [[Heist mini-tutorial]] -->
-
----
-slug: heist-start
-tags: [blog]
-date: 2021-05-10
----
-
-[Heist](https://github.com/snapframework/heist) is an "*xhtml-based templating engine, allowing Haskell functions to be bound to XML tags.*" and is suitable for use as a HTML templating #[[Haskell]] [library](https://vrom911.github.io/blog/html-libraries) where we need to care about using on-disk file templates rather a type-safe DSL. I found [its library documentation](http://snapframework.com/docs/tutorials/heist#heist-programming) somewhat lacking in regards to just getting started, so here's a quick howto.
-
-The most simple use of `heist` library is a two-stage process. 
-
-## Load templates
-
-We *interpret* the templates here (but in your application you might want to compile them instead). `H.HeistState Identity` is the type we should keep track of in our application state.
-
-```haskell
-import qualified Heist as H
-import qualified Heist.Interpreted as HI
-
-loadHeistTemplates 
-  :: MonadIO m => FilePath -> m (Either [String] (H.HeistState Identity))
-loadHeistTemplates templateDir = do
-  let heistCfg :: H.HeistConfig Identity =
-        H.emptyHeistConfig
-          & H.hcNamespace .~ ""
-          & H.hcTemplateLocations .~ [H.loadTemplates templateDir]
-  liftIO $ H.initHeist heistCfg
-```
-
-## Render templates
-
-This is the part where we render HTML with a given context (what heist calls "splices").
-
-```haskell
-import qualified Text.Blaze.Renderer.XmlHtml as RX
-
-renderHeistTemplate 
-  :: ByteString -> Either [String] (H.HeistState Identity) -> LByteString
-renderHeistTemplate name etmpl =
-  either error id . runExcept $ do
-    heist <-
-      hoistEither . first (unlines . fmap toText) $ etmpl
-    let 
-      heistWithCtx = 
-        heist 
-          & HI.bindString "markdown-title" "Hello world"
-          & HI.bindSplice "markdown-html" $ RX.renderHtml ...
-    (builder, _mimeType) <-
-      tryJust "Unable to render" $
-        runIdentity $ HI.renderTemplate heistWithCtx name
-    pure $ toLazyByteString builder
-```
-
-## External links
-
-- https://github.com/srid/heist-extra (useful in particular for [[Ema]] apps)
-
-
-===
-
-<!-- Source: Software/Haskell/My release process for Haskell libraries.md -->
-<!-- URL: https://srid.ca/haskell-release-process -->
-<!-- Title: My release process for Haskell libraries -->
-<!-- Wikilinks: [[Software/Haskell/My release process for Haskell libraries]], [[Haskell/My release process for Haskell libraries]], [[My release process for Haskell libraries]] -->
-
----
-slug: haskell-release-process
-tags: [blog]
-date: 2020-04-08
----
-
-Just a note to myself as to the steps I normally follow when releasing a #[[Haskell]] library to [Hackage](http://hackage.haskell.org/).
-
-## Release steps
-
-1. Create a `release-x.y` branch
-2. Finalize ChangeLog.md
-3. Run `nix develop -c cabal haddock` and sanity check the haddocks
-4. Commit all changes, and push a release PR.
-5. Generated sdist using `cabal sdist` (if using flakes, run `nix run nixpkgs#cabal-install -- sdist`)
-6. Run `cabal upload [--publish] <path/to/sdist>` to upload the sdist. Ignore `--publish` if you want to preview it first.
-7. Publish Haddocks manually (optional, if Hackage doesn't do it automatically)
-    1. Run `cabal haddock --haddock-for-hackage` to generated haddocks for hackage.
-    1. Run `cabal upload -d --publish $PATH_TO_TARBALL` to update haddocks on the release.
-10. Squash merge the PR.
-11. [Draft a new release](https://github.com/srid/rib/releases) on Github. Copy paste the change log. This will automatically create and push the new git tag.
-
-### Post-release
-
-1. Increment cabal version in .cabal file
-2. Plan, as first task, updating of nixpkgs and package dependencies.
-
-## Open questions
-
-- Research a tool that automates much of the release process; cf. https://twitter.com/domenkozar/status/1744333116687184030
-
-
-===
-
-<!-- Source: Software/Haskell/Reflex-FRP.md -->
-<!-- URL: https://srid.ca/reflex-frp -->
-<!-- Title: Reflex-FRP -->
-<!-- Wikilinks: [[Software/Haskell/Reflex-FRP]], [[Haskell/Reflex-FRP]], [[Reflex-FRP]] -->
-
----
-slug: reflex-frp
----
-
-A full-stack functional reactive programming framework for developing web apps in #[[Haskell]]. Se https://reflex-frp.org/
-
-The recommended way to get started with writing reflex apps is via [[Obelisk]]# ... or [reflex-stone] if you do not want a backend server.
-
-[reflex-stone]: https://github.com/srid/reflex-stone
-
-===
-
-<!-- Source: Software/Haskell/Reflex-FRP/Obelisk.md -->
-<!-- URL: https://srid.ca/obelisk -->
-<!-- Title: Obelisk -->
-<!-- Wikilinks: [[Software/Haskell/Reflex-FRP/Obelisk]], [[Haskell/Reflex-FRP/Obelisk]], [[Reflex-FRP/Obelisk]], [[Obelisk]] -->
-
----
-slug: obelisk
----
-
-https://github.com/obsidiansystems/obelisk
-
-===
-
-<!-- Source: Software/Haskell/Reflex-FRP/Obelisk/Obelisk tutorial, Markdown preview with Reflex.md -->
-<!-- URL: https://srid.ca/obelisk-tutorial -->
-<!-- Title: Obelisk tutorial, Markdown preview with Reflex -->
-<!-- Wikilinks: [[Software/Haskell/Reflex-FRP/Obelisk/Obelisk tutorial, Markdown preview with Reflex]], [[Haskell/Reflex-FRP/Obelisk/Obelisk tutorial, Markdown preview with Reflex]], [[Reflex-FRP/Obelisk/Obelisk tutorial, Markdown preview with Reflex]], [[Obelisk/Obelisk tutorial, Markdown preview with Reflex]], [[Obelisk tutorial, Markdown preview with Reflex]] -->
-
----
-slug: obelisk-tutorial
-tags: [blog, nojs]
-date: 2020-05-08
----
-
-In this article, I'll describe how to get a full-stack Haskell application up and running. In particular, the app will render user-entered Markdown text in real-time (the final version is hosted at <https://commonmark.srid.ca>). Notably, our app will use Haskell even on the frontend. This is made possible by the [GHCJS](https://github.com/ghcjs/ghcjs) compiler, that compiles Haskell code to JavaScript. 
-
-We will not work directly with GHCJS, however, and instead will use the [[Reflex-FRP]] library, through the excellent #[[Obelisk]] full-stack framework.
-
-## Create an Obelisk project
-
-First and foremost, make sure you have [Obelisk installed](https://github.com/obsidiansystems/obelisk#installing-obelisk), and then follow along.
-
-Obelisk includes a command called `ob` that can be used to initialize a project. We will also use git to keep track of changes:
-
-```bash
-mkdir MarkdownPreview
-cd ./MarkdownPreview
-# Create an Obelisk project
-ob init
-# Add to git
-git init
-git add .
-git commit -m "first commit"
-```
-
-This gives us a project layout with three Haskell packages: `backend`, `common` and `frontend`. As the names indicate, `frontend` contains the Haskell code that ultimate gets compiled to JavaScript. The `common` package however contains code that is shared between the backend and the frontend. This is extremely useful for type sharing, which is impossible with something like [[Elm]] or PureScript (without explicit conversion).
-
-```sh
-backend
-cabal.project
-common
-config
-default.nix
-frontend
-shell.nix
-static
-```
-
-You will notice that Obelisk uses [[Nix]] to build your project. The command `ob run` (described below) will abstract over the Nix stuff, including any GHCi handling, so you do not have to deal directly with Nix except for overriding dependencies.
-
-## Running hello world
-
-Now, it is time to run our app. 
-
-```sh
-ob run
-```
-
-This command may take a while to finish the very first time it is run, as it would need to download packages from the Nix caches. At the end you would expect to see: `Frontend running on http://localhost:8000/`. Your obelisk app will be accessible at that URL.
-
-### Interlude: `ob run` reloads your code
-
-So what does this `ob run` command do? Think of it as `stack run` or `cabal run` - but it also recompiles changed sources and reloads application. `ob run` uses [ghcid](https://github.com/ndmitchell/ghcid) underneath, in combination with custom `ghci` config to specify the modules to reload.
-
-There is also `ob repl` which gives you a GHCi repl for your project. As well as `ob hoogle` providing a local Hoogle server for project and its dependencies.
-
-## Add `commonmark-hs` dependency
-
-Our application will use the Pure Haskell Markdown parser [commonmark-hs](https://github.com/jgm/commonmark-hs), which is written by the author of Pandoc, who intends to [migrate Pandoc over to it](https://github.com/jgm/commonmark-hs/issues/1#issuecomment-395802118) eventually. 
-
-We will also use the latest version from Git, instead of Hackage. Some [Nix-fu](https://nixos.org/nix/) is helpful at this stage. But the main thing you need to know, in order to add a custom Haskell dependency, is the following general workflow:
-
-* Clone the git repo under a subdirectory
-* "Pack" it using `ob thunk`
-* Load it in `default.nix` using `hackGet`
-
-As briefly as possible, you would do this for commonmark-hs as follows:
-
-```sh
-# Get the source
-git clone https://github.com/jgm/commonmark-hs.git dep/commonmark-hs
-...
-# Pack it
-ob thunk pack dep/commonmark-hs
-...
-```
-
-Next, edit your `default.nix` and:
-
-* Add `hackGet` and `pkgs` as arguments to the `project` if they don't already exist
-* Use the packed thunk by calling `hackGet`
-* The git rep contains multiple Haskell packages; use `commonmark` and `commonmark-extensions`
-
-Here's how your `default.nix` should look:
-
-```nix
-project ./. ({ pkgs, hackGet, ... }: {
-  packages = let 
-    commonmarkSrc = hackGet ./dep/commonmark-hs;
-  in {
-    commonmark = commonmarkSrc + "/commonmark";
-    commonmark-extensions = commonmarkSrc + "/commonmark-extensions";
-  };
-  ...
-})
-```
-
-If you run `ob run` at this point, it may complain about further missing dependencies. Let's override each of them:
-
-```sh
-git clone https://github.com/jgm/emojis.git dep/emojis
-ob thunk pack dep/emojis
-```
-
-Go back to `default.nix`, and add this new dependency to the `packages` attribute:
-
-```nix
-    ...
-    emojis = hackGet ./dep/emojis;
-```
-
-As we will be using commonmark directly in the frontend, go ahead and add these to `frontend.cabal` (under the library stanza):
-
-```haskell
--- frontend/frontend.cabal
-               ...
-               , commonmark
-               , commonmark-extensions
-  
-```
-
-Restart `ob run`, which should build the the new dependency before starting our app.
-
-### Interlude: What is an Obelisk thunk?
-
-If you are familiar with [Haskell overrides in Nix](https://www.srid.ca/1948201.html#overriding-dependencies), then think of the obelisk thunk mechanism as an abstraction on top. A "packed" thunk is essentially similar to Nix's `fetchGit` in that you specify the exact source revision of the dependency to use. 
-
-But a thunk can also be "unpacked", using `ob thunk unpack`, which -- in addition to unpacking it as a git clone -- has the effect of adding it to `ob run` and `ob repl` sessions. For example, you could unpack the above commonmark thunk using `ob thunk unpack dep/commonmark-hs` and restart `ob run`. Now, when you hack on `./dep/commonmark-hs` and change its Haskell sources, `ob run` will automatically reload the app using the modified commonmark-hs. See the Obelisk [ChangeLog](https://github.com/obsidiansystems/obelisk/blob/master/ChangeLog.md#v0500---2020-02-07) for details.
-
-## Let's add a textbox
-
-If you are unfamiliar with Reflex, checkout [the official guide](https://reflex-frp.org/get-started). All our frontend code is defined in the `frontend/src/Frontend.hs` file. With `ob run` running by side, open that module and try changing a few things, like the title - and the app should update. Let's add a textbox element where the user would write their Markdown text.
-
-Somewhere in `_frontend_body`, add the following:
-
-```haskell
-markdownText :: Dynamic t T.Text <-
-  fmap value $ textAreaElement $
-    def
-    & initialAttributes .~ ("style" =: "width:50%;height:15em;")
-```
-
-`markdownText` is a reflex Dynamic that holds the user-entered text.
-
-## Parse Markdown
-
-Now it is time to actually use the commonmark library. Let's import it:
-
-```haskell
-import qualified Commonmark as CM
-
-renderMarkdown :: T.Text -> Either CM.ParseError (CM.Html ())
-renderMarkdown =
-  CM.commonmark "markdown"
-```
-
-The `renderMarkdown` function will parse our Markdown and return the HTML representation of it. Calling `show` on the Right value gets us the raw HTML.
-
-## Render to HTML
-
-Finally let's plug everything together. We want to parse and render the resulting HTML every time the user changes the textbox. Reflex's Dynamic automatically updates, so let's use that.
-
-```haskell
-result <- eitherDyn $ fmap renderMarkdown markdownText
-dyn_ $ ffor result $ \case
-  Left err ->
-    dyn_ $ ffor err $ \_ -> text "Parse error"
-  Right htmlVal ->
-    prerender_ blank $ void $ elDynHtml' "div" $ T.pack . show <$> htmlVal
-
-```
-
-That's all it takes! Now as you type the Markdown text, its live preview will automatically update next to the textbox.
-
-You can even hack on commonmark-hs (see the Obelisk thunk interlude above), and have `ob run` automatically reload when the library sources change. This is extremely handy if you want to play with the internals of the Markdown parser and see its live result in the browser.
-
-## Further resources
-
-* Source code for this app on Github: <https://github.com/srid/MarkdownPreview>
-
-* Fully built version of it running at: <https://commonmark.srid.ca/>
-
-
-===
-
-<!-- Source: Software/Haskell/Relude.md -->
-<!-- URL: https://srid.ca/relude -->
-<!-- Title: Relude -->
-<!-- Wikilinks: [[Software/Haskell/Relude]], [[Haskell/Relude]], [[Relude]] -->
-
----
-slug: relude
----
-
-https://github.com/kowainik/relude
-
-===
-
-<!-- Source: Software/Haskell/ghcid.md -->
-<!-- URL: https://srid.ca/ghcid -->
-<!-- Title: ghcid -->
-<!-- Wikilinks: [[Software/Haskell/ghcid]], [[Haskell/ghcid]], [[ghcid]] -->
-
----
-slug: ghcid
----
-
-`ghcid` is advertisied as "a very low feature GHCi based IDE". When one uses `ghcid`, Haskell's lack of formal IDE support becomes less of an issue; because `ghcid` provides the most important feature of instant-recompilation feedback, all in the terminal.
-
-<https://github.com/ndmitchell/ghcid>
-
-#[[Haskell]]
-
-===
-
-<!-- Source: Software/Haskell/haskell-language-server.md -->
-<!-- URL: https://srid.ca/hls -->
-<!-- Title: haskell-language-server -->
-<!-- Wikilinks: [[Software/Haskell/haskell-language-server]], [[Haskell/haskell-language-server]], [[haskell-language-server]] -->
-
----
-slug: hls
----
-
-# haskell-language-server
-
-https://github.com/haskell/haskell-language-server
-
-For [[VSCode]] support, see https://marketplace.visualstudio.com/items?itemName=haskell.haskell
-
-
-===
-
-<!-- Source: Software/Haskell/haskell-template.md -->
-<!-- URL: https://srid.ca/haskell-template -->
-<!-- Title: haskell-template -->
-<!-- Wikilinks: [[Software/Haskell/haskell-template]], [[Haskell/haskell-template]], [[haskell-template]] -->
-
----
-slug: haskell-template
----
-
-# `haskell-template`
-
-`haskell-template` (<https://github.com/srid/haskell-template>) is a template Git repository for ready-made, fully reproducible and friendly #[[Haskell]] development using #[[Nix]]. It comes with full IDE support in [[VSCode]] (and other editors with LSP support). See [[philosophy]] for what's (and why it is) included.
-
-## Rationale
-
-The goal of `haskell-template` is to enable anyone to get started with [[Haskell]] development without much fanfare (thanks to [[Nix]]). I also use `haskell-template` to bootstrap all of my new Haskell projects. See [[haskell-template/start]] to get started.
-
-## Documentation
-
-- [[haskell-template/start]]
-- HOWTO
-  - `nix develop`: The nix shell is your friend; inside it, you will have the full Haskell development environment (cabal, ghc, ghci, [[haskell-language-server]], cabal-fmt, hlint, etc.).
-  - Common Haskell workflows
-    - Useful Scripts (defined via [just](https://just.systems/))
-
-      | Script      | Description                                             |
-      | ----------- | ------------------------------------------------------- |
-      | `just run`  | Run the main executable via [[ghcid]] (auto-recompiles) |
-      | `just repl` | Run `cabal repl` (gives you a `ghci` repl)              |
-      | `just docs` | Run `hoogle` (Documentation server for packages in use) |
-
-    - [Adding dependencies](https://haskell.flake.page/dependency) (or how to override them in Nix)
-    - [[haskell-template/add-tests]]
-  - Common Nix workflows
-    - `nix build`: Build the nix package.
-    - `nix run .`: Run the program via Nix.
-      - `nix run github:srid/haskell-template`: Run the program via Nix remotely.
-    - `nix profile install github:srid/haskell-template`: Install the program via Nix.
-    - [[haskell-template/checks]]
-  - Removing features from the template
-    - [[remove-relude]]
-  - [Switching to `direnv`](https://haskell.flake.page/direnv)
-  - CI
-    - [[haskell-template/garnix]]
-
-
-## Discussion
-
-Comments? Ideas? Post them [on GitHub](https://github.com/srid/haskell-template/discussions).
-
-#[[Projects]]
-
-===
-
-<!-- Source: Software/Haskell/haskell-template/add-tests.md -->
-<!-- URL: https://srid.ca/haskell-template/tests -->
-<!-- Title: Adding tests -->
-<!-- Wikilinks: [[Software/Haskell/haskell-template/add-tests]], [[Haskell/haskell-template/add-tests]], [[haskell-template/add-tests]], [[add-tests]] -->
-
----
-slug: haskell-template/tests
----
-
-# Adding tests
-
-[[haskell-template]] does not include tests by default (see [[philosophy]]), but you may add them as follows:
-
-1. Split any logic code out of `Main.hs` into, say, a `Lib.hs`.
-1. Correspondingly, add `other-modules: Lib` to the "shared" section of your cabal file.
-1. Add `tests/Spec.hs` (example below):
-    ```haskell
-    module Main where
-
-    import Lib qualified
-    import Test.Hspec (describe, hspec, it, shouldContain)
-
-    main :: IO ()
-    main = hspec $ do
-      describe "Lib.hello" $ do
-        it "contains the world emoji" $ do
-          toString Lib.hello `shouldContain` "🌎"
-    ```
-1. Add the tests stanza to the cabal file:
-    ```yaml
-    test-suite tests
-        import:         shared
-        main-is:        Spec.hs
-        type:           exitcode-stdio-1.0
-        hs-source-dirs: tests
-        build-depends:  hspec
-    ```
-1. Update `hie.yaml` accordingly; for example, by adding,
-    ```yaml
-      - path: "tests"
-        component: "test:tests"
-    ```
-1. Add the test command to the mission-control scripts section of the flake file
-    ```nix
-      mission-control.scripts = {
-        test = {
-          description = "Run all tests";
-          exec = ''
-             ghcid -c "cabal repl test:tests" -T :main
-          '';
-          };
-      };
-    ```
-1. Commit your changes to Git, and test it out by running `, test` from the (reloaded) dev shell.
-
-
-===
-
-<!-- Source: Software/Haskell/haskell-template/checks.md -->
-<!-- URL: https://srid.ca/haskell-template/checks -->
-<!-- Title: Flake checks for Haskell -->
-<!-- Wikilinks: [[Software/Haskell/haskell-template/checks]], [[Haskell/haskell-template/checks]], [[haskell-template/checks]], [[checks]] -->
-
----
-slug: haskell-template/checks
----
-
-# Flake checks for Haskell
-
-[[haskell-template]] provides a builtin list of flake checks:
-
-- [[haskell-language-server]] check (`hlsCheck.enable = true`) from [[haskell-flake]]: Tests that HLS continues to work with the project.
-- [treefmt] check: Tests that the project is autoformatted and does not have any hlint warnings.
-
-[treefmt]: https://nixos.asia/en/treefmt
-
-## `nix flake check` and IFD
-
-You cannot use `nix flake check` (unless your `systems` list is singular) [due to IFD](https://nixos.wiki/wiki/Haskell#IFD_and_Haskell). You can work around this by using the [check-flake](https://github.com/srid/check-flake) [[flake-parts]] module; make the following changes to your `flake.nix`:
-
-1. Add `check-flake.url = "github:srid/check-flake";` to "inputs"
-2. Add `inputs.check-flake.flakeModule` to "imports"
-
-Now you can run the following command[^sandbox] to run all flake checks locally for the current system:
-
-```sh
-nix --option sandbox false build .#check -L
-```
-
-## See also
-
-- https://github.com/NixOS/nix/pull/7759
-
-[^sandbox]: sandbox is being disabled because of [an issue](https://github.com/srid/haskell-flake/issues/21) with [[haskell-language-server]].
-
-
-===
-
-<!-- Source: Software/Haskell/haskell-template/garnix.md -->
-<!-- URL: https://srid.ca/haskell-template/garnix -->
-<!-- Title: Adding Garnix CI -->
-<!-- Wikilinks: [[Software/Haskell/haskell-template/garnix]], [[Haskell/haskell-template/garnix]], [[haskell-template/garnix]], [[garnix]] -->
-
----
-slug: haskell-template/garnix
----
-
-# Adding Garnix CI
-
-[[haskell-template]] already uses Github Actions for CI, but you may also use [Garnix](https://garnix.io/). Garnix is a Nix based hosted CI service that integrates well with GitHub. Compared to Github Actions, Garnix CI jobs run faster and finally you get a free Nix cache as a result (no need to manually push to cachix). 
-
-You may use the following `garnix.yaml` to enable both Linux and macOS builds:
-
-```yaml
-builds:
-  include:
-    - "*.aarch64-darwin.*"
-    - "*.x86_64-linux.*"
-  exclude:
-    # https://github.com/srid/haskell-flake/issues/21
-    - "checks.*.main-hls"
-```
-
-
-===
-
-<!-- Source: Software/Haskell/haskell-template/philosophy.md -->
-<!-- URL: https://srid.ca/haskell-template/philosophy -->
-<!-- Title: Philosophy -->
-<!-- Wikilinks: [[Software/Haskell/haskell-template/philosophy]], [[Haskell/haskell-template/philosophy]], [[haskell-template/philosophy]], [[philosophy]] -->
-
----
-slug: haskell-template/philosophy
----
-
-# Philosophy
-
-## Use opinionated base tools
-
-I originally created [[haskell-template]] to serve as the base template for my Haskell [[Projects]]. As such, I wanted it to include by default the following:
-
-- [[Relude]] (because `Prelude` is [dangerous](https://github.com/NorfairKing/haskell-dangerous-functions))
-- [[haskell-language-server]] (because IDE integration from the get-go is invaluable)
-- [[ghcid]] (for instant auto-recompilation and re-running of the program)
-- [[hlint]]
-- [treefmt] (to keep the project tree autoformatted)
-  - `fourmolu`[^ormolu] for Haskell
-  - `cabal-fmt` for Cabal
-  - `nixpkgs-fmt` for Nix
-- [mission-control](https://github.com/Platonic-Systems/mission-control) for devshell scripts and discovery
-
-[treefmt]: https://nixos.asia/en/treefmt
-
-[^ormolu]: I used to use `ormolu` but switched to `fourmolu` because ormolu is annoying in some cases (like it [throwing away multiline haddock comments](https://github.com/tweag/ormolu/issues/641))
-
-## If it is not used in every repo, do not add it to the template
-
-Things like tests are not in the template repo, because I personally do not use it in *every* project created off this repo. Instead, a workflow like "How to add tests" should be documented (eg.: [[add-tests]]). The same goes for project documentation (which normally would use [[Emanote]]).
-
-## Keep [[Nix]] as simple as possible
-
-I wish to keep all the Nix code (`flake.nix`) as small and simple as possible. This is why much of the Nix is delegated to [[haskell-flake]]. Consequently, it also becomes easier for the user to do some Nix-based Haskell workflows (I'm yet to document these).
-
-> [!tip] TODO Explain the usefulness `flake-parts` (and thus `haskell-flake` and `mission-control`)
-> 
-> - To keep Nix code simple by modularizing orthogonal features. Especially in monorepos. 
-> - Nix itself may get a modue system for flakes. Unti then, `flake-parts` is relevant.
-
-===
-
-<!-- Source: Software/Haskell/haskell-template/remove-relude.md -->
-<!-- URL: https://srid.ca/haskell-template/relude -->
-<!-- Title: Removing relude -->
-<!-- Wikilinks: [[Software/Haskell/haskell-template/remove-relude]], [[Haskell/haskell-template/remove-relude]], [[haskell-template/remove-relude]], [[remove-relude]] -->
-
----
-slug: haskell-template/relude
----
-
-# Removing `relude`
-
-[[haskell-template]] uses #[[Relude]] as the alternative "prelude" due to convenience and safety. I recommend that you use relude. However, if you want to remove it, you can do so as follows:
-
-- In the `.cabal` file:
-  - Remove `relude` from the `build-depends` section.
-  - Remove the `mixins` section entirely.
-- In the `.hlint.yaml` file, delete all lines from the line that reads "Relude's .hlint.yaml goes here".
-- Open `src/Main.hs` and replace any relude functions with their `base` equivalents. 
-  - For example, `putTextLn` becomes `putStrLn`.
-
-===
-
-<!-- Source: Software/Haskell/haskell-template/start.md -->
-<!-- URL: https://srid.ca/haskell-template/start -->
-<!-- Title: Getting started -->
-<!-- Wikilinks: [[Software/Haskell/haskell-template/start]], [[Haskell/haskell-template/start]], [[haskell-template/start]], [[start]] -->
-
----
-slug: haskell-template/start
----
-
-# Getting started
-
-## First-time setup
-
-If this is your first time using [[Nix]] or [[haskell-template]] (or a project based on it) you will initially need to setup a few things on your system.
-
-### Nix
-
-- [Install Nix](https://nixos.asia/en/install) (version must be 2.8 or greater) 
-    - If you are using Windows, you may install Nix [under WSL2](https://nixos.wiki/wiki/Nix_Installation_Guide#Windows_Subsystem_for_Linux_.28WSL.29) 
-- In the project directory, run `nix develop -i -c haskell-language-server` to sanity check your environment.
-  - This will download the required dependencies and cache them to the local Nix store. If it succeeds, it means everything's good.
-- [Install direnv](https://nixos.asia/en/direnv)
-  - **NOTE**: If you choose not to use direnv, you must launch VSCode from _inside_ of `nix develop` shell.
-
-### VSCode
-
-While you may use any text editor with language-server support, we will use [[VSCode]] because it is generally the easiest way to get started.
-
-- Launch [[VSCode]], and open the `git clone`'ed project directory [as single-folder workspace](https://code.visualstudio.com/docs/editor/workspaces#_singlefolder-workspaces)
-  - NOTE: If you are on Windows, you must use the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) to open the folder in WSL.
-- When prompted by VSCode, install the [workspace recommended](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions) extensions.
-    - The direnv extension will load the nix shell.
-     - The extension will ask you to restart VSCode at the end. Do it.
-
-## Running in VSCode
-
-Once the project has been reloaded in VSCode, you are ready to start developing it. But first, it is useful to sanity check a few things:
-
-### Test that [[haskell-language-server]] works
-
-- Open `src/Main.hs`. 
-  - Notice [[haskell-language-server]] launching in the footer (you should see "*Processing (1/2)*"), and wait for it finish.
-- Hover your mouse over something, say `putTextLn`, and see the hover tooltip giving you the type signature.
-    - This means the IDE support works!
-
-### Test that [[ghcid]] works
-
-- Launch the terminal inside VSCode
-- Run `nix develop` shell and run `just run`.
-    - This will launch [[ghcid]] to run the `main` entrypoint in `src/Main.hs`. 
-- Modify `src/Main.hs` and save it.
-
-This should have `just run` instantly re-compile and re-run the program.
-
-Note: you can also press <kbd>Ctrl+Shift+B</kbd> to run `just run`.
-
-## Rename the project
-
-Finally, if you are going to be using this template for a real project, you should rename it.
-
-```sh
-NAME=myproject
-# First, click the green "Use this template" button on GitHub to create your copy
-# You may name the new repository to be the same as $NAME
-git clone <your-clone-url> $NAME
-cd $NAME
-
-
-# Copy-paste these 4 lines at the same time
-git mv haskell-template.cabal ${NAME}.cabal
-nix run nixpkgs\#sd -- haskell-template ${NAME} * */*
-echo "# ${NAME}\n\n" > README.md
-git add . && git commit -m rename
-```
-
-## Next steps
-
-See [[haskell-template]] for further documentation.
-
-
-===
-
-<!-- Source: Software/Haskell/hlint.md -->
-<!-- URL: https://srid.ca/hlint -->
-<!-- Title: hlint -->
-<!-- Wikilinks: [[Software/Haskell/hlint]], [[Haskell/hlint]], [[hlint]] -->
-
----
-slug: hlint
----
-
-
-===
-
-<!-- Source: Software/Helix.md -->
-<!-- URL: https://srid.ca/helix -->
-<!-- Title: Helix -->
-<!-- Wikilinks: [[Software/Helix]], [[Helix]] -->
-
----
-slug: helix
----
-
-Helix, *a post-modern modal text editor*, written in [[Rust]].
-
-https://helix-editor.com/
-
-## External links
-
-- [My Helix config](https://github.com/srid/nixos-config/blob/master/home/helix.nix) in [[Nix]]
-
-===
-
-<!-- Source: Software/Hyprland.md -->
-<!-- URL: https://srid.ca/hyprland -->
-<!-- Title: Hyprland -->
-<!-- Wikilinks: [[Software/Hyprland]], [[Hyprland]] -->
-
----
-slug: hyprland
----
-
-https://hyprland.org/
-
-The best tiling window manager I've use (better than [[XMonad]] even). 
-
-My [[Nix]] Hyprland config: https://github.com/srid/nixos-config/tree/master/modules/nixos/linux/gui/hyprland
-
-===
-
-<!-- Source: Software/Linux.md -->
-<!-- URL: https://srid.ca/linux -->
-<!-- Title: Linux -->
-<!-- Wikilinks: [[Software/Linux]], [[Linux]] -->
-
----
-slug: linux
----
-
-```query
-path:./*
-```
-
-===
-
-<!-- Source: Software/Linux/Clear Linux.md -->
-<!-- URL: https://srid.ca/clear-linux -->
-<!-- Title: Clear Linux -->
-<!-- Wikilinks: [[Software/Linux/Clear Linux]], [[Linux/Clear Linux]], [[Clear Linux]] -->
-
----
-slug: clear-linux
----
-
-[Clear Linux](https://clearlinux.org/) is an optimized Linux distribution by Intel.
-
-It performs better than [[NixOS]] as desktop experience on [[X1C7]], thus improving on [[X1C7 - Moderate Performance]]. In addition, the system is much more reliable, such as there not being any [[X1C7 WiFi issue]] (or Thunderbolt issues) so far.
-
-## App notes
-
-- If using NVIDIA, its proprietary drivers must be [manually installed](https://docs.01.org/clearlinux/latest/zh_CN/tutorials/nvidia.html) (be sure to copy the long CLI commands in a text file before rebooting the computer post-nouveau-deactivation to avoid having to type them all)
-- **Brave** browser: needs to be [manually updated](https://community.clearlinux.org/t/installing-brave-browser-on-clear-linux/1131)
-- [[VSCode]] 
-  - Flatpak install has broken terminal shell (uses some sandboxed shell); install vscode [using .rpm](https://community.clearlinux.org/t/best-way-to-install-rpms/5036) instead.
-  - settings sync: GitHub opens a new VSCode instance, and thus breaks. Manually copy-pasting the auth token in the original window works.
-    - Sometimes also [Error code 801](https://github.com/microsoft/vscode-pull-request-github/issues/1221)
-
-## External links
-
-- [NixOS tracker discussion](https://github.com/NixOS/nixpkgs/issues/63708) on adopting Clear Linux patches
-
-===
-
-<!-- Source: Software/Linux/Encrypted Virtual Folder in Linux.md -->
-<!-- URL: https://srid.ca/vf.enc -->
-<!-- Title: Encrypted Virtual Folder in Linux -->
-<!-- Wikilinks: [[Software/Linux/Encrypted Virtual Folder in Linux]], [[Linux/Encrypted Virtual Folder in Linux]], [[Encrypted Virtual Folder in Linux]] -->
-
----
-slug: vf.enc
----
-
-
-Create a virtual folder (`~/foo`) from an encrypted file `~/foo.img`:
-
-```bash
-# Create ~/private that is encrypted
-NAME=private
-SIZE=100M
-
-# First-time setup
-dd if=/dev/urandom of=~/${NAME}.img bs=$SIZE count=1 iflag=fullblock
-
-LOOP=$(losetup --find)
-sudo losetup $LOOP ~/${NAME}.img
-sudo cryptsetup luksFormat $LOOP
-sudo cryptsetup open $LOOP $NAME
-sudo mkfs.ext4 /dev/mapper/$NAME
-mkdir ~/$NAME
-
-# Mount
-sudo cryptsetup open $LOOP $NAME
-sudo mount -t ext4 /dev/mapper/$NAME ~/$NAME
-
-# Then, after reboots:
-LOOP=$(losetup --find)
-sudo losetup $LOOP ~/${NAME}.img
-sudo cryptsetup open $LOOP $NAME
-sudo mount -t ext4 /dev/mapper/$NAME ~/$NAME
-```
-
-## TODO
-
--  [[Nix|Nixify]] this
-- Avoid having to `chown -R $USER` inside mounted dir?
-- What does it take to resize later? Can we do it unbounded from beginning?
-
-## References
-
-- https://wiki.archlinux.org/title/Dm-crypt/Encrypting_a_non-root_file_system
-
-
-===
-
-<!-- Source: Software/Linux/Linux logs from previous boot.md -->
-<!-- URL: https://srid.ca/linux-logs-boot -->
-<!-- Title: Linux logs from previous boot -->
-<!-- Wikilinks: [[Software/Linux/Linux logs from previous boot]], [[Linux/Linux logs from previous boot]], [[Linux logs from previous boot]] -->
-
----
-slug: linux-logs-boot
-tags: [micro]
-date: 2021-01-23
----
-
-On a #[[Linux]] system managed by [systemd], its [Journal] feature manages the logs for everything from kernel to user level services.  These logs can be accessed using the [`journalctl`] command. The particular query of interest is to retrieve kernel logs from the time *before* current boot.
-
-To display all log messages across all services and components, but since the current boot:
-
-```bash
-journalctl -b
-```
-
-The `-b` arguments specifies the boot ID, which can be obtained from the first column of the output of `journalctl --list-boots`. The current boot's ID is 0, and the previous boot's ID is -1, and so on. 
-
-If you just did a **cold reboot following a system crash**, you get the logs prior to crash by retrieving the logs for boot ID -1:
-
-```bash
-journalctl -b -1
-```
-
-Be warned that this displays logs from *all* components and services. Typically to investigate a system crash you only need the kernel logs; the `-k` option will filter out everything bug kernel messages.
-
-```bash
-journalctl -b -1 -k
-```
-
-This will open `less` in which you may press `GG` to go the end of the logs. This can be automated by explicitly piping to `less +G` (whilst forcing colored output on both ends of the pipe):
-
-```bash
-SYSTEMD_COLORS=1 journalctl -b -1 -k | less +G -r
-```
-
-Use <kbd>j</kbd> and <kbd>k</kbd>, as well as <kbd>Ctrl+U</kbd> and <kbd>Space</kbd>, to page through the logs.
-
-[systemd]: https://wiki.archlinux.org/index.php/systemd
-[Journal]: https://wiki.archlinux.org/index.php/Systemd/Journal
-[`journalctl`]: https://www.loggly.com/ultimate-guide/using-journalctl/
-
-
-===
-
-<!-- Source: Software/Linux/NixOS.md -->
-<!-- URL: https://srid.ca/nixos -->
-<!-- Title: NixOS -->
-<!-- Wikilinks: [[Software/Linux/NixOS]], [[Linux/NixOS]], [[NixOS]] -->
-
----
-slug: nixos
----
-
-NixOS is a #[[Linux]] distribution based on the purely functional [[Nix]]# package manager, with declarative configuration.
-
-## Configuration
-
-My NixOS config: https://github.com/srid/nixos-config
-
-## Community
-
-Join the NixOS Asia Zulip: https://nixos.asia/en
-
->[!warning]
-> I _do not_ recommend the official avenues: Matrix & Discourse ([[nixos-woke-invasion|why not?]])
-
-## Pages
-
-```query
-children:.
-```
-
-
-===
-
-<!-- Source: Software/Linux/NixOS/A NixOS container for ProtonVPN.md -->
-<!-- URL: https://srid.ca/protonvpn-nixos-container -->
-<!-- Title: A NixOS container for ProtonVPN -->
-<!-- Wikilinks: [[Software/Linux/NixOS/A NixOS container for ProtonVPN]], [[Linux/NixOS/A NixOS container for ProtonVPN]], [[NixOS/A NixOS container for ProtonVPN]], [[A NixOS container for ProtonVPN]] -->
-
----
-slug: protonvpn-nixos-container
-tags: [micro]
-date: 2021-03-03
----
-
-:::{.page-note}
-**NOTE**: This article is incorrect, but you should use `nixos-shell`; see [instructions here](https://github.com/srid/nixos-config/pull/14).
-:::
-
-#[[NixOS]]'s [declarative container management](https://nixos.org/manual/nixos/stable/#ch-containers) provides a way to *declaratively* configure an *entire* (NixOS) Linux system to be run inside the host. Below you will find the Nix config that configures a new container named "vpn" in the following way:
-
-- Add the specified system packages
-- Add the specified user
-
-Of course, you can do more - such as adding systemd services, configuring firewall, etc. But for this post, we are interested only in creating an **isolated system** that will connect to a VPN network whilst leaving the rest of your computer remain connected without VPN[^dis]. 
-
-```nix
-  containers.vpn = { 
-    config =  { config, pkgs, ... }: {
-      environment.systemPackages = with pkgs; [
-        protonvpn-cli  # Our VPN client
-        tmux
-        youtube-dl
-        aria
-      ];
-      users.extraUsers.user = {
-        isNormalUser = true;
-        uid = 1000;
-      };
-    };
-  };
-```
-
-Add the above to your host's `configuration.nix`, and then `nixos-rebuild switch`. Now you can start the container as:
-
-```sh
-sudo nixos-container start vpn
-```
-
-And access its root shell as:
-
-```sh
-sudo nixos-container root-login vpn
-```
-
-From within the root shell, you will want to login to your [ProtonVPN](https://protonvpn.com/) account:
-
-```sh
-protonvpn init
-```
-
-Connect to VPN,
-
-```sh
-protonvpn c --fastest
-```
-
-And then login as a non-root user (important!) with tmux:
-
-```sh
-su - user -c "tmux new -A"
-```
-
-From here, you can use your favourite network clients to access the outside world through VPN.
-
-[^dis]: In particular, the `protonvpn` Linux client is not always reliable over long-time; it is not uncommon to find my home-server host unreachable from the outside due to a frozen VPN connection. 
-
-===
-
-<!-- Source: Software/Linux/NixOS/Blocking social media in NixOS.md -->
-<!-- URL: https://srid.ca/block-social-media -->
-<!-- Title: Blocking social media in NixOS -->
-<!-- Wikilinks: [[Software/Linux/NixOS/Blocking social media in NixOS]], [[Linux/NixOS/Blocking social media in NixOS]], [[NixOS/Blocking social media in NixOS]], [[Blocking social media in NixOS]] -->
-
----
-slug: block-social-media
-tags: [micro]
-date: 2021-04-16
----
-
-Add this to your #[[NixOS]] Linux `configuration.nix`:
-
-```nix
-{
-  networking.extraHosts =
-    ''
-      127.0.0.1 reddit.com
-      127.0.0.1 www.reddit.com
-      127.0.0.1 np.reddit.com
-      127.0.0.1 old.reddit.com
-      127.0.0.1 www.old.reddit.com
-
-      127.0.0.1 news.ycombinator.com
-      127.0.0.1 hckrnews.com
-
-      127.0.0.1 twitter.com
-      127.0.0.1 www.twitter.com
-      127.0.0.1 mobile.twitter.com
-    '';
-}
-```
-
-- On [[Windows]], the file to modify is `c:\windows\system32\drivers\etc\hosts`.
-- On [[macOS]], the file to modify is `/private/etc/hosts`
-
-===
-
-<!-- Source: Software/Linux/NixOS/Lightweight Linux VMs on NixOS.md -->
-<!-- URL: https://srid.ca/lxc-nixos -->
-<!-- Title: Lightweight Linux VMs on NixOS -->
-<!-- Wikilinks: [[Software/Linux/NixOS/Lightweight Linux VMs on NixOS]], [[Linux/NixOS/Lightweight Linux VMs on NixOS]], [[NixOS/Lightweight Linux VMs on NixOS]], [[Lightweight Linux VMs on NixOS]] -->
-
----
-slug: lxc-nixos
-tags: [blog]
-date: 2020-03-25
----
-
->[!warning]
->I now use `incus` over `lxc`. Accordingly, this page needs an update; but for now, see [srid/nixos-config](https://github.com/srid/nixos-config/tree/master/modules/flake-parts/incus-image).
-
-
->[!note]
-> If you wish to run #[[NixOS]] container on a NixOS host, checkout NixOS's [declarative container management](https://nixos.org/manual/nixos/stable/#ch-containers) which may be a more appealing option than LXD. For VMs, see [microvm.nix](https://github.com/astro/microvm.nix).
-
-
-Often I find myself needing a *pristine* Linux system for testing some program that is expected to work on a user's machine with an environment that is possibly quite different to mine. I could spin up a virtual machine, but that is too heavyweight. Alternatively, I could use Docker, but a Docker container is conceptually more of a process and less of a system. 
-
-Enter [LXD](https://linuxcontainers.org/lxd/introduction/), which advertises itself as offering a *"user experience similar to virtual machines but using Linux containers instead."* Or, as [u/Floppie7th](https://old.reddit.com/r/selfhosted/comments/b50h9t/docker_vs_lxd/) puts it, *"LXD makes 'pet' containers. Basically, VMs without the virtual hardware and extra kernel."* In other words, LXD allows us to spin up lightweight (Linux) VMs on a Linux machine, where one cares more about the separation of userland than hardware or kernel.
-
-## Installing lxd 
-
-On NixOS, you can install LXD by adding `virtualisation.lxd.enable = true;` to your configuration.nix. You might also want to add yourself to the `lxd` user group so as to not have to use `sudo` when running the `lxc` command. Add these to your `configuration.nix`:
-
-```nix
-  virtualisation.lxd.enable = true;
-
-  users.users.srid = {
-    extraGroups = [ "lxd" ];
-  };
-```
-
-## Initial setup
-
-Run `sudo lxd init` to initialize LXD.
-
-## Running a Ubuntu container
-
-Let us run a bare Ubuntu container to get started:
-
-```bash
-# You might first have to run `lxd init` to initialize LXD
-#
-# You can run `lxc image list images: | grep ubuntu` to see availablke images
-#
-lxc launch ubuntu:noble pristine -c security.nesting=true
-```
-
-(Note that `security.nesting` flag is being enabled so that we may be able to install Nix later; you may leave it disabled if you would not be using Nix).
-
-We named the container "pristine", and you can check its status in `lxc list`---it should be in the RUNNING state.
-
-### Entering the container 
-
-This will drop us in the root shell:
-
-```bash
-lxc exec pristine -- /bin/bash
-```
-
-However, usually, it is better to create a user account (with sudo access) first, and then use it:
-
-```bash
-lxc exec pristine -- adduser --shell /bin/bash --ingroup sudo srid
-```
-
-Then you may directly log in as that user as follows:
-
-```bash
-lxc exec pristine -- su - srid -c 'tmux new-session -A -s main'
-```
-
-Note that we use `tmux` so that programs requiring tty will work correctly.
-
-
-### Installing Nix 
-
-Assuming you have enabled the `security.nesting` flag on the container, you should now be able to [install Nix](https://github.com/DeterminateSystems/nix-installer).
-
-I use Nix to develop and install my programs, so the above is all I need to do in order to begin testing them on a pristine Linux machine without much fanfare.
-
-## Running a NixOS container
-
-The official image server for LXD does not support NixOS. However, we can build our own using [nixos-generators](https://github.com/nix-community/nixos-generators). Let's wrap the commands in a script (call it [`buildLxcImage.sh`](https://github.com/srid/nix-config/blob/adce2673d6f2fdf6dfd9466612a71fda6da72961/device/lxc/buildLxcImage.sh)):
-
-```bash
-#! /usr/bin/env nix-shell
-#! nix-shell -p nixos-generators
-#! nix-shell -i bash
-set -xe
-
-CONFIGURATIONNIX=$1
-METAIMG=`nixos-generate -f lxc-metadata`
-IMG=`nixos-generate -c ${CONFIGURATIONNIX} -f lxc`
-
-lxc image delete nixos || echo true
-lxc image import --alias nixos ${METAIMG} ${IMG}
-```
-
-You will need a `configuration.nix` (see [mine][lxc.nix]) to build a NixOS image, using this script:
-
-[lxc.nix]: https://github.com/srid/nix-config/blob/adce2673d6f2fdf6dfd9466612a71fda6da72961/device/lxc.nix
-
-```bash
-# Builds the "nixos" lxc image
-./buildLxcImage.sh configuration.nix
-```
-
-Then launch a container:
-
-```bash
-lxc launch nixos childnixos -c security.nesting=true
-```
-
-Access its root shell:
-
-```bash
-lxc exec childnixos -- /run/current-system/sw/bin/bash
-```
-
-If the configuration.nix also declares a user account, you can instead directly log in as that user:
-
-```bash
-lxc exec childnixos -- /run/current-system/sw/bin/su - srid  \
-  -c 'tmux new-session -A -s main'
-```
-
-
-
-===
-
-<!-- Source: Software/Linux/NixOS/nixos-woke-invasion.md -->
-<!-- URL: https://srid.ca/nixos-woke -->
-<!-- Title: NixOS Woke Invasion -->
-<!-- Wikilinks: [[Software/Linux/NixOS/nixos-woke-invasion]], [[Linux/NixOS/nixos-woke-invasion]], [[NixOS/nixos-woke-invasion]], [[nixos-woke-invasion]] -->
-
----
-slug: nixos-woke
----
-
-# NixOS Woke Invasion
-
-#[[woke-invasion|Woke invasion]] of the [[NixOS|NixOS]] #[[Community|community]] can be traced back to as early as April, 2021 ([1][origin1], [2][origin2]). It appears to have reached its zenith in April, 2024 when the woke moderation team's mischiefs [reached the public eye](https://news.ycombinator.com/item?id=40166912).
-
-On May 1st, 2024, the Board decided to delegate powers to an unspecified "community" (see "Eelco steps down" below), leading to the formation of the "Steering Committee" on November 2024 - however it remains to be seen as to what exactly this will engender.
-
-[origin1]: https://discourse.nixos.org/t/nursing-a-thriving-community/12742
-[origin2]: https://github.com/NixOS/nixpkgs/pull/120729#discussion_r621116027
-
-
-## Timeline
-
-Notable events since Nov, 2023:
-
-| Date                                                                             | Event                                                                                                                                                                           |
-| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[nixos-mod\|2023-11-14]]                                                        | Author gets banned for ideological reasons                                                                                                                                      |
-| [2024-01-28](https://twitter.com/sridca/status/1751586790425895377)              | Witch-hunt by NixOS moderator Martin Weinelt (hexa) to get the entire [NixOS Asia](https://nixos.asia/en/) domain, as well as Srid, banned from the [[Lobste.rs]] site          |
-| [2024-02-12](https://twitter.com/sridca/status/1757055395183374667)              | Report of the moderators perma-banning David Arnold                                                                                                                             |
-| [2024-03-10](https://twitter.com/sridca/status/1766944228129575327)              | Continued criticism of the mod team by community members; a NixOS moderator "piegamesde" publicly accuses Srid of being [[Gender Ideology\|"transphobic"]]                      |
-| [2024-03-20](https://twitter.com/sridca/status/1771523366983196975)              | Continued criticism; Jonas Chevalier (zimbatm) publicly lies about Srid; then threatened and successfully shadow-banned the people raising criticism                            |
-| [2024-04-22](https://twitter.com/sridca/status/1782200842571198962)              | Attempt to depose Eelco Dolstra                                                                                                                                                 |
-| [2024-04-26](https://news.ycombinator.com/item?id=40204985)                      | [RFC 175](https://github.com/NixOS/rfcs/pull/175); Banning of Jon Ringer, and the authors of RFC 175 (nrdxp apcodes); moderators begin resigning (see below)                    |
-| [2024-05-01](https://old.reddit.com/r/NixOS/comments/1ch8vhv/eelco_steps_down/)  | Eelco steps down                                                                                                                                                                |
-| [2024-05-01](https://github.com/NixOS/foundation/pull/142)                       | [Zulip](https://nixpkgs.zulipchat.com/) is chosen for governence discussions (allowing banned members with *"extreme prejudice"* and threat of permaban *"[if] they blow it""*) |
-| [2024-11-08](https://github.com/NixOS/moderation/commits/main/)                  | Both authors of RFC 175 get permanently banned                                                                                                                                  |
-| [2024-11-21](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) | SC kicks off their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_)                                                                          |
-
-{#moderation}
-## Moderation team
-
-{#mod-evidence}
-### Evidence of woke moderation
-
-Consult [the appendix of RFC 175](https://github.com/nrdxp/rfc-evidence/blob/master/rfc_evidences_experiences.md) to read the concrete evidence for woke moderation in the NixOS community.
-
-### Resignations
-
-Just a few hours after the PR for RFC 175 was opened, several moderators began to resign from the team:
-
-| Date                                                                                                   | Name                        |
-| ------------------------------------------------------------------------------------------------------ | --------------------------- |
-| [2024-04-26](https://old.reddit.com/r/NixOS/comments/1cfv8vo/moderation_nogo_zones/l1v9fhl/?context=3) | Ryan Mulligan               |
-| [2024-04-28](https://discourse.nixos.org/t/taking-a-step-back/44243)                                   | piegames                    |
-| [2024-05-01](https://discourse.nixos.org/t/resigning-from-the-moderation-team/44607)                   | rhendric (Ryan Hendrickson) |
-
-As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only moderators.
-
-{#boardgg}
-## Board member resignations
-
-4/5 board members have so far quit, leaving Ron as the only one left.
-
-| Date | Name |
-| -- | -- |
-| [2024-04-30](https://discourse.nixos.org/t/nixos-foundation-board-giving-power-to-the-community/44552) | Eelco Dolstra |
-| [2024-03-11](https://x.com/sridca/status/1767171520428728645) | Domen Kozar |
-| [2024-06-07](https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644) | Jonas Chevalier |
-| [2024-06-28](https://discourse.nixos.org/t/time-to-step-down/47835) | Théophane Hufschmitt |
-
-{#ca}
-## Timeline
-
-:::{class="text-xs opacity-30 hover:opacity-100"}
-
-### May
-
-- Self-professed manipulator joepie91 (Sven Slootweg) is involved from beginning
-- Preemptive squashing of dissenting opinions: https://github.com/NixOS/foundation/pull/142/files#diff-ad7ee810e67ff78b1b7f55f7113b7e291719780d95065a82e68a5b83a19462fcR23-R25
-- Allowing safetyism-based silencing & banning: https://github.com/NixOS/foundation/pull/144#discussion_r1588136289
-  - cf. shlevy <-> zimbatm [on Matrix](https://matrix.to/#/!VyoUhyWvlhSpFWWxHL:matrix.org/$P7-nlgSP0QVA7W6qPPUZddmnXxRYW5d67EVfjKO-RiQ?via=nixos.org&via=matrix.org&via=nixos.dev)
-- A predominantly woke moderation team (6 of them from Europe, incidentally) was chosen to moderate the Zulip: https://github.com/NixOS/foundation/pull/144#issuecomment-2091819630
-  - infinisil was quite sensible, until to the point of ceding to banning Shea Levy (see below)
-  - RaitoBezarius is woke.
-  - hexa is woke.
-  - Janik is woke
-  - [endocrimes](https://toot.cat/@endocrimes) is woke (responsible for banning Shea)
-  - lassulus (unknown yet; but did relay the spurious message justifying Jon's ban)
-- Zulip topis of interest
-  - [constitutional assembly > Selection criteria: marginalized groups](https://nixpkgs.zulipchat.com/#narrow/stream/435937-constitutional-assembly/topic/Selection.20criteria.3A.20marginalized.20groups)
-  - [governance > Fundamental Principles](https://nixpkgs.zulipchat.com/#narrow/stream/435724-governance/topic/Fundamental.20Principles)
-- Shea Levy got banned (infinisil folded to the rest of the moderators)
-  - https://old.reddit.com/r/NixOS/comments/1cndnyw/broken_promises_the_nix_governance_discussions/
-  - https://old.reddit.com/r/NixOS/comments/1cn60v1/shea_levy_has_been_suspended_from_the_governance/
-  - https://old.reddit.com/r/NixOS/comments/1cqic4w/report_on_nixos_governance_discussions/
-- Assembly applications open https://old.reddit.com/r/NixOS/comments/1cojgjs/applications_for_nixos_constitutional_assembly/
-- Assembly announced: https://old.reddit.com/r/NixOS/comments/1ct3tdb/nixos_foundation_board_constitutional_assembly/
-  - several months before their work is done, and the results can be appraised.
-- delroth publicly accusing Shea Levy of being 'fascist' https://mastodon.delroth.net/@delroth/112450680035780629
-- Someone's calling out of recent (biased) mod actions https://x.com/sridca/status/1792321271608328487
-- Calls to drop r/NixOS from nixos webpages; samueldr banning individuals from the wiki for political reasons: https://x.com/sridca/status/1793489723882664111
-    - https://old.reddit.com/r/NixOS/comments/1cya4k4/rnixos_deleted_from_the_official_wiki/
-    - sock-puppets of woke users trying to worsen the drama, e.g.: `https://old.reddit.com/user/Prudent_Confidence14`
-- May 30: Raito dogpiles on nix 2.18 -> 2.22 PR: https://github.com/NixOS/nixpkgs/pull/315262
-- May 30: Irene claims to be "closely associated" with the NixOS drama (despite not publicly engaging with it outside of signing the save-nix-together letter): https://lobste.rs/s/vyprdq/nixos_24_05_released#c_pxv3sb
-
-### June
-
-- Jun 4: zimbatm removes Srid from nix-system org (also replying to him on X) and blocks him on GitHub; Srid is (coincidentally?) banned from nix-community GitHub org on the same day: https://x.com/sridca/status/1798025800798683161
-- Jun 7: zimbatm [formally announces leaving Foundation](https://discourse.nixos.org/t/leaving-the-foundation-going-back-to-the-roots/46644) writing *"I also messed up in many places [..] the worst part was all the conflicts that erupted in the community that I couldn’t address adequately. That was difficult. Many people got hurt emotionally. I’m sorry I failed there."*
-- Jun 10: [Target date, public repo, office hours, interviews](https://discourse.nixos.org/t/target-date-public-repo-office-hours-interviews/46827)
-- Jun 11: After his suspension, [Jon Ringer comments on RFC 175](https://x.com/jonringer117/status/1800644896920945146)
-- Jun 17: (word of mouth) Ron apparently is the only one running the Board (Théophane silently quit)
-- Jun 19: Jon Ringer's request to restore commit access (which was removed when he was suspended) gets brigaded by woke mob https://x.com/sridca/status/1803545277284143252
-    - wokies threaten to quit if Jon is not banned gain.
-    - Domen gets threatened by Jade ([comment link](https://old.reddit.com/r/NixOS/comments/1dku0l0/i_must_note_rnixos_is_a_moderation_free_zone/?cache-bust=1718978771090))
-    - Jon gets his commit bit back, but not yet Tim
-    - samuel [ragequits](https://discourse.nixos.org/t/maintainers-drop-samueldr-321436/47354) and engages in sabotoge by deleting several packages from `nixpkgs`
-- June 21:
-  - Jon is permabanned https://x.com/sridca/status/1804188339244843120
-    - https://old.reddit.com/r/NixOS/comments/1dloahg/constitutional_assembly_statement_on_jon_ringer/
-  - r/nixos [reportedly](https://x.com/_DavSanchez/status/1804187182770311552) begins to get moderated by unknown users (mods list is private and hidden) with posts being hidden or removed.
-    - On the same day, [Lassulus](https://old.reddit.com/user/Lassulus) (the new mod and CA member) [resurrects](https://old.reddit.com/r/NixOS/comments/1dl5rxe/list_of_open_source_games_and_their_status_on/l9mm01p/?context=3) his reddit account which had been inactive for 6 years
-    - Unclear if Domen played a role: https://x.com/sridca/status/1804506753876299924
-  - Domen ragequits in giving commit access, because mod action wasn't not taken on his attacker (welcome to the club), Jade: https://github.com/NixOS/nixpkgs/issues/50105#issuecomment-2183067965
-  - Ongoing vandalism on nixos.wiki as well as impersonation by wokies (links to be added)
-    - Jul 27: Impersonation of Shivaraj on nixos.wiki purloining this very page: https://old.reddit.com/r/NixOS/comments/1ed5gbc/the_nixos_conflict_in_under_5_minutes/lf70qh1/?context=3
-    - Jul 22: Impersonation of Srid on an entirely unrelated community: https://x.com/sridca/status/1815545168982130707
-    - Nov 7: "isabelroses" brings up the impersonated page for political gain: https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489/110
-- Jun 22: Following Jon's ban, Hexa talking "purge" https://x.com/sridca/status/1804533789760037221
-  - In response to Srid's post, Hexa reveals himself as an antifa on the same day, https://x.com/sridca/status/1807516430260113904
-- Jun 27: spamming of github repos to switch away from unofficial wiki: https://github.com/NixOS/nixos-wiki-infra/issues/105
-- Jun 28: Another board member, Théophane Hufschmitt, steps down writing *"I have also been deeply hurt by some behaviours, when people considered that pushing for their own idea of a successful community was worth spreading hate, defamation, fear and exclusion, or by the (too recurrent) thinking that one’s own agenda was more important than honesty, truth, and care for the others."*: https://discourse.nixos.org/t/time-to-step-down/47835
-    - This leaves Ron as the only board member: https://x.com/sridca/status/1806706500234039792
-- Jun 29: Domen and Graham fight out the blame game, while Domen continues to talk freely while utterly failing in leadership actions: https://x.com/sridca/status/1807063291132309905 & https://x.com/grhmc/status/1806997486621405227
-- Jun 29: Domen, Shea, Graham publicly talking about commercial fork/consortium https://x.com/domenkozar/status/1807047507404312592
-
-### July
-
-- Jul 1: Infinisil concedes what went wrong, and promises to do better by collaborating with Jon; further woke fallout (more ragequits): https://x.com/sridca/status/1807842730132795653
-  - More ragequits follow: https://old.reddit.com/r/NixOS/comments/1dtqlga/maintainers_exodus_over_recent_events/
-    - Yet, in all factuality, there extortion is empty rhetoric: https://old.reddit.com/r/NixOS/comments/1e0clk6/growth_in_nixpkgs_maintainers_jul_2020_to_present/
-- Jul 3: First media report on the core issue (political activism): https://old.reddit.com/r/NixOS/comments/1dul0nw/nixos_commits_purge_of_nazi_contributors_forces/ which gets censored on Discourse https://x.com/sridca/status/1808577121465303149
-  - The reddit submittion gets shadowlisted in a day (by Domen?)
-- Jul 3: Sometime recently (in the last 3 weeks), Jonas Chevalier blocks Srid from the entire GitHub organization of his consultancy (Numtide): https://x.com/sridca/status/1808605343674450157
-- Jul 6: Tim [Political Bikeshedding: NixOS Edition](https://nrd.sh/blog/nixos-policy-breakdown/)
-- Jul 11: [Lix post gets flagged on HN](https://news.ycombinator.com/item?id=40932996); their bigotted beliefs get called out [elsewhere](https://lobste.rs/s/1hrh4a/announcing_lix_2_90_vanilla_ice_cream#c_gyzzmv) (albeit on a community which itself is moderated by a bigotted group)
-- Jul 13: /r/NixOS begins testing AI to assist with moderation (based on NixOS CoC): https://old.reddit.com/r/NixOS/comments/1e27pxq/automated_moderation/
-  - Jul 21: And approaching failure: https://old.reddit.com/r/NixOS/comments/1e885up/an_argument_against_the_use_of_watchdog_chatbot/
-- July 18: Ron posts _"[The board] is now smaller than it once was. I would love to extend a call to action for those interested in helping out."_ https://discourse.nixos.org/t/call-to-action-interim-volunteers-for-nixos-foundation-efforts/49269
-- July 5 (discovered on Jul 26): Chris posts [The NixOS Conflict in Under 5 Minutes](https://x.com/sridca/status/1817028976226791775)
-
-### Aug
-
-- Aug 1: NCA publishes Nix Community Values draft for feedback. Ryan comments publicly. https://old.reddit.com/r/NixOS/comments/1eh8s7i/nix_community_values_draft_for_feedback_before/
-
-### Sept
-
-- Sep 10: Nix 2.24 vulnerability drama, mostly from Lix people
-  - https://news.ycombinator.com/item?id=41492994
-  - https://lobste.rs/s/ixb3v7/nix_2_24_is_vulnerable_remote_privilege
-  - Causing a Nix team member (Robert) to [object](https://functional.cafe/@roberth/113109319874108408) & then [apologize](https://functional.cafe/@roberth/113113241888848304)
-- Sep 10: [Last call for feedback; Nix Governance Constitution to be finalised on 2024-09-16](https://old.reddit.com/r/NixOS/comments/1fd4bmk/last_call_for_feedback_nix_governance/)
-- Sep 19: SC election nominees are substantially wokies (which ought to be unsurprising given the political nature of this takeover), as of Sep 19: https://github.com/NixOS/SC-election-2024/pulls?q=is%3Apr+Nominate
-- Sep 29: Evidence of bigoted beliefs among candidates resurface: https://x.com/sridca/status/1840385121578291680
-
-### Oct
-
-- Oct 14: Tampering of the voting system and eventual deadline extension: https://old.reddit.com/r/NixOS/comments/1g6s0mc/nix_elections_voting_open_until_20241103/lslmdrs/?context=3
-- Oct 20: Two SC candidates have CoI with the activist fork Lix, https://old.reddit.com/r/NixOS/comments/1g801r9/lix_forking_nixosnixpkgs/
-- Oct 20: A SC candidate demonstrates bigotry openly against a community member: https://x.com/GabriellaG439/status/1850915429050708063
-- Oct 27: Domen ("I won’t be contributing to Nix anymore and will put my efforts into Tvix") [attacks](https://old.reddit.com/r/NixOS/comments/1ge2rkb/domen_i_wont_be_contributing_to_nix_anymore_and/) DetSys; [Graham responds](https://discourse.nixos.org/t/parting-from-the-documentation-team/24900/36) 
-- Oct 30: SC candidate cafkafk getting called out by another (numinit): https://discourse.nixos.org/t/announcing-determinate-nix/54709/120
-
-### Nov
-
-- The yearly gender ritual:
-  - https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489
-  - https://discourse.nixos.org/t/improving-diversity-in-this-community/55547
-- The rest of RFC 175 authors get permanently banned: [Andreas](https://github.com/NixOS/moderation/commit/a40d73948299c9d622ef6a09bed219b56464bb95), [Tim](https://github.com/NixOS/moderation/commit/4d6ff96b9213d1d6bf704cb57af4f23f4f864f61).
-- [SC kicks off](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_).
-- 
-
-### 2025 Feb
-- Jon publishes a 2+ hr video summarizing the whole drama. [Reddit](https://www.reddit.com/r/NixOS/comments/1imqc14/nixos_drama_explained_a_personal_account/?utm_source=reddit&utm_medium=usertext&utm_name=NixOS), [X](https://x.com/jonringer117/status/1889114268991426949), [YouTube](https://www.youtube.com/watch?v=gp0FI8Gw1iA), [Text](https://gist.github.com/jonringer/11744f5489aa2b9feb83e6e85d79d5ee). Infinisil uses midwit rhetoric with an air of caring, but factually uncaring, exposing his lack of boldness and fairhandedess in these issues.
-
-**NOTE:** The author, Srid, has lost interest in keeping this timeline up to date, but the drama does continue ([1](https://x.com/mightyiam/status/1924013214448415188); [2](https://x.com/jonringer117/status/1931736499198070883)).
-
-:::
-
-## External Links
-
-- [themotte.org discussion](https://www.themotte.org/post/994/smallscale-question-sunday-for-may-5/209672?sort=top#context)
-
-
-===
-
-<!-- Source: Software/Linux/Recording screencasts.md -->
-<!-- URL: https://srid.ca/screencast -->
-<!-- Title: Recording screencasts -->
-<!-- Wikilinks: [[Software/Linux/Recording screencasts]], [[Linux/Recording screencasts]], [[Recording screencasts]] -->
-
----
-slug: screencast
-tags: [micro]
-date: 2021-04-27
----
-
-GNOME runs on  #[[NixOS]] by default using Wayland, however [Peek] works only in X. For the [[Ema]] demo, I recorded a short screencast spawning two windows, [[VSCode]] and web browser, as follows:
-
-- Disconnect from external monitor
-- Logout and login choosing X over Wayland in the login screen
-- Go to display settings: reduce resolution and increase scalling 
-- Arrange two windows side by side
-- Open [Peek] and record
-
-Some tips before recording:
-
-- Practice a few attempts before; it is good to avoid unnecessary delays, and unnecessary UI interactions and dialogs
-
-The screencast I produced is [available here](https://ema.srid.ca/static/ema-demo.mp4) (and is used in [[Announcing Ema - Static Sites in Haskell|this blog post]]). It weighs almost 700KB, though perhaps it could be compressed (`ffmpeg`?) without much loss in quality.
-
-[Peek]: https://github.com/phw/peek
-
-
-===
-
-<!-- Source: Software/Nix.md -->
-<!-- URL: https://srid.ca/nix -->
-<!-- Title: Nix -->
-<!-- Wikilinks: [[Software/Nix]], [[Nix]] -->
-
----
-slug: nix
----
-
-See my [rapid introduction to Nix][nix-rapid].
-
-See also [[NixOS]].
-
-```query
-children:.
-```
-
-## Links
-
-- https://nix.dev -- An opinionated guide for developers getting things done using the Nix ecosystem.
-
-
-[nix-rapid]: https://nixos.asia/en/nix-rapid
-
-===
-
-<!-- Source: Software/Nix/Building Static Haskell binaries using Nix.md -->
-<!-- URL: https://srid.ca/nix-haskell-static-binaries -->
-<!-- Title: Building Static Haskell binaries using Nix -->
-<!-- Wikilinks: [[Software/Nix/Building Static Haskell binaries using Nix]], [[Nix/Building Static Haskell binaries using Nix]], [[Building Static Haskell binaries using Nix]] -->
-
----
-slug: nix-haskell-static-binaries
-tags: [blog]
-date: 2020-09-29
----
-
-Static binaries are useful to distribute #[[Haskell]] applications without requiring the user to build it themselves. Fully static Haskell executables are *mostly* supported by #[[Nix]]; see [this issue][issue] for details on what's left.
-
-To get started quickly with building static binaries for your Haskell project,
-
-1. Nixify your project: write a `default.nix` (See [[Nix recipes for Haskellers]])
-1. Switch to a fork of [nixpkgs] reverting `3c7ef6b`.[^revert]
-   1. You can try [mine][nixpkgs-fork].
-1. Write a `static.nix` (see below), that invokes this `default.nix`, using [musl] to build your app with static linking
-1. Run `nix-build static.nix` to produce a static binary under `./result/bin`
-   1. Expect it to take a long time as it builds everything from source.
-
-```nix
-let 
-  # Assuming we pin nixpkgs using https://github.com/nmattia/niv
-  sources = import ./nix/sources.nix;
-  # Your nixpkgs fork (see step 2 above)
-  nixpkgs = import sources.nixpkgs-fork { };
-  # Use `pkgsMusl` for static libraries to link against
-  pkgs = nixpkgs.pkgsMusl;
-  # This is your Haskell app compiled normally.
-  # It's default.nix takes a `pkgs` argument which we override with `pkgsMusl`
-  myapp = import ./default.nix { inherit pkgs; };
-  inherit (pkgs.haskell.lib) appendConfigureFlags justStaticExecutables;
-in 
-  # All that's left to do is call `justStaticExecutables` to configure Cabal to
-  # produce a static executable, as well as add the necessary GHC configure
-  # flags to link against static libraries.
-  appendConfigureFlags (justStaticExecutables ka)
-    [
-      "--ghc-option=-optl=-static"
-      "--extra-lib-dirs=${pkgs.gmp6.override { withStatic = true; }}/lib"
-      "--extra-lib-dirs=${pkgs.zlib.static}/lib"
-      "--extra-lib-dirs=${pkgs.libffi.overrideAttrs (old: { dontDisableStatic = true; })}/lib"
-      "--extra-lib-dirs=${pkgs.ncurses.override { enableStatic = true; }}/lib"
-    ]
-```
-
-## Other changes you might need to make
-
-More complex projects may require additional fixes and workarounds.
-
-* If you see the error `crtbeginT.o: relocation R_X86_64_32 against hidden symbol '__TMC_END__'`, you might want to add `"--disable-shared"` to the configure flags (see above).[^tmc]
-* Some tests may fail on musl (eg: [hslua]); disable them using `dontCheck`
-
-For [[Neuron]] in particular, see [this PR][neuron-pr] for the actual changes to support building static binaries on Linux.
-
-## macOS
-
-macOS does not support fully static binaries. And there is nothing in nixpkgs to build partially static binaries either.
-
-[issue]: https://github.com/NixOS/nixpkgs/issues/43795
-[musl]: https://musl.libc.org/
-[nixpkgs]: https://github.com/NixOS/nixpkgs
-[nixpkgs-fork]: https://github.com/srid/nixpkgs/commits/static
-[hslua]: https://github.com/hslua/hslua/issues/67
-[neuron-pr]: https://github.com/srid/neuron/pull/417/files
-
-[^revert]: See <https://github.com/NixOS/nixpkgs/issues/85924#issuecomment-619199832>
-[^tmc]: See [this recommendation](https://logs.nix.samueldr.com/nixos/2019-05-11#2210564;) by nh2 on IRC. Though, a better solution seems to be to make the GHC bootstrap binary use ncurses6. See [issue \#99](https://github.com/nh2/static-haskell-nix/issues/99#issuecomment-665400600).
-
-
-===
-
-<!-- Source: Software/Nix/Nix derivation dependency graph.md -->
-<!-- URL: https://srid.ca/remove-references-to -->
-<!-- Title: Nix derivation dependency graph -->
-<!-- Wikilinks: [[Software/Nix/Nix derivation dependency graph]], [[Nix/Nix derivation dependency graph]], [[Nix derivation dependency graph]] -->
-
----
-slug: remove-references-to
-date: 2020-06-18
----
-
-# Nix derivation dependency graph
-
-I recently had to debug [a problem](https://web.archive.org/web/20210125202157/https://github.com/srid/neuron/issues/193) wherein a #[[Haskell]] binary created using Nix was created with a runtime dependency on the entire GHC ecosystem (despite using `justStaticExecutables`). This investigation led to identifying Cabal’s `Paths_*` module autogeneration as the root cause.
-
-The following commands came in handy when investigating the problem, which was fixed (as a workaround) using `remove-references-to`.
-
-## Useful commands
-
-- Get the dependency tree:
-    
-    ```sh
-    nix-store -q --tree result
-    ```
-    
-- Ask “why” as to a particular dependency:
-    
-    ```sh
-    nix why-depends -a ./result \
-     /nix/store/bicv5nnibqg0qsqyjvb3nw01447yms0j-shake-0.18.5-data
-    ```
-    
-- Remove reference to a dependency manually using [`remove-references-to`](https://web.archive.org/web/20210125202157/https://github.com/NixOS/nixpkgs/blob/master/pkgs/build-support/remove-references-to/default.nix).
-
-## Cleaning up after Cabal using `remove-references-to`
-
-Some examples:
-
-- [from nixpkgs](https://web.archive.org/web/20210125202157/https://github.com/NixOS/nixpkgs/blob/46405e7952c4b41ca0ba9c670fe9a84e8a5b3554/pkgs/development/tools/pandoc/default.nix#L13-L28)
-- [neuron’s PR](https://web.archive.org/web/20210125202157/https://github.com/srid/neuron/pull/240/files)
-- [Emanote's PR](https://github.com/EmaApps/emanote/pull/392)
-
-
-===
-
-<!-- Source: Software/Nix/Nix recipes for Haskellers.md -->
-<!-- URL: https://srid.ca/haskell-nix -->
-<!-- Title: Nix recipes for Haskellers -->
-<!-- Wikilinks: [[Software/Nix/Nix recipes for Haskellers]], [[Nix/Nix recipes for Haskellers]], [[Nix recipes for Haskellers]] -->
-
----
-slug: haskell-nix
-tags: [blog]
-date: 2019-12-03
----
-
-The goal of this article is to get you comfortable managing simple #[[Haskell]] programs and projects using the [[Nix]] package manager without getting too much into the details. See [[haskell-template]] if you want a ready-made Nix-based project template for Haskell.
-
-## Prerequisites
-
-You are running either [[Linux]] or macOS[^win], and have installed the **Nix** package manager using [these instructions][install-nix] [^nixos]. You do *not* need to install anything else, including needing to install Haskell, as Nix will manage that for you.
-
-[install-nix]: https://nixos.org/download.html#nix-quick-install
-
-[^win]: If you use Windows, you should set up [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) Ubuntu and install Nix on it (or setup [[NixOS]] using [NixOS-WSL](https://github.com/Trundle/NixOS-WSL) instead of Ubuntu). 
-
-## Simple programs
-
-Let us begin with the simplest Haskell program, try to compile and run it with the help of Nix.
-
-```haskell
--- HelloWorld.hs
-module Main where
-
-main :: IO ()
-main = putStrLn "Hello World"
-```
-
-Haskell code is compiled by GHC, which is provided by the Nix package called "ghc". How do we install it? According to the [Nix manual](https://nixos.org/nix/manual/#chap-package-management) this can be done by running the command `nix-env -i ghc`. For Haskell developers, there is a better approach. Instead of installing packages in a global environment, you may install them to an *isolated* area and launch a shell with those packages in its environment. This is done using the `nix-shell -p ghc` command.
-
-```
-# This drops us in a bash shell with ghc package installed and 
-# $PATH updated.
-$ nix-shell -p ghc
-...
-# Now let's run our module.
-[nix-shell:~] runhaskell HelloWorld.hs
-Hello World
-```
-
-As you can see, nix-shell dropped us in a shell environment with the "ghc" package installed and activated. This puts `runhaskell` (part of the "ghc" package) in your PATH, running which will compile and run your first Haskell program. When you exit the nix-shell (<kbd>Ctrl+D</kbd>), `runhaskell` will no longer be in scope, however the "ghc" package will have been cached so that subsequent invocations of `nix-shell -p ghc` would not have to download and install it once again.[^nix]
-
-### Using library dependencies
-
-What if our program relied on an third-party Haskell library? The following program uses the [brick](http://hackage.haskell.org/package/brick) UI library.
-
-```haskell
--- HelloWorld.hs
-module Main where
-
-import Brick
-
-ui :: Widget ()
-ui = str "Hello, world!"
-
-main :: IO ()
-main = simpleMain ui
-```
-
-We can no longer use the "ghc" package here. Fortunately, Nix is also a programming language, and as such as we can evaluate arbitrary Nix expressions to create a customized environment. Official Nix packages come from the [nixpkgs](https://github.com/NixOS/nixpkgs) channel, which provides a function called `ghcWithPackages`. Evaluating this function, passing it a list of Haskell libraries (already in nixpkgs), will create an environment with both GHC and the specific Haskell libraries installed. 
-
-```
-$ nix-shell \
-    -p "haskellPackages.ghcWithPackages (p: [p.brick])" \
-    --run "runhaskell HelloWorld.hs"
-```
-
-The `--run` argument will invoke the given command instead of dropping us in an interactive shell. This single command does *so much*---install the Haskell compiler with the requested libraries, compile our program and run it!
-
-### Haskell scripts
-
-You can use the above nix-shell command in the shebang to create self-contained Haskell scripts. Let us see an example, but using [[ghcid]], instead of runhaskell:
-
-```haskell
-#! /usr/bin/env -S"ANSWER=42" nix-shell
-#! nix-shell -p ghcid
-#! nix-shell -p "haskellPackages.ghcWithPackages (p: [p.shower])"
-#! nix-shell -i "ghcid -c 'ghci -Wall' -T main"
-
-import Shower (printer)
-import System.Environment (getEnv)
-
-main :: IO ()
-main = do
-  let question = "The answer to life the universe and everything"
-  answer <- getEnv "ANSWER"
-  printer (question, "is", answer)
-```
-
-Save this file as `myscript.hs` and run `chmod u+x myscript.hs` to make it an executable, and then run it as `./myscript.hs`. Not only is it a self-sufficient script (depending on nothing but nix in the environment), but thanks to ghcid it also re-compiles and re-launches itself whenever it changes! See more examples [here](https://github.com/srid/aoc2019).
-
-## Cabal project
-
-Haskell projects normally use [cabal](https://www.haskell.org/cabal/), and you might already be familiar with [Stack](https://haskellstack.org/) which uses Cabal underneath. Nix is an alternative to Stack with many advantanges, chief of them being the creation of reproducible development environments using declarative configuration that handles even non-Haskell packages.
-
-Adding Nix support to most Cabal projects is a matter of creating a file called `default.nix` in the project root (just make sure you have a `.cabal` file named appropriately). This file is by default used by commands like `nix-build` and `nix-shell`, which we will use when developing the project.
-
-```nix
-# default.nix
-let 
-  pkgs = import <nixpkgs> { };
-in 
-  pkgs.haskellPackages.developPackage {
-    root = ./.;
-    modifier = drv:
-      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
-        [ cabal-install
-          ghcid
-        ]);
-  }
-```
-
-Now if you run `nix-shell` it will drop you in a shell with all Haskell dependencies (from .cabal file) installed. This will be your development shell; from here you can run your usual `cabal` commands, and everything will function as expected.
-
-```
-$ nix-shell
-...
-[nix-shell:~] cabal new-build
-..
-```
-
-If you only want to *build* the project, creating a final executable, use `nix-build`.
-
-### Development dependencies
-
-Notice the `modifier` attribute in the previous example. It specifies a list of build dependencies, using the `addBuildTools` function, that becomes available when we run either `nix-shell` or `nix-build`. Here, you will specify all the packages you need for development.[^shell] We speficied two---`cabal` and `ghcid`. If you removed `cabal` from this list, then cabal will not be in scope of your nix-shell. We added [`ghcid`](https://github.com/ndmitchell/ghcid), which can be used to run a daemon that will recompile your project if any of the source files change; go ahead and give it a try using `nix-shell --run ghcid`.
-
-### Overriding dependencies
-
-The above will work as long as the libraries your project depends on exist on nixpkgs (which itself is derived from Stackage). That will not always be the case and you may want to *override* certain dependencies.
-
-In Nix overriding library packages is rather straightforward. The aforementioned `developPackage` function exposes this capability via the `source-overrides` attribute. Suppose your cabal project depends on the [named](https://github.com/monadfix/named) package at a particular git revision (`e684a00`), then you would modify your `default.nix` to look like:
-
-```nix
-let
-  pkgs = import <nixpkgs> { };
-  compilerVersion = "ghc865"; 
-  compiler = pkgs.haskell.packages."${compilerVersion}";
-in
-  compiler.developPackage {
-    root = ./.;
-    source-overrides = {
-      named = builtins.fetchTarball 
-        "https://github.com/monadfix/named/archive/e684a00.tar.gz";
-    };
-    modifier = drv:
-      pkgs.haskell.lib.addBuildTools drv (with pkgs.haskellPackages;
-        [ cabal-install
-          ghcid
-        ]);
-  }
-```
-
-Now, if you re-run `nix-shell` or `nix-build` Nix will rebuild your package, and any packages depending on `named`, using the new source.
-
-Note that this example also demonstrates how to select a compiler version.
-
-See [Artyom's tech notes](https://tek.brick.do/how-to-override-dependency-versions-when-building-a-haskell-project-with-nix-K3VXJd8mEKO7) for more on overriding Haskell dependencies in Nix.
-
-### Multi-package cabal project
-
-`developPackage` cannot be used if your project has multiple Haskell packages. You will have to go a few steps lower in the abstraction ladder, and use the underlying Nix functions (`callCabal2nix`, `shellFor`, `extend`) in the `default.nix` (or `flake.nix`) of a multiple-package cabal project. See https://github.com/srid/haskell-multi-nix for a full example.
-
-## Caching
-
-Nix has builtin support for caching. Packages from the nixpkgs channel are already cached in the official cache. If you want to provide caching for your own packages, you may use [nix-serve](https://nixos.wiki/wiki/Binary_Cache) (from NixOS) or [Cachix](https://cachix.org/) (third-party service).
-
-## Continuous Integration
-
-Setting up CI for a Haskell project that already uses Nix is rather simple. If you use Github and Cachix, the easiest way is to use [the cachix Github Action](https://github.com/cachix/cachix-action). [^sec]
-
-## External links
-
-* [Official Nix manual on using Haskell](https://nixos.org/manual/nixpkgs/unstable/#sec-haskell)
-* [Unofficial developer guide to Nix](https://nix.dev/)
-* [[haskell-template]]: A prebuilt Haskell project template using Nix flakes, among other defaults
-* [Incrementally package a Haskell program using Nix](https://www.haskellforall.com/2022/08/incrementally-package-haskell-program.html)
-
-[^nixos]: Alternatively, if you are feeling adventurous enough, you may install [[NixOS]], a Linux distribution based on Nix.
-
-[^nix]: Nix is a *general* package manager. You may use it to manage not only haskell packages, but also any other program. For example, to temporarily use the `tree` package, so as to dispay the directory tree of the current directory, you would run: `nix-shell -p tree --run tree`.
-
-[^shell]: Use `pkgs.lib.haskell.inNixShell` to conditionally include dependencies on nix-shell but not nix-build.
-
-[^sec]: If you are however using a *self-hosted* runner in Github Actions with public repos, read this [security warning](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-self-hosted-runners#self-hosted-runner-security-with-public-repositories).
-
-
-===
-
-<!-- Source: Software/Nix/Nix-ifying Rust projects.md -->
-<!-- URL: https://srid.ca/rust-nix -->
-<!-- Title: Nix-ifying Rust projects -->
-<!-- Wikilinks: [[Software/Nix/Nix-ifying Rust projects]], [[Nix/Nix-ifying Rust projects]], [[Nix-ifying Rust projects]] -->
-
----
-slug: rust-nix
-tags: [blog/rust/learning]
-date: 2021-04-08
----
-
->[!note]
-> This article is somewhat out of date. But https://nixos.asia/en/rust is kept up to date. You will also want to checkout the template, https://github.com/srid/rust-nix-template
-
-While most would be satisfied with `rustup`, I wanted to use #[[Nix]] for writing any new project in #[[Rust]] - especially as I see the value of Nix, and I already use [[NixOS]]. It took a bit of digging to evaluate the existing options, and come up with a template Nix setup for new projects. 
-
-:::{.ui .message}
-All the code in this post is part of [rust-nix-template](https://github.com/srid/rust-nix-template) which you can use to bootstrap your Rust project using the Nix approach detailed here. Thanks to  [Alexander Bantyev](https://old.reddit.com/r/rust/comments/mmbfnj/nixifying_a_rust_project/) for the pointers.
-:::
-
-Let's support [Flakes](https://nixos.wiki/wiki/Flakes) from the get-go. To nixify your Rust project, add the following files to your project *and* set the `name` and `description` fields in `flake.nix` file appropriately. Then run `nix develop` to get a nix shell (`nix-shell` also works), or `nix run` to run the app (`nix-build` also works).
-
-Some points to note:
-
-- We are using the `oxalica/rust-overlay` overlay to get Rust and friends, because this gives a more recent version than what's available in nixpkgs.
-- `kolloch/crate2nix:tools.nix` is like `callCabal2nix` in Haskell but for Rust projects
-- `numtide/flake-utils` provides Flake utility functions, notably `eachDefaultSystem`
-- `edolstra/flake-compat` enables us to use our `flake.nix` to automatically support legacy Nix builders: `nix-shell` and `nix-build`.
-- The `.vscode` folder contains all the settings necessary to open the project with full IDE support in #[[VSCode]], for Rust and Nix (including auto format).
-
-## `flake.nix`
-
-```nix
-# This file is pretty general, and you can adapt it in your project replacing
-# only `name` and `description` below.
-
-{
-  description = "...";
-
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    utils.url = "github:numtide/flake-utils";
-    rust-overlay.url = "github:oxalica/rust-overlay";
-    crate2nix = {
-      url = "github:kolloch/crate2nix";
-      flake = false;
-    };
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
-    };
-  };
-
-  outputs = { self, nixpkgs, utils, rust-overlay, crate2nix, ... }:
-    let
-      name = "my-app";
-    in
-    utils.lib.eachDefaultSystem
-      (system:
-        let
-          # Imports
-          pkgs = import nixpkgs {
-            inherit system;
-            overlays = [
-              rust-overlay.overlay
-              (self: super: {
-                # Because rust-overlay bundles multiple rust packages into one
-                # derivation, specify that mega-bundle here, so that crate2nix
-                # will use them automatically.
-                rustc = self.rust-bin.stable.latest.default;
-                cargo = self.rust-bin.stable.latest.default;
-              })
-            ];
-          };
-          inherit (import "${crate2nix}/tools.nix" { inherit pkgs; })
-            generatedCargoNix;
-
-          # Create the cargo2nix project
-          project = pkgs.callPackage
-            (generatedCargoNix {
-              inherit name;
-              src = ./.;
-            })
-            {
-              # Individual crate overrides go here
-              # Example: https://github.com/balsoft/simple-osd-daemons/blob/6f85144934c0c1382c7a4d3a2bbb80106776e270/flake.nix#L28-L50
-              defaultCrateOverrides = pkgs.defaultCrateOverrides // {
-                # The app crate itself is overriden here. Typically we
-                # configure non-Rust dependencies (see below) here.
-                ${name} = oldAttrs: {
-                  inherit buildInputs nativeBuildInputs;
-                } // buildEnvVars;
-              };
-            };
-
-          # Configuration for the non-Rust dependencies
-          buildInputs = with pkgs; [ openssl.dev ];
-          nativeBuildInputs = with pkgs; [ rustc cargo pkgconfig nixpkgs-fmt ];
-          buildEnvVars = {
-            PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
-          };
-        in
-        rec {
-          packages.${name} = project.rootCrate.build;
-
-          # `nix build`
-          defaultPackage = packages.${name};
-
-          # `nix run`
-          apps.${name} = utils.lib.mkApp {
-            inherit name;
-            drv = packages.${name};
-          };
-          defaultApp = apps.${name};
-
-          # `nix develop`
-          devShell = pkgs.mkShell
-            {
-              inherit buildInputs nativeBuildInputs;
-              RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
-            } // buildEnvVars;
-        }
-      );
-}
-```
-
-## `shell.nix`
-
-```nix
-(import
-  (
-    let
-      lock = builtins.fromJSON (builtins.readFile ./flake.lock);
-    in
-    fetchTarball {
-      url = "https://github.com/edolstra/flake-compat/archive/${lock.nodes.flake-compat.locked.rev}.tar.gz";
-      sha256 = lock.nodes.flake-compat.locked.narHash;
-    }
-  )
-  {
-    src = ./.;
-  }).shellNix
-```
-
-## `default.nix`
-
-```nix
-(import
-  (
-    let
-      lock = builtins.fromJSON (builtins.readFile ./flake.lock);
-    in
-    fetchTarball {
-      url = "https://github.com/edolstra/flake-compat/archive/${lock.nodes.flake-compat.locked.rev}.tar.gz";
-      sha256 = lock.nodes.flake-compat.locked.narHash;
-    }
-  )
-  {
-    src = ./.;
-  }).defaultNix
-```
-
-## `.vscode/`
-
-Add a `.vscode/` folder containing these files,
-
-### `.vscode/extensions.json`
-
-```json
-{
-    "recommendations": [
-        "matklad.rust-analyzer",
-        "jnoortheen.nix-ide"
-    ]
-}
-```
-
-### `.vscode/settings.json`
-
-```json
-{
-    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
-    "editor.formatOnSave": true
-}
-```
-
-All these files are available in [this project](https://github.com/srid/bouncy).
-
-
-===
-
-<!-- Source: Software/Nix/flake-parts.md -->
-<!-- URL: https://srid.ca/flake-parts -->
-<!-- Title: flake-parts -->
-<!-- Wikilinks: [[Software/Nix/flake-parts]], [[Nix/flake-parts]], [[flake-parts]] -->
-
----
-slug: flake-parts
----
-
-https://github.com/hercules-ci/flake-parts
-
-Make monorepos awesome when using [[Nix]] flakes.
-
-Module docs: https://community.flake.parts/
-
-
-===
-
-<!-- Source: Software/Nix/haskell-flake.md -->
-<!-- URL: https://srid.ca/haskell-flake -->
-<!-- Title: haskell-flake -->
-<!-- Wikilinks: [[Software/Nix/haskell-flake]], [[Nix/haskell-flake]], [[haskell-flake]] -->
-
----
-slug: haskell-flake
----
-
-# `haskell-flake`
-
-[haskell-flake] is a #[[flake-parts]] module for #[[Haskell]] development. It is used in #[[haskell-template]] and in [several Haskell projects](https://github.com/search?q=%22github%3Asrid%2Fhaskell-flake%22&type=code).
-
-- Documentation: https://community.flake.parts/haskell-flake
-
-[haskell-flake]: https://github.com/srid/haskell-flake
-
-#[[Projects]]
-
-===
-
-<!-- Source: Software/No JavaScript.md -->
-<!-- URL: https://srid.ca/nojs -->
-<!-- Title: No JavaScript -->
-<!-- Wikilinks: [[Software/No JavaScript]], [[No JavaScript]] -->
-
----
-slug: nojs
----
-
-[[Haskell]] programmers like me who have gotten used to functional programming and static typing find JavaScript to be painful to use. We can't avoid JavaScript entirely -- there are some useful JS libraries out there in the world -- however for actual app development we can continue using *safer* programming languages (see below) via either a JS-transpiler or a [Wasm](https://webassembly.org/)-compiler. 
-
-
-| Language        | Toolkits                                                | Notes                                                                                                                                     |
-| --------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Haskell]]     | GHCJS; [[Reflex-FRP]]#; [[Obelisk]]                     | Developed by a small consultancy (Obsidian Systems) with uncertain future; also see Tweag's [Asterius](https://github.com/tweag/asterius) |
-| F# / .NET       | [Blazor](https://srid.github.io/learning-fsharp/Blazor) | Can expect Microsoft's investment to provide it a solid future.                                                                           |
-| [[Rust]][^nofp] | [Yew](https://yew.rs/)[^trunk], [Leptos](https://twitter.com/sridca/status/1686496441760460800)                          | Has an [actively evolving](https://www.arewewebyet.org/topics/frameworks/#frontend) wasm story; needs further exploration                 |
-
-[^trunk]: via https://github.com/yewstack/yew-trunk-minimal-template for JS-less dev tools.
-
-[^nofp]: Quoting Michael Snoyman, however, "*Rust is not a functional programming language, it’s imperative; [...] Rust does adhere to many of the tenets of functional programming; [...] In many cases, you can easily, naturally, and idiomatically write Rust in a functional style*" https://www.fpcomplete.com/blog/2018/10/is-rust-functional/
-
-## Blog posts on #nojs/main
-
-```query {.timeline}
-tag:#nojs
-```
-
-## Related
-
-- [[PureScript]] generally relies on NodeJS toolchain being peppered in the project repo, but [purs-nix](https://github.com/ursi/purs-nix) aims to provide a "No JavaScript" development environment using [[Nix]].
-- **htmlx**: https://www.reddit.com/r/haskell/comments/ud2ii9/haskell_htmx_hyperscript/
-
-
-===
-
-<!-- Source: Software/Nostr.md -->
-<!-- URL: https://srid.ca/nostr -->
-<!-- Title: Nostr -->
-<!-- Wikilinks: [[Software/Nostr]], [[Nostr]] -->
-
----
-slug: nostr
----
-
-# Nostr
-
-[Nostr] is a decentralized social network created by [fiatjaf] and currently being [funded by Jack][jack-funding], a former CEO of [[Twitter]].
-
-## Me
-
-Srid's nostr profile: https://satellite.earth/@srid@srid.ca
-
-[Nostr]: https://nostr.com/
-[fiatjaf]: https://github.com/fiatjaf
-[jack-funding]: https://www.coindesk.com/business/2024/05/06/jack-dorsey-leaves-bluesky-board-touts-freedom-technology-of-x-and-nostr/
-
-{#identity}
-## Create your own Nostr identity
-
-Just as mine above, you can use a DNS-based internet identifier if you own a domain, using [NIP-05]. This works on clients like [Satellite.earth]. It is fairly to simple to configure; just add a `.well-known/nostr.json` (see [mine](https://github.com/srid/srid/blob/master/.well-known/nostr.json)) to your site.
-
-[NIP-05]: https://github.com/nostr-protocol/nips/blob/master/05.md
-[Satellite.earth]: https://satellite.earth/
-
-===
-
-<!-- Source: Software/Pass with GPG.md -->
-<!-- URL: https://srid.ca/pass -->
-<!-- Title: Pass with GPG -->
-<!-- Wikilinks: [[Software/Pass with GPG]], [[Pass with GPG]] -->
-
----
-slug: pass
-tags: [blog]
-date: 2021-01-15
----
-
-[pass](https://www.passwordstore.org/) is a simple **password manager** that stores passwords in a [gpg]-encrypted file, not some obscure database. The files can in turn be put on Dropbox, git or any other file management service.
-
->[!info] 1Password
->The author now uses 1Password.
-
-## Installing
-
-`pass` must be installed along `gpg`. On #[[NixOS]]:[^ubuntu]
-
-[^ubuntu]: On non-NixOS Linuxes, you may want to use the native package, as home-manager's [shell completion is broken](https://github.com/nix-community/home-manager/issues/1871).
-
-```nix
-{
-    # Must restart computer, otherwise you may hit this bug:
-    # https://github.com/NixOS/nixpkgs/issues/35464#issuecomment-383894005
-    programs.gnupg = {
-      agent = {
-        enable = true;
-        enableExtraSocket = true;
-        pinentryFlavor = "curses";
-      };
-    };
-    environment.systemPackages = with pkgs; [
-      pass
-    ];
-}
-```
-
-## Using
-
-Generate a GPG key
-
-```sh
-gpg --full-gen-key
-```
-
-Initialize the password store, along with git:
-
-```sh
-pass init <email>
-pass git init
-```
-
-Test:
-
-```sh
-pass insert test/example.org
-pass show test/example.org
-pass git push
-```
-
-## Backup GPG key in Keybase
-
-:::{.highlight-block}
-As of summer 2021, I no longer use Keybase. Re-using [[ProtonMail]] email keys is another option.
-:::
-
-Since I already use [keybase], I store my GPG key securely in [kbfs](https://book.keybase.io/docs/files), and then import it on other computers.
-
-```sh
-gpg --export-secret-keys --armor "Sridhar Ratnakumar" > ~/keybase/private/srid/gpg/me.asc
-```
-
-## Import GPG key
-
-To import a GPG key (either from Keybase backup or from the canonical ProtonMail key):
-
-```sh
-gpg --import ~/keybase/private/srid/gpg/me.asc
-gpg --edit-key <email> # and run `trust`
-```
-
-## Android support
-
-- Setup Syncthing (use `.git` alias with `gitdir: /path/to/.git` as contents in order to exclude the git index from syncing)
-- Use Android apps: Password Store & OpenKeychain 
-
-
-[keybase]: https://book.keybase.io/docs/files
-[gpg]: https://wiki.archlinux.org/index.php/GnuPG
-
-
-===
-
-<!-- Source: Software/ProtonMail.md -->
-<!-- URL: https://srid.ca/protonmail -->
-<!-- Title: ProtonMail -->
-<!-- Wikilinks: [[Software/ProtonMail]], [[ProtonMail]] -->
-
----
-slug: protonmail
----
-
-
-https://protonmail.com
-
-===
-
-<!-- Source: Software/PureScript.md -->
-<!-- URL: https://srid.ca/purescript -->
-<!-- Title: PureScript -->
-<!-- Wikilinks: [[Software/PureScript]], [[PureScript]] -->
-
----
-slug: purescript
----
-
-
-===
-
-<!-- Source: Software/PureScript/PureScript mini-tutorial using Nix.md -->
-<!-- URL: https://srid.ca/purescript-nix -->
-<!-- Title: PureScript mini-tutorial using Nix -->
-<!-- Wikilinks: [[Software/PureScript/PureScript mini-tutorial using Nix]], [[PureScript/PureScript mini-tutorial using Nix]], [[PureScript mini-tutorial using Nix]] -->
-
----
-slug: purescript-nix
-tags: [blog, nojs]
-date: 2020-04-16
----
-
-**EDIT (Mar, 2023)**: Checkout https://github.com/purifix/purifix if you want to Nixify your PureScript projects.
-
-My #[[Haskell]] app [[Neuron]] recently received a [contribution](https://github.com/srid/neuron/pull/90) that added support for the very useful client-side search feature. JavaScript was used to implement it; however after having gotten used to merrily creating [[Reflex-FRP]]-based web apps (frontend and backend both in Haskell), writing raw JavaScript had very little appeal to me, which left me with the following options:
-
-* GHCJS: Reflex
-* GHCJS: Miso
-* PureScript
-
-One appeal of PureScript is that it is comparitively lightweight to install, develop and use (which is how I'd describe neuron itself).
-
-## Creating a Hello World project
-
-If you already use [[Nix]] (or [[NixOS]]), getting a quick feel for PureScript is just a
-matter of running:
-
-```bash
-nix-shell -p purescript -p spago
-```
-
-[Spago](https://github.com/purescript/spago) is the PureScript package manager.
-It uses [[Dhall]] for configuration, which is exactly what Neuron uses as well. Once
-you are in the nix-shell we shall create a new PureScript project:
-
-```bash
-mkdir /tmp/app1 && cd /tmp/app1
-spago init
-```
-
-The project will have minimal files:
-
-```bash
-$ tree
-.
-├── packages.dhall
-├── spago.dhall
-├── src
-│   └── Main.purs
-└── test
-    └── Main.purs
-
-2 directories, 4 files
-```
-
-and very basic PureScript code:
-```haskell
--- src/Main.purs
-module Main where
-
-import Prelude
-
-import Effect (Effect)
-import Effect.Console (log)
-
-main :: Effect Unit
-main = do
-  log "🍝"
-```
-
-To build the final JavaScript "executable", run `spago bundle-app`; it will
-generate a `index.js` for use from HTML.
-
-```bash
-$ spago bundle-app
-[info] Installation complete.
-[info] Build succeeded.
-[info] Bundle succeeded and output file to index.js
-
-$ wc -l -c index.js
- 29 792 index.js
-```
-
-That's basically it. Very easy to install and use!
-
-## ghcid of PureScript
-
-Not using any fancy IDE, I find [[ghcid]] to be
-critical to my Haskell development workflow; its fast compile-reload cycle
-facilitates a very delightful development experience. I wanted to have this
-with PureScript. Fortunately, such a tool exists ---
-[pscid](https://github.com/kritzcreek/pscid). pscid is available in Nix, so you
-may simply restart that nix-shell as:
-
-```bash
-nix-shell -p purescript -p spago -p pscid
-```
-
-Then visit the project directory, and run:
-
-```bash
-pscid
-```
-
-Now modify `src/Main.hs` and watch it recompile on the fly. When you are done
-with your changes, you would run `spago bundle-app` at the end to build the
-final JavaScript.
-
-## "So how do I use `getElementById`?"
-
-Haskellers are familiar with Hoogle. In PureScript ecosystem, that is called
-[Pursuit](https://pursuit.purescript.org/). I wanted to know, as part of [adding
-PureScript to neuron](https://github.com/srid/neuron/pull/106), how to use the
-famous `getElementById` function in PureScript; and pursuit [came to
-help](https://pursuit.purescript.org/search?q=getElementById).
-
-```haskell
-getElementById :: String -> NonElementParentNode -> Effect (Maybe Element)
-```
-
-Hmm, what is "`NonElementParentNode`"? This function is from the
-`purescript-web-dom` library, which uses the [DOM
-spec](https://dom.spec.whatwg.org/) which does indeed
-[document](https://dom.spec.whatwg.org/#interface-nonelementparentnode) this
-second argument, although it is implicitly provided by `this` in JavaScript. In
-PureScript you would pass it explicitly. HTML Document is one of the values it
-can take:
-
-
-```haskell
-main = do
-  doc <- map toNonElementParentNode $ document =<< window
-  myElem <- getElementById "someId" doc
-```
-
-**EDIT:** The lack of documentation around things like this is something I
-noticed immediately in the PureScript ecosystem; a lobste.rs user [explains it here](https://lobste.rs/s/wa99yt/coming_purescript_from_haskell_reflex#c_faof1j).
-
-## Logging to console
-
-The project template already uses the `log` function to log strings to browser
-console. But how do we log an arbitrary PureScript object, like the DOM element?
-Using
-[`traceM`](https://pursuit.purescript.org/packages/purescript-debug/4.0.0/docs/Debug.Trace#v:traceM):
-
-```haskell
-import Debug.Trace (traceM)
-main = do
-  doc <- map toNonElementParentNode $ document =<< window
-  myElem <- getElementById "someId" doc
-  traceM myElem
-```
-
-And that's all it takes to get the initial feel for what it is like to develop
-PureScript as a Haskeller who comes from the world of Nix and GHCJS.
-
-## External links
-
-- [Getting Started with PureScript](https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md) (official guide)
-
-
-===
-
-<!-- Source: Software/Rust.md -->
-<!-- URL: https://srid.ca/rust -->
-<!-- Title: Rust -->
-<!-- Wikilinks: [[Software/Rust]], [[Rust]] -->
-
----
-slug: rust
----
-
-https://www.rust-lang.org/
-
-```query
-children:.
-```
-
-===
-
-<!-- Source: Software/Rust/Rust Community.md -->
-<!-- URL: https://srid.ca/rust-community -->
-<!-- Title: Rust Community -->
-<!-- Wikilinks: [[Software/Rust/Rust Community]], [[Rust/Rust Community]], [[Rust Community]] -->
-
----
-slug: rust-community
----
-
-# Rust Community
-
-## Criticism
-
-> An important aspect of inclusivity is being able to accommodate a diversity of opinions. If we can only get along when everyone agrees, then we cannot be diverse or inclusive. While our [[woke|preference for consensus]] has served us well in some areas, it has also **caused problems**. Our culture of avoiding conflict rather than resolving it is unhealthy and has led to **dysfunctional governance**. --[17 September 2022: Ten challenges for Rust](https://www.ncameron.org/blog/ten-challenges-for-rust/)
-
-### Discussions
-
-In 2020, the forum post titled [Rust says tech will* always be political](https://users.rust-lang.org/t/rust-says-tech-will-always-be-political/43627) - discussed the Rust core team publicly promulgating their [[Luxury beliefs]] around [[woke|American culture wars]] as if to speak on behalf of the members of the wider #[[Community]].
-
-A year later another, in August 2021, another [post](https://users.rust-lang.org/t/worries-about-tech-always-being-political-statement-by-rust-team/63272?u=srid) was made by another member which immediately got locked by a moderator.
-
-
-===
-
-<!-- Source: Software/Syncthing.md -->
-<!-- URL: https://srid.ca/syncthing -->
-<!-- Title: Syncthing -->
-<!-- Wikilinks: [[Software/Syncthing]], [[Syncthing]] -->
-
----
-slug: syncthing
----
-
-https://docs.syncthing.net/
-
-```query
-path:./*
-```
-
-===
-
-<!-- Source: Software/Syncthing/Syncthing data loss.md -->
-<!-- URL: https://srid.ca/syncthing-data-loss -->
-<!-- Title: Syncthing data loss -->
-<!-- Wikilinks: [[Software/Syncthing/Syncthing data loss]], [[Syncthing/Syncthing data loss]], [[Syncthing data loss]] -->
-
----
-slug: syncthing-data-loss
----
-
-Data loss in [[Syncthing]] is not uncommon. Always use Syncthing in conjunction with Git for important documents, like [[Zettelkasten]]. [[VSCode]] extensions like [this](https://marketplace.visualstudio.com/items?itemName=alfredbirk.git-add-commit-push) facilitate "saving" files to Git more often.
-
-===
-
-<!-- Source: Software/Urbit.md -->
-<!-- URL: https://srid.ca/urbit -->
-<!-- Title: Urbit -->
-<!-- Wikilinks: [[Software/Urbit]], [[Urbit]] -->
-
----
-slug: urbit
----
-
-https://urbit.org/
-
-## Links
-
-- On [Urbit's politics](https://old.reddit.com/r/TheMotte/comments/nljqir/free_urbit_town_hall_conference_tomorrow/gzliqvr/?sort=confidence&context=2) in the [tech](https://themotte.zettel.page/tech-woke) community
-
-===
-
-<!-- Source: Software/VSCode.md -->
-<!-- URL: https://srid.ca/vscode -->
-<!-- Title: VSCode -->
-<!-- Wikilinks: [[Software/VSCode]], [[VSCode]] -->
-
----
-slug: vscode
----
-
-An open source text editor from Microsoft with extension support.
-
-https://code.visualstudio.com/
-
-```query
-children:.
-```
-
-
-===
-
-<!-- Source: Software/Windows.md -->
-<!-- URL: https://srid.ca/windows -->
-<!-- Title: Windows -->
-<!-- Wikilinks: [[Software/Windows]], [[Windows]] -->
-
----
-slug: windows
----
-
-
-
-===
-
-<!-- Source: Software/XMonad Tips.md -->
-<!-- URL: https://srid.ca/xmonad-tips -->
-<!-- Title: XMonad Tips -->
-<!-- Wikilinks: [[Software/XMonad Tips]], [[XMonad Tips]] -->
-
----
-slug: xmonad-tips
----
-
-Note that the `<super>` key is usually `Win` or `Alt`, to the left of the space bar.
-
----
-
-1. Press `<Super>-Shift-Enter` to open the **terminal**
-1. Press `<Super>-p` to launch dmenu (**application launcher**)
-1. **Layouts**
-	1. `ThreeCol` (useful for wider screens)
-	```haskell
-	myThreeCol =
-      ThreeColMid
-        1 -- Master window count
-        (3 / 100) -- Resize delta
-        (1 / 2) -- Initial column size
-	```
-	1. [Tabbed](https://hackage.haskell.org/package/xmonad-contrib-0.17.0/docs/XMonad-Layout-Tabbed.html) (useful when managing related windows *one at a time*)
-1. `<Super>-h/l` - resize active window
-1. `<Super>-j/k` - switch focus to left/right window
-1. `<Super>-w/e` - switch focus to other monitor
-1. More keybindings [here](https://wiki.haskell.org/wikiupload/d/d6/Xmbindings.svg) (poster-friendly)
-1. Ideas for **keybindings**
-	1. Screenshot mouse-selected region to clipboard
-	```nix
-	# In NixOS, add this to your packages list:
-	pkgs.writeScriptBin "screenshot"
-	  '' 
-	  #!${pkgs.runtimeShell}
-	  ${pkgs.maim}/bin/maim -s | ${pkgs.xclip}/bin/xclip -selection clipboard -t image/png
-	  '';
-	```
-1. Integrations
-	1. If you are using [[Pass with GPG]], `passmenu` can be invoked from dmenu (see above) to get autocompletion in passwords.
-
-===
-
-<!-- Source: Software/XMonad.md -->
-<!-- URL: https://srid.ca/xmonad -->
-<!-- Title: XMonad -->
-<!-- Wikilinks: [[Software/XMonad]], [[XMonad]] -->
-
----
-slug: xmonad
----
-
-[XMonad](https://xmonad.org/) is a tiling window manager for #[[Linux]] configurable in #[[Haskell]].
-
-- See [[Edit XMonad configuration with IDE support]] for getting started on [[NixOS]]. 
-- [[XMonad Tips]]# shows a bunch of things you could do with it.
-
-===
-
-<!-- Source: Software/cli.md -->
-<!-- URL: https://srid.ca/cli -->
-<!-- Title: Make CLI Great Again 🚀 -->
-<!-- Wikilinks: [[Software/cli]], [[cli]] -->
-
----
-slug: cli
----
-
-# Make CLI Great Again 🚀
-
-An ongoing project to get back to a CLI-centric workflow.
-
-**Update** (Oct, 2024): I'm using [[Hyprland]] on Thinkpad [[P14s]]. https://x.com/sridca/status/1849222477471236268
-
-**Update** (Jan, 2025): [[macOS]] is fine, if you don't buy into the Apple ecosystem. https://x.com/sridca/status/1878962756290068705
-
-## Topics
-
-### Zellij
-
-Terminal pane management to emulate VSCode's pane management.
-
-### Neovim
-
-I use `nixvim`: https://github.com/srid/nixos-config/blob/master/modules/home/all/neovim/default.nix
-
-### Email
-
-Himalaya, but unused: https://github.com/srid/nixos-config/blob/master/home/himalaya.nix
-
-## Motivation
-
-- Get in touch with the delightfully old [hacker mentality](https://en.wikipedia.org/wiki/Hacker_ethic) of living in the command-line.
-- Why neovim?
-  - VSCode can be sluggish. 
-  - Hack editor extensions in Haskell (see [nvim-hs](https://hackage.haskell.org/package/nvim-hs))
-      - Maybe even write a first-class [Emanote](https://emanote.srid.ca/) extension.
-- CLI email workflows: for more efficient processing (and scripting) of email
-
-## Posts
-
-```query {.timeline}
-path:./*
-```
-
-
-===
-
-<!-- Source: Software/cli/00-intro.md -->
-<!-- URL: https://srid.ca/cli/neovim/install -->
-<!-- Title: Install Neovim on using Nix -->
-<!-- Wikilinks: [[Software/cli/00-intro]], [[cli/00-intro]], [[00-intro]] -->
-
----
-date: 2022-04-08
-tags: [neovim]
-slug: cli/neovim/install
----
-
-# Install Neovim on using Nix
-
-Regardless of the platform, you can use the exact [[Nix]] specification to install and configure Neovim.
-
-https://github.com/srid/nixos-config/blob/04a3ddeb3ee8ef1ba793a876fac10f759cda500b/home/neovim.nix
-
-The home-manager module:
-
-```nix
-{ pkgs, inputs, system, ... }:
-let
-  neovim-nightly = inputs.neovim-nightly-overlay.packages.${system}.neovim;
-in
-{
-  programs.neovim = {
-    enable = true;
-    package = neovim-nightly;
-
-    extraPackages = [
-    ];
-
-    plugins = with pkgs.vimPlugins; [
-      vim-airline
-      papercolor-theme
-    ];
-
-    extraConfig = ''
-      set background=light
-      colorscheme PaperColor
-    '';
-  };
-}
-```
-
-Then, in your `home.nix` (or `flake.nix` if using the homeManager module):
-
-```nix
-imports = [ ./neovim.nix ]
-```
-
-- NixOS: https://github.com/srid/nixos-config/blob/04a3ddeb3ee8ef1ba793a876fac10f759cda500b/flake.nix#L53
-- macOS: https://github.com/srid/nixos-config/blob/04a3ddeb3ee8ef1ba793a876fac10f759cda500b/flake.nix#L133
-
-
-
-===
-
-<!-- Source: Software/cli/01-telescope.md -->
-<!-- URL: https://srid.ca/cli/neovim/telescope -->
-<!-- Title: Add a neovim plugin: telescope.nvim -->
-<!-- Wikilinks: [[Software/cli/01-telescope]], [[cli/01-telescope]], [[01-telescope]] -->
-
----
-date: 2022-04-09
-tags: [neovim]
-slug: cli/neovim/telescope
----
-
-# Add a neovim plugin: telescope.nvim
-
-![](https://user-images.githubusercontent.com/3998/162593346-e460468e-d867-46cb-8a78-2ca518629d09.png)
-
-The [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) plugin gives us Doom [[Emacs]]-like fuzzy finder for standard editor operations, like opening files or switching buffers.
-
-Continuing from the Nix of [[00-intro|previous post]], you only need to make two changes to the Nix to add this plugin:
-
-1. Add the plugin to `plugins` list
-   1. To find the exact Nix plugin name, look for 'telescope' in [generated.nix](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/editors/vim/plugins/generated.nix)
-   1. I found `telescope-nvim`, but I'm also going to add `telescope-zoxide` since I also use `zoxide` directory switcher.
-1. Add the vim config to `extraConfig`.
-
-
-```nix
-{
-    plugins = with pkgs.vimPlugins; [
-      ...
-      telescope-nvim
-      telescope-zoxide
-    ];
-    extraConfig = ''
-      ..
-      nnoremap <leader>ff <cmd>Telescope find_files<cr>
-      nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-      nnoremap <leader>fb <cmd>Telescope buffers<cr>
-      nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-    '';
-}
-```
-
-Open nvim, and hit `<leader>ff`. The leader key is by default `\`, so hit `\ ff`. This will bring up a fuzzy finder for opening files in current directory.
-
-## Nits
-
-I wish the plugin installation and configuration was modularized in home-manager, so that you can configure the individual plugins using Nix instead of writing vim.
-
-
-===
-
-<!-- Source: Software/cli/02-haskell.md -->
-<!-- URL: https://srid.ca/cli/neovim/haskell -->
-<!-- Title: Haskell Language Server and Coc -->
-<!-- Wikilinks: [[Software/cli/02-haskell]], [[cli/02-haskell]], [[02-haskell]] -->
-
----
-date: 2022-04-15
-tags: [neovim, haskell]
-slug: cli/neovim/haskell
----
-
-# Haskell Language Server and Coc
-
-[[Haskell]] has great IDE support via #[[haskell-language-server]] (HLS).
-
-[Coc.nvim](https://github.com/neoclide/coc.nvim) is the recommended extension to get Language Server Protocol (LSP) support for editing Haskell in neovim.
-
-It turns out that [`home-manager`](https://github.com/nix-community/home-manager/blob/master/modules/programs/neovim.nix) has a module that, unlike the [[NixOS]] version, provides a declarative way to install and configure coc.nvim with Haskell support (EDIT: this is [language-independent](https://github.com/srid/nixos-config/commit/32c3a733e0768d75d6c7c294a9473305a5c5a928)):
-
-```nix
-{
-  programs.neovim = {
-    coc = {
-      enable = true;
-      settings = {
-        languageserver = {
-          haskell = {
-            command = "haskell-language-server-wrapper";
-            args = [ "--lsp" ];
-            rootPatterns = [
-              "*.cabal"
-              "cabal.project"
-              "hie.yaml"
-            ];
-            filetypes = [ "haskell" "lhaskell" ];
-          };
-        };
-      };
-    };
-  };
-}
-```
-
-https://github.com/srid/nixos-config/commit/9a6410331063ae97ae405837559cf4c5b3990ada
-
-It does work when trying out in the nix-shell of [[haskell-template]].
-
-## Declarative plugin config in Nix
-
-The above is neat---no need to hand-write VimScript or Lua just to configure the extension. Can we do the same for *other* neovim extensions in Nix? A couple of attempts exist: [nix-neovim](https://github.com/syberant/nix-neovim) and [NixVim](https://github.com/pta2002/nixvim).
-
-
-===
-
-<!-- Source: Software/cli/03-modular.md -->
-<!-- URL: https://srid.ca/cli/neovim/modular -->
-<!-- Title: Modular neovim plugin configuration -->
-<!-- Wikilinks: [[Software/cli/03-modular]], [[cli/03-modular]], [[03-modular]] -->
-
----
-date: 2022-04-16
-tags: [neovim]
-slug: cli/neovim/modular
----
-
-# Modular neovim plugin configuration
-
-In the [[02-haskell|previous post]] I hinted about configuring neovim plugins declaratively in Nix. Today, I discovered that this is indeed possible,[^dec] in some basic form, in `home-manager`.
-
-The feature was added in [PR \#2637](https://github.com/nix-community/home-manager/pull/2637). 
-
-## The old way
-
-The old way is to add your plugin in Nix,
-
-```nix
-  plugins = with pkgs.vimPlugins; [
-    telescope-nvim
-  ]
-```
-
-And then *separately* configure it in `init.vim` or `init.lua` --- ie., `extraConfig`, as we did in [[01-telescope]].
-
-## The new way
-
-However, instead, you could do both the above in the same place as:
-
-```nix
-  plugins = with pkgs.vimPlugins; [
-    { 
-      plugin = telescope-nvim;
-      type = "lua";
-      config = ''
-        nmap("<leader>ff", ":Telescope find_files<cr>")
-        nmap("<leader>fg", ":Telescope live_grep<cr>")
-        nmap("<leader>fb", ":Telescope buffers<cr>")
-        nmap("<leader>fh", ":Telescope help_tags<cr>")
-        '';
-    }
-  }
-```
-
-https://github.com/srid/nixos-config/commit/88a202421c262ce60509feca14ce1505b726e258
-
-
-[^dec]: It is not really *declarative*, though --- more like *modular*. Declarative would be how Coc is configured in home-manager; see [[02-haskell]]. Nevertheless, it is nice to be able to both configure and enable a plugin in the same place. Give the large number of neovim plugins in nixpkgs, it is not realistic to expect all of them to support declarative config anyway.
-
-
-===
-
-<!-- Source: Software/cli/04-email.md -->
-<!-- URL: https://srid.ca/cli/email -->
-<!-- Title: Command-line email -->
-<!-- Wikilinks: [[Software/cli/04-email]], [[cli/04-email]], [[04-email]] -->
-
----
-date: 2022-04-22
-tags: [neovim, email]
-slug: cli/email
----
-
-# Command-line email
-
-Can we use Neovim as an email client? Yes, this is actually possible [using Himalaya](https://github.com/soywod/himalaya/tree/master/vim)!
-
-As a first step, though, we should enable Himalaya itself using [[Nix]]. `home-manager` provides a module for that. Without much ado:
-
-```nix
-{
-  programs.himalaya = {
-    enable = true;
-  };
-  accounts.email.accounts = {
-    icloud = {
-      primary = true;
-      himalaya.enable = true;
-      address = "srid@srid.ca";
-      realName = "Sridhar Ratnakumar";
-      userName = "happyandharmless";
-      passwordCommand = "op item get iCloud --fields label=himalaya";
-      imap = {
-        host = "imap.mail.me.com";
-        port = 993;
-        tls.enable = true;
-      };
-      smtp = {
-        host = "smtp.mail.me.com";
-        port = 587;
-        tls.enable = true;
-      };
-    };
-  };
-}
-```
-
-I added my iCloud account details. Note that `passwordCommand` uses 1Password's CLI tool, which uses Mac's Touch ID authentication. I generated an App-specific password and put it under the "himalaya" label of the iCloud entry in 1Password. As a result, we get a no-fuss way to read email!
-
-![[himalaya.png]]
-
-https://github.com/srid/nixos-config/commit/1c188414286f5e81f0ea4a0e3ccd4ed555241f69
-
-## Vim extension
-
-Installing the Vim extension is fairly simple:
-
-```nix
-      (pkgs.vimUtils.buildVimPlugin {
-        name = "himalaya";
-        src = inputs.himalaya + /vim;
-      })
-```
-
-https://github.com/srid/nixos-config/commit/9bb76425b78906830a72846e005eb551b7a9eef4
-
-The Vim extension is not bad. But it does bring up the Mac Touch ID prompt upon *every* email operation, which needs to be fixed.
-
-
-
-===
-
-<!-- Source: Software/macOS.md -->
-<!-- URL: https://srid.ca/macos -->
-<!-- Title: macOS -->
-<!-- Wikilinks: [[Software/macOS]], [[macOS]] -->
-
----
-slug: macos
----
 
 
 ===
