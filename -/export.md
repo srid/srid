@@ -341,6 +341,788 @@ The iPad pencil on the other hand usually does not see much use. Overall, I've c
 
 ===
 
+<!-- Source: KB.md -->
+<!-- URL: https://srid.ca/kb -->
+<!-- Title: 📖 KB -->
+<!-- Wikilinks: [[KB]] -->
+
+---
+slug: kb
+---
+
+# 📖 KB
+
+Encyclopaedic pages belong here
+
+```query
+path:./*
+```
+
+
+===
+
+<!-- Source: KB/Allfat Tallow.md -->
+<!-- URL: https://srid.ca/allfat -->
+<!-- Title: Allfat Tallow -->
+<!-- Wikilinks: [[KB/Allfat Tallow]], [[Allfat Tallow]] -->
+
+---
+slug: allfat
+---
+https://www.allfat.ca/
+
+
+===
+
+<!-- Source: KB/Butter.md -->
+<!-- URL: https://srid.ca/butter -->
+<!-- Title: Butter -->
+<!-- Wikilinks: [[KB/Butter]], [[Butter]] -->
+
+---
+slug: butter
+---
+I consume 40g butter with [[Coffee]]. For cooking, I use [[Tallow]] instead.
+
+
+===
+
+<!-- Source: KB/Calisthenics.md -->
+<!-- URL: https://srid.ca/calisthenics -->
+<!-- Title: 🚴 Calisthenics -->
+<!-- Wikilinks: [[KB/Calisthenics]], [[Calisthenics]] -->
+
+---
+slug: calisthenics
+---
+
+# :bicyclist: Calisthenics
+
+Physical fitness was never a priority for me growing up in the metropolitan
+[Chennai](https://en.wikipedia.org/wiki/Chennai). South Asians in general do not prioritize
+fitness as much as other endeavors \(like academic success\) which may explain
+why they tend to have [less favorable body
+composition](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4821815/) and exhibit
+[increased risk](https://www.masalastudy.org) for heart disease. I had bad
+posture, and was not using all of the body muscles to their full efficiency.
+
+## Fitness industry is a sham
+
+I started by lifting weights in the gym \(my apartment had one\). However once this [[unfree|orthodox]] part of the Occidental culture soon revealed its insipid nature, it naturally lead me to the world of **calisthenics**. I think the whole fitness industry is overrated, and the general population should avoid it like plague.
+
+## Strength vs Hypertrophy
+
+I realized that my actual goal is to develop _functional_ strength---the strength one gains from
+resistance training should translate to everyday physical activities that we
+take for granted---otherwise, what's the point? Hypertrophy \(beyond the necessary level to achieve the
+desired strength\) however is an anti-goal; It is fatuous to carry all that
+extra muscle around and then ravenously eat more to maintain it.
+
+> [!tip] Kohei Uchimura
+> When strength, not hypertrophy, is the goal you maintain a lean physique.
+> Like the gymnast [Kohei Uchimura](https://en.wikipedia.org/wiki/K%C5%8Dhei_Uchimura) - who, incidentally, [eats one meal a day][kohei-omad].
+
+[kohei-omad]: https://youtu.be/aEv3n44vPVQ?si=Jzi0Y6efjttSVmyF&t=118
+
+As a result of doing calisthenics I noticed that "normal" activities like walking, 
+standing, carrying, etc. became *more efficient*, in that my posture had dramatically improved
+owing to the direct translation of intent, and eventual habituation, to maintain the
+correct body alignment, against gravity, \(which is what one means by "correct form"\) throughout
+any movement.
+
+## Natural routine
+
+Nowadays I tend practice a technique known as [greasing the
+groove](https://sealgrinderpt.com/blog/navy-seal-workout/pavels-grease-the-groove-gtg.html/) enabling practice (with calisthenics and kettlebells; cf. Pavel Tsatsouline) on a daily basis. Sometimes I'll cease practicing it entirely for a few days. From time to time when the mood strikes me I partake in intensive activities like an hour or two of gardening, cycling or a long walk.
+
+## See also
+
+* [**Overcoming Gravity**](http://stevenlow.org/overcoming-gravity/) - The
+  "exercise Bible" of calisthenics movements.
+* [**Stability, Sport and Performance
+  Movement**](http://www.jemsmovement.com/product/stability-sport-performance-movement-practical-biomechanics-systematic-training-movement-efficacy-injury-prevention/):
+  This little known book by Joanne Elphinston introduces the concept of
+  _functional force management_ \(FFM\) which I find to be quite helpful in
+  _experientially_ understanding the role of body alignment in calisthenics.
+* [**Convict
+Conditioning**](https://www.amazon.com/gp/customer-reviews/R2G0WUH73YBFYE): focuses
+on _higher reps_ at a _lower intensity_: 
+\(which [helps avoid unnecessary injuries](https://old.reddit.com/r/bodyweightfitness/comments/atv610/im_surprised_this_is_not_featured_in_the_rr/#form-t1_eh405onmus)\).
+
+
+===
+
+<!-- Source: KB/Carnivore diet.md -->
+<!-- URL: https://srid.ca/carnivore-diet -->
+<!-- Title: 🥩 Carnivore diet -->
+<!-- Wikilinks: [[KB/Carnivore diet]], [[Carnivore diet]] -->
+
+---
+slug: carnivore-diet
+---
+
+# :cut_of_meat: Carnivore diet
+
+I eat primarily animal-based foods.[^coffee]
+
+> [!warning] Importance of animal fat
+> 
+> If you are looking to _maintain_ (rather than lose) weight on carnivore diet, it is **critical** to be on ketosis (aka. Carnivore Keto) by aiming close to a 2:1 fat:protein ratio in weight. The author had to [learn this](https://x.com/sridca/status/1899854990325248351) over time.
+
+[^coffee]: Spices and [[Coffee|coffee]] (when consumed on empty stomach) being the delightful exception.
+
+![[steak.jpg]]
+
+## Why?
+
+In early 2013, a medical doctor prescribed me enough antibiotics[^prescription] so as to [mess up](https://en.wikipedia.org/wiki/Dysbiosis) my gut (and possibly skin) microbiome. This lead to what was then a mild folliculitis to become severe chronic folliculitis with chronic seborrhoeic dermatitis following suit.
+
+[^prescription]: Minocycline, 100g a day for 30 days--had to stop due to severe side effects. Then another prescription of the same but 50g a day, followed by same side effects. After stopping the second round of antibiotics, within about a week the skin reactions -- 30+ pus-filled inflammatory boils in face, neck and eventually scalp -- started.
+
+I suffered with this condition for over 4 years, and saw plethora of dermatologists \(who knew naught but to prescribe ever more antibiotics[^moreanti]\; one even had me do low-dose Accutane which lead to chronic dry skin). Then, just within two weeks of going on the carnivore diet \(beef, salt and pepper\) my symptoms dramatically reduced (down to about 99%). Over the next years I was to reintroduce several plant foods; and everytime I do, my symptoms would come back in vengeance.
+
+**Takeaway**: Doctors and [nutritionists](https://twitter.com/ifbacongrewont1/status/1322151733326450689) are generally not to be [[Trust|trusted]] blindly, especially when it comes to the topic of antibiotics and diet. Although harbouring no ill-will, most of them[^dtex] can't help but overweeningly[^ow][^bm] trot out what they had been taught (with [bias][pmasondoc]) in medical schools ... and [quackery][q1] and [misinformation][fl] is [not][q3] very [uncommon][q2]. As [one HN commenter](https://news.ycombinator.com/item?id=31711913) puts it:
+
+[^dtex]: With the exception of those who continue to read critically and keep their knowledge up to date in accordance with facts rather than conventional academic wisdom. 
+
+> Listen to the doctor, but also do your own research. I can guaran-damn-tee that you will obtain vastly superior results. It's not that all doctors are scoundrels looking to kill you & take your wallet. It's that they are afflicted by the same tunnel-vision, group-think, & subconscious self-interest as any other group of professionals.
+
+[q1]: https://theconversation.com/only-one-in-ten-medical-treatments-are-backed-by-high-quality-evidence-145224
+[q2]: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124
+[q3]: https://www.bmj.com/content/360/bmj.k822/rr-13
+[pmasondoc]: https://www.youtube.com/watch?time_continue=1&v=bRzBGHx93hc&feature=emb_title
+[fl]: https://twitter.com/fleroy1974/status/1406667227210862595
+
+[^ow]: From [danluu: Willingness to look stupid](https://danluu.com/look-stupid/)
+    > I've found that a lot of doctors are very confident in their opinion and get condescending pretty fast if you disagree.
+    > And yet, in the most extreme case, I would have died if I listened to my doctor; in the next most extreme case, I would have gone blind. [..]
+	
+	[^bm]: From [Jenin Younes](https://twitter.com/Leftylockdowns1/status/1482177697090580481)
+	    > I had a foray with the medical health establishment in my 20s that attuned me to the fact that those within it often don't care about quality of life, but only about preventing death
+
+[^moreanti]: Cefalexin, doxycycline and one another antibiotic that I don't remember the name of. They work temporarily, anywhere from 2 weeks to 3 months, and then the symptoms return even more severely than before!
+
+## "Isn't it unsafe?" {#safe}
+
+Contrary to popular belief and health "knowledge" -- promoted by [[Dietary Guidelines Misinformation]] based in part on [[Vegan Propaganda]] - the carnivore diet (especially with offal, like [[Liver]]#) provides all the necessary nutrients and is safe. Meat is the only ["nutritionally complete" food](http://www.diagnosisdiet.com/food/meats/), and [some indigenous groups](https://justmeat.co/peoples/) have traditionally eaten an all-meat (or predominantlly animal-based) diet.
+
+One ought to pay lip service to general medical wisdom and any dominant nutrition ideology as they are laced with an [[Vegan Propaganda|anti-meat bias]]# (as well as [[climate-alarmism]]#) using [pseudoscientific nutrition epidemiological studies](https://www.diagnosisdiet.com/epidemilogical-studies/) where, depending on the researcher's nutritional bias, one can establish [_any_ food item to be problematic](https://pubmed.ncbi.nlm.nih.gov/23193004/).
+
+## Resources
+``
+* Healing reports[^elim]
+  * [Charlene  Andersen](http://web.archive.org/web/20191101053010/http://meatheals.com/2018/02/04/charlene-andersen/)
+  * [Mikhaila Peterson](https://selfhack.com/blog/mikhaila-peterson-why-the-carnivore-diet-helps-autoimmunity/)
+  * [Success Stories](https://carnivore.diet/category/success-stories/)
+* Getting started
+  * [Eat meat. Not too little. Mostly fat.](https://www.mostly-fat.com/eat-meat-not-too-little-mostly-fat/)
+  * [What to Eat on a Carnivore Diet -- Paul Saladino](https://carnivoremd.com/what-to-eat-on-a-carnivore-diet-your-carnivore-diet-meal-plan/)
+* Science
+  * Overviews
+    * [Georgia Ede](https://www.diagnosisdiet.com/full-article/meat)
+    * [Diet Doctor](https://www.dietdoctor.com/low-carb/carnivore)
+  * Detailed:
+    * [Behavioral Characteristics and Self-Reported Health Status among 2029 Adults Consuming a “Carnivore Diet”](https://www.sciencedirect.com/science/article/pii/S2475299122106086)
+    * [Can a carnivore diet provide all essential nutrients?](https://journals.lww.com/co-endocrinology/Abstract/2020/10000/Can_a_carnivore_diet_provide_all_essential.11.aspx)
+    * Examine: [Five new reviews looked at the evidence on red and processed meat consumption. The results caused quite a stir, as they seemed to contradict the recommendations of many dietary guidelines. We break down the evidence and what it means for you.](https://examine.com/nutrition/red-meat-is-good-for-you-now/)
+    - [Priority Micronutrient Density in Foods](https://www.frontiersin.org/articles/10.3389/fnut.2022.806566/full) - *"Foods with very high aggregate micronutrient density for WRA include organs ([[Liver]], spleen, kidney, and heart from beef, goat, lamb, chicken, and pork), small dried fish, DGLVs, bivalves (clams, mussels, and oysters), crustaceans, goat, beef, eggs, milk, canned fish with bones, lamb/mutton, and cheese. Foods with a high aggregate micronutrient density include goat milk and pork. Foods with a moderate aggregate micronutrient density include yogurt, fresh fish (including different species of marine and freshwater fish), pulses, and teff. All other foods included in the analysis scored as having low aggregate micronutrient density for WRA."*
+    - [Not all nutrients are easily obtained from plants only](https://twitter.com/fleroy1974/status/1740137626777321889) - *"Besides many priority minerals and vitamins, animal source foods also contain bioactive molecules with various health benefits, such as taurine, creatine, carnosine, and others, contributing to heart health, cognitive health, and immune function."*
+* [Paleolithic Ketogenic Diet](https://www.researchgate.net/publication/323151200_Therapeutic_protocol_of_Paleomedicina_Hungary) (PKD): a variation of the carnivore diet---high fat, organ meat, without dairy or spices---designed to heal [intestinal permeability](https://www.youtube.com/watch?v=nDPM8o9jcFA) and [certain medical conditions](https://justmeat.co/wiki/pkd/#case-studies).
+* Medical
+  * [Antibiotic abuse](https://en.wikipedia.org/wiki/Antibiotic_misuse)
+  * [Vaccine abuse](https://archive.is/TZrWH) ([also relevant](https://jamanetwork.com/journals/jamadermatology/fullarticle/2782441?widget=personalizedcontent&previousarticle=0))
+* On this site
+	* [[Recipes]]#
+	* [[Carnivore diet in Canada]]
+* Social Media / Culture / Politics (of meat)
+  * [Frédéric Leroy](https://twitter.com/fleroy1974)
+
+[^elim]: It is worth keeping in mind that the carnivore diet can be considered to be an extreme form of [elimination diet](https://en.wikipedia.org/wiki/Elimination_diet) (albeit a more nutritious one), and that your condition might resolve better with other diets, even [a vegan diet](https://www.dailymail.co.uk/femail/article-5646085/Twins-Nina-Randa-Nelson-suffering-severe-acne-reveal-tweaking-diet-cleared-skin.html). Experiment and find out for yourself.
+
+## Relevant News {#news}
+
+- 2020 Feb: "The use of minocycline in acne vulgaris has been associated with skin and gut dysbiosis" ([Wikipedia](https://en.wikipedia.org/w/index.php?title=Broad-spectrum_antibiotic&oldid=1037794222#Disruption_of_normal_microbiome)) 
+  - Source: [Minocycline and Its Impact on Microbial Dysbiosis in the Skin and Gastrointestinal Tract of Acne Patients](https://pubmed.ncbi.nlm.nih.gov/33911705/) 2020 Feb;32(1):21-30. doi: 10.5021/ad.2020.32.1.21. Epub 2020 Jan 9. [Reddit submission](https://old.reddit.com/r/HumanMicrobiome/comments/p0l6im/minocycline_and_its_impact_on_microbial_dysbiosis/)
+
+
+===
+
+<!-- Source: KB/Carnivore diet/Carnivore diet in Canada.md -->
+<!-- URL: https://srid.ca/carnivore-canada -->
+<!-- Title: Carnivore diet in Canada 🇨🇦 -->
+<!-- Wikilinks: [[KB/Carnivore diet/Carnivore diet in Canada]], [[Carnivore diet/Carnivore diet in Canada]], [[Carnivore diet in Canada]] -->
+
+---
+slug: carnivore-canada
+---
+# Carnivore diet in Canada 🇨🇦
+
+Canada is not particularly known for readily available fatty—thus flavourful—meat, inasmuch as the local population is conditioned to fear animal fats. [The importance of eating high fat cannot be overstated](https://x.com/sridca/status/1899854990325248351). But you can make do.
+
+## Where to get fatty meat
+
+### Grocery stores
+
+Contrary to popular wisdom, **grocery stores** sometimes supply better meat than butchers do.
+
+- Find **imported meat** which is often superior
+	- Grass-feed beef imported from New Zealand is available in Maxi, Quebec and tastes excellent while being cheaper (thus beating local Quebec meat in every way)
+		- https://x.com/sridca/status/1900576922507280455
+		- https://x.com/sridca/status/1900581160486318401
+
+### Direct from farms
+
+Meat **directly from farms** is generally more flavourful than grocery store meat, however they are still not flavourful enough—owing to lack of sufficient fat as well as the animal's diet in Canadian winter.
+
+### Butcher shops
+
+If you seek to buy from **butcher shops**, evaluate them on an individual basis.
+
+- Some butchers are quite unfriendly to specific needs of people on carnivore diet (such as need for fatty meat) since it violates their business interests of feeding the local fatphobic population.
+	- _Le Croc Mignon_ in Quebec City fits this profile. See [the author's review on Google Maps](https://maps.app.goo.gl/SD1HnorA951SyySP7).
+	- [_Florent & Fils_](https://maps.app.goo.gl/zzrmdpwumH55ottV6), on the other hand, is an anti-example. They are extremely accommodating, including grinding beef fresh with extra added fat upon demand.
+		- Incidentally, they also sell Wagyu ground beef which can be rather _too_ fatty.
+
+## Fattier meat readily available
+
+Fattier meat (1.5:1 fat:protein ratio or higher) easily available here:
+
+- Sausages ([duBreton](https://www.dubreton.com/en-ca/products/organic/toulouse-sausages))
+- [Pork Belly from Costco](https://x.com/sridca/status/1898138719083020523)
+
+## Fat supplements
+
+Canadians are afraid of fat, so fattier cuts are harder to come by. So supplement with butter or suet.
+
+- Get the [Allfat 1.6kg suet bucket](https://www.allfat.ca/products/100-grass-fed-grass-finished-beef-tallow?variant=44727966859435)
+- In cooking, it is more flavourful than butter: https://x.com/sridca/status/1889342391087214825
+
+
+===
+
+<!-- Source: KB/Carnivore diet/Non-stick pan slow cooks meat.md -->
+<!-- URL: https://srid.ca/non-stick-slow-cook -->
+<!-- Title: Non-stick pan slow cooks meat -->
+<!-- Wikilinks: [[KB/Carnivore diet/Non-stick pan slow cooks meat]], [[Carnivore diet/Non-stick pan slow cooks meat]], [[Non-stick pan slow cooks meat]] -->
+
+---
+slug: non-stick-slow-cook
+---
+
+On a stainless steel pan, ground meat cooks rapidly and [browns](https://en.wikipedia.org/wiki/Browning_(partial_cooking)) faster. On a non-stick pan, the browning is slow and the cooking is long and hard. This leads to **dramatically different texture and taste** (lamb for instance tastes 'sweeter' and has a softer texture) between the two methods. Stainless steel cooked meat tastes so much better, with the meat's flavour coming through.
+
+This might be because stainless steel pans distributes and holds heat better over time. 
+
+
+===
+
+<!-- Source: KB/Carnivore diet/Recipes.md -->
+<!-- URL: https://srid.ca/recipes -->
+<!-- Title: Recipes -->
+<!-- Wikilinks: [[KB/Carnivore diet/Recipes]], [[Carnivore diet/Recipes]], [[Recipes]] -->
+
+---
+slug: recipes
+---
+
+```query
+path:./*
+```
+
+## Recipes to try
+
+- [Cheese Chips](https://healthyrecipesblogs.com/low-carb-cheese-crisps/) (Shredded cheese oven-baked and then frozen)
+- [Bulletproof Coffee](https://www.carbmanager.com/recipe-detail/ug:9f34a69c-61d7-3e71-2ca8-a51f443fb83f/keto-butter-coffee-with-heavy-whipping-cream) (w/ Heavy cream and butter)
+- [Carnivore Butter Mayo](https://www.youtube.com/shorts/XI0IlZe0fV8) ([[Butter]], salt, lemon juice, egg yolks)
+- [Beef & Bacon Chili](https://x.com/Eda52069178/status/1898961949955629446)
+- [Eggs on heavy cream](https://x.com/Lady_StandBy/status/1899938391573049655)
+	- [Spicy version](https://www.youtube.com/shorts/0Ql-8MX_izk)
+	- https://x.com/sridca/status/1899950734835101982
+- [Eggyo Waffles](https://x.com/sridca/status/1900696648302408067)
+
+===
+
+<!-- Source: KB/Carnivore diet/Recipes/Ground meat cereal.md -->
+<!-- URL: https://srid.ca/carni-cereal -->
+<!-- Title: Ground meat “cereal” -->
+<!-- Wikilinks: [[KB/Carnivore diet/Recipes/Ground meat cereal]], [[Carnivore diet/Recipes/Ground meat cereal]], [[Recipes/Ground meat cereal]], [[Ground meat cereal]] -->
+
+---
+slug: carni-cereal
+date: 2021-09-07
+tags: [blog]
+---
+
+# Ground meat "cereal"
+
+A "[[Carnivore diet|carnivore]] cereal" made from duck fat[^butter], ground meat and salt is my typical meal.
+
+[^butter]: Butter is better-tasting if you can tolerate it. 
+
+:::{.photoframe-center}
+![[ground-meat-cereal.jpg]]
+:::
+
+## Preparation
+
+I buy my **ground lamb** straight from local farms, who deliver it vaccum-packaged as packages of a pound each. Thaw them overnight ... and when ready to cook take it out of fridge and, while still in the vaccum bag, use a flat surface (such as a wooden cutting board) to press on the packet to flatten the meat out to resemble the texture and thickness of a burger. The result is a square-shaped larger burger patty which is well-suited for our hybrid stir-fry (ie. with browning).
+
+## Cook
+
+:::{#cook-section}
+:::{.photoframe}
+![[ground-lamb-fry.jpg]]
+*This one's overcooked a bit; you should **not** see black parts.* Also, we use a non-stick pan here, which is [[Non-stick pan slow cooks meat|inferior to]] stainless steel pans.
+:::
+
+Heat a stainless steel pan for 10 minutes at medium or medium high, put **duck fat** and then fry the patty for a few minutes each side. Careful not to overfry it (the color should be brown, but not black like near the edges in the picture). Once both sides have browned use a spatula to break down the meat and segue into **stir-frying** it. With the meat mostly cooked, add salt and continue stir-frying until thoroughly cooked (should be pink to brown, not red). 
+:::
+
+:::{.photoframe-below}
+## Extras
+
+I like to add Atlantic **shrimps** (precooked) at the end to give a more interesting biting texture. Spices and a **fried egg** on top, if you tolerate them, will perfect the taste profile (albeit at the expense of masking the meat's flavour).
+
+:::{.photoframe-center}
+![[ground-meat-cereal-egg.jpg]]
+:::
+
+
+:::
+
+## See also
+
+- If you want to cook an entire day's worth of ground meat, try a [wok](https://www.youtube.com/@wokwithtak).
+
+===
+
+<!-- Source: KB/Carnivore diet/Recipes/Liver pancake.md -->
+<!-- URL: https://srid.ca/liver-pancake -->
+<!-- Title: Liver pancake -->
+<!-- Wikilinks: [[KB/Carnivore diet/Recipes/Liver pancake]], [[Carnivore diet/Recipes/Liver pancake]], [[Recipes/Liver pancake]], [[Liver pancake]] -->
+
+---
+slug: liver-pancake
+---
+
+A more palatable way of consuming #[[Liver]] is to make batter out of 100g calf liver, 3 eggs and 2 tbsp of [[Tallow]][^butter]. Here's [the full recipe](https://ash-eats.com/carnivore-beef-liver-pancakes/).
+
+[^butter]: I've found that using [[Butter]] can lead to [sour-tasting pancakes](https://x.com/sridca/status/1889342391087214825). [[Duck fat]] is better, but [[Tallow]] provides superior taste in these pancakes.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just tried out this recipe (beef liver + eggs + ghee + salt) and it came out great!<br><br>No liver taste; flavour reminds me of wheat dosa (godhuma dosa) I had growing up in India.<br><br>Very easy to prepare and cook. <a href="https://t.co/y6x1Dh0Azh">https://t.co/y6x1Dh0Azh</a> <a href="https://t.co/OvoJ1Z1xLJ">pic.twitter.com/OvoJ1Z1xLJ</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1805036197967696086?ref_src=twsrc%5Etfw">June 24, 2024</a></blockquote>
+
+---
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Liver pancakes for snack <a href="https://t.co/a3HJLx9Y92">pic.twitter.com/a3HJLx9Y92</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1815181358756417737?ref_src=twsrc%5Etfw">July 22, 2024</a></blockquote> 
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+===
+
+<!-- Source: KB/Ciprodex.md -->
+<!-- URL: https://srid.ca/ciprodex -->
+<!-- Title: Ciprodex -->
+<!-- Wikilinks: [[KB/Ciprodex]], [[Ciprodex]] -->
+
+---
+slug: ciprodex
+---
+
+Generic: Ciprofloxacin (antibiotic) and dexamethasone otic (steroid)
+
+Prescribed for: #[[Swimmer's Ear]]
+
+## Risks
+
+Per [[Floxies]]
+
+> Co-administration with a steroid increases the risk profile of FQ antibiotics. --[DrHungrytheChemist](https://old.reddit.com/r/floxies/comments/sdrg3p/ciprodex_drops/)
+
+===
+
+<!-- Source: KB/Coffee.md -->
+<!-- URL: https://srid.ca/coffee -->
+<!-- Title: Coffee ☕️ -->
+<!-- Wikilinks: [[KB/Coffee]], [[Coffee]] -->
+
+---
+slug: coffee
+---
+
+# Coffee ☕️
+
+A good tasting coffee makes all the difference. Fortunately, despite a [[Carnivore diet|restrictive diet]] I'm still allowed to coffee.
+
+## Moka pot
+
+Get a 3-cup Bialetti or equivalent, which produces about ~60g of espresso that can be diluted to make a 100g drink. You can actually use pre-ground coffee without fret; notably, I've had good experience with [Illy Intenso Dark Roast](https://www.illy.com/en-ca/coffee/ground-coffee/ground-espresso-intenso-coffee-dark-roast/A060ST.html) coffee.
+
+You may have to tamp the grounds: https://x.com/sridca/status/1916970293912080880
+
+## Espresso
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Review of this 5x cheaper espresso machine: Bellezza Bellona <br><br>I really like it, and it makes as consistent espresso as Linea Micra.<br><br>- Got a bottomless portafilter (indisputable IMO)<br>- Hot water comes from water boiler<br>- Rapid heat up with steam boiler off. ~3 mins or probably… <a href="https://t.co/rFVryiUTT0">https://t.co/rFVryiUTT0</a> <a href="https://t.co/E1i5QDhQ4C">pic.twitter.com/E1i5QDhQ4C</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1727085521946443918?ref_src=twsrc%5Etfw">November 21, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Aeropress
+
+### Essential equipment
+
+Invest in these:
+
+- **Aeropress**
+- Scale (0.1g precision)
+- Brew kettle with precision thermometer
+  - I use Fellow Stagg
+- A good burr grinder 
+  - ~~I use Niche Zero home; and Comandante when travelling~~
+  - I have the fantastic [J Ultra](https://1zpresso.coffee/j-ultra/) grinder both for home espresso and travel purposes.
+
+### Dialling
+
+When coffee tastes bad, change one or more of these factors. It may take several attempts to get it right.
+
+- Grind size 
+  - Get a good burr grinder![^h]
+- Water temperature 
+  - higher for light roasts; lower for dark roasts
+  - even a +/- 5f adjustment can make a difference
+- Coffee to water ratio
+  - I generally do not vary this, and keep it fixed at 10:100g.
+- Change to a new coffee matching your preferred flavour in the [flavour wheel](https://atlanticspecialtycoffee.com/wp-content/uploads/SCA_TasterWheel_English_8.5x11.pdf)[^myf]
+
+Generally speaking, you mainly want to vary grind size and/or water temperature.
+
+[^myf]: I enjoy flavours towards chocolate/sugar side of the spectrum, which tends to come from medium to dark roasted coffee from certain regions (like Brazil Santos).
+
+[^h]: If getting a manual hand grinder, note the the way of grinding [may matter](https://old.reddit.com/r/Coffee/comments/lkazl5/hand_grinder_use_ive_been_doing_it_all_wrong/).
+
+### Aeropress brew methods
+
+How I typically make coffee:
+
+#### Inverted Aeropress recipe
+
+- Invert the Aeropress
+- Add 15g of coffee
+- Water temp at 165f-190f (depending on beans)
+- Start timer; pour about 50g; and stir until ~30 seconds
+- Pour rest, total 150g.
+- Brew until about 2 minutes
+- Gently but consistently press for ~30seconds
+
+If you use fresh coffee with your preferred flavour profile, and select the right grind size and water temperature for those beans - expect this method to consistently produce a great cup of rich coffee that is equivalent in strength to what the [Québécois](https://en.wikipedia.org/wiki/Qu%C3%A9b%C3%A9cois_people) call [café allongé](https://en.wikipedia.org/wiki/Lungo).
+
+## Kalita Wave 155 recipe
+
+> [!warning] Questionable success
+> This recipe has usually not been very successful -- probably because I tend to use espresso blends?
+
+- 10g of coffee
+- 185-194f water temp (depends on beans)
+- 35g pour, wait 35 secs.
+- Pour rest, total 135g. Wait till water comes through.
+
+## Beans
+
+Good beans can be bought from:
+
+- Online from [iDrinkCoffee](https://idrinkcoffee.com/). 
+- Yirgacheffe from [Caprice d'Alice](https://lescapricesdalice.com/)
+
+## Learnings / experimentation
+
+- Eating (creamy) butter in between cups helps 'reset' taste receptor.
+    - But eating a meal is ideal.
+- One day, I want to try roasting coffee myself
+
+
+===
+
+<!-- Source: KB/Dietary Guidelines Misinformation.md -->
+<!-- URL: https://srid.ca/DG -->
+<!-- Title: Dietary Guidelines Misinformation -->
+<!-- Wikilinks: [[KB/Dietary Guidelines Misinformation]], [[Dietary Guidelines Misinformation]] -->
+
+---
+slug: DG
+---
+
+The "Dietary Guidelines for Americans" (which many other countries inculclate uncritically) is a stellar example of actual #[[misinformation]] sanctioned at government level. See [The Science Behind the Dietary Guidelines: Is It Sound?](https://www.nutritioncoalition.us/science-not-settled) for details.
+
+
+- USA
+  - "Our analysis found that 95% of the committee members had COI with the food, and/or pharmaceutical industries" -- [Conflicts of interest for members of the U.S. 2020 Dietary Guidelines Advisory Committee](https://www.cambridge.org/core/journals/public-health-nutrition/article/conflicts-of-interest-for-members-of-the-us-2020-dietary-guidelines-advisory-committee/843992D8901540296BCEB43D716C1497)
+- Canada
+  - "Health Canada promised that its new food guide would be developed based on scientific merit, transparently and with decisions made at arm’s length from industry.  A more [[Vegan Propaganda|plant-based]], less highly processed dietary approach is being advised that takes into account [[climate-alarmism|environmental concerns]]." -- [Resisting influence from agri-food industries on Canada’s new food guide](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5903885/)
+  - "we are not aware of a single study that has compared a whole-food, plant-based diet with a whole-food, animal protein–based diet. Without these data controlling for food quality, it would be premature to advise Canadians to [[Vegan Propaganda|choose plants]] over meat." -- [Canada Food Guide’s focus on reducing saturated fat contradicts evidence](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6148650/)
+
+
+===
+
+<!-- Source: KB/Duck fat.md -->
+<!-- URL: https://srid.ca/duckfat -->
+<!-- Title: Duck fat -->
+<!-- Wikilinks: [[KB/Duck fat]], [[Duck fat]] -->
+
+---
+slug: duckfat
+---
+https://canardsdulacbrome.com/en/produits/rendered-duck-fat/
+
+
+===
+
+<!-- Source: KB/Floxies.md -->
+<!-- URL: https://srid.ca/floxies -->
+<!-- Title: Floxies -->
+<!-- Wikilinks: [[KB/Floxies]], [[Floxies]] -->
+
+---
+slug: floxies
+---
+/r/Floxies is a subreddit dedicated to adverse reports on the fluoroquinolones class of antibiotics.
+
+## Medicines
+
+- [[Ciprodex]]#
+
+## Links
+
+- [Mini comprehensive overview](https://old.reddit.com/r/floxies/comments/1e2xkai/the_unstuck_mini_sticky_a_comprehensive_overview/)
+
+
+===
+
+<!-- Source: KB/Head ache.md -->
+<!-- URL: https://srid.ca/head-ache -->
+<!-- Title: Head ache -->
+<!-- Wikilinks: [[KB/Head ache]], [[Head ache]] -->
+
+---
+slug: head-ache
+---
+
+
+===
+
+<!-- Source: KB/Liver.md -->
+<!-- URL: https://srid.ca/liver -->
+<!-- Title: Liver -->
+<!-- Wikilinks: [[KB/Liver]], [[Liver]] -->
+
+---
+slug: liver
+---
+When it comes to liver as food, beef liver is most popular. In South India, goat liver (sometimes chicken liver) is consumed.
+
+## Observations
+
+- [Consuming liver replaces Vitamin D supplementation](https://x.com/sridca/status/1802352532167037416)
+## Recipes
+
+- [[Liver pancake]]
+- [Stir-fried with salmon & bacon](https://x.com/sridca/status/1891901523161964678)
+
+## Nutrition
+
+From [Nutritional composition of red meat](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1747-0080.2007.00197.x) (Peter WILLIAMS)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Liver appears to be the best of all offal <a href="https://t.co/ZKdJKr0sKe">pic.twitter.com/ZKdJKr0sKe</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1885858258579083572?ref_src=twsrc%5Etfw">February 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+===
+
+<!-- Source: KB/Lobste.rs.md -->
+<!-- URL: https://srid.ca/lobsters-site -->
+<!-- Title: Lobste.rs -->
+<!-- Wikilinks: [[KB/Lobste.rs]], [[Lobste.rs]] -->
+
+---
+slug: lobsters-site
+---
+
+https://news.ycombinator.com/item?id=43152534
+
+
+
+===
+
+<!-- Source: KB/Mastodon.md -->
+<!-- URL: https://srid.ca/mastodon -->
+<!-- Title: Mastodon -->
+<!-- Wikilinks: [[KB/Mastodon]], [[Mastodon]] -->
+
+---
+slug: mastodon
+---
+
+
+
+===
+
+<!-- Source: KB/Sulfur Soap.md -->
+<!-- URL: https://srid.ca/sulfur-soap -->
+<!-- Title: Sulfur Soap -->
+<!-- Wikilinks: [[KB/Sulfur Soap]], [[Sulfur Soap]] -->
+
+---
+slug: sulfur-soap
+---
+
+[Azufre 10%](https://www.amazon.com/gp/product/B00371PJ1E)
+
+## Instructions
+
+Put soap in hot water for about a minute, then apply it on face & scalp. Let soak for no less than 5 minutes (or 1 minute, depending on the soap). Rinse. Do it every day. Suitable oily and/or inflammatory skin.
+
+The soap can cause dryness. Apply a suitable noncomedogenic moisturizer on face & scalp after washing.
+
+
+===
+
+<!-- Source: KB/Swimmer's Ear.md -->
+<!-- URL: https://srid.ca/swimmers-ear -->
+<!-- Title: Swimmer's Ear -->
+<!-- Wikilinks: [[KB/Swimmer's Ear]], [[Swimmer's Ear]] -->
+
+---
+slug: swimmers-ear
+---
+Also called _Otitis Externa_
+
+## Head ache
+
+Takes a few minutes after waking up for the uncomfortable sensation to start from the affected ear, and progress towards all of head - which [[Head ache]] then continues unabated until evening.
+
+## Personal Log {#log}
+
+| Period   | Description                        | Resolution         | Cause                                    |
+| -------- | ---------------------------------- | ------------------ | ---------------------------------------- |
+| Apr 2024 | Daytime [[Head ache]] for ~3 weeks | Keflex antibiotics | Swimming in lodge pool (no ear plugs)    |
+| Aug 2025 | ...                                | ...                | Swimming in [[YMCA]] pool (no ear plugs) |
+
+
+===
+
+<!-- Source: KB/Swimming.md -->
+<!-- URL: https://srid.ca/swimming -->
+<!-- Title: Swimming -->
+<!-- Wikilinks: [[KB/Swimming]], [[Swimming]] -->
+
+---
+slug: swimming
+---
+
+The author started learning to swim in 2025. Follow his progress here, https://x.com/sridca/status/1917695742548009110
+
+## Graceful / effortless methods to try {#effortless}
+
+- [[Total Immersion]]#
+- Ocean Walker
+- Swim Smooth
+
+(The author is learning to perfect [[Total Immersion]])
+
+## Risks & mitigation {#risks}
+
+| Risk                              | Mitigation    |
+| --------------------------------- | ------------- |
+| [[Swimmer's Ear\|ear infection]]# | Use ear plugs |
+
+
+
+===
+
+<!-- Source: KB/Tallow.md -->
+<!-- URL: https://srid.ca/tallow -->
+<!-- Title: Tallow -->
+<!-- Wikilinks: [[KB/Tallow]], [[Tallow]] -->
+
+---
+slug: tallow
+---
+
+[Tallow](https://en.wikipedia.org/wiki/Tallow) is rendered from suet. I find beef tallow to be the best source of fat in #[[Carnivore diet]], especially for cooking [[Liver pancake]].
+
+In Canada (Quebec), the only reliable source of beef tallow I can find is [[Allfat Tallow]].
+
+===
+
+<!-- Source: KB/Total Immersion.md -->
+<!-- URL: https://srid.ca/total-immersion -->
+<!-- Title: Total Immersion -->
+<!-- Wikilinks: [[KB/Total Immersion]], [[Total Immersion]] -->
+
+---
+slug: total-immersion
+---
+Tim Feriss: [Total Immersion: How I Learned to Swim Effortlessly in 10 Days and You Can Too](https://tim.blog/2008/08/13/total-immersion-how-i-learned-to-swim-effortlessly-in-10-days-and-you-can-too/)
+
+===
+
+<!-- Source: KB/Twitter.md -->
+<!-- URL: https://srid.ca/twitter -->
+<!-- Title: Twitter / X -->
+<!-- Wikilinks: [[KB/Twitter]], [[Twitter]] -->
+
+---
+slug: twitter
+---
+
+# Twitter / X
+
+My X profile can be accessed here: https://x.com/sridca
+
+## Some interesting facts
+
+- Elon Musk (See [[unwoke#case-studies]])
+  - The company continues to function and thrive well despite the fact that Elon Musk fired about 80% of the staff in late 2022. 
+  - There is less [[censorship|censorship]] (especially of [[woke|woke]] variety) on X after Musk took charge.
+- [You can host videos on X, and embed them (anonymously) on web pages](https://twitter.com/sridca/status/1759590315604804080)
+
+
+===
+
+<!-- Source: KB/YMCA.md -->
+<!-- URL: https://srid.ca/ymca -->
+<!-- Title: YMCA -->
+<!-- Wikilinks: [[KB/YMCA]], [[YMCA]] -->
+
+---
+slug: ymca
+---
+
+YMCA in Quebec has a indoor [[Swimming|swimming]] pool, as well as rings for pull-ups.
+
+
+===
+
+<!-- Source: KB/Zettelkasten.md -->
+<!-- URL: https://srid.ca/zettelkasten -->
+<!-- Title: 📓 Zettelkasten -->
+<!-- Wikilinks: [[KB/Zettelkasten]], [[Zettelkasten]] -->
+
+---
+slug: zettelkasten
+---
+
+# :notebook: Zettelkasten
+
+Zettelkasten is a smart note taking system created by a German sociologist, whose productivity increased to epic proportions due to it[^dclear]. 
+
+All notes in a Zettelkasten are linear, [atomic and autonomous](https://neuron.zettel.page/atomic), with links created between them, enabling a [heterarchy](https://neuron.zettel.page/heterarchy) to evolve organically, rather than having to preconceive a hierarchy ahead (as is the case with outliners like Workflowy and Dynalist).
+
+For software, see [[Emanote]]#.
+
+```query
+children:.
+```
+
+[^dclear]: To learn more, read [Zettelkasten — How One German Scholar Was So Freakishly Productive](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125) by David Clear.
+
+
+===
+
 <!-- Source: PDFs/generics-sop-intro.md -->
 <!-- URL: https://srid.ca/generics-sop-intro -->
 <!-- Title: A concise introduction to generics-sop -->
@@ -1983,750 +2765,6 @@ Incidentally this change now allows the user to swap out their syntax hilighting
 hi
 
 [srid.ca](https://srid.ca)
-
-
-===
-
-<!-- Source: Ref.md -->
-<!-- URL: https://srid.ca/ref -->
-<!-- Title: 📖 Ref -->
-<!-- Wikilinks: [[Ref]] -->
-
----
-slug: ref
----
-
-# 📖 Ref
-
-Encyclopaedic pages belong here
-
-```query
-path:./*
-```
-
-
-===
-
-<!-- Source: Ref/Allfat Tallow.md -->
-<!-- URL: https://srid.ca/allfat -->
-<!-- Title: Allfat Tallow -->
-<!-- Wikilinks: [[Ref/Allfat Tallow]], [[Allfat Tallow]] -->
-
----
-slug: allfat
----
-https://www.allfat.ca/
-
-
-===
-
-<!-- Source: Ref/Butter.md -->
-<!-- URL: https://srid.ca/butter -->
-<!-- Title: Butter -->
-<!-- Wikilinks: [[Ref/Butter]], [[Butter]] -->
-
----
-slug: butter
----
-
-
-
-===
-
-<!-- Source: Ref/Calisthenics.md -->
-<!-- URL: https://srid.ca/calisthenics -->
-<!-- Title: 🚴 Calisthenics -->
-<!-- Wikilinks: [[Ref/Calisthenics]], [[Calisthenics]] -->
-
----
-slug: calisthenics
----
-
-# :bicyclist: Calisthenics
-
-Physical fitness was never a priority for me growing up in the metropolitan
-[Chennai](https://en.wikipedia.org/wiki/Chennai). South Asians in general do not prioritize
-fitness as much as other endeavors \(like academic success\) which may explain
-why they tend to have [less favorable body
-composition](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4821815/) and exhibit
-[increased risk](https://www.masalastudy.org) for heart disease. I had bad
-posture, and was not using all of the body muscles to their full efficiency.
-
-## Fitness industry is a sham
-
-I started by lifting weights in the gym \(my apartment had one\). However once this [[unfree|orthodox]] part of the Occidental culture soon revealed its insipid nature, it naturally lead me to the world of **calisthenics**. I think the whole fitness industry is overrated, and the general population should avoid it like plague.
-
-## Strength vs Hypertrophy
-
-I realized that my actual goal is to develop _functional_ strength---the strength one gains from
-resistance training should translate to everyday physical activities that we
-take for granted---otherwise, what's the point? Hypertrophy \(beyond the necessary level to achieve the
-desired strength\) however is an anti-goal; It is fatuous to carry all that
-extra muscle around and then ravenously eat more to maintain it.
-
-> [!tip] Kohei Uchimura
-> When strength, not hypertrophy, is the goal you maintain a lean physique.
-> Like the gymnast [Kohei Uchimura](https://en.wikipedia.org/wiki/K%C5%8Dhei_Uchimura) - who, incidentally, [eats one meal a day][kohei-omad].
-
-[kohei-omad]: https://youtu.be/aEv3n44vPVQ?si=Jzi0Y6efjttSVmyF&t=118
-
-As a result of doing calisthenics I noticed that "normal" activities like walking, 
-standing, carrying, etc. became *more efficient*, in that my posture had dramatically improved
-owing to the direct translation of intent, and eventual habituation, to maintain the
-correct body alignment, against gravity, \(which is what one means by "correct form"\) throughout
-any movement.
-
-## Natural routine
-
-Nowadays I tend practice a technique known as [greasing the
-groove](https://sealgrinderpt.com/blog/navy-seal-workout/pavels-grease-the-groove-gtg.html/) enabling practice (with calisthenics and kettlebells; cf. Pavel Tsatsouline) on a daily basis. Sometimes I'll cease practicing it entirely for a few days. From time to time when the mood strikes me I partake in intensive activities like an hour or two of gardening, cycling or a long walk.
-
-## See also
-
-* [**Overcoming Gravity**](http://stevenlow.org/overcoming-gravity/) - The
-  "exercise Bible" of calisthenics movements.
-* [**Stability, Sport and Performance
-  Movement**](http://www.jemsmovement.com/product/stability-sport-performance-movement-practical-biomechanics-systematic-training-movement-efficacy-injury-prevention/):
-  This little known book by Joanne Elphinston introduces the concept of
-  _functional force management_ \(FFM\) which I find to be quite helpful in
-  _experientially_ understanding the role of body alignment in calisthenics.
-* [**Convict
-Conditioning**](https://www.amazon.com/gp/customer-reviews/R2G0WUH73YBFYE): focuses
-on _higher reps_ at a _lower intensity_: 
-\(which [helps avoid unnecessary injuries](https://old.reddit.com/r/bodyweightfitness/comments/atv610/im_surprised_this_is_not_featured_in_the_rr/#form-t1_eh405onmus)\).
-
-
-===
-
-<!-- Source: Ref/Carnivore diet.md -->
-<!-- URL: https://srid.ca/carnivore-diet -->
-<!-- Title: 🥩 Carnivore diet -->
-<!-- Wikilinks: [[Ref/Carnivore diet]], [[Carnivore diet]] -->
-
----
-slug: carnivore-diet
----
-
-# :cut_of_meat: Carnivore diet
-
-I eat primarily animal-based foods.[^coffee]
-
-> [!warning] Importance of animal fat
-> 
-> If you are looking to _maintain_ (rather than lose) weight on carnivore diet, it is **critical** to be on ketosis (aka. Carnivore Keto) by aiming close to a 2:1 fat:protein ratio in weight. The author had to [learn this](https://x.com/sridca/status/1899854990325248351) over time.
-
-[^coffee]: Spices and [[Coffee|coffee]] (when consumed on empty stomach) being the delightful exception.
-
-![[steak.jpg]]
-
-## Why?
-
-In early 2013, a medical doctor prescribed me enough antibiotics[^prescription] so as to [mess up](https://en.wikipedia.org/wiki/Dysbiosis) my gut (and possibly skin) microbiome. This lead to what was then a mild folliculitis to become severe chronic folliculitis with chronic seborrhoeic dermatitis following suit.
-
-[^prescription]: Minocycline, 100g a day for 30 days--had to stop due to severe side effects. Then another prescription of the same but 50g a day, followed by same side effects. After stopping the second round of antibiotics, within about a week the skin reactions -- 30+ pus-filled inflammatory boils in face, neck and eventually scalp -- started.
-
-I suffered with this condition for over 4 years, and saw plethora of dermatologists \(who knew naught but to prescribe ever more antibiotics[^moreanti]\; one even had me do low-dose Accutane which lead to chronic dry skin). Then, just within two weeks of going on the carnivore diet \(beef, salt and pepper\) my symptoms dramatically reduced (down to about 99%). Over the next years I was to reintroduce several plant foods; and everytime I do, my symptoms would come back in vengeance.
-
-**Takeaway**: Doctors and [nutritionists](https://twitter.com/ifbacongrewont1/status/1322151733326450689) are generally not to be [[Trust|trusted]] blindly, especially when it comes to the topic of antibiotics and diet. Although harbouring no ill-will, most of them[^dtex] can't help but overweeningly[^ow][^bm] trot out what they had been taught (with [bias][pmasondoc]) in medical schools ... and [quackery][q1] and [misinformation][fl] is [not][q3] very [uncommon][q2]. As [one HN commenter](https://news.ycombinator.com/item?id=31711913) puts it:
-
-[^dtex]: With the exception of those who continue to read critically and keep their knowledge up to date in accordance with facts rather than conventional academic wisdom. 
-
-> Listen to the doctor, but also do your own research. I can guaran-damn-tee that you will obtain vastly superior results. It's not that all doctors are scoundrels looking to kill you & take your wallet. It's that they are afflicted by the same tunnel-vision, group-think, & subconscious self-interest as any other group of professionals.
-
-[q1]: https://theconversation.com/only-one-in-ten-medical-treatments-are-backed-by-high-quality-evidence-145224
-[q2]: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124
-[q3]: https://www.bmj.com/content/360/bmj.k822/rr-13
-[pmasondoc]: https://www.youtube.com/watch?time_continue=1&v=bRzBGHx93hc&feature=emb_title
-[fl]: https://twitter.com/fleroy1974/status/1406667227210862595
-
-[^ow]: From [danluu: Willingness to look stupid](https://danluu.com/look-stupid/)
-    > I've found that a lot of doctors are very confident in their opinion and get condescending pretty fast if you disagree.
-    > And yet, in the most extreme case, I would have died if I listened to my doctor; in the next most extreme case, I would have gone blind. [..]
-	
-	[^bm]: From [Jenin Younes](https://twitter.com/Leftylockdowns1/status/1482177697090580481)
-	    > I had a foray with the medical health establishment in my 20s that attuned me to the fact that those within it often don't care about quality of life, but only about preventing death
-
-[^moreanti]: Cefalexin, doxycycline and one another antibiotic that I don't remember the name of. They work temporarily, anywhere from 2 weeks to 3 months, and then the symptoms return even more severely than before!
-
-## "Isn't it unsafe?" {#safe}
-
-Contrary to popular belief and health "knowledge" -- promoted by [[Dietary Guidelines Misinformation]] based in part on [[Vegan Propaganda]] - the carnivore diet (especially with offal, like [[Liver]]#) provides all the necessary nutrients and is safe. Meat is the only ["nutritionally complete" food](http://www.diagnosisdiet.com/food/meats/), and [some indigenous groups](https://justmeat.co/peoples/) have traditionally eaten an all-meat (or predominantlly animal-based) diet.
-
-One ought to pay lip service to general medical wisdom and any dominant nutrition ideology as they are laced with an [[Vegan Propaganda|anti-meat bias]]# (as well as [[climate-alarmism]]#) using [pseudoscientific nutrition epidemiological studies](https://www.diagnosisdiet.com/epidemilogical-studies/) where, depending on the researcher's nutritional bias, one can establish [_any_ food item to be problematic](https://pubmed.ncbi.nlm.nih.gov/23193004/).
-
-## Resources
-``
-* Healing reports[^elim]
-  * [Charlene  Andersen](http://web.archive.org/web/20191101053010/http://meatheals.com/2018/02/04/charlene-andersen/)
-  * [Mikhaila Peterson](https://selfhack.com/blog/mikhaila-peterson-why-the-carnivore-diet-helps-autoimmunity/)
-  * [Success Stories](https://carnivore.diet/category/success-stories/)
-* Getting started
-  * [Eat meat. Not too little. Mostly fat.](https://www.mostly-fat.com/eat-meat-not-too-little-mostly-fat/)
-  * [What to Eat on a Carnivore Diet -- Paul Saladino](https://carnivoremd.com/what-to-eat-on-a-carnivore-diet-your-carnivore-diet-meal-plan/)
-* Science
-  * Overviews
-    * [Georgia Ede](https://www.diagnosisdiet.com/full-article/meat)
-    * [Diet Doctor](https://www.dietdoctor.com/low-carb/carnivore)
-  * Detailed:
-    * [Behavioral Characteristics and Self-Reported Health Status among 2029 Adults Consuming a “Carnivore Diet”](https://www.sciencedirect.com/science/article/pii/S2475299122106086)
-    * [Can a carnivore diet provide all essential nutrients?](https://journals.lww.com/co-endocrinology/Abstract/2020/10000/Can_a_carnivore_diet_provide_all_essential.11.aspx)
-    * Examine: [Five new reviews looked at the evidence on red and processed meat consumption. The results caused quite a stir, as they seemed to contradict the recommendations of many dietary guidelines. We break down the evidence and what it means for you.](https://examine.com/nutrition/red-meat-is-good-for-you-now/)
-    - [Priority Micronutrient Density in Foods](https://www.frontiersin.org/articles/10.3389/fnut.2022.806566/full) - *"Foods with very high aggregate micronutrient density for WRA include organs ([[Liver]], spleen, kidney, and heart from beef, goat, lamb, chicken, and pork), small dried fish, DGLVs, bivalves (clams, mussels, and oysters), crustaceans, goat, beef, eggs, milk, canned fish with bones, lamb/mutton, and cheese. Foods with a high aggregate micronutrient density include goat milk and pork. Foods with a moderate aggregate micronutrient density include yogurt, fresh fish (including different species of marine and freshwater fish), pulses, and teff. All other foods included in the analysis scored as having low aggregate micronutrient density for WRA."*
-    - [Not all nutrients are easily obtained from plants only](https://twitter.com/fleroy1974/status/1740137626777321889) - *"Besides many priority minerals and vitamins, animal source foods also contain bioactive molecules with various health benefits, such as taurine, creatine, carnosine, and others, contributing to heart health, cognitive health, and immune function."*
-* [Paleolithic Ketogenic Diet](https://www.researchgate.net/publication/323151200_Therapeutic_protocol_of_Paleomedicina_Hungary) (PKD): a variation of the carnivore diet---high fat, organ meat, without dairy or spices---designed to heal [intestinal permeability](https://www.youtube.com/watch?v=nDPM8o9jcFA) and [certain medical conditions](https://justmeat.co/wiki/pkd/#case-studies).
-* Medical
-  * [Antibiotic abuse](https://en.wikipedia.org/wiki/Antibiotic_misuse)
-  * [Vaccine abuse](https://archive.is/TZrWH) ([also relevant](https://jamanetwork.com/journals/jamadermatology/fullarticle/2782441?widget=personalizedcontent&previousarticle=0))
-* On this site
-	* [[Recipes]]#
-	* [[Carnivore diet in Canada]]
-* Social Media / Culture / Politics (of meat)
-  * [Frédéric Leroy](https://twitter.com/fleroy1974)
-
-[^elim]: It is worth keeping in mind that the carnivore diet can be considered to be an extreme form of [elimination diet](https://en.wikipedia.org/wiki/Elimination_diet) (albeit a more nutritious one), and that your condition might resolve better with other diets, even [a vegan diet](https://www.dailymail.co.uk/femail/article-5646085/Twins-Nina-Randa-Nelson-suffering-severe-acne-reveal-tweaking-diet-cleared-skin.html). Experiment and find out for yourself.
-
-## Relevant News {#news}
-
-- 2020 Feb: "The use of minocycline in acne vulgaris has been associated with skin and gut dysbiosis" ([Wikipedia](https://en.wikipedia.org/w/index.php?title=Broad-spectrum_antibiotic&oldid=1037794222#Disruption_of_normal_microbiome)) 
-  - Source: [Minocycline and Its Impact on Microbial Dysbiosis in the Skin and Gastrointestinal Tract of Acne Patients](https://pubmed.ncbi.nlm.nih.gov/33911705/) 2020 Feb;32(1):21-30. doi: 10.5021/ad.2020.32.1.21. Epub 2020 Jan 9. [Reddit submission](https://old.reddit.com/r/HumanMicrobiome/comments/p0l6im/minocycline_and_its_impact_on_microbial_dysbiosis/)
-
-
-===
-
-<!-- Source: Ref/Carnivore diet/Carnivore diet in Canada.md -->
-<!-- URL: https://srid.ca/carnivore-canada -->
-<!-- Title: Carnivore diet in Canada 🇨🇦 -->
-<!-- Wikilinks: [[Ref/Carnivore diet/Carnivore diet in Canada]], [[Carnivore diet/Carnivore diet in Canada]], [[Carnivore diet in Canada]] -->
-
----
-slug: carnivore-canada
----
-# Carnivore diet in Canada 🇨🇦
-
-Canada is not particularly known for readily available fatty—thus flavourful—meat, inasmuch as the local population is conditioned to fear animal fats. [The importance of eating high fat cannot be overstated](https://x.com/sridca/status/1899854990325248351). But you can make do.
-
-## Where to get fatty meat
-
-### Grocery stores
-
-Contrary to popular wisdom, **grocery stores** sometimes supply better meat than butchers do.
-
-- Find **imported meat** which is often superior
-	- Grass-feed beef imported from New Zealand is available in Maxi, Quebec and tastes excellent while being cheaper (thus beating local Quebec meat in every way)
-		- https://x.com/sridca/status/1900576922507280455
-		- https://x.com/sridca/status/1900581160486318401
-
-### Direct from farms
-
-Meat **directly from farms** is generally more flavourful than grocery store meat, however they are still not flavourful enough—owing to lack of sufficient fat as well as the animal's diet in Canadian winter.
-
-### Butcher shops
-
-If you seek to buy from **butcher shops**, evaluate them on an individual basis.
-
-- Some butchers are quite unfriendly to specific needs of people on carnivore diet (such as need for fatty meat) since it violates their business interests of feeding the local fatphobic population.
-	- _Le Croc Mignon_ in Quebec City fits this profile. See [the author's review on Google Maps](https://maps.app.goo.gl/SD1HnorA951SyySP7).
-	- [_Florent & Fils_](https://maps.app.goo.gl/zzrmdpwumH55ottV6), on the other hand, is an anti-example. They are extremely accommodating, including grinding beef fresh with extra added fat upon demand.
-		- Incidentally, they also sell Wagyu ground beef which can be rather _too_ fatty.
-
-## Fattier meat readily available
-
-Fattier meat (1.5:1 fat:protein ratio or higher) easily available here:
-
-- Sausages ([duBreton](https://www.dubreton.com/en-ca/products/organic/toulouse-sausages))
-- [Pork Belly from Costco](https://x.com/sridca/status/1898138719083020523)
-
-## Fat supplements
-
-Canadians are afraid of fat, so fattier cuts are harder to come by. So supplement with butter or suet.
-
-- Get the [Allfat 1.6kg suet bucket](https://www.allfat.ca/products/100-grass-fed-grass-finished-beef-tallow?variant=44727966859435)
-- In cooking, it is more flavourful than butter: https://x.com/sridca/status/1889342391087214825
-
-
-===
-
-<!-- Source: Ref/Carnivore diet/Non-stick pan slow cooks meat.md -->
-<!-- URL: https://srid.ca/non-stick-slow-cook -->
-<!-- Title: Non-stick pan slow cooks meat -->
-<!-- Wikilinks: [[Ref/Carnivore diet/Non-stick pan slow cooks meat]], [[Carnivore diet/Non-stick pan slow cooks meat]], [[Non-stick pan slow cooks meat]] -->
-
----
-slug: non-stick-slow-cook
----
-
-On a stainless steel pan, ground meat cooks rapidly and [browns](https://en.wikipedia.org/wiki/Browning_(partial_cooking)) faster. On a non-stick pan, the browning is slow and the cooking is long and hard. This leads to **dramatically different texture and taste** (lamb for instance tastes 'sweeter' and has a softer texture) between the two methods. Stainless steel cooked meat tastes so much better, with the meat's flavour coming through.
-
-This might be because stainless steel pans distributes and holds heat better over time. 
-
-
-===
-
-<!-- Source: Ref/Carnivore diet/Recipes.md -->
-<!-- URL: https://srid.ca/recipes -->
-<!-- Title: Recipes -->
-<!-- Wikilinks: [[Ref/Carnivore diet/Recipes]], [[Carnivore diet/Recipes]], [[Recipes]] -->
-
----
-slug: recipes
----
-
-```query
-path:./*
-```
-
-## Recipes to try
-
-- [Cheese Chips](https://healthyrecipesblogs.com/low-carb-cheese-crisps/) (Shredded cheese oven-baked and then frozen)
-- [Bulletproof Coffee](https://www.carbmanager.com/recipe-detail/ug:9f34a69c-61d7-3e71-2ca8-a51f443fb83f/keto-butter-coffee-with-heavy-whipping-cream) (w/ Heavy cream and butter)
-- [Carnivore Butter Mayo](https://www.youtube.com/shorts/XI0IlZe0fV8) ([[Butter]], salt, lemon juice, egg yolks)
-- [Beef & Bacon Chili](https://x.com/Eda52069178/status/1898961949955629446)
-- [Eggs on heavy cream](https://x.com/Lady_StandBy/status/1899938391573049655)
-	- [Spicy version](https://www.youtube.com/shorts/0Ql-8MX_izk)
-	- https://x.com/sridca/status/1899950734835101982
-- [Eggyo Waffles](https://x.com/sridca/status/1900696648302408067)
-
-===
-
-<!-- Source: Ref/Carnivore diet/Recipes/Ground meat cereal.md -->
-<!-- URL: https://srid.ca/carni-cereal -->
-<!-- Title: Ground meat “cereal” -->
-<!-- Wikilinks: [[Ref/Carnivore diet/Recipes/Ground meat cereal]], [[Carnivore diet/Recipes/Ground meat cereal]], [[Recipes/Ground meat cereal]], [[Ground meat cereal]] -->
-
----
-slug: carni-cereal
-date: 2021-09-07
-tags: [blog]
----
-
-# Ground meat "cereal"
-
-A "[[Carnivore diet|carnivore]] cereal" made from duck fat[^butter], ground meat and salt is my typical meal.
-
-[^butter]: Butter is better-tasting if you can tolerate it. 
-
-:::{.photoframe-center}
-![[ground-meat-cereal.jpg]]
-:::
-
-## Preparation
-
-I buy my **ground lamb** straight from local farms, who deliver it vaccum-packaged as packages of a pound each. Thaw them overnight ... and when ready to cook take it out of fridge and, while still in the vaccum bag, use a flat surface (such as a wooden cutting board) to press on the packet to flatten the meat out to resemble the texture and thickness of a burger. The result is a square-shaped larger burger patty which is well-suited for our hybrid stir-fry (ie. with browning).
-
-## Cook
-
-:::{#cook-section}
-:::{.photoframe}
-![[ground-lamb-fry.jpg]]
-*This one's overcooked a bit; you should **not** see black parts.* Also, we use a non-stick pan here, which is [[Non-stick pan slow cooks meat|inferior to]] stainless steel pans.
-:::
-
-Heat a stainless steel pan for 10 minutes at medium or medium high, put **duck fat** and then fry the patty for a few minutes each side. Careful not to overfry it (the color should be brown, but not black like near the edges in the picture). Once both sides have browned use a spatula to break down the meat and segue into **stir-frying** it. With the meat mostly cooked, add salt and continue stir-frying until thoroughly cooked (should be pink to brown, not red). 
-:::
-
-:::{.photoframe-below}
-## Extras
-
-I like to add Atlantic **shrimps** (precooked) at the end to give a more interesting biting texture. Spices and a **fried egg** on top, if you tolerate them, will perfect the taste profile (albeit at the expense of masking the meat's flavour).
-
-:::{.photoframe-center}
-![[ground-meat-cereal-egg.jpg]]
-:::
-
-
-:::
-
-## See also
-
-- If you want to cook an entire day's worth of ground meat, try a [wok](https://www.youtube.com/@wokwithtak).
-
-===
-
-<!-- Source: Ref/Carnivore diet/Recipes/Liver pancake.md -->
-<!-- URL: https://srid.ca/liver-pancake -->
-<!-- Title: Liver pancake -->
-<!-- Wikilinks: [[Ref/Carnivore diet/Recipes/Liver pancake]], [[Carnivore diet/Recipes/Liver pancake]], [[Recipes/Liver pancake]], [[Liver pancake]] -->
-
----
-slug: liver-pancake
----
-
-A more palatable way of consuming #[[Liver]] is to make batter out of 100g calf liver, 3 eggs and 2 tbsp of [[Tallow]][^butter]. Here's [the full recipe](https://ash-eats.com/carnivore-beef-liver-pancakes/).
-
-[^butter]: I've found that using [[Butter]] can lead to [sour-tasting pancakes](https://x.com/sridca/status/1889342391087214825). [[Duck fat]] is better, but [[Tallow]] provides superior taste in these pancakes.
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just tried out this recipe (beef liver + eggs + ghee + salt) and it came out great!<br><br>No liver taste; flavour reminds me of wheat dosa (godhuma dosa) I had growing up in India.<br><br>Very easy to prepare and cook. <a href="https://t.co/y6x1Dh0Azh">https://t.co/y6x1Dh0Azh</a> <a href="https://t.co/OvoJ1Z1xLJ">pic.twitter.com/OvoJ1Z1xLJ</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1805036197967696086?ref_src=twsrc%5Etfw">June 24, 2024</a></blockquote>
-
----
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Liver pancakes for snack <a href="https://t.co/a3HJLx9Y92">pic.twitter.com/a3HJLx9Y92</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1815181358756417737?ref_src=twsrc%5Etfw">July 22, 2024</a></blockquote> 
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-===
-
-<!-- Source: Ref/Ciprodex.md -->
-<!-- URL: https://srid.ca/ciprodex -->
-<!-- Title: Ciprodex -->
-<!-- Wikilinks: [[Ref/Ciprodex]], [[Ciprodex]] -->
-
----
-slug: ciprodex
----
-
-Generic: Ciprofloxacin (antibiotic) and dexamethasone otic (steroid)
-
-Prescribed for: #[[Swimmer's Ear]]
-
-## Risks
-
-Per [[Floxies]]
-
-> Co-administration with a steroid increases the risk profile of FQ antibiotics. --[DrHungrytheChemist](https://old.reddit.com/r/floxies/comments/sdrg3p/ciprodex_drops/)
-
-===
-
-<!-- Source: Ref/Coffee.md -->
-<!-- URL: https://srid.ca/coffee -->
-<!-- Title: Coffee ☕️ -->
-<!-- Wikilinks: [[Ref/Coffee]], [[Coffee]] -->
-
----
-slug: coffee
----
-
-# Coffee ☕️
-
-A good tasting coffee makes all the difference. Fortunately, despite a [[Carnivore diet|restrictive diet]] I'm still allowed to coffee.
-
-## Moka pot
-
-Get a 3-cup Bialetti or equivalent, which produces about ~60g of espresso that can be diluted to make a 100g drink. You can actually use pre-ground coffee without fret; notably, I've had good experience with [Illy Intenso Dark Roast](https://www.illy.com/en-ca/coffee/ground-coffee/ground-espresso-intenso-coffee-dark-roast/A060ST.html) coffee.
-
-You may have to tamp the grounds: https://x.com/sridca/status/1916970293912080880
-
-## Espresso
-
-<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Review of this 5x cheaper espresso machine: Bellezza Bellona <br><br>I really like it, and it makes as consistent espresso as Linea Micra.<br><br>- Got a bottomless portafilter (indisputable IMO)<br>- Hot water comes from water boiler<br>- Rapid heat up with steam boiler off. ~3 mins or probably… <a href="https://t.co/rFVryiUTT0">https://t.co/rFVryiUTT0</a> <a href="https://t.co/E1i5QDhQ4C">pic.twitter.com/E1i5QDhQ4C</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1727085521946443918?ref_src=twsrc%5Etfw">November 21, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-## Aeropress
-
-### Essential equipment
-
-Invest in these:
-
-- **Aeropress**
-- Scale (0.1g precision)
-- Brew kettle with precision thermometer
-  - I use Fellow Stagg
-- A good burr grinder 
-  - ~~I use Niche Zero home; and Comandante when travelling~~
-  - I have the fantastic [J Ultra](https://1zpresso.coffee/j-ultra/) grinder both for home espresso and travel purposes.
-
-### Dialling
-
-When coffee tastes bad, change one or more of these factors. It may take several attempts to get it right.
-
-- Grind size 
-  - Get a good burr grinder![^h]
-- Water temperature 
-  - higher for light roasts; lower for dark roasts
-  - even a +/- 5f adjustment can make a difference
-- Coffee to water ratio
-  - I generally do not vary this, and keep it fixed at 10:100g.
-- Change to a new coffee matching your preferred flavour in the [flavour wheel](https://atlanticspecialtycoffee.com/wp-content/uploads/SCA_TasterWheel_English_8.5x11.pdf)[^myf]
-
-Generally speaking, you mainly want to vary grind size and/or water temperature.
-
-[^myf]: I enjoy flavours towards chocolate/sugar side of the spectrum, which tends to come from medium to dark roasted coffee from certain regions (like Brazil Santos).
-
-[^h]: If getting a manual hand grinder, note the the way of grinding [may matter](https://old.reddit.com/r/Coffee/comments/lkazl5/hand_grinder_use_ive_been_doing_it_all_wrong/).
-
-### Aeropress brew methods
-
-How I typically make coffee:
-
-#### Inverted Aeropress recipe
-
-- Invert the Aeropress
-- Add 15g of coffee
-- Water temp at 165f-190f (depending on beans)
-- Start timer; pour about 50g; and stir until ~30 seconds
-- Pour rest, total 150g.
-- Brew until about 2 minutes
-- Gently but consistently press for ~30seconds
-
-If you use fresh coffee with your preferred flavour profile, and select the right grind size and water temperature for those beans - expect this method to consistently produce a great cup of rich coffee that is equivalent in strength to what the [Québécois](https://en.wikipedia.org/wiki/Qu%C3%A9b%C3%A9cois_people) call [café allongé](https://en.wikipedia.org/wiki/Lungo).
-
-## Kalita Wave 155 recipe
-
-> [!warning] Questionable success
-> This recipe has usually not been very successful -- probably because I tend to use espresso blends?
-
-- 10g of coffee
-- 185-194f water temp (depends on beans)
-- 35g pour, wait 35 secs.
-- Pour rest, total 135g. Wait till water comes through.
-
-## Beans
-
-Good beans can be bought from:
-
-- Online from [iDrinkCoffee](https://idrinkcoffee.com/). 
-- Yirgacheffe from [Caprice d'Alice](https://lescapricesdalice.com/)
-
-## Learnings / experimentation
-
-- Eating (creamy) butter in between cups helps 'reset' taste receptor.
-    - But eating a meal is ideal.
-- One day, I want to try roasting coffee myself
-
-
-===
-
-<!-- Source: Ref/Dietary Guidelines Misinformation.md -->
-<!-- URL: https://srid.ca/DG -->
-<!-- Title: Dietary Guidelines Misinformation -->
-<!-- Wikilinks: [[Ref/Dietary Guidelines Misinformation]], [[Dietary Guidelines Misinformation]] -->
-
----
-slug: DG
----
-
-The "Dietary Guidelines for Americans" (which many other countries inculclate uncritically) is a stellar example of actual #[[misinformation]] sanctioned at government level. See [The Science Behind the Dietary Guidelines: Is It Sound?](https://www.nutritioncoalition.us/science-not-settled) for details.
-
-
-- USA
-  - "Our analysis found that 95% of the committee members had COI with the food, and/or pharmaceutical industries" -- [Conflicts of interest for members of the U.S. 2020 Dietary Guidelines Advisory Committee](https://www.cambridge.org/core/journals/public-health-nutrition/article/conflicts-of-interest-for-members-of-the-us-2020-dietary-guidelines-advisory-committee/843992D8901540296BCEB43D716C1497)
-- Canada
-  - "Health Canada promised that its new food guide would be developed based on scientific merit, transparently and with decisions made at arm’s length from industry.  A more [[Vegan Propaganda|plant-based]], less highly processed dietary approach is being advised that takes into account [[climate-alarmism|environmental concerns]]." -- [Resisting influence from agri-food industries on Canada’s new food guide](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5903885/)
-  - "we are not aware of a single study that has compared a whole-food, plant-based diet with a whole-food, animal protein–based diet. Without these data controlling for food quality, it would be premature to advise Canadians to [[Vegan Propaganda|choose plants]] over meat." -- [Canada Food Guide’s focus on reducing saturated fat contradicts evidence](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6148650/)
-
-
-===
-
-<!-- Source: Ref/Duck fat.md -->
-<!-- URL: https://srid.ca/duckfat -->
-<!-- Title: Duck fat -->
-<!-- Wikilinks: [[Ref/Duck fat]], [[Duck fat]] -->
-
----
-slug: duckfat
----
-https://canardsdulacbrome.com/en/produits/rendered-duck-fat/
-
-
-===
-
-<!-- Source: Ref/Floxies.md -->
-<!-- URL: https://srid.ca/floxies -->
-<!-- Title: Floxies -->
-<!-- Wikilinks: [[Ref/Floxies]], [[Floxies]] -->
-
----
-slug: floxies
----
-/r/Floxies is a subreddit dedicated to adverse reports on the fluoroquinolones class of antibiotics.
-
-## Medicines
-
-- [[Ciprodex]]#
-
-## Links
-
-- [Mini comprehensive overview](https://old.reddit.com/r/floxies/comments/1e2xkai/the_unstuck_mini_sticky_a_comprehensive_overview/)
-
-
-===
-
-<!-- Source: Ref/Liver.md -->
-<!-- URL: https://srid.ca/liver -->
-<!-- Title: Liver -->
-<!-- Wikilinks: [[Ref/Liver]], [[Liver]] -->
-
----
-slug: liver
----
-When it comes to liver as food, beef liver is most popular. In South India, goat liver (sometimes chicken liver) is consumed.
-
-## Observations
-
-- [Consuming liver replaces Vitamin D supplementation](https://x.com/sridca/status/1802352532167037416)
-## Recipes
-
-- [[Liver pancake]]
-- [Stir-fried with salmon & bacon](https://x.com/sridca/status/1891901523161964678)
-
-## Nutrition
-
-From [Nutritional composition of red meat](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1747-0080.2007.00197.x) (Peter WILLIAMS)
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Liver appears to be the best of all offal <a href="https://t.co/ZKdJKr0sKe">pic.twitter.com/ZKdJKr0sKe</a></p>&mdash; Sridhar Ratnakumar (@sridca) <a href="https://twitter.com/sridca/status/1885858258579083572?ref_src=twsrc%5Etfw">February 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-===
-
-<!-- Source: Ref/Lobste.rs.md -->
-<!-- URL: https://srid.ca/lobsters-site -->
-<!-- Title: Lobste.rs -->
-<!-- Wikilinks: [[Ref/Lobste.rs]], [[Lobste.rs]] -->
-
----
-slug: lobsters-site
----
-
-https://news.ycombinator.com/item?id=43152534
-
-
-
-===
-
-<!-- Source: Ref/Mastodon.md -->
-<!-- URL: https://srid.ca/mastodon -->
-<!-- Title: Mastodon -->
-<!-- Wikilinks: [[Ref/Mastodon]], [[Mastodon]] -->
-
----
-slug: mastodon
----
-
-
-
-===
-
-<!-- Source: Ref/Sulfur Soap.md -->
-<!-- URL: https://srid.ca/sulfur-soap -->
-<!-- Title: Sulfur Soap -->
-<!-- Wikilinks: [[Ref/Sulfur Soap]], [[Sulfur Soap]] -->
-
----
-slug: sulfur-soap
----
-
-[Azufre 10%](https://www.amazon.com/gp/product/B00371PJ1E)
-
-## Instructions
-
-Put soap in hot water for about a minute, then apply it on face & scalp. Let soak for no less than 5 minutes (or 1 minute, depending on the soap). Rinse. Do it every day. Suitable oily and/or inflammatory skin.
-
-The soap can cause dryness. Apply a suitable noncomedogenic moisturizer on face & scalp after washing.
-
-
-===
-
-<!-- Source: Ref/Swimmer's Ear.md -->
-<!-- URL: https://srid.ca/swimmers-ear -->
-<!-- Title: Swimmer's Ear -->
-<!-- Wikilinks: [[Ref/Swimmer's Ear]], [[Swimmer's Ear]] -->
-
----
-slug: swimmers-ear
----
-Also called _Otitis Externa_
-
-===
-
-<!-- Source: Ref/Swimming.md -->
-<!-- URL: https://srid.ca/swimming -->
-<!-- Title: Swimming -->
-<!-- Wikilinks: [[Ref/Swimming]], [[Swimming]] -->
-
----
-slug: swimming
----
-
-The author started learning to swim in 2025. Follow his progress here, https://x.com/sridca/status/1917695742548009110
-
-## Graceful / effortless methods to try {#effortless}
-
-- [[Total Immersion]]#
-- Ocean Walker
-- Swim Smooth
-
-(The author is learning to perfect [[Total Immersion]])
-
-## Risks & mitigation {#risks}
-
-| Risk                              | Mitigation    |
-| --------------------------------- | ------------- |
-| [[Swimmer's Ear\|ear infection]]# | Use ear plugs |
-
-
-
-===
-
-<!-- Source: Ref/Tallow.md -->
-<!-- URL: https://srid.ca/tallow -->
-<!-- Title: Tallow -->
-<!-- Wikilinks: [[Ref/Tallow]], [[Tallow]] -->
-
----
-slug: tallow
----
-
-[Tallow](https://en.wikipedia.org/wiki/Tallow) is rendered from suet. I find beef tallow to be the best source of fat in #[[Carnivore diet]], especially for cooking [[Liver pancake]].
-
-In Canada (Quebec), the only reliable source of beef tallow I can find is [[Allfat Tallow]].
-
-===
-
-<!-- Source: Ref/Total Immersion.md -->
-<!-- URL: https://srid.ca/total-immersion -->
-<!-- Title: Total Immersion -->
-<!-- Wikilinks: [[Ref/Total Immersion]], [[Total Immersion]] -->
-
----
-slug: total-immersion
----
-Tim Feriss: [Total Immersion: How I Learned to Swim Effortlessly in 10 Days and You Can Too](https://tim.blog/2008/08/13/total-immersion-how-i-learned-to-swim-effortlessly-in-10-days-and-you-can-too/)
-
-===
-
-<!-- Source: Ref/Twitter.md -->
-<!-- URL: https://srid.ca/twitter -->
-<!-- Title: Twitter / X -->
-<!-- Wikilinks: [[Ref/Twitter]], [[Twitter]] -->
-
----
-slug: twitter
----
-
-# Twitter / X
-
-My X profile can be accessed here: https://x.com/sridca
-
-## Some interesting facts
-
-- Elon Musk (See [[unwoke#case-studies]])
-  - The company continues to function and thrive well despite the fact that Elon Musk fired about 80% of the staff in late 2022. 
-  - There is less [[censorship|censorship]] (especially of [[woke|woke]] variety) on X after Musk took charge.
-- [You can host videos on X, and embed them (anonymously) on web pages](https://twitter.com/sridca/status/1759590315604804080)
-
-
-===
-
-<!-- Source: Ref/Zettelkasten.md -->
-<!-- URL: https://srid.ca/zettelkasten -->
-<!-- Title: 📓 Zettelkasten -->
-<!-- Wikilinks: [[Ref/Zettelkasten]], [[Zettelkasten]] -->
-
----
-slug: zettelkasten
----
-
-# :notebook: Zettelkasten
-
-Zettelkasten is a smart note taking system created by a German sociologist, whose productivity increased to epic proportions due to it[^dclear]. 
-
-All notes in a Zettelkasten are linear, [atomic and autonomous](https://neuron.zettel.page/atomic), with links created between them, enabling a [heterarchy](https://neuron.zettel.page/heterarchy) to evolve organically, rather than having to preconceive a hierarchy ahead (as is the case with outliners like Workflowy and Dynalist).
-
-For software, see [[Emanote]]#.
-
-```query
-children:.
-```
-
-[^dclear]: To learn more, read [Zettelkasten — How One German Scholar Was So Freakishly Productive](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125) by David Clear.
 
 
 ===
