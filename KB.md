@@ -1,8 +1,8 @@
 ---
-slug: ref
+slug: kb
 ---
 
-# 📖 Ref
+# 📖 KB
 
 Encyclopaedic pages belong here
 
