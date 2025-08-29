@@ -4,7 +4,7 @@ slug: ref
 
 # 📖 Ref
 
-Pages that do not belong to any specific category.
+Encyclopaedic pages belong here
 
 ```query
 path:./*

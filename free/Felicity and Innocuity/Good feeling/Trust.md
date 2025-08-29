@@ -1,10 +1,6 @@
 ---
 slug: trust
-tags: []
-date: 2021-05-21
 ---
-
-
 > [!cite/richard] [Richard’s Selected Correspondence On Faith and Trust](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-faithtrust.htm)
 > 
 > [..] **Trust** is the ‘faith or conviction in the loyalty, strength, veracity, etc., of a person or thing; reliance on the truth of a statement etc., without examination’ ... and faith is ‘[[Belief|belief]], especially without evidence or proof’ 

@@ -6,8 +6,15 @@ The author started learning to swim in 2025. Follow his progress here, https://x
 
 ## Graceful / effortless methods to try {#effortless}
 
+- [[Total Immersion]]#
 - Ocean Walker
-- Total Immersion
 - Swim Smooth
 
-(The author can somewhat do Total Immersion)
+(The author is learning to perfect [[Total Immersion]])
+
+## Risks & mitigation {#risks}
+
+| Risk                              | Mitigation    |
+| --------------------------------- | ------------- |
+| [[Swimmer's Ear\|ear infection]]# | Use ear plugs |
+
