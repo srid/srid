@@ -14,15 +14,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    XMonad Tips – Sridhar Ratnakumar
+    Beelink SER8 – Sridhar Ratnakumar
   </title>
   
     
-      <meta property='og:description' content='Note that the <super> key is usually Win or Alt, to the left of the space bar.' />
+      <meta property='og:description' content='Beelink SER8 AMD Ryzen™ 7 8845HS' />
       <meta property='og:site_name' content='Sridhar Ratnakumar' />
       <meta property='og:image' content='https://srid.ca/' />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='XMonad Tips' />
+      <meta property='og:title' content='Beelink SER8' />
       
         <meta name='twitter:card' content='summary_large_image' />
       
@@ -286,31 +286,9 @@
           
             <li>
 
-  <a href='xmonad'>
+  <a href='hw'>
     <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
-      XMonad
-    </div>
-  </a>
-
-  
-    <ul>
-      
-        <li>
-
-  <a href='haskell'>
-    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
-      Haskell
-    </div>
-  </a>
-
-  
-    <ul>
-      
-        <li>
-
-  <a href='software'>
-    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
-      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+      <span class='emoji' data-emoji='computer' style='font-family: emoji'>💻</span> Hardware
     </div>
   </a>
 
@@ -346,25 +324,6 @@
     </ul>
   
 </li>
-      
-    </ul>
-  
-</li>
-      
-        <li>
-
-  <a href='linux'>
-    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
-      Linux
-    </div>
-  </a>
-
-  
-</li>
-      
-    </ul>
-  
-</li>
           
         </ul>
       
@@ -392,7 +351,7 @@
   <main class='px-4 py-4'>
     <h1 class='flex items-end justify-center mb-4 p-3 bg-green-100 text-5xl font-extrabold text-black rounded'>
   <span class='z-40 tracking-tighter '>
-    XMonad Tips
+    Beelink SER8
   </span>
 </h1>
     
@@ -406,94 +365,19 @@
 
 
     <p class='mb-3'>
-      Note that the <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>&lt;super&gt;</code> key is usually <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Win</code> or <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>Alt</code>, to the left of the space bar.
+      Beelink SER8 AMD Ryzen™ 7 8845HS
     </p>
   
-    <hr class='mb-3' />
+    <p class='mb-3'>
+      w/ 32GB RAM
+    </p>
   
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          Press <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>&lt;Super&gt;-Shift-Enter</code> to open the <strong>terminal</strong>
-        </li>
-      
-        <li>
-          Press <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>&lt;Super&gt;-p</code> to launch dmenu (<strong>application launcher</strong>)
-        </li>
-      
-        <li>
-          <strong>Layouts</strong>
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>ThreeCol</code> (useful for wider screens)
-        </li>
-      
-    </ul>
-  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='haskell language-haskell'>myThreeCol =
-  ThreeColMid
-    1 -- Master window count
-    (3 / 100) -- Resize delta
-    (1 / 2) -- Initial column size</code></pre></div>
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          <a href='https://hackage.haskell.org/package/xmonad-contrib-0.17.0/docs/XMonad-Layout-Tabbed.html' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Tabbed</a> (useful when managing related windows <em>one at a time</em>)
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>&lt;Super&gt;-h/l</code> - resize active window
-        </li>
-      
-        <li>
-          <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>&lt;Super&gt;-j/k</code> - switch focus to left/right window
-        </li>
-      
-        <li>
-          <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>&lt;Super&gt;-w/e</code> - switch focus to other monitor
-        </li>
-      
-        <li>
-          More keybindings <a href='https://wiki.haskell.org/wikiupload/d/d6/Xmbindings.svg' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>here</a> (poster-friendly)
-        </li>
-      
-        <li>
-          Ideas for <strong>keybindings</strong>
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          Screenshot mouse-selected region to clipboard
-        </li>
-      
-    </ul>
-  <div class='py-0.5 mb-3 text-sm font-mono'><pre><code class='nix language-nix'># In NixOS, add this to your packages list:
-pkgs.writeScriptBin "screenshot"
-  '' 
-  #!${pkgs.runtimeShell}
-  ${pkgs.maim}/bin/maim -s | ${pkgs.xclip}/bin/xclip -selection clipboard -t image/png
-  '';</code></pre></div>
-        </li>
-      
-        <li>
-          Integrations
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          If you are using <a href='pass' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Pass with GPG</a>, <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>passmenu</code> can be invoked from dmenu (see above) to get autocompletion in passwords.
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-    </ul>
+    <p class='mb-3'>
+      <a href='https://www.bee-link.com/products/beelink-ser8-8845hs' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://www.bee-link.com/products/beelink-ser8-8845hs</a>
+    </p>
   
   <div class='flex items-center justify-center mt-2'>
-  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/KB/Software/XMonad Tips.md'>
+  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/KB/Hardware/Beelink SER8.md'>
     <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
       <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
     </svg>
@@ -509,14 +393,14 @@ pkgs.writeScriptBin "screenshot"
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-green-600 font-semibold hover:bg-green-50' href='xmonad'>
-            XMonad
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='hw'>
+            <span class='emoji' data-emoji='computer' style='font-family: emoji'>💻</span> Hardware
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
-      <div><a href='xmonad-tips' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkBranch'>XMonad Tips</a> shows a bunch of things you could do with it.</div>
+      <div><p>I own a <a href='p14s' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Thinkpad P14s</a>, <a href='ser8' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Beelink SER8</a> and <a href='m1-macbook-pro-16' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>M1 Macbook Pro 16</a>.</p></div>
     </div>
   
 </div>
