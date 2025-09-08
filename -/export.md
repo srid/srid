@@ -6564,6 +6564,23 @@ The swirling air/ whirling water is, of course, all the feelings – all of the 
 
 ===
 
+<!-- Source: free/Actualism Method (Simplified).md -->
+<!-- URL: https://srid.ca/duh -->
+<!-- Title: Actualism Method (Simplified) -->
+<!-- Wikilinks: [[free/Actualism Method (Simplified)]], [[Actualism Method (Simplified)]] -->
+
+---
+slug: duh
+---
+
+> [!cite/richard] Simplified version of #[[Actualism Method]], from [CRO: The Actualism Method Is Too Difficult](https://actualfreedom.com.au/sundry/commonobjections/CRO30a.htm)
+> 
+> {.text-3xl .text-gray-650 .p-2 .leading-relaxed}
+> *It is really very, very simple (which is possibly why it has never been discovered before this): you [[Feeling good|felt good]] previously; you are not feeling good now; [[Diminishment|something happened]] to you to end that [[Felicity and Innocuity|felicitous/ innocuous feeling]]; you find out what happened; you [[Seeing the silliness|see how silly]] that is (no matter what it was); you are once more feeling good.*
+
+
+===
+
 <!-- Source: free/Actualism Method.md -->
 <!-- URL: https://srid.ca/method -->
 <!-- Title: Actualism Method -->
@@ -6573,9 +6590,7 @@ The swirling air/ whirling water is, of course, all the feelings – all of the 
 slug: method
 ---
 
-:::{.page-note .bg-pink-50 .border-2 .border-pink-700 .pt-4 .shadow-lg .px-4 .text-xl }
-It is really very, very simple (which is possibly why it has never been discovered before this): you [[Feeling good|felt good]] previously; you are not feeling good now; [[Diminishment|something happened]] to you to end that [[Felicity and Innocuity|felicitous/ innocuous]] feeling; you find out what happened; you [[Seeing the silliness|see how silly]] that is (no matter what it was); you are once more feeling good. ---[Richard](http://actualfreedom.com.au/richard/listdcorrespondence/listd11.htm)
-:::
+![[Actualism Method (Simplified)]]
 
 :::{.page-note .bg-gray-50 .border-1 .border-pink-500 .pt-4 .shadow-md .px-4 .text-l }
 
@@ -6792,21 +6807,25 @@ slug: real-time-investigation
 slug: silliness
 ---
 
-RESPONDENT No 23: What about when I find out what happened to end [[Feeling good|feeling good]] and I see that it is silly to keep worrying about it yet that doesn’t stop the worrying and I am not back to feeling good?
+> [!cite/richard] [Richard's SC on On Sense and Sensible](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-sense.htm)
+> 
+> {.respondent}
+> RESPONDENT No 23: What about when I find out what happened to end [[Feeling good|feeling good]] and I see that it is silly to keep worrying about it yet that doesn’t stop the worrying and I am not back to feeling good?
+> 
+> RICHARD: Two things immediately leap to mind ... (1) you value feeling worry (a feeling of anxious concern) over feeling good (a general sense of well-being) ... and (2) you have not really seen it is silly to feel bad (a general sense of ill-being). What I would suggest, at this point, is to **feel the silliness of feeling bad** (in this case feeling anxiety) ... then the seeing (as in a realisation) might very well have the desired effect (as in an actualisation) of once more [[Feeling good|feeling good]].
+> 
+> {.respondent}
+> RESPONDENT: a) I am not able to see the silliness of feeling bad ...{.respondent}
+> 
+> RICHARD: Do you comprehend that, although the past was actual when it was happening, it is not actual now and that, although the future will be actual when it does happen, it is not actual now ... that only [[This Moment|this moment]] is actual?
+> 
+> If so, do you further comprehend that anytime you felt [[Feeling good|good]]/will feel good does not mean a thing if you are not feeling good now ... that a remembered occasion/an anticipated occasion pales into insignificance if you are feeling bad now?
+> 
+> Furthermore, do you understand that to be living [[This Moment|this moment]] – the only moment you are ever alive – by feeling bad is to be frittering away a vital opportunity to be fully alive ... to totally [[Felicity and Innocuity|enjoy and appreciate]] being what you indubitably are (a sensate creature) whilst you are here on this planet?
+> 
+> If so, is it not silly to waste [[This Moment|this only moment]] you are ever alive by feeling bad ... when you could be [[Feeling good|feeling good]]?
+> 
 
-RICHARD: Two things immediately leap to mind ... (1) you value feeling worry (a feeling of anxious concern) over feeling good (a general sense of well-being) ... and (2) you have not really seen it is silly to feel bad (a general sense of ill-being). What I would suggest, at this point, is to **feel the silliness of feeling bad** (in this case feeling anxiety) ... then the seeing (as in a realisation) might very well have the desired effect (as in an actualisation) of once more [[Feeling good|feeling good]].
-
-RESPONDENT: a) I am not able to see the silliness of feeling bad ...
-
-RICHARD: Do you comprehend that, although the past was actual when it was happening, it is not actual now and that, although the future will be actual when it does happen, it is not actual now ... that only [[This Moment|this moment]] is actual?
-
-If so, do you further comprehend that anytime you felt [[Feeling good|good]]/will feel good does not mean a thing if you are not feeling good now ... that a remembered occasion/an anticipated occasion pales into insignificance if you are feeling bad now?
-
-Furthermore, do you understand that to be living [[This Moment|this moment]] – the only moment you are ever alive – by feeling bad is to be frittering away a vital opportunity to be fully alive ... to totally [[Felicity and Innocuity|enjoy and appreciate]] being what you indubitably are (a sensate creature) whilst you are here on this planet?
-
-If so, is it not silly to waste [[This Moment|this only moment]] you are ever alive by feeling bad ... when you could be [[Feeling good|feeling good]]?
-
-http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-sense.htm
 
 ===
 
