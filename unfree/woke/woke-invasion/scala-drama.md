@@ -22,6 +22,10 @@ In 2025, Jon Pretty detailed the fallout: severe financial losses, emotional tra
 | 2025 | [The untold impact of cancellation](https://news.ycombinator.com/item?id=44755644)                                            |
 | 2025 | [The Dereliction of Due Process in the Scala Community](https://news.ycombinator.com/item?id=44836170)                        |
 
+## See also
+
+- Associated X threads
+  - https://x.com/sridca/status/1965149925127385327
 
 [^love]: 
     From https://news.ycombinator.com/item?id=40174262 (repost on [reddit](https://old.reddit.com/r/scala/comments/1meuv2p/the_untold_impact_of_cancellation/n6pe6tf/?context=3)):
