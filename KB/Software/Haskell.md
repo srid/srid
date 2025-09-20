@@ -34,7 +34,9 @@ Practice
 : Learning anything takes practice, and this is particularly a key for a purely functional language like Haskell. See [Haskell Mentors List](https://willbasky.github.io/Awesome-list-of-Haskell-mentors/) for progressing in learning Haskell by way of contributing to open source projects that you already enjoy using.
 
 Talk / Share
-: Join [Haskell Discourse](https://discourse.haskell.org/) to interact with other Haskellers. You may also post to [StackOverflow \#haskell](https://stackoverflow.com/questions/tagged/haskell), which has been quite helpful in my experience. Read [r/haskell](https://old.reddit.com/r/haskell/) for news. Be wary of other communities.[^wk]. See [Haskell Planetarium](https://haskell.pl-a.net/) for recent Haskell news & discussions.
+: Join [Haskell Discourse](https://discourse.haskell.org/) to interact with other Haskellers. You may also post to [StackOverflow \#haskell](https://stackoverflow.com/questions/tagged/haskell), which has been quite helpful in my experience. There's [a community][XComm] on [[Twitter]] too. Read [r/haskell](https://old.reddit.com/r/haskell/) for news. Be wary of other communities.[^wk]. See [Haskell Planetarium](https://haskell.pl-a.net/) for recent Haskell news & discussions.
+
+[XComm]: https://x.com/i/communities/1744972727029506506
 
 Deepen your Haskell knowledge
 : [[Haskell from the ground up]] (Work in progress)
