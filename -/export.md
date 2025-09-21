@@ -596,6 +596,18 @@ children:.
 
 ===
 
+<!-- Source: KB/Hardware/Apple Studio Display.md -->
+<!-- URL: https://srid.ca/apple-studio-display -->
+<!-- Title: Apple Studio Display -->
+<!-- Wikilinks: [[KB/Hardware/Apple Studio Display]], [[Hardware/Apple Studio Display]], [[Apple Studio Display]] -->
+
+---
+slug: apple-studio-display
+---
+
+
+===
+
 <!-- Source: KB/Hardware/Beelink SER8.md -->
 <!-- URL: https://srid.ca/ser8 -->
 <!-- Title: Beelink SER8 -->
@@ -677,12 +689,12 @@ slug: p14s
 
 ## Observations
 
-| Date         | Note                                                                     |
-| ------------ | ------------------------------------------------------------------------ |
-| Oct 11, 2024 | [Insta purchased](https://x.com/sridca/status/1844737458295988478)       |
-| Oct 22, 2024 | [Too small screen size](https://x.com/sridca/status/1848833315631206725) |
-| Oct 27, 2024 | [Bad battery life](https://x.com/sridca/status/1850614477797937186)      |
-
+| Date         | Note                                                                     |     |
+| ------------ | ------------------------------------------------------------------------ | --- |
+| Oct 11, 2024 | [Insta purchased](https://x.com/sridca/status/1844737458295988478)       |     |
+| Oct 22, 2024 | [Too small screen size](https://x.com/sridca/status/1848833315631206725) |     |
+| Oct 27, 2024 | [Bad battery life](https://x.com/sridca/status/1850614477797937186)      |     |
+| Sep 21, 2025 | Trying [[Omarchy]] ...                                                   |     |
 
 
 ===
@@ -700,6 +712,23 @@ Thinkpad P71, my laptop when I [started](https://x.com/sridca/status/19411371857
 
 Picture: https://x.com/sridca/status/1941138401165807872
 
+
+===
+
+<!-- Source: KB/Hardware/Samsung T7.md -->
+<!-- URL: https://srid.ca/samsung-t7 -->
+<!-- Title: Samsung T7 -->
+<!-- Wikilinks: [[KB/Hardware/Samsung T7]], [[Hardware/Samsung T7]], [[Samsung T7]] -->
+
+---
+slug: samsung-t7
+---
+I have a 4TB Samsung T7 SSD.
+
+## Cons
+
+- Regressing to abysmal write speeds. See [reports on reddit](https://old.reddit.com/r/mac/comments/16x7j8v/samsung_t7_external_ssd_extremely_slow_like_3mbps/).
+	- Workaround: leave the SSD connected while writing a large file. Normal write speeds resume in a while.
 
 ===
 
@@ -1293,7 +1322,9 @@ Practice
 : Learning anything takes practice, and this is particularly a key for a purely functional language like Haskell. See [Haskell Mentors List](https://willbasky.github.io/Awesome-list-of-Haskell-mentors/) for progressing in learning Haskell by way of contributing to open source projects that you already enjoy using.
 
 Talk / Share
-: Join [Haskell Discourse](https://discourse.haskell.org/) to interact with other Haskellers. You may also post to [StackOverflow \#haskell](https://stackoverflow.com/questions/tagged/haskell), which has been quite helpful in my experience. Read [r/haskell](https://old.reddit.com/r/haskell/) for news. Be wary of other communities.[^wk]. See [Haskell Planetarium](https://haskell.pl-a.net/) for recent Haskell news & discussions.
+: Join [Haskell Discourse](https://discourse.haskell.org/) to interact with other Haskellers. You may also post to [StackOverflow \#haskell](https://stackoverflow.com/questions/tagged/haskell), which has been quite helpful in my experience. There's [a community][XComm] on [[Twitter]] too. Read [r/haskell](https://old.reddit.com/r/haskell/) for news. Be wary of other communities.[^wk]. See [Haskell Planetarium](https://haskell.pl-a.net/) for recent Haskell news & discussions.
+
+[XComm]: https://x.com/i/communities/1744972727029506506
 
 Deepen your Haskell knowledge
 : [[Haskell from the ground up]] (Work in progress)
@@ -2990,6 +3021,52 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 
 ===
 
+<!-- Source: KB/Software/Linux/Omarchy.md -->
+<!-- URL: https://srid.ca/omarchy -->
+<!-- Title: Omarchy -->
+<!-- Wikilinks: [[KB/Software/Linux/Omarchy]], [[Software/Linux/Omarchy]], [[Linux/Omarchy]], [[Omarchy]] -->
+
+---
+slug: omarchy
+---
+Omarchy is a much hyped [[Linux]] distro by DHH who has a distaste for [[macOS]]. It is based on Arch Linux and uses [[Hyprland]].
+
+
+## On [[P14s]] {#p14s}
+
+The author tried setting up Omarchy on his [[P14s]] and observed it to be somewhat lackluster compared to just using [[M1 Macbook Pro 16]].
+
+### Problems, with workaround
+
+WiFi adapter stops being recognized after first update and reboot
+: `sudo pacman -S linux-firmware && sudo pacman -S linux`; then reboot
+
+### Known Hardware issues {#hw}
+
+[[Apple Studio Display]]
+: - Sound does not work
+  - Webcam does not work
+
+Webcam
+: - Built-in webcam is not even recognized
+
+### Known Software issus {#soft}
+
+Chromium
+: Some tabs won't close/refresh/navigate; just grays out until you press ESC. ([Bug](https://support.google.com/chrome/thread/122093768/can-not-close-tabs-greyed-out-only-can-use-keyboard-shortcuts?hl=en))
+
+## Getting [[Nix]] dev env working {#nix}
+
+- [x] [Install Nix](https://nixos.asia/en/install)
+- [ ] Setup direnv through home-manager
+	- [ ] Integrate with existing Omarchy bash dotfiles
+
+## External Links
+
+- https://omarchy.org/
+
+===
+
 <!-- Source: KB/Software/Linux/Recording screencasts.md -->
 <!-- URL: https://srid.ca/screencast -->
 <!-- Title: Recording screencasts -->
@@ -4509,10 +4586,10 @@ Takes a few minutes after waking up for the uncomfortable sensation to start fro
 
 ## Personal Log {#log}
 
-| Period   | Description                                  | Resolution                                                 | Cause                                    |
-| -------- | -------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------- |
-| Apr 2024 | Daytime [[Head ache]] for ~3 weeks           | Keflex antibiotics                                         | Swimming in lodge pool (no ear plugs)    |
-| Aug 2025 | Aug 25 -> Aug 12 (declining during 3rd week) | Time? [[Ciprodex]] during 2nd week wasn't very effeective. | Swimming in [[YMCA]] pool (no ear plugs) |
+| Period   | Description                                                                      | Resolution                                                 | Cause                                    |
+| -------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------- |
+| Apr 2024 | Daytime [[Head ache]] for ~3 weeks                                               | Keflex antibiotics                                         | Swimming in lodge pool (no ear plugs)    |
+| Aug 2025 | Aug 25 -> Sep 13; declining during 3rd week; low grade symptoms until Sep 19 ... | Time? [[Ciprodex]] during 2nd week wasn't very effeective. | Swimming in [[YMCA]] pool (no ear plugs) |
 
 
 ===
@@ -9474,7 +9551,7 @@ slug: this-moment
 
 > [!cite/richard] [Richard’s Correspondence On The Actual Freedom Mailing List with Correspondent No. 27](https://actualfreedom.com.au/richard/listafcorrespondence/listaf27a.htm)
 > 
-> RICHARD: The actualism method (‘[[How am I experiencing this moment of being alive|how am I experiencing this moment of being alive]]’) is a method specifically designed to bring about a direct experience of the actual ... the question is asked, each moment again, until it becomes an automatic approach to life or a wordless attitude to living. ==Initially it will be seen that how one is experiencing this moment is usually via a feeling or a [[Belief|belief]] (sometimes cunningly disguised as a ‘truth’) – and a belief is an emotion-backed thought anyway – thus effectively blocking the _‘direct [[Sensuousness|sense]] experience’_ .== And for as long as one is experiencing this moment through a feeling – no matter how deep or profound the feeling may be – one is cutting oneself off from the splendour of the actual.
+> RICHARD: The actualism method (‘[[How am I experiencing this moment of being alive|how am I experiencing this moment of being alive]]’) is a method specifically designed to bring about a direct experience of the actual ... the question is asked, each moment again, until it becomes an automatic approach to life or a wordless attitude to living. ==Initially it will be seen that how one is experiencing **this moment** is usually via a feeling or a [[Belief|belief]] (sometimes cunningly disguised as a ‘truth’) – and a belief is an emotion-backed thought anyway – thus effectively blocking the _‘direct [[Sensuousness|sense]] experience’_ .== And for as long as one is experiencing this moment through a feeling – no matter how deep or profound the feeling may be – one is cutting oneself off from the splendour of the actual.
 
 ## See also
 

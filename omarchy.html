@@ -14,15 +14,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    YMCA – Sridhar Ratnakumar
+    Omarchy – Sridhar Ratnakumar
   </title>
   
     
-      <meta property='og:description' content='YMCA in Quebec has a indoor swimming pool, as well as rings for pull-ups.' />
+      <meta property='og:description' content='Omarchy is a much hyped [[Linux]] distro by DHH who has a distaste for [[macOS]]. It is based on Arch Linux and uses [[Hyprland]].' />
       <meta property='og:site_name' content='Sridhar Ratnakumar' />
       <meta property='og:image' content='https://srid.ca/' />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='YMCA' />
+      <meta property='og:title' content='Omarchy' />
       
         <meta name='twitter:card' content='summary_large_image' />
       
@@ -286,6 +286,28 @@
           
             <li>
 
+  <a href='linux'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      Linux
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
+  <a href='software'>
+    <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
+      <span class='emoji' data-emoji='floppy_disk' style='font-family: emoji'>💾</span> Software
+    </div>
+  </a>
+
+  
+    <ul>
+      
+        <li>
+
   <a href='kb'>
     <div class='text-gray-900 hover:bg-green-500 hover:text-white cursor-pointer forest-link'>
       📖 KB
@@ -303,6 +325,14 @@
     </div>
   </a>
 
+  
+</li>
+      
+    </ul>
+  
+</li>
+      
+    </ul>
   
 </li>
       
@@ -336,7 +366,7 @@
   <main class='px-4 py-4'>
     <h1 class='flex items-end justify-center mb-4 p-3 bg-green-100 text-5xl font-extrabold text-black rounded'>
   <span class='z-40 tracking-tighter '>
-    YMCA
+    Omarchy
   </span>
 </h1>
     
@@ -350,11 +380,235 @@
 
 
     <p class='mb-3'>
-      YMCA in Quebec has a indoor <a href='swimming' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>swimming</a> pool, as well as rings for pull-ups.
+      Omarchy is a much hyped <a href='linux' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Linux</a> distro by DHH who has a distaste for <a href='macos' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>macOS</a>. It is based on Arch Linux and uses <a href='hyprland' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Hyprland</a>.
     </p>
   
+    <h2 id='p14s' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  On <a href='p14s' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>P14s</a>
+  
+  <a href='omarchy#p14s' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      The author tried setting up Omarchy on his <a href='p14s' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>P14s</a> and observed it to be somewhat lackluster compared to just using <a href='m1-macbook-pro-16' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>M1 Macbook Pro 16</a>.
+    </p>
+  
+    <h3 id='problems-with-workaround' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Problems, with workaround
+  
+  <a href='omarchy#problems-with-workaround' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <dl class='flex flex-col mb-3'>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            WiFi adapter stops being recognized after first update and reboot
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>sudo pacman -S linux-firmware && sudo pacman -S linux</code>; then reboot
+              </dd>
+            </div>
+          
+        </div>
+      
+    </dl>
+  
+    <h3 id='hw' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Known Hardware issues
+  
+  <a href='omarchy#hw' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <dl class='flex flex-col mb-3'>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            <a href='apple-studio-display' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Apple Studio Display</a>
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Sound does not work
+        </li>
+      
+        <li>
+          Webcam does not work
+        </li>
+      
+    </ul>
+  
+              </dd>
+            </div>
+          
+        </div>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            Webcam
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Built-in webcam is not even recognized
+        </li>
+      
+    </ul>
+  
+              </dd>
+            </div>
+          
+        </div>
+      
+    </dl>
+  
+    <h3 id='soft' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Known Software issus
+  
+  <a href='omarchy#soft' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <dl class='flex flex-col mb-3'>
+      
+        <div class='my-1'>
+          <dt class='font-bold text-l'>
+            Chromium
+          </dt>
+          
+            <div class='flex flex-col pl-1'>
+              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
+                Some tabs won’t close/refresh/navigate; just grays out until you press ESC. (<a href='https://support.google.com/chrome/thread/122093768/can-not-close-tabs-greyed-out-only-can-use-keyboard-shortcuts?hl=en' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Bug</a>)
+              </dd>
+            </div>
+          
+        </div>
+      
+    </dl>
+  
+    <h2 id='nix' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Getting <a href='nix' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix</a> dev env working
+  
+  <a href='omarchy#nix' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <!-- FIXME: Fix list styling to use flexbox, so task lists don't botch them up -->
+    <svg xmlns='http://www.w3.org/2000/svg' class='inline h-4 w-4 mb-1 text-gray-600 stroke-current fill-current' viewBox='0 0 28 28'><desc>☑</desc><rect stroke-width='3' x='2' y='2' width='24' height='24' rx='3'></rect><path stroke='white' fill='none' stroke-linejoin='round' stroke-width='3.5' d='M7 14 l6 5L22 8'></path></svg>
+<span>
+  
+      <a href='https://nixos.asia/en/install' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Install Nix</a>
+    
+</span>
+  
+        </li>
+      
+        <li>
+          
+    <svg xmlns='http://www.w3.org/2000/svg' class='inline h-4 w-4 mb-1 text-gray-600 stroke-current' fill='none' viewBox='0 0 28 28'><desc>☐</desc><rect stroke-width='3' x='2' y='2' width='24' height='24' rx='3'></rect></svg>
+<span>
+  
+      Setup direnv through home-manager
+    
+</span>
+
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <svg xmlns='http://www.w3.org/2000/svg' class='inline h-4 w-4 mb-1 text-gray-600 stroke-current' fill='none' viewBox='0 0 28 28'><desc>☐</desc><rect stroke-width='3' x='2' y='2' width='24' height='24' rx='3'></rect></svg>
+<span>
+  
+      Integrate with existing Omarchy bash dotfiles
+    
+</span>
+
+  
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
+    <h2 id='external-links' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  External Links
+  
+  <a href='omarchy#external-links' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://omarchy.org/' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://omarchy.org/</a>
+        </li>
+      
+    </ul>
+  
   <div class='flex items-center justify-center mt-2'>
-  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/KB/YMCA.md'>
+  <a class='text-gray-300 hover:text-green-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/srid/edit/master/KB/Software/Linux/Omarchy.md'>
     <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
       <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
     </svg>
@@ -370,14 +624,14 @@
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-green-600 font-semibold hover:bg-green-50' href='swimmers-ear'>
-            Swimmer's Ear
+          <a class='text-green-600 font-semibold hover:bg-green-50' href='p14s'>
+            P14s
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-green-200 hover:border-green-500'>
-      <div>Swimming in <a href='ymca' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>YMCA</a> pool (no ear plugs)</div>
+      <div>Trying <a href='omarchy' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Omarchy</a> …</div>
     </div>
   
 </div>
