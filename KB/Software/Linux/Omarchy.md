@@ -23,10 +23,10 @@ Chromium
 : Some tabs won't close/refresh/navigate; just grays out until you press ESC. ([Bug](https://support.google.com/chrome/thread/122093768/can-not-close-tabs-greyed-out-only-can-use-keyboard-shortcuts?hl=en))
 
 Zed Editor
-: Crashes randomly!
+: Crashes randomly
 
-Omachy Programmer Switcher (Mod+Space)
-: Crashes randomly!
+Omarchy Application Switcher
+: Crashes randomly
 
 ### Verdict?
 
