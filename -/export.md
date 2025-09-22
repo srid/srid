@@ -587,7 +587,7 @@ slug: hw
 
 # :computer: Hardware
 
-I own a [[P14s|Thinkpad P14s]], [[Beelink SER8]] and [[M1 Macbook Pro 16]].
+I own a [[ThinkPad P14s|Thinkpad P14s]], [[Beelink SER8]] and [[M1 Macbook Pro 16]].
 
 ```query
 children:.
@@ -616,7 +616,7 @@ slug: apple-studio-display
 ---
 slug: ser8
 ---
-Beelink SER8 AMD Ryzen™ 7 8845HS
+Beelink SER8 AMD Ryzen™ 7 8845HS (similar CPU to [[ThinkPad P14s]])
 
 w/ 32GB RAM
 
@@ -668,37 +668,6 @@ The **MacBook Pro M1 Max (16 inch)** is my primary computer running #[[macOS]].
 
 ===
 
-<!-- Source: KB/Hardware/P14s.md -->
-<!-- URL: https://srid.ca/p14s -->
-<!-- Title: P14s -->
-<!-- Wikilinks: [[KB/Hardware/P14s]], [[Hardware/P14s]], [[P14s]] -->
-
----
-slug: p14s
----
-
-**ThinkPad P14s** is a compact workstation laptop I used as an experiment in running [[Hyprland]] with [[NixOS]] before ultimately returning to [[macOS]] as my primary OS on the [[M1 Macbook Pro 16]].
-
-## Configuration
-
-- AMD Ryzen 7 PRO 8840HS
-- Radeon 780M
-- 64 GB memory
-- 1 TB SSD
-- 14" 2.8K OLED 400nits
-
-## Observations
-
-| Date         | Note                                                                     |     |
-| ------------ | ------------------------------------------------------------------------ | --- |
-| Oct 11, 2024 | [Insta purchased](https://x.com/sridca/status/1844737458295988478)       |     |
-| Oct 22, 2024 | [Too small screen size](https://x.com/sridca/status/1848833315631206725) |     |
-| Oct 27, 2024 | [Bad battery life](https://x.com/sridca/status/1850614477797937186)      |     |
-| Sep 21, 2025 | Trying [[Omarchy]] ...                                                   |     |
-
-
-===
-
 <!-- Source: KB/Hardware/P71.md -->
 <!-- URL: https://srid.ca/p71 -->
 <!-- Title: P71 -->
@@ -729,6 +698,37 @@ I have a 4TB Samsung T7 SSD.
 
 - Regressing to abysmal write speeds. See [reports on reddit](https://old.reddit.com/r/mac/comments/16x7j8v/samsung_t7_external_ssd_extremely_slow_like_3mbps/).
 	- Workaround: leave the SSD connected while writing a large file. Normal write speeds resume in a while.
+
+===
+
+<!-- Source: KB/Hardware/ThinkPad P14s.md -->
+<!-- URL: https://srid.ca/p14s -->
+<!-- Title: ThinkPad P14s -->
+<!-- Wikilinks: [[KB/Hardware/ThinkPad P14s]], [[Hardware/ThinkPad P14s]], [[ThinkPad P14s]] -->
+
+---
+slug: p14s
+---
+
+**ThinkPad P14s** is a compact workstation laptop I used as an experiment in running [[Hyprland]] with [[NixOS]] before ultimately returning to [[macOS]] as my primary OS on the [[M1 Macbook Pro 16]].
+
+## Configuration
+
+- AMD Ryzen 7 PRO 8840HS
+- Radeon 780M
+- 64 GB memory
+- 1 TB SSD
+- 14" 2.8K OLED 400nits
+
+## Observations
+
+| Date         | Note                                                                     |     |
+| ------------ | ------------------------------------------------------------------------ | --- |
+| Oct 11, 2024 | [Insta purchased](https://x.com/sridca/status/1844737458295988478)       |     |
+| Oct 22, 2024 | [Too small screen size](https://x.com/sridca/status/1848833315631206725) |     |
+| Oct 27, 2024 | [Bad battery life](https://x.com/sridca/status/1850614477797937186)      |     |
+| Sep 21, 2025 | Trying [[Omarchy]] ...                                                   |     |
+
 
 ===
 
@@ -3031,9 +3031,9 @@ slug: omarchy
 ---
 Omarchy is a much hyped [[Linux]] distro by DHH who has a distaste for [[macOS]]. It is based on Arch Linux and uses [[Hyprland]].
 
-## On [[P14s]] {#p14s}
+## On [[ThinkPad P14s]] {#p14s}
 
-The author tried setting up Omarchy on his [[P14s]] and observed it to be somewhat lackluster compared to just using [[M1 Macbook Pro 16]].  On the positive side, the [[Hyprland]] experience is great ... and [[Linux]] does engage a delightful keyboard-centric workflow (see [[cli]]).
+The author tried setting up Omarchy on his [[ThinkPad P14s]] and observed it to be somewhat lackluster compared to just using [[M1 Macbook Pro 16]].  On the positive side, the [[Hyprland]] experience is great ... and [[Linux]] does engage a delightful keyboard-centric workflow (see [[cli]]).
 
 ### Problems, with workaround
 
@@ -3045,22 +3045,25 @@ WiFi adapter stops being recognized after first update and reboot
 [[Apple Studio Display]]
 : - Sound does not work
   - Webcam does not work
-
-Webcam
-: - Built-in webcam is not even recognized
-
+  - USB ports don't work
+  
 ### Known Software issues {#soft}
 
 Chromium
 : Some tabs won't close/refresh/navigate; just grays out until you press ESC. ([Bug](https://support.google.com/chrome/thread/122093768/can-not-close-tabs-greyed-out-only-can-use-keyboard-shortcuts?hl=en))
 
-## Getting [[Nix]] dev env working {#nix}
+## Additional setup
+### Getting [[Nix]] dev env working {#nix}
 
 This is fairly simple using home-manager. First, [install Nix](https://nixos.asia/en/install) and then setup home-manager based on [my configuration](https://github.com/srid/nixos-config/blob/e2b7f3fbc931b9cbc440f9a3139be2cdf2808dfd/configurations/home/srid%40vixen.nix). Notice I discard Omarchy's `.bashrc` in favour of the direnv-friendly starship setup.
 
+### Others
+
+- [ ] Ad blocking (I use Adguard on macOS)
+
 ## In lieu of Macbook Trackpad {#cli}
 
-Contrary to popular belief, my fingers tend to stay close to the 'home row' on macbook more than on any other system, due to the fact the trackpad is excellent maneuver. While Thinkpad has the iconic trackpoint, it is still not as usable as the Mac trackpad. So to counteract this, we need to ==setup keyboard-centric workflow== wherever possible reaching out to mouse only where necessary.
+Contrary to popular belief, my fingers tend to stay close to the 'home row' on macbook more than on any other system, due to the fact the trackpad enables excellent maneuver of the mouse cursor. While Thinkpad has the iconic trackpoint, it is still not as usable as the Mac trackpad. So to counteract this, we need to ==setup keyboard-centric workflow== wherever possible reaching out to mouse only where necessary.
 
 Chromium
 : Use the *Vimium* extension
@@ -3070,7 +3073,7 @@ Obsidian:
 
 ## Focus
 
-Finally, one advantage of using a tiling window manager is the **calm focus** it enables on whatever you are working. In contrast, when windows are *spread across* - it can facilitate a chaotic vibe of distraction as an undercurrent. I can't help but appreciate this calm focus despite all the problems above.  After all, [[This Moment|this is the only moment]] there is.
+Finally, one advantage of using a tiling window manager is the **calm focus** it enables on whatever you are working on. In contrast, when windows are *spread across* - it can facilitate a chaotic vibe of distraction as an undercurrent. I can't help but appreciate this calm focus despite all the problems above.  After all, [[This Moment|this is the only moment]] there is.
 
 ## External Links
 
@@ -4220,7 +4223,7 @@ slug: cli
 
 An ongoing project to get back to a CLI-centric workflow.
 
-**Update** (Oct, 2024): I'm using [[Hyprland]] on Thinkpad [[P14s]]. https://x.com/sridca/status/1849222477471236268
+**Update** (Oct, 2024): I'm using [[Hyprland]] on Thinkpad [[ThinkPad P14s]]. https://x.com/sridca/status/1849222477471236268
 
 **Update** (Jan, 2025): [[macOS]] is fine, if you don't buy into the Apple ecosystem. https://x.com/sridca/status/1878962756290068705
 

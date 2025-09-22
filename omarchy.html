@@ -43,7 +43,7 @@
 
   
   
-  <link href='tailwind.css?instanceId=c33020fa-8d40-4c39-999d-5c6dcfd74f9e' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=8577c0ed-1ba6-40e6-871a-7ac18e4cfdd3' rel='stylesheet' type='text/css' />
 
   <link rel='stylesheet' href='_emanote-static/fonts/maven-pro.css' />
 
@@ -385,7 +385,7 @@
   
     <h2 id='p14s' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
       
-  On <a href='p14s' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>P14s</a>
+  On <a href='p14s' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>ThinkPad P14s</a>
   
   <a href='omarchy#p14s' class='--ema-anchor'>
     <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
@@ -398,7 +398,7 @@
     </h2>
   
     <p class='mb-3'>
-      The author tried setting up Omarchy on his <a href='p14s' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>P14s</a> and observed it to be somewhat lackluster compared to just using <a href='m1-macbook-pro-16' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>M1 Macbook Pro 16</a>. On the positive side, the <a href='hyprland' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Hyprland</a> experience is great … and <a href='linux' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Linux</a> does engage a delightful keyboard-centric workflow (see <a href='cli' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Make CLI Great Again 🚀</a>).
+      The author tried setting up Omarchy on his <a href='p14s' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>ThinkPad P14s</a> and observed it to be somewhat lackluster compared to just using <a href='m1-macbook-pro-16' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>M1 Macbook Pro 16</a>. On the positive side, the <a href='hyprland' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Hyprland</a> experience is great … and <a href='linux' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Linux</a> does engage a delightful keyboard-centric workflow (see <a href='cli' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Make CLI Great Again 🚀</a>).
     </p>
   
     <h3 id='problems-with-workaround' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
@@ -466,25 +466,8 @@
           Webcam does not work
         </li>
       
-    </ul>
-  
-              </dd>
-            </div>
-          
-        </div>
-      
-        <div class='my-1'>
-          <dt class='font-bold text-l'>
-            Webcam
-          </dt>
-          
-            <div class='flex flex-col pl-1'>
-              <dd class='pl-2 my-1 text-gray-700 border-l-2'>
-                
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
         <li>
-          Built-in webcam is not even recognized
+          USB ports don’t work
         </li>
       
     </ul>
@@ -527,7 +510,21 @@
       
     </dl>
   
-    <h2 id='nix' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+    <h2 id='additional-setup' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
+      
+  Additional setup
+  
+  <a href='omarchy#additional-setup' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <h3 id='nix' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
       
   Getting <a href='nix' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix</a> dev env working
   
@@ -539,11 +536,41 @@
   </a>
 
 
-    </h2>
+    </h3>
   
     <p class='mb-3'>
       This is fairly simple using home-manager. First, <a href='https://nixos.asia/en/install' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>install Nix</a> and then setup home-manager based on <a href='https://github.com/srid/nixos-config/blob/e2b7f3fbc931b9cbc440f9a3139be2cdf2808dfd/configurations/home/srid%40vixen.nix' class='text-green-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>my configuration</a>. Notice I discard Omarchy’s <code class='py-0.5 px-0.5 bg-gray-100 font-mono'>.bashrc</code> in favour of the direnv-friendly starship setup.
     </p>
+  
+    <h3 id='others' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Others
+  
+  <a href='omarchy#others' class='--ema-anchor'>
+    <span class='hover:text-green-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          
+    <svg xmlns='http://www.w3.org/2000/svg' class='inline h-4 w-4 mb-1 text-gray-600 stroke-current' fill='none' viewBox='0 0 28 28'><desc>☐</desc><rect stroke-width='3' x='2' y='2' width='24' height='24' rx='3'></rect></svg>
+<span>
+  
+      Ad blocking (I use Adguard on macOS)
+    
+</span>
+
+  
+        </li>
+      
+    </ul>
   
     <h2 id='cli' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
       
@@ -560,7 +587,7 @@
     </h2>
   
     <p class='mb-3'>
-      Contrary to popular belief, my fingers tend to stay close to the ‘home row’ on macbook more than on any other system, due to the fact the trackpad is excellent maneuver. While Thinkpad has the iconic trackpoint, it is still not as usable as the Mac trackpad. So to counteract this, we need to <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>setup keyboard-centric workflow</span> wherever possible reaching out to mouse only where necessary.
+      Contrary to popular belief, my fingers tend to stay close to the ‘home row’ on macbook more than on any other system, due to the fact the trackpad enables excellent maneuver of the mouse cursor. While Thinkpad has the iconic trackpoint, it is still not as usable as the Mac trackpad. So to counteract this, we need to <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>setup keyboard-centric workflow</span> wherever possible reaching out to mouse only where necessary.
     </p>
   
     <dl class='flex flex-col mb-3'>
@@ -608,7 +635,7 @@
     </h2>
   
     <p class='mb-3'>
-      Finally, one advantage of using a tiling window manager is the <strong>calm focus</strong> it enables on whatever you are working. In contrast, when windows are <em>spread across</em> - it can facilitate a chaotic vibe of distraction as an undercurrent. I can’t help but appreciate this calm focus despite all the problems above. After all, <a href='this-moment' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>this is the only moment</a> there is.
+      Finally, one advantage of using a tiling window manager is the <strong>calm focus</strong> it enables on whatever you are working on. In contrast, when windows are <em>spread across</em> - it can facilitate a chaotic vibe of distraction as an undercurrent. I can’t help but appreciate this calm focus despite all the problems above. After all, <a href='this-moment' class='text-green-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>this is the only moment</a> there is.
     </p>
   
     <h2 id='external-links' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl'>
@@ -651,7 +678,7 @@
       
         <li>
           <a class='text-green-600 font-semibold hover:bg-green-50' href='p14s'>
-            P14s
+            ThinkPad P14s
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
