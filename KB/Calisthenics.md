@@ -4,7 +4,7 @@ slug: calisthenics
 
 # :bicyclist: Calisthenics
 
->[!IMPORTANT]
+>[!NOTE]
 >I'm now more into [[Swimming]] along with occasional pull ups.
 
 Physical fitness was never a priority for me growing up in the metropolitan
