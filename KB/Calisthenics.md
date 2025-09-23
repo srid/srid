@@ -4,8 +4,8 @@ slug: calisthenics
 
 # :bicyclist: Calisthenics
 
->[!NOTE]
->I'm now more into [[Swimming]] along with occasionally pull ups.
+>[!IMPORTANT]
+>I'm now more into [[Swimming]] along with occasional pull ups.
 
 Physical fitness was never a priority for me growing up in the metropolitan
 [Chennai](https://en.wikipedia.org/wiki/Chennai). South Asians in general do not prioritize
