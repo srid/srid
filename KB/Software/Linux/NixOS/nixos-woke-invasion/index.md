@@ -178,7 +178,8 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
 ### 2025 Feb
 - Jon publishes a 2+ hr video summarizing the whole drama. [Reddit](https://www.reddit.com/r/NixOS/comments/1imqc14/nixos_drama_explained_a_personal_account/?utm_source=reddit&utm_medium=usertext&utm_name=NixOS), [X](https://x.com/jonringer117/status/1889114268991426949), [YouTube](https://www.youtube.com/watch?v=gp0FI8Gw1iA), [Text](https://gist.github.com/jonringer/11744f5489aa2b9feb83e6e85d79d5ee). Infinisil uses midwit rhetoric with an air of caring, but factually uncaring, exposing his lack of boldness and fairhandedess in these issues.
 
-**NOTE:** The author, Srid, has lost interest in keeping this timeline up to date, but the drama does continue ([1](https://x.com/mightyiam/status/1924013214448415188); [2](https://x.com/jonringer117/status/1931736499198070883)).
+> [!NOTE]
+> The author, Srid, has lost interest in keeping this timeline up to date, but the drama does continue ([1](https://x.com/mightyiam/status/1924013214448415188); [2](https://x.com/jonringer117/status/1931736499198070883)) eventually resulting in [the moderation team resigning](https://news.ycombinator.com/item?id=45398891) in September, 2025.
 
 :::
 
