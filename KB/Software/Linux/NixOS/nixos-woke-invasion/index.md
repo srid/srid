@@ -172,7 +172,7 @@ As of May 2nd, this leaves `hexa` and the newly-joined `lassulus` as the only mo
   - https://discourse.nixos.org/t/nix-community-survey-2024-results-gender-distribution/55489
   - https://discourse.nixos.org/t/improving-diversity-in-this-community/55547
 - The rest of RFC 175 authors get permanently banned: [Andreas](https://github.com/NixOS/moderation/commit/a40d73948299c9d622ef6a09bed219b56464bb95), [Tim](https://github.com/NixOS/moderation/commit/4d6ff96b9213d1d6bf704cb57af4f23f4f864f61).
-- [SC kicks off](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) their deliberately designed echo-chamber (_"We want to speak and act as a single voice"_).
+- [SC kicks off](https://discourse.nixos.org/t/nix-steering-committee-kickoff/56362) with one spokeperson (_"We want to speak and act as a single voice"_).
 - 
 
 ### 2025 Feb
