@@ -31,6 +31,16 @@ Omarchy Application Switcher
 ### Verdict?
 
 Whilst I can live with, for example, monitor webcam & speakers not working, I cannot tolerate software crashing! Thus, I'm content to be back on [[macOS]] with my trusty old [[M1 Macbook Pro 16]].
+
+## On [[Beelink SER8]] {#beelink}
+
+### Known Issues
+
+- Apple Studio wouldn't be recognized during boot; I had to connect my TV through HDMI.
+	- This issues persists
+- Waybar crashes randomly
+	- Sometimes, a workspace (e.g.: 4) randomly blacks out.
+- Omarchy Application switcher crashes randomly
 ## Getting [[Nix]] dev env working {#nix}
 
 This is fairly simple using home-manager. First, [install Nix](https://nixos.asia/en/install) and then setup home-manager based on [my configuration](https://github.com/srid/nixos-config/blob/e2b7f3fbc931b9cbc440f9a3139be2cdf2808dfd/configurations/home/srid%40vixen.nix). Notice I discard Omarchy's `.bashrc` in favour of the direnv-friendly starship setup.
