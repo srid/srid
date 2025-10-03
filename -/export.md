@@ -732,6 +732,7 @@ slug: p14s
 | Oct 27, 2024 | [Bad battery life](https://x.com/sridca/status/1850614477797937186)      |     |
 | Aug 23, 2025 | [[Omarchy]] - Fail [v1](https://x.com/sridca/status/1959440766159180283) |     |
 | Sep 21, 2025 | [[Omarchy]] - Fail [v2](https://x.com/sridca/status/1969952240984277341) |     |
+| Oct 1, 2024  | [[Pop OS]] - [Success](https://x.com/sridca/status/1973583560671125589)! |     |
 
 
 ===
@@ -3064,6 +3065,16 @@ Omarchy Application Switcher
 ### Verdict?
 
 Whilst I can live with, for example, monitor webcam & speakers not working, I cannot tolerate software crashing! Thus, I'm content to be back on [[macOS]] with my trusty old [[M1 Macbook Pro 16]].
+
+## On [[Beelink SER8]] {#beelink}
+
+### Known Issues
+
+- Apple Studio wouldn't be recognized during boot; I had to connect my TV through HDMI.
+	- This issues persists
+- Waybar crashes randomly
+	- Sometimes, a workspace (e.g.: 4) randomly blacks out.
+- Omarchy Application switcher crashes randomly
 ## Getting [[Nix]] dev env working {#nix}
 
 This is fairly simple using home-manager. First, [install Nix](https://nixos.asia/en/install) and then setup home-manager based on [my configuration](https://github.com/srid/nixos-config/blob/e2b7f3fbc931b9cbc440f9a3139be2cdf2808dfd/configurations/home/srid%40vixen.nix). Notice I discard Omarchy's `.bashrc` in favour of the direnv-friendly starship setup.
@@ -3077,6 +3088,34 @@ Oe advantage of using [[Linux]]'s tiling window manager is the **calm focus** it
 ## External Links
 
 - https://omarchy.org/
+
+===
+
+<!-- Source: KB/Software/Linux/Pop OS.md -->
+<!-- URL: https://srid.ca/pop-os -->
+<!-- Title: Pop!_OS -->
+<!-- Wikilinks: [[KB/Software/Linux/Pop OS]], [[Software/Linux/Pop OS]], [[Linux/Pop OS]], [[Pop OS]] -->
+
+---
+slug: pop-os
+---
+# Pop!\_OS
+
+https://system76.com/pop
+
+Pop!\_OS is better than [[Omarchy]] for two reasons:
+
+- Excellent *hybrid* tiling experience
+- Recognises all peripherals (webcam, mic, sound) of [[Apple Studio Display]]
+
+## Reports
+
+- [Oct 1, 2025](https://x.com/sridca/status/1973583560671125589): Pop!\_OS works on both [[Beelink SER8]] and [[ThinkPad P14s]]
+
+## Gotchas
+
+- **COSMIC Store** often installs Flatpak apps which brings their own downsides.
+	- For e.g., Flatpak version of Google Chrome prevents 1Password extension for communicating with the desktop app
 
 ===
 
