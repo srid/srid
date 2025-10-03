@@ -13,3 +13,8 @@ Pop!\_OS is better than [[Omarchy]] for two reasons:
 ## Reports
 
 - [Oct 1, 2025](https://x.com/sridca/status/1973583560671125589): Pop!\_OS works on both [[Beelink SER8]] and [[ThinkPad P14s]]
+
+## Gotchas
+
+- **COSMIC Store** often installs Flatpak apps which brings their own downsides.
+	- For e.g., Flatpak version of Google Chrome prevents 1Password extension for communicating with the desktop app
