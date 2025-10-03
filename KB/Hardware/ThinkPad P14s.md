@@ -21,4 +21,4 @@ slug: p14s
 | Oct 27, 2024 | [Bad battery life](https://x.com/sridca/status/1850614477797937186)      |     |
 | Aug 23, 2025 | [[Omarchy]] - Fail [v1](https://x.com/sridca/status/1959440766159180283) |     |
 | Sep 21, 2025 | [[Omarchy]] - Fail [v2](https://x.com/sridca/status/1969952240984277341) |     |
-| Oct 1, 2024  | [[Pop OS]] - [Success](https://x.com/sridca/status/1973583560671125589)! |     |
+| Oct 1, 2025  | [[Pop OS]] - [Success](https://x.com/sridca/status/1973583560671125589)! |     |
