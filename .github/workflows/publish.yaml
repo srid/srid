@@ -6,9 +6,10 @@ on:
   pull_request:
 jobs:
   emanote:
-    runs-on: x86_64-linux
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: nixbuild/nix-quick-install-action@v33
       - name: Build the website (Nix) 🔧
         run: |
           nix build
@@ -18,4 +19,5 @@ jobs:
         if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
           publish_dir: ./result/
