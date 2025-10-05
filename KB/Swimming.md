@@ -18,3 +18,6 @@ The author started learning to swim in 2025. Follow his progress here, https://x
 | --------------------------------- | ------------- |
 | [[Swimmer's Ear\|ear infection]]# | Use ear plugs |
 
+## Observations
+
+- October: [whole body strengthening](https://x.com/sridca/status/1974942354823065856)
