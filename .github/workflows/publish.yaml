@@ -12,7 +12,7 @@ jobs:
       - uses: nixbuild/nix-quick-install-action@v33
       - name: Build the website (Nix) 🔧
         run: |
-          nix build
+          nix --accept-flake-config build
       # Cloudflare will then deploy the gh-pages branch via Pages.
       - name: Push to gh-pages 🚀
         uses: peaceiris/actions-gh-pages@v4
