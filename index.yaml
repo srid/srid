@@ -15,7 +15,6 @@ template:
   breadcrumbs:
     enable: false
   base:
-    bodyClass: overflow-y-scroll bg-gray-400
     containerClass: container mx-auto max-w-screen-lg
 
   theme: green
