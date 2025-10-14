@@ -58,6 +58,8 @@ I could be like this forever.
 {#ms}
 ## 'Microsoft PCE'
 
+^6120e8
+
 A report of a [[PCE]] I had back in 2008 or 2009 while working for Microsoft in Vancouver
 
 :::{.text-sm .italic .px-4}

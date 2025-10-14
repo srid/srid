@@ -33,7 +33,7 @@ If you seek to buy from **butcher shops**, evaluate them on an individual basis.
 
 Fattier meat (1.5:1 fat:protein ratio or higher) easily available here:
 
-- Sausages ([duBreton](https://www.dubreton.com/en-ca/products/organic/toulouse-sausages))
+- [[Sausage]] ([duBreton](https://www.dubreton.com/en-ca/products/organic/toulouse-sausages))
 - [Pork Belly from Costco](https://x.com/sridca/status/1898138719083020523)
 
 ## Fat supplements
