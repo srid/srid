@@ -17,7 +17,7 @@ template:
   base:
     containerClass: container mx-auto max-w-screen-lg
 
-  theme: green
+  theme: pink
   iconUrl: static/favicon.jpeg
   urlStrategy: pretty
 
