@@ -4,7 +4,7 @@ slug: caring
 
 **RESPONDENT:** _Are you saying this \[taking care of other people and things\] only happens in a selfish sort of way? That all feeling caring is selfish – therefore not really caring at all?_
 
-**RICHARD:** I would rather say ‘self’-centred than _‘selfish’_ ... when someone is touched by another’s suffering, as in being moved sufficiently to stimulate caring action, it is their own suffering which is being kindled and quickened. Thus feelings are being aroused, which motivate the activity of caring, and taking care of the other works to assuage the aroused feelings (as well as working to help the other of course). Shall I put it this way? They are missing-out on experiencing the actuality of the caring action, the helpful activity itself, which is taking place.
+**RICHARD:** I would rather say ‘[[Identity|self]]’-centred than _‘selfish’_ ... when someone is touched by another’s suffering, as in being moved sufficiently to stimulate caring action, it is their own suffering which is being kindled and quickened. Thus feelings are being aroused, which motivate the activity of caring, and taking care of the other works to assuage the aroused feelings (as well as working to help the other of course). Shall I put it this way? They are missing-out on experiencing the actuality of the caring action, the helpful activity itself, which is taking place.
 
 **RESPONDENT:** _OK, so ‘self’-centred caring (feeling caring) actually works to eliminate one’s own suffering?_
 
