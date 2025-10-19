@@ -12,14 +12,14 @@ The expression 'wiliness of the wild' (a direct opposite of [[Naivete]] and thus
 >
 > It is no-one’s fault if they be **more cunning** – **more instinctively wily** – than the norm as it is genetic inheritance which determines the degree to which instinctual drives, urges, impulses, appetites, and all the rest, are operating. --[Richard’s Selected Correspondence On Naiveté](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-naivete.htm)
 
-## Wiliness as explicitly taught
+## Wiliness as explicitly taught {#taught}
 
-In modern cultures, the following authors have led their audience into consciously enhancing their genetically inherited wiliness-of-the-wild so as to either take advantage of the [[Gullibility|gullible]] others and/or improve their lot in life:
+In modern cultures, the following authors have led their audience into consciously enhancing their genetically inherited wiliness-of-the-wild so as to either take advantage of the [[Gullibility|gullible]] others and/or improve their lot in life (usually a combination thereof):
 
 - [The 48 Laws of Power by **Robert Greene**](https://www.nateliason.com/notes/48-laws-power-robert-greene)
 - [How to Win Friends and Influence People by **Dale Carnegie**](https://fs.blog/how-to-win-friends-and-influence-people/)
 
-Note: Although Mr. Greene here is more likely to receive moral opprobrium than Mr. Carnegie (and the latter *does* give sensible and practical advice to people for improving their social lives; [see example](https://www.amazon.com/gp/review/R24GSZSS96I4YZ)), both of their teachings are to be viewed in a morally neutral way (see the 'no-one's fault' above) so as to allow the discovery of the *human* wiliness -- and its discernment in relation to the superior alternative [[Naivete]] -- inherent to those teachings.
+Mr. Greene here is more likely to receive moral opprobrium than Mr. Carnegie, given the content of their teachings. Yet, both of their teachings are to be viewed in a morally neutral way (see the 'no-one's fault' above) so as to allow the discernment of *human* wiliness -- in contrast to the superior alternative of the [[Spontaneity]] of [[Naivete]] -- inherent to them.
 
 ### Other examples
 
