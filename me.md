@@ -1,5 +1,0 @@
-# Personal
-
-```query
-path:./*
-```
