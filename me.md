@@ -1,0 +1,5 @@
+# Personal
+
+```query
+path:./*
+```
