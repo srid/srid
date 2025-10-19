@@ -82,8 +82,8 @@
             <p class="font-serif">‣ From early <apply template="cv/year">2023</apply>, I joined <em>Juspay
                 Technologies</em>
               to lead the company's <a class="${linkClass}" href="nix">Nix</a> efforts, specifically improving developer
-              experience and assist with development of associated open source projects 
-              ([omnix](https://github.com/juspay/omnix); [vira](http://github.com/juspay/vira); [services-flake](https://github.com/juspay/services-flake); etc)
+              experience and assist with development of associated open source projects
+              (<a class="${linkClass}" href="https://github.com/juspay/omnix">omnix</a>; <a class="${linkClass}" href="http://github.com/juspay/vira">vira</a>; <a class="${linkClass}" href="https://github.com/juspay/services-flake">services-flake</a>; etc)
             </p>
           </section>
           <section>
