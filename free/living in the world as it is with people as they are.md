@@ -4,7 +4,7 @@ slug: world-as-it-is
 
 
 
-> [!cite/richard] [Richard’s Selected Correspondence On Noam Chomsky](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-chomsky.htm)
+> [!quote] [Richard’s Selected Correspondence On Noam Chomsky](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-chomsky.htm)
 > 
 > {.respondent}
 > **RESPONDENT:** _At first glance that seems totally reasonable as [Noam Chomsky] has never offered any solution to what fundamentally is wrong in my life._

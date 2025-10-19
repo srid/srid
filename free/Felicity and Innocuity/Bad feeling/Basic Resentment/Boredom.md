@@ -2,7 +2,7 @@
 slug: boredom
 ---
 
-> [!cite/richard] [[Richard’s Journal]]: [Article Twenty-Five](https://actualfreedom.com.au/richard/selectedwriting/sw-feelings.htm)
+> [!quote] [[Richard’s Journal]]: [Article Twenty-Five](https://actualfreedom.com.au/richard/selectedwriting/sw-feelings.htm)
 > 
 > It is an adventure and a [[Delight|delight]] to simply be alive, when one is free from the _‘I’_ that has taken control of one’s body; the hunt for the ‘thrills and spills’ that is so endemic in the _real world_ is over. ==It is _[[Identity|‘I’]]_ who is easily bored, incessantly pursuing [[Excitement|excitement]].== As _‘I’_ am not actually here, one needs to feel that _‘I’_ am _real_ ... that one is ‘alive’. The body can be persuaded to produce quite an array of chemicals; a veritable cocktail is available to the insidious entity that has taken up psychological and psychic residence within. Whereas I am already alive for I am actual. I am never bored, because being here now as-I-am is an escapade in itself. It takes great daring to be here now; anyone who has heeded my words and contemplated the actuality of what I am saying and doing, has reported to me that they invariably experience fear ... and I too have known the full gamut of the anxious terror and horror and dread of the existential angst that comes as a result of activating the desire to disclose oneself as the contingent _‘being’_ one fears one is. Initially one is deathly afraid to actually be here now, as it can feel rather rudely raw … one feels more naked and exposed than taking off one’s clothing in the market place.
 > 
@@ -12,7 +12,7 @@ slug: boredom
 
 ## Feeling-being 'Vineeto' {#vineeto}
 
-> [!cite/vineeto] [Selected Correspondence Vineeto  Affective Feelings – Emotions and Passions](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings4.htm)
+> [!quote] Vineeto: [Selected Correspondence Vineeto  Affective Feelings – Emotions and Passions](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings4.htm)
 > 
 > VINEETO: The phrase I would use now, in hindsight, for those ‘no-feelings’ of lack-lustre and listlessness is [[Basic Resentment|resentment of being here]]. Within the human condition there is a [[Basic Resentment|basic resentment]] of not wanting to be here, wanting to be somewhere else, waiting for something else to happen than what is happening now, as a basic attitude to life==, which is then reinforced by the various religious and [[Spirituality|spiritual]] conditioning that life on earth is essentially suffering and that the real life will only happen for the spirit after you die.
 > 
@@ -22,7 +22,7 @@ slug: boredom
 
 
 
-> [!cite/vineeto] [Selected Correspondence Vineeto  Affective Feelings – Emotions and Passions](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings3.htm)
+> [!quote] Vineeto: [Selected Correspondence Vineeto  Affective Feelings – Emotions and Passions](https://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings3.htm)
 > 
 > RESPONDENT: For me, while it is easy (comparatively) to label and handle obvious feelings like anger, [[malice]], compassion, [[Hope|hope]], I find it more difficult to label not-so-apparent feelings. These feelings create a neither-happy-nor-sad kind of state. I remember you talked of dullness in one of your mails. But I find that this dullness or boredom is not the same every time it happens and it happens very frequently.
 > 

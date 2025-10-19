@@ -6,7 +6,7 @@ slug: anti-crypto
 
 A disgruntled vocal minority belong to the church of anti-[[Blockchain|crypto]], and they have taken upon themselves to proselytize (see [[woke-invasion]]) the unsuspecting masses - which [[Righteousness|righteous]] indignation is best illustrated by their following decree:
 
-> [!cite/default] Anti-crypto decree
+> [!quote] Anti-crypto decree
 > 
 > I have instead come to believe that [crypto is] so harmful that I cannot ethically continue to ignore them, and must instead do my best to educate and advocate against their wider adoption. I am picking my battles, and this is one of them.
 > 

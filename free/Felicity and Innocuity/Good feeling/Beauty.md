@@ -1,7 +1,7 @@
 ---
 slug: beauty
 ---
-> [!cite/richard] [Richard’s Selected Correspondence On Beauty](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-beauty.htm)
+> [!quote] [Richard’s Selected Correspondence On Beauty](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-beauty.htm)
 > 
 > {.respondent}
 > RESPONDENT: _What does human beauty mean in the actual world?_

@@ -4,7 +4,7 @@ slug: equity-parity
 
 # Equity and parity
 
-> [!cite/richard] [The Formation and Persistence of Social Identity](https://actualfreedom.com.au/an/various/persistentsocialidentity.htm)
+> [!quote] [The Formation and Persistence of Social Identity](https://actualfreedom.com.au/an/various/persistentsocialidentity.htm)
 >
 > {.respondent}
 > RESPONDENT: You say ‘equity and parity is the key to success’.

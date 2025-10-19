@@ -4,7 +4,7 @@ slug: diy
 
 # Actualism is a DIY business
 
-> [!cite/richard] [FAQ: What is the Role of the Actual Freedom Trust](https://actualfreedom.com.au/sundry/frequentquestions/FAQ11a.htm#7)
+> [!quote] [FAQ: What is the Role of the Actual Freedom Trust](https://actualfreedom.com.au/sundry/frequentquestions/FAQ11a.htm#7)
 > 
 > {.respondent}
 > RESPONDENT: ... \[Here’s the answer to your stalled actualist efforts\] – you need to buddy up.
@@ -12,7 +12,7 @@ slug: diy
 > RICHARD: No, **there is no ‘need’ whatsoever to buddy up (aka chum up)** ... the code has been cracked, once and for all, and the way now lies wide open, and wondrously so, for anybody and everybody **irregardless of their marital status**. 
 > 
 
-> [!cite/vineeto] [Vineeto’s Correspondence Correspondent No 11](https://actualfreedom.com.au/actualism/vineeto/generalcorrespondence/vincorr11a.htm)
+> [!quote] [Vineeto's Correspondence Correspondent No 11](https://actualfreedom.com.au/actualism/vineeto/generalcorrespondence/vincorr11a.htm)
 > 
 > {.respondent}
 > RESPONDENT: Just one more thing, have you thought about doing some sort of (paid) instruction on the basics of AF? I know it is all on the site, but that can be a bit intimidating for new people. Anyway, just an idea.

@@ -2,7 +2,7 @@
 slug: phys
 ---
 
-> [!cite/richard] [Richard’s Selected Correspondence On Science](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-science.htm)
+> [!quote] [Richard’s Selected Correspondence On Science](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-science.htm)
 > 
 > the late nineteenth-century/ early twentieth-century physics departed from being a study of the natural world (the physical world) and entered into the realm of the mathematical world ... an abstract world which does not exist in nature.
 

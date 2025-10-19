@@ -7,7 +7,7 @@ slug: climate-alarmism
 "Climate change" alarmism (aka. climate apocalyptic fantasy) is the current iteration of the [long line](https://nypost.com/2021/11/12/50-years-of-predictions-that-the-climate-apocalypse-is-nigh/) of religiously[^rel]
 catastrophistic thinking[^doom] humanity has been harbouring for generations, which alarmism has its origins in [[Identity|identity]] itself inasmuch as fear itself is sourced in it.
 
-> [!cite/default] [The Planet's Future Shouldn't Be Left to the Catastrophists](https://www.humanprogress.org/the-planets-future-is-too-important-to-leave-to-the-catastrophists/)
+> [!quote] [The Planet's Future Shouldn't Be Left to the Catastrophists](https://www.humanprogress.org/the-planets-future-is-too-important-to-leave-to-the-catastrophists/)
 > 
 > Green catastrophism has its roots in thousands of years of religious doom-mongering.
 
@@ -15,7 +15,7 @@ catastrophistic thinking[^doom] humanity has been harbouring for generations, wh
 ## [[woke-hypocrisy|Hypocrisy]]
 
 
-> [!cite/richard] [Richard’s Correspondence On Mailing List ‘D’ with Srinath](https://www.actualfreedom.com.au/richard/listdcorrespondence/listdsrinath.htm)
+> [!quote] [Richard’s Correspondence On Mailing List ‘D’ with Srinath](https://www.actualfreedom.com.au/richard/listdcorrespondence/listdsrinath.htm)
 > 
 > {.respondent}
 >SRINATH: I feel very much like a white-collar peasant. Engaged in the rat-race to get to the top and realise there is nothing there ala what John Lennon and your friend spoke about.
@@ -50,7 +50,7 @@ catastrophistic thinking[^doom] humanity has been harbouring for generations, wh
 
 When pockets of commonsense emerge through regurgigated nonsense on the orange site ...
 
-> [!cite/default] User [systemvoltage wrote](https://news.ycombinator.com/item?id=32940152):
+> [!quote] User [systemvoltage wrote](https://news.ycombinator.com/item?id=32940152):
 > 
 > The evidence is all based on models, controlled by the very people who have incentive for those models to support their claims (scientists receiving grants, corporate kickbacks, etc and NGOs/politicians doing the same).
 >
@@ -60,7 +60,7 @@ When pockets of commonsense emerge through regurgigated nonsense on the orange s
 > 
 > The whole thing is a gigantic self-defeating farce, that, when looked at through the lens of objectivity makes about as much sense as Scientology (the comparison to a religion, here, being purposeful). The parallels to the [[COVID-19|COVID groupthink]] are apt, correct, and the exact same candy bar in a different wrapper.
 
-> [!cite/default] User [motohagiography wrote](https://news.ycombinator.com/item?id=34161236):
+> [!quote] User [motohagiography wrote](https://news.ycombinator.com/item?id=34161236):
 > 
 > Is there a version of this that is readable that isn't a propaganda spectacle? Look at the narrative form and who it is trying to persuade. I thought climate change wasn't so much about meteorology as it was a general descriptor for a manufactured political climate, where one is either for the solutions or not, and therefore one can attribite literally anything to it. It is just a critical theory for dissolving reason and aligning people behind demagogues. Unemployment? Climate change. Social unrest? Climate change. Fertility rates? Climate change. Heart attacks? Climate change. It's intellectual chaff that only serves to center its ideologues. So long as you keep the reactionaries arguing about the weather they aren't going to offer meaningful resistance to the solutions being imposed on their countries and the co-ordinated demolition of national sovereignty to post-national governing bodies. It's a standard distraction theft.
 > 

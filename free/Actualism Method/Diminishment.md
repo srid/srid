@@ -3,7 +3,7 @@ slug: diminishment
 ---
 
 
-> [!cite/richard] [Richard’s Selected Correspondence On How To Become Free of the Human Condition](http://actualfreedom.com.au/richard/selectedcorrespondence/sc-method.htm#WzTtDiV):
+> [!quote] [Richard's Selected Correspondence On How To Become Free of the Human Condition](http://actualfreedom.com.au/richard/selectedcorrespondence/sc-method.htm#WzTtDiV):
 > 
 > [..] what ‘he’ had twigged to [..] was how it was far, far ==easier and simpler to stay in a good mood come-what-may== – preferably a happy mood of course – than claw ‘his’ way back up to [[Feeling good|feeling good]], again and again, after having habitually reverted to type.
 > 

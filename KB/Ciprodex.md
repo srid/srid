@@ -18,7 +18,7 @@ Not very effective compared to other drops and oral antibiotics.
 
 AI summary of [10.1097/MAO.0000000000001966](https://doi.org/10.1097/mao.0000000000001966) (via [X](https://x.com/sridca/status/1965447666554601832)):
 
-> [!cite/default] AI summary
+> [!quote] AI summary
 > -   **Ineffectiveness of Ciprofloxacin Drops for Resistant Infections:** The study concluded that using ciprofloxacin drops to treat bacteria that are resistant to ciprofloxacin is ineffective. The high concentration of the antibiotic achieved in topical drops was found to be insufficient to overcome the bacteria's resistance.
 > -   **Low Success Rate:** In patients with ciprofloxacin-resistant infections, treatment with topical ciprofloxacin drops alone had a success rate of only 2.7%.
 > -   **Alternative Treatments Were More Successful:**

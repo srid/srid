@@ -1,7 +1,7 @@
 ---
 slug: loneliness
 ---
-> [!cite/richard] [Richard’s Selected Writings on The Human Condition](https://actualfreedom.com.au/richard/selectedwriting/sw-humancondition.htm)
+> [!quote] [Richard’s Selected Writings on The Human Condition](https://actualfreedom.com.au/richard/selectedwriting/sw-humancondition.htm)
 > 
 > The esteemed goal within each group is to reach for the leadership. There lies, seemingly, more power, more love, more acceptance and more individuality. [..] **Loneliness** may seem to diminish by belonging to the [[Community|group]], but it actually does not. Rather, it becomes more and more poignant the higher one climbs.
 > 

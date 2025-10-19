@@ -82,7 +82,7 @@ Once I’m back home in my apartment, I decided to wash my face in the bathroom 
 
 Here’s Peter (who at that time worked as a civil architect) reporting a very similar experience:
 
-> [!cite/peter]  [Selected Correspondence Peter Apperception vs. Choiceless Awareness](http://actualfreedom.com.au/actualism/peter/selected-correspondence/corr-apperception.htm#WzTtDiV)
+> [!quote]  [Selected Correspondence Peter Apperception vs. Choiceless Awareness](http://actualfreedom.com.au/actualism/peter/selected-correspondence/corr-apperception.htm#WzTtDiV)
 > 
 > Late one night in my first year as an actualist, as I was working on the drawing board, I had a pure conscious experience whereby my mind became aware of itself working. There was apperception happening in that there was no ‘me’ being aware – there was simply the brain being aware of the brain in operation, in this case doing the task of designing a house. The process that was happening was **fascinating to observe** – there was a continual consideration of the parameters that governed the design: the client’s requirements, past experience, site considerations, planning and building regulations, structural considerations, climate considerations, budget, ease of building, appearance, durability, workability and so on.
 > 
@@ -94,7 +94,7 @@ Here’s Peter (who at that time worked as a civil architect) reporting a very s
 
 [Recommended to me by Vineeto]
 
-> [!cite/default] [Tarin's PCE](https://x.com/sridca/status/1964155448413630938)
+> [!quote] [Tarin's PCE](https://x.com/sridca/status/1964155448413630938)
 >
 > My friend’s nephew was speaking to me, and mid-sentence, I wasnt only listening to just the words he was saying, but could hear the tones and timbres in his voice and the slight echo it had from all around the room. I saw the shadows on the wall cast by the lighting, and and the colours and shades were so vibrant and bright, not bright in a ‘more lighting’ way, but in a ‘more clear’ way.
 > 

@@ -1,7 +1,7 @@
 ---
 slug: self-worth
 ---
-> [!cite/richard] [Richard’s Correspondence On Mailing List ‘D’ with Rick](https://actualfreedom.com.au/richard/listdcorrespondence/listdrick.htm)
+> [!quote] [Richard’s Correspondence On Mailing List ‘D’ with Rick](https://actualfreedom.com.au/richard/listdcorrespondence/listdrick.htm)
 > 
 > **RICHARD:** G’day Rick, As the operative-word in all the above is ‘self-worth’ (and self-worth as derived from others’ opinion at that) perhaps a personal anecdote may be of assistance.
 > 

@@ -2,12 +2,12 @@
 slug: procrastination
 ---
 
-> [!cite/richard] [FAQ: What is the Meaning of Life](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ01a.htm)
+> [!quote] [FAQ: What is the Meaning of Life](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ01a.htm)
 > 
 > **RICHARD**: For something like twenty five years I was an **agnostic** ... and it is an apparently satisfying position to be in as it makes one feel both intellectually comfortable and intellectually superior at the same time (whilst appearing humble) until one day I realised just what I was doing to myself ... and to others. I was cleverly shuffling all the ‘hard questions’ about consciousness under the rug and going around deftly cutting other people down to size (which is all so easy to do simply by saying ‘well that is your [[Belief|belief]]/truth/idea/philosophy/whatever’). But I had nothing to offer in its place – other than the smug ==‘nobody knows’ agnosticism== – and I puzzled as to why this was so. Finally, ==I ceased **procrastinating and equivocating**. I wanted to know. I wanted to find out== – for myself – about life, the universe and what it is to be a human being [[living in the world as it is with people as they are|living in the world as-it-is with people as-they-are]]. I now know. In short: there is a third alternative to either **agnosticism or fideism**.
 
 
-> [!cite/richard] [FAQ: What is the Answer to ‘How Am I Experiencing this Moment of Being Alive?’](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ20a.htm)
+> [!quote] [FAQ: What is the Answer to ‘How Am I Experiencing this Moment of Being Alive?’](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ20a.htm)
 > 
 > {.respondent}
 > **RESPONDENT:** _As a proponent in actual freedom, can you hazard any guess why the final event has not happened for Peter/Vineeto in spite of their understanding/ [[Sincerity|sincerity]]?_
@@ -15,7 +15,7 @@ slug: procrastination
 > **RICHARD:** For the same reason why it is not happened for anybody else ... in the end ==all [[Identity|‘I’]] can do is **procrastinate**==.
 
 
-> [!cite/vineeto] [Selected Correspondence Vineeto: Virtual Freedom](http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-virtualfreedom.htm)
+> [!quote] Vineeto: [Selected Correspondence Vineeto: Virtual Freedom](http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-virtualfreedom.htm)
 >
 > **VINEETO:** [..] Whilst it is understandable to look for allies on the way, particularly when one takes on the task of questioning \*all\* of the so-called wisdom of humanity, actualism remains a do-it-yourself-by-yourself business and the desire for allies, friends, collaborators and such like is yet another of the ‘self’-perpetuating instinctual passion to be recognized, understood and disempowered.
 > 
@@ -23,7 +23,7 @@ slug: procrastination
 
 
 {#ostrich}
-> [!cite/vineeto] [Selected Correspondence Vineeto: Affective Feelings – Emotions and Passions](http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings3.htm)
+> [!quote] Vineeto: [Selected Correspondence Vineeto: Affective Feelings – Emotions and Passions](http://actualfreedom.com.au/actualism/vineeto/selected-correspondence/corr-feelings3.htm)
 > 
 > {.respondent}
 > **RESPONDENT:** _For me, while it is easy (comparatively) to label and handle obvious feelings like anger, [[malice]], compassion, hope, I find it more difficult to label not-so-apparent feelings. These feelings create a neither-happy-nor-sad kind of state. I remember you talked of dullness in one of your mails. But I find that this dullness or boredom is not the same every time it happens and it happens very frequently._

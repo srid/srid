@@ -2,7 +2,7 @@
 slug: silliness
 ---
 
-> [!cite/richard] [Richard's SC on On Sense and Sensible](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-sense.htm)
+> [!quote] [Richard's SC on On Sense and Sensible](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-sense.htm)
 > 
 > {.respondent}
 > RESPONDENT No 23: What about when I find out what happened to end [[Feeling good|feeling good]] and I see that it is silly to keep worrying about it yet that doesn’t stop the worrying and I am not back to feeling good?

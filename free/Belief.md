@@ -3,7 +3,7 @@ slug: belief
 ---
 
 
-> [!cite/richard] [Richard’s Selected Correspondence On Beliefs and Psittacisms](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-belief.htm)
+> [!quote] [Richard’s Selected Correspondence On Beliefs and Psittacisms](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-belief.htm)
 >
 > RICHARD: Etymologically, belief means: ‘fervently wish to be true’, and actual means: ‘already occurring; existing as factually true’.
 >

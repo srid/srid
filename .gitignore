@@ -1,5 +1,6 @@
 .direnv
 /result
 .vscode/tasks.json
+/.claude
 
 .obsidian

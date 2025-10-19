@@ -1,7 +1,7 @@
 ---
 slug: meaning
 ---
-> [!cite/richard] [FAQ: What is the Meaning of Life](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ01a.htm),
+> [!quote] [FAQ: What is the Meaning of Life](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ01a.htm),
 >
 > {.respondent}
 > **RESPONDENT:** _So then what do you think is the purpose of life?_
@@ -47,7 +47,7 @@ slug: meaning
 > > 
 > > • \[Richard\]: ‘Here in this actual world, where it is [[Never not this moment|never not this moment]] (time has no duration in actuality), life is intrinsically meaningful due to that very perfection’.
 
-> [!cite/peter] [FAQ: What is the Meaning of Life](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ01a.htm),
+> [!quote] Peter: [FAQ: What is the Meaning of Life](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ01a.htm),
 > 
 > PETER: If ‘I’ seek meaning for ‘my’ life then narcissism can be the only result – and the long history of the famed [[Spirituality|spiritual search]] attests to this fact. If ‘I’ simply reject the [[Social Identity|traditional meanings]] of life then meaninglessness aka nihilism can be the only result and this seems to be where U.G. Krishnamurti has ended up.
 > 

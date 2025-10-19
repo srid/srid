@@ -1,7 +1,7 @@
 ---
 slug: responsibility
 ---
-> [!cite/richard] [FAQ: Does Actualism Accept / Reject Ethics or Psychology?](https://actualfreedom.com.au/sundry/frequentquestions/FAQ22a.htm)
+> [!quote] [FAQ: Does Actualism Accept / Reject Ethics or Psychology?](https://actualfreedom.com.au/sundry/frequentquestions/FAQ22a.htm)
 > 
 > {.respondent}
 > RESPONDENT: Does ==responsibility== and [[Seriousness|seriousness]] come with being carefree?
@@ -13,7 +13,7 @@ slug: responsibility
 > One has to face [[Courage of your convictions|the opprobrium of one’s ill-informed peers]].
 
 
-> [!cite/richard] [Richard’s Correspondence on Mailing List ‘B’ with Respondent No. 20](https://actualfreedom.com.au/richard/listbcorrespondence/listb20d.htm)
+> [!quote] [Richard’s Correspondence on Mailing List ‘B’ with Respondent No. 20](https://actualfreedom.com.au/richard/listbcorrespondence/listb20d.htm)
 > 
 > **RICHARD:** I laugh a lot ... there is so much about life, the universe and what it is to be a human being [[living in the world as it is with people as they are|living in the world as-it-is]], sans ‘I’ as ego and ‘me’ as soul, that I find irrepressibly ludicrous.
 > 

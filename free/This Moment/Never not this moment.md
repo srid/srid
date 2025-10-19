@@ -2,7 +2,7 @@
 slug: never-not-this-moment
 ---
 
-> [!cite/richard] [Richard's SC On Time: This Moment, Timelessness and Eternity](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm)
+> [!quote] [Richard's SC On Time: This Moment, Timelessness and Eternity](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm)
 > 
 > RICHARD: ❓ **Have you never noticed that it is never not this moment?**
 > 
@@ -28,7 +28,7 @@ slug: never-not-this-moment
 
 
 
->  [!cite/richard] [Richard's SC On Time: This Moment, Timelessness and Eternity](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm)
+>  [!quote] [Richard's SC On Time: This Moment, Timelessness and Eternity](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm)
 >  
 >  {.respondent}
 > RESPONDENT: This (that time doesn’t exist in actuality) occurred to me while reading another mail of yours to Respondent No. 25.
