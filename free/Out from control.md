@@ -5,8 +5,7 @@ slug: out-from-control
 # Out-from-Control, Different Way of Being
 
 
-http://www.actualfreedom.com.au/richard/abditorium/out-from-control.htm
-
+> [!quote] [Out-from-Control, Different Way of Being](http://www.actualfreedom.com.au/richard/abditorium/out-from-control.htm)
 ---
 
 From the tooltip after "*as distinct from the actualism method*" in http://www.actualfreedom.com.au/richard/listdcorrespondence/listd12.htm#09Dec09a

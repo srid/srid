@@ -40,4 +40,4 @@ Eventually they gave up as they could not ‘reach’ me (aka establish a feelin
 
 Or to be goaded by intimations of perdition, of course.
 
-http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ15a.htm
+> [!quote] [Frequently Asked Questions  Feeling Caring and Caring](http://www.actualfreedom.com.au/sundry/frequentquestions/FAQ15a.htm)
