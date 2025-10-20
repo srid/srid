@@ -4,9 +4,9 @@ slug: pce
 
 # Pure Consciousness Experience
 
+> [!quote] [Topics  Pure Consciousness Experience](http://www.actualfreedom.com.au/library/topics/pce.htm)
 > A PCE is when one's sense of [[Identity|identity]] temporarily vacates the throne and [[Apperception|apperception]] occurs.
 
-> [!quote] [Topics  Pure Consciousness Experience](http://www.actualfreedom.com.au/library/topics/pce.htm)
 
 > [!quote] [Richard's Selected Writing on Pure Consciousness Experience](http://www.actualfreedom.com.au/richard/selectedwriting/sw-pce.htm)
 >
