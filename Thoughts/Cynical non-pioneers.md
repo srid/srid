@@ -19,7 +19,7 @@ Here are some examples of [[Naive Optimism|cynicism]] exhibited by non-enthusias
   - _"needless condescension"_ https://x.com/Aron_Adler/status/1815873999529992693
   - _"superior, enlightened & God's gift to the earth"_ & _"super fucking arrogant"_ (yet also, _"deep & nerded out"_ & _"accept worse conditions / pay"_) https://x.com/sridca/status/1886776431809618411
 
-### ... [[free|Actualism]]
+### ... [[free|Actualism]] {#actualism}
 
 > [!QUOTE] [Actual Freedom: Commonly Raised Objections](http://actualfreedom.com.au/sundry/commonobjections/croindex.htm).
 > 
