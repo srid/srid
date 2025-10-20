@@ -1,7 +1,7 @@
 ---
 slug: psyche
 ---
-The human psyche is a bundle of emotions & beliefs forming one's [[Identity]] (which includes [[Social Identity]]).
+The human psyche is a bundle of emotions & [[Belief|beliefs]] forming one's [[Identity]] (which includes [[Social Identity]]).
 
 Various affective[^affect] perceptions of the world are components of this psyche:
 
