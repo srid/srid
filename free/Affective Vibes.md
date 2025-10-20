@@ -5,7 +5,7 @@ slug: vibes
 > [!quote] [Selected Correspondence: Psyche, Psychology & Psychiatry](http://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-psyche.htm)
 > [Richard]: ‘All sentient [[Identity|beings]], to a greater or lesser extent, are connected via a psychic web ... a network of energies or currents that range from ‘good’ to ‘bad’. Feeling threatened or intimidated can result from the obvious cues – the offering of physical violence and/or verbal violence – or from the less obvious ... **‘vibe’** violence (to use a ‘60’s term) and/or psychic violence. Similarly, feeling accepted can occur via the same signals or intimations. Power trips – coercion or manipulation of any kind – whether for ‘good’ or ‘bad’ purposes, are all psychic at root ... the psychic currents are the most effective power plays for they are the most insidious (charisma, for example).
 > 
----
+
 
 > [!quote] [Selected Correspondence: Vibes & Psychic Currents](http://actualfreedom.com.au/richard/selectedcorrespondence/sc-vibes.htm)
 > RICHARD: [..] as the many and various emotions/ passions are the same affective energy, at root, then directing all of that affective energy into being the [[Felicity and Innocuity|felicitous/ innocuous feelings]] (that is, ‘me’ at the core of ‘my’ being, which is ‘being’ itself), via minimisation of the ‘good’ and ‘bad’ feelings and maximisation of the happy and harmless feelings, will have the effect of involuntarily radiating felicitous/ innocuous vibes and currents as a matter of course.
