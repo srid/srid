@@ -8,25 +8,38 @@
     emanote.url = "github:srid/emanote";
     nixpkgs.follows = "emanote/nixpkgs";
     flake-parts.follows = "emanote/flake-parts";
+    wrangler.url = "github:emrldnix/wrangler";
   };
 
   outputs = inputs@{ self, flake-parts, nixpkgs, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = nixpkgs.lib.systems.flakeExposed;
       imports = [ inputs.emanote.flakeModule ];
-      perSystem = { self', pkgs, system, ... }: {
+      perSystem = { self', inputs', pkgs, system, ... }: {
         emanote.sites."srid" = {
           layers = [{ path = ./.; pathString = "./."; }];
           port = 9801;
           extraConfig.template.urlStrategy = "pretty";
         };
         apps.default.program = self'.apps.srid.program;
-        packages.default = pkgs.symlinkJoin {
-          name = "srid-static-site";
-          paths = [ self'.packages.srid ];
-          postBuild = ''
-            cp -rv ${self}/.well-known $out/
-          '';
+        packages = {
+          default = pkgs.symlinkJoin {
+            name = "srid-static-site";
+            paths = [ self'.packages.srid ];
+            postBuild = ''
+              cp -rv ${self}/.well-known $out/
+            '';
+          };
+          deploy = pkgs.writeShellApplication {
+            name = "deploy";
+            runtimeInputs = [
+              inputs'.wrangler.packages.default
+            ];
+            text = ''
+              # First, `wrangler login`
+              wrangler pages deploy ${self'.packages.default} --project-name srid
+            '';
+          };
         };
         devShells.default = pkgs.mkShell {
           buildInputs = [ pkgs.nixpkgs-fmt ];
