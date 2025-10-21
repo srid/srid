@@ -1,0 +1,9 @@
+---
+slug: health
+---
+
+```query
+path:./*
+```
+
+

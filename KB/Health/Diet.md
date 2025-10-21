@@ -1,0 +1,9 @@
+---
+slug: diet
+---
+
+```query
+path:./*
+```
+
+

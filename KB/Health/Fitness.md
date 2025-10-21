@@ -1,0 +1,9 @@
+---
+slug: fitness
+---
+
+```query
+path:./*
+```
+
+
