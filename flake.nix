@@ -15,9 +15,23 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = nixpkgs.lib.systems.flakeExposed;
       imports = [ inputs.emanote.flakeModule ];
-      perSystem = { self', inputs', pkgs, system, ... }: {
+      perSystem = { self', inputs', pkgs, lib, system, ... }: {
         emanote.sites."srid" = {
-          layers = [{ path = ./.; pathString = "./."; }];
+          layers = [{ 
+            path = pkgs.lib.cleanSourceWith {
+              src = ./.;
+              filter = path: type:
+                let
+                  baseName = baseNameOf path;
+                  isTopLevel = dirOf path == toString ./.;
+                in
+                  !(lib.hasSuffix "flake.nix" path) &&
+                  !(lib.hasSuffix "flake.lock" path) &&
+                  !(isTopLevel && lib.hasPrefix "." baseName) &&
+                  !(isTopLevel && baseName == "README.md");
+            };
+            pathString = "./."; 
+          }];
           port = 9801;
           extraConfig.template.urlStrategy = "pretty";
         };
