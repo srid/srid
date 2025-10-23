@@ -1,0 +1,9 @@
+---
+slug: people
+---
+
+```query
+path:./*
+```
+
+

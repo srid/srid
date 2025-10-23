@@ -14,9 +14,10 @@ The author started learning to swim in 2025. Follow his progress here, https://x
 
 ## Risks & mitigation {#risks}
 
-| Risk                              | Mitigation    |
-| --------------------------------- | ------------- |
-| [[Swimmer's Ear\|ear infection]]# | Use ear plugs |
+| Risk                    | Mitigation       |
+| ----------------------- | ---------------- |
+| [[Swimmer's Ear]]#      | Use ear plugs    |
+| [[Swimmer's Shoulder]]# | Form & alignment |
 
 ## Observations
 
