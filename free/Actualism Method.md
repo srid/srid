@@ -2,15 +2,14 @@
 slug: method
 ---
 
-![[Actualism Method (Simplified)]]
-
+>[!QUOTE] From [a DVD video](https://x.com/sridca/status/1936541187428725065)
+>
 > P: Is it possible to cut each emotion [eg. anger] at the root, so that it is not a long process?
 > 
 > R: At the root itself, [[Identity|"you"]] are that feeling; whichever the feeling is, that's what "you" are; right at the very root of everything ([[free/'I' am 'my' feelings and 'my' feelings are 'me'|"I" am "my" feelings and "my" feelings are "me"]] is the way to look at it). The only way to completely and utterly get rid of feelings is to get rid of "yourself", because it is one and the same thing. What the identity inside this body did all those years ago was, by [[Aware-Cum-Attentive|being attentive]] to what was happening each [[This Moment|moment]] again, got into the habit of feeling as [[Felicity and Innocuity|happy and harmless]] as is humanly possible, which meant that the other feelings didn't get a look-in. That's the primary way that the whole method works.
 >
 > And the nipping-it-in-the-bud is that [[Diminishment|when you start to]] feel even irritated or slightly irked at something, you learn to recognize -- it's like a red-light goes off/ starts flashing or bells start ringing -- you know that here-you-go-again ... back to on this path you have been going umpteen thousands of times in a lifetime and it doesn't lead to anywhere fruitftul at all. So, the nipping-it-in-the-bud is to, in effect, *[[decline]]* -- [[Seeing the silliness|"I've done that before; I know where it leads to; I'm not going to do that again; what's the point? It doesn't lead to anywhere at all"]]. And then when you get into the habit of feeling as happy and harmless as is humanly possible that, in combination with [[Sensuousness|sensuosity]] (which is becoming more and more aware of the flowers and the trees and the stars and the clouds and the rivers and the mountains and anything at all) can lead to a state of wide-eyed wonder, which brings it back to [[Naivete|naivete]] which is the nearest thing you can get to being innocent whilst still being a self. And *then*, something can happen. There's always the possibility that some kind of experience can happen - be it an [[EE]] or a [[PCE]]. And *then*, finally, the feelings are gone. But then "you" have disappeared as well.
 >
-> (From a DVD video)
 
 ---
 

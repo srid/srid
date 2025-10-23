@@ -26,7 +26,7 @@ slug: being-doing-happening
 
 
 > [!quote] [This Moment Has No Duration](http://www.actualfreedom.com.au/richard/audiotapeddialogues/thismomenthasnoduration.htm#WzTtDiV)
-> **R:** Ripples of pleasure throughout your entire body. From the tips of your toes to the top of your head. The sheer [[Delight|pleasure]] of being alive, of [[Being here now|being here]] **doing this business of living this moment**. Does it seem like it does away with the need to have a [[Sex|sexual]] orgasm?
+> **R:** Ripples of pleasure throughout your entire body. From the tips of your toes to the top of your head. The sheer [[Delight|pleasure]] of being alive, of [[Being here now|being here]] **doing this business of living this moment**. Does it seem like it does away with the need to have a [[srid/free/Felicity and Innocuity/Good feeling/Sexuality|sexual]] orgasm?
 >
 > **Q:** _Well ... yes [laughter]. I never thought I would say that! It’s like I’m orgastic all the time. It’s **not of my doing, it happens of itself**._
 
@@ -63,7 +63,7 @@ slug: being-doing-happening
 > 
 > Sometimes, in the course of a perfect day, ‘I’ have a more substantial experience of an emotion, usually felt as fear, tension in the head or/and in the stomach area. Over the period of the last weeks I have come to understand my own journey as less of a ‘psychic and psychological search and destroy mission’ and more of as a physical affair, where thebrain is sorting out the necessary neuron-links to adjust to the dismantling of ‘me’. And the only thing that ‘I’ can do now to support my self-immolation process is to get out of the road, to not stand on the brakes. The process is happening and so, for freedom’s sake, Vineeto, get off the brakes!
 > 
-> I do that by neither dramatising the fear nor pushing it away, by seeing it more as a by-product of this strange thing I am doing. I don’t ‘support’ a panic-attack by embroidering it, and neither do I let myself be numb, [[Boredom|bored]] or dull. Then, by quietly noticing what is happening, without attaching any identity to an ‘observer’, [[Apperception|apperception]] happens – with some rumbling going on in the background – while I get on with the pleasures of being here, be they food, [[Sex|sex]], a walk into town, playing with the web-site, interaction with other people, going to work or watching television. And by ‘my’ stepping out of the way I am **doing what is happening**, any rumbling or grinding in the background included.
+> I do that by neither dramatising the fear nor pushing it away, by seeing it more as a by-product of this strange thing I am doing. I don’t ‘support’ a panic-attack by embroidering it, and neither do I let myself be numb, [[Boredom|bored]] or dull. Then, by quietly noticing what is happening, without attaching any identity to an ‘observer’, [[Apperception|apperception]] happens – with some rumbling going on in the background – while I get on with the pleasures of being here, be they food, [[srid/free/Felicity and Innocuity/Good feeling/Sexuality|sex]], a walk into town, playing with the web-site, interaction with other people, going to work or watching television. And by ‘my’ stepping out of the way I am **doing what is happening**, any rumbling or grinding in the background included.
 
 ## Feeling-being 'Peter' {#peter}
 

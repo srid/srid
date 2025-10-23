@@ -26,7 +26,7 @@ slug: autonomy
 ## Physicality of being on one's own {#physicality}
 
 > [!quote] [This Moment Has No Duration](https://www.actualfreedom.com.au/richard/audiotapeddialogues/thismomenthasnoduration.htm)
-> **R:** One can still enjoy sexuality ... the important thing is to be self-generating, self-reliant, self-contained. Then whatever happens with another is a bonus. One is not dependent upon anyone for anything ... the need for [[Sex|sexual]] gratification is gone. Then, and only then, sexuality is a delight; a freely enjoyed delight. There is no necessity, no need for claims upon another, no bargaining, no power-trips, no being caught-up in the grip of addictive compulsions ... and so on. This is freedom indeed!
+> **R:** One can still enjoy sexuality ... the important thing is to be self-generating, self-reliant, self-contained. Then whatever happens with another is a bonus. One is not dependent upon anyone for anything ... the need for [[srid/free/Felicity and Innocuity/Good feeling/Sexuality|sexual]] gratification is gone. Then, and only then, sexuality is a delight; a freely enjoyed delight. There is no necessity, no need for claims upon another, no bargaining, no power-trips, no being caught-up in the grip of addictive compulsions ... and so on. This is freedom indeed!
 > 
 > {.respondent}
 > **Q:** _This is delicious ... I am enjoying this._
