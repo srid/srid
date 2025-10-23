@@ -1,0 +1,2 @@
+deploy:
+  nix run .#deploy

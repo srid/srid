@@ -27,6 +27,7 @@
                 in
                   !(lib.hasSuffix "flake.nix" path) &&
                   !(lib.hasSuffix "flake.lock" path) &&
+                  !(lib.hasSuffix "justfile" path) &&
                   !(isTopLevel && lib.hasPrefix "." baseName) &&
                   !(isTopLevel && baseName == "README.md");
             };
