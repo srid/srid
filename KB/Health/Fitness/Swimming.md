@@ -14,10 +14,11 @@ The author started learning to swim in 2025. Follow his progress here, https://x
 
 ## Risks & mitigation {#risks}
 
-| Risk                    | Mitigation       |
-| ----------------------- | ---------------- |
-| [[Swimmer's Ear]]#      | Use ear plugs    |
-| [[Swimmer's Shoulder]]# | Form & alignment |
+| Risk                    | Mitigation                                                                                            |
+| ----------------------- | ----------------------------------------------------------------------------------------------------- |
+| [[Swimmer's Ear]]#      | Use ear plugs                                                                                         |
+| [[Swimmer's Shoulder]]# | Form & alignment                                                                                      |
+| Rhomboid pain           | [Reduce intensity; engage core; bilateral breathing](https://x.com/sridca/status/1981812644685455647) |
 
 ## Observations
 
