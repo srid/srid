@@ -18,3 +18,4 @@ Pop!\_OS is better than [[Omarchy]] for two reasons:
 
 - **COSMIC Store** often installs Flatpak apps which brings their own downsides.
 	- For e.g., Flatpak version of Google Chrome prevents 1Password extension for communicating with the desktop app
+ - Night Light is not yet supported, but [there is a workaround](https://github.com/pop-os/cosmic-epoch/issues/476)
