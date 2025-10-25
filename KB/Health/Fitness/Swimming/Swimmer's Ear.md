@@ -15,5 +15,5 @@ Takes a few minutes after waking up for the uncomfortable sensation to start fro
 
 | Period   | Description                                                                    | Resolution                                                 | Cause                                    |
 | -------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------- | ---------------------------------------- |
-| Apr 2024 | Daytime [[Head ache]] for ~3 weeks                                             | Keflex antibiotics                                         | Swimming in lodge pool (no ear plugs)    |
+| Apr 2024 | Daytime [[Head ache]] for ~3 weeks                                             | Keflex antibiotics (4x a day for 5 days)                                        | Swimming in lodge pool (no ear plugs)    |
 | Aug 2025 | Aug 25 -> Sep 13; declining during 3rd week; low grade symptoms, on and off, until mid Oct! | Time? [[Ciprodex]] during 2nd week wasn't very effeective. | Swimming in [[YMCA]] pool (no ear plugs) |
