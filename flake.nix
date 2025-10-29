@@ -35,6 +35,7 @@
           }];
           port = 9801;
           extraConfig.template.urlStrategy = "pretty";
+	  check = false;
         };
         apps.default.program = self'.apps.srid.program;
         packages = {
