@@ -4,7 +4,9 @@ slug: ee
 
 # Excellence Experience
 
-"*‘excellent’ related to richness (a near-absence of agency; with the doer abeyant, and the beer ascendant, being the experiencing is inherently cornucopian)*"
+> "*‘excellent’ related to richness (a near-absence of agency; with the doer abeyant, and the beer ascendant, being the experiencing is inherently cornucopian)*"
+
+---
 
 > RICHARD: [as to] how the intimacy experience (IE) differs from an **excellence experience** (EE): qualitively they are much the same, or similar, insofar as with both experiences there is a near-absence of [[Identity|agency]] – the beer rather than the doer is the operant – whereupon [[Naivete|naïveté]] has come to the fore, such as to effect the marked diminishment of separation, and the main distinction is that the IE is more people-oriented, while the ==EE tends to be environmental in its scope==.
 > 
