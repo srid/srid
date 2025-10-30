@@ -1,4 +1,4 @@
 default:
 	@just --list
 deploy:
-  nix run .#deploy
+  nix --accept-flake-config run .#deploy

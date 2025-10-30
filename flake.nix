@@ -1,7 +1,7 @@
 {
   nixConfig = {
-    extra-substituters = "https://cache.nixos.asia/oss";
-    extra-trusted-public-keys = "oss:KO872wNJkCDgmGN3xy9dT89WAhvv13EiKncTtHDItVU=";
+    extra-substituters = "https://vira.rooster-blues.ts.net/cache";
+    extra-trusted-public-keys = "cache:Xqbd+2PnfYCybU+e6thw+qXq0UraEs6JHLK7npEcUhs=";
   };
 
   inputs = {

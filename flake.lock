@@ -303,11 +303,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1761051626,
-        "narHash": "sha256-yqBHnzTz+tjx46/UW2Jm2DPt7L0ps20b6KkReBT1CqQ=",
+        "lastModified": 1761636540,
+        "narHash": "sha256-rTovdbDOa3y4xNqhaYq4T1JUevouRsEGWmr5X6uE4Ig=",
         "owner": "emrldnix",
         "repo": "wrangler",
-        "rev": "577baf4187f1cd2be19fc431ba847513809a864c",
+        "rev": "7d23a7a42d99c66822728f275cb1ce0cefc4da9d",
         "type": "github"
       },
       "original": {
