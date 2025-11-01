@@ -28,7 +28,7 @@ Invest in these:
   - I use Fellow Stagg
 - A good burr grinder 
   - ~~I use Niche Zero home; and Comandante when travelling~~
-  - I have the fantastic [J Ultra](https://1zpresso.coffee/j-ultra/) grinder both for home espresso and travel purposes.
+  - I have the fantastic [[J Ultra]] grinder both for home espresso and travel purposes. 
 
 ### Dialling
 

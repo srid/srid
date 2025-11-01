@@ -1,5 +1,7 @@
 ---
 slug: p14s
+location: "[[On Desk]]"
+image: https://pbs.twimg.com/media/G2Q1tZ4W8AATmtn?format=jpg&name=large
 ---
 
 **ThinkPad P14s** is a compact workstation laptop I used as an experiment in running [[Hyprland]] with [[NixOS]] before ultimately returning to [[macOS]] as my primary OS on the [[M1 Macbook Pro 16]].
