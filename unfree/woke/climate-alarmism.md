@@ -79,6 +79,10 @@ When pockets of commonsense emerge through regurgigated nonsense on the orange s
 - People waking up:
   - https://x.com/ChrisMartzWX/status/1799640275650007510
 
+## News
+
+- Oct 29, 2025: Bill Gates begins to lose the luxury belief: https://x.com/sridca/status/1983519161826636247
+
 [^rel]: From [Judith Curry: A bad recipe for science](https://judithcurry.com/2023/11/17/a-bad-recipe-for-science/)
 
     > Climate change has become a secular religion, rife with dogma, heretics and moral-tribal communities. The secular religion of climate change raises concerns that are far more fundamental than the risks of bad policy.  At risk is the fundamental virtues of the Scientific Revolution and the freedom to question authority.
