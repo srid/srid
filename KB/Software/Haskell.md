@@ -47,7 +47,12 @@ Deepen your Haskell knowledge
 
 ## Take the red pill with Nix
 
-If you are feeling adventurous consider getting acquainted with [[Nix]], which in turns allows you to leverage [[haskell-template]] for bootstraping Haskell projects with full IDE support in [[VSCode]]. This works on [[Linux]], [[macOS]] and [[Windows]] (via WSL) without having to install dependencies other than Nix itself. In my opinion, this is the best way to set up a Haskell development environment if you are willing to approach the learning curve of Nix with alacritty.
+If you are feeling adventurous consider getting acquainted with [[Nix]], which in turns allows you to leverage [[haskell-template]] for bootstraping Haskell projects with full IDE support in [[VSCode]]. This works on [[Linux]], [[macOS]] and [[Windows]] (via WSL) without having to install dependencies other than Nix itself. In my opinion, this is the best way to set up a Haskell development environment if you are willing to approach the learning curve of Nix with alacrity.
+
+## LLM
+
+- [ ] Write about my LLM usage post: ghcid.txt, vscode extension, etc.
+	- [ ] Move my claude code configuration out of `srid/nixos-config`
 
 ## Sub-pages
 

@@ -58,7 +58,10 @@
           };
         };
         devShells.default = pkgs.mkShell {
-          buildInputs = [ pkgs.nixpkgs-fmt ];
+          buildInputs = [
+            pkgs.nixpkgs-fmt
+            inputs'.wrangler.packages.default
+          ];
         };
       };
     };
