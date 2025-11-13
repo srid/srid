@@ -46,7 +46,7 @@ catastrophistic thinking[^doom] humanity has been harbouring for generations, wh
 >Regards,
 >Richard.
 
-## HackerNews Hall of Fame
+## [[Hacker News]] Hall of Fame
 
 When pockets of commonsense emerge through regurgigated nonsense on the orange site ...
 

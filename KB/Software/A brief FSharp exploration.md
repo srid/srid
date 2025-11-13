@@ -42,4 +42,4 @@ That **lead me to F\#**, a hybrid FP language ("hybrid" because it supports OOP,
 ## See also
 
 - My F# notes: https://srid.github.io/learning-fsharp/
-- Disussion on [Hacker News](https://news.ycombinator.com/item?id=26739501) & [Lobsters](https://lobste.rs/s/odejpy/brief_f_exploration)
+- Disussion on [[Hacker News]] ([link](https://news.ycombinator.com/item?id=26739501)) & [Lobsters](https://lobste.rs/s/odejpy/brief_f_exploration)
