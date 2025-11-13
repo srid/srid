@@ -1,12 +1,11 @@
 ---
 slug: touch-grass
 ---
-The dictionary provides a neutral meaning for _touch grass_:
+The dictionary provides a neutral meaning for _touch grass_[^dict], but the intended meaning is entirely different if we are to consider the critical and increasingly common interpretation.
 
-> [!NOTE] [Oxford](https://dictionary.cambridge.org/dictionary/english/touch-grass)
-> to spend time outside in nature or doing activities in the real world, instead of spending time on the internet:
+[^dict]: From [Oxford](https://dictionary.cambridge.org/dictionary/english/touch-grass
+	> to spend time outside in nature or doing activities in the real world, instead of spending time on the internet:
 
-Yet, the intended meaning is entirely different if we are to consider the critical and increasingly common interpretation.
 
 > [!QUOTE] AI summary
 > While its surface-level meaning is simple ("go outside," "log off the internet," "disconnect from your niche obsession"), the _subtext_ in is far more potent.
@@ -21,7 +20,7 @@ Yet, the intended meaning is entirely different if we are to consider the critic
 > 
 > ### 2. The "Subtle Shaming" Meaning
 > 
-> The phrase is often weaponized to "[[Cynical non-pioneers|drag]] pioneers back to normalcy." It's a form of social control disguised as helpful advice.
+> The phrase is often weaponized to [[Cynical non-pioneers|drag]] pioneers back to normalcy. It's a form of social control disguised as helpful advice.
 > 
 > When used this way, "touch grass" is a "normalcy" command. It functions as a way to:
 > 
