@@ -39,5 +39,5 @@ That is how real ‘I’ am ... which is why both ‘I’ as ego and ‘me’ as
 
 ## See also
 
-- [[Social Identity]], which is overlaid on top of 'being'
-- [[Identity Building]]
+- [[Social Identity]]#, which is overlaid on top of 'being'
+- [[Identity Building]]#

@@ -21,6 +21,7 @@ See also: [Proof of manhood](https://x.com/sridca/status/1988328664698614190)
 
 - Article:
 	- https://archive.is/1VTQp
+	- [[archive/itagam/index.html|Local copy]]
 - [[Hacker News]] discussions:
 	- https://news.ycombinator.com/item?id=2767867
 	- https://news.ycombinator.com/item?id=2767867
