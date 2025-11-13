@@ -1,7 +1,7 @@
 ---
 slug: psyche
 ---
-The human psyche is a bundle of emotions & [[Belief|beliefs]] forming one's [[Identity]] (which includes [[Social Identity]]).
+The human psyche is a bundle of emotions & [[Belief|beliefs]]# forming one's [[Identity]] (which includes [[Social Identity]]#).
 
 Various affective[^affect] perceptions of the world are components of this psyche:
 
@@ -16,6 +16,12 @@ The death of this illusory psyche entails [[Altruistic self-immolation]]#, and a
 ## Characteristics
 
 - An identity occupying one host body can [[Affective Vibes|involuntarily transmit]] its affect[^affect] contents to other identities occupying other host bodies regardless of distance.
+
+## Pages
+
+```query
+children:.
+```
 
 
 [^affect]: Affect is the underlying experience of feeling, emotion or mood.

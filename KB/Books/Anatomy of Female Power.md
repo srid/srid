@@ -1,7 +1,7 @@
 ---
 slug: afp
 ---
-**Anatomy of Female Power** is a book by the Nigerian essayist #[[Chinweizu Ibekwe]] portraying the precise role of **covert female power** in gender dynamics of [[Psyche]].
+**Anatomy of Female Power** is a book by the Nigerian essayist #[[Chinweizu Ibekwe]] portraying the precise role of **covert female power** in #[[Gender Identity|gender]] dynamics of [[Psyche]].
 
 > [!QUOTE] AI summary
 > The book's entire premise is that women _already_ rule men and that "matriarchy" is the true, hidden power structure in human society. The "favors" men provide are not just incidental but are the entire basis of the social order, which Chinweizu argues is designed to turn men into "nest-slaves".

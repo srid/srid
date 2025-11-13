@@ -23,7 +23,7 @@ slug: identity
 > Because, genetically speaking we are indeed ‘all one’ inasmuch as all carbon based life-forms – not just sentient life-forms – have a common hereditary ‘survival instincts’ origin.
 ---
 
-**RICHARD**: With the hormonal power of the feelings engendered, one feels that a ‘me’ exists ... generally felt to be somewhere in the region of the heart. This is the ‘me’ that I consistently call the soul ... for convenience. This feeling – and feelings are so powerful that they can override intelligence – makes one think that an ‘I’ exists ... generally located in the head. This ‘I’, which for convenience I consistently call the ego, [..]
+**RICHARD**: With the hormonal power of the feelings en, one feels that a ‘me’ exists ... generally felt to be somewhere in the region of the heart. This is the ‘me’ that I consistently call the soul ... for convenience. This feeling – and feelings are so powerful that they can override intelligence – makes one think that an ‘I’ exists ... generally located in the head. This ‘I’, which for convenience I consistently call the ego, [..]
 
 ---
 
