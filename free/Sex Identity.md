@@ -2,7 +2,14 @@
 slug: identity/sex
 ---
 
-## Components
+## 'Man'
 
 - [[macho]]#
 - [[musho]]#
+
+## 'Woman'
+
+- From [[Anatomy of Female Power]]
+	- Matriarchs
+	- Termagants
+	- Tomboys
