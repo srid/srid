@@ -8,4 +8,5 @@ slug: macho
 
 ## X posts {#x}
 
-- *"When this woman says "[men] were made to conquer", what she's expressing is her tacit desire to raise a race of what Chinweizu calls "machos" (and they are gullible enough to fall for it)."* https://x.com/sridca/status/1981371903735382232
+- *"When this woman [PhilosophiCat] says "[men] were made to conquer", what she's expressing is her tacit desire to raise a race of what Chinweizu calls "machos" (and they are gullible enough to fall for it)."* https://x.com/sridca/status/1981371903735382232
+- *"PhilosophiCat's posts serve as a sophisticated piece of Matriarchist ideology, providing a  justification for the psychological conditioning required to create and maintain the perfect Macho"* https://x.com/sridca/status/1989406052039655588
