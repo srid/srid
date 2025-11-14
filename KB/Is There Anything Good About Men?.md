@@ -1,7 +1,7 @@
 ---
 slug: itagam
 ---
-*Is There Anything Good About Men?* is an article by [[Roy Baumeister]], arguing that culture is not a patriarchy designed to privilege men, but a competitive system that exploits male expendability and risk-taking to build large #[[Gender Identity|social structures]], often sacrificing men to ensure the survival of women.
+*Is There Anything Good About Men?* is an article by [[Roy Baumeister]], arguing that culture is not a patriarchy designed to privilege men, but a competitive system that exploits male expendability and risk-taking to build large #[[Sex Identity|social structures]], often sacrificing men to ensure the survival of women.
 
 ## Reproductive Asymmetry {#sex}
 

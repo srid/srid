@@ -16,8 +16,8 @@ slug: identity/social
 06. The term ‘social identity’ is also inclusive of a political identity (identifying as a ‘Democrat’, a ‘Tory’, a ‘Republican’, a ‘Liberal’ and all the rest).
 07. The term ‘social identity’ is also inclusive of a class or caste identity (identifying as an ‘aristocrat’/ ‘commoner’ (as in, ‘the gentry’/ ‘the peasantry’), ‘patrician’/ ‘plebeian’ (Latin), ‘noblesse’/ ‘roturier’ (French), ‘ariyan’/ ‘puthujjana’ (Pāli), ad nauseam throughout the ages.
 08. The term ‘social identity’ is also inclusive of a [[Filial duty|familial identity]] (identifying as ‘son’/ ‘daughter’, ‘brother’/ ‘sister’, ‘father’/ ‘mother’, ‘uncle’/ ‘aunt’, and the whole raft of relatives).
-09. The term ‘social identity’ is also inclusive of a sex identity (identifying as ‘boy’/ ‘girl’, ‘man’/ ‘woman’).
-10. The term ‘social identity’ is also inclusive, nowadays, of a [[Gender Identity|gender identity]]# a.k.a. sexual orientation identity (identifying as ‘asexual’/ ‘bisexual’/ ‘homosexual’/ ‘transvestite’ a.k.a. ‘cross-dresser’/ ‘transsexual’ a.k.a. ‘transgender’/ ‘gender-queer’ a.k.a. ‘queer’ / and, colloquially, an ‘alphabet-soup’ of initials.
+9. The term ‘social identity’ is also inclusive of a [[Sex Identity|sex identity]] (identifying as ‘boy’/ ‘girl’, ‘man’/ ‘woman’).
+10. The term ‘social identity’ is also inclusive, nowadays, of a [[Gender Ideology|gender identity]]# a.k.a. sexual orientation identity (identifying as ‘asexual’/ ‘bisexual’/ ‘homosexual’/ ‘transvestite’ a.k.a. ‘cross-dresser’/ ‘transsexual’ a.k.a. ‘transgender’/ ‘gender-queer’ a.k.a. ‘queer’ / and, colloquially, an ‘alphabet-soup’ of initials.
 
 ---
 
