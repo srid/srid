@@ -17,5 +17,5 @@ slug: snag
 > >> Being a good, kind-hearted, moral and ‘caring’ man at the time it was difficult for me to see this behaviour in myself, or even acknowledge that this was [[Identity|‘me’]] in action, let alone want to put an end to it. For the ending of anger – causing ripples – is the ending of ‘me’. I used the term ‘causing ripples’ in my journal deliberately for I was nearly always able to control my anger – and most other emotions – and, as such, have not indulged in fights or violent acts, let alone verbal arguments, competitive sports, etc. I was **a S.N.A.G., a wimp, a pacifist, a nice guy**. When I came across Richard and his journal it was the [[Harmlessness|harmless]] in ‘happy and harmless’ that was really appealing, for I knew that ==although I was a nice guy I could not honestly say I was harmless==. In all my relationships, I knew that was as much the cause of dis-harmony as the other.
 ## See also
 
-- "Musho" of [[Anatomy of Female Power]]
+- [[musho]]
 - [Aella on the learned/ unspontaneous/ fear-based sophisticateness of male psyche](https://x.com/sridca/status/1914948947296337951)
