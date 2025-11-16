@@ -2,6 +2,10 @@
 slug: identity/sex
 ---
 
+## Thematic components {#themes}
+
+- [[Romantic identity]]#
+- [[Gender Ideology|Sexual-orientation identity]]#
 ## 'Man'
 
 - [[macho]]#
