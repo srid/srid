@@ -1,10 +1,9 @@
 ---
-slug: identity/romantic
+slug: romance
 ---
-
 ## From women's perspective {#female}
 
-> [!NOTE] AI summary of Actual Freedom articles by Vineeto
+> [!NOTE] AI summary of Actual Freedom articles by [Vineeto](https://actualfreedom.com.au/actualism/vineeto/vineeto.htm)
 > Based on Vineeto's writings, "Romantic identity" is a component of [[Social Identity|social]] and [[Sex Identity|sex]] identity that she defines as the **"Cinderella-syndrome"**. It is a "romantic dream that most women have" of finding a "perfect and noble man".
 > 
 > ### Core Function
