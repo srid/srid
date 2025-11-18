@@ -8,7 +8,3 @@ slug: love
 >
 > <https://sitn.hms.harvard.edu/flash/2017/love-actually-science-behind-lust-attraction-companionship/>
 
-## X Posts {#x}
-
-- [Love is self-centered](https://x.com/sridca/status/1949205778017231214)
-- [Gay abandon](https://x.com/sridca/status/1986211618552762845)
