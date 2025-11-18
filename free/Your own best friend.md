@@ -2,6 +2,8 @@
 slug: best-friend
 ---
 
+On enjoying one's own company or being one's own best friend.
+
 > [!quote] [It Is Either Silly Or Sensible](http://www.actualfreedom.com.au/richard/audiotapeddialogues/sillyorsensible.htm)
 > 
 > Q: And notice how often you put yourself down.
@@ -34,7 +36,7 @@ slug: best-friend
 
 
 > [!quote] [Vineeto's SC with Gary](http://www.actualfreedom.com.au/actualism/vineeto/list-af/gary-g.htm)
-> VINEETO: Just to clarify – when I said that ‘I genuinely enjoy the company of anybody with whom I interact’ I did not mean to indicate that my day is filled with **social interactions** [(*editor's note: see also [[Instinctual Treadmill]]*)]{.text-gray-500}. I have far less interactions than I used to have in my days of needing to belong to social groups. I take pleasure in being at home where I ==**enjoy my own company**== as well as Peter’s.
+> VINEETO: Just to clarify – when I said that ‘I genuinely enjoy the company of anybody with whom I interact’ I did not mean to indicate that my day is filled with **social interactions**. I have far less interactions than I used to have in my days of needing to belong to social groups. I take pleasure in being at home where I ==**enjoy my own company**== as well as Peter’s.
 > 
 > The terms ‘[[Loner|loner]]’ or ‘hermit’ usually carry an implication of social values that I no longer subscribe to – values that apply ‘in the marketplace where there is a premium on acquired social ‘skills’’, as you say. I may be a ‘hermit’ in other people’s eyes because I don’t frequent the pub or go to social gatherings but I am not ‘hermit’ who retreats from the world despising the company of others.
 > 

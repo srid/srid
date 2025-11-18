@@ -4,11 +4,13 @@ slug: grace-scale
 
 # Grace's scale of different ways of being
 
-- **Togetherness** (*‘good’*) is the companionship of being and doing things together – be it shopping, cooking, dining, communicating, copulating, sharing, travelling, and so on – and pertains to the willingness to be and act in concert with another in the regular connubial/ conjugal way of feeling intimate.
-- **Closeness** (*‘very good’*) comes about due to feeling sufficiently safe/ feeling secure enough, emotionally, to intuitively enable an inclusive-of-the-other expansion of viscerally-determined personal boundaries; this is a normal type of intimacy wherein the regular way of feeling intimate is intensified and/or deepened.
-- **Sweetness** (*‘great’*) is when closeness entrées a joyous delighting in the pervasive proximity, or immanence, of the other (it is at the onset of this stage that a bifurcation manifests whereby the instinctual tendency/ temptation is to veer off in the direction of [[Love|love]] and its affectuous intimacy due to the ‘self’-centric attractiveness of feeling affectionate).
-- **Richness** (*‘excellent’*) happens upon sweetness segueing into a near-absence of agency; with the controlling doer abeyant, and a naïve beer ascendant, [[Being the doing of what is happening|being the experiencing of what is happening]] is inherently cornucopian (a.k.a. an [[EE|EE]]).
-- **Magicality** (*‘perfect’*) is whence neither beer nor doer be extant; pristine purity abounds and immaculate perfection prevails (a.k.a. a [[PCE|PCE]]).
+A five-stage 'progression' of intimacy between a man and a woman. Take particular note of the bifurcation in stage 3 wherein a superior alternative to [[Love|love]] and [[Romantic identity|romance]] can become experientially evident.
+
+1. **Togetherness** (*‘good’*) is the companionship of being and doing things together – be it shopping, cooking, dining, communicating, copulating, sharing, travelling, and so on – and pertains to the willingness to be and act in concert with another in the regular connubial/ conjugal way of feeling intimate.
+2. **Closeness** (*‘very good’*) comes about due to feeling sufficiently safe/ feeling secure enough, emotionally, to intuitively enable an inclusive-of-the-other expansion of viscerally-determined personal boundaries; this is a normal type of intimacy wherein the regular way of feeling intimate is intensified and/or deepened.
+3. **Sweetness** (*‘great’*) is when closeness entrées a joyous delighting in the pervasive proximity, or immanence, of the other (it is at the onset of this stage that a bifurcation manifests whereby the instinctual tendency/ temptation is to veer off in the direction of [[Love|love]] and its affectuous intimacy due to the ‘self’-centric attractiveness of feeling affectionate).
+4. **Richness** (*‘excellent’*) happens upon sweetness segueing into a near-absence of agency; with the controlling doer abeyant, and a naïve beer ascendant, [[Being the doing of what is happening|being the experiencing of what is happening]] is inherently cornucopian (a.k.a. an [[EE|EE]]).
+5. **Magicality** (*‘perfect’*) is whence neither beer nor doer be extant; pristine purity abounds and immaculate perfection prevails (a.k.a. a [[PCE|PCE]]).
 
 
 > [!quote] [Selected Correspondence: Actual Intimacy](http://actualfreedom.com.au/richard/selectedcorrespondence/sc-intimacy.htm)

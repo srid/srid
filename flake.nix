@@ -1,7 +1,7 @@
 {
   nixConfig = {
-    extra-substituters = "https://vira.rooster-blues.ts.net/cache";
-    extra-trusted-public-keys = "cache:Xqbd+2PnfYCybU+e6thw+qXq0UraEs6JHLK7npEcUhs=";
+    #extra-substituters = "https://vira.rooster-blues.ts.net/cache";
+    #extra-trusted-public-keys = "cache:Xqbd+2PnfYCybU+e6thw+qXq0UraEs6JHLK7npEcUhs=";
   };
 
   inputs = {

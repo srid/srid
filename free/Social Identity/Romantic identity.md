@@ -1,6 +1,7 @@
 ---
 slug: romance
 ---
+For a superior alternative to romance, see [[Grace's scale]].
 ## From women's perspective {#female}
 
 > [!NOTE] AI summary of Actual Freedom articles by [Vineeto](https://actualfreedom.com.au/actualism/vineeto/vineeto.htm)
