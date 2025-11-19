@@ -22,7 +22,7 @@ slug: belief
 > In this context, the concept of "belief" is tied directly to the human sense of [[Identity|identity]] (the ego or soul):
 > 
 > - **The "I" is a Belief:** Richard asserts that the "I" or "me" is itself a belief, arising out of the act of believing.
-> - **The Believer is the Believed:** One cannot simply drop beliefs while maintaining a self-identity, because "the believer is the believed".
+> - **The Believer is the Believed:** One cannot simply drop beliefs while maintaining a self-identity, because [[Believing in itself|"the believer is the believed"]].
 > - **Physiological Basis:** A flesh and blood body without the "affective faculty" (identity/emotions) is incapable of believing; it can only experience facts.
 > 
 > ### **4. The Function and Consequence of Belief**
