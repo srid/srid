@@ -51,8 +51,7 @@ If you are feeling adventurous consider getting acquainted with [[Nix]], which i
 
 ## LLM
 
-- [ ] Write about my LLM usage post: ghcid.txt, vscode extension, etc.
-	- [ ] Move my claude code configuration out of `srid/nixos-config`
+You can find my Claude Code skill for Haskell [here](https://github.com/srid/AI/tree/master/skills/haskell); it relies on ghcid for fast compile feedback.
 
 ## Sub-pages
 
