@@ -4,7 +4,6 @@ slug: grace-scale
 
 # Grace's scale of different ways of being
 
-A five-stage 'progression' of intimacy between a man and a woman. Take particular note of the bifurcation in stage 3 wherein a superior alternative to [[Love|love]] and [[Romantic identity|romance]] can become experientially evident.
 
 1. **Togetherness** (*‘good’*) is the companionship of being and doing things together – be it shopping, cooking, dining, communicating, copulating, sharing, travelling, and so on – and pertains to the willingness to be and act in concert with another in the regular connubial/ conjugal way of feeling intimate.
 2. **Closeness** (*‘very good’*) comes about due to feeling sufficiently safe/ feeling secure enough, emotionally, to intuitively enable an inclusive-of-the-other expansion of viscerally-determined personal boundaries; this is a normal type of intimacy wherein the regular way of feeling intimate is intensified and/or deepened.
