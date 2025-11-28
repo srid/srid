@@ -13,7 +13,7 @@ This page is dedicated to publishing self-reports of a handful of my [[PCE]]s an
 
 [^spo]: It is also possible to develop the skill of triggering PCEs at will.
 
-## March 5, 2025
+## March 5, 2025 [[EE|EE]]
 
 > [!quote] Facilitative origins of these contemplations
 > 
@@ -43,7 +43,7 @@ While it may have started as PCE, the experience short after was not a PCE. Amid
 I completely forgot about walking home, and instead strolled aimlessly to a nearby mall, checking the stores and their contents with interest, while rememorating this experience (rather successfully). I had a very pleasant demeanour (opposite of 'poker face') that was unforced, and even my gait became the opposite of the habitual controlled rigidity (consequently it felt very good to walk). Part of the demeanour change involved losing that 'intense focus' intuition in between the eyes (which connotes [[Seriousness|seriousness]], and evokes the habitual poker face, the female version of which is called 'resting bitch face') ... the controller no longer controlled the facial muscles, I suppose. I next visit the grocery store, even though I had no plans to buy anything for today. There, I found myself transfixed at the various products (European processed meats, exotic seafood, etc.), with no sense of urgency to move on (I think at one point I must have been standing by the foie gras aisle for a good 5 minutes, trying to figure out how to utilize this new food element in my keto meals). The mind functioned so freely. "I" was there, but "my" problems were absent, except for this vague sense of being an interloper.
 
 {#voodoo}
-## Dec 5, 2021
+## Dec 5, 2021 [[EE|EE]]
 
 Music: [Voodoo Warriors of Love - Sweat](https://www.youtube.com/watch?v=9yUnLlPF9p4)
 
@@ -57,8 +57,6 @@ I could be like this forever.
 
 {#ms}
 ## 'Microsoft PCE'
-
-^6120e8
 
 A report of a [[PCE]] I had back in 2008 or 2009 while working for Microsoft in Vancouver
 
