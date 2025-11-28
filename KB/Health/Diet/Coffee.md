@@ -6,6 +6,11 @@ slug: coffee
 
 A good tasting coffee makes all the difference. Fortunately, despite a [[Carnivore diet|restrictive diet]] I'm still allowed to coffee.
 
+> [!TIP] Current method
+> I've vastly simplified my coffee making methods: Aeropress + pre-ground [Illy coffee](https://www.amazon.ca/illy-Ground-Coffee-Moka-Preservatives/dp/B0BX4PZRRK/). Brew with 14g coffee + 80g boiling water. Then add more (slightly colder) water to dilute for 'lungo' strength. 
+> 
+> Coffee snobs' grinding recommendation never made as consistently a good tasting coffee as this!
+
 ## Moka pot
 
 Get a 3-cup Bialetti or equivalent, which produces about ~60g of espresso that can be diluted to make a 100g drink. You can actually use pre-ground coffee without fret; notably, I've had good experience with [Illy Intenso Dark Roast](https://www.illy.com/en-ca/coffee/ground-coffee/ground-espresso-intenso-coffee-dark-roast/A060ST.html) coffee.
