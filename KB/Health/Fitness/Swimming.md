@@ -23,3 +23,6 @@ The author started learning to swim in 2025. Follow his progress here, https://x
 ## Observations
 
 - October: [whole body strengthening](https://x.com/sridca/status/1974942354823065856)
+- Gadgets
+  - [Garmin Forerunner 165](https://x.com/sridca/status/1990493087949525135) for tracking
+  - [Tempo Trainer](https://x.com/sridca/status/1995521232570376358) to work on tempo 
