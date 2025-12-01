@@ -2,15 +2,14 @@
 slug: swimming
 ---
 
-The author started learning to swim in 2025. Follow his progress here, https://x.com/sridca/status/1917695742548009110
+The author [started learning to swim in 2025](https://x.com/sridca/status/1917695742548009110), and is aiming to perfect [[Total Immersion]].
 
 ## Graceful / effortless methods to try {#effortless}
 
-- [[Total Immersion]]#
-- Ocean Walker
+- [[Total Immersion]]# (TI)
+- Ocean Walker (appears to be an [amalgam](https://www.facebook.com/groups/317559259010926/posts/486585932108257/) of TI)
 - Swim Smooth
 
-(The author is learning to perfect [[Total Immersion]])
 
 ## Risks & mitigation {#risks}
 
