@@ -6,9 +6,11 @@ The author [started learning to swim in 2025](https://x.com/sridca/status/191769
 
 ## Graceful / effortless methods to try {#effortless}
 
-- [[Total Immersion]]# (TI)
-- Ocean Walker (appears to be an [amalgam](https://www.facebook.com/groups/317559259010926/posts/486585932108257/) of TI)
-- Swim Smooth
+- [[Total Immersion]]#[^ow] to begin with.
+- Swim Smooth, for advanced.
+
+
+[^ow]: There is also "Ocean Walker" but it appears to be a [repackaging](https://www.facebook.com/groups/317559259010926/posts/486585932108257/) of TI.
 
 
 ## Risks & mitigation {#risks}
