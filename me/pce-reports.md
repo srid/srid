@@ -7,11 +7,11 @@ template:
     enable: false
 ---
 
-# PCE reports
+# Srid's PCE & EE reports
 
 This page is dedicated to publishing self-reports of a handful of my [[PCE]]s and [[EE]]s - all of which happened [[Spontaneity|spontaneously]].[^spo]
 
-[^spo]: It is also possible to develop the skill of triggering PCEs at will.
+[^spo]: PCEs happen by [_"allowing them to happen"_](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-pce4.htm).
 
 ## March 5, 2025 [[EE|EE]]
 
