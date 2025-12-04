@@ -10,7 +10,7 @@ slug: altruism
 > 
 > [..]
 > 
-> **RICHARD**: Properly speaking the word ‘altruistic’ is ==not a word for a feeling but a word for behaviour or action== that benefits others at the expense of self (altruism is the very antithesis of selfism), such as fighting to the [[Death|death]] to protect the young, defend the group or secure the territory, and as such could evoke any number of feelings ... such as fear, thrill, courage, [[Excitement|excitement]], exhilaration, euphoria and so on.
+> **RICHARD**: Properly speaking the word ‘altruistic’ is ==not a word for a feeling but a word for behaviour or action== that benefits others at the expense of self (altruism is the very antithesis of selfism), such as fighting to the [[Death|death]] to protect the young, defend the group or secure the territory, and as such could evoke any number of feelings ... such as [[Fear|fear]], thrill, courage, [[Excitement|excitement]], exhilaration, euphoria and so on.
 > 
 > [..]
 > 

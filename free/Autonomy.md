@@ -7,9 +7,9 @@ slug: autonomy
 > {.respondent}
 > RESPONDENT: Are you not subject to the pain of loss? Wouldn’t this cause some fear?
 > 
-> RICHARD: Again, no. I am==completely and utterly autonomous== ... I do not need anyone to satisfy some lack in me. Thus I free the other from ‘my’ graceless demands.
+> RICHARD: Again, no. I am ==completely and utterly autonomous== ... I do not need anyone to satisfy some lack in me. Thus I free the other from ‘my’ graceless demands.
 > 
-> I experience no fear whatsoever ... which does away with the need for [[Trust|trust]], faith, [[Hope|hope]] and [[Belief|belief]]. This is my on-going experience twenty four hours a day, year after year.
+> I experience no [[Fear|fear]] whatsoever ... which does away with the need for [[Trust|trust]], faith, [[Hope|hope]] and [[Belief|belief]]. This is my on-going experience twenty four hours a day, year after year.
 
 
 
