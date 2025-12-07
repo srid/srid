@@ -46,10 +46,10 @@ WebSockets, via [rhyolite](https://github.com/obsidiansystems/rhyolite), is used
 
 ### Full-Stack Haskell, from Prototype to Production
 
-Much of these technology choices were informed by my working with the folks from [Obsidian Systems](https://obsidian.systems), whose philosophy is captured in [this talk](https://www.youtube.com/watch?v=riJuXDIUMA0).
+Much of these technology choices were informed by my working with the folks from [Obsidian Systems](https://obsidian.systems), whose philosophy is captured in [this talk](https://www.youtube.com/watch?v=guhrVxY63tg).
 
 {.ui .basic .segment .centered .grid}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/riJuXDIUMA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/guhrVxY63tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Towards perfecting [future-proof] note-taking
 
