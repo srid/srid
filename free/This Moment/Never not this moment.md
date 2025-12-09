@@ -41,7 +41,7 @@ slug: never-not-this-moment
 > 
 > ==Put succinctly: the moment (this moment) in which event ‘A’ happens is the exact same moment (this moment) in which event ‘B’ happens ... it is only the events which change/move/flow and not the moment itself (eternity).==
 > 
-> Have you never noticed it is never not this moment
+> Have you never noticed it is never not this moment?
 
 ## External links
 
