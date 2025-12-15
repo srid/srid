@@ -9,7 +9,7 @@ template:
 
 # Srid's PCE & EE reports
 
-This page is dedicated to publishing self-reports of a handful of my [[PCE]]s and [[EE]]s - all of which happened [[Spontaneity|spontaneously]].[^spo]
+This page is dedicated to publishing self-reports of a handful of my #[[PCE]]s and #[[EE]]s - all of which happened [[Spontaneity|spontaneously]].[^spo]
 
 [^spo]: PCEs happen by [_"allowing them to happen"_](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-pce4.htm).
 
