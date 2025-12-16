@@ -15,6 +15,8 @@ This page is dedicated to publishing self-reports of a handful of my #[[PCE]]s a
 
 ## March 5, 2025 [[EE|EE]]
 
+Music: [Alphaville - Big In Japan](https://x.com/sridca/status/1897665508217938141)
+
 > [!quote] Facilitative origins of these contemplations
 > 
 > The most salient of the precipitating factors was in fact what I wrote on 1st of March,  
