@@ -2,8 +2,6 @@ page:
   siteTitle: Sridhar Ratnakumar
   siteName: Srid
   siteUrl: https://srid.ca
-  headHtml: |
-    <snippet var="js.highlightjs" />
 
 template:
   uptree:
