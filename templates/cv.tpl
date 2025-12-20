@@ -82,7 +82,7 @@
             <p class="font-serif">‣ From early <apply template="cv/year">2023</apply>, I joined <em>Juspay
                 Technologies</em>
               to lead the company's <a class="${linkClass}" href="nix">Nix</a> efforts, specifically improving developer
-              experience and assist with development of associated open source projects
+              experience and assisting with development of associated open source projects
               (<a class="${linkClass}" href="https://github.com/juspay/omnix">omnix</a>; <a class="${linkClass}" href="http://github.com/juspay/vira">vira</a>; <a class="${linkClass}" href="https://github.com/juspay/services-flake">services-flake</a>; etc)
             </p>
           </section>
@@ -95,11 +95,11 @@
               <apply template="cv/year">2015</apply>). At ActiveState, I worked on a package manager
               for
               the
-              company's Python distribution (ActivePython) and later took on working on its platform-as-a-service (Paas)
+              company's Python distribution (ActivePython) and later took on working on its platform-as-a-service (PaaS)
               product, which included creating a log aggregation component in Go. That type of work (log aggregation)
               continued on with Heroku, on its logplex and related projects. Clojure, Ruby, Elixir and Erlang were some
               of
-              the other languages I used professionally during these years. After Heroku, I took a year long sabattical
+              the other languages I used professionally during these years. After Heroku, I took a year long sabbatical
               to visit my folks in India, followed by another year of immersing myself in the Quebec culture.
             </p>
           </section>
@@ -108,7 +108,7 @@
         <div id="__ASIDE__" class="bg-pink-50 px-4 py-6 flex flex-col space-y-4 pt-4 text-gray-600">
           <section>
             <apply template="cv/company">Misc facts</apply>
-            <p>I'm multilingual—I speak Tamil (native), English and French. I did my batchelors in computer science in
+            <p>I'm multilingual—I speak Tamil (native), English and French. I did my bachelors in computer science in
               India and immigrated to Canada in 2008. I'm interested in all things related to <a class="${linkClass}"
                 href="free">consciousness</a>.
             </p>
