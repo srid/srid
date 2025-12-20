@@ -3,9 +3,9 @@
     <div class="container max-w-screen-md mx-auto my-8 flex flex-col items-center justify-center">
       <bind tag="linkClass">underline</bind>
 
-      <div class="bg-white rounded-lg shadow-md w-full flex flex-col space-y-4 text-gray-600">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md w-full flex flex-col space-y-4 text-gray-600 dark:text-gray-300">
         <div id="__TOP__"
-          class="flex flex-row items-start justify-between space-x-4 w-full px-4 py-6 rounded-t bg-pink-600 text-white">
+          class="flex flex-row items-start justify-between space-x-4 w-full px-4 py-6 rounded-t bg-pink-600 dark:bg-pink-800 text-white">
           <div>
             <header class="font-bold text-3xl">
               Sridhar Ratnakumar
@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <div id="__SUMMARY__" class="px-4 py-4  flex flex-col space-y-4 text-xl text-gray-900 font-bold">
+        <div id="__SUMMARY__" class="px-4 py-4  flex flex-col space-y-4 text-xl text-gray-900 dark:text-gray-100 font-bold">
           <p class="leading-snug">
             I discovered my passion for computer programming in 2001 and explored various technologies before
             discovering Haskell (around 2017) which remains my current tool of choice for
@@ -37,7 +37,7 @@
           </p>
         </div>
 
-        <div id="__MAIN__" class="px-4 py-6 flex flex-col space-y-4 pt-4 text-gray-600">
+        <div id="__MAIN__" class="px-4 py-6 flex flex-col space-y-4 pt-4 text-gray-600 dark:text-gray-300">
           <section>
             <apply template="cv/company">Open Source</apply>
             <p class="font-serif mb-2">Writing open source code has been a golden thread throughout my career.
@@ -105,7 +105,7 @@
           </section>
         </div>
 
-        <div id="__ASIDE__" class="bg-pink-50 px-4 py-6 flex flex-col space-y-4 pt-4 text-gray-600">
+        <div id="__ASIDE__" class="bg-pink-50 dark:bg-gray-700 px-4 py-6 flex flex-col space-y-4 pt-4 text-gray-600 dark:text-gray-300">
           <section>
             <apply template="cv/company">Misc facts</apply>
             <p>I'm multilingual—I speak Tamil (native), English (fluent) and French (intermediate). I did my bachelors in computer science in
