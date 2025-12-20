@@ -16,7 +16,7 @@
                 City</a>, Canada
             </div>
             <div class="font-bold mt-4">
-              Technical Lead / Software Architect (Haskell, Nix)
+              Principle Engineer
             </div>
           </div>
           <div class="w-24">
@@ -108,7 +108,7 @@
         <div id="__ASIDE__" class="bg-pink-50 px-4 py-6 flex flex-col space-y-4 pt-4 text-gray-600">
           <section>
             <apply template="cv/company">Misc facts</apply>
-            <p>I'm multilingual—I speak Tamil (native), English and French. I did my bachelors in computer science in
+            <p>I'm multilingual—I speak Tamil (native), English (fluent) and French (intermediate). I did my bachelors in computer science in
               India and immigrated to Canada in 2008. I'm interested in all things related to <a class="${linkClass}"
                 href="free">consciousness</a>.
             </p>
