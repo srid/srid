@@ -53,15 +53,8 @@
           <section>
             <apply template="cv/company">Self-employed</apply>
             <p class="font-serif mb-2">‣ Since <apply template="cv/year">2018</apply> I've been self-employed as an
-              independent
-              contractor working
-              primarily on Haskell
-              projects
-              with Nix involved as necessary. At <em>Obsidian Systems</em>, and for other clients, I
-              worked on Reflex / GHCJS projects writing full-stack apps in Haskell. At <em>Monadfix</em> I helped
-              develop
-              a PureScript to Haskell transpiler (<a class="${linkClass}"
-                href="https://blog.monadfix.com/nau-introduction">nau</a>). </p>
+              independent contractor working primarily on Haskell projects with Nix involved as necessary. At <em>Obsidian Systems, Monadfix, et al.</em>, I worked on Reflex / GHCJS projects and developed a PureScript to Haskell transpiler (<a class="${linkClass}"
+                href="https://blog.monadfix.com/nau-introduction">nau</a>).</p>
             <p class="font-serif mb-2">
               ‣ During
               <!-- DoNotFormat -->
@@ -71,13 +64,10 @@
               a couple of experimental indie projects including <a class="${linkClass}"
                 href="cerveau-announce">Cerveau</a>, a Reflex full-stack app for note-taking. <a class="${linkClass}"
                 href="https://ema.srid.ca">Ema</a> was the unintended result of the other one.</p>
-            <p class="font-serif mb-2">‣ From late <apply template="cv/year">2021</apply>, I joined <em>Platonic
-                Systems</em>
-              and began working on
-              Cardano blockchain projects,
+            <p class="font-serif mb-2">‣ From late <apply template="cv/year">2021</apply>, I continued my consultancy and worked on Cardano blockchain projects,
               including the
               <a class="${linkClass}" href="https://github.com/Plutonomicon/plutarch/graphs/contributors">Plutarch</a>
-              programming language.
+              programming language. This period also marked my transition into using Nix more extensively as a core part of my professional work.
             </p>
             <p class="font-serif">‣ From early <apply template="cv/year">2023</apply>, I joined <em>Juspay
                 Technologies</em>
