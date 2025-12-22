@@ -1,5 +1,5 @@
 ---
-slug: pce-reports
+slug: peak
 template:
   sidebar:
     enable: false
@@ -7,27 +7,62 @@ template:
     enable: false
 ---
 
-# Srid's PCE & EE reports
+# My PCEs & EEs
 
-This page is dedicated to publishing self-reports of a handful of my #[[PCE|PCE]]s and #[[EE|EE]]s - all of which happened [[Spontaneity|spontaneously]].[^spo]
+This page is dedicated to publishing self-reports of a handful of my spontaneously-occurred[^spo] #[[PCE|PCE]]s and #[[EE|EE]]s, in chronological order.
 
 > [!TIP] As distinct from "peak experience" of Abraham Maslow et al.
 > RICHARD: [I] chose the phrase ‘pure consciousness experience’ so as to make the generic phrase ‘peak experience’ I had been using for eleven years more specific and to regain the actual purity of the unadulterated sensuous experience of consciousness without a subject (a body sans [[Identity|identity]]) from the adulterated mystical experience of consciousness without an object (an identity sans body). https://actualfreedom.com.au/library/topics/pce.htm
 
-[^spo]: PCEs happen by [_"allowing them to happen"_](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-pce4.htm).
+[^spo]: PCEs happen by [_"allowing them to happen"_](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-pce4.htm). See also: [[Spontaneity]]
 
-## December 17, 2025 [[EE|EE]] {#center-less}
 
-Having finished my swim, I walked to the bus stop. I got somewhat upset at the fact that the next bus wouldn’t arrive until 15 minutes later (which is unusual for this time). So, I lingered at the stop, strolling back and forth under light snow, (passively) listening to music. For important context, I should say that the euphoria-based hope/despair was still operating as an undercurrent.
 
-At one point, I must have been completely ‘zoned out’ despite standing upright and pacing around (like an automaton). I realized that this was happening only as full awareness came back, but when it came back: it was more of a **center-less** awareness (I was looking at a building ahead and the snow in between us). Even though I couldn’t tell if it was PCE, the expression ‘the universe experiencing itself’ came to my mind. I realized that the “I” that I had been being (with “his” desire for euphoria thus hopes/despairs and the attendant preoccupations) was no more because perception had virtually no ‘center-point’ anymore. I thought _“Wow, this is cool. Is it as simple as this? “I” – even if the social “I” – simply had to step back and let the moment ‘happen’? Then I can just sit back and relax?”_
 
-Thereon, I allowed and appreciated this center-less way of perception because it would be silly to ‘go back’ even if that were possible. I stepped onto the bus, and the enjoyment & appreciation increased without me even trying. This was a busy period, so the bus was full, and people usually are tired due to returning from work. My visual perception was very ‘soft’[^soft]. There was no intense focus (like a predator scanning) anywhere; it was just great to be here and very refreshing and energetic (not in a frantic way). I enjoyed listening to music to the nth degree; it was no longer playing ‘passively’.
+## 2008-2009 'Microsoft PCE' {#ms}
 
-[^soft]: Richard: _“one gazes intently at the world about by glancing lightly with sensuously caressing eyes”_
+My first clear recollection of a [[PCE|PCE]] I had back in 2008 or 2009 while working for Microsoft in Vancouver
 
-I made the decision to ‘stay’ in this way for being for as long as possible. And if/when I regress, I’ll aim to find my way back.
+:::{.text-sm .italic .px-4}
+tldr; despite doing the most boring job imaginable, I slipped into a state of mind where I thoroughly enjoyed the “mental machinery” behind the very activity of the so-called boring work. There was also sensuosity, particularly in the visual and tactile field.
+:::
 
+Being a ‘Software Test Engineer’ in the Windows Vista team, I was sitting in the [Richmond office](https://archive.is/ll5og) close to 5pm, working on C++ tests - which at that time was the most boring thing I could be doing that I hated it! Then, somehow, my mind without any prompt[^w-prompt] ‘slipped’ into higher-gears[^perf] of some sort where everything started functioning smoothly. This so-called menial task had became a neutral ‘mental activity’[^perf] and my awareness of it took a magical turn … in that, I started appreciating the various nooks and crannies of ‘the brain in operation’. At this meta level, the interest-level of the task did not matter - because the very fact that the brain is working on it in its intricate levels was [[Curiosity-Fascination-Obsession|so wonderful]] to observe. I was able to work on the task most effectively, and while [[Felicity and Innocuity|enjoying]] it thoroughly, with a complete [[Apperception|360 degrees awareness]] of it as it was happening (and there was a total immediacy, unlike the traditional modality of ‘me’ being ‘up there somewhere’ lost in some semi-fancy despite being physically located here).
+
+[^w-prompt]: There was no intention to have a PCE, no effort. No contemplation or consideration. PCE or actualism wasn't even on my mind, except the mere act of operating through the C++ code which is what I was tangibly doing at that time anyway.
+
+[^perf]: It would seem that, at a fundamental level (the "higher-gears"), life is already "perfect" ... such that even mundate things (the "neutral 'mental activity'" of working through C++ tests) become intimately fascinating. Only "I" had to step out of the way.
+
+I noticed that my visual acuity and perception increased at the same time. The yellow-lit ambiance of the office in the evening took a brilliant character such that I enjoyed basking in it. Then the time came to take the shuttle bus (Microsoft’s service, running at periodic times) to go back home. At this point my PCE subsided, presumably due to people around.
+
+Once I’m back home in my apartment, I decided to wash my face in the bathroom sink. The PCE resumed, and I felt it during splashing that water in my face - the [[Sensuousness|sensations]] (the feeling of touch, the warmth of the soapy water, and the suffusing amber of the bathroom) were intense, [[Delight|delightful]] and being experienced with a thoroughness unlike before. I go back to my room to sit on my Poang chair. This time, instead of starting [Age of Empires 3][aoe3] (as I normally do that time), I decided to just sit and do nothing for no reason in particular. I remember sitting there doing nothing for about an hour, just enjoying [[Being here now|being alive]] - and the visual ambiance of my room (equally yellow-lit).
+
+[aoe3]: https://en.wikipedia.org/wiki/Age_of_Empires_III
+
+### Peter's report
+
+Here’s Peter (who at that time worked as a civil architect) reporting a very similar experience:
+
+> [!quote]  [Selected Correspondence Peter Apperception vs. Choiceless Awareness](http://actualfreedom.com.au/actualism/peter/selected-correspondence/corr-apperception.htm#WzTtDiV)
+> 
+> Late one night in my first year as an actualist, as I was working on the drawing board, I had a pure conscious experience whereby my mind became aware of itself working. There was apperception happening in that there was no ‘me’ being aware – there was simply the brain being aware of the brain in operation, in this case doing the task of designing a house. The process that was happening was **fascinating to observe** – there was a continual consideration of the parameters that governed the design: the client’s requirements, past experience, site considerations, planning and building regulations, structural considerations, climate considerations, budget, ease of building, appearance, durability, workability and so on.
+> 
+> There was a repeated shuffling of ideas and information operating – a trial and error process of working out the best solution – and **it was magical to observe,** even more so because there was awareness of only part of the process that was going on, there was a good deal happening ‘on the back burner’ as it were. Sometimes a particular issue was set aside for a while whilst another issue was addressed and when I returned to it later the best solution came instantaneously which made it apparent that there was an awareness only of the surface activity of the brain in action.
+> 
+> **The operation of the human brain is such an exquisite intricacy as to be truly wondrous**. With no ‘I’ in the road to agonize over the process, nor a ‘me’ present to either exalt or despair at the outcome, there was simply the brain doing what the brain does – think, plan, reflect, evaluate, compare, compute, assess and mull over, as well as simultaneously being aware that this is what it is doing. And not only that, whilst the brain is being apperceptively aware, it is also serving as the central processing unit for the sensory perceptive system of the body – continually processing the myriad of sensate information that is this flesh and blood body’s sensual sensitivity to whatever is happening in this moment.
+
+
+## Dec 5, 2021 [[EE|EE]] {#voodoo}
+
+Music: [Voodoo Warriors of Love - Sweat](https://www.youtube.com/watch?v=9yUnLlPF9p4)
+
+**Ear** drums are revelling and reverberating with a concomitant (unintended) act of ‘arriving [[Being here now|here]]’[^bdo] - notably (idiosyncratic to me) in the **visual** field (that familiar ever-present sense of “me” being present in between the eyes has now dissolved, enough to be arriving ‘here’[^bdo] where this living room is silently located).
+
+[^bdo]: \[Jul, 2022\]: In retrospect, the act of "arriving here" does seem to be on the track to, very close to, [[Being the doing of what is happening]].
+
+All of “my” (tacit, ‘normal’) problems took a backseat, and I am … just here. The near-constant (considered-to-be-normal) agitation of ‘me’ has given way to uncovering the ever-present (but hitherto hidden-to-consciousness) [[Stillness of time|stillness]] of this yellow-lit room.
+
+I could be like this forever.
 
 ## March 5, 2025 [[EE|EE]]
 
@@ -60,64 +95,15 @@ While it may have started as PCE, the experience short after was not a PCE. Amid
   
 I completely forgot about walking home, and instead strolled aimlessly to a nearby mall, checking the stores and their contents with interest, while rememorating this experience (rather successfully). I had a very pleasant demeanour (opposite of 'poker face') that was unforced, and even my gait became the opposite of the habitual controlled rigidity (consequently it felt very good to walk). Part of the demeanour change involved losing that 'intense focus' intuition in between the eyes (which connotes [[Seriousness|seriousness]], and evokes the habitual poker face, the female version of which is called 'resting bitch face') ... the controller no longer controlled the facial muscles, I suppose. I next visit the grocery store, even though I had no plans to buy anything for today. There, I found myself transfixed at the various products (European processed meats, exotic seafood, etc.), with no sense of urgency to move on (I think at one point I must have been standing by the foie gras aisle for a good 5 minutes, trying to figure out how to utilize this new food element in my keto meals). The mind functioned so freely. "I" was there, but "my" problems were absent, except for this vague sense of being an interloper.
 
-{#voodoo}
-## Dec 5, 2021 [[EE|EE]]
+## December 17, 2025 [[EE|EE]] {#center-less}
 
-Music: [Voodoo Warriors of Love - Sweat](https://www.youtube.com/watch?v=9yUnLlPF9p4)
+Having finished my swim, I walked to the bus stop. I got somewhat upset at the fact that the next bus wouldn’t arrive until 15 minutes later (which is unusual for this time). So, I lingered at the stop, strolling back and forth under light snow, (passively) listening to music. For important context, I should say that the euphoria-based hope/despair was still operating as an undercurrent.
 
-**Ear** drums are revelling and reverberating with a concomitant (unintended) act of ‘arriving [[Being here now|here]]’[^bdo] - notably (idiosyncratic to me) in the **visual** field (that familiar ever-present sense of “me” being present in between the eyes has now dissolved, enough to be arriving ‘here’[^bdo] where this living room is silently located).
+At one point, I must have been completely ‘zoned out’ despite standing upright and pacing around (like an automaton). I realized that this was happening only as full awareness came back, but when it came back: it was more of a **center-less** awareness (I was looking at a building ahead and the snow in between us). Even though I couldn’t tell if it was PCE, the expression ‘the universe experiencing itself’ came to my mind. I realized that the “I” that I had been being (with “his” desire for euphoria thus hopes/despairs and the attendant preoccupations) was no more because perception had virtually no ‘center-point’ anymore. I thought _“Wow, this is cool. Is it as simple as this? “I” – even if the social “I” – simply had to step back and let the moment ‘happen’? Then I can just sit back and relax?”_
 
-[^bdo]: \[Jul, 2022\]: In retrospect, the act of "arriving here" does seem to be on the track to, very close to, [[Being the doing of what is happening]].
+Thereon, I allowed and appreciated this center-less way of perception because it would be silly to ‘go back’ even if that were possible. I stepped onto the bus, and the enjoyment & appreciation increased without me even trying. This was a busy period, so the bus was full, and people usually are tired due to returning from work. My visual perception was very ‘soft’[^soft]. There was no intense focus (like a predator scanning) anywhere; it was just great to be here and very refreshing and energetic (not in a frantic way). I enjoyed listening to music to the nth degree; it was no longer playing ‘passively’.
 
-All of “my” (tacit, ‘normal’) problems took a backseat, and I am … just here. The near-constant (considered-to-be-normal) agitation of ‘me’ has given way to uncovering the ever-present (but hitherto hidden-to-consciousness) [[Stillness of time|stillness]] of this yellow-lit room.
+[^soft]: Richard: _“one gazes intently at the world about by glancing lightly with sensuously caressing eyes”_
 
-I could be like this forever.
+I made the decision to ‘stay’ in this way for being for as long as possible. And if/when I regress, I’ll aim to find my way back.
 
-{#ms}
-## 'Microsoft PCE'
-
-A report of a [[PCE]] I had back in 2008 or 2009 while working for Microsoft in Vancouver
-
-:::{.text-sm .italic .px-4}
-tldr; despite doing the most boring job imaginable, I slipped into a state of mind where I thoroughly enjoyed the “mental machinery” behind the very activity of the so-called boring work. There was also sensuosity, particularly in the visual and tactile field.
-:::
-
-Being a ‘Software Test Engineer’ in the Windows Vista team, I was sitting in the [Richmond office](https://archive.is/ll5og) close to 5pm, working on C++ tests - which at that time was the most boring thing I could be doing that I hated it! Then, somehow, my mind without any prompt[^w-prompt] ‘slipped’ into higher-gears[^perf] of some sort where everything started functioning smoothly. This so-called menial task had became a neutral ‘mental activity’[^perf] and my awareness of it took a magical turn … in that, I started appreciating the various nooks and crannies of ‘the brain in operation’. At this meta level, the interest-level of the task did not matter - because the very fact that the brain is working on it in its intricate levels was [[Curiosity-Fascination-Obsession|so wonderful]] to observe. I was able to work on the task most effectively, and while [[Felicity and Innocuity|enjoying]] it thoroughly, with a complete [[Apperception|360 degrees awareness]] of it as it was happening (and there was a total immediacy, unlike the traditional modality of ‘me’ being ‘up there somewhere’ lost in some semi-fancy despite being physically located here).
-
-[^w-prompt]: There was no intention to have a PCE, no effort. No contemplation or consideration. PCE or actualism wasn't even on my mind, except the mere act of operating through the C++ code which is what I was tangibly doing at that time anyway.
-
-[^perf]: It would seem that, at a fundamental level (the "higher-gears"), life is already "perfect" ... such that even mundate things (the "neutral 'mental activity'" of working through C++ tests) become intimately fascinating. Only "I" had to step out of the way.
-
-I noticed that my visual acuity and perception increased at the same time. The yellow-lit ambiance of the office in the evening took a brilliant character such that I enjoyed basking in it. Then the time came to take the shuttle bus (Microsoft’s service, running at periodic times) to go back home. At this point my PCE subsided, presumably due to people around.
-
-Once I’m back home in my apartment, I decided to wash my face in the bathroom sink. The PCE resumed, and I felt it during splashing that water in my face - the [[Sensuousness|sensations]] (the feeling of touch, the warmth of the soapy water, and the suffusing amber of the bathroom) were intense, [[Delight|delightful]] and being experienced with a thoroughness unlike before. I go back to my room to sit on my Poang chair. This time, instead of starting [Age of Empires 3][aoe3] (as I normally do that time), I decided to just sit and do nothing for no reason in particular. I remember sitting there doing nothing for about an hour, just enjoying [[Being here now|being alive]] - and the visual ambiance of my room (equally yellow-lit).
-
-[aoe3]: https://en.wikipedia.org/wiki/Age_of_Empires_III
-
-### Peter's report
-
-Here’s Peter (who at that time worked as a civil architect) reporting a very similar experience:
-
-> [!quote]  [Selected Correspondence Peter Apperception vs. Choiceless Awareness](http://actualfreedom.com.au/actualism/peter/selected-correspondence/corr-apperception.htm#WzTtDiV)
-> 
-> Late one night in my first year as an actualist, as I was working on the drawing board, I had a pure conscious experience whereby my mind became aware of itself working. There was apperception happening in that there was no ‘me’ being aware – there was simply the brain being aware of the brain in operation, in this case doing the task of designing a house. The process that was happening was **fascinating to observe** – there was a continual consideration of the parameters that governed the design: the client’s requirements, past experience, site considerations, planning and building regulations, structural considerations, climate considerations, budget, ease of building, appearance, durability, workability and so on.
-> 
-> There was a repeated shuffling of ideas and information operating – a trial and error process of working out the best solution – and **it was magical to observe,** even more so because there was awareness of only part of the process that was going on, there was a good deal happening ‘on the back burner’ as it were. Sometimes a particular issue was set aside for a while whilst another issue was addressed and when I returned to it later the best solution came instantaneously which made it apparent that there was an awareness only of the surface activity of the brain in action.
-> 
-> **The operation of the human brain is such an exquisite intricacy as to be truly wondrous**. With no ‘I’ in the road to agonize over the process, nor a ‘me’ present to either exalt or despair at the outcome, there was simply the brain doing what the brain does – think, plan, reflect, evaluate, compare, compute, assess and mull over, as well as simultaneously being aware that this is what it is doing. And not only that, whilst the brain is being apperceptively aware, it is also serving as the central processing unit for the sensory perceptive system of the body – continually processing the myriad of sensate information that is this flesh and blood body’s sensual sensitivity to whatever is happening in this moment.
-
-### Tarin's report
-
-[Recommended to me by Vineeto]
-
-> [!quote] [Tarin's PCE](https://x.com/sridca/status/1964155448413630938)
->
-> My friend’s nephew was speaking to me, and mid-sentence, I wasnt only listening to just the words he was saying, but could hear the tones and timbres in his voice and the slight echo it had from all around the room. I saw the shadows on the wall cast by the lighting, and and the colours and shades were so vibrant and bright, not bright in a ‘more lighting’ way, but in a ‘more clear’ way.
-> 
-> My skin felt so ‘close’ and immediate, and I noticed the way it felt (rather than just feeling it as a weight). And where before I was feeling happy and light-hearted, I no longer felt that - I didn’t feel whatsoever!
->
-> ‘Empty-hearted’ might be the best way to put it. There was no separation between a ‘me’ that could feel and anything else, and in this was such a purity, for lack of better word. being alive felt so real. I was also aware of this happening and recognised what it was, and it was funny. [..]
-
-## Other experiences {#other}
-
-- Aug 2, 2025: **Appreciation** whilst strolling: https://x.com/sridca/status/1951693356263989416

@@ -21,7 +21,7 @@
             Haskell • Nix • Functional Programming
           </div>
           <div class="text-gray-400 dark:text-gray-500 text-xs font-serif">
-            Interested in all things <a href="pce-reports" class="underline hover:text-pink-600 transition-colors">consciousness</a>
+            Interested in all things <a href="peak" class="underline hover:text-pink-600 transition-colors">consciousness</a>
           </div>
         </div>
 
