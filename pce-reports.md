@@ -9,7 +9,7 @@ template:
 
 # My PCEs & EEs
 
-This page is dedicated to publishing self-reports of a handful of my spontaneously-occurred[^spo] #[[PCE|PCE]]s and #[[EE|EE]]s, in chronological order.
+This page is dedicated to publishing self-reports of a handful of my spontaneously-occurred[^spo] #[[PCE|PCE]]s and [[EE|EE]]s, in chronological order.
 
 > [!TIP] As distinct from "peak experience" of Abraham Maslow et al.
 > RICHARD: [I] chose the phrase ‘pure consciousness experience’ so as to make the generic phrase ‘peak experience’ I had been using for eleven years more specific and to regain the actual purity of the unadulterated sensuous experience of consciousness without a subject (a body sans [[Identity|identity]]) from the adulterated mystical experience of consciousness without an object (an identity sans body). https://actualfreedom.com.au/library/topics/pce.htm
