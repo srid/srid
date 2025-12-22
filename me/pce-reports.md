@@ -9,9 +9,25 @@ template:
 
 # Srid's PCE & EE reports
 
-This page is dedicated to publishing self-reports of a handful of my #[[PCE]]s and #[[EE]]s - all of which happened [[Spontaneity|spontaneously]].[^spo]
+This page is dedicated to publishing self-reports of a handful of my #[[PCE|PCE]]s and #[[EE|EE]]s - all of which happened [[Spontaneity|spontaneously]].[^spo]
+
+> [!TIP] As distinct from "peak experience" of Abraham Maslow et al.
+> RICHARD: [I] chose the phrase ‘pure consciousness experience’ so as to make the generic phrase ‘peak experience’ I had been using for eleven years more specific and to regain the actual purity of the unadulterated sensuous experience of consciousness without a subject (a body sans [[Identity|identity]]) from the adulterated mystical experience of consciousness without an object (an identity sans body). https://actualfreedom.com.au/library/topics/pce.htm
 
 [^spo]: PCEs happen by [_"allowing them to happen"_](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-pce4.htm).
+
+## December 17, 2025 [[EE|EE]] {#center-less}
+
+Having finished my swim, I walked to the bus stop. I got somewhat upset at the fact that the next bus wouldn’t arrive until 15 minutes later (which is unusual for this time). So, I lingered at the stop, strolling back and forth under light snow, (passively) listening to music. For important context, I should say that the euphoria-based hope/despair was still operating as an undercurrent.
+
+At one point, I must have been completely ‘zoned out’ despite standing upright and pacing around (like an automaton). I realized that this was happening only as full awareness came back, but when it came back: it was more of a **center-less** awareness (I was looking at a building ahead and the snow in between us). Even though I couldn’t tell if it was PCE, the expression ‘the universe experiencing itself’ came to my mind. I realized that the “I” that I had been being (with “his” desire for euphoria thus hopes/despairs and the attendant preoccupations) was no more because perception had virtually no ‘center-point’ anymore. I thought _“Wow, this is cool. Is it as simple as this? “I” – even if the social “I” – simply had to step back and let the moment ‘happen’? Then I can just sit back and relax?”_
+
+Thereon, I allowed and appreciated this center-less way of perception because it would be silly to ‘go back’ even if that were possible. I stepped onto the bus, and the enjoyment & appreciation increased without me even trying. This was a busy period, so the bus was full, and people usually are tired due to returning from work. My visual perception was very ‘soft’[^soft]. There was no intense focus (like a predator scanning) anywhere; it was just great to be here and very refreshing and energetic (not in a frantic way). I enjoyed listening to music to the nth degree; it was no longer playing ‘passively’.
+
+[^soft]: Richard: _“one gazes intently at the world about by glancing lightly with sensuously caressing eyes”_
+
+I made the decision to ‘stay’ in this way for being for as long as possible. And if/when I regress, I’ll aim to find my way back.
+
 
 ## March 5, 2025 [[EE|EE]]
 
