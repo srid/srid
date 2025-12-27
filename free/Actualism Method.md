@@ -5,9 +5,12 @@ slug: method
 
 > [!QUOTE] [The actualism method is to blatantly imitate the actual as experienced in PCE](https://discuss.actualism.online/t/how-does-one-self-immolate-and-the-direct-path-questions/1151/16)
 > 
-> RICHARD: The [[Identity|‘I’]] that used to inhabit this body did everything possible that ‘I’ could do to **blatantly imitate the actual** \[as experienced in a [[PCE]]\] in that ‘I’ endeavoured to be [[Felicity and Innocuity|happy and harmless]] for as much as is humanly possible. This was achieved by putting everything on a [[It doesn't really matter|‘it doesn’t really matter’]] basis. That is, ‘I’ would prefer people, things and events to be a particular way, but if it did not turn out like that … it did not really matter for it was only a preference. ‘I’ chose to no longer give other people – or the weather – the power to make ‘me’ angry … or irritated … or even peeved, if that was possible.  
+> RICHARD: The [[Identity|‘I’]] that used to inhabit this body did everything possible that ‘I’ could do to **blatantly imitate the actual** \[as experienced in a [[PCE|PCE]]\] in that ‘I’ endeavoured to be [[Felicity and Innocuity|happy and harmless]] for as much as is humanly possible. This was achieved by putting everything on a [[It doesn't really matter|‘it doesn’t really matter’]] basis. That is, ‘I’ would prefer people, things and events to be a particular way, but if it did not turn out like that … it did not really matter for it was only a preference. ‘I’ chose to no longer give other people – or the weather – the power to make ‘me’ angry … or irritated … or even peeved, if that was possible.  
 > 
 > It was great fun and very, very rewarding along the way.
+
+> [!QUOTE] Succintly but comprehensively
+> \[The actualism method is about\] consciously and with knowledge aforethought imitating the actual \[as experienced in a [[PCE|PCE]]\] by enjoying and appreciating being alive/ being here each moment again, for as much as is humanly possible, until the actualism process, per favour the ‘golden clew’ pure intent, invokes an [[Out from control|out-from-control different-way-of-being]] momentum conducive to going blessedly into [[Altruistic self-immolation|oblivion]] prior to physical [[Death|death]].
 
 >[!QUOTE] From [a DVD video](https://x.com/sridca/status/1936541187428725065)
 >
