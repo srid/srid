@@ -32,3 +32,7 @@ slug: romance
 > ### Dismantling the Identity
 > 
 > To move beyond this identity, Vineeto had to "abandon the [[Love|love]]-dream" and "debunking the romantic dream" , which she called the "wobbling monster of [[Love|love]]". This process involved facing her life's questions herself . Upon doing so, her pining ceased, her expectations vanished, and she "recovered my [[Autonomy|autonomy]]" , concluding that "I am the only one in my life who is responsible for my happiness"
+
+## See also
+
+- [Romantic Love has replaced God, Virtue, Eudaimonia in the Western psyche](https://x.com/sridca/status/2005797456924054010)
