@@ -2,6 +2,8 @@
 slug: identity/sex
 ---
 
+# Sexual Identity
+
 ## Thematic components {#themes}
 
 - [[Romantic identity]]#
