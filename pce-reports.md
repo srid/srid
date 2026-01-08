@@ -52,7 +52,7 @@ Here’s Peter (who at that time worked as a civil architect) reporting a very s
 > **The operation of the human brain is such an exquisite intricacy as to be truly wondrous**. With no ‘I’ in the road to agonize over the process, nor a ‘me’ present to either exalt or despair at the outcome, there was simply the brain doing what the brain does – think, plan, reflect, evaluate, compare, compute, assess and mull over, as well as simultaneously being aware that this is what it is doing. And not only that, whilst the brain is being apperceptively aware, it is also serving as the central processing unit for the sensory perceptive system of the body – continually processing the myriad of sensate information that is this flesh and blood body’s sensual sensitivity to whatever is happening in this moment.
 
 
-## Dec 5, 2021 [[EE|EE]] {#voodoo}
+## Dec 5, 2021 [[PCE|PCE]] {#voodoo}
 
 Music: [Voodoo Warriors of Love - Sweat](https://www.youtube.com/watch?v=9yUnLlPF9p4)
 
@@ -95,7 +95,7 @@ While it may have started as PCE, the experience short after was not a PCE. Amid
   
 I completely forgot about walking home, and instead strolled aimlessly to a nearby mall, checking the stores and their contents with interest, while rememorating this experience (rather successfully). I had a very pleasant demeanour (opposite of 'poker face') that was unforced, and even my gait became the opposite of the habitual controlled rigidity (consequently it felt very good to walk). Part of the demeanour change involved losing that 'intense focus' intuition in between the eyes (which connotes [[Seriousness|seriousness]], and evokes the habitual poker face, the female version of which is called 'resting bitch face') ... the controller no longer controlled the facial muscles, I suppose. I next visit the grocery store, even though I had no plans to buy anything for today. There, I found myself transfixed at the various products (European processed meats, exotic seafood, etc.), with no sense of urgency to move on (I think at one point I must have been standing by the foie gras aisle for a good 5 minutes, trying to figure out how to utilize this new food element in my keto meals). The mind functioned so freely. "I" was there, but "my" problems were absent, except for this vague sense of being an interloper.
 
-## December 17, 2025 [[PCE|PCE]] {#center-less}
+## December 17, 2025 [[EE|EE]] {#center-less}
 
 Having finished my swim, I walked to the bus stop. I got somewhat upset at the fact that the next bus wouldn’t arrive until 15 minutes later (which is unusual for this time). So, I lingered at the stop, strolling back and forth under light snow, (passively) listening to music. For important context, I should say that the euphoria-based hope/despair was still operating as an undercurrent.
 
@@ -109,3 +109,15 @@ Thereon, I allowed and appreciated this center-less way of perception because it
 
 I made the decision to ‘stay’ in this way for being for as long as possible. And if/when I regress, I’ll aim to find my way back.
 
+
+## January 5, 2026 [[PCE|PCE]] 'sensate reality' {#sensate-reality}
+
+\[..\] while remembering/ revivifying full well what “immediacy” means  as well as remembering my PCEs (especially the experience of this only moment), I “arrived here”[^bdo] experiencing the sensate reality of this **perennially happening** moment; i.e., no longer ‘bottled up’ or ‘boxed in’ or sandwiched between other-moments.
+
+When this started happening, I was actually playing a game on my laptop (semi-focused; because contemplations regarding these matters were percolating in the background of the mind) seated on the couch in my dimly lit living room. I remarked to myself, “Whoa, this looks like it is in 4k” … referring to the indubitably immediate visual perception of the entire living room being experienced in 3d and in “higher resolution”. Crisp, and everything’s here, with no ‘outside’ to it, and self-sufficient … thus automatically obviating the despair of ‘going about it on my own’ or the fear of ‘facing rejection’ or the hope of a permanently percolating aura of affections.
+
+The answer to my wondering about closeness/intimacy became experientially answered in this mini-PCE, and it blew my mind. No affections, really? “Just” a sensate immediacy—and, the same immediacy with the objects in my room, albeit with the difference being the other is a living and conscious fellow human (a female one at that)? In the PCE, it became so obvious to me that this moment is perennially happening (it is how it is all the time), so it is not a matter of ‘boxing’ myself in it from ‘there’ to ‘here’; it is just a matter of _staying_ in it \[the moment\], leaving “me” behind in the process. This is the sacrifice involved.[^af]
+
+[^af]: From here, I have come to understand the difference between PCEs & AF. The PCE happens spontaneously when the self goes into abeyance; it cannot be made permanent, because the self, which wasn’t fully gone, will come back in full force anyway. For AF to happen, the self—whilst still being in situ (albeit as ‘beer’?)—needs to _willingly_ (cheerful concurrence) die such that the actual world as experienced in the PCE can eventuate irrevocably, experienced as this flesh and blood body only.
+
+A strong golden clew has been established.
