@@ -43,6 +43,4 @@ slug: never-not-this-moment
 > 
 > Have you never noticed it is never not this moment?
 
-## External links
 
-- Apr 19, 2025: [Srid: this is the simplest and most impactful description of the actualism method](https://x.com/sridca/status/1913467451511312710)
