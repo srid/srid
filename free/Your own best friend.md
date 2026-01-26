@@ -28,7 +28,7 @@ On enjoying one's own company or being one's own best friend.
 
 > [!quote] [Vineeto's SC with Gary](http://www.actualfreedom.com.au/actualism/vineeto/list-af/gary-g.htm)
 > 
-> VINEETO: By getting rid of my own complaints, boredom, annoyance and irritation I succeeded in ==**enjoying my own company**== and I increasingly became aware that I like my fellow human beings. With this liking comes hand-in-glove an appreciation of my fellow human beings and an admiration of the astounding human ingenuity and caring in many fields of science, engineering, health and safety.
+> VINEETO: By getting rid of my own complaints, boredom, annoyance and irritation I succeeded in ==**enjoying my own company**== and I increasingly became aware that I like my fellow human beings. With this liking comes hand-in-glove an [[Appreciation|appreciation]] of my fellow human beings and an admiration of the astounding human ingenuity and caring in many fields of science, engineering, health and safety.
 > 
 > One thing that played a major part in my increasingly liking [[living in the world as it is with people as they are|people-as-they-are]] was the acknowledgement of my own [[malice]] and [[sorrow]], that I recognized it as being due to the human condition and that I understood that everybody, through no fault of their own, is born into the same human condition. I then put this intellectual understanding into daily practice whenever I interacted directly with people, read or heard of other people or read or heard of other people’s views of other people.
 > 

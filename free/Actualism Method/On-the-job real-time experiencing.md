@@ -18,7 +18,7 @@ slug: real-time-investigation
 
 > [!quote] [Richard's Selected Correspondence On Beliefs and Psittacisms](https://actualfreedom.com.au/richard/selectedcorrespondence/sc-belief.htm)
 >
-> RICHARD: [..] Provided your answer to No. 5, in either instance, is in the affirmative you will now be back to enjoying and appreciating this moment of being alive (the only moment you are ever alive) and thus the prospect of seeing the fact which will set you free of the belief will be facilitated by being able to come upon it **experientially** ... it is your **active** participation/ presence which vitalises/ invigorates the investigation/ exploration.
+> RICHARD: [..] Provided your answer to No. 5, in either instance, is in the affirmative you will now be back to enjoying and [[Appreciation|appreciating]] this moment of being alive (the only moment you are ever alive) and thus the prospect of seeing the fact which will set you free of the belief will be facilitated by being able to come upon it **experientially** ... it is your **active** participation/ presence which vitalises/ invigorates the investigation/ exploration.
 > 
 > In short: [[Armchair philosophising|armchair philosophising/psychologising]] will get you nowhere ... and fast.
 

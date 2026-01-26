@@ -10,7 +10,7 @@ slug: method
 > It was great fun and very, very rewarding along the way.
 
 > [!QUOTE] Succintly but comprehensively
-> \[The actualism method is about\] consciously and with knowledge aforethought imitating the actual \[as experienced in a [[PCE|PCE]]\] by enjoying and appreciating being alive/ being here each moment again, for as much as is humanly possible, until the actualism process, per favour the ‘golden clew’ pure intent, invokes an [[Out from control|out-from-control different-way-of-being]] momentum conducive to going blessedly into [[Altruistic self-immolation|oblivion]] prior to physical [[Death|death]].
+> \[The actualism method is about\] consciously and with knowledge aforethought imitating the actual \[as experienced in a [[PCE|PCE]]\] by enjoying and [[Appreciation|appreciating]]# being alive/ being here each moment again, for as much as is humanly possible, until the actualism process, per favour the ‘golden clew’ pure intent, invokes an [[Out from control|out-from-control different-way-of-being]] momentum conducive to going blessedly into [[Altruistic self-immolation|oblivion]] prior to physical [[Death|death]].
 
 >[!QUOTE] From [a DVD video](https://x.com/sridca/status/1936541187428725065)
 >

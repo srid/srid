@@ -16,7 +16,7 @@ slug: world-as-it-is
 > {.respondent}
 > **RESPONDENT:** _But is it not true that their entity causes my entity pain in making decisions that restrict my movement, my happiness?_
 > 
-> **RICHARD:** It matters not whether it is true, that another identity causes you pain with their decisions, or not ... the fact remains that ==any action, as proposed by Mr. Noam Chomsky for instance, within ‘humanity’ as it is, is doomed to failure. Unless this fact can be grasped with both hands and taken on board to such an extent that it hits home deeply, nothing will change, radically.== There will be changes around the edges, variations upon a familiar theme, but nothing structurally new, nothing even approaching the mutation-like change which is essential for the human race to fully appreciate the fullness and prosperity of being alive on planet earth, in this era, as a flesh and blood body.
+> **RICHARD:** It matters not whether it is true, that another identity causes you pain with their decisions, or not ... the fact remains that ==any action, as proposed by Mr. Noam Chomsky for instance, within ‘humanity’ as it is, is doomed to failure. Unless this fact can be grasped with both hands and taken on board to such an extent that it hits home deeply, nothing will change, radically.== There will be changes around the edges, variations upon a familiar theme, but nothing structurally new, nothing even approaching the mutation-like change which is essential for the human race to fully [[Appreciation|appreciate]] the fullness and prosperity of being alive on planet earth, in this era, as a flesh and blood body.
 > 
 > To remain ‘human’ is to remain a failure.
 > 

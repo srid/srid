@@ -9,7 +9,7 @@ template:
 
 # My PCEs & EEs
 
-This page is dedicated to publishing self-reports of a handful of my spontaneously-occurred[^spo] #[[PCE|PCE]]s and [[EE|EE]]s, in chronological order.
+This page is dedicated to publishing self-reports of a handful of my spontaneously-occurred[^spo] #[[PCE|PCE]]s and [[EE|EE]]s, in chronological order. Note: PCEs since Dec, 2025 are being recorded in private.
 
 > [!TIP] As distinct from "peak experience" of Abraham Maslow et al.
 > RICHARD: [I] chose the phrase ‘pure consciousness experience’ so as to make the generic phrase ‘peak experience’ I had been using for eleven years more specific and to regain the actual purity of the unadulterated sensuous experience of consciousness without a subject (a body sans [[Identity|identity]]) from the adulterated mystical experience of consciousness without an object (an identity sans body). https://actualfreedom.com.au/library/topics/pce.htm
@@ -95,29 +95,3 @@ While it may have started as PCE, the experience short after was not a PCE. Amid
   
 I completely forgot about walking home, and instead strolled aimlessly to a nearby mall, checking the stores and their contents with interest, while rememorating this experience (rather successfully). I had a very pleasant demeanour (opposite of 'poker face') that was unforced, and even my gait became the opposite of the habitual controlled rigidity (consequently it felt very good to walk). Part of the demeanour change involved losing that 'intense focus' intuition in between the eyes (which connotes [[Seriousness|seriousness]], and evokes the habitual poker face, the female version of which is called 'resting bitch face') ... the controller no longer controlled the facial muscles, I suppose. I next visit the grocery store, even though I had no plans to buy anything for today. There, I found myself transfixed at the various products (European processed meats, exotic seafood, etc.), with no sense of urgency to move on (I think at one point I must have been standing by the foie gras aisle for a good 5 minutes, trying to figure out how to utilize this new food element in my keto meals). The mind functioned so freely. "I" was there, but "my" problems were absent, except for this vague sense of being an interloper.
 
-## December 17, 2025 [[EE|EE]] {#center-less}
-
-Having finished my swim, I walked to the bus stop. I got somewhat upset at the fact that the next bus wouldn’t arrive until 15 minutes later (which is unusual for this time). So, I lingered at the stop, strolling back and forth under light snow, (passively) listening to music. For important context, I should say that the euphoria-based hope/despair was still operating as an undercurrent.
-
-At one point, I must have been completely ‘zoned out’ despite standing upright and pacing around (like an automaton). I realized that this was happening only as full awareness came back, but when it came back: it was more of a **center-less** awareness (I was looking at a building ahead and the snow in between us). Even though I couldn’t tell if it was PCE[^couldnt-tell], the expression ‘the universe experiencing itself’ came to my mind. I realized that the “I” that I had been being (with “his” desire for euphoria thus hopes/despairs and the attendant preoccupations) was no more because perception had virtually no ‘center-point’ anymore. I thought _“Wow, this is cool. Is it as simple as this? “I” – even if the social “I” – simply had to step back and let the moment ‘happen’? Then I can just sit back and relax?”_
-
-[^couldnt-tell]: In hindsight, however, I'd characterize it as a PCE with "me" coming back eventually (just prior to entering the bus) but as a naive self (affectively) enjoying & appreciating being here.
-
-Thereon, I allowed and appreciated this center-less way of perception because it would be silly to ‘go back’ even if that were possible. I stepped onto the bus, and the enjoyment & appreciation increased without me even trying. This was a busy period, so the bus was full, and people usually are tired due to returning from work. My visual perception was very ‘soft’[^soft]. There was no intense focus (like a predator scanning) anywhere; it was just great to be here and very refreshing and energetic (not in a frantic way). I enjoyed listening to music to the nth degree; it was no longer playing ‘passively’.
-
-[^soft]: Richard: _“one gazes intently at the world about by glancing lightly with sensuously caressing eyes”_
-
-I made the decision to ‘stay’ in this way for being for as long as possible. And if/when I regress, I’ll aim to find my way back.
-
-
-## January 5, 2026 [[PCE|PCE]] 'sensate reality' {#sensate-reality}
-
-\[..\] while remembering/ revivifying full well what “immediacy” means  as well as remembering my PCEs (especially the experience of this only moment), I “arrived here”[^bdo] experiencing the sensate reality of this **perennially happening** moment; i.e., no longer ‘bottled up’ or ‘boxed in’ or sandwiched between other-moments.
-
-When this started happening, I was actually playing a game on my laptop (semi-focused; because contemplations regarding these matters were percolating in the background of the mind) seated on the couch in my dimly lit living room. I remarked to myself, “Whoa, this looks like it is in 4k” … referring to the indubitably immediate visual perception of the entire living room being experienced in 3d and in “higher resolution”. Crisp, and everything’s here, with no ‘outside’ to it, and self-sufficient … thus automatically obviating the despair of ‘going about it on my own’ or the fear of ‘facing rejection’ or the hope of a permanently percolating aura of affections.
-
-The answer to my wondering about closeness/intimacy became experientially answered in this mini-PCE, and it blew my mind. No affections, really? “Just” a sensate immediacy—and, the same immediacy with the objects in my room, albeit with the difference being the other is a living and conscious fellow human (a female one at that)? In the PCE, it became so obvious to me that this moment is perennially happening (it is how it is all the time), so it is not a matter of ‘boxing’ myself in it from ‘there’ to ‘here’; it is just a matter of _staying_ in it \[the moment\], leaving “me” behind in the process. This is the sacrifice involved.[^af]
-
-[^af]: From here, I have come to understand the difference between PCEs & AF. The PCE happens spontaneously when the self goes into abeyance; it cannot be made permanent, because the self, which wasn’t fully gone, will come back in full force anyway. For AF to happen, the self—whilst still being in situ (albeit as ‘beer’?)—needs to _willingly_ (cheerful concurrence) die such that the actual world as experienced in the PCE can eventuate irrevocably, experienced as this flesh and blood body only.
-
-A strong golden clew has been established.
