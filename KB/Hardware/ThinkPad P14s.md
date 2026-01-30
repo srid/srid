@@ -24,3 +24,4 @@ image: https://pbs.twimg.com/media/G2Q1tZ4W8AATmtn?format=jpg&name=large
 | Aug 23, 2025 | [[Omarchy]] - Fail [v1](https://x.com/sridca/status/1959440766159180283) |
 | Sep 21, 2025 | [[Omarchy]] - Fail [v2](https://x.com/sridca/status/1969952240984277341) |
 | Oct 1, 2025  | [[Pop OS]] - [Success](https://x.com/sridca/status/1973583560671125589)! |
+| Jan 30, 2026  | Fedora Workstation - [Success](https://x.com/sridca/status/2017339011958775830)! |
