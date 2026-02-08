@@ -3,9 +3,6 @@ slug: channeling
 ---
 # Channelling of affective energy
 
-> [!QUOTE] AI summary
-> Channeling means turning your emotional energy into fuel. Instead of wasting power on stress or conflict, you redirect your strong feelings—like fear or desire—to drive your journey toward freedom.
-
 
 > [!quote] [Richard’s Selected Correspondence On Delight](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-delight.htm)
 > 
