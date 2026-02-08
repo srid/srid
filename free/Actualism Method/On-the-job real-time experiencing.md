@@ -27,5 +27,3 @@ slug: real-time-investigation
 > 
 > VINEETO: Undertaking an exploration of one’s own feelings **when and as they are occurring** – becoming [[Curiosity-Fascination-Obsession|fascinated]] with the business of being alive – is the means to developing [[Apperception|apperceptive awareness]], a prerequisite to becoming free of the human condition itself.
 
-> [!quote] [Vineeto in Scout's Journal](https://discuss.actualism.online/t/scout-s-journal/751/49)
-> VINEETO: First stop fighting the fear when it arises and **allow, in the experiencing of it, to get the information you need** in order to get back to [[Feeling good|feeling good]]. When feeling good – with less emotional interference – you can think about what you have read and found sensible and apply the advice that makes sense to you. If it works to minimize your suffering, continue, if not contemplate again and identify what other triggers keep you from feeling good.

@@ -72,7 +72,7 @@ Music: [Alphaville - Big In Japan](https://x.com/sridca/status/18976655082179381
 > 
 > The most salient of the precipitating factors was in fact what I wrote on 1st of March,  
 > 
-> > SRID on March 1st: \[..\] allowing myself to get as close (aka. intimate; cf. [link](https://discuss.actualism.online/t/kub933s-journal/467/1391)) to people, things **\*and\*** events (**\*as they happen now\***, rather than anytime/anywhere else).
+> > SRID on March 1st: \[..\] allowing myself to get as close (aka. intimate) to people, things **\*and\*** events (**\*as they happen now\***, rather than anytime/anywhere else).
 > 
 >   
 > The key here being 'get as close' to this moment as possible which initially allowed me to pull my head out of the habitual sand (as it were), and thus become more interested in being here where this moment is happening.  
