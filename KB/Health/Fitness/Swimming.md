@@ -21,6 +21,10 @@ The author [started learning to swim in 2025](https://x.com/sridca/status/191769
 | [[Swimmer's Shoulder]]# | Form & alignment                                                                                      |
 | Rhomboid pain           | [Reduce intensity; engage core; bilateral breathing](https://x.com/sridca/status/1981812644685455647) |
 
+## Diet
+
+- Very important to eat sufficient protein, else performance will suffer in addition to weight gain slowing down.
+	- Adding ~200g [[Shrimp]] one day dramatically improved my performance the next day.
 ## Gadgets
 
 - [Garmin Forerunner 165](https://x.com/sridca/status/1990493087949525135) for tracking
