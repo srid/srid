@@ -14,4 +14,7 @@ slug: bell-canada
 > Your Financed Amount Balance will be $0 as of Sep. 30, 2026.
 
 - [ ] When contract ends, switch to [Fizz, Public Mobile or Koodo](https://gemini.google.com/u/0/app/f05d2c9544de4dc3?pageId=none) 🛫 2026-09-25 
+	- Credit goes to 0 on final Bill, on Sep 30th.
 	- Consider a new phone number
+- [ ] Call Bell to transfer credits to mobile account 🛫 2026-02-16 
+	- Bill date is 15th of the mouth.
