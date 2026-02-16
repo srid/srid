@@ -9,3 +9,5 @@ Go for the canned ones in water (not oil).
 ## Brunswick Sardines
 
 Per 1 can drained (84g) has 5g fat and 17g protein. Produced in Poland.
+
+https://x.com/sridca/status/2023470833184965013
