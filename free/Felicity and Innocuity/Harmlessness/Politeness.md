@@ -50,3 +50,4 @@ From https://news.ycombinator.com/item?id=34746161
 		- https://x.com/sridca/status/1899508751918420395
 	- [Dutch directness / bespreekbaarheid](https://twitter.com/sridca/status/1730312976450699643)
 	- USA: ["East Coast folks are better people even if they aren't as 'nice' as those out West"](https://www.upworthy.com/nice-vs-kind-are-east-coast-people-better-than-west-coast-rp6) (via [HN](https://news.ycombinator.com/item?id=40696801))
+    - Performative cheerfulness and "service smile" https://x.com/sridca/status/2026009564944949729
