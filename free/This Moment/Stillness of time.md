@@ -2,6 +2,7 @@
 slug: stillness
 ---
 
+
 > [!quote] [Richard’s Selected Correspondence On Time: This Moment, Timelessness and Eternity](https://www.actualfreedom.com.au/richard/selectedcorrespondence/sc-time2.htm)
 >  
 > RICHARD: The stillness of time itself is absolute.
